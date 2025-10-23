@@ -7,7 +7,7 @@
     state: icon
   product: CrateAmmoBoxCyrexa
   cost: 7500
-  category: cargoproduct-category-name-armory
+  category: cargoproduct-category-name-shipammo
   group: market
 
 - type: cargoProduct
@@ -17,7 +17,7 @@
     state: icon
   product: CrateAmmoBoxBofors
   cost: 7500
-  category: cargoproduct-category-name-armory
+  category: cargoproduct-category-name-shipammo
   group: market
 
 - type: cargoProduct
@@ -27,7 +27,7 @@
     state: icon
   product: CrateAmmoBoxKargil
   cost: 7500
-  category: cargoproduct-category-name-armory
+  category: cargoproduct-category-name-shipammo
   group: market
 
 - type: cargoProduct
@@ -37,7 +37,7 @@
     state: icon
   product: CrateAmmoBox150mm
   cost: 7500
-  category: cargoproduct-category-name-armory
+  category: cargoproduct-category-name-shipammo
   group: market
 
 - type: cargoProduct
@@ -47,7 +47,7 @@
     state: icon
   product: CrateAmmoBoxCharon
   cost: 7500
-  category: cargoproduct-category-name-armory
+  category: cargoproduct-category-name-shipammo
   group: market
 
 # Mag/Drum reload
@@ -59,7 +59,7 @@
     state: icon
   product: CrateAmmoBox20mm
   cost: 3000
-  category: cargoproduct-category-name-armory
+  category: cargoproduct-category-name-shipammo
   group: market
 
 - type: cargoProduct
@@ -69,7 +69,7 @@
     state: icon
   product: CrateAmmoBox30mm
   cost: 6500
-  category: cargoproduct-category-name-armory
+  category: cargoproduct-category-name-shipammo
   group: market
 
 - type: cargoProduct
@@ -79,7 +79,7 @@
     state: icon
   product: CrateAmmoBox57mm
   cost: 4000
-  category: cargoproduct-category-name-armory
+  category: cargoproduct-category-name-shipammo
   group: market
 
 - type: cargoProduct
@@ -89,7 +89,7 @@
     state: icon
   product: CrateAmmoBox90mm
   cost: 6500
-  category: cargoproduct-category-name-armory
+  category: cargoproduct-category-name-shipammo
   group: market
 
 - type: cargoProduct
@@ -99,7 +99,7 @@
     state: icon
   product: CrateAmmoBox140mm
   cost: 5000
-  category: cargoproduct-category-name-armory
+  category: cargoproduct-category-name-shipammo
   group: market
 
 # Missile reloads
@@ -111,7 +111,7 @@
     state: icon
   product: CrateAmmoBoxVanyk
   cost: 3000
-  category: cargoproduct-category-name-armory
+  category: cargoproduct-category-name-shipammo
   group: market
 
 - type: cargoProduct
@@ -121,7 +121,7 @@
     state: icon
   product: CrateAmmoBoxVespera
   cost: 5000
-  category: cargoproduct-category-name-armory
+  category: cargoproduct-category-name-shipammo
   group: market
 
 - type: cargoProduct
@@ -131,5 +131,5 @@
     state: icon
   product: CrateAmmoBoxTovek
   cost: 7500
-  category: cargoproduct-category-name-armory
+  category: cargoproduct-category-name-shipammo
   group: market

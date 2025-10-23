@@ -10,7 +10,7 @@
     size: Small
   - type: BallisticAmmoProvider
     proto: 20mmCartridge
-    capacity: 1500
+    capacity: 1250
     mayTransfer: true
     whitelist:
       tags:

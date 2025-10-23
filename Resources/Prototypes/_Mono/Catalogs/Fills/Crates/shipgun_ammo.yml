@@ -120,7 +120,7 @@
   parent: CrateAmmoSecureMercenary
   id: CrateAmmoBoxVanyk
   name: ASM-302 Vanyk HEAT missile box
-  description: Contains 2 full reloads.
+  description: Contains 24 missiles. 2/3 of a full load.
   components:
   - type: StorageFill
     contents:
@@ -131,7 +131,7 @@
   parent: CrateAmmoSecureMercenary
   id: CrateAmmoBoxVespera
   name: ASM-417 Vespera HEAT missile box
-  description: Contains 1 full reload.
+  description: Contains 1 burst of 28 missiles. 1/3 of a full load.
   components:
   - type: StorageFill
     contents:
@@ -142,7 +142,7 @@
   parent: CrateAmmoSecureMercenary
   id: CrateAmmoBoxTovek
   name: ASM-557 Tovek EMPHE missile box
-  description: Contains 2 full reloads.
+  description: Contains 4 missiles. 2/3 of a full load.
   components:
   - type: StorageFill
     contents:

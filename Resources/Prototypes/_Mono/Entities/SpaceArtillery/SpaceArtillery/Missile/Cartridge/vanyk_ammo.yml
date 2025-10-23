@@ -1,0 +1,21 @@
+- type: entity
+  id: VanykCartridge
+  name: ASM-302 HEAT missile
+  description: An individual ASM-302 HEAT missile.
+  parent: BaseGrenade
+  components:
+  - type: Tag
+    tags:
+    - VanykCartridge
+  - type: Item
+    size: Huge
+  - type: CartridgeAmmo
+    proto: ShipMissileASM302
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/mini_rocket.rsi
+    layers:
+    - state: mini-rocket
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals

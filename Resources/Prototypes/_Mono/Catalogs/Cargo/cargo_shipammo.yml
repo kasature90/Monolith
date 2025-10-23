@@ -1,3 +1,5 @@
+# Cartridge reload
+
 - type: cargoProduct
   id: ArmoryShipAmmo220mm
   icon:
@@ -34,9 +36,21 @@
     sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
     state: icon
   product: CrateAmmoBox150mm
-  cost: 4000
+  cost: 7500
   category: cargoproduct-category-name-armory
   group: market
+
+- type: cargoProduct
+  id: ArmoryShipAmmoCharon
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBoxCharon
+  cost: 7500
+  category: cargoproduct-category-name-armory
+  group: market
+
+# Mag/Drum reload
 
 - type: cargoProduct
   id: ArmoryShipAmmo20mm
@@ -44,7 +58,7 @@
     sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
     state: icon
   product: CrateAmmoBox20mm
-  cost: 5000
+  cost: 3000
   category: cargoproduct-category-name-armory
   group: market
 
@@ -54,7 +68,7 @@
     sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
     state: icon
   product: CrateAmmoBox30mm
-  cost: 5000
+  cost: 6500
   category: cargoproduct-category-name-armory
   group: market
 
@@ -64,7 +78,7 @@
     sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
     state: icon
   product: CrateAmmoBox57mm
-  cost: 5000
+  cost: 4000
   category: cargoproduct-category-name-armory
   group: market
 
@@ -74,7 +88,7 @@
     sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
     state: icon
   product: CrateAmmoBox90mm
-  cost: 5000
+  cost: 6500
   category: cargoproduct-category-name-armory
   group: market
 
@@ -85,5 +99,37 @@
     state: icon
   product: CrateAmmoBox140mm
   cost: 5000
+  category: cargoproduct-category-name-armory
+  group: market
+
+# Missile reloads
+
+- type: cargoProduct
+  id: ArmoryShipAmmoVanyk
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBoxVanyk
+  cost: 3000
+  category: cargoproduct-category-name-armory
+  group: market
+
+- type: cargoProduct
+  id: ArmoryShipAmmoVespera
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBoxVespera
+  cost: 5000
+  category: cargoproduct-category-name-armory
+  group: market
+
+- type: cargoProduct
+  id: ArmoryShipAmmoTovek
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBoxTovek
+  cost: 7500
   category: cargoproduct-category-name-armory
   group: market

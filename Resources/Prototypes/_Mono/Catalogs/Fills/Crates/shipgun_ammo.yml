@@ -57,6 +57,17 @@
     - id: CharonSlugAmmo
       amount: 3
 
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxCharonette
+  name: M194 CHARONETTE 280mm 10.25 kg slug cartridge box
+  description: Contains 5 slugs. Only 1/2 a full reload.
+  components:
+  - type: StorageFill
+    contents:
+    - id: CharonetteSlugAmmo
+      amount: 5
+
 # Magazines
 
 - type: entity

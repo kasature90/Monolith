@@ -53,6 +53,19 @@
 - type: Tag
   id: 203mmCartridge
 
+# 150mm
+
+- type: Tag
+  id: 150mmShell
+
+# Railguns
+
+- type: Tag
+  id: CharonetteSlug
+
+- type: Tag
+  id: CharonSlug
+
 # Missiles
 
 - type: Tag
@@ -63,3 +76,9 @@
 
 - type: Tag
   id: TovekCartridge
+
+- type: Tag
+  id: Asm220Torpedo
+
+- type: Tag
+  id: LightFighterOrdinance

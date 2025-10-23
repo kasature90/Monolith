@@ -50,6 +50,16 @@
   category: cargoproduct-category-name-shipammo
   group: market
 
+- type: cargoProduct
+  id: ArmoryShipAmmoCharonette
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBoxCharonette
+  cost: 5000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
 # Mag/Drum reload
 
 - type: cargoProduct

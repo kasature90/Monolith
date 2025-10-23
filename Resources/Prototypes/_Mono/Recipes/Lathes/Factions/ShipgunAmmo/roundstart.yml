@@ -42,6 +42,11 @@
   id: 255mmCartridgeAmmoRecipe
   result: 255mmCartridge
 
+- type: latheRecipe
+  parent: BaseShipgunAmmoRecipe
+  id: CharonetteSlugCartridgeAmmoRecipe
+  result: CharonetteSlugAmmoCartridge
+
 # Missiles
 
 - type: latheRecipe

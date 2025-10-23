@@ -1,0 +1,21 @@
+- type: entity
+  id: CharonetteSlugAmmo
+  name: M194 CHARONETTE 280mm 10.25 kg slug cartridge
+  description: A all-in-one package containing the plasma gas for ionization in the linear accelerator and the slug itself.
+  parent: BaseGrenade
+  components:
+  - type: Tag
+    tags:
+    - CharonetteSlug
+  - type: Item
+    size: Huge
+  - type: CartridgeAmmo
+    proto: ShipMiniRailgunProjectile
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/charonslug.rsi
+    layers:
+    - state: railgun_slug
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals

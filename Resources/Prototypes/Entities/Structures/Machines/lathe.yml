@@ -723,9 +723,16 @@
     runningState: icon
     staticPacks:
     - StaticAmmoRecipePack
+    - RoundstartShipgunAmmo # Mono
     dynamicPacks:
     - DynamicAmmoRecipePack
-    - ResearchedExplosives # Mono
+    # Mono start
+    - ResearchedExplosives
+    - UniversalRailgunAmmo
+    - UniversalMissileAmmo
+    - UniversalShellAmmo
+    - UniversalOrdinance
+    # Mono end
   - type: MaterialStorage
     whitelist:
       tags:

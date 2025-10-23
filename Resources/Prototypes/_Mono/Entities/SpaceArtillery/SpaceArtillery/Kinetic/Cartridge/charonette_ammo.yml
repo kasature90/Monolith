@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: MPL-2.0
+
 - type: entity
   id: CharonetteSlugAmmo
   name: M194 CHARONETTE 280mm 10.25 kg slug cartridge

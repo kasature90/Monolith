@@ -1,0 +1,133 @@
+<Document>
+  # Ballistic Weapon Specifications
+  Notes:
+  - Munition range & ammo capacity is taken from the standard magazine & ammunition that comes loaded with the weapon.
+  - For munitions that accelerate over time (such as missiles), range is a rough estimate.
+  - For munitions that are fired at a static speed (such as normal weapons), range is simply just the launch velocity * projectile lifetime.
+  - RPS may not be accurate due to it being capped by server tick speed (usually 20 or 30 ticks/second).
+
+  ## Specifications (as of 24-Oct-2025)
+  <Table Columns="6">
+    <ColorBox>
+      <Box>
+        Name
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Ammo Capacity
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Firerate
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Munition Range
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Velocity
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Size Class
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        L85 20x124mm
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b58818">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        1250 (MAG)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#5a9926">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        12 RPS
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#8f2b65">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        320 meters
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#8f2b65">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        160 m/s
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Light
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        RAC-30 Draupnir
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b58818">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        2000 (MAG)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#5a9926">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        80 RPS
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#8f2b65">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        540 meters
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#8f2b65">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        180 m/s
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Medium
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        ADBP-7 57mm
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b58818">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        600 (MAG)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#5a9926">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        1.5 RPS
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#8f2b65">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        1750 meters
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#8f2b65">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        250 m/s
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Medium
+      </Box>
+    </ColorBox>
+  </Table>
+
+</Document>

@@ -45,7 +45,7 @@
 - type: latheRecipe
   parent: BaseShipgunAmmoRecipe
   id: CharonetteSlugCartridgeAmmoRecipe
-  result: CharonetteSlugAmmoCartridge
+  result: CharonetteSlugAmmo
 
 # Missiles
 

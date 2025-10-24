@@ -72,7 +72,7 @@
     sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
     state: icon
   product: CrateAmmoBox20mm
-  cost: 3000
+  cost: 4000
   category: cargoproduct-category-name-shipammo
   group: market
 

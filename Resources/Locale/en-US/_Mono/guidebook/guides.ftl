@@ -5,6 +5,7 @@ guide-entry-shipyard-sabine = Sabine
 guide-entry-shipyard-takeaway = Takeaway
 
 # Gunnery Guides
+guide-entry-gunnery = Ship Gunnery
 guide-entry-ballistics = Kinetic
 guide-entry-energy = Energy
 guide-entry-missiles = Missiles

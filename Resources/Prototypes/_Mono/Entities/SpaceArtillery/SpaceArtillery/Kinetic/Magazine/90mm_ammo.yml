@@ -18,7 +18,7 @@
     mayTransfer: true
     whitelist:
       tags:
-      - Cartridge90mm
+      - 90mmCartridge
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -43,7 +43,7 @@
   - type: Tag
     tags:
     - Cartridge
-    - Cartridge90mm
+    - 90mmCartridge
   - type: CartridgeAmmo
     deleteOnSpawn: true
     proto: 90mmBulletArmorPiercing

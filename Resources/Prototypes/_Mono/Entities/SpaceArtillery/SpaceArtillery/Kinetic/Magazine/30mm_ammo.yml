@@ -19,7 +19,7 @@
     mayTransfer: true
     whitelist:
       tags:
-      - Cartridge30mm
+      - 30mmCartridge
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -44,7 +44,7 @@
   - type: Tag
     tags:
     - Cartridge
-    - Cartridge30mm
+    - 30mmCartridge
   - type: CartridgeAmmo
     deleteOnSpawn: true
     proto: 30mmBullet

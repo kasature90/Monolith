@@ -18,7 +18,7 @@
     mayTransfer: true
     whitelist:
       tags:
-      - Cartridge57mm
+      - 57mmCartridge
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -43,7 +43,7 @@
   - type: Tag
     tags:
     - Cartridge
-    - Cartridge57mm
+    - 57mmCartridge
   - type: CartridgeAmmo
     deleteOnSpawn: true
     proto: ShipDravonProjectile

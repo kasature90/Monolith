@@ -40,6 +40,20 @@
     lifetime: 10
   - type: TriggerOnCollide
     fixtureID: projectile
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 75
 
 # base end
 

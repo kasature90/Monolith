@@ -98,6 +98,20 @@
     scale: 1, 1
   - type: Appearance
   - type: SpentAmmoVisuals
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 50
 
 # Unguided 50kg bomb end
 
@@ -203,6 +217,20 @@
     scale: 1.3, 1
   - type: Appearance
   - type: SpentAmmoVisuals
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 20
 
 # Zenith end
 
@@ -274,5 +302,19 @@
     scale: 1, 1
   - type: Appearance
   - type: SpentAmmoVisuals
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 10
 
 # Quasar end

@@ -69,4 +69,9 @@
     explosionType: Default
     maxIntensity: 100
     intensitySlope: 3
-    totalIntensity: 2
+    totalIntensity: 4
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+

@@ -107,6 +107,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
       - !type:ExplodeBehavior
+  - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
     maxIntensity: 100
@@ -226,6 +227,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
       - !type:ExplodeBehavior
+  - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
     maxIntensity: 100
@@ -311,6 +313,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
       - !type:ExplodeBehavior
+  - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
     maxIntensity: 100

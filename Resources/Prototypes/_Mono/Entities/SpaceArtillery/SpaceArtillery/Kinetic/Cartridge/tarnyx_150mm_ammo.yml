@@ -76,6 +76,9 @@
     maxIntensity: 100
     intensitySlope: 3
     totalIntensity: 30
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
 
 # EMP end
 
@@ -139,5 +142,8 @@
     maxIntensity: 100
     intensitySlope: 3
     totalIntensity: 30
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
 
 # AP end

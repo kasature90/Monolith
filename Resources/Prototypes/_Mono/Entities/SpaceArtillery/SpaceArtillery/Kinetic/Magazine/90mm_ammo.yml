@@ -56,3 +56,12 @@
   - type: SpentAmmoVisuals
   - type: StaticPrice
     price: 1
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 1
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic

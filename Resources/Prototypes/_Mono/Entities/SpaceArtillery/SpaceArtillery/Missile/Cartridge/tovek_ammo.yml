@@ -33,3 +33,7 @@
     maxIntensity: 100
     intensitySlope: 3
     totalIntensity: 3
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic

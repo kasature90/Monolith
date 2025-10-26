@@ -70,3 +70,6 @@
     maxIntensity: 100
     intensitySlope: 3
     totalIntensity: 0.25
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic

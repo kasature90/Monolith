@@ -7,7 +7,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # Base
 - type: entity
-  id: BaseShieldGenerator
+  id: ShieldGeneratorBase
   parent: BaseMachinePowered
   name: Shield Generator
   abstract: true

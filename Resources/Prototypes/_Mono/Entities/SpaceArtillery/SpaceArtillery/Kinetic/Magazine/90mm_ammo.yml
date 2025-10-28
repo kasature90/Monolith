@@ -48,9 +48,9 @@
     deleteOnSpawn: true
     proto: 90mmBulletArmorPiercing
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
     layers:
-    - state: base
+    - state: 90mm
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals

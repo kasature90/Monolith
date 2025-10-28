@@ -13,9 +13,9 @@
     proto: ShipMissileASM302
     deleteOnSpawn: true
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/mini_rocket.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
     layers:
-    - state: mini-rocket
+    - state: vanyk
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals

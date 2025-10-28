@@ -17,9 +17,9 @@
     proto: ShipMiniRailgunProjectile
     deleteOnSpawn: true
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/charonslug.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
     layers:
-    - state: railgun_slug
+    - state: charonette
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals

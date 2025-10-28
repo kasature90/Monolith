@@ -20,9 +20,9 @@
     proto: ShipBoforsProjectile
     deleteOnSpawn: true
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/150mmtarnyx.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
     layers:
-    - state: 150mm_standard
+    - state: 255mm
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals

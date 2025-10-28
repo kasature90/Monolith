@@ -227,7 +227,7 @@
     damage:
       types:
         Structural: 3500
-        Pierce: 4000
+        Piercing: 4000
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:

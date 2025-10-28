@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 ark1368
+//
+// SPDX-License-Identifier: MPL-2.0
+
 using System.Linq;
 using Content.Server.DeviceLinking.Systems;
 using Content.Server.Weapons.Ranged.Systems;

@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 ark1368
+//
+// SPDX-License-Identifier: MPL-2.0
+
 using Content.Shared.DeviceLinking;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;

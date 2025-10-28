@@ -61,6 +61,7 @@
   - type: ApcPowerReceiver
     powerLoad: 200
   - type: DeviceLinkSource
+    range: 100
     ports:
     - AmmoLoaderLoad
 

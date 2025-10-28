@@ -6,7 +6,7 @@
   id: AmmoLoader
   parent: BaseMachinePowered
   name: ammo loader
-  description: A pneumatic ammunition loading system made by Erebus. Link it to ship artillery with a multitool to transfer ammunition.
+  description: A pneumatic ammunition loading system manufactured by Erebus HI. Link it to ship artillery with a multitool to transfer ammunition. This model supports 8 guns.
   placement:
     mode: SnapgridCenter
   components:
@@ -33,13 +33,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 5000
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 2000
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -57,7 +57,7 @@
   - type: ThrowInsertContainer
     containerId: ammo_loader
   - type: AmmoLoader
-    maxConnections: 3
+    maxConnections: 8
   - type: ApcPowerReceiver
     powerLoad: 200
   - type: DeviceLinkSource
@@ -68,7 +68,7 @@
   id: AmmoLoaderSmall
   parent: AmmoLoader
   name: small ammo loader
-  description: A small pneumatic ammunition loading system made by Erebus. Link it to ship artillery with a multitool to transfer ammunition.
+  description: A pneumatic ammunition loading system manufactured by Erebus HI. Link it to ship artillery with a multitool to transfer ammunition. This model supports only 2 guns, but is more durable.
   components:
   - type: Sprite
     sprite: _Mono/Objects/AmmoLoader/payloadgate_sealed.rsi
@@ -76,3 +76,27 @@
     layers:
     - state: icon
       map: [ "base" ]
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 4000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 1
+  - type: AmmoLoader
+    maxConnections: 2

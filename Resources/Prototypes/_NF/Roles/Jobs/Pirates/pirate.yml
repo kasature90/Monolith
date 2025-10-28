@@ -15,9 +15,9 @@
   name: job-name-pirate
   description: job-description-pirate
   playTimeTracker: JobPirate
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 90000 # 25 hrs - mono
+  #requirements: # Mono - comment out
+  #  - !type:OverallPlaytimeRequirement
+  #    time: 90000 # 25 hrs - mono
   startingGear: PirateNFGear
   alwaysUseSpawner: true
   hideConsoleVisibility: true

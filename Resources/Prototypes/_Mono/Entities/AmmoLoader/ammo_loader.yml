@@ -101,3 +101,4 @@
             max: 1
   - type: AmmoLoader
     maxConnections: 2
+    maxCapacity: 8

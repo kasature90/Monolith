@@ -1,0 +1,61 @@
+- type: nameIdentifierGroup
+  id: NuclearReactor
+  format: name-identifier-format-reactor
+  minValue: 10
+  maxValue: 99
+
+- type: nameIdentifierGroup
+  id: NuclearReactorTSF
+  format: name-identifier-format-reactor-tsf
+  minValue: 10
+  maxValue: 99
+
+- type: nameIdentifierGroup
+  id: NuclearReactorPDV
+  format: name-identifier-format-reactor-pdv
+  minValue: 10
+  maxValue: 99
+
+- type: nameIdentifierGroup
+  id: NuclearReactorUSSP
+  format: name-identifier-format-reactor-ussp
+  minValue: 10
+  maxValue: 99
+
+- type: nameIdentifierGroup
+  id: NuclearReactorCC
+  format: name-identifier-format-reactor-cc
+  minValue: 10
+  maxValue: 99
+
+  # small (-S at the end)
+
+- type: nameIdentifierGroup
+  id: NuclearReactorSmall
+  format: name-identifier-format-reactor-small
+  minValue: 10
+  maxValue: 99
+
+- type: nameIdentifierGroup
+  id: NuclearReactorTSFSmall
+  format: name-identifier-format-reactor-tsf-small
+  minValue: 10
+  maxValue: 99
+
+- type: nameIdentifierGroup
+  id: NuclearReactorPDVSmall
+  format: name-identifier-format-reactor-pdv-small
+  minValue: 10
+  maxValue: 99
+
+- type: nameIdentifierGroup
+  id: NuclearReactorUSSPSmall
+  format: name-identifier-format-reactor-ussp-small
+  minValue: 10
+  maxValue: 99
+
+- type: nameIdentifierGroup
+  id: NuclearReactorCCSmall
+  format: name-identifier-format-reactor-cc-small
+  minValue: 10
+  maxValue: 99

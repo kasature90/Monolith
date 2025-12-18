@@ -89,6 +89,7 @@
     key: lights
 # ES START
   - type: ESSparkOnHit
+    tileFireChance: 0.05
 # ES END
   # Mono
   - type: ShipRepairable

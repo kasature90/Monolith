@@ -7,6 +7,7 @@ namespace Content.Server.Entry
             // ES START
             "ESTimedDespawnLightFade",
             "ESTimedDespawnSpriteFade",
+            "ESGenericPointLightVisualizer",
             // ES END
             "ConstructionGhost",
             "IconSmooth",

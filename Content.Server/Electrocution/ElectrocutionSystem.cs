@@ -371,8 +371,7 @@ public sealed partial class ElectrocutionSystem : SharedElectrocutionSystem
     private bool DoCommonElectrocutionAttempt(EntityUid uid, EntityUid? sourceUid, ref float siemensCoefficient, bool ignoreInsulation = false)
     {
 // ES START
-        //if (sourceUid.HasValue)
-        //    _esSparks.DoSparks(sourceUid.Value, tileFireChance: 0.5);
+        TrySpark(uid, sourceUid);
 // ES END
 
         var attemptEvent = new ElectrocutionAttemptEvent(uid, sourceUid, siemensCoefficient,
@@ -386,6 +385,22 @@ public sealed partial class ElectrocutionSystem : SharedElectrocutionSystem
         siemensCoefficient = attemptEvent.SiemensCoefficient;
         return true;
     }
+// ES START
+    private bool TrySpark(EntityUid uid, EntityUid? sourceUid)
+    {
+        if (!sourceUid.HasValue)
+            return false;
+
+        if (!TryComp<StatusEffectsComponent>(uid, out var statusEffects) ||
+            !_statusEffects.CanApplyEffect(uid, StatusEffectKey, statusEffects))
+        {
+            return false;
+        }
+
+        _esSparks.DoSparks(sourceUid.Value);
+        return true;
+    }
+// ES END
 
     private bool DoCommonElectrocution(EntityUid uid, EntityUid? sourceUid,
         int? shockDamage, TimeSpan time, bool refresh, float siemensCoefficient = 1f,

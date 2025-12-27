@@ -1,6 +1,8 @@
 - type: entity
   id: BaseNuclearReactor
   parent: BaseStructure
+  abstract: true
+  categories: [ HideSpawnMenu ]
   name: nuclear reactor
   description: A nuclear reactor vessel, with slots for fuel rods and other components. Hey wait, didn't one of these explode once?
   components:
@@ -66,8 +68,6 @@
           True: { visible: true }
           False: { visible: false }
   - type: Appearance
-  - type: Physics
-    bodyType: Static
   - type: InteractionOutline
   - type: Rotatable
   - type: Fixtures
@@ -106,6 +106,7 @@
   - type: WirelessNetworkConnection
     range: 200
   - type: DeviceLinkSource
+    range: 50
     ports:
       - NuclearReactorDataSender
   - type: DeviceLinkSink
@@ -119,7 +120,19 @@
     interfaces:
       enum.NuclearReactorUiKey.Key:
         type: NuclearReactorBoundUserInterface
-  #- type: AccessReader # You got a permit for that meltdown? - Mono - comment out
+  - type: GuideHelp
+    guides:
+    - NuclearReactor
+    - Power
+
+# Crew nuclear reactors
+- type: entity
+  id: NuclearReactorCrew
+  parent: BaseNuclearReactor
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  #- type: AccessReader # You got a permit for that meltdown?
   #  access: [["Engineering"]]
   - type: Lock
     unlockOnClick: false
@@ -132,18 +145,27 @@
     guides:
     - NuclearReactor
     - Power
+  - type: WarpPoint
+    location: Nuclear Reactor
+    blacklist:
+      tags:
+      - GhostOnlyWarp
+
+- type: entity
+  id: NuclearReactorNormal
+  parent: NuclearReactorCrew
 
 - type: entity
   id: NuclearReactorEmpty
-  parent: BaseNuclearReactor
+  parent: NuclearReactorCrew
   suffix: Empty
   components:
   - type: NuclearReactor
-    prefab: empty
+    prefab: ReactorPrefabEmpty
 
 - type: entity
   id: NuclearReactorRandom
-  parent: BaseNuclearReactor
+  parent: NuclearReactorCrew
   suffix: Random
   components:
   - type: NuclearReactor
@@ -151,11 +173,11 @@
 
 - type: entity
   id: NuclearReactorMeltdown
-  parent: BaseNuclearReactor
+  parent: NuclearReactorCrew
   suffix: Meltdown
   components:
   - type: NuclearReactor
-    prefab: meltdown
+    prefab: ReactorPrefab7x7Meltdown
 
 - type: entity
   id: NuclearReactorMelted
@@ -163,13 +185,17 @@
   suffix: Melted
   description: A nuclear reactor vessel, long since melted down. It still glows with residual heat and radiation.
   components:
+  - type: Sprite
+    layers:
+    - state: reactorbroken
   - type: NuclearReactor
     melted: true
     meltdownRadiation: 3.5
 
+# Small crew nuclear reactors
 - type: entity
   id: NuclearReactorSmall
-  parent: BaseNuclearReactor
+  parent: NuclearReactorCrew
   name: small nuclear reactor
   components:
   - type: Sprite
@@ -190,7 +216,7 @@
     thermalMass: 302400
     reactorGridWidth: 5
     reactorGridHeight: 5
-    prefab: normal5x5
+    prefab: ReactorPrefab5x5Normal
     inletPos: -1, 1
     inletRot: 180
     outletPos: 1, 1
@@ -212,8 +238,107 @@
   suffix: Melted
   description: A nuclear reactor vessel, long since melted down. It still glows with residual heat and radiation.
   components:
+  - type: Sprite
+    layers:
+    - state: reactorbroken
   - type: NuclearReactor
-    prefab: empty
+    prefab: ReactorPrefabEmpty
+    melted: true
+    meltdownRadiation: 2.5
+
+# Salvage nuclear reactors
+- type: entity
+  id: NuclearReactorSalvage
+  parent: BaseNuclearReactor
+  abstract: true
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NuclearReactorNormalSalvage
+  parent: NuclearReactorSalvage
+  suffix: Salvage
+
+- type: entity
+  id: NuclearReactorEmptySalvage
+  parent: NuclearReactorSalvage
+  suffix: "Empty, Salvage"
+  components:
+  - type: NuclearReactor
+    prefab: ReactorPrefabEmpty
+
+- type: entity
+  id: NuclearReactorRandomSalvage
+  parent: NuclearReactorSalvage
+  suffix: "Random, Salvage"
+  components:
+  - type: NuclearReactor
+    prefab: random
+
+- type: entity
+  id: NuclearReactorMeltedSalvage
+  parent: NuclearReactorEmpty
+  suffix: "Melted, Salvage"
+  description: A nuclear reactor vessel, long since melted down. It still glows with residual heat and radiation.
+  components:
+  - type: Sprite
+    layers:
+    - state: reactorbroken
+  - type: NuclearReactor
+    melted: true
+    meltdownRadiation: 3.5
+
+# Small salvage nuclear reactors
+- type: entity
+  id: NuclearReactorSmallSalvage
+  parent: NuclearReactorSalvage
+  suffix: Salvage
+  name: small nuclear reactor
+  components:
+  - type: Sprite
+    sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/small_nuclear_reactor.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.5,-1.5,1.5,1.5"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+        - HighImpassable
+  - type: NuclearReactor
+    thermalMass: 302400
+    reactorGridWidth: 5
+    reactorGridHeight: 5
+    prefab: ReactorPrefab5x5Normal
+    inletPos: -1, 1
+    inletRot: 180
+    outletPos: 1, 1
+    outletRot: 180
+    arrowPrototype: ReactorSmallFlowArrow
+    gridbounds: [ 12, 11, 0, 0 ]
+
+- type: entity
+  id: NuclearReactorSmallRandomSalvage
+  parent: NuclearReactorSmall
+  suffix: "Random, Salvage"
+  components:
+  - type: NuclearReactor
+    prefab: random
+
+- type: entity
+  id: NuclearReactorSmallMeltedSalvage
+  parent: NuclearReactorSmall
+  suffix: "Melted, Salvage"
+  description: A nuclear reactor vessel, long since melted down. It still glows with residual heat and radiation.
+  components:
+  - type: Sprite
+    layers:
+    - state: reactorbroken
+  - type: NuclearReactor
+    prefab: ReactorPrefabEmpty
     melted: true
     meltdownRadiation: 2.5
 
@@ -222,20 +347,29 @@
   id: NuclearDebrisChunk
   parent: BaseItem
   name: nuclear debris
+  description: You do not see the graphite on the floor. You're in shock. Report to medical.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/nuclear_waste.rsi
+    sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/nuclear_debris.rsi
     layers:
-      - state: nuclear_waste
+      - state: graphite_damaged_0
         map: [ "base" ]
   - type: Item
     size: Huge
-  - type: MultiHandedItem
   - type: RandomSprite
     available:
     - base:
-        nuclear_waste: "" # Allows for multiple debris sprites... even though there's just one
+        graphite_damaged_0: ""
+        graphite_damaged_0_mirrored: ""
+        graphite_damaged_1: ""
+        graphite_damaged_1_mirrored: ""
+        graphite_damaged_2: ""
+        graphite_damaged_2_mirrored: ""
+        graphite_damaged_3: ""
+        graphite_damaged_3_mirrored: ""
+        graphite_damaged_4: ""
+        graphite_damaged_4_mirrored: ""
   - type: RadiationSource
     intensity: 1.6
 
@@ -307,6 +441,7 @@
     - pipe2
     outlets:
     - pipe
+  - type: PipeRestrictOverlap
   - type: Tag
     tags:
       - HideContextMenu

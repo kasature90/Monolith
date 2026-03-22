@@ -303,8 +303,6 @@
   - ContractorClothingOuterHardsuitEVA
   - ContractorClothingOuterHardsuitBasic
   - ContractorClothingOuterHardsuitVoidParamed
-  - ContractorClothingOuterHardsuitUIEngineer
-  - ContractorClothingOuterHardsuitUIPilot
   ## Mono start
   - ContractorClothingOuterHardsuitAtmos
   - ContractorClothingOuterHardsuitCap
@@ -698,7 +696,6 @@
   - ContractorClothingNeckArmbandUNSA
   - ContractorClothingNeckMantleBH # Mono
   - ContractorClothingNeckCloakSanabi # Mono
-  - ContractorClothingNeckUIOvercoat # Mono
 
 - type: loadoutGroup
   id: ContractorPDA

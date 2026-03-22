@@ -92,54 +92,6 @@
   - type: ClothingSlowOnDamageModifier
     modifier: 0.75
 
-- type: entity
-  parent: ClothingShoesBase
-  id: ClothingModsuitBootsRogue
-  name: RX-01 modsuit boots
-  description: Magnetized voidboots to help you avoid slips, trips, and Feds.
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Appearance
-  - type: Sprite
-    sprite: _Mono/Clothing/Shoes/Modsuits/rogue.rsi
-    layers:
-    - state: boots
-    - state: boots-sealed
-      map: [ "sealed" ]
-  - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
-    slots: [ feet ]
-  - type: Tag
-    tags:
-    - WhitelistChameleon
-  - type: SealableClothing
-    sealUpPopup: sealable-clothing-seal-up-boots
-    sealDownPopup: sealable-clothing-seal-down-boots
-  - type: ItemToggle
-    onUse: false
-    onActivate: false
-  - type: ToggleClothing
-    action: ActionToggleMagboots
-    mustEquip: false
-  - type: ComponentToggler
-    components:
-    - type: NoSlip
-    - type: ClothingSpeedModifier
-      walkModifier: 0.95
-      sprintModifier: 0.95
-  - type: Magboots
-    requiresGrid: false
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      shoes:
-      - state: equipped-FEET-sealed
-      shoes-vox:
-      - state: equipped-FEET-sealed-vox
-  - type: ClothingSlowOnDamageModifier
-    modifier: 0.75
-
 # Volta
 - type: entity
   parent: ClothingShoesBase
@@ -223,7 +175,7 @@
     jumpSound: /Audio/Effects/Footsteps/suitstep2.ogg
   - type: ActionGrant
     actions:
-    - ActionGravityJump 
+    - ActionGravityJump
   - type: ItemActionGrant
     actions:
     - ActionGravityJump

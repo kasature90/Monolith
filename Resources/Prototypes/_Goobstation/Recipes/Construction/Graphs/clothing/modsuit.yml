@@ -134,8 +134,6 @@
     entity: ClothingModsuitCaptain
 
 # Mono
-  - node: rogue
-    entity: ClothingModsuitRogue
 
   - node: mercenary
     entity: ClothingModsuitMercenary

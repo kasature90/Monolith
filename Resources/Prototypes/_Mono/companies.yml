@@ -152,14 +152,6 @@
   color: "#666600"
 
 - type: company
-  id: UllmanIndustries
-  form: Protagonist
-  name: Ullman Industries
-  description: ullman-industries-description
-  color: "#52326A"
-  image: /Textures/_Mono/Companies/ullman_industries.png
-
-- type: company
   id: NosskeEienResearchandDevelopment
   form: Protagonist
   name: Nosske-Eien Research and Development
@@ -259,7 +251,7 @@
 - type: company
   id: RedSailCorsairs
   form: Antagonist
-  name: RedSail Corsairs 
+  name: RedSail Corsairs
   description: redsail-corsairs-description
   color: "#930000"
   image: /Textures/_Mono/Companies/redsailcorsairs.png
@@ -282,7 +274,7 @@
   - Ether
   - MapleSilk
   - Spacepeing
-  - zigcraft 
+  - zigcraft
   - burrrkeye
   - enkidienne
   - chugaa

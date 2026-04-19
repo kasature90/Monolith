@@ -33,10 +33,6 @@
     neutronCrossSection: 1.0
     thermalCrossSection: 10
     thermalMass: 420000 # specific heat capacity of steel (420 J/KgK) * mass of component (1000Kg)
-  - type: Food # Blame Abby for making them edible # Mono - blame starch for making it use Food instead of Edible
-    transferAmount: null
-    delay: 30
-    forceFeedDelay: 60
   - type: FlavorProfile
     flavors:
       - metal

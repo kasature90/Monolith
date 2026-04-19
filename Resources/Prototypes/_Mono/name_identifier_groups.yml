@@ -1,30 +1,30 @@
 - type: nameIdentifierGroup
   id: NuclearReactor
-  format: name-identifier-format-reactor
+  prefix: CIV-NFR
   minValue: 10
   maxValue: 99
 
 - type: nameIdentifierGroup
   id: NuclearReactorTSF
-  format: name-identifier-format-reactor-tsf
+  prefix: TSF-NFR
   minValue: 10
   maxValue: 99
 
 - type: nameIdentifierGroup
   id: NuclearReactorPDV
-  format: name-identifier-format-reactor-pdv
+  prefix: PDV-NFR
   minValue: 10
   maxValue: 99
 
 - type: nameIdentifierGroup
   id: NuclearReactorUSSP
-  format: name-identifier-format-reactor-ussp
+  prefix: USSP-NFR
   minValue: 10
   maxValue: 99
 
 - type: nameIdentifierGroup
   id: NuclearReactorCC
-  format: name-identifier-format-reactor-cc
+  prefix: CC-NFR
   minValue: 10
   maxValue: 99
 
@@ -32,30 +32,30 @@
 
 - type: nameIdentifierGroup
   id: NuclearReactorSmall
-  format: name-identifier-format-reactor-small
+  prefix: CIV-NFR-S
   minValue: 10
   maxValue: 99
 
 - type: nameIdentifierGroup
   id: NuclearReactorTSFSmall
-  format: name-identifier-format-reactor-tsf-small
+  prefix: TSF-NFR-S
   minValue: 10
   maxValue: 99
 
 - type: nameIdentifierGroup
   id: NuclearReactorPDVSmall
-  format: name-identifier-format-reactor-pdv-small
+  prefix: PDV-NFR-S
   minValue: 10
   maxValue: 99
 
 - type: nameIdentifierGroup
   id: NuclearReactorUSSPSmall
-  format: name-identifier-format-reactor-ussp-small
+  prefix: USSP-NFR-S
   minValue: 10
   maxValue: 99
 
 - type: nameIdentifierGroup
   id: NuclearReactorCCSmall
-  format: name-identifier-format-reactor-cc-small
+  prefix: CC-NFR-S
   minValue: 10
   maxValue: 99

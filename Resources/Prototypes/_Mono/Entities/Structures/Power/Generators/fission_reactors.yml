@@ -1,7 +1,6 @@
 - type: entity
   id: NuclearReactorUnaffiliated
   parent: NuclearReactorCrew
-  name: CIV-NFR
   suffix: Unaffiliated, Ship Captain Locked
   components:
   - type: NuclearReactor
@@ -14,7 +13,6 @@
 - type: entity
   id: NuclearReactorTSF
   parent: NuclearReactorCrew
-  name: TSF-NFR
   suffix: TSF FTL Locked
   components:
   - type: NuclearReactor
@@ -27,7 +25,6 @@
 - type: entity
   id: NuclearReactorPDV
   parent: NuclearReactorCrew
-  name: PDV-NFR
   suffix: PDV Denasvar Locked
   components:
   - type: NuclearReactor
@@ -41,7 +38,6 @@
 - type: entity
   id: NuclearReactorUSSP
   parent: NuclearReactorCrew
-  name: USSP-NFR
   suffix: USSP Serzhant Locked
   components:
   - type: NuclearReactor
@@ -55,7 +51,6 @@
 - type: entity
   id: NuclearReactorCC
   parent: NuclearReactorCrew
-  name: CC-NFR
   suffix: Overseer Locked
   components:
   - type: NuclearReactor
@@ -72,7 +67,6 @@
 - type: entity
   id: NuclearReactorUnaffiliatedSmall
   parent: NuclearReactorSmall
-  name: CIV-NFR-S
   suffix: Unaffiliated, Ship Captain Locked
   components:
   - type: NuclearReactor
@@ -85,7 +79,6 @@
 - type: entity
   id: NuclearReactorTSFSmall
   parent: NuclearReactorSmall
-  name: TSF-NFR-S
   suffix: TSF FTL Locked
   components:
   - type: NuclearReactor
@@ -98,7 +91,6 @@
 - type: entity
   id: NuclearReactorPDVSmall
   parent: NuclearReactorSmall
-  name: PDV-NFR-S
   suffix: PDV Denasvar Locked
   components:
   - type: NuclearReactor
@@ -112,7 +104,6 @@
 - type: entity
   id: NuclearReactorUSSPSmall
   parent: NuclearReactorSmall
-  name: USSP-NFR-S
   suffix: USSP Serzhant Locked
   components:
   - type: NuclearReactor
@@ -126,7 +117,6 @@
 - type: entity
   id: NuclearReactorCCSmall
   parent: NuclearReactorSmall
-  name: CC-NFR-S
   suffix: Overseer Locked
   components:
   - type: NuclearReactor

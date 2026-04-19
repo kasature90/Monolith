@@ -176,7 +176,7 @@
 - type: material
   id: Cotton
   name: materials-cotton
-  unit: materials-unit-boll
+  unit: materials-unit-ball
   icon: { sprite: Objects/Materials/materials.rsi, state: cotton }
   color: "#cccccc"
   price: 0.01 #Who knew cotton was infinitely more valuable than silk

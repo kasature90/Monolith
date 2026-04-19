@@ -31,14 +31,14 @@ comp-nuclear-reactor-ui-remove-button = REMOVE
 comp-nuclear-reactor-ui-eject-button = EJECT
 
 comp-nuclear-reactor-ui-view-change = CHANGE VIEW
-comp-nuclear-reactor-ui-view-temp = TEMPERATURE
-comp-nuclear-reactor-ui-view-neutron = NEUTRONS
-comp-nuclear-reactor-ui-view-target = TARGETING
+comp-nuclear-reactor-ui-view-temp = VIEWING TEMPERATURE
+comp-nuclear-reactor-ui-view-neutron = VIEWING NEUTRONS
+comp-nuclear-reactor-ui-view-target = VIEWING TARGETING
 
 comp-nuclear-reactor-ui-status-panel = REACTOR STATUS:
-comp-nuclear-reactor-ui-reactor-temp = INTERNAL TEMPERATURE
-comp-nuclear-reactor-ui-reactor-rads = AMBIENT RADIATION
-comp-nuclear-reactor-ui-reactor-therm = THERMAL ENERGY
+comp-nuclear-reactor-ui-reactor-temp = INTRNL. TEMP.
+comp-nuclear-reactor-ui-reactor-rads = AMB. RADIATION
+comp-nuclear-reactor-ui-reactor-therm = THRML. ENERGY
 comp-nuclear-reactor-ui-reactor-control = CONTROL RODS
 comp-nuclear-reactor-ui-therm-format = { POWERWATTS($power) }t
 

@@ -9,37 +9,37 @@ reactor-unanchor-warning = You cannot unanchor the nuclear reactor while it's no
 reactor-anchor-warning = Invalid anchor position.
 
 ### Messages
-reactor-smoke-start-message = ALERT: The {$owner} has reached a dangerous temperature: {$temperature}K. Intervene immediately to prevent meltdown.
-reactor-smoke-stop-message = The {$owner} has cooled below dangerous temperature. Have a nice day.
-reactor-fire-start-message = ALERT: The {$owner} has reached CRITICAL temperature: {$temperature}K. MELTDOWN IMMINENT.
-reactor-fire-stop-message = The {$owner} has cooled below critical temperature. Meltdown averted.
+reactor-smoke-start-message = DANGER!: {$owner} AT DANGEROUS OPERATING TEMPERATURE! OPERATING TEMPERATURE: {$temperature}K. IMMEDIATE INTERVENTION RECOMMENDED!
+reactor-smoke-stop-message = {$owner} has returned to nominal operating temperature.
+reactor-fire-start-message = WARNING! WARNING!: {$owner} AT CRITICAL OPERATING! OPERATING TEMPERATURE: {$temperature}K. REACTOR MELTDOWN IMMINENT!
+reactor-fire-stop-message = {$owner} has returned to nominal operating temperature. Core meltdown averted.
 
 reactor-temperature-dangerous-message = The {$owner} is at dangerous temperature: {$temperature}K.
 reactor-temperature-critical-message = The {$owner} is at critical temperature: {$temperature}K.
 reactor-temperature-cooling-message = The {$owner} is cooling: {$temperature}K.
 
-reactor-melting-announcement = A nuclear reactor aboard the station is beginning to meltdown. Evacuation of the surrounding area is advised.
-reactor-melting-announcement-sender = Nuclear Emergency
+reactor-melting-announcement = NUCLEAR REACTOR MELTDOWN IMMINENT! IMMEDIATE EVACUATION RECOMMENDED!
+reactor-melting-announcement-sender = NUCLEAR EMERGENCY
 
-reactor-meltdown-announcement = A nuclear reactor aboard the station has catastrophically overloaded. Radioactive debris, nuclear fallout, and coolant fires are likely. Immediate evacuation of the surrounding area is strongly advised.
-reactor-meltdown-announcement-sender = Nuclear Meltdown
+reactor-meltdown-announcement = NUCLEAR REACTOR MELTDOWN HAS BEGUN! IMMEDIATE EVACUATION REQUIRED!
+reactor-meltdown-announcement-sender = NUCLEAR MELTDOWN
 
 ### UI
-comp-nuclear-reactor-ui-locked = Locked
-comp-nuclear-reactor-ui-insert-button = Insert
-comp-nuclear-reactor-ui-remove-button = Remove
-comp-nuclear-reactor-ui-eject-button = Eject
+comp-nuclear-reactor-ui-locked = LOCKED
+comp-nuclear-reactor-ui-insert-button = INSERT
+comp-nuclear-reactor-ui-remove-button = REMOVE
+comp-nuclear-reactor-ui-eject-button = EJECT
 
-comp-nuclear-reactor-ui-view-change = Change View
-comp-nuclear-reactor-ui-view-temp = Temperature View
-comp-nuclear-reactor-ui-view-neutron = Neutron View
-comp-nuclear-reactor-ui-view-target = Target View
+comp-nuclear-reactor-ui-view-change = CHANGE VIEW
+comp-nuclear-reactor-ui-view-temp = TEMPERATURE
+comp-nuclear-reactor-ui-view-neutron = NEUTRONS
+comp-nuclear-reactor-ui-view-target = TARGETING
 
-comp-nuclear-reactor-ui-status-panel = Reactor Status
-comp-nuclear-reactor-ui-reactor-temp = Temperature
-comp-nuclear-reactor-ui-reactor-rads = Radiation
-comp-nuclear-reactor-ui-reactor-therm = Thermal Power
-comp-nuclear-reactor-ui-reactor-control = Control Rods
+comp-nuclear-reactor-ui-status-panel = REACTOR STATUS:
+comp-nuclear-reactor-ui-reactor-temp = INTERNAL TEMPERATURE
+comp-nuclear-reactor-ui-reactor-rads = AMBIENT RADIATION
+comp-nuclear-reactor-ui-reactor-therm = THERMAL ENERGY
+comp-nuclear-reactor-ui-reactor-control = CONTROL RODS
 comp-nuclear-reactor-ui-therm-format = { POWERWATTS($power) }t
 
 comp-nuclear-reactor-ui-footer-left = Danger: high radiation.

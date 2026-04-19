@@ -1,0 +1,137 @@
+- type: entity
+  id: NuclearReactorUnaffiliated
+  parent: NuclearReactorCrew
+  name: CIV-NFR
+  suffix: Unaffiliated, Ship Captain Locked
+  components:
+  - type: NuclearReactor
+    prefab: ReactorPrefab7x7Normal
+  - type: NameIdentifier
+    group: NuclearReactor
+  - type: AccessReader
+    access: [["Captain"]]
+
+- type: entity
+  id: NuclearReactorTSF
+  parent: NuclearReactorCrew
+  name: TSF-NFR
+  suffix: TSF FTL Locked
+  components:
+  - type: NuclearReactor
+    prefab: ReactorPrefab7x7Normal
+  - type: NameIdentifier
+    group: NuclearReactorTSF
+  - type: AccessReader
+    access: [["Armory"]]
+
+- type: entity
+  id: NuclearReactorPDV
+  parent: NuclearReactorCrew
+  name: PDV-NFR
+  suffix: PDV Denasvar Locked
+  components:
+  - type: NuclearReactor
+    prefab: ReactorPrefab7x7Normal
+  - type: NameIdentifier
+    group: NuclearReactorPDV
+  - type: AccessReader
+    access: [["PDVCommand"]]
+
+# No use really, but just in case.
+- type: entity
+  id: NuclearReactorUSSP
+  parent: NuclearReactorCrew
+  name: USSP-NFR
+  suffix: USSP Serzhant Locked
+  components:
+  - type: NuclearReactor
+    prefab: ReactorPrefab7x7Normal
+  - type: NameIdentifier
+    group: NuclearReactorUSSP
+  - type: AccessReader
+    access: [["USSPHigh"]]
+
+# No use really, but just in case.
+- type: entity
+  id: NuclearReactorCC
+  parent: NuclearReactorCrew
+  name: CC-NFR
+  suffix: Overseer Locked
+  components:
+  - type: NuclearReactor
+    prefab: ReactorPrefab7x7Normal
+  - type: NameIdentifier
+    group: NuclearReactorCC
+  - type: AccessReader
+    access: [["HeadOfPersonnel"]]
+
+# Small reactors
+# 5x5
+# For use in slightly less-capital-ey ships or small POIs I guess.
+
+- type: entity
+  id: NuclearReactorUnaffiliatedSmall
+  parent: NuclearReactorSmall
+  name: CIV-NFR-S
+  suffix: Unaffiliated, Ship Captain Locked
+  components:
+  - type: NuclearReactor
+    prefab: ReactorPrefab5x5Normal
+  - type: NameIdentifier
+    group: NuclearReactorSmall
+  - type: AccessReader
+    access: [["Captain"]]
+
+- type: entity
+  id: NuclearReactorTSFSmall
+  parent: NuclearReactorSmall
+  name: TSF-NFR-S
+  suffix: TSF FTL Locked
+  components:
+  - type: NuclearReactor
+    prefab: ReactorPrefab5x5Normal
+  - type: NameIdentifier
+    group: NuclearReactorTSFSmall
+  - type: AccessReader
+    access: [["Armory"]]
+
+- type: entity
+  id: NuclearReactorPDVSmall
+  parent: NuclearReactorSmall
+  name: PDV-NFR-S
+  suffix: PDV Denasvar Locked
+  components:
+  - type: NuclearReactor
+    prefab: ReactorPrefab5x5Normal
+  - type: NameIdentifier
+    group: NuclearReactorPDVSmall
+  - type: AccessReader
+    access: [["PDVCommand"]]
+
+# No use really, but just in case.
+- type: entity
+  id: NuclearReactorUSSPSmall
+  parent: NuclearReactorSmall
+  name: USSP-NFR-S
+  suffix: USSP Serzhant Locked
+  components:
+  - type: NuclearReactor
+    prefab: ReactorPrefab5x5Normal
+  - type: NameIdentifier
+    group: NuclearReactorUSSPSmall
+  - type: AccessReader
+    access: [["USSPHigh"]]
+
+# No use really, but just in case.
+- type: entity
+  id: NuclearReactorCCSmall
+  parent: NuclearReactorSmall
+  name: CC-NFR-S
+  suffix: Overseer Locked
+  components:
+  - type: NuclearReactor
+    prefab: ReactorPrefab5x5Normal
+  - type: NameIdentifier
+    group: NuclearReactorCCSmall
+  - type: AccessReader
+    access: [["HeadOfPersonnel"]]

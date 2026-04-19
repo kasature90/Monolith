@@ -70,7 +70,7 @@
   name: uranium fuel rod
   components:
   - type: ReactorPart
-    material: UraniumFissile # Mono
+    material: Uranium
 
 - type: entity
   id: PlutoniumReactorFuelRod

@@ -224,14 +224,14 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -28
+    minAngle: 0
+    maxAngle: 0
   - type: Gun
-    minAngle: 24
-    maxAngle: 36
-    angleIncrease: 3
-    angleDecay: 34
-    fireRate: 7 # 420 rpm
+    minAngle: 0 # forcewield anyways
+    maxAngle: 12
+    angleIncrease: 1
+    angleDecay: 12
+    fireRate: 8 # same as L6, but more accurate and heavier
     selectedMode: FullAuto
     availableModes:
     - SemiAuto
@@ -288,7 +288,7 @@
   - type: Appearance
   - type: Clothing
     sprite: _Mono/Objects/Weapons/Guns/LMGs/grizzly/Grizzly-inhands.rsi
-    unequipDelay: 4
+    unequipDelay: 1
   - type: StaticPrice
     price: 2500
   - type: GunRequiresWield
@@ -296,14 +296,14 @@
     id: ExperimentalFactionWeapon
   - type: HeldSpeedModifier
   - type: ClothingSpeedModifier
-    sprintModifier: 0.9
-    walkModifier: 0.9
+    sprintModifier: 0.95
+    walkModifier: 0.95
   - type: SpeedModifiedOnWield
-    walkModifier: 0.6
-    sprintModifier: 0.5
+    walkModifier: 0.5
+    sprintModifier: 0.4
   - type: WieldDelay
-    baseDelay: 2
-    modifiedDelay: 2
+    baseDelay: 1.2
+    modifiedDelay: 1.2
     preventFiring: true
 
 - type: entity
@@ -333,7 +333,7 @@
     maxAngle: 40
     angleIncrease: 7
     angleDecay: 28
-    fireRate: 5 # 300 rpm
+    fireRate: 6 # 360 rpm
     selectedMode: FullAuto
     availableModes:
     - SemiAuto
@@ -377,11 +377,15 @@
     price: 2500
   - type: SpeedModifiedOnWield
     walkModifier: 0.6
-    sprintModifier: 0.5 # lower firerate than grizzly but more accurate and more damage
+    sprintModifier: 0.5 # lower firerate than grizzly but more accurate and bit more damage
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 3
     pvsIncrease: 0.3
+  - type: WieldDelay
+    baseDelay: 0.8
+    modifiedDelay: 0.8
+    preventFiring: true
 
 - type: entity
   name: Cyborg minigun

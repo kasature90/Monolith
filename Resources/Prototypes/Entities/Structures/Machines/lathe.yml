@@ -250,6 +250,7 @@
     - AtmosTools
     - ResearchedExplosives # Mono
     # - EngineeringWeapons # Frontier
+    - ReactorPartsBasic # Mono - FH NFR port
     - Chemistry
     - Janitor
     - Instruments

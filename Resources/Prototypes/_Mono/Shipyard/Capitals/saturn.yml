@@ -15,7 +15,7 @@
   price: 1540950
   purchasable: false # voucher only
   category: Large
-  group: BlackMarket
+  group: PDV
   access: Pirate
   shuttlePath: /Maps/_Mono/Shuttles/Capitals/saturn.yml
   guidebookPage: Null

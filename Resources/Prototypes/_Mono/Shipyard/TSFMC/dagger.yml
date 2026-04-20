@@ -1,33 +1,33 @@
 #Author: Starch(!)
 
 - type: vessel
-  id: Tumour
+  id: Dagger
   parent: BaseVesselAntag
-  name: TSF-SKR Tumour
-  description: A ugly potato of a carrier. Little armament to defend itself, but carries lathes to support its fighters and other ships.
-  price: 68250
+  name: TSF-SKR Dagger
+  description: Straight from the shipyards of Sol, this ship is equipped with a mass driver as its main armament for long-range fire support.
+  price: 120000
   category: Medium
-  group: Security
+  group: TSFMC
   access: Security
-  shuttlePath: /Maps/_Mono/Shuttles/Nfsd/tumour.yml
+  shuttlePath: /Maps/_Mono/Shuttles/TSFMC/dagger.yml
   guidebookPage: Null
   class:
-  - Pursuit
   - Patrol
+  - Pursuit
   engine:
-  - Uranium
+  - AME
 
 - type: gameMap
-  id: Tumour
-  mapName: 'Tumour'
-  mapPath: /Maps/_Mono/Shuttles/Nfsd/tumour.yml
+  id: Dagger
+  mapName: 'Dagger'
+  mapPath: /Maps/_Mono/Shuttles/TSFMC/dagger.yml
   minPlayers: 0
   stations:
-    Tumour:
+    Dagger:
       stationProto: StandardFrontierSecurityVessel
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'Tumour TSF{1}'
+        mapNameTemplate: 'Dagger TSF{1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'

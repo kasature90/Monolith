@@ -7,9 +7,9 @@
   description: One of salvage ships you'll see from the Phaethon Dynasty. This baby is capable of Xenoarcheology and salvage work.
   price: 62500
   category: Small
-  group: BlackMarket
+  group: PDV
   access: Pirate
-  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/spyglassmk2.yml
+  shuttlePath: /Maps/_Mono/Shuttles/PDV/spyglassmk2.yml
   guidebookPage: Null
   class:
   - Pirate
@@ -20,7 +20,7 @@
 - type: gameMap
   id: SpyglassMKII
   mapName: 'PDV Spyglass MKII'
-  mapPath: /Maps/_Mono/Shuttles/BlackMarket/spyglassmk2.yml
+  mapPath: /Maps/_Mono/Shuttles/PDV/spyglassmk2.yml
   minPlayers: 0
   stations:
     SpyglassMKII:

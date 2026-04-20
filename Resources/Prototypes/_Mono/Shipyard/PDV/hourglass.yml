@@ -1,34 +1,32 @@
-#Author: Starch(!)
+#Author: Marklyfied on Github, [I'M NOT SURE] on Discord.
 
 - type: vessel
-  id: Scorpion
+  id: Hourglass
   parent: BaseVesselAntag
-  name: PDV Scorpion
-  description: An unusual variant from the same shipyards manufacturing Anacondas, using a mix of missile pods and 2 large-caliber cannons.
-  price: 113200
+  name: BSB Hourglass
+  description: The Hourglass is a bulky slow ship with two 90mm autocannons in the front. It has a medbay and a kitchen. Comes with FTL.
+  price: 120000 #96k appraisegrid
   category: Medium
-  group: BlackMarket
+  group: PDV
   access: Pirate
-  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/scorpion.yml
+  shuttlePath: /Maps/_Mono/Shuttles/PDV/hourglass.yml
   guidebookPage: Null
   class:
   - Pirate
-  - Pursuit
-  - Corvette
   engine:
   - Uranium
 
 - type: gameMap
-  id: Scorpion
-  mapName: 'PDV Scorpion'
-  mapPath: /Maps/_Mono/Shuttles/BlackMarket/scorpion.yml
+  id: Hourglass
+  mapName: 'BSB Hourglass'
+  mapPath: /Maps/_Mono/Shuttles/PDV/hourglass.yml
   minPlayers: 0
   stations:
-    Scorpion:
+    Hourglass:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Scorpion PDV{1}'
+          mapNameTemplate: 'Hourglass PDV{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

@@ -8,9 +8,9 @@
   limit: 2
   price: 285580
   category: Large
-  group: BlackMarket
+  group: PDV
   access: Pirate
-  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/vulture.yml
+  shuttlePath: /Maps/_Mono/Shuttles/PDV/vulture.yml
   guidebookPage: Null
   class:
   - Pirate
@@ -21,7 +21,7 @@
 - type: gameMap
   id: Vulture
   mapName: 'Vulture'
-  mapPath: /Maps/_Mono/Shuttles/BlackMarket/vulture.yml
+  mapPath: /Maps/_Mono/Shuttles/PDV/vulture.yml
   minPlayers: 0
   stations:
     Vulture:

@@ -69,10 +69,10 @@
     - map: ["computerLayerKeys"]
       state: telesci_key
   - type: ActivatableUI
-    key: enum.ShipyardConsoleUiKey.Security
+    key: enum.ShipyardConsoleUiKey.TSFMC
   - type: UserInterface
     interfaces:
-      enum.ShipyardConsoleUiKey.Security:
+      enum.ShipyardConsoleUiKey.TSFMC:
         type: ShipyardConsoleBoundUserInterface
   - type: ShipyardConsole
     shipyardChannel: Nfsd
@@ -96,10 +96,10 @@
     - map: ["computerLayerKeys"]
       state: telesci_key
   - type: ActivatableUI
-    key: enum.ShipyardConsoleUiKey.Security
+    key: enum.ShipyardConsoleUiKey.TSFMC
   - type: UserInterface
     interfaces:
-      enum.ShipyardConsoleUiKey.Security:
+      enum.ShipyardConsoleUiKey.TSFMC:
         type: ShipyardConsoleBoundUserInterface
   - type: ShipyardConsole
     shipyardChannel: Nfsd
@@ -143,10 +143,10 @@
   description: Used to buy ships not available through other means.
   components:
   - type: ActivatableUI
-    key: enum.ShipyardConsoleUiKey.BlackMarket
+    key: enum.ShipyardConsoleUiKey.PDV
   - type: UserInterface
     interfaces:
-      enum.ShipyardConsoleUiKey.BlackMarket:
+      enum.ShipyardConsoleUiKey.PDV:
         type: ShipyardConsoleBoundUserInterface
   - type: Sprite
     sprite: _NF/Structures/Machines/computers.rsi

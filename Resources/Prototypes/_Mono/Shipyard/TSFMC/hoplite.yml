@@ -6,9 +6,9 @@
   description: A patrol craft meant to intercept smugglers and light enemy craft with powerful engines and EMPs. It is equipped with 2 RUBICON, two plasma pulsers and two MARAUDER plasma cannons
   price: 78500
   category: Small
-  group: Security
+  group: TSFMC
   access: Security
-  shuttlePath: /Maps/_Mono/Shuttles/Nfsd/hoplite.yml
+  shuttlePath: /Maps/_Mono/Shuttles/TSFMC/hoplite.yml
   guidebookPage: Null
   class:
   - Patrol
@@ -19,7 +19,7 @@
 - type: gameMap
   id: Hoplite
   mapName: 'Hoplite'
-  mapPath: /Maps/_Mono/Shuttles/Nfsd/hoplite.yml
+  mapPath: /Maps/_Mono/Shuttles/TSFMC/hoplite.yml
   minPlayers: 0
   stations:
     Hoplite:

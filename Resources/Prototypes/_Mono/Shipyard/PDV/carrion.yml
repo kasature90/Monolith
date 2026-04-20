@@ -7,9 +7,9 @@
   description: A fighter armed with 4x 90mm DRAVON autocannons and a GPOB-L bomb bay, built for reconnaissance and extreme-speed skirmishing.
   price: 29000 #Appraised at 26000-ish
   category: Small
-  group: BlackMarket
+  group: PDV
   access: Pirate
-  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/carrion.yml
+  shuttlePath: /Maps/_Mono/Shuttles/PDV/carrion.yml
   guidebookPage: Null
   class:
   - Pirate
@@ -20,7 +20,7 @@
 - type: gameMap
   id: Carrion
   mapName: 'ELH Carrion'
-  mapPath: /Maps/_Mono/Shuttles/BlackMarket/carrion.yml
+  mapPath: /Maps/_Mono/Shuttles/PDV/carrion.yml
   minPlayers: 0
   stations:
     Carrion:

@@ -9,9 +9,9 @@
   description: A durable ship built for sustained close-range engagements, equipped with 4 Cerberus plasma scattercannons and 2 Marauders to melt ships away.
   price: 140850
   category: Medium
-  group: Security
+  group: TSFMC
   access: Security
-  shuttlePath: /Maps/_Mono/Shuttles/Nfsd/tarantula.yml
+  shuttlePath: /Maps/_Mono/Shuttles/TSFMC/tarantula.yml
   guidebookPage: Null
   class:
   - Patrol
@@ -22,7 +22,7 @@
 - type: gameMap
   id: Tarantula
   mapName: 'Tarantula'
-  mapPath: /Maps/_Mono/Shuttles/Nfsd/tarantula.yml
+  mapPath: /Maps/_Mono/Shuttles/TSFMC/tarantula.yml
   minPlayers: 0
   stations:
     Tarantula:

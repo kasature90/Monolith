@@ -1,33 +1,33 @@
 #Author: Starch(!)
 
 - type: vessel
-  id: Aldebaran
+  id: Spica
   parent: BaseVesselAntag
-  name: TSF-PIN Aldebaran
-  description: A frontal up-puncher corvette equipped with two cyrexas for long range engagements and torpedoes for heavier targets and close range.
-  price: 160200
-  category: Medium
-  group: Security
+  name: TSF-PIN Spica
+  description: A beefed up hull and the light frontline mainstay of the TSF fleets. A suprising weapons package in a small frame, made to engage larger targets.
+  price: 117000
+  category: Small
+  group: TSFMC
   access: Security
-  shuttlePath: /Maps/_Mono/Shuttles/Nfsd/aldebaran.yml
+  shuttlePath: /Maps/_Mono/Shuttles/TSFMC/spica.yml
   guidebookPage: Null
   class:
   - Patrol
-  - Corvette
+  - Pursuit
   engine:
-  - Plasma
+  - Bananium
 
 - type: gameMap
-  id: Aldebaran
-  mapName: 'Aldebaran'
-  mapPath: /Maps/_Mono/Shuttles/Nfsd/aldebaran.yml
+  id: Spica
+  mapName: 'Spica'
+  mapPath: /Maps/_Mono/Shuttles/TSFMC/spica.yml
   minPlayers: 0
   stations:
-    Aldebaran:
+    Spica:
       stationProto: StandardFrontierSecurityVessel
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'Aldebaran TSF{1}'
+        mapNameTemplate: 'Spica TSF{1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'
@@ -35,4 +35,3 @@
         availableJobs:
           Deputy: [ 0, 0 ]
           TsfBorg: [ 0, 0 ]
-

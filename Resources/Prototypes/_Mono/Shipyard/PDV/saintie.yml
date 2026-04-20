@@ -9,8 +9,8 @@
   price: 345000
   purchasable: false # Voucher only
   category: Large
-  group: BlackMarket
-  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/saintie.yml
+  group: PDV
+  shuttlePath: /Maps/_Mono/Shuttles/PDV/saintie.yml
   guidebookPage: Null
   class:
   - Pirate
@@ -21,7 +21,7 @@
 - type: gameMap
   id: Saintie
   mapName: 'Saintie'
-  mapPath: /Maps/_Mono/Shuttles/BlackMarket/saintie.yml
+  mapPath: /Maps/_Mono/Shuttles/PDV/saintie.yml
   minPlayers: 0
   stations:
     Saintie:

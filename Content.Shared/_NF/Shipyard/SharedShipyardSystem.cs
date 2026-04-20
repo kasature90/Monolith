@@ -12,9 +12,9 @@ namespace Content.Shared._NF.Shipyard;
 public enum ShipyardConsoleUiKey : byte
 {
     Shipyard,
-    Security,
+    TSFMC, // Mono
     Syndicate,
-    BlackMarket,
+    PDV, // Mono
     Expedition,
     Scrap,
     Sr,

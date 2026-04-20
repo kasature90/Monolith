@@ -9,9 +9,9 @@
   limit: 2
   purchasable: false
   category: Medium
-  group: BlackMarket
+  group: PDV
   access: Pirate
-  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/motleyanne.yml
+  shuttlePath: /Maps/_Mono/Shuttles/PDV/motleyanne.yml
   guidebookPage: ShipyardMotleyAnne
   class:
   - Pursuit
@@ -22,7 +22,7 @@
 - type: gameMap
   id: MotleyAnne
   mapName: 'PDV Motley Anne'
-  mapPath: /Maps/_Mono/Shuttles/BlackMarket/motleyanne.yml
+  mapPath: /Maps/_Mono/Shuttles/PDV/motleyanne.yml
   minPlayers: 0
   stations:
     MotleyAnne:

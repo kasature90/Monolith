@@ -7,9 +7,9 @@
   description: A long ranged design using 2 Hydra 220mm Cannons and 4 AK570 57mm autocannons, stand firm and sink the invaders.
   price: 95500
   category: Medium
-  group: BlackMarket
+  group: PDV
   access: Pirate
-  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/bastion.yml
+  shuttlePath: /Maps/_Mono/Shuttles/PDV/bastion.yml
   guidebookPage: Null
   class:
   - Pirate
@@ -19,7 +19,7 @@
 - type: gameMap
   id: Bastion
   mapName: 'PDV Bastion'
-  mapPath: /Maps/_Mono/Shuttles/BlackMarket/bastion.yml
+  mapPath: /Maps/_Mono/Shuttles/PDV/bastion.yml
   minPlayers: 0
   stations:
     Bastion:

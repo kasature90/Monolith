@@ -8,9 +8,9 @@
   limit: 3
   price: 280650
   category: Large
-  group: BlackMarket
+  group: PDV
   access: Pirate
-  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/europa.yml
+  shuttlePath: /Maps/_Mono/Shuttles/PDV/europa.yml
   guidebookPage: Null
   class:
   - Pirate
@@ -21,7 +21,7 @@
 - type: gameMap
   id: Europa
   mapName: 'PDV Europa'
-  mapPath: /Maps/_Mono/Shuttles/BlackMarket/europa.yml
+  mapPath: /Maps/_Mono/Shuttles/PDV/europa.yml
   minPlayers: 0
   stations:
     Europa:

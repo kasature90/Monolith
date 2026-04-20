@@ -1,9 +1,7 @@
 - type: technology
   id: NuclearPowerGeneration
   name: research-technology-nuclear-power
-  icon:
-    sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/reactor_parts.rsi
-    state: default_rod
+  entityIcon: NuclearReactorSmall # Mono
   discipline: Industrial
   tier: 1
   cost: 7500
@@ -28,14 +26,12 @@
   - AdvancedParts # Mono
   #radioChannels:
   #- Engineering
-  position: -1, 8 # Mono
+  position: -3, 4 # Mono
 
 - type: technology
   id: NuclearPowerRecycling
   name: research-technology-nuclear-recycling
-  icon:
-    sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/reactor_parts.rsi
-    state: nuclear_waste
+  entityIcon: NuclearCentrifuge # Mono
   discipline: Industrial
   tier: 2
   cost: 12500
@@ -53,4 +49,4 @@
   - NuclearPowerGeneration
   #radioChannels:
   #- Engineering
-  position: -1, 7 # Mono
+  position: -3, 5 # Mono

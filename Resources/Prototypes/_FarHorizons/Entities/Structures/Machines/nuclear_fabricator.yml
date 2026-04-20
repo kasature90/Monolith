@@ -2,14 +2,16 @@
   id: NuclearFabricator
   parent: BaseLatheLube
   name: nuclear fabricator
-  description: An ISFNC-certified fabricator for making components certified for use in nuclear reactors. Its a lot of bullshit.
+  description: An ISFNC-certified fabricator for making components certified for use in nuclear reactors. Its a load of bullshit.
   components:
   - type: Sprite
-    sprite: Structures/Machines/protolathe.rsi
+    sprite: _Mono/Structures/Machines/nfr_assembler.rsi # Mono
     snapCardinals: true
+    offset: 0.5, 0
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: rad-paint # Mono
     - state: unlit
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
@@ -52,3 +54,14 @@
     containers:
     - blueprint
   - type: RequireProjectileTarget # Mono
+  - type: Fixtures # Mono
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,1.3,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer

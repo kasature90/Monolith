@@ -72,7 +72,7 @@
 - type: latheRecipe
   parent: BaseToolRecipe
   id: CrowbarGreen
-  result: CrowbarGreen
+  result: Crowbar #Green - Mono
   materials:
     Steel: 200
 

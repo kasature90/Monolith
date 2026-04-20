@@ -22,7 +22,7 @@
         prob: 0.15
       - id: HarmonicaInstrument
         prob: 0.3 #Mono: 0.15 >> 0.3
- 
+
 - type: entity
   id: ToolboxElectricalFilled
   name: electrical toolbox
@@ -32,7 +32,7 @@
   - type: StorageFill
     contents:
       - id: Screwdriver
-      - id: CrowbarOrange
+      - id: Crowbar #Orange # Mono - normal crowbar
       - id: Wirecutter
       - id: Multitool #Mono
       - id: CableApcStack10
@@ -54,7 +54,7 @@
   - type: StorageFill
     contents:
       - id: Screwdriver
-      - id: CrowbarOrange
+      - id: Crowbar #Orange # Mono - normal crowbar
       - id: Wirecutter
       - id: Multitool #Mono
       - id: CableApcStack10
@@ -96,7 +96,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: CrowbarOrange
+      - id: Crowbar #Orange # Mono - normal crowbar
       - id: Wrench
       - id: Welder
       - id: Wirecutter

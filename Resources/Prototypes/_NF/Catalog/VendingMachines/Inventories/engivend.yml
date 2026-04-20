@@ -2,7 +2,7 @@
   id: EngiVendPOIInventory
   startingInventory:
     ClothingHandsGlovesColorYellow: 4294967295 # Infinite
-    CrowbarYellow: 4294967295 # Infinite
+    Crowbar: 4294967295 # Infinite # Mono - normal crowbar
     MaintenanceJack: 4294967295 # Infinite
     Multitool: 4294967295 # Infinite
     ClothingEyesGlassesMeson: 4294967295 # Infinite

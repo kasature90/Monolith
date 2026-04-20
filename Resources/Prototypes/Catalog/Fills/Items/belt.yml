@@ -19,7 +19,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: CrowbarYellow
+      - id: Crowbar #Yellow # mono - normal crowbar
       - id: Wrench
       - id: Screwdriver
       - id: Wirecutter

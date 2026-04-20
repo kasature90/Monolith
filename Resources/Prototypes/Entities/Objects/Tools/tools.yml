@@ -26,7 +26,7 @@
       map: [ "enum.DamageStateVisualLayers.Base" ]
     - state: cutters-cutty-thingy
   - type: MeleeWeapon
-    wideAnimationRotation: -90
+    wideAnimationRotation: -135
     damage:
       types:
         Piercing: 8
@@ -44,7 +44,7 @@
         cutters: Rainbow
   - type: Item
     sprite: Objects/Tools/wirecutters.rsi
-    storedRotation: -90
+    storedRotation: -45 # Mono
   - type: ToolTileCompatible
   - type: PhysicalComposition
     materialComposition:
@@ -95,9 +95,9 @@
     - state: screwdriver-screwybits
   - type: Item
     sprite: Objects/Tools/screwdriver.rsi
-    storedRotation: -90
+    storedRotation: -45 # Mono
   - type: MeleeWeapon
-    wideAnimationRotation: -90
+    wideAnimationRotation: -135
     attackRate: 1.2
     damage:
       types:
@@ -157,6 +157,7 @@
     state: icon
   - type: Item
     sprite: Objects/Tools/wrench.rsi
+    storedRotation: 45 # Mono
     #storedSprite:
     #  sprite: Objects/Tools/wrench.rsi # Mono - comment out
     #  state: storage

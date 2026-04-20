@@ -68,7 +68,8 @@
   components:
   - type: Sprite
     state: icon
-  #- type: Item
+  - type: Item
+    storedRotation: -45 # Mono
   #  storedSprite:
   #    sprite: Objects/Tools/crowbar.rsi # Mono - comment out
   #    state: storage

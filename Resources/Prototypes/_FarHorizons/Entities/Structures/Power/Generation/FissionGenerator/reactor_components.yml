@@ -132,7 +132,7 @@
     neutronCrossSection: 2.0
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
+      Steel: 100
 
 - type: entity
   id: BohrumReactorControlRod
@@ -143,8 +143,8 @@
     material: Bohrum
   - type: PhysicalComposition
     materialComposition:
-      Steel: 500
-      Plasteel: 250
+      Steel: 250
+      Plasteel: 50
 
 - type: entity
   id: SteelReactorControlRod
@@ -155,7 +155,7 @@
     material: Steel
   - type: PhysicalComposition
     materialComposition:
-      Steel: 1500
+      Steel: 500
 
 - type: entity
   id: GoldReactorControlRod
@@ -166,8 +166,8 @@
     material: Gold
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Gold: 500
+      Steel: 50
+      Gold: 100
 
 - type: entity
   id: SilverReactorControlRod
@@ -178,8 +178,8 @@
     material: Silver
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Silver: 500
+      Steel: 50
+      Silver: 100
 
 - type: entity
   id: BrassReactorControlRod
@@ -190,8 +190,8 @@
     material: Brass
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Brass: 500
+      Steel: 50
+      Brass: 100
 
 - type: entity
   id: PlasteelReactorControlRod
@@ -202,8 +202,8 @@
     material: Plasteel
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Plasteel: 500
+      Steel: 50
+      Plasteel: 100
 
 - type: entity
   id: GlassReactorControlRod
@@ -214,8 +214,8 @@
     material: Glass
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Glass: 500
+      Steel: 50
+      Glass: 100
 
 - type: entity
   id: PlasmaGlassReactorControlRod
@@ -226,8 +226,8 @@
     material: PlasmaGlass
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      PlasmaGlass: 500
+      Steel: 50
+      PlasmaGlass: 100
 
 - type: entity
   id: DiamondReactorControlRod
@@ -238,8 +238,8 @@
     material: Diamond
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Diamond: 500
+      Steel: 50
+      Diamond: 100
 
 # Gas Channel Rods
 - type: entity
@@ -258,7 +258,7 @@
     thermalMass: 21000
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
+      Steel: 50
 
 - type: entity
   id: SteelReactorGasChannel
@@ -269,7 +269,7 @@
     material: Steel
   - type: PhysicalComposition
     materialComposition:
-      Steel: 500
+      Steel: 100
 
 - type: entity
   id: GoldReactorGasChannel
@@ -280,8 +280,8 @@
     material: Gold
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Gold: 250
+      Steel: 100
+      Gold: 100
 
 - type: entity
   id: SilverReactorGasChannel
@@ -292,8 +292,8 @@
     material: Silver
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Silver: 250
+      Steel: 100
+      Silver: 100
 
 - type: entity
   id: BrassReactorGasChannel
@@ -304,8 +304,8 @@
     material: Brass
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Brass: 250
+      Steel: 100
+      Brass: 100
 
 - type: entity
   id: PlasteelReactorGasChannel
@@ -316,8 +316,8 @@
     material: Plasteel
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Plasteel: 250
+      Steel: 100
+      Plasteel: 100
 
 - type: entity
   id: GlassReactorGasChannel
@@ -328,8 +328,8 @@
     material: Glass
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Glass: 250
+      Steel: 100
+      Glass: 100
 
 - type: entity
   id: PlasmaGlassReactorGasChannel
@@ -340,8 +340,8 @@
     material: PlasmaGlass
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      PlasmaGlass: 250
+      Steel: 100
+      PlasmaGlass: 100
 
 - type: entity
   id: DiamondReactorGasChannel
@@ -352,8 +352,8 @@
     material: Diamond
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Diamond: 250
+      Steel: 100
+      Diamond: 100
 
 # Heat Exchanger Rods
 - type: entity
@@ -370,7 +370,7 @@
     thermalCrossSection: 25
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
+      Steel: 75
 
 - type: entity
   id: SteelReactorHeatExchanger
@@ -381,7 +381,7 @@
     material: Steel
   - type: PhysicalComposition
     materialComposition:
-      Steel: 625
+      Steel: 125
 
 - type: entity
   id: GoldReactorHeatExchanger
@@ -392,8 +392,8 @@
     material: Gold
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Gold: 275
+      Steel: 100
+      Gold: 100
 
 - type: entity
   id: SilverReactorHeatExchanger
@@ -404,8 +404,8 @@
     material: Silver
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Silver: 275
+      Steel: 100
+      Silver: 100
 
 - type: entity
   id: BrassReactorHeatExchanger
@@ -416,8 +416,8 @@
     material: Brass
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Brass: 275
+      Steel: 100
+      Brass: 100
 
 - type: entity
   id: PlasteelReactorHeatExchanger
@@ -428,8 +428,8 @@
     material: Plasteel
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Plasteel: 275
+      Steel: 100
+      Plasteel: 100
 
 - type: entity
   id: GlassReactorHeatExchanger
@@ -440,8 +440,8 @@
     material: Glass
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Glass: 275
+      Steel: 100
+      Glass: 100
 
 - type: entity
   id: PlasmaGlassReactorHeatExchanger
@@ -452,8 +452,8 @@
     material: PlasmaGlass
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      PlasmaGlass: 275
+      Steel: 100
+      PlasmaGlass: 100
 
 - type: entity
   id: DiamondReactorHeatExchanger
@@ -464,8 +464,8 @@
     material: Diamond
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Diamond: 275
+      Steel: 100
+      Diamond: 100
 
 # Parts to chose from for a random prefab
 - type: weightedRandom

@@ -1,72 +1,12 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from Shiptest.",
+  "copyright": "Taken from Beestation-Hornet.",
   "size": {
     "x": 32,
     "y": 32
   },
   "states": [
-    {
-      "name": "inhand-left",
-      "directions": 4
-    },
-    {
-      "name": "inhand-right",
-      "directions": 4
-    },
-    {
-      "name": "inhand-left-flame",
-      "directions": 4,
-      "delays": [
-        [
-          0.2,
-          0.2,
-          0.2
-        ],
-        [
-          0.2,
-          0.2,
-          0.2
-        ],
-        [
-          0.2,
-          0.2,
-          0.2
-        ],
-        [
-          0.2,
-          0.2,
-          0.2
-        ]
-      ]
-    },
-    {
-      "name": "inhand-right-flame",
-      "directions": 4,
-      "delays": [
-        [
-          0.2,
-          0.2,
-          0.2
-        ],
-        [
-          0.2,
-          0.2,
-          0.2
-        ],
-        [
-          0.2,
-          0.2,
-          0.2
-        ],
-        [
-          0.2,
-          0.2,
-          0.2
-        ]
-      ]
-    },
     {
       "name": "equipped-BELT",
       "directions": 4
@@ -80,6 +20,58 @@
         [
           0.1,
           0.1
+        ]
+      ]
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left-flame",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right-flame",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.3
+        ],
+        [
+          0.1,
+          0.3
+        ],
+        [
+          0.1,
+          0.3
+        ],
+        [
+          0.1,
+          0.3
         ]
       ]
     }

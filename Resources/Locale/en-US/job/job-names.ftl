@@ -89,8 +89,8 @@ JobERTJanitor = ERT Janitor
 JobERTLeader = ERT Leader
 JobERTMedical = ERT Medical
 JobERTSecurity = ERT Security
-# Frontier: Head of Personnel<Station Representative
-JobHeadOfPersonnel = Station Representative
+# Frontier: Head of Personnel<Overseer
+JobHeadOfPersonnel = Overseer
 # Mono: Head of Security<TSFMC Colonel
 JobHeadOfSecurity = TSFMC Colonel
 JobJanitor = Janitor
@@ -101,8 +101,8 @@ JobMedicalIntern = Medical intern
 JobMime = Mime
 JobMusician = Musician
 JobParamedic = Paramedic
-# Frontier: Passenger<Contractor
-JobPassenger = Contractor
+# Mono: Passenger<Spacer
+JobPassenger = Spacer
 JobPsychologist = Psychologist
 JobQuartermaster = Quartermaster
 JobReporter = Reporter
@@ -112,8 +112,8 @@ JobSalvageSpecialist = Salvage Specialist
 JobScientist = Scientist
 # Frontier: Security Cadet<Cadet
 JobSecurityCadet = Cadet
-# Mono: Security Officer<TSFMC Corporal
-JobSecurityOfficer = TSFMC Corporal
+# Mono: Security Officer<TSFMC Marine
+JobSecurityOfficer = TSFMC Marine
 JobServiceWorker = Service Worker
 JobStationAi = Station AI
 JobStationEngineer = Station Engineer

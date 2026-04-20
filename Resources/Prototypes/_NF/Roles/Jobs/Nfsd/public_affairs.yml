@@ -15,7 +15,7 @@
       time: 36000 # 10 hours # mono
   startingGear: PublicAffairGear
   icon: "JobIconPublicAffairsLiaison"
-  supervisors: job-supervisors-cadet
+  supervisors: job-supervisors-tsf-private
   canBeAntag: false
   weight: 105
   displayWeight: 16

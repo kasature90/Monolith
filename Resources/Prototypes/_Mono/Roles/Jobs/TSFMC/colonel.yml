@@ -1,35 +1,35 @@
 - type: job
   id: Sheriff
-  name: job-name-sheriff
-  description: job-description-sheriff
+  name: job-name-tsf-colonel
+  description: job-description-tsf-colonel
   playTimeTracker: JobHeadOfSecurity
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 144000 # 40 hours - mono
+      time: 144000 # 40 hours
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 90000 # 25 hours - mono
+      time: 90000 # 25 hours
     - !type:RoleTimeRequirement
       role: JobWarden
-      time: 18000 # 5 hours - mono
+      time: 18000 # 5 hours
   whitelisted: true
   startingGear: SheriffGear
   alwaysUseSpawner: true
   icon: JobIconSheriff
   requireAdminNotify: true
-  supervisors: job-supervisors-centcom
+  supervisors: job-supervisors-tsf-ws
   weight: 180
   displayWeight: 70
   assignedCompany: TSF
   canBeAntag: false
   accessGroups:
-  - AllAccessMono #Mono Start
+  - AllAccessMono
   access:
   - TsfmcEngineering
   - HeadOfSecurity
   - Bailiff
   - Sergeant
-  - Frontier #Mono End
+  - Frontier
   special:
   - !type:AddComponentSpecial
     components:
@@ -41,7 +41,7 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
-  - !type:AddLanguageSpecial # Monolith - Languages
+  - !type:AddLanguageSpecial
     languagesSpoken:
     - SolCommon
     languagesUnderstood:
@@ -62,4 +62,4 @@
     - BaseSecurityUplinkRadioSheriff
     - ShipVoucherTsfmcColonel
     - PhoneInstrumentHigh
-    - RubberStampTSFColonel #Mono. Look, it had comments on the Bailiff/Captain file.
+    - RubberStampTSFColonel

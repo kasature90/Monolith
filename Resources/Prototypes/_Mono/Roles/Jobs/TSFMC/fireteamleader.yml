@@ -1,22 +1,30 @@
 - type: job
-  id: TsfEngineer
-  name: job-name-tsf-engineer
-  description: job-description-tsf-engineer
-  playTimeTracker: JobTsfEngineer
+  id: SeniorOfficer
+  name: job-name-tsf-ftl
+  description: job-description-tsf-ftl
+  playTimeTracker: JobSeniorOfficer
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 21600 # 6 hours
-  startingGear: TsfEngiGear
-  icon: JobIconTSFEngi
-  supervisors: job-supervisors-tsf-ftl
-  weight: 130
-  displayWeight: 20
+      time: 72000 # 20 hours
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 36000 # 10 hours
+  startingGear: SeniorOfficerGear
+  icon: JobIconSergeant
+  supervisors: job-supervisors-tsf-colonel
+  weight: 140
+  displayWeight: 50
   assignedCompany: TSF
   canBeAntag: false
   access:
+  - Armory
+  - Sergeant
+  - Bailiff
+  - Medical
+  - Chemistry
   - TsfmcEngineering
   accessGroups:
-  - TsfGeneralNoBrig
+  - GeneralNfsdAccess
   special:
   - !type:AddComponentSpecial
     components:
@@ -35,14 +43,11 @@
     prototype: FrontierBirthdayGift
 
 - type: startingGear
-  id: TsfEngiGear
+  id: SeniorOfficerGear
   equipment:
     pocket1: WeaponPistolMk58
-    pocket2: Magazine45_ACPPistolFMJ
   storage:
     back:
+    - Magazine45_ACPPistolFMJ
+    - BaseSecurityUplinkRadioOfficer
     - RadioHandheldNF
-    - NanolaminateFoamGrenade
-    - NanolaminateFoamGrenade
-    - RCDRecharging
-    - NFPouchUtility

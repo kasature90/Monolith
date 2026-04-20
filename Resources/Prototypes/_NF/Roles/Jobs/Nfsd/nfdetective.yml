@@ -15,7 +15,7 @@
       time: 18000 # 5 hours # mono
   startingGear: NFDetectiveGear
   icon: JobIconNFDetective
-  supervisors: job-supervisors-bailiff
+  supervisors: job-supervisors-tsf-captain
   weight: 110
   displayWeight: 20
   assignedCompany: TSF

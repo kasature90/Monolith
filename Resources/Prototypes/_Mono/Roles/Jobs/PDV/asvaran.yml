@@ -1,21 +1,20 @@
 - type: job
   id: PirateFirstMate
-  name: job-name-pirate-first-mate
-  description: job-description-pirate-first-mate
+  name: job-name-pdv-asvaran
+  description: job-description-pdv-asvaran
   playTimeTracker: JobPirateFirstMate
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 180000 # 50 hours # mono
+      time: 180000 # 50 hours
     - !type:RoleTimeRequirement
       role: JobPDVDenasvar
       time: 28800 # 8 hours
-  #whitelisted: true # mono - comment out
   startingGear: PirateFirstMateNFGear
   alwaysUseSpawner: true
   hideConsoleVisibility: true
   canBeAntag: true
   icon: "JobIconPirateFirstMate"
-  supervisors: job-supervisors-captain
+  supervisors: job-supervisors-pdv-vizier
   weight: 40
   displayWeight: 40
   assignedCompany: PDV
@@ -34,12 +33,12 @@
       - PirateNF
   - !type:AddImplantSpecial
     implants: [ FreelanceTrackingImplant ]
-  - !type:AddLanguageSpecial # Monolith - Languages
+  - !type:AddLanguageSpecial
     languagesSpoken:
     - Freespeak
     languagesUnderstood:
     - Freespeak
-  - !type:GiveItemOnHolidaySpecial # Even pirates get a piece of cake.
+  - !type:GiveItemOnHolidaySpecial
     holiday: FrontierBirthday
     prototype: FrontierBirthdayGift
 
@@ -53,4 +52,4 @@
   storage:
     back:
     - RadioHandheldNF
-    - RubberStampPDVAsvaran # mono
+    - RubberStampPDVAsvaran

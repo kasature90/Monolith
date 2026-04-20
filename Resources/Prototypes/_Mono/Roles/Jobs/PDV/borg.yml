@@ -10,6 +10,6 @@
   assignedCompany: PDV
   canBeAntag: false
   icon: JobIconBorg
-  supervisors: job-supervisors-hire
+  supervisors: job-supervisors-pdv
   jobEntity: PlayerBorgPDV
   applyTraits: false

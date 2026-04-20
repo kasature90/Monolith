@@ -1,14 +1,14 @@
 - type: job
   id: Deputy
-  name: job-name-deputy
-  description: job-description-deputy
+  name: job-name-tsf-marine
+  description: job-description-tsf-marine
   playTimeTracker: JobSecurityOfficer
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 36000 # 10 hours
   startingGear: DeputyGear
   icon: JobIconDeputy
-  supervisors: job-supervisors-sergeant
+  supervisors: job-supervisors-tsf-ftl
   weight: 130
   displayWeight: 40
   assignedCompany: TSF
@@ -23,7 +23,7 @@
       - TSFMC
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, TrackingImplant ]
-  - !type:AddLanguageSpecial # Monolith - Languages
+  - !type:AddLanguageSpecial
     languagesSpoken:
     - SolCommon
     languagesUnderstood:
@@ -35,9 +35,9 @@
 - type: startingGear
   id: DeputyGear
   equipment:
-    pocket1: WeaponPistolMk58 #WeaponPistolMk58Nonlethal
+    pocket1: WeaponPistolMk58
   storage:
     back:
     - Magazine45_ACPPistolFMJ
-    - BaseSecurityUplinkRadioDeputy #Mono: Added Deputy uplink
-    - RadioHandheldNF # Mono
+    - BaseSecurityUplinkRadioDeputy
+    - RadioHandheldNF

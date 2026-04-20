@@ -1,14 +1,14 @@
 - type: job
   id: PirateCaptain
-  name: job-name-pirate-captain
-  description: job-description-pirate-captain
+  name: job-name-pdv-vizier
+  description: job-description-pdv-vizier
   playTimeTracker: JobPirateCaptain
   requirements:
-    - !type:OverallPlaytimeRequirement # mono start
+    - !type:OverallPlaytimeRequirement
       time: 144000 # 40 hours
     - !type:RoleTimeRequirement
       role: JobPirateFirstMate
-      time: 18000 # 5 hours - mono
+      time: 18000 # 5 hours
   whitelisted: true
   startingGear: PirateCaptainNFGear
   alwaysUseSpawner: true
@@ -35,12 +35,12 @@
       - PirateNF
   - !type:AddImplantSpecial
     implants: [ FreelanceTrackingImplant ]
-  - !type:AddLanguageSpecial # Monolith - Languages
+  - !type:AddLanguageSpecial
     languagesSpoken:
     - Freespeak
     languagesUnderstood:
     - Freespeak
-  - !type:GiveItemOnHolidaySpecial # Even pirates get a piece of cake.
+  - !type:GiveItemOnHolidaySpecial
     holiday: FrontierBirthday
     prototype: FrontierBirthdayGift
 
@@ -48,12 +48,12 @@
   id: PirateCaptainNFGear
   equipment:
     ears: ClothingHeadsetAltVanguardCommand
-    #belt: ClothingBeltUtility # mono
+    #belt: ClothingBeltUtility
     pocket1: BasePirateUplinkRadioPirateCaptain
     pocket2: EnergySword
   storage:
     back:
-    - RadioHandheldNF # mono
+    - RadioHandheldNF
     - ShipVoucherSaintie
     - PhoneInstrumentHigh
-    - RubberStampPDVVizier # mono
+    - RubberStampPDVVizier

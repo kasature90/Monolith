@@ -1,9 +1,9 @@
 - type: job
   id: Bailiff
-  name: job-name-bailiff
-  description: job-description-bailiff
+  name: job-name-tsf-captain
+  description: job-description-tsf-captain
   playTimeTracker: JobWarden
-  requirements: # mono - lowers all of these tbh
+  requirements:
     - !type:OverallPlaytimeRequirement
       time: 72000 # 20 hours
     - !type:DepartmentTimeRequirement
@@ -14,7 +14,7 @@
       time: 10800 # 3 hours
   startingGear: BailiffGear
   icon: JobIconBailiff
-  supervisors: job-supervisors-sheriff
+  supervisors: job-supervisors-tsf-colonel
   weight: 150
   displayWeight: 60
   assignedCompany: TSF
@@ -25,7 +25,7 @@
   - Bailiff
   - Medical
   - Chemistry
-  - TsfmcEngineering # Mono
+  - TsfmcEngineering
   accessGroups:
   - GeneralNfsdAccess
   special:
@@ -48,12 +48,11 @@
 - type: startingGear
   id: BailiffGear
   equipment:
-    pocket1: WeaponPistolMk58 #WeaponPistolMk58Nonlethal
+    pocket1: WeaponPistolMk58
   storage:
     back:
     - Magazine45_ACPPistolFMJ
     - BaseSecurityUplinkRadioCaptain
-#    - ShipVoucherNfsdBailiff # Mono
     - RubberStampBailiff
-    - RadioHandheldNF # Mono
-    - RubberStampTSFCaptain # Mono
+    - RadioHandheldNF
+    - RubberStampTSFCaptain

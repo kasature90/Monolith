@@ -4,21 +4,21 @@
   description: job-description-pdv-infiltrator
   playTimeTracker: JobPDVInfiltrator
   requirements:
-    - !type:OverallPlaytimeRequirement # mono start
+    - !type:OverallPlaytimeRequirement
       time: 108000 # 65 hours
     - !type:RoleTimeRequirement
       role: JobPirate
       time: 3600 # 1 hour
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000 # 10 hours # mono end
+      time: 36000 # 10 hours
   whitelisted: true
   startingGear: PDVInfiltratorGear
   alwaysUseSpawner: true
   hideConsoleVisibility: true
   canBeAntag: true
   icon: "JobIconPDVInfiltrator"
-  supervisors: job-supervisors-pirate
+  supervisors: job-supervisors-pdv
   weight: 20
   displayWeight: 20
   assignedCompany: PDV
@@ -41,12 +41,12 @@
     implants: [ FreelanceTrackingImplant ]
   - !type:AddImplantSpecial
     implants: [ RadioImplantFreelance ]
-  - !type:AddLanguageSpecial # Monolith - Languages
+  - !type:AddLanguageSpecial
     languagesSpoken:
     - Freespeak
     languagesUnderstood:
     - Freespeak
-  - !type:GiveItemOnHolidaySpecial # Even pirates get a piece of cake.
+  - !type:GiveItemOnHolidaySpecial
     holiday: FrontierBirthday
     prototype: FrontierBirthdayGift
 

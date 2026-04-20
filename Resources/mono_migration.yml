@@ -16,3 +16,9 @@ PlayerStationAiRogue: PlayerStationAiPDV
 ShipMissileASM557: ShipMissileASM250
 ShipMissileASM302: ShipMissileASM150
 ShipMissileASM417: ShipMissileASM50
+
+# Colored crowbar removal. Dont take that out of context.
+
+CrowbarYellow: Crowbar
+CrowbarOrange: Crowbar
+CrowbarGreen: Crowbar

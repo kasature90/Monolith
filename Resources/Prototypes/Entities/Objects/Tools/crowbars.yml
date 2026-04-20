@@ -44,14 +44,14 @@
   - type: UseDelay # Goobstation - For insta prying
     delay: 1
   - type: Sprite
-    sprite: _NF/Objects/Tools/crowbar.rsi # Frontier: _NF prefix
+    sprite: Objects/Tools/crowbar.rsi
   - type: Clothing
-    sprite: _NF/Objects/Tools/crowbar.rsi # Frontier: _NF prefix
+    sprite: Objects/Tools/crowbar.rsi
     quickEquip: false
     slots:
     - Belt
   - type: Item
-    sprite: _NF/Objects/Tools/crowbar.rsi # Frontier: _NF prefix
+    sprite: Objects/Tools/crowbar.rsi
     size: Normal
     shape:
     - 0,0,0,1
@@ -68,15 +68,15 @@
   components:
   - type: Sprite
     state: icon
-  - type: Item
-    storedSprite:
-      sprite: _NF/Objects/Tools/crowbar.rsi # Frontier: _NF prefix
-      state: storage
+  #- type: Item
+  #  storedSprite:
+  #    sprite: Objects/Tools/crowbar.rsi # Mono - comment out
+  #    state: storage
 
 # Emergency (red) Crowbar
 - type: entity
   name: emergency crowbar
-  parent: BaseCrowbar
+  parent: Crowbar
   id: CrowbarRed
   description: An emergency crowbar designed to pry open doors and firelocks during power outages.
   components:
@@ -86,118 +86,123 @@
     - CrowbarRed
   - type: Sprite
     layers:
-    - state: icon
-    - state: cover-icon
-      color: "#990000"
-  - type: Item
-    storedSprite:
-      state: red-storage
-      sprite: _NF/Objects/Tools/crowbar.rsi # Frontier: _NF prefix
-    inhandVisuals:
-      left:
-      - state: inhand-left
-      - state: cover-inhand-left
-        color: "#990000"
-      right:
-      - state: inhand-right
-      - state: cover-inhand-right
-        color: "#990000"
-  - type: Clothing
-    clothingVisuals:
-      belt:
-      - state: equipped-BELT
-      - state: cover-equipped-BELT
-        color: "#990000"
+    - state: icon_red
+
+  # mono - comment out everything below this, unnecessary when parented off of normal crowbar lol
+    #- state: cover-icon
+    #  color: "#990000"
+  #- type: Item
+    #storedSprite:
+    #  state: red-storage
+    #  sprite: Objects/Tools/crowbar.rsi
+  #  inhandVisuals:
+  #    left:
+  #    - state: inhand-left
+  #    - state: cover-inhand-left
+  #      color: "#990000"
+  #    right:
+  #    - state: inhand-right
+  #    - state: cover-inhand-right
+  #      color: "#990000"
+  #- type: Clothing
+  #  clothingVisuals:
+  #    belt:
+  #    - state: equipped-BELT
+  #    - state: cover-equipped-BELT
+  #      color: "#990000"
 
 # Autolathe (green) Crowbar
 - type: entity
-  parent: BaseCrowbar
+  parent: Crowbar
   id: CrowbarGreen
-  description: A multipurpose tool to pry open doors and fight interdimensional invaders, printed from an autolathe.
-  components:
-  - type: Sprite
-    layers:
-    - state: icon
-    - state: cover-icon
-      color: "#00621c"
-  - type: Item
-    storedSprite:
-      state: green-storage
-      sprite: _NF/Objects/Tools/crowbar.rsi # Frontier: _NF prefix
-    inhandVisuals:
-      left:
-      - state: inhand-left
-      - state: cover-inhand-left
-        color: "#00621c"
-      right:
-      - state: inhand-right
-      - state: cover-inhand-right
-        color: "#00621c"
-  - type: Clothing
-    clothingVisuals:
-      belt:
-      - state: equipped-BELT
-      - state: cover-equipped-BELT
-        color: "#00621c"
+  #description: A multipurpose tool to pry open doors and fight interdimensional invaders, printed from an autolathe.
+  categories: [ HideSpawnMenu ] # Mono - comment out everything - no more colored crowbars
+  #components:
+  #- type: Sprite
+  #  layers:
+  #  - state: icon
+  #  - state: cover-icon
+  #    color: "#00621c"
+  #- type: Item
+  #  storedSprite:
+  #    state: green-storage
+  #    sprite: _NF/Objects/Tools/crowbar.rsi # Frontier: _NF prefix
+  #  inhandVisuals:
+  #    left:
+  #    - state: inhand-left
+  #    - state: cover-inhand-left
+  #      color: "#00621c"
+  #    right:
+  #    - state: inhand-right
+  #    - state: cover-inhand-right
+  #      color: "#00621c"
+  #- type: Clothing
+  #  clothingVisuals:
+  #    belt:
+  #    - state: equipped-BELT
+  #    - state: cover-equipped-BELT
+  #      color: "#00621c"
 
 # Toolbox (orange) Crowbar
 - type: entity
-  parent: BaseCrowbar
+  parent: Crowbar
   id: CrowbarOrange
-  description: A multipurpose tool to pry open doors and fight interdimensional invaders, found in toolboxes.
-  components:
-  - type: Sprite
-    layers:
-    - state: icon
-    - state: cover-icon
-      color: "#673800"
-  - type: Item
-    storedSprite:
-      state: orange-storage
-      sprite: _NF/Objects/Tools/crowbar.rsi # Frontier: _NF prefix
-    inhandVisuals:
-      left:
-      - state: inhand-left
-      - state: cover-inhand-left
-        color: "#673800"
-      right:
-      - state: inhand-right
-      - state: cover-inhand-right
-        color: "#673800"
-  - type: Clothing
-    clothingVisuals:
-      belt:
-      - state: equipped-BELT
-      - state: cover-equipped-BELT
-        color: "#673800"
+  #description: A multipurpose tool to pry open doors and fight interdimensional invaders, found in toolboxes.
+  categories: [ HideSpawnMenu ] # Mono - comment out everything - no more colored crowbars
+  #components:
+  #- type: Sprite
+  #  layers:
+  #  - state: icon
+  #  - state: cover-icon
+  #    color: "#673800"
+  #- type: Item
+  #  storedSprite:
+  #    state: orange-storage
+  #    sprite: _NF/Objects/Tools/crowbar.rsi # Frontier: _NF prefix
+  #  inhandVisuals:
+  #    left:
+  #    - state: inhand-left
+  #    - state: cover-inhand-left
+  #      color: "#673800"
+  #    right:
+  #    - state: inhand-right
+  #    - state: cover-inhand-right
+  #      color: "#673800"
+  #- type: Clothing
+  #  clothingVisuals:
+  #    belt:
+  #    - state: equipped-BELT
+  #    - state: cover-equipped-BELT
+  #      color: "#673800"
 
 # Engineering (yellow) Crowbar
 - type: entity
-  parent: BaseCrowbar
+  parent: Crowbar
   id: CrowbarYellow
-  description: A multipurpose tool to pry open doors and fight interdimensional invaders, dispensed from Engineering.
-  components:
-  - type: Sprite
-    layers:
-    - state: icon
-    - state: cover-icon
-      color: "#968000"
-  - type: Item
-    storedSprite:
-      state: yellow-storage
-      sprite: _NF/Objects/Tools/crowbar.rsi # Frontier: _NF prefix
-    inhandVisuals:
-      left:
-      - state: inhand-left
-      - state: cover-inhand-left
-        color: "#968000"
-      right:
-      - state: inhand-right
-      - state: cover-inhand-right
-        color: "#968000"
-  - type: Clothing
-    clothingVisuals:
-      belt:
-      - state: equipped-BELT
-      - state: cover-equipped-BELT
-        color: "#968000"
+  #description: A multipurpose tool to pry open doors and fight interdimensional invaders, dispensed from Engineering.
+  categories: [ HideSpawnMenu ] # Mono - comment out everything - no more colored crowbars
+  #components:
+  #- type: Sprite
+  #  layers:
+  #  - state: icon
+  #  - state: cover-icon
+  #    color: "#968000"
+  #- type: Item
+  #  storedSprite:
+  #    state: yellow-storage
+  #    sprite: _NF/Objects/Tools/crowbar.rsi # Frontier: _NF prefix
+  #  inhandVisuals:
+  #    left:
+  #    - state: inhand-left
+  #    - state: cover-inhand-left
+  #      color: "#968000"
+  #    right:
+  #    - state: inhand-right
+  #    - state: cover-inhand-right
+  #      color: "#968000"
+  #- type: Clothing
+  #  clothingVisuals:
+  #    belt:
+  #    - state: equipped-BELT
+  #    - state: cover-equipped-BELT
+  #      color: "#968000"

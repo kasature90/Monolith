@@ -153,13 +153,13 @@
     tags:
     - Wrench
   - type: Sprite
-    sprite: _NF/Objects/Tools/wrench.rsi # Frontier: separate sprites (add _NF folder)
+    sprite: Objects/Tools/wrench.rsi
     state: icon
   - type: Item
-    sprite: _NF/Objects/Tools/wrench.rsi # Frontier: separate sprites (add _NF folder)
-    storedSprite:
-      sprite: _NF/Objects/Tools/wrench.rsi # Frontier: separate sprites (add _NF folder)
-      state: storage
+    sprite: Objects/Tools/wrench.rsi
+    #storedSprite:
+    #  sprite: Objects/Tools/wrench.rsi # Mono - comment out
+    #  state: storage
   - type: MeleeWeapon
     wideAnimationRotation: 135
     attackRate: 1.5
@@ -200,7 +200,7 @@
     sound:
       path: /Audio/Items/multitool_drop.ogg
   - type: Sprite
-    sprite: _NF/Objects/Tools/multitool.rsi # Frontier: separate sprites (add _NF folder)
+    sprite: Objects/Tools/multitool.rsi
     layers:
     - state: icon
     - state: green-unlit
@@ -208,7 +208,7 @@
   - type: Item
     size: Small
   - type: Clothing
-    sprite: _NF/Objects/Tools/multitool.rsi # Frontier: separate sprites (add _NF folder)
+    sprite: Objects/Tools/multitool.rsi
     quickEquip: false
     slots:
     - Belt

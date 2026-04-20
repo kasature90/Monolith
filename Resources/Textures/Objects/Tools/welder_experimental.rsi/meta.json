@@ -1,32 +1,12 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/199fffd989d6f7fd6ea9c5188c875137df4f34b8",
+  "copyright": "Taken from Shiptest.",
   "size": {
     "x": 32,
     "y": 32
   },
   "states": [
-    {
-      "name": "icon",
-      "delays": [
-        [
-          0.2,
-          0.2,
-          0.2,
-          0.2
-        ]
-      ]
-    },
-    {
-      "name": "welder_flame",
-      "delays": [
-        [
-          0.2,
-          0.1
-        ]
-      ]
-    },
     {
       "name": "inhand-left",
       "directions": 4
@@ -90,6 +70,25 @@
     {
       "name": "equipped-BELT",
       "directions": 4
+    },
+    {
+      "name": "icon",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "welder_flame",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
     }
   ]
 }

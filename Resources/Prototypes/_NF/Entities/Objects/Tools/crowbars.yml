@@ -22,9 +22,11 @@
   - type: StaticPrice
     price: 11
   - type: Sprite
+    sprite: _NF/Objects/Tools/crowbar.rsi # Mono
     layers:
     - state: pocket-icon
   - type: Clothing
+    sprite: _NF/Objects/Tools/crowbar.rsi # Mono
     clothingVisuals:
       belt:
       - state: equipped-BELT # Should be brighter, smaller

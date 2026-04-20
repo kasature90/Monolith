@@ -8,7 +8,7 @@
     time: 108000 # 30 hours
   startingGear: MarsocFTLGear
   icon: "JobIconNanotrasen"
-  supervisors: job-supervisors-ws
+  supervisors: job-supervisors-tsf-ws
   canBeAntag: false
   setPreference: false
   accessGroups:
@@ -40,7 +40,7 @@
     time: 108000 # 30 hours
   startingGear: MarsocOperativeGear
   icon: "JobIconNanotrasen"
-  supervisors: job-supervisors-ws
+  supervisors: job-supervisors-tsf-ws
   canBeAntag: false
   setPreference: false
   accessGroups:

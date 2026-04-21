@@ -124,6 +124,23 @@
     guides:
     - NuclearReactor
     - Power
+  - type: PassiveThermalSignature # Mono
+    signature: 5000000
+  # Mono
+  - type: ShipRepairable
+    repairTime: 45
+    repairCost: 200
+  - type: RadarBlip
+    visibleFromOtherGrids: true
+    radarColor: "#00fa9a"
+    scale: 2.5
+    shape: diamond
+    gridConfig:
+      color: "#00fa9a"
+      shape: Square
+      respectZoom: true
+      rotate: true
+      bounds: "-2.5,-2.5,2.5,2.5"
 
 # Crew nuclear reactors
 - type: entity
@@ -218,6 +235,23 @@
     outletRot: 180
     arrowPrototype: ReactorSmallFlowArrow
     gridbounds: [ 12, 11, 0, 0 ]
+  - type: PassiveThermalSignature # Mono
+    signature: 2500000
+  # Mono
+  - type: ShipRepairable
+    repairTime: 30
+    repairCost: 100
+  - type: RadarBlip
+    visibleFromOtherGrids: true
+    radarColor: "#00fa9a"
+    scale: 2
+    shape: diamond
+    gridConfig:
+      color: "#00fa9a"
+      shape: Square
+      respectZoom: true
+      rotate: true
+      bounds: "-1.5,-1.5,1.5,1.5"
 
 - type: entity
   id: NuclearReactorSmallRandom

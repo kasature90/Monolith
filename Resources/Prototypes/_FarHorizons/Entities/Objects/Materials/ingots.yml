@@ -2,6 +2,7 @@
   parent: IngotBase
   id: IngotPlutonium
   name: plutonium bar
+  description: Ingots of pure fissile plutonium. A byproduct of nuclear fission reactors. # Mono
   suffix: Full
   components:
   - type: Material
@@ -12,13 +13,14 @@
     stackType: Plutonium
     baseLayer: base
     layerStates:
-    - hydrogen # Why iron? Because I haven't gotten a spriter to make better # Mono - change from iron to hydrogen
-    - hydrogen_2 # Mono - change from iron to hydrogen
-    - hydrogen_3 # Mono - change from iron to hydrogen
+    - plutonium # Mono
+    - plutonium_2 # Mono
+    - plutonium_3 # Mono
   - type: Sprite
-    state: hydrogen_3 # Mono - change from iron to hydrogen
+    state: plutonium_3 # Mono
+    sprite: _Mono/Objects/Materials/fissiles.rsi
     layers:
-    - state: hydrogen_3 # Mono - change from iron to hydrogen
+    - state: plutonium_3 # Mono
       map: ["base"]
   - type: Item
     heldPrefix: plutonium
@@ -34,6 +36,27 @@
   - type: RadiationSource
     intensity: 0.08
     slope: 3
+  - type: Explosive # Mono
+    explosionType: Radioactive
+    totalIntensity: 5.0 # More bulk than fissile uranium
+    intensitySlope: 5
+    maxIntensity: 4
+  - type: ThermalSignature # Mono
+  - type: PassiveThermalSignature # Mono
+    signature: 150000 # 0.1x fissile uranium - more in bulk due to how its obtained
+  - type: RadiationReceiver # Mono
+  - type: ChainRadiation # Mono
+    baseIntensity: 0.4
+    coefficient: 0.1
+    explosionThreshold: 10
+    totalIntensity: 15000
+    intensitySlope: 2000
+    maxIntensity: 4000
+  - type: DamageOnLand # Mono
+    damage:
+      types:
+        Burn: 5 # Plutonium is hot!
+        Radiation: 5
   - type: PointLight
     radius: 1.2
     energy: 0.8

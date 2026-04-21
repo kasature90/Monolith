@@ -103,6 +103,22 @@
     guides:
     - NuclearReactor
     - Power
+  # Mono
+  - type: ShipRepairable
+    repairTime: 30
+    repairCost: 75
+  - type: RadarBlip
+    visibleFromOtherGrids: true
+    radarColor: "#b8860b"
+    scale: 2
+    shape: diamond
+    gridConfig:
+      color: "#b8860b"
+      shape: Square
+      respectZoom: true
+      rotate: true
+      bounds: "-1.5,-1.5,1.5,1.5"
+  - type: ThermalSignature # Mono
 
 - type: entity
   id: TurbineSmall
@@ -133,6 +149,22 @@
     outletPos: -1, -1
     outletRot: 0
     arrowPrototype: TurbineSmallFlowArrow
+  # Mono
+  - type: ShipRepairable
+    repairTime: 20
+    repairCost: 40
+  - type: RadarBlip
+    visibleFromOtherGrids: true
+    radarColor: "#b8860b"
+    scale: 1.5
+    shape: diamond
+    gridConfig:
+      color: "#b8860b"
+      shape: Square
+      respectZoom: true
+      rotate: true
+      bounds: "-1.5,-1.5,1.5,1.5"
+  - type: ThermalSignature # Mono
 
 # Arrow to indicate flow
 - type: entity

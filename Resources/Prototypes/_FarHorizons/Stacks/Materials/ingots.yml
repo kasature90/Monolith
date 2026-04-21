@@ -3,4 +3,4 @@
   name: stack-plutonium
   icon: { sprite: "/Textures/_Mono/Objects/Materials/fissiles.rsi", state: plutonium } # Mono - texture different
   spawn: IngotPlutonium1
-  maxCount: 100 # Mono
+  maxCount: 50 # Mono

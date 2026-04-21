@@ -48,7 +48,7 @@
   - type: ChainRadiation # Mono
     baseIntensity: 0.4
     coefficient: 0.1
-    explosionThreshold: 10 # The limit is 12.
+    explosionThreshold: 10 # The limit is about 20-25, like uranium.
     totalIntensity: 15000
     intensitySlope: 2000
     maxIntensity: 4000

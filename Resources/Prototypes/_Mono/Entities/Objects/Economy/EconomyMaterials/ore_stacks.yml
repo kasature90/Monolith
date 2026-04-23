@@ -29,13 +29,13 @@
   price: 0.05
 
 - type: ore
-  id: OreLithium
+  id: LithiumOre
   oreEntity: LithiumOre1
   minOreYield: 1
   maxOreYield: 3
 
 - type: ore
-  id: OreCopper
+  id: CopperOre
   oreEntity: CopperOre1
   minOreYield: 1
   maxOreYield: 5

@@ -5,7 +5,7 @@
   description: An ISFNC-certified fabricator for making components certified for use in nuclear reactors. Its a load of bullshit.
   components:
   - type: Sprite
-    sprite: _Mono/Structures/Machines/nfr_assembler.rsi # Mono\
+    sprite: _Mono/Structures/Machines/nfr_assembler.rsi # Mono
     snapCardinals: true
     offset: 0.5, 0
     noRot: true

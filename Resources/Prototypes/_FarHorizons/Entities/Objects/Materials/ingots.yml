@@ -69,5 +69,7 @@
   name: plutonium bar
   suffix: Single
   components:
+  - type: Sprite
+    state: plutonium # Mono
   - type: Stack
     count: 1

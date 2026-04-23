@@ -91,6 +91,23 @@
     {
       "name": "sulfur-inhand-right",
       "directions": 4
+    },
+    {
+      "name": "lithium"
+    },
+    {
+      "name": "lithium_2"
+    },
+    {
+      "name": "lithium_3"
+    },
+    {
+      "name": "lithium-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "lithium-inhand-right",
+      "directions": 4
     }
   ]
 }

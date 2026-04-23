@@ -27,3 +27,15 @@
   unit: materials-unit-chunk
   icon: { sprite: _Mono/Objects/Materials/ore.rsi, state: lithium }
   price: 0.05
+
+- type: ore
+  id: OreLithium
+  oreEntity: LithiumOre1
+  minOreYield: 1
+  maxOreYield: 3
+
+- type: ore
+  id: OreCopper
+  oreEntity: CopperOre1
+  minOreYield: 1
+  maxOreYield: 5

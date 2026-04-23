@@ -22,6 +22,9 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Machine
     board: NuclearFabricatorMachineCircuitboard
+  - type: Transform # Mono
+    anchored: true
+    noRot: false
   - type: MaterialStorage
     whitelist:
       tags:

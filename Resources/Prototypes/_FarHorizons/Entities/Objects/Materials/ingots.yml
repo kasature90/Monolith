@@ -70,6 +70,6 @@
   suffix: Single
   components:
   - type: Sprite
-    state: iron
+    state: plutonium # Mono
   - type: Stack
     count: 1

@@ -69,7 +69,5 @@
   name: plutonium bar
   suffix: Single
   components:
-  - type: Sprite
-    state: iron
   - type: Stack
     count: 1

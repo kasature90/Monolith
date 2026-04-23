@@ -6,8 +6,9 @@
   components:
   - type: Sprite
     sprite: _Mono/Structures/Machines/nfr_assembler.rsi # Mono
-    snapCardinals: true
     offset: 0.5, 0
+    snapCardinals: true
+    noRot: true
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]

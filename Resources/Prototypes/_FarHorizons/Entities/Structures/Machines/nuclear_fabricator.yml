@@ -28,6 +28,8 @@
         - RawMaterial
         - Ingot
   - type: OreSiloClient
+  - type: Construction # Mono
+    graph: Machine2x1
   - type: Lathe
     idleState: icon
     runningState: building

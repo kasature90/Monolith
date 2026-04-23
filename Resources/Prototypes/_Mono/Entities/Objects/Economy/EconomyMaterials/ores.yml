@@ -11,7 +11,6 @@
     state: malachite
   - type: Item
     sprite: _Mono/Objects/Materials/ore.rsi
-    state: malachite
   - type: Material
   - type: PhysicalComposition
     materialComposition:
@@ -46,7 +45,6 @@
     state: lithium
   - type: Item
     sprite: _Mono/Objects/Materials/ore.rsi
-    state: lithium
   - type: Material
   - type: PhysicalComposition
     materialComposition:

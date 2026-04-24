@@ -191,7 +191,7 @@ public sealed class TurbineSystem : SharedTurbineSystem
             }
 
             var OutputStartingEnergy = _atmosphereSystem.GetThermalEnergy(AirContents);
-            var EnergyGenerated = comp.StatorLoad * (comp.RPM / 60);
+            var EnergyGenerated = comp.StatorLoad * (comp.RPM / (60 * args.dt));
 
             var DeltaE = InputStartingEnergy - OutputStartingEnergy;
             float NewRPM;
@@ -228,7 +228,7 @@ public sealed class TurbineSystem : SharedTurbineSystem
                 comp.Stalling = false;
                 comp.RPM = NextRPM;
             }
-            
+
             if (!_audio.IsPlaying(comp.AlarmAudioUnderspeed) && !comp.Undertemp && comp.FlowRate > 0 && comp.Stalling)
                  PlayAudio(new SoundPathSpecifier("/Audio/_FarHorizons/Machines/alarm_beep.ogg"), uid, out comp.AlarmAudioUnderspeed, AudioParams.Default.WithLoop(true).WithVolume(-4));
             else if (_audio.IsPlaying(comp.AlarmAudioUnderspeed) && (comp.FlowRate <= 0 || comp.Undertemp || comp.RPM > 10))
@@ -364,7 +364,7 @@ public sealed class TurbineSystem : SharedTurbineSystem
     {
         var state = SignalState.Momentary;
         args.Data?.TryGetValue(DeviceNetworkConstants.LogicState, out state);
-        
+
         if (args.Port == comp.StatorLoadIncreasePort)
             comp.IncreasePortState = state;
         else if (args.Port == comp.StatorLoadDecreasePort)

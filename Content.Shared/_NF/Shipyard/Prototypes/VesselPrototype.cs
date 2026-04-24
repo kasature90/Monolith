@@ -197,5 +197,4 @@ public enum VesselEngine : byte
     Uranium,
     Bananium,
     NFR, // Mono
-    HFR, // Mono
 }

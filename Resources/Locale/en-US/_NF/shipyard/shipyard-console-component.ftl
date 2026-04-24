@@ -94,5 +94,4 @@ shipyard-console-engine-Uranium = Uranium
 shipyard-console-engine-Bananium = Bananium
 # Mono start
 shipyard-console-engine-NFR = NFR
-shipyard-console-engine-HFR = HFR
 # Mono end

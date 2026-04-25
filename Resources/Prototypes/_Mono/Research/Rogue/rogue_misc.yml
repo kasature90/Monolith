@@ -19,9 +19,10 @@
   entityIcon: ShipVoucherQuark
   discipline: RogueShipyard
   tier: 1
-  cost: 50000
+  cost: 75000
   recipeUnlocks:
   - QuarkVoucherRogue
+  - SaintieVoucherRogue
   technologyPrerequisites:
   - UniversalMaterialResearchT2
   - NuclearPowerGeneration

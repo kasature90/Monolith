@@ -171,8 +171,8 @@
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
-  id: QuarkVoucherRogue
-  result: ShipVoucherQuark
+  id: SaintieVoucherRogue
+  result: ShipVoucherSaintie
   materials:
     Steel: 30000
     Plasteel: 20000
@@ -181,6 +181,21 @@
     Plasma: 5000
     UraniumFissile: 600
     UraniumDepleted: 4000
+    Silver: 5000
+    Gold: 5000
+
+- type: latheRecipe
+  parent: BaseVoucherRecipe
+  id: QuarkVoucherRogue
+  result: ShipVoucherQuark
+  materials:
+    Steel: 25000
+    Plasteel: 15000
+    Plastic: 25000
+    Glass: 5000
+    Plasma: 5000
+    UraniumFissile: 1000
+    UraniumDepleted: 1500
     Silver: 5000
     Gold: 5000
 

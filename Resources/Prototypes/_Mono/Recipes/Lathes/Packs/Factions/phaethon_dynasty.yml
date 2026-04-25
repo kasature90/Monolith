@@ -45,6 +45,7 @@
   id: MonoRogueVouchersDynamic
   recipes:
   - QuarkVoucherRogue
+  - SaintieVoucherRogue
   - MotleyAnneVoucherRogue
   - SaturnVoucherRogue
   - SnakeletVoucherRogue

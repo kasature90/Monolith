@@ -54,6 +54,6 @@
   storage:
     back:
     - RadioHandheldNF # mono
-    - ShipVoucherQuark
+    - ShipVoucherSaintie
     - PhoneInstrumentHigh
     - RubberStampPDVVizier # mono

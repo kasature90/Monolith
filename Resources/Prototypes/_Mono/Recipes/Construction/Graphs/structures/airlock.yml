@@ -10,7 +10,7 @@
         value: false
       steps:
       - material: Plasteel
-        amount: 4
+        amount: 6
         doAfter: 2
 
   - node: assembly
@@ -33,7 +33,7 @@
       completed:
       - !type:SpawnPrototype
         prototype: SheetPlasteel1
-        amount: 4
+        amount: 6
       - !type:DeleteEntity {}
       steps:
       - tool: Welding

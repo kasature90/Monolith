@@ -77,7 +77,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000 # Inbetween highsec and normal
+        damage: 2000 # Equal to T2 wall
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]

@@ -13,7 +13,7 @@
   category: Large
   group: BlackMarket
   shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/quark.yml
-  guidebookPage: Null
+  guidebookPage: ShipyardNFROperation
   class:
   - Pirate
   - Frigate

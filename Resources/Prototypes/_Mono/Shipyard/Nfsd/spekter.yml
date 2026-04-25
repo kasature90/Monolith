@@ -13,7 +13,7 @@
   group: Security
   access: Security
   shuttlePath: /Maps/_Mono/Shuttles/Nfsd/spekter.yml
-  guidebookPage: Null
+  guidebookPage: ShipyardNFROperation
   class:
   - Pursuit
   - Corvette

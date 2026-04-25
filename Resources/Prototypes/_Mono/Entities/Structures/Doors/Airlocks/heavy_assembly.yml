@@ -106,16 +106,6 @@
     sprite: _Mono/Structures/Doors/HeavyAirlocks/Standard/command.rsi
     state: "assembly"
 
-#Command
-- type: entity
-  parent: AirlockHeavyAssembly
-  id: AirlockHeavyAssemblyCommand
-  suffix: Command
-  components:
-  - type: Sprite
-    sprite: _Mono/Structures/Doors/HeavyAirlocks/Standard/command.rsi
-    state: "assembly"
-
 #Grey
 - type: entity
   parent: AirlockHeavyAssembly

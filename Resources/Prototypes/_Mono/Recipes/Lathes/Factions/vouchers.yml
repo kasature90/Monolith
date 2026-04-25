@@ -194,10 +194,10 @@
     Plastic: 25000
     Glass: 5000
     Plasma: 5000
-    UraniumFissile: 1000
-    UraniumDepleted: 1500
-    Silver: 5000
-    Gold: 5000
+    UraniumFissile: 600
+    UraniumDepleted: 2000
+    Silver: 7500
+    Gold: 7500
 
 - type: latheRecipe
   parent: BaseVoucherRecipe

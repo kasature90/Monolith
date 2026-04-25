@@ -1,4 +1,6 @@
-#Author: Articular1 on Github, Articular on Discord.
+#Author: Starch
+#Github: kasature90
+#Discord: _starch_
 
 - type: vessel
   id: Quark
@@ -15,6 +17,7 @@
   class:
   - Pirate
   - Frigate
+  - Capital
   engine:
   - NFR
 

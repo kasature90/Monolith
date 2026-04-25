@@ -162,7 +162,7 @@
 
 - type: entity
   parent: AirlockHeavyCommand
-  id: AirlockHeavyCommandLocked
+  id: AirlockHeavyCommandFrontierBridgeLocked
   suffix: Frontier Bridge, Locked
   components:
   - type: ContainerFill
@@ -171,7 +171,7 @@
 
 - type: entity
   parent: AirlockHeavyCommand
-  id: AirlockHeavyCommandLocked
+  id: AirlockHeavyCommandFrontierCommandLocked
   suffix: Frontier Command, Locked
   components:
   - type: ContainerFill

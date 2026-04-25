@@ -21,6 +21,7 @@ research-technology-tsfmc-nanofoam = Nanomaterial Growth
 research-technology-tsfmc-eshield = Energy Shielding
 research-technology-tsfmc-advanced-meds = Reconstructive Technologies
 research-technology-tsfmc-altair-voucher = Altair Procurement LPC
+research-technology-tsfmc-spekter-voucher = Spekter Procurement LPC
 
 # T3 TSFMC
 research-technology-tsfmc-flyssa-voucher = Flyssa Procurement LPC

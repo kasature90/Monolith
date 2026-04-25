@@ -201,6 +201,26 @@
   - type: StaticPrice
     vendPrice: 300000
 
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherSpekter
+  name: TSF spekter LPC
+  description: A small card that contains the data for the procurement of an Spekter-class missile corvette from the flagship's reserves.
+  components:
+  - type: Sprite
+    layers:
+    - state: mtech
+    - state: stripetsfmc
+    - state: vouchermilitary
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: Security
+    companyName: TSF
+    vessels:
+    - Spekter
+  - type: StaticPrice
+    vendPrice: 300000
+
 # PDV
 
 - type: entity
@@ -348,7 +368,7 @@
   parent: BaseShipLPC
   id: ShipVoucherRook
   name: rook LPC
-  description: A small card that contains the data for the procurement of a Rook class drone. 
+  description: A small card that contains the data for the procurement of a Rook class drone.
   components:
   - type: Sprite
     layers:
@@ -368,7 +388,7 @@
   parent: BaseShipLPC
   id: ShipVoucherTaser
   name: taser LPC
-  description: A small card that contains the data for the procurement of a taser class drone. 
+  description: A small card that contains the data for the procurement of a taser class drone.
   components:
   - type: Sprite
     layers:

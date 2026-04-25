@@ -56,6 +56,20 @@
   position: 11, 9
 
 - type: technology
+  id: TsfSpekter
+  name: research-technology-tsfmc-spekter-voucher
+  entityIcon: ShipVoucherSpekter
+  discipline: TsfmcShipyard
+  tier: 2
+  cost: 30000
+  recipeUnlocks:
+  - SpekterVoucherTSF
+  technologyPrerequisites:
+  - UniversalMaterialResearchT1
+  - NuclearPowerGeneration
+  position: 9, 9
+
+- type: technology
   id: TsfFlyssa
   name: research-technology-tsfmc-flyssa-voucher
   entityIcon: ShipVoucherFlyssa

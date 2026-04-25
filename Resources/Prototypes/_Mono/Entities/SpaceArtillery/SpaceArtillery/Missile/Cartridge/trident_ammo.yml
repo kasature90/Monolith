@@ -16,10 +16,10 @@
           !type:PhysShapeCircle
           radius: 0.3
         density: 1500
-        layer:
-        - WallLayer
+        hard: false
         mask:
-        - MachineMask
+        - Impassable
+        - BulletImpassable
   - type: Projectile
     impactEffect: BulletImpactEffect
     damage:

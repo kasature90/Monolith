@@ -1,34 +1,34 @@
 #Author: Articular1 on Github, Articular on Discord.
 
 - type: vessel
-  id: Saintie
+  id: Quark
   parent: BaseVesselAntag
-  name: PDW Saintie
-  description: An expensive Frigate designed by the Phaethon Divine Shipworks, utilised by imperial vanguard for swift ambush attacks against enemy fleets.
+  name: PDV Quark
+  description: A next-gen frigate, taking advantage of an NFR to utilize heavy armor & thrusters. It's armament is optimized more for close-range brawling.
   limit: 2
   price: 345000
   purchasable: false # Voucher only
   category: Large
   group: BlackMarket
-  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/saintie.yml
+  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/quark.yml
   guidebookPage: Null
   class:
   - Pirate
   - Frigate
   engine:
-  - AME
+  - NFR
 
 - type: gameMap
-  id: Saintie
-  mapName: 'Saintie'
-  mapPath: /Maps/_Mono/Shuttles/BlackMarket/saintie.yml
+  id: Quark
+  mapName: 'Quark'
+  mapPath: /Maps/_Mono/Shuttles/BlackMarket/quark.yml
   minPlayers: 0
   stations:
-    Saintie:
+    Quark:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Saintie PDV{1}'
+          mapNameTemplate: 'Quark PDV{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

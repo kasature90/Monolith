@@ -171,8 +171,8 @@
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
-  id: SaintieVoucherRogue
-  result: ShipVoucherSaintie
+  id: QuarkVoucherRogue
+  result: ShipVoucherQuark
   materials:
     Steel: 30000
     Plasteel: 20000

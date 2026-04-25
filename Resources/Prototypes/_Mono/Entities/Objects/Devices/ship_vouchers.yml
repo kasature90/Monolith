@@ -225,9 +225,9 @@
 
 - type: entity
   parent: BaseShipLPC
-  id: ShipVoucherSaintie
-  name: PDV saintie LPC
-  description: A small card that authorizes the procurement of a Saintie.
+  id: ShipVoucherQuark
+  name: PDV quark LPC
+  description: A small card that authorizes the procurement of a Quark.
   components:
   - type: Sprite
     layers:
@@ -239,7 +239,7 @@
     consoleType: BlackMarket
     companyName: PDV
     vessels:
-    - Saintie
+    - Quark
   - type: StaticPrice
     vendPrice: 325000
 

@@ -20405,3 +20405,19 @@ Entries:
   id: 2249
   time: '2026-04-24T19:27:01.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3876
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Tarantula update again, used the wrong file
+  id: 2250
+  time: '2026-04-25T01:05:07.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3849
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Autopulser capacity reduced, ADM version maxangle increased to match
+        asakim version.
+  id: 2251
+  time: '2026-04-25T01:05:47.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3862

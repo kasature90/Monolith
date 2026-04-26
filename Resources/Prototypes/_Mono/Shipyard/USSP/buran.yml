@@ -14,7 +14,7 @@
   class:
   - Frigate
   engine:
-  - AME
+  - NFR
 
 - type: gameMap
   id: Buran

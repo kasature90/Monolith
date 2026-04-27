@@ -30,6 +30,7 @@
   - WeaponDEWCalico
   - WeaponDEWSmilodon
   - WeaponLauncherTSFOsiris
+  - WeaponLauncherTSFLeopardTSF
 
 - type: latheRecipePack
   id: MonoTSFVouchersDynamic

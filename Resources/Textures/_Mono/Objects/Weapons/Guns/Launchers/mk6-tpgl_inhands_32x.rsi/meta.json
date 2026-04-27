@@ -20,6 +20,10 @@
       "directions": 4
     },
     {
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4
+    },
+    {
       "name": "wielded-inhand-right",
       "directions": 4
     },

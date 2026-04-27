@@ -1,0 +1,43 @@
+- type: entity
+  id: BaseMagazine35mmGrenade
+  name: "base magazine (35x53mm grenade)"
+  parent: [ BaseCartridge, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Magazine35mmGrenade
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge35mmGrenade
+    proto: Cartridge35mmGrenadeSAPHE
+    capacity: 6
+  - type: Item
+    size: Normal
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/35mm_grenade/35mm_grenade_drum.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: Magazine35mmGrenade
+  name: "magazine (35x53mm grenade)"
+  parent: BaseMagazine35mmGrenade
+  abstract: false
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge35mmGrenadeSAPHE
+    capacity: 6

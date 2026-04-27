@@ -5507,6 +5507,8 @@ entities:
   entities:
   - uid: 462
     components:
+    - type: MetaData
+      name: signal switch (STATOR AUTOMATIC LOAD CONTROL)
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 1.5,-11.5
@@ -5529,6 +5531,10 @@ entities:
         1026:
         - - Status
           - InputB
+    - type: Label
+      currentLabel: STATOR AUTOMATIC LOAD CONTROL
+    - type: NameModifier
+      baseName: signal switch
 - proto: SMESAdvanced
   entities:
   - uid: 782

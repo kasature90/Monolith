@@ -223,7 +223,6 @@
     fireRate: 0.3
     selectedMode: SemiAuto
     availableModes:
-    - FullAuto
     - SemiAuto
     soundGunshot:
       path: /Audio/_Harmony/Weapons/Guns/Gunshots/hristov_fire_alt.ogg

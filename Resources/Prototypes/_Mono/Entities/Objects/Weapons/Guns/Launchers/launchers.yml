@@ -226,7 +226,7 @@
     - FullAuto
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+      path: /Audio/_Harmony/Weapons/Guns/Gunshots/hristov_fire_alt.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: ChamberMagazineAmmoProvider
@@ -237,8 +237,8 @@
   - type: Wieldable
   - type: GunRequiresWield
   - type: WieldDelay
-    baseDelay: 1.5
-    modifiedDelay: 1.5
+    baseDelay: 1.1
+    modifiedDelay: 1.1
     preventFiring: true
   - type: ItemSlots
     slots:
@@ -246,7 +246,7 @@
         name: Magazine
         startingItem: Magazine35mmGrenade
         insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/amr_magin.ogg
-        ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/cm82_magout.ogg
+        ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/cm82_magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -269,11 +269,11 @@
     zeroVisible: true
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
-    maxOffset: 2.5
-    pvsIncrease: 0.4
+    maxOffset: 1.5
+    pvsIncrease: 0.2
   - type: SpeedModifiedOnWield
-    walkModifier: 0.7
-    sprintModifier: 0.7
+    walkModifier: 0.5
+    sprintModifier: 0.5
   - type: PirateBountyItem
     id: ExperimentalFactionWeapon
   - type: LaserPointer

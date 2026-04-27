@@ -245,26 +245,6 @@
 
 - type: entity
   parent: BaseShipLPC
-  id: ShipVoucherQuark
-  name: PDV quark LPC
-  description: A small card that authorizes the procurement of a Quark.
-  components:
-  - type: Sprite
-    layers:
-    - state: mtech
-    - state: stripepdv
-    - state: vouchermilitary
-  - type: ShipyardVoucher
-    destroyOnEmpty: true
-    consoleType: BlackMarket
-    companyName: PDV
-    vessels:
-    - Quark
-  - type: StaticPrice
-    vendPrice: 325000
-
-- type: entity
-  parent: BaseShipLPC
   id: ShipVoucherMotleyAnne
   name: PDV motley anne LPC
   description: A small card that authorizes the procurement of a Motley Anne.

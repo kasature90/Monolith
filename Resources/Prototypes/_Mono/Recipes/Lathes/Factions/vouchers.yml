@@ -186,21 +186,6 @@
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
-  id: QuarkVoucherRogue
-  result: ShipVoucherQuark
-  materials:
-    Steel: 25000
-    Plasteel: 15000
-    Plastic: 25000
-    Glass: 5000
-    Plasma: 5000
-    UraniumFissile: 600
-    UraniumDepleted: 2000
-    Silver: 7500
-    Gold: 7500
-
-- type: latheRecipe
-  parent: BaseVoucherRecipe
   id: MotleyAnneVoucherRogue
   result: ShipVoucherMotleyAnne
   materials:

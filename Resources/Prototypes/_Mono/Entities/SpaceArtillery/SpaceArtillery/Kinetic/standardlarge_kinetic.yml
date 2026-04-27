@@ -248,7 +248,7 @@
   parent:
   - BallisticArtilleryMagazine
   - BallisticArtilleryTier5HP
-  description: Fires 140mm shells in a 20 round burst from an internal autoloader.
+  description: Fires 140mm shells in a 15 round burst from an internal autoloader.
   components:
   - type: StaticPrice
     price: 30000

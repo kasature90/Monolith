@@ -192,9 +192,9 @@
 # TPGL (its just a QLU-11...)
 
 - type: entity
-  name: TCA MK.6 "Leopard" TPGL (35x53mm grenade)
+  name: TCA MK.6 "Anubis" TPGL (35x53mm grenade) # CS2 reference
   parent: [ BaseWeaponLauncher, BaseWeaponRifle ] # Magfed so we use rifle
-  id: WeaponLauncherTSFLeopard
+  id: WeaponLauncherTSFAnubis
   description: A precision magfed grenade rifle with an inbuilt fire-control system, originally intended for use against fortifications & counterinsurgency. Fires 35mm grenades with high-velocity and precision.
   components:
   - type: Sprite

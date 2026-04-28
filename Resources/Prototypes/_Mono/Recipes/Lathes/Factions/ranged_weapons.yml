@@ -172,12 +172,12 @@
     Plastitanium: 2500
     Silver: 250
 
-# TSF Leopard
+# TSF Anubis
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
-  id: WeaponLauncherTSFLeopardTSF
-  result: WeaponLauncherTSFLeopard
+  id: WeaponLauncherTSFAnubis
+  result: WeaponLauncherTSFAnubis
   categories:
   - AntiMaterial
   - Antitank

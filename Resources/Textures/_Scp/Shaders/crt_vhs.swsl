@@ -1,35 +1,35 @@
-﻿const lowp float SCANLINES_OPACITY = 0.8;
-const lowp float SCANLINES_WIDTH = 0.8;
-const lowp float GRILLE_OPACITY = 0.3;
-const lowp vec2 RESOLUTION = vec2(640.0, 480.0);
+﻿const lowp float SCANLINES_OPACITY = 0.4;
+const lowp float SCANLINES_WIDTH = 0.4;
+const lowp float GRILLE_OPACITY = 0.15;
+const lowp vec2 RESOLUTION = vec2(1280.0, 960.0);
 const bool PIXELATE = true;
 const bool ROLL = false;
 const lowp float ROLL_SPEED = 1.5;
 const lowp float ROLL_SIZE = 0.5;
 const lowp float ROLL_VARIATION = 3.0;
-const lowp float DISTORT_INTENSITY = 0.2;
-const lowp float NOISE_OPACITY = 0.4;
+const lowp float DISTORT_INTENSITY = 0.05;
+const lowp float NOISE_OPACITY = 0.1;
 const lowp float NOISE_SPEED = 5.0;
 const lowp float STATIC_NOISE_INTENSITY = 0.05;
-const lowp float ABERRATION = 0.02;
-const lowp float BRIGHTNESS = 0.4;
+const lowp float ABERRATION = 0.005;
+const lowp float BRIGHTNESS = 1;
 const bool DISCOLOR = true;
-const lowp float WARP_AMOUNT = 1.0;
+const lowp float WARP_AMOUNT = 0.1;
 const bool CLIP_WARP = true;
 const lowp float VIGNETTE_INTENSITY = 0.2;
-const lowp float VIGNETTE_OPACITY = 7.0;
+const lowp float VIGNETTE_OPACITY = 2.0;
 
 // Новые параметры VHS эффектов
-const lowp float HORIZONTAL_JITTER = 0.0; // Горизонтальное дрожание
-const lowp float JITTER_SPEED = 0.0;      // Скорость дрожания
-const lowp float COLOR_DEGRADATION = 0.1;  // Деградация цвета
+const lowp float HORIZONTAL_JITTER = 0.00; // Горизонтальное дрожание
+const lowp float JITTER_SPEED = 0.00;      // Скорость дрожания
+const lowp float COLOR_DEGRADATION = 0.4;  // Деградация цвета
 const lowp float VERTICAL_JUMP = 0.0;     // Вертикальные скачки
 const lowp float VERTICAL_JUMP_PERIOD = 0.0; // Период вертикальных скачков
-const lowp float TAPE_WAVE_AMOUNT = 0.3;   // Волнистость ленты
-const lowp float TAPE_CREASE_AMOUNT = 0.0; // Эффект замятой ленты
-const lowp float TAPE_CREASE_PERIOD = 0.0; // Период замятостей ленты
+const lowp float TAPE_WAVE_AMOUNT = 0.005;   // Волнистость ленты
+const lowp float TAPE_CREASE_AMOUNT = 0.01; // Эффект замятой ленты
+const lowp float TAPE_CREASE_PERIOD = 5.0; // Период замятостей ленты
 const lowp float HEAD_SWITCHING_NOISE = 0.0; // Шум переключения головок
-const lowp float BLEEDING = 0.3;          // Растекание цветов
+const lowp float BLEEDING = 0.05;          // Растекание цветов
 
 uniform sampler2D SCREEN_TEXTURE;
 

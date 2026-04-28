@@ -33,7 +33,7 @@ public sealed partial class ScpCCVars
     /// Отвечает за главный рубильник для двух опций настройки. // Shitty translation, dont take as fact - "Responsible for the master switch for two configuration options."
     /// </summary>
     public static readonly CVarDef<bool> LightBloomEnable =
-        CVarDef.Create("scp.light_bloom_enable", true, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("scp.light_bloom_enable", false, CVar.CLIENTONLY | CVar.ARCHIVE); // Mono - false by default, keeping it incase anyone actually wants to use this; I personally think it looks really weird.
 
     /// <summary>
     /// Будет ли отображаться конус у эффекта свечения лампочек? // Shitty translation, dont take as fact - "Will the light cone be displayed for the light bulb glow effect?"

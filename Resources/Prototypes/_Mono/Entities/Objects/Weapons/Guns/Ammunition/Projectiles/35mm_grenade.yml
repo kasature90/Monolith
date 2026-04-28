@@ -11,6 +11,12 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 50
-    intensitySlope: 10
-    maxIntensity: 100
+    maxIntensity: 75
+    intensitySlope: 4
+    totalIntensity: 75
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Piercing: 45
+    armorPenetration: 0.1

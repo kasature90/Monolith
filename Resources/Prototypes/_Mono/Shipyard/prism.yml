@@ -1,0 +1,39 @@
+#Author: _starch_ (discord)/kasature90 (github)
+
+- type: vessel
+  id: Prism
+  parent: BaseVessel
+  name: VEF Prism
+  description: A relatively large corvette with a heavy focus on plasma weaponry. Armed with a single M381 mass-driver for those fast-moving targets. Capable of basic salvage on the side.
+  price: 266500
+  category: Large
+  group: Shipyard
+  access: Mercenary
+  shuttlePath: /Maps/_Mono/Shuttles/prism.yml
+  guidebookPage: ShipyardNFROperation
+  class:
+  - Corvette
+  - Capital
+  - Salvage
+  engine:
+  - NFR
+
+- type: gameMap
+  id: Prism
+  mapName: 'Prism'
+  mapPath: /Maps/_Mono/Shuttles/prism.yml
+  minPlayers: 0
+  stations:
+    Prism:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Prism MIL{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Mercenary: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+

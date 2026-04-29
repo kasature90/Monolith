@@ -3,7 +3,7 @@
 - type: vessel
   id: Prism
   parent: BaseVessel
-  name: VEF Prism
+  name: SKR Prism
   description: A relatively large corvette with a heavy focus on plasma weaponry. Armed with a single M381 mass-driver for those fast-moving targets. Capable of basic salvage on the side.
   price: 266500
   category: Large

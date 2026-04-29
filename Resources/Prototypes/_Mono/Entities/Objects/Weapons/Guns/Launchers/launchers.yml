@@ -276,5 +276,5 @@
   - type: PirateBountyItem
     id: ExperimentalFactionWeapon
   - type: LaserPointer
-    targetedColor: "#00ff0d"
-    defaultColor: "#00a2ff"
+    targetedColor: "#ff0037"
+    defaultColor: "#03c2fc"

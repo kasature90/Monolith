@@ -5,7 +5,7 @@
   parent: BaseVessel
   name: SKR Prism
   description: A relatively large corvette with a heavy focus on plasma weaponry. Armed with a single M381 mass-driver for those fast-moving targets. Capable of basic salvage on the side.
-  price: 266500
+  price: 286500 # Appraises at ~220k
   category: Large
   group: Shipyard
   access: Mercenary

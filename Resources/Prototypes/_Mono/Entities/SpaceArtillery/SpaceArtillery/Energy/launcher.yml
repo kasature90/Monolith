@@ -639,6 +639,75 @@
     repairTime: 25
     repairCost: 100
 
+# T243
+
+- type: entity
+  id: WeaponLaserTurretTaotie
+  parent:
+  - BallisticArtilleryUnanchorable
+  - BallisticArtilleryTier5HP
+  name: Type-243 "Taotie" Particle Beam
+  description: A weapon developed off the particle-acceleration principles of recovered ADS weapons, capable of accelerating & ionizing a small amount of copper into a condensed beam going near-lightspeed. Due to limitations in material science & manufacturing, it's larger and takes time to recharge.
+  components:
+  - type: StaticPrice
+    price: 50000
+  - type: Sprite
+    sprite:  _Mono/Objects/ShuttleWeapons/t243.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: AmmoCounter
+  - type: Battery
+    maxCharge: 30000
+    startingCharge: 30000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 1000
+  - type: ExaminableBattery
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    fireRate: 20
+    recoil: 300 # It's not a laser. Let's get that cleared up.
+    minAngle: 0
+    maxAngle: 0
+    shootThermalSignature: 15000000 # 3x apollo
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/ship_perforator.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: ShipGunClass
+    shipClass: Superheavy
+  - type: HitscanBatteryAmmoProvider
+    proto: TaotieParticleBeam
+    fireCost: 30000
+  - type: RadarBlip
+    radarColor: "#C92BCC"
+    scale: 3
+    visibleFromOtherGrids: true
+    gridConfig:
+      color: "#C92BCC"
+      shape: Square
+      respectZoom: true
+      rotate: true
+      bounds: "-2,-2,2,2"
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.75,-0.75,0.75,0.75"
+        density: 1500
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: ShipGunType
+    shipType: Energy
+  - type: ShipRepairable
+    repairTime: 60
+    repairCost: 300
+
 # PRE- FRACTURE
 
 

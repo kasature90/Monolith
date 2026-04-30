@@ -572,6 +572,38 @@
   - type: HitscanBasicRaycast
     maxDistance: 500
 
+# Taotie
+
+- type: entity
+  parent: BasicHitscan
+  id: TaotieParticleBeam
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Mono/Objects/Weapons/Guns/Projectiles/lasers.rsi
+      state: gauss_muzzle
+    travelFlash:
+      sprite: _Mono/Objects/Weapons/Guns/Projectiles/lasers.rsi
+      state: gauss_trail
+    impactFlash:
+      sprite: _Mono/Objects/Weapons/Guns/Projectiles/lasers.rsi
+      state: gauss_impact
+  - type: HitscanRadarSignature
+    radarColor: "#FFFFFF"
+    lifeTime: 0.5
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Piercing: 250
+        Heat: 500
+        Structural: 750
+        Radiation: 500
+  - type: HitscanBasicRaycast
+    maxDistance: 1700
+  - type: HitscanSpawnEntity
+    spawnedEntity: TaotieExplosion
+
 # Hitscan Explosions
 
 - type: entity
@@ -609,3 +641,15 @@
     totalIntensity: 50
     intensitySlope: 10
     maxIntensity: 10
+
+- type: entity
+  id: TaotieExplosion
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TriggerOnSpawn
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 1600
+    intensitySlope: 15
+    maxIntensity: 400

@@ -658,8 +658,8 @@
   - type: Appearance
   - type: AmmoCounter
   - type: Battery
-    maxCharge: 30000
-    startingCharge: 30000
+    maxCharge: 60000
+    startingCharge: 60000
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 1000
@@ -668,10 +668,10 @@
     range: 500
   - type: Gun
     fireRate: 20
-    recoil: 300 # It's not a laser. Let's get that cleared up.
+    recoil: 1250 # It's not a laser. Let's get that cleared up.
     minAngle: 0
     maxAngle: 0
-    shootThermalSignature: 15000000 # 3x apollo
+    shootThermalSignature: 25000000 # 5x apollo
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ship_perforator.ogg
     soundEmpty:
@@ -680,7 +680,7 @@
     shipClass: Superheavy
   - type: HitscanBatteryAmmoProvider
     proto: TaotieParticleBeam
-    fireCost: 30000
+    fireCost: 60000
   - type: RadarBlip
     radarColor: "#C92BCC"
     scale: 3

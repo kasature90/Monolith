@@ -650,6 +650,6 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 1600
+    totalIntensity: 2000
     intensitySlope: 15
     maxIntensity: 400

@@ -595,10 +595,8 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Piercing: 250
-        Heat: 500
-        Structural: 750
-        Radiation: 500
+        Structural: 25
+        Radiation: 50
   - type: HitscanBasicRaycast
     maxDistance: 1700
   - type: HitscanSpawnEntity
@@ -650,6 +648,6 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 2000
+    totalIntensity: 5
     intensitySlope: 15
     maxIntensity: 400

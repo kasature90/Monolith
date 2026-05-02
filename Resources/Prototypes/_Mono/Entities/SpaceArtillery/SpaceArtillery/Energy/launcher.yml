@@ -647,6 +647,7 @@
   - BallisticArtilleryUnanchorable
   - BallisticArtilleryTier5HP
   name: Type-243 "Taotie" Particle Beam
+  suffix: SPINAL
   description: A weapon developed off the particle-acceleration principles of recovered ADS weapons, capable of accelerating & ionizing a small amount of copper into a condensed beam going near-lightspeed. Due to limitations in material science & manufacturing, it's larger and takes time to recharge.
   components:
   - type: StaticPrice
@@ -663,24 +664,26 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 1000
+    autoRechargePause: true
+    autoRechargePauseTime: 60
   - type: ExaminableBattery
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 20
-    recoil: 1250 # It's not a laser. Let's get that cleared up.
+    fireRate: 6
+    recoil: 50 # It's not a laser. Let's get that cleared up.
     minAngle: 0
     maxAngle: 0
     shootThermalSignature: 25000000 # 5x apollo
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/ship_perforator.ogg
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/glassing.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
   - type: ShipGunClass
     shipClass: Superheavy
   - type: HitscanBatteryAmmoProvider
     proto: TaotieParticleBeam
-    fireCost: 60000
+    fireCost: 200
   - type: RadarBlip
     radarColor: "#C92BCC"
     scale: 3

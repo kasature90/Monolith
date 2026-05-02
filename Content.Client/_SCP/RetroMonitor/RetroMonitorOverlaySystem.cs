@@ -2,6 +2,7 @@ using Content.Client._Scp.Grain;
 using Content.Client._Scp.Vignette;
 using Content.Shared._DV.CCVars; // Mono
 using Content.Shared._Scp.RetroMonitor;
+using Content.Shared._Scp.ScpCCVars;
 using Robust.Client.Graphics;
 using Robust.Shared.Configuration; // Mono
 using Robust.Shared.Player;

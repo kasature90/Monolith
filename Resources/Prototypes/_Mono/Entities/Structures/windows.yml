@@ -178,6 +178,9 @@
   id: TimedSealsTableSpawner
   name: random timed seal spawner (30-180 minutes)
   components:
+  - type: Sprite
+    layers:
+    - state: red
   - type: EntityTableSpawner
     offset: 0.0
     table: !type:NestedSelector

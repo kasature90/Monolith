@@ -1,6 +1,6 @@
-using Content.Shared._Scp.RetroMonitor;
+using Content.Shared._Scp.RetroMonitor; // Mono
 using Robust.Client.Graphics;
-using Robust.Client.Player;
+using Robust.Client.Player; // Mono
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 

@@ -14,6 +14,7 @@
     maxIntensity: 75
     intensitySlope: 4
     totalIntensity: 75
+    maxTileBreak: 0
   - type: Projectile
     damage:
       types:

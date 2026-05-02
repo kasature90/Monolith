@@ -1,6 +1,6 @@
-﻿using Content.Shared._Scp.ScpCCVars;
-using Robust.Client.Graphics;
-using Robust.Shared.Configuration;
+﻿using Content.Shared._Scp.ScpCCVars; // Mono
+using Robust.Client.Graphics; // Mono
+using Robust.Shared.Configuration; // Mono
 using Robust.Shared.Player;
 
 namespace Content.Client._Scp.Grain;
@@ -41,20 +41,20 @@ public sealed class GrainOverlaySystem : EntitySystem
     {
         if (_overlayManager.HasOverlay<GrainOverlay>())
             _overlayManager.RemoveOverlay(_overlay);
-        else if (_cfg.GetCVar(ScpCCVars.GrainToggleOverlay))
+        else if (_cfg.GetCVar(ScpCCVars.GrainToggleOverlay)) // Mono
             _overlayManager.AddOverlay(_overlay);
     }
 
     public void AddOverlay()
     {
-        if (!_overlayManager.HasOverlay<GrainOverlay>() && _cfg.GetCVar(ScpCCVars.GrainToggleOverlay))
+        if (!_overlayManager.HasOverlay<GrainOverlay>() && _cfg.GetCVar(ScpCCVars.GrainToggleOverlay)) // Mono
             _overlayManager.AddOverlay(_overlay);
     }
 
     public void RemoveOverlay()
     {
         if (_overlayManager.HasOverlay<GrainOverlay>())
-            _overlayManager.RemoveOverlay(_overlay);
+            _overlayManager.RemoveOverlay(_overlay); // Mono
     }
     // Mono start
     private void OnGrainCvarChanged(bool enabled)

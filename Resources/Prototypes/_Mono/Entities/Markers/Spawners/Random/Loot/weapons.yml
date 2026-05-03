@@ -7,7 +7,6 @@
     layers:
     - state: red
   - type: EntityTableSpawner
-    offset: 0.0
     table: !type:NestedSelector
       tableId: POILootMixed
       prob: 1.0
@@ -32,7 +31,6 @@
     layers:
     - state: red
   - type: EntityTableSpawner
-    offset: 0.0
     table: !type:NestedSelector
       tableId: POILootWeapons
       prob: 0.8
@@ -120,7 +118,6 @@
     layers:
     - state: red
   - type: EntityTableSpawner
-    offset: 0.0
     table: !type:NestedSelector
       tableId: POILootAmmo
       prob: 1.0

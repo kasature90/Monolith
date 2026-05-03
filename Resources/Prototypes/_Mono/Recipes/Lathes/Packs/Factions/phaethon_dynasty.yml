@@ -44,8 +44,10 @@
 - type: latheRecipePack
   id: MonoRogueVouchersDynamic
   recipes:
+  - ShipVoucherPdvT0Recipe
+  - ShipVoucherPdvT1RandomRecipe
+  - ShipVoucherPdvT2RandomRecipe
   - SaintieVoucherRogue
-  - MotleyAnneVoucherRogue
   - SaturnVoucherRogue
   - SnakeletVoucherRogue
   - InertiaVoucherRogue

@@ -211,14 +211,14 @@
       - !type:GroupSelector
         weight: 0.2
         children:
-        - id: Magazine762x51mmPlasteelRIP
-        - id: Magazine762x54mmRPlasteelRIP
-        - id: Magazine762x39mmPlasteelRIP
-        - id: Magazine556x45mmPlasteelRIP
-        - id: Magazine762x51mmPlasteelHP
-        - id: Magazine762x54mmRPlasteelHP
-        - id: Magazine762x39mmPlasteelHP
-        - id: Magazine556x45mmPlasteelHP
+        - id: Magazine762x51mmRIP
+        - id: Magazine762x54mmRRIP
+        - id: Magazine762x39mmRIP
+        - id: Magazine556x45mmRIP
+        - id: Magazine762x51mmHP
+        - id: Magazine762x54mmRHP
+        - id: Magazine762x39mmHP
+        - id: Magazine556x45mmHP
       - !type:GroupSelector
         weight: 0.05
         children:

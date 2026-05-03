@@ -58,7 +58,7 @@
 - type: entity
   id: Cartridge68x52mmHP
   name: cartridge (6.8x52mm STANAG Caseless HP)
-  parent: BaseCartridge68x52mm
+  parent: BaseCartridge68x52mmCaseless
   components:
   - type: CartridgeAmmo
     proto: Bullet68x52mmCaselessHP
@@ -73,7 +73,7 @@
 - type: entity
   id: Cartridge68x52mmRIP
   name: cartridge (6.8x52mm STANAG Caseless RIP)
-  parent: BaseCartridge68x52mm
+  parent: BaseCartridge68x52mmCaseless
   components:
   - type: CartridgeAmmo
     proto: Bullet68x52mmCaselessRIP
@@ -90,7 +90,7 @@
 - type: entity
   id: Cartridge68x52mmPlasteelAP
   name: cartridge (6.8x52mm STANAG Caseless AP)
-  parent: BaseCartridge68x52mm
+  parent: BaseCartridge68x52mmCaseless
   components:
   - type: CartridgeAmmo
     proto: Bullet68x52mmCaselessPlasteelAP

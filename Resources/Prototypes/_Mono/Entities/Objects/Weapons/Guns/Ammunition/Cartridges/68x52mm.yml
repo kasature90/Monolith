@@ -56,7 +56,7 @@
 # Mono AP syst
 #anti-flesh:
 - type: entity
-  id: Cartridge68x52mmHP
+  id: Cartridge68x52mmCaselessHP
   name: cartridge (6.8x52mm STANAG Caseless HP)
   parent: BaseCartridge68x52mmCaseless
   components:
@@ -71,7 +71,7 @@
       color: "#90EE90"
 
 - type: entity
-  id: Cartridge68x52mmRIP
+  id: Cartridge68x52mmCaselessRIP
   name: cartridge (6.8x52mm STANAG Caseless RIP)
   parent: BaseCartridge68x52mmCaseless
   components:
@@ -88,7 +88,7 @@
 #armor-piercing:
 
 - type: entity
-  id: Cartridge68x52mmPlasteelAP
+  id: Cartridge68x52mmCaselessPlasteelAP
   name: cartridge (6.8x52mm STANAG Caseless AP)
   parent: BaseCartridge68x52mmCaseless
   components:

@@ -246,7 +246,7 @@
   id: WeaponTurretLongbow
   name: L/65 "Longbow" 140mm autocannon
   parent:
-  - BallisticArtilleryMagazine
+  - BallisticArtilleryUnanchorableMagazine
   - BallisticArtilleryTier5HP
   description: Fires 140mm shells in a 15 round burst from an internal autoloader.
   components:

@@ -67,10 +67,10 @@
   id: VanykMagazine
 
 - type: Tag
-  id: VesperaCartridge
+  id: MissileCartridge50mm
 
 - type: Tag
-  id: VesperaMagazine
+  id: MissileMagazine50mm
 
 - type: Tag
   id: TovekCartridge

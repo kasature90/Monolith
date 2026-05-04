@@ -1,7 +1,7 @@
 - type: entity
   id: Magazine140mm
-  name: "140mm ammo loader"
-  description: "An ammunition loader containing infinite 140mm HEAT rounds. Usable by vessel-mounted artillery pieces."
+  name: "140mm APHE ammo loader"
+  description: "An ammunition loader containing infinite 140mm APHE rounds. Usable by vessel-mounted artillery pieces."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
   - type: Tag
@@ -21,7 +21,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi # Im nothing like yall
     layers:
     - state: base
       map: [ "enum.GunVisualLayers.Base" ]
@@ -44,7 +44,7 @@
     - 140mmCartridge
   - type: CartridgeAmmo
     deleteOnSpawn: true
-    proto: ShipLongbowProjectile
+    proto: 140mmBulletAPHE
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
     layers:

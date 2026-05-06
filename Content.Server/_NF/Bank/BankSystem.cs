@@ -356,6 +356,20 @@ public sealed partial class BankSystem : SharedBankSystem
             return false;
         }
 
+        // Mono start - IRS
+        if (TryComp<BankAccountComponent>(ent, out var bankAccount))
+        {
+            bankAccount.Modifier = bankAccount.Balance switch // THIS IS THE AMOUNT U DIVIDE BY... NOT ACTUALLY A MULTIPLIER!!!
+            {
+                < 1000000 => 1,
+                < 2000000 => 2,
+                < 3000000 => 5,
+                < 4000000 => 10,
+                < 5000000 => 20,
+                _ => 50,
+            };
+        }
+
         balance = profile.BankBalance;
         return true;
     }
@@ -374,6 +388,7 @@ public sealed partial class BankSystem : SharedBankSystem
             balance = 0;
             return true;
         }
+
         if (!_prefsManager.TryGetCachedPreferences(session.UserId, out var prefs))
         {
             _log.Info($"{session.UserId} has no cached prefs");
@@ -387,6 +402,21 @@ public sealed partial class BankSystem : SharedBankSystem
             balance = 0;
             return false;
         }
+
+        // Mono start - IRS
+        if (TryComp<BankAccountComponent>(session.AttachedEntity, out var bankAccount))
+        {
+        bankAccount.Modifier = bankAccount.Balance switch // THIS IS THE AMOUNT U DIVIDE BY... NOT ACTUALLY A MULTIPLIER!!!
+        {
+            < 1000000 => 1,
+            < 2000000 => 2,
+            < 3000000 => 5,
+            < 4000000 => 10,
+            < 5000000 => 20,
+            _ => 50,
+        };
+    }
+    // Mono end
 
         balance = profile.BankBalance;
         return true;

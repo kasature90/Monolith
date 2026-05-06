@@ -356,20 +356,6 @@ public sealed partial class BankSystem : SharedBankSystem
             return false;
         }
 
-        // Mono start - IRS
-        if (TryComp<BankAccountComponent>(ent, out var bankAccount))
-        {
-            bankAccount.Modifier = bankAccount.Balance switch // THIS IS THE AMOUNT U DIVIDE BY... NOT ACTUALLY A MULTIPLIER!!!
-            {
-                < 1000000 => 1,
-                < 2000000 => 2,
-                < 3000000 => 5,
-                < 4000000 => 10,
-                < 5000000 => 20,
-                _ => 50,
-            };
-        }
-
         balance = profile.BankBalance;
         return true;
     }
@@ -403,21 +389,6 @@ public sealed partial class BankSystem : SharedBankSystem
             return false;
         }
 
-        // Mono start - IRS
-        if (TryComp<BankAccountComponent>(session.AttachedEntity, out var bankAccount))
-        {
-        bankAccount.Modifier = bankAccount.Balance switch // THIS IS THE AMOUNT U DIVIDE BY... NOT ACTUALLY A MULTIPLIER!!!
-        {
-            < 1000000 => 1,
-            < 2000000 => 2,
-            < 3000000 => 5,
-            < 4000000 => 10,
-            < 5000000 => 20,
-            _ => 50,
-        };
-    }
-    // Mono end
-
         balance = profile.BankBalance;
         return true;
     }
@@ -441,17 +412,6 @@ public sealed partial class BankSystem : SharedBankSystem
     public void OnInit(EntityUid mobUid, BankAccountComponent comp, ComponentInit _)
     {
         UpdateBankBalance(mobUid, comp);
-        // Mono start - IRS
-        comp.Modifier = comp.Balance switch // THIS IS THE AMOUNT U DIVIDE BY... NOT ACTUALLY A MULTIPLIER!!!
-        {
-            < 1000000 => 1,
-            < 2000000 => 2,
-            < 3000000 => 5,
-            < 4000000 => 10,
-            < 5000000 => 20,
-            _ => 50,
-        };
-        // Mono end
     }
 
     /// <summary>

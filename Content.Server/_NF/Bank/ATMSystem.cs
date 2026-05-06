@@ -156,9 +156,16 @@ public sealed partial class BankSystem
             deposit -= tax; // Charge the user whether or not the deposit went through.
         }
         // Mono start
-        var playerModifier = bank.Modifier;
+        // config, maybe put as cvars
+        var threshold = 1000000;
+        var high_exp = 2f;
+
+        var deposit_low = Math.Max(Math.Min(deposit, threshold - bank.Balance), 0);
+        var deposit_high = Math.Max(0, deposit + Math.Min(bank.Balance - threshold, 0));
+        var bank_high = Math.Max(bank.Balance, threshold);
+        var adj_exp = high_exp + 1f;
+        deposit = (int)Math.Round(deposit_low + MathF.Pow(MathF.Pow(bank_high, adj_exp) + deposit_high * adj_exp * MathF.Pow(threshold, high_exp), 1f / adj_exp) - bank_high);
         // Mono end
-        deposit = int.Max(0, (deposit / playerModifier)); // Mono - taxes
 
         // try to deposit the inserted cash into a player's bank acount. Validation happens on the banking system but we still indicate error.
         if (!TryBankDeposit(player, deposit))

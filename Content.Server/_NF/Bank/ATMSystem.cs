@@ -15,14 +15,17 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Content.Server.Administration.Logs;
+using Content.Shared._Mono.CCVar; // Mono
 using Content.Shared.Database;
 using Robust.Shared.Audio.Systems;
 using Content.Shared._NF.Bank.BUI;
+using Robust.Shared.Configuration; // Mono
 
 namespace Content.Server._NF.Bank;
 
 public sealed partial class BankSystem
 {
+    [Dependency] private readonly IConfigurationManager _cfg = default!; // Mono
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
@@ -156,15 +159,23 @@ public sealed partial class BankSystem
             deposit -= tax; // Charge the user whether or not the deposit went through.
         }
         // Mono start
-        // config, maybe put as cvars
-        var threshold = 1000000;
-        var high_exp = 2f;
+        // config
+        var threshold = _cfg.GetCVar(MonoCVars.DepositThreshold); // Default is 1000000
+        var high_exp = _cfg.GetCVar(MonoCVars.DepositHighExp); // Default is 2
+        var untaxedDeposit = deposit;
 
         var deposit_low = Math.Max(Math.Min(deposit, threshold - bank.Balance), 0);
         var deposit_high = Math.Max(0, deposit + Math.Min(bank.Balance - threshold, 0));
         var bank_high = Math.Max(bank.Balance, threshold);
         var adj_exp = high_exp + 1f;
-        deposit = (int)Math.Round(deposit_low + MathF.Pow(MathF.Pow(bank_high, adj_exp) + deposit_high * adj_exp * MathF.Pow(threshold, high_exp), 1f / adj_exp) - bank_high);
+        if (_cfg.GetCVar(MonoCVars.DepositEnabled))
+        {
+            deposit = (int)Math.Round(deposit_low + MathF.Pow(MathF.Pow(bank_high, adj_exp) + deposit_high * adj_exp * MathF.Pow(threshold, high_exp), 1f / adj_exp) - bank_high);
+        }
+        else
+        {
+            deposit = 0;
+        }
         // Mono end
 
         // try to deposit the inserted cash into a player's bank acount. Validation happens on the banking system but we still indicate error.

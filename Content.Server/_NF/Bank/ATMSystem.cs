@@ -155,7 +155,10 @@ public sealed partial class BankSystem
             TrySectorDeposit(account, tax, LedgerEntryType.AtmTax); // Mono BlackMarketAtmTax->AtmTax
             deposit -= tax; // Charge the user whether or not the deposit went through.
         }
-        deposit = int.Max(0, deposit);
+        // Mono start
+        var playerModifier = bank.Modifier;
+        // Mono end
+        deposit = int.Max(0, (deposit / playerModifier)); // Mono - taxes
 
         // try to deposit the inserted cash into a player's bank acount. Validation happens on the banking system but we still indicate error.
         if (!TryBankDeposit(player, deposit))

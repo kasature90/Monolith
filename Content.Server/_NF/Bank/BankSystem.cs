@@ -116,6 +116,7 @@ public sealed partial class BankSystem : SharedBankSystem
     /// <returns>true if the transaction was successful, false if it was not</returns>
     public bool TryBankDeposit(EntityUid mobUid, int amount)
     {
+
         if (amount <= 0)
         {
             _log.Info($"TryBankDeposit: {amount} is invalid from Uid {mobUid}");
@@ -410,6 +411,17 @@ public sealed partial class BankSystem : SharedBankSystem
     public void OnInit(EntityUid mobUid, BankAccountComponent comp, ComponentInit _)
     {
         UpdateBankBalance(mobUid, comp);
+        // Mono start - IRS
+        comp.Modifier = comp.Balance switch // THIS IS THE AMOUNT U DIVIDE BY... NOT ACTUALLY A MULTIPLIER!!!
+        {
+            < 1000000 => 1,
+            < 2000000 => 2,
+            < 3000000 => 5,
+            < 4000000 => 10,
+            < 5000000 => 20,
+            _ => 50,
+        };
+        // Mono end
     }
 
     /// <summary>

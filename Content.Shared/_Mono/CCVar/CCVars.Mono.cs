@@ -207,7 +207,7 @@ public sealed partial class MonoCVars
     ///     Whether to enable depositing cash. Good for admin events or sandbox.
     /// </summary>
     public static readonly CVarDef<bool> DepositEnabled =
-        CVarDef.Create("mono.deposit.enabled", true, CVar.SERVERONLY);
+        CVarDef.Create("mono.deposit.enabled", true, CVar.ARCHIVE | CVar.REPLICATED);
 
     #endregion
 }

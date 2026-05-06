@@ -162,7 +162,6 @@ public sealed partial class BankSystem
         // config
         var threshold = _cfg.GetCVar(MonoCVars.DepositThreshold); // Default is 1000000
         var high_exp = _cfg.GetCVar(MonoCVars.DepositHighExp); // Default is 2
-        var untaxedDeposit = deposit;
 
         var deposit_low = Math.Max(Math.Min(deposit, threshold - bank.Balance), 0);
         var deposit_high = Math.Max(0, deposit + Math.Min(bank.Balance - threshold, 0));

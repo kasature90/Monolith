@@ -118,7 +118,7 @@ public sealed partial class BankSystem : SharedBankSystem
     public bool TryBankDeposit(EntityUid mobUid, int amount)
     {
         // Mono start
-        if (_cfg.GetCVar(MonoCVars.DepositEnabled))
+        if (!_cfg.GetCVar(MonoCVars.DepositEnabled))
         {
             _log.Info($"TryBankDeposit: DepositEnabled cvar is disabled.");
             return false;

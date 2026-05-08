@@ -167,14 +167,7 @@ public sealed partial class BankSystem
         var deposit_high = Math.Max(0, deposit + Math.Min(bank.Balance - threshold, 0));
         var bank_high = Math.Max(bank.Balance, threshold);
         var adj_exp = high_exp + 1f;
-        if (_cfg.GetCVar(MonoCVars.DepositEnabled))
-        {
-            deposit = (int)Math.Round(deposit_low + MathF.Pow(MathF.Pow(bank_high, adj_exp) + deposit_high * adj_exp * MathF.Pow(threshold, high_exp), 1f / adj_exp) - bank_high);
-        }
-        else
-        {
-            deposit = 0;
-        }
+        deposit = (int)Math.Round(deposit_low + MathF.Pow(MathF.Pow(bank_high, adj_exp) + deposit_high * adj_exp * MathF.Pow(threshold, high_exp), 1f / adj_exp) - bank_high);
         // Mono end
 
         // try to deposit the inserted cash into a player's bank acount. Validation happens on the banking system but we still indicate error.

@@ -165,7 +165,7 @@
   name: TCA M-5 Drozd (.45 ACP)
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunDrozd
-  description: An SMG that once found use among NT security forces, now has found itself as one of the most reliable boarding and anti-boarding weapons on the market. Uses .45 ACP ammo. The barrel is threaded for suppressors.
+  description: An SMG that once found use among NT security forces, now has found itself as one of the most reliable boarding and anti-boarding weapons on the market. Uses .45 ACP ammo. The barrel is threaded for suppressors, and an Erebus railmount is on the bottom for grips.
   components:
     - type: Item # Mono
       size: Large
@@ -177,6 +177,7 @@
           map: ["enum.GunVisualLayers.Base"]
         - state: mag-0
           map: ["enum.GunVisualLayers.Mag"]
+        - map: ["gripAttachment"] # Mono
         - map: ["barrelAttachment"] # Mono
     - type: Clothing
       sprite: _Mono/Objects/Weapons/Guns/SMGs/drozd_inhands_32x.rsi # Mono
@@ -221,6 +222,12 @@
             tags:
               - Cartridge45_ACPFMJ
         # Mono
+        attachment_grip:
+          priority: 0
+          whitelist:
+            tags:
+              - MonoGripErebusRailmount
+        # Mono
         attachment_barrel:
           priority: 0
           whitelist:
@@ -231,6 +238,7 @@
       containers:
         gun_magazine: !type:ContainerSlot
         gun_chamber: !type:ContainerSlot
+        attachment_grip: !type:ContainerSlot
         attachment_barrel: !type:ContainerSlot
     - type: ESAttachableGun
       slots:
@@ -239,6 +247,11 @@
         whitelist:
           tags:
           - MonoSuppressorMulticalPistol
+      - name: es-gun-attachments-slot-name-grip
+        containerId: attachment_grip
+        whitelist:
+          tags:
+          - MonoGripErebusRailmount
     - type: ActivatableUI
       key: enum.ESAttachableGunUiKey.Key
       verbOnly: true
@@ -249,6 +262,12 @@
           type: ESGunAttachmentBui
     - type: ESItemMapper
       mappings:
+        gripAttachment:
+        - containerId: attachment_grip
+          state: grip
+          whitelist:
+            tags:
+            - MonoGrip
         barrelAttachment:
         - containerId: attachment_barrel
           state: suppressed

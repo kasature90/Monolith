@@ -11,6 +11,7 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+      - map: ["gripAttachment"]
   - type: GunWieldBonus
     minAngle: -21
     maxAngle: -47
@@ -47,10 +48,16 @@
         whitelist:
           tags:
             - Cartridge8x65mmSKR
+      attachment_grip:
+        priority: 0
+        whitelist:
+          tags:
+          - MonoGripErebusRailmount
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+      attachment_grip: !type:ContainerSlot
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -69,6 +76,29 @@
   - type: EyeCursorOffset
     maxOffset: 7
     pvsIncrease: 1
+  - type: ESAttachableGun
+    slots:
+    - name: es-gun-attachments-slot-name-grip
+      containerId: attachment_grip
+      whitelist:
+        tags:
+        - MonoGripErebusRailmount
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      gripAttachment:
+      - containerId: attachment_grip
+        state: grip
+        whitelist:
+          tags:
+          - MonoGrip
 
 - type: entity
   name: NCI AK-502 (7.62x39mm)

@@ -130,7 +130,7 @@
   name: TCA M-6 Lecter (6.8x52mm Caseless)
   parent: BaseWeaponRifle
   id: WeaponRifleLecter
-  description: The result of a project to make a new standard rifle for the branches of the TSF military. Accurate, easy to use, and firing the 6.8x52mm STANAG round. Also accepts 5.56x45mm magazines to assist with standardization. The barrel is threaded for suppressors.
+  description: The result of a project to make a new standard rifle for the branches of the TSF military. Accurate, easy to use, and firing the 6.8x52mm STANAG round. Also accepts 5.56x45mm magazines to assist with standardization. The barrel is threaded for suppressors, and an Erebus railmount is on the bottom for grips.
   components:
   - type: Item # Mono
     size: Huge
@@ -142,6 +142,7 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+      - map: ["gripAttachment"] # Mono
       - map: ["barrelAttachment"] # Mono
   - type: Clothing
     sprite: _Mono/Objects/Weapons/Guns/Rifles/lecter_inhands_32x.rsi
@@ -173,6 +174,12 @@
             - Cartridge68x52mmCaseless # Mono
             - Cartridge556x45mmFMJ # Mono
       # Mono
+      attachment_grip:
+        priority: 0
+        whitelist:
+          tags:
+          - MonoGripErebusRailmount
+      # Mono
       attachment_barrel:
         priority: 0
         whitelist:
@@ -182,6 +189,7 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+      attachment_grip: !type:ContainerSlot # Mono
       attachment_barrel: !type:ContainerSlot # Mono
   # Mono start
   - type: ESAttachableGun
@@ -191,6 +199,11 @@
       whitelist:
         tags:
         - MonoSuppressorMulticalRifle
+    - name: es-gun-attachments-slot-name-grip
+      containerId: attachment_grip
+      whitelist:
+        tags:
+        - MonoGripErebusRailmount
   - type: ActivatableUI
     key: enum.ESAttachableGunUiKey.Key
     verbOnly: true
@@ -201,6 +214,12 @@
         type: ESGunAttachmentBui
   - type: ESItemMapper
     mappings:
+      gripAttachment:
+      - containerId: attachment_grip
+        state: grip
+        whitelist:
+          tags:
+          - MonoGrip
       barrelAttachment:
       - containerId: attachment_barrel
         state: suppressed

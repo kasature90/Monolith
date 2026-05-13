@@ -57,6 +57,12 @@
 - type: Tag
   id: MonoSuppressorMulticalRifle
 
+- type: Tag
+  id: MonoGrip
+
+- type: Tag
+  id: MonoGripErebusRailmount
+
 # Crafting for desert planet
 
 - type: Tag

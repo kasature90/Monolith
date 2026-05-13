@@ -37,6 +37,7 @@ public abstract class ESSharedGunAttachmentsSystem : EntitySystem
         SubscribeAllEvent<ESAttachableGunModifySlotEvent>(OnAttachableGunModifySlots);
 
         SubscribeLocalEvent<ESGunSoundAttachmentComponent, GunRefreshModifiersEvent>(OnGunSoundRefreshModifiers);
+        SubscribeLocalEvent<ESGunRecoilAttachmentComponent, GunRefreshModifiersEvent>(OnGunRecoilRefreshModifiers); // Mono
 
         _attachmentQuery = GetEntityQuery<ESGunAttachmentComponent>();
     }
@@ -111,6 +112,17 @@ public abstract class ESSharedGunAttachmentsSystem : EntitySystem
     {
         args.SoundGunshot = ent.Comp.Sound;
     }
+
+    // Mono start
+    private void OnGunRecoilRefreshModifiers(Entity<ESGunRecoilAttachmentComponent> ent, ref GunRefreshModifiersEvent args)
+    {
+        args.AngleIncrease = (args.AngleIncrease * ent.Comp.RecoilIncreaseModifier);
+        args.AngleDecay = (args.AngleDecay * ent.Comp.RecoilRecoveryModifier);
+
+        args.MinAngle = (args.MinAngle * ent.Comp.MinSpreadModifier);
+        args.MaxAngle = (args.MaxAngle * ent.Comp.MaxSpreadModifier);
+    }
+    // Mono end
 
     public bool HasAttachment(Entity<ESAttachableGunComponent> ent, ESGunAttachmentSlot slot)
     {

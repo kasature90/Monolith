@@ -7,3 +7,4 @@ es-gun-attachments-verb-text = Attachments
 es-gun-attachment-examine-text = It has an attached {$attachments}.
 
 es-gun-attachments-slot-name-barrel = barrel
+es-gun-attachments-slot-name-grip = grip

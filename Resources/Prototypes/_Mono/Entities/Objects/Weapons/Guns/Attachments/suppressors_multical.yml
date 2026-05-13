@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseGunAttachmentSuppressor
   id: GunAttachmentSuppressorMulticalPistol
-  name: MULTICAL pistol suppressor
+  name: MULTI-CAL pistol suppressor
   description: Supports weapons with threaded barrels that fire pistol cartridges.
   components:
   - type: Sprite
@@ -20,7 +20,7 @@
 - type: entity
   parent: BaseGunAttachmentSuppressor
   id: GunAttachmentSuppressorMulticalRifle
-  name: MULTICAL rifle suppressor
+  name: MULTI-CAL rifle suppressor
   description: Supports weapons with threaded barrels that fire intermediate cartridges.
   components:
   - type: Sprite

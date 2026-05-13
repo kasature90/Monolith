@@ -23,3 +23,9 @@
           whitelist:
             tags:
               - Cartridge45_ACPFMJ
+        # Mono
+        attachment_barrel:
+          priority: 0
+          whitelist:
+            tags:
+            - MonoSuppressorMulticalPistol

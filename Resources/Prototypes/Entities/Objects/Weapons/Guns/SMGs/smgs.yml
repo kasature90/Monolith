@@ -165,7 +165,7 @@
   name: TCA M-5 Drozd (.45 ACP)
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunDrozd
-  description: An SMG that once found use among NT security forces, now has found itself as one of the most reliable boarding and anti-boarding weapons on the market. Uses .45 ACP ammo.
+  description: An SMG that once found use among NT security forces, now has found itself as one of the most reliable boarding and anti-boarding weapons on the market. Uses .45 ACP ammo. The barrel is threaded for suppressors.
   components:
     - type: Item # Mono
       size: Large
@@ -177,6 +177,7 @@
           map: ["enum.GunVisualLayers.Base"]
         - state: mag-0
           map: ["enum.GunVisualLayers.Mag"]
+        - map: ["barrelAttachment"] # Mono
     - type: Clothing
       sprite: _Mono/Objects/Weapons/Guns/SMGs/drozd_inhands_32x.rsi # Mono
     - type: Wieldable
@@ -219,6 +220,42 @@
           whitelist:
             tags:
               - Cartridge45_ACPFMJ
+        # Mono
+        attachment_barrel:
+          priority: 0
+          whitelist:
+            tags:
+              - MonoSuppressorMulticalPistol
+    # Mono start
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+        attachment_barrel: !type:ContainerSlot
+    - type: ESAttachableGun
+      slots:
+      - name: es-gun-attachments-slot-name-barrel
+        containerId: attachment_barrel
+        whitelist:
+          tags:
+          - MonoSuppressorMulticalPistol
+    - type: ActivatableUI
+      key: enum.ESAttachableGunUiKey.Key
+      verbOnly: true
+      verbText: es-gun-attachments-verb-text
+    - type: UserInterface
+      interfaces:
+        enum.ESAttachableGunUiKey.Key:
+          type: ESGunAttachmentBui
+    - type: ESItemMapper
+      mappings:
+        barrelAttachment:
+        - containerId: attachment_barrel
+          state: suppressed
+          whitelist:
+            tags:
+            - MonoSuppressor
+        # Mono end
     - type: MagazineVisuals
       magState: mag
       steps: 6

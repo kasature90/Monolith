@@ -23,6 +23,12 @@
         whitelist:
           tags:
             - Cartridge68x52mmCaseless
+      # Mono
+      attachment_barrel:
+        priority: 0
+        whitelist:
+          tags:
+          - MonoSuppressorMulticalRifle
 
 #Delta-V
 - type: entity

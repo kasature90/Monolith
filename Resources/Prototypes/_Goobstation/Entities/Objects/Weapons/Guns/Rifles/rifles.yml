@@ -135,6 +135,9 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
+    - map: ["gripAttachment"] # Mono
+    - map: ["barrelAttachment"] # Mono
+    - map: ["opticAttachment"] # Mono
   - type: Clothing
     sprite: _Mono/Objects/Weapons/Guns/Rifles/m90_inhands_32x.rsi # Mono
   - type: ChamberMagazineAmmoProvider # Mono
@@ -175,10 +178,88 @@
         whitelist:
           tags:
           - Cartridge762x51mmFMJ # mono - 762x51mm
+      # Mono
+      attachment_grip:
+        priority: 0
+        whitelist:
+          tags:
+          - MonoGripErebusRailmount
+      # Mono
+      attachment_barrel:
+        priority: 0
+        whitelist:
+          tags:
+          - MonoSuppressorMulticalRifle
+      # Mono
+      attachment_optic:
+        priority: 0
+        whitelist:
+          tags:
+          - MonoOpticErebusRailmount
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+      attachment_grip: !type:ContainerSlot # Mono
+      attachment_barrel: !type:ContainerSlot # Mono
+      attachment_optic: !type:ContainerSlot # Mono
+  # Mono start
+  - type: ESAttachableGun
+    slots:
+    - name: es-gun-attachments-slot-name-barrel
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - MonoSuppressorMulticalRifle
+    - name: es-gun-attachments-slot-name-grip
+      containerId: attachment_grip
+      whitelist:
+        tags:
+        - MonoGripErebusRailmount
+    - name: es-gun-attachments-slot-name-optic
+      containerId: attachment_optic
+      whitelist:
+        tags:
+        - MonoOpticErebusRailmount
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      gripAttachment:
+      - containerId: attachment_grip
+        state: grip
+        whitelist:
+          tags:
+          - MonoGrip
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: suppressed
+        whitelist:
+          tags:
+          - MonoSuppressor
+      opticAttachment:
+      - containerId: attachment_optic
+        state: optic2x
+        whitelist:
+          tags:
+          - MonoOptic2x
+      - containerId: attachment_optic
+        state: optic4x
+        whitelist:
+          tags:
+          - MonoOptic4x
+      - containerId: attachment_optic
+        state: optic8x
+        whitelist:
+          tags:
+          - MonoOptic8x
+  # Mono end
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -186,8 +267,8 @@
   - type: Appearance
   - type: GunRequiresWield
   - type: GunWieldBonus
-    minAngle: 10
-    maxAngle: 8
+    minAngle: -10
+    maxAngle: -8
 
 - type: entity
   name: CS Burner (12.7x99mm)

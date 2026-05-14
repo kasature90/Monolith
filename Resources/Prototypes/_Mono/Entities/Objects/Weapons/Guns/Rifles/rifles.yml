@@ -12,7 +12,7 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
       - map: ["gripAttachment"]
-      - map: ["opticAttachment"] # Mono
+      - map: ["opticAttachment"]
   - type: GunWieldBonus
     minAngle: -21
     maxAngle: -47
@@ -65,6 +65,7 @@
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
       attachment_grip: !type:ContainerSlot
+      attachment_optic: !type:ContainerSlot
   - type: MagazineVisuals
     magState: mag
     steps: 1

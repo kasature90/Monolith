@@ -63,6 +63,22 @@
 - type: Tag
   id: MonoGripErebusRailmount
 
+- type: Tag
+  id: MonoOptic
+
+- type: Tag
+  id: MonoOpticErebusRailmount
+
+# These are for the different sprite states. Please don't add more zooms, or I'll kill you.
+- type: Tag
+  id: MonoOptic2x
+
+- type: Tag
+  id: MonoOptic4x
+
+- type: Tag
+  id: MonoOptic8x
+
 # Crafting for desert planet
 
 - type: Tag

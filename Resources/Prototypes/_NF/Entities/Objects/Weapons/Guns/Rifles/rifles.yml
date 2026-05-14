@@ -29,6 +29,18 @@
         whitelist:
           tags:
           - MonoSuppressorMulticalRifle
+      # Mono
+      attachment_grip:
+        priority: 0
+        whitelist:
+          tags:
+          - MonoGripErebusRailmount
+      # Mono
+      attachment_optic:
+        priority: 0
+        whitelist:
+          tags:
+          - MonoOpticErebusRailmount
 
 #Delta-V
 - type: entity

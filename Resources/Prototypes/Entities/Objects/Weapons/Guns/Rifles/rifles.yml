@@ -144,6 +144,7 @@
         map: ["enum.GunVisualLayers.Mag"]
       - map: ["gripAttachment"] # Mono
       - map: ["barrelAttachment"] # Mono
+      - map: ["opticAttachment"] # Mono
   - type: Clothing
     sprite: _Mono/Objects/Weapons/Guns/Rifles/lecter_inhands_32x.rsi
   - type: ChamberMagazineAmmoProvider # Mono
@@ -185,12 +186,19 @@
         whitelist:
           tags:
           - MonoSuppressorMulticalRifle
+      # Mono
+      attachment_optic:
+        priority: 0
+        whitelist:
+          tags:
+          - MonoOpticErebusRailmount
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
       attachment_grip: !type:ContainerSlot # Mono
       attachment_barrel: !type:ContainerSlot # Mono
+      attachment_optic: !type:ContainerSlot # Mono
   # Mono start
   - type: ESAttachableGun
     slots:
@@ -204,6 +212,11 @@
       whitelist:
         tags:
         - MonoGripErebusRailmount
+    - name: es-gun-attachments-slot-name-optic
+      containerId: attachment_optic
+      whitelist:
+        tags:
+        - MonoOpticErebusRailmount
   - type: ActivatableUI
     key: enum.ESAttachableGunUiKey.Key
     verbOnly: true
@@ -226,6 +239,22 @@
         whitelist:
           tags:
           - MonoSuppressor
+      opticAttachment:
+      - containerId: attachment_optic
+        state: optic2x
+        whitelist:
+          tags:
+          - MonoOptic2x
+      - containerId: attachment_optic
+        state: optic4x
+        whitelist:
+          tags:
+          - MonoOptic4x
+      - containerId: attachment_optic
+        state: optic8x
+        whitelist:
+          tags:
+          - MonoOptic8x
   # Mono end
   - type: MagazineVisuals
     magState: mag

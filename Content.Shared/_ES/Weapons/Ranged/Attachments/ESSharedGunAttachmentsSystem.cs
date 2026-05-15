@@ -222,33 +222,14 @@ public abstract class ESSharedGunAttachmentsSystem : EntitySystem
     {
         if (_timing.ApplyingState)
             return;
-        foreach (var (name, data) in component.Components)
-        {
-            var newComp = (Component) Factory.GetComponent(name);
-
-            if (HasComp(args.Gun, newComp.GetType()))
-                continue;
-
-            object? temp = newComp;
-            _serializationManager.CopyTo(data.Component, ref temp);
-            AddComp(args.Gun, (Component)temp!);
-
-            component.Active[name] = true; // Goobstation
-        }
+        var target = args.Gun.Owner;
+        EntityManager.AddComponents(target, component.Components);
     }
 
     private void OnCompAttachmentUnequip(EntityUid uid, ESGunComponentAttachmentComponent component, EntGotRemovedFromContainerMessage args)
     {
-        foreach (var (name, _) in component.Components)
-        {
-            if (!component.Active.TryGetValue(name, out _))
-                continue;
-
-            var newComp = (Component) Factory.GetComponent(name);
-
-            RemCompDeferred(args.Container.Owner, newComp.GetType());
-            component.Active[name] = false;
-        }
+        var target = args.Container.Owner;
+        EntityManager.RemoveComponents(target, component.Components);
     }
 
     private void OnAttachmentExamined(EntityUid uid, ESGunRecoilAttachmentComponent component, ExaminedEvent args)

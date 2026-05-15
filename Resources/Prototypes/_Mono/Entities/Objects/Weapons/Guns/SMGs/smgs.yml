@@ -224,7 +224,6 @@
           tags:
           - MonoGripErebusRailmount
       attachment_optic:
-        startingItem: GunAttachmentOpticErebus2x
         priority: 0
         whitelist:
           tags:
@@ -339,7 +338,6 @@
           tags:
           - MonoGripErebusRailmount
       attachment_optic:
-        startingItem: GunAttachmentOpticErebus2x
         priority: 0
         whitelist:
           tags:

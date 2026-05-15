@@ -217,7 +217,7 @@ public abstract class ESSharedGunAttachmentsSystem : EntitySystem
         }
     }
 
-    // Mono start - I swear, it's not ClothingGrantingSystem!
+    // Mono start
     private void OnCompAttachmentEquip(EntityUid uid, ESGunComponentAttachmentComponent component, GunRefreshModifiersEvent args)
     {
         if (_timing.ApplyingState)

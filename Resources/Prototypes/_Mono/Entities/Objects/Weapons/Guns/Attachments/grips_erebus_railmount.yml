@@ -16,3 +16,35 @@
     tags:
     - MonoGrip
     - MonoGripErebusRailmount
+    - MonoGripVFG
+
+- type: entity
+  parent: BaseGunAttachmentGrip
+  id: GunAttachmentGripErebusLAM
+  name: Zenit PRL laser-aiming module (Erebus-HI railmount)
+  description: A visual-spectrum red laser for aiming. Looks awesome, and helps a lot with first shot accuracy!
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Attachments/Grips/erebus_railmount.rsi
+    layers:
+    - state: lam
+    - state: lam_unshaded
+      shader: unshaded
+  - type: Item
+    size: Small
+    storedRotation: -90
+  - type: ESGunRecoilAttachment
+    recoilRecoveryModifier: 1.2
+    recoilIncreaseModifier: 1.0
+    minSpreadModifier: 0.25
+    maxSpreadModifier: 1.0
+  - type: ESGunComponentAttachment
+    component:
+    - type: LaserPointer
+      targetedColor: "#FF0040"
+      defaultColor: "#FF0040"
+  - type: Tag
+    tags:
+    - MonoGrip
+    - MonoGripErebusRailmount
+    - MonoGripLAM

@@ -232,7 +232,12 @@
         state: grip
         whitelist:
           tags:
-          - MonoGrip
+          - MonoGripVFG
+      - containerId: attachment_grip
+        state: lam
+        whitelist:
+          tags:
+          - MonoGripLAM
       barrelAttachment:
       - containerId: attachment_barrel
         state: suppressed

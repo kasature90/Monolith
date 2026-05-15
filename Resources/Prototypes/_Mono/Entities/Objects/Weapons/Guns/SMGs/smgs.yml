@@ -91,7 +91,12 @@
         state: grip
         whitelist:
           tags:
-          - MonoGrip
+          - MonoGripVFG
+      - containerId: attachment_grip
+        state: lam
+        whitelist:
+          tags:
+          - MonoGripLAM
       opticAttachment:
       - containerId: attachment_optic
         state: optic2x
@@ -238,9 +243,6 @@
     magState: mag
     steps: 1
     zeroVisible: true
-  - type: LaserPointer
-    targetedColor: "#FF0000"
-    defaultColor: "#FF0000"
   - type: Appearance
   - type: ESAttachableGun
     slots:
@@ -264,7 +266,12 @@
         state: grip
         whitelist:
           tags:
-          - MonoGrip
+          - MonoGripVFG
+      - containerId: attachment_grip
+        state: lam
+        whitelist:
+          tags:
+          - MonoGripLAM
       opticAttachment:
       - containerId: attachment_optic
         state: optic2x
@@ -352,9 +359,6 @@
     magState: mag
     steps: 1
     zeroVisible: true
-  - type: LaserPointer
-    targetedColor: "#FF0000"
-    defaultColor: "#FF0000"
   - type: Appearance
   - type: ESAttachableGun
     slots:
@@ -378,7 +382,12 @@
         state: grip
         whitelist:
           tags:
-          - MonoGrip
+          - MonoGripVFG
+      - containerId: attachment_grip
+        state: lam
+        whitelist:
+          tags:
+          - MonoGripLAM
       opticAttachment:
       - containerId: attachment_optic
         state: optic2x

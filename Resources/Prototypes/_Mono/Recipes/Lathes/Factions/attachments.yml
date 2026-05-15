@@ -46,6 +46,19 @@
     Steel: 100
 
 - type: latheRecipe
+  id: GunAttachmentGripErebusLAM
+  result: GunAttachmentGripErebusLAM
+  categories:
+  - Attachments
+  completetime: 2
+  materials:
+    Plastic: 100
+    Steel: 300
+    Glass: 100
+    Copper: 150
+    Lithium: 150
+
+- type: latheRecipe
   id: GunAttachmentSuppressorMulticalPistol
   result: GunAttachmentSuppressorMulticalPistol
   categories:

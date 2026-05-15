@@ -64,6 +64,12 @@
   id: MonoGripErebusRailmount
 
 - type: Tag
+  id: MonoGripLAM
+
+- type: Tag
+  id: MonoGripVFG
+
+- type: Tag
   id: MonoOptic
 
 - type: Tag

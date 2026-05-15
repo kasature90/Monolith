@@ -102,7 +102,12 @@
         state: grip
         whitelist:
           tags:
-          - MonoGrip
+          - MonoGripVFG
+      - containerId: attachment_grip
+        state: lam
+        whitelist:
+          tags:
+          - MonoGripLAM
       opticAttachment:
       - containerId: attachment_optic
         state: optic2x

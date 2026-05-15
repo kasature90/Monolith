@@ -12,6 +12,7 @@ using Content.Shared.Weapons.Ranged.Systems;
 using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
 using Robust.Shared.Serialization.Manager; // Mono
+using Robust.Shared.Timing; // Mono
 using Robust.Shared.Utility;
 
 namespace Content.Shared._ES.Weapons.Ranged.Attachments;
@@ -24,6 +25,7 @@ public abstract class ESSharedGunAttachmentsSystem : EntitySystem
     [Dependency] private readonly SharedGunSystem _gun = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly ISerializationManager _serializationManager = default!; // Mono
+    [Dependency] private readonly IGameTiming _timing = default!; // Mono
 
     private EntityQuery<ESGunAttachmentComponent> _attachmentQuery;
 
@@ -217,6 +219,8 @@ public abstract class ESSharedGunAttachmentsSystem : EntitySystem
     // Mono start - I swear, it's not ClothingGrantingSystem!
     private void OnCompAttachmentEquip(EntityUid uid, ESGunComponentAttachmentComponent component, GunRefreshModifiersEvent args)
     {
+        if (_timing.ApplyingState)
+            return;
         foreach (var (name, data) in component.Components)
         {
             var newComp = (Component) Factory.GetComponent(name);
@@ -226,7 +230,7 @@ public abstract class ESSharedGunAttachmentsSystem : EntitySystem
 
             object? temp = newComp;
             _serializationManager.CopyTo(data.Component, ref temp);
-            EntityManager.AddComponent(args.Gun, (Component)temp!);
+            AddComp(args.Gun, (Component)temp!);
 
             component.Active[name] = true; // Goobstation
         }
@@ -241,7 +245,7 @@ public abstract class ESSharedGunAttachmentsSystem : EntitySystem
 
             var newComp = (Component) Factory.GetComponent(name);
 
-            RemComp(args.Container.Owner, newComp.GetType());
+            RemCompDeferred(args.Container.Owner, newComp.GetType());
             component.Active[name] = false;
         }
     }

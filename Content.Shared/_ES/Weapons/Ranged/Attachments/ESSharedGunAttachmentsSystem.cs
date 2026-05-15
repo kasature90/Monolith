@@ -45,6 +45,7 @@ public abstract class ESSharedGunAttachmentsSystem : EntitySystem
 
         SubscribeLocalEvent<ESGunComponentAttachmentComponent, GunRefreshModifiersEvent>(OnCompAttachmentEquip); // Mono
         SubscribeLocalEvent<ESGunComponentAttachmentComponent, EntGotRemovedFromContainerMessage>(OnCompAttachmentUnequip); // Mono
+        SubscribeLocalEvent<ESGunRecoilAttachmentComponent, ExaminedEvent>(OnAttachmentExamined); // Mono
 
         _attachmentQuery = GetEntityQuery<ESGunAttachmentComponent>();
     }
@@ -247,6 +248,34 @@ public abstract class ESSharedGunAttachmentsSystem : EntitySystem
 
             RemCompDeferred(args.Container.Owner, newComp.GetType());
             component.Active[name] = false;
+        }
+    }
+
+    private void OnAttachmentExamined(EntityUid uid, ESGunRecoilAttachmentComponent component, ExaminedEvent args)
+    {
+        // only the most beautiful code here. u mad?
+        TryComp<ESGunRecoilAttachmentComponent>(uid, out var recoilComponent);
+        if (recoilComponent != null)
+        {
+            Color GetColor(float m) => m > 1 ? Color.Crimson : m < 1 ? Color.Lime : Color.Gold;
+
+            var recoilRecovery = recoilComponent.RecoilRecoveryModifier;
+            var recoilRecoveryColor = GetColor((1f / recoilRecovery));
+
+            var recoilIncrease = recoilComponent.RecoilIncreaseModifier;
+            var recoilIncreaseColor = GetColor(recoilIncrease);
+
+            var minSpread = recoilComponent.MinSpreadModifier;
+            var minSpreadColor = GetColor(minSpread);
+
+            var maxSpread = recoilComponent.MaxSpreadModifier;
+            var maxSpreadColor = GetColor(maxSpread);
+
+        // welcome to The Monolith.... I am lazy....
+            args.PushMarkup(Loc.GetString("es-gun-attachments-inspect-modifier-recovery",("color", recoilRecoveryColor),("modifier", recoilRecovery)));
+            args.PushMarkup(Loc.GetString("es-gun-attachments-inspect-modifier-recoil",("color", recoilIncreaseColor),("modifier", recoilIncrease)));
+            args.PushMarkup(Loc.GetString("es-gun-attachments-inspect-modifier-minspread",("color", minSpreadColor),("modifier", minSpread)));
+            args.PushMarkup(Loc.GetString("es-gun-attachments-inspect-modifier-maxspread",("color", maxSpreadColor),("modifier", maxSpread)));
         }
     }
     // Mono end

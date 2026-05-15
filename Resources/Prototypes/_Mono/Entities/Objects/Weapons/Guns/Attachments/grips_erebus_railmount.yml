@@ -2,16 +2,16 @@
   parent: BaseGunAttachmentGrip
   id: GunAttachmentGripErebusVFG
   name: vertical foregrip (Erebus-HI railmount)
-  description: Makes it a bit easier to control recoil, but harder to recover. Also helps with spread a bit.
+  description: Makes it easier to control recoil, but harder to recover from it. Also helps with first-shot spread control.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Attachments/Grips/erebus_railmount.rsi
     state: vfg
   - type: ESGunRecoilAttachment
     recoilRecoveryModifier: 1.5
-    recoilIncreaseModifier: 0.5
+    recoilIncreaseModifier: 0.35
     minSpreadModifier: 0.8
-    maxSpreadModifier: 0.8
+    maxSpreadModifier: 1.1
   - type: Tag
     tags:
     - MonoGrip

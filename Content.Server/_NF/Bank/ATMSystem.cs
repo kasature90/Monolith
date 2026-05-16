@@ -254,7 +254,7 @@ public sealed partial class BankSystem
     }
 
     // Mono start
-    private void GetTaxedDepositAmount(int deposit, int balance, out int amount)
+    public void GetTaxedDepositAmount(int deposit, int balance, out int amount)
     {
         var threshold = _cfg.GetCVar(MonoCVars.DepositThreshold); // Default is 1000000
         var high_exp = _cfg.GetCVar(MonoCVars.DepositHighExp); // Default is 2

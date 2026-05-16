@@ -61,8 +61,6 @@
           Disabler: { state: mode-disabler }
           Lethal: { state: mode-lethal }
           Special: { state: mode-stun } # Unused
-  - type: PirateBountyItem # Mono
-    id: StandardFactionLongarm
 
 
 - type: entity

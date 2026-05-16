@@ -288,8 +288,6 @@
   - type: HitscanBatteryAmmoProvider
     proto: RedMediumLaser #Mono: RedLaser >> RedMediumLaser
     fireCost: 30 #Mono: 62.5 >> 30
-  - type: PirateBountyItem # Mono
-    id: StandardFactionLongarm
   - type: Gun
     selectedMode: SemiAuto
     availableModes:

@@ -70,8 +70,8 @@
   - type: SpeedModifiedOnWield # Mono
     walkModifier: 0.85
     sprintModifier: 0.85
-  - type: PirateBountyItem # Mono
-    id: StandardFactionLongarm
+  #- type: PirateBountyItem # Mono
+  #  id: StandardFactionLongarm
 
 - type: entity
   id: WeaponRifleLeeEnfield
@@ -145,8 +145,6 @@
   - type: SpeedModifiedOnWield # Mono
     walkModifier: 0.85
     sprintModifier: 0.85
-  - type: PirateBountyItem # Mono
-    id: StandardFactionLongarm
   - type: StaticPrice
     price: 800
     vendPrice: 12500

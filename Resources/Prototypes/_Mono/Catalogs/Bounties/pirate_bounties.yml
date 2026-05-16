@@ -9,7 +9,7 @@
 
 - type: pirateBounty
   id: PirateBountyTacsuit
-  reward: 2 # Incredibly easy to abuse lol
+  reward: 4 # Incredibly easy to abuse lol
   description: pirate-bounty-description-faction-tacsuit
   entries:
   - name: pirate-bounty-item-faction-tacsuit
@@ -36,7 +36,7 @@
 
 - type: pirateBounty # Mono
   id: PirateBountyStandardFactionLongarm
-  reward: 2 # Incredibly easy to abuse lol
+  reward: 4 # Incredibly easy to abuse lol
   description: pirate-bounty-description-standard-faction-longarm
   entries:
   - name: pirate-bounty-item-standard-faction-longarm

@@ -35,7 +35,7 @@ public abstract class ESSharedItemMapperSystem : EntitySystem
 
     public void UpdateMappings(Entity<ESItemMapperComponent?, ContainerManagerComponent?, AppearanceComponent?> ent)
     {
-        if (!Resolve(ent, ref ent.Comp1, ref ent.Comp2, ref ent.Comp3, logMissing: true))
+        if (!Resolve(ent, ref ent.Comp1, ref ent.Comp2, ref ent.Comp3, logMissing: false))
             return;
         var comp = ent.Comp1;
         var containerManager = ent.Comp2;

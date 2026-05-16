@@ -37,7 +37,7 @@ public sealed class ESOpenableSlotSystem : EntitySystem
 
     private void UpdateSlotsLocked(Entity<ESOpenableSlotsComponent?, ItemSlotsComponent?> ent)
     {
-        if (!Resolve(ent, ref ent.Comp1, ref ent.Comp2, logMissing: true))
+        if (!Resolve(ent, ref ent.Comp1, ref ent.Comp2, logMissing: false))
             return;
 
         var val = !_openable.IsOpen(ent);

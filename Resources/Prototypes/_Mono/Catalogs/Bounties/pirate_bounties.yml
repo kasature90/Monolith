@@ -18,7 +18,7 @@
 
 - type: pirateBounty # Mono
   id: PirateBountyTacsuitHighValue
-  reward: 10
+  reward: 20
   description: pirate-bounty-description-faction-tacsuit-high
   entries:
   - name: pirate-bounty-item-faction-tacsuit-high
@@ -27,7 +27,7 @@
 
 - type: pirateBounty # Mono
   id: PirateBountyTSFEnergyWeapon
-  reward: 5
+  reward: 15
   description: pirate-bounty-description-energy-weapon
   entries:
   - name: pirate-bounty-item-energy-weapon
@@ -45,7 +45,7 @@
 
 - type: pirateBounty # Mono
   id: PirateBountyExperimentalFactionWeapon
-  reward: 10
+  reward: 30
   description: pirate-bounty-description-experimental-faction-weapon
   entries:
   - name: pirate-bounty-item-experimental-faction-weapon
@@ -54,7 +54,7 @@
 
 - type: pirateBounty
   id: PirateBountyShipWeapon
-  reward: 10
+  reward: 15
   description: pirate-bounty-description-shipweapon
   spawnChest: false
   entries:
@@ -131,7 +131,7 @@
 
 - type: pirateBounty # Mono
   id: PirateBountyEncryptionKeyFaction
-  reward: 10
+  reward: 15
   description: pirate-bounty-description-encryption-key-faction
   entries:
   - name: pirate-bounty-item-encryption-key-faction

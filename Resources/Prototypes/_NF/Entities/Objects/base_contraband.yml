@@ -136,7 +136,7 @@
   components:
   - type: Contraband
     turnInValues:
-      FederationMilitaryCredit: 5
+      FederationMilitaryCredit: 10
   - type: ItemTax # Mono
     taxAccounts:
       nfsd: -0.1
@@ -149,7 +149,7 @@
   - type: Contraband
     severity: Class3PirateHighValue
     turnInValues:
-      FederationMilitaryCredit: 20
+      FederationMilitaryCredit: 40
   - type: ItemTax # Mono
     taxAccounts:
       nfsd: -0.1
@@ -174,7 +174,7 @@
   components:
   - type: Contraband
     turnInValues:
-      FederationMilitaryCredit: 10
+      FederationMilitaryCredit: 20
   - type: ItemTax # Mono
     taxAccounts:
       nfsd: -0.2

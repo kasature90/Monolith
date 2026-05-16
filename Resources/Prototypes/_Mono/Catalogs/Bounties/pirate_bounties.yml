@@ -9,7 +9,7 @@
 
 - type: pirateBounty
   id: PirateBountyTacsuit
-  reward: 30
+  reward: 2 # Incredibly easy to abuse lol
   description: pirate-bounty-description-faction-tacsuit
   entries:
   - name: pirate-bounty-item-faction-tacsuit
@@ -18,8 +18,8 @@
 
 - type: pirateBounty # Mono
   id: PirateBountyTacsuitHighValue
-  reward: 60
-  description: pirate-bounty-description-faction-tacsuit-high 
+  reward: 10
+  description: pirate-bounty-description-faction-tacsuit-high
   entries:
   - name: pirate-bounty-item-faction-tacsuit-high
     amount: 1
@@ -27,7 +27,7 @@
 
 - type: pirateBounty # Mono
   id: PirateBountyTSFEnergyWeapon
-  reward: 25
+  reward: 5
   description: pirate-bounty-description-energy-weapon
   entries:
   - name: pirate-bounty-item-energy-weapon
@@ -36,7 +36,7 @@
 
 - type: pirateBounty # Mono
   id: PirateBountyStandardFactionLongarm
-  reward: 20
+  reward: 2 # Incredibly easy to abuse lol
   description: pirate-bounty-description-standard-faction-longarm
   entries:
   - name: pirate-bounty-item-standard-faction-longarm
@@ -45,7 +45,7 @@
 
 - type: pirateBounty # Mono
   id: PirateBountyExperimentalFactionWeapon
-  reward: 60
+  reward: 10
   description: pirate-bounty-description-experimental-faction-weapon
   entries:
   - name: pirate-bounty-item-experimental-faction-weapon
@@ -54,7 +54,7 @@
 
 - type: pirateBounty
   id: PirateBountyShipWeapon
-  reward: 20
+  reward: 10
   description: pirate-bounty-description-shipweapon
   spawnChest: false
   entries:
@@ -82,7 +82,7 @@
 
 - type: pirateBounty
   id: PirateBountyFTLDrive
-  reward: 25
+  reward: 5 # Incredibly easy to cheese. Literally like everyone has these.
   description: pirate-bounty-description-generic
   spawnChest: false
   entries:
@@ -92,7 +92,7 @@
 
 - type: pirateBounty
   id: PirateBountyShipShield
-  reward: 25
+  reward: 7 # Incredibly easy to cheese. Literally like everyone has these.
   description: pirate-bounty-description-generic
   spawnChest: false
   entries:
@@ -102,7 +102,7 @@
 
 - type: pirateBounty
   id: PirateBountyGCS
-  reward: 20
+  reward: 2 # Incredibly easy to cheese. Literally like everyone has these.
   description: pirate-bounty-description-generic
   spawnChest: false
   entries:
@@ -131,7 +131,7 @@
 
 - type: pirateBounty # Mono
   id: PirateBountyEncryptionKeyFaction
-  reward: 25
+  reward: 10
   description: pirate-bounty-description-encryption-key-faction
   entries:
   - name: pirate-bounty-item-encryption-key-faction
@@ -140,7 +140,7 @@
 
 - type: pirateBounty
   id: PirateBountyTechfab
-  reward: 10
+  reward: 3 # Incredibly easy to cheese. Literally like everyone has these.
   description: pirate-bounty-description-techfab
   spawnChest: false
   entries:
@@ -150,7 +150,7 @@
 
 - type: pirateBounty
   id: PirateBountyCybernetics
-  reward: 20
+  reward: 5
   description: pirate-bounty-description-cybernetics
   entries:
   - name: pirate-bounty-item-cybernetics
@@ -159,7 +159,7 @@
 
 - type: pirateBounty
   id: PirateBountyRTG
-  reward: 15
+  reward: 10
   description: pirate-bounty-description-rtg
   spawnChest: false
   entries:

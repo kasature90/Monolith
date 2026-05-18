@@ -51,11 +51,15 @@
             - Cartridge8x65mmSKR
       attachment_grip:
         priority: 0
+        insertSound: /Audio/Items/screwdriver2.ogg
+        insertSound: /Audio/Items/screwdriver2.ogg
         whitelist:
           tags:
           - MonoGripErebusRailmount
       attachment_optic:
         startingItem: GunAttachmentOpticErebus4x
+        insertSound: /Audio/Items/screwdriver2.ogg
+        insertSound: /Audio/Items/screwdriver2.ogg
         priority: 0
         whitelist:
           tags:
@@ -168,6 +172,8 @@
           - Magazine762x39mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
+        insertSound: /Audio/Items/screwdriver2.ogg
+        insertSound: /Audio/Items/screwdriver2.ogg
         name: Chamber
         startingItem: Cartridge762x39mmFMJ
         priority: 1
@@ -175,6 +181,8 @@
           tags:
           - Cartridge762x39mmFMJ
       attachment_optic:
+        insertSound: /Audio/Items/screwdriver2.ogg
+        insertSound: /Audio/Items/screwdriver2.ogg
         priority: 0
         whitelist:
           tags:

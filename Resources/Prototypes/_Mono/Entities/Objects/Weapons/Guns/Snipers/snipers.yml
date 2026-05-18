@@ -56,6 +56,8 @@
           tags:
           - Cartridge762x54mmRFMJ
       attachment_optic:
+        insertSound: /Audio/Items/screwdriver2.ogg
+        insertSound: /Audio/Items/screwdriver2.ogg
         startingItem: GunAttachmentOpticErebus8x
         priority: 0
         whitelist:

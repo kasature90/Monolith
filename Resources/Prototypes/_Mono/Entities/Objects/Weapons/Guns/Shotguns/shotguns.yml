@@ -81,6 +81,8 @@
   - type: ItemSlots
     slots:
       attachment_optic:
+        insertSound: /Audio/Items/screwdriver2.ogg
+        insertSound: /Audio/Items/screwdriver2.ogg
         startingItem: GunAttachmentOpticErebus2x
         priority: 0
         whitelist:

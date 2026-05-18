@@ -6,13 +6,13 @@
     endAt: 10800 # 3 hour
 
 - type: entity
-  id: PortstrikeAnnounceRuleHour4
+  id: PortstrikeAnnounceRuleHour1
   parent: BaseGameRule
   components:
   - type: GameRule
     delay:
-      min: 14400
-      max: 14400
+      min: 3600
+      max: 3600
   - type: BlankRule
   - type: StationEvent
     earliestStart: 0
@@ -24,13 +24,13 @@
         volume: -2
 
 - type: entity
-  id: PortstrikeAnnounceRuleHour1
-  parent: PortstrikeAnnounceRuleHour4
+  id: PortstrikeAnnounceRule30Minutes
+  parent: PortstrikeAnnounceRuleHour1
   components:
   - type: GameRule
     delay:
-      min: 3600
-      max: 3600
+      min: 1800
+      max: 1800
 
 # debug rules
 - type: entity

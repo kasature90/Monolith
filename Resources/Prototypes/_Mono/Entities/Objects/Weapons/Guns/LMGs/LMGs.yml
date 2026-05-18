@@ -368,7 +368,7 @@
       attachment_optic:
         startingItem: GunAttachmentOpticErebus8x
         insertSound: /Audio/Items/screwdriver2.ogg
-        insertSound: /Audio/Items/screwdriver2.ogg
+        ejectSound: /Audio/Items/screwdriver2.ogg
         priority: 0
         whitelist:
           tags:

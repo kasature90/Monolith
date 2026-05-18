@@ -50,14 +50,14 @@
           - Cartridge635x40mmCaseless
       attachment_grip:
         insertSound: /Audio/Items/screwdriver2.ogg
-        insertSound: /Audio/Items/screwdriver2.ogg
+        ejectSound: /Audio/Items/screwdriver2.ogg
         priority: 0
         whitelist:
           tags:
           - MonoGripErebusRailmount
       attachment_optic:
         insertSound: /Audio/Items/screwdriver2.ogg
-        insertSound: /Audio/Items/screwdriver2.ogg
+        ejectSound: /Audio/Items/screwdriver2.ogg
         priority: 0
         whitelist:
           tags:
@@ -229,14 +229,14 @@
             - Cartridge9x19mmFMJ
       attachment_grip:
         insertSound: /Audio/Items/screwdriver2.ogg
-        insertSound: /Audio/Items/screwdriver2.ogg
+        ejectSound: /Audio/Items/screwdriver2.ogg
         priority: 0
         whitelist:
           tags:
           - MonoGripErebusRailmount
       attachment_optic:
         insertSound: /Audio/Items/screwdriver2.ogg
-        insertSound: /Audio/Items/screwdriver2.ogg
+        ejectSound: /Audio/Items/screwdriver2.ogg
         priority: 0
         whitelist:
           tags:
@@ -349,14 +349,14 @@
             - Cartridge45_ACPFMJ
       attachment_grip:
         insertSound: /Audio/Items/screwdriver2.ogg
-        insertSound: /Audio/Items/screwdriver2.ogg
+        ejectSound: /Audio/Items/screwdriver2.ogg
         priority: 0
         whitelist:
           tags:
           - MonoGripErebusRailmount
       attachment_optic:
         insertSound: /Audio/Items/screwdriver2.ogg
-        insertSound: /Audio/Items/screwdriver2.ogg
+        ejectSound: /Audio/Items/screwdriver2.ogg
         priority: 0
         whitelist:
           tags:

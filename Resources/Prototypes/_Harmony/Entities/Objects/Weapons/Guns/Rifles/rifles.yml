@@ -53,7 +53,7 @@
       # Mono
       attachment_optic:
         insertSound: /Audio/Items/screwdriver2.ogg
-        insertSound: /Audio/Items/screwdriver2.ogg
+        ejectSound: /Audio/Items/screwdriver2.ogg
         startingItem: GunAttachmentOpticErebus4x
         priority: 0
         whitelist:

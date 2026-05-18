@@ -42,7 +42,7 @@
 
 - type: entity
   id: PortstrikeAnnounceRuleSeconds20
-  parent: PortstrikeAnnounceRuleHour4
+  parent: PortstrikeAnnounceRuleHour1
   components:
   - type: GameRule
     delay:

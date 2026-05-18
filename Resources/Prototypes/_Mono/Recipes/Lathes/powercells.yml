@@ -11,6 +11,8 @@
     Plastic: 200
     Gold: 200
     Diamond: 25 # That shit is OP against emps.
+    Copper: 750
+    Lithium: 750
 
 # Smilodon battery cells
 
@@ -26,6 +28,8 @@
     Glass: 500
     Plastic: 500
     Gold: 500
+    Copper: 500
+    Lithium: 200
 
 - type: latheRecipe
   id: LargePowerCell400Thz
@@ -39,3 +43,5 @@
     Glass: 500
     Plastic: 500
     Gold: 500
+    Copper: 500
+    Lithium: 200

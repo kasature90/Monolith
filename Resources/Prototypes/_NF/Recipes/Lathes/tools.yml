@@ -34,6 +34,7 @@
   materials:
     Steel: 500
     Glass: 300
+    Copper: 100 # Mono
 
 - type: latheRecipe
   id: MedicalAppraisalTool
@@ -44,6 +45,7 @@
   materials:
     Steel: 500
     Glass: 300
+    Copper: 100 # Mono
 
 - type: latheRecipe
   id: PinpointerUniversalNF
@@ -54,6 +56,8 @@
     Glass: 500
     Plastic: 500
     Silver: 500
+    Copper: 100 # Mono
+    Lithium: 15 # Mono
 
 - type: latheRecipe
   id: RadioHandheldNF
@@ -61,6 +65,8 @@
   result: RadioHandheldNF
   materials:
     Plastic: 500
+    Copper: 100 # Mono
+    Lithium: 15 # Mono
 
 - type: latheRecipe
   id: OreBag
@@ -94,6 +100,8 @@
   materials:
     Steel: 1000
     Plastic: 300
+    Copper: 200 # Mono
+    Lithium: 500 # Mono
 
 - type: latheRecipe
   id: RCDAmmo
@@ -104,6 +112,8 @@
     Steel: 2000
     Plastic: 750
     Plasteel: 600
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 # Migrated from Recipes/Lathes/tools.yml
 - type: latheRecipe
@@ -115,6 +125,8 @@
     Steel: 650
     Plastic: 150
     Gold: 50
+    Copper: 150 # Mono
+    Lithium: 50 # Mono
 
 # Holopickaxe
 - type: latheRecipe
@@ -128,3 +140,5 @@
     Plastic: 500
     Glass: 500
     Gold: 800
+    Copper: 200 # Mono
+    Lithium: 100 # Mono

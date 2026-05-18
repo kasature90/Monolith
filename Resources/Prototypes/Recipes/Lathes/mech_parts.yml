@@ -152,6 +152,8 @@
     Glass: 1500
     Plastic: 1000
     Gold: 350
+    Copper: 500
+    Lithium: 100
 
 # Vim
 - type: latheRecipe

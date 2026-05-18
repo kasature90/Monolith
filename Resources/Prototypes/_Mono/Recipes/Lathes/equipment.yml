@@ -15,6 +15,8 @@
     Durathread: 2500
     Silver: 500
     Gold: 500
+    Copper: 500
+    Lithium: 100
 
 - type: latheRecipe
   id: ClothingOuterHardsuitCarp
@@ -36,6 +38,8 @@
     Plastic: 500
     Plasma: 500
     Silver: 200
+    Copper: 500
+    Lithium: 100
 
 #Armor Plates
 - type: latheRecipe
@@ -98,4 +102,6 @@
     Plasma: 1500
     Gold: 1000
     Diamond: 150
+    Copper: 500
+    Lithium: 100
 

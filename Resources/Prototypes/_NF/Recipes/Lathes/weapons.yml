@@ -11,6 +11,8 @@
     Steel: 1200
     Glass: 800
     Silver: 850
+    Copper: 200 # Mono
+    Lithium: 50 # Mono
 
 - type: latheRecipe
   id: WeaponRevolverArgenti

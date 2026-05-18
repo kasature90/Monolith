@@ -186,6 +186,8 @@
     Steel: 2000
     Plasteel: 800
     Plasma: 800
+    Copper: 100
+    Lithium: 50
 
 - type: latheRecipe
   id: HardlightShield
@@ -198,6 +200,8 @@
     Plasteel: 6500
     Plastic: 800
     Plasma: 4000
+    Copper: 1000
+    Lithium: 500
 
 - type: latheRecipe
   id: ASMGTUniversallyHostile
@@ -212,3 +216,5 @@
     Plasma: 1500
     Gold: 1000
     Diamond: 150
+    Copper: 100
+    Lithium: 50

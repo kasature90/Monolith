@@ -81,6 +81,7 @@
   materials:
     Glass: 500
     Steel: 500
+    Copper: 100 # Mono
 
 - type: latheRecipe
   id: ClothingHandsGlovesLatex
@@ -126,6 +127,7 @@
   completetime: 2
   materials:
     Steel: 300
+    Copper: 100 # Mono
 
 - type: latheRecipe
   id: Medkit
@@ -245,6 +247,8 @@
     Plastic: 500
     Gold: 300
     Silver: 300
+    Lithium: 500 # Mono
+    Copper: 250 # Mono
 
 - type: latheRecipe
   id: EnergyScalpel
@@ -254,6 +258,8 @@
     Steel: 600
     Glass: 150
     Gold: 150
+    Lithium: 150 # Mono
+    Copper: 250 # Mono
 
 - type: latheRecipe
   id: AdvancedRetractor
@@ -263,6 +269,8 @@
     Steel: 600
     Glass: 150
     Silver: 150
+    Lithium: 150 # Mono
+    Copper: 250 # Mono
 
 - type: latheRecipe
   id: EnergyCautery
@@ -272,6 +280,8 @@
     Steel: 600
     Glass: 150
     Plasma: 150
+    Lithium: 150 # Mono
+    Copper: 250 # Mono
 
 - type: latheRecipe
   id: DefibrillatorCompact
@@ -283,3 +293,5 @@
     Plastic: 250
     Gold: 250
     Silver: 150
+    Lithium: 100 # Mono
+    Copper: 300 # Mono

@@ -6,6 +6,8 @@
     Steel: 1200
     Silver: 200
     Gold: 100
+    Copper: 500
+    Lithium: 100
 
 - type: latheRecipe
   id: GaslockFrameFlatpack
@@ -15,3 +17,5 @@
     Steel: 1500
     Silver: 250
     Gold: 50
+    Copper: 200
+    Lithium: 100

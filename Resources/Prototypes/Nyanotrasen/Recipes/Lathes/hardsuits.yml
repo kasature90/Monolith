@@ -12,6 +12,8 @@
      Uranium: 100
      Plastic: 100
      Gold: 200
+     Copper: 100 # Mono
+     Lithium: 25 # Mono
 
 - type: latheRecipe
   id: ClothingOuterHardsuitJuggernautReverseEngineered
@@ -27,3 +29,5 @@
      Uranium: 500
      Plastic: 500
      Gold: 250
+     Copper: 150 # Mono
+     Lithium: 150 # Mono

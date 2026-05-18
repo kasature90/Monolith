@@ -8,6 +8,8 @@
     Plastic: 1000
     Gold: 300
     Silver: 800
+    Copper: 350 # Mono
+    Lithium: 350 # Mono
 
 - type: latheRecipe
   id: ClothingBackpackMessengerHolding
@@ -19,6 +21,9 @@
     Plasma: 1250 #Higher Plasma due to it needing less bluespace
     UraniumFissile: 200
     Bluespace: 300 #DeltaV: Bluespace Exists
+    Plutonium: 30 # Mono
+    Copper: 1000 # Mono
+    Lithium: 1000 # Mono
 
 - type: latheRecipe
   id: ConstructionBagOfHolding
@@ -29,6 +34,8 @@
     Silver: 750
     Plasma: 1000 #DeltaV: Bluespace Exists so less plasma used, no uranium
     Bluespace: 200 #DeltaV: Bluespace Exists
+    Copper: 200 # Mono
+    Lithium: 200 # Mono
 
 - type: latheRecipe
   id: SolarAssemblyFlatpack
@@ -38,6 +45,7 @@
     Steel: 500
     Silver: 100
     Gold: 50
+    Copper: 100 # Mono
 
 - type: latheRecipe
   id: GasDepositLocator
@@ -48,3 +56,4 @@
   materials:
     Steel: 400
     Glass: 100
+    Copper: 100 # Mono

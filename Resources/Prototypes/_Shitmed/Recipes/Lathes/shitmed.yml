@@ -10,4 +10,6 @@
     Glass: 300
     Gold: 300
     Silver: 300
-    Plasma: 300 
+    Plasma: 300
+    Copper: 750 # Mono
+    Lithium: 750 # Mono

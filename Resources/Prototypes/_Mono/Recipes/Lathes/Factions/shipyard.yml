@@ -58,6 +58,8 @@
     UraniumDepleted: 4000
     Silver: 10000
     Gold: 5000
+    Copper: 15000
+    Lithium: 7500
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
@@ -74,6 +76,8 @@
     UraniumDepleted: 5000
     Silver: 5000
     Gold: 5000
+    Copper: 20000
+    Lithium: 10000
 
 # PDV
 
@@ -136,6 +140,8 @@
     UraniumDepleted: 4000
     Silver: 5000
     Gold: 5000
+    Copper: 15000
+    Lithium: 7500
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
@@ -152,3 +158,5 @@
     UraniumDepleted: 5000
     Silver: 10000
     Gold: 10000
+    Copper: 20000
+    Lithium: 10000

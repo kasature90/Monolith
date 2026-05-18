@@ -6,8 +6,9 @@
   - Parts
   completetime: 2
   materials:
-    Steel: 300
+    Steel: 200 # Mono
     Plastic: 200
+    Copper: 100 # Mono
 
 # Stackable part with no function
 - type: latheRecipe
@@ -18,6 +19,7 @@
   materials:
     Steel: 50
     Plastic: 50
+    Copper: 50 # Mono
 
 - type: latheRecipe
   parent: BaseStockPartRecipe

@@ -9,7 +9,8 @@
   materials:
     Steel: 1000
     Plastic: 500
-    Plasma: 250
+    Lithium: 50
+    Copper: 200
 
 # boxes
 
@@ -23,4 +24,5 @@
   materials:
     Steel: 1500
     Plastic: 1000
-    Plasma: 500
+    Copper: 200
+    Lithium: 500

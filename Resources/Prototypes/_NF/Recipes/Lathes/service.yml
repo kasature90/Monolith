@@ -89,8 +89,9 @@
   - Lights
   completetime: 2
   materials:
-    Steel: 50
+    Steel: 25 # Mono
     Glass: 50
+    Copper: 25 # Mono
 
 - type: latheRecipe
   id: ExteriorLightBulb
@@ -99,8 +100,9 @@
   - Lights
   completetime: 2
   materials:
-    Steel: 50
+    Steel: 25 # Mono
     Glass: 50
+    Copper: 25 # Mono
 
 - type: latheRecipe
   id: DrinkIceBucketEmpty

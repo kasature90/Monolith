@@ -13,6 +13,7 @@
   completetime: 10
   materials:
     Steel: 500
+    Copper: 100 # Mono
 
 # Clarke
 - type: latheRecipe
@@ -185,6 +186,7 @@
   materials:
     Steel: 1000
     Glass: 250
+    Copper: 150 # Mono
 
 - type: latheRecipe
   id: MechEquipmentDrillDiamond
@@ -195,6 +197,8 @@
     Plastic: 150
     Silver: 350
     Diamond: 150
+    Copper: 200 # Mono
+    Lithium: 200 # Mono
 
 - type: latheRecipe
   id: MechEquipmentGrabber
@@ -203,7 +207,7 @@
   materials:
     Steel: 500
     Plastic: 200
-
+    Copper: 200 # Mono
 
 - type: latheRecipe
   id: MechEquipmentHonkerBananaMortar
@@ -237,3 +241,4 @@
   materials:
     Steel: 1000
     Glass: 150
+    Copper: 300 # Mono

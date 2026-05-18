@@ -107,6 +107,8 @@
     Plastic: 800
     Gold: 2000
     Silver: 1500
+    Copper: 1000
+    Lithium: 500
 
 # Equipment
 
@@ -120,6 +122,7 @@
     Steel: 400
     Plastic: 50
     Glass: 50
+    Copper: 75
 
 - type: latheRecipe
   parent: BaseMechIFF

@@ -8,6 +8,8 @@
     Steel: 600
     Plastic: 400
     Gold: 200
+    Copper: 500 # Mono
+    Lithium: 500 # Mono
 
 - type: latheRecipe
   parent: BaseUpgradeKit

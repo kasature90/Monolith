@@ -5,6 +5,8 @@
   materials:
     Steel: 800
     Glass: 900
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: BlueprintLithographMachineCircuitboard
@@ -13,6 +15,8 @@
   materials:
     Steel: 800
     Glass: 900
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: ElectricRangeMachineCircuitboard
@@ -21,6 +25,8 @@
   materials:
     Steel: 800
     Glass: 900
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: KitchenAssemblerMachineCircuitboard
@@ -29,6 +35,8 @@
   materials:
     Steel: 600
     Glass: 750
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: MedicalAssemblerMachineCircuitboard
@@ -37,6 +45,8 @@
   materials:
     Steel: 800
     Glass: 900
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: NFScrapProcessorCircuitboard
@@ -45,6 +55,8 @@
   materials:
     Steel: 800
     Glass: 900
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   parent: BaseCircuitboardRecipe
@@ -53,6 +65,7 @@
   materials:
     Steel: 100
     Glass: 500
+    Copper: 100 # Mono
 
 - type: latheRecipe
   parent: BaseGoldCircuitboardRecipe
@@ -68,6 +81,8 @@
   materials:
     Steel: 400
     Glass: 900
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: ThrusterNfsdMachineCircuitboard
@@ -76,6 +91,8 @@
   materials:
     Steel: 400
     Glass: 900
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: ThrusterUSSPMachineCircuitboard
@@ -84,6 +101,8 @@
   materials:
     Steel: 400
     Glass: 900
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: ThrusterRogueMachineCircuitboard
@@ -92,6 +111,8 @@
   materials:
     Steel: 400
     Glass: 900
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: SmallThrusterMachineCircuitboard
@@ -101,6 +122,8 @@
   materials:
     Steel: 140
     Glass: 300
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 # Gyroscope
 - type: latheRecipe
@@ -136,6 +159,8 @@
   materials:
      Steel: 350
      Glass: 350
+     Copper: 100 # Mono
+     Lithium: 100 # Mono
 
 - type: latheRecipe
   id: PortableGeneratorDKJrMachineCircuitboard
@@ -144,3 +169,5 @@
   materials:
      Steel: 350
      Glass: 350
+     Copper: 100 # Mono
+     Lithium: 100 # Mono

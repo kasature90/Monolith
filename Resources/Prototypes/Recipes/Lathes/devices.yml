@@ -21,6 +21,8 @@
     Steel: 300
     Plastic: 100
     Glass: 100
+    Lithium: 100 # Mono
+    Copper: 100 # Mono
 
 - type: latheRecipe
   parent: BaseWeaponRecipe
@@ -52,6 +54,7 @@
     Glass: 50
     Plasma: 50
     Silver: 50
+    Lithium: 25 # Mono
 
 - type: latheRecipe
   parent: BasePartRecipe
@@ -61,6 +64,7 @@
     Steel: 100
     Plastic: 200
     Glass: 100
+    Copper: 100 # Mono
 
 - type: latheRecipe
   parent: BasePartRecipe
@@ -70,6 +74,8 @@
     Steel: 100
     Plastic: 200
     Plasma: 100
+    Copper: 100 # Mono
+    Lithium: 150 # Mono
 
 - type: latheRecipe
   id: AnomalyLocator
@@ -80,6 +86,7 @@
   materials:
     Steel: 400
     Glass: 100
+    Copper: 50 # Mono
 
 - type: latheRecipe
   id: AnomalyLocatorWide
@@ -90,6 +97,8 @@
   materials:
     Steel: 400
     Glass: 100
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   parent: BaseToolRecipe
@@ -98,6 +107,7 @@
   materials:
     Plastic: 200
     Glass: 150
+    Copper: 50 # Mono
 
 - type: latheRecipe
   id: WeaponPistolCHIMP
@@ -109,6 +119,8 @@
     Steel: 500
     Glass: 400
     Bananium: 1000
+    Copper: 50 # Mono
+    Lithium: 150 # Mono
 
 - type: latheRecipe
   id: WeaponGauntletGorilla
@@ -122,6 +134,8 @@
     Glass: 500
     Plasma: 500
     Silver: 250
+    Copper: 150 # Mono
+    Lithium: 150 # Mono
 
 - type: latheRecipe
   id: ClothingBackpackHolding
@@ -131,7 +145,10 @@
     Steel: 2000
     Silver: 750
     Plasma: 1250 #Higher Plasma due to it needing less bluespace
-    UraniumFissile: 200
+    UraniumFissile: 200 # Mono
+    Plutonium: 500 # Mono
+    Lithium: 1000 # Mono
+    Copper: 500 # Mono
     Bluespace: 300 #DeltaV: Bluespace Exists
 
 - type: latheRecipe
@@ -152,6 +169,8 @@
   materials:
     Steel: 2000
     Silver: 750
+    Lithium: 300 # Mono
+    Copper: 300 # Mono
     Plasma: 1000 #DeltaV: Bluespace Exists so less plasma used, no uranium
     Bluespace: 200 #DeltaV: Bluespace Exists
 
@@ -173,6 +192,7 @@
     Steel: 500
     Glass: 400
     Silver: 200
+    Lithium: 50 # Mono
 
 - type: latheRecipe
   id: DeviceQuantumSpinInverter
@@ -181,7 +201,8 @@
   materials:
     Steel: 700
     Glass: 100
-    UraniumFissile: 100
+    UraniumFissile: 100 # Mono
+    Plutonium: 100 # Mono
 
 - type: latheRecipe
   id: WeaponProtoKineticAccelerator
@@ -193,6 +214,8 @@
     Steel: 1000
     Glass: 500
     Silver: 100
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: WeaponTetherGun
@@ -204,6 +227,7 @@
     Steel: 500
     Glass: 400
     Silver: 100
+    Lithium: 50 # Mono
 
 - type: latheRecipe
   id: WeaponGrapplingGun

@@ -7,6 +7,7 @@
     Steel: 1000
     Plasteel: 1500
     Cloth: 1500
+    Copper: 100
 
 - type: latheRecipe
   parent: MonoHardsuitT1Recipe
@@ -16,6 +17,8 @@
     Steel: 1000
     Plasteel: 1500
     Cloth: 1500
+    Copper: 100
+    Lithium: 50
 
 - type: latheRecipe
   parent: MonoHardsuitT2Recipe
@@ -25,6 +28,8 @@
     Steel: 3000
     Plasteel: 5000
     Cloth: 1500
+    Copper: 50
+    Lithium: 50
 
 - type: latheRecipe
   parent: MonoHardsuitT2Recipe
@@ -35,6 +40,8 @@
     Plasteel: 5000
     Cloth: 1500
     Gold: 1500
+    Copper: 150
+    Lithium: 50
 
 - type: latheRecipe
   parent: MonoHardsuitT2Recipe
@@ -48,6 +55,8 @@
     Durathread: 3000
     Silver: 5000
     Plastic: 2500
+    Copper: 250
+    Lithium: 100
 
 
 - type: latheRecipe
@@ -62,3 +71,5 @@
     Durathread: 3000
     Silver: 5000
     Plastic: 2500
+    Copper: 250
+    Lithium: 250

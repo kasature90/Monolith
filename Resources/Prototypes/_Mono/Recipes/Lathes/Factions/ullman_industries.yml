@@ -16,6 +16,8 @@
     Plasteel: 500
     Silver: 250
     Gold: 250
+    Copper: 150
+    Lithium: 75
 
 - type: latheRecipe
   id: UllmanHardsuitEngineer
@@ -34,6 +36,8 @@
     Silver: 500
     Gold: 500
     Uranium: 500
+    Copper: 150
+    Lithium: 75
 
 - type: latheRecipe
   id: UllmanHardsuitEnforcer
@@ -52,6 +56,8 @@
     Silver: 500
     Gold: 500
     UraniumDepleted: 500
+    Copper: 150
+    Lithium: 75
 
 - type: latheRecipe
   id: UllmanHardsuitEnforcerMKII
@@ -73,6 +79,8 @@
     UraniumDepleted: 500
     UraniumFissile: 100
     Diamond: 200
+    Copper: 150
+    Lithium: 75
 
 - type: latheRecipe
   id: UllmanWeaponPulsePistol
@@ -90,6 +98,8 @@
     Gold: 500
     UraniumFissile: 50
     Plasma: 500
+    Copper: 750
+    Lithium: 500
 
 - type: latheRecipe
   id: UllmanWeaponSmartMagnum
@@ -107,6 +117,8 @@
     Silver: 1000
     Gold: 1000
     Plasteel: 1500
+    Copper: 750
+    Lithium: 500
 
 - type: latheRecipe
   id: UllmanWeaponPulseRifle
@@ -126,6 +138,8 @@
     Plastic: 2500
     UraniumDepleted: 800
     UraniumFissile: 100
+    Copper: 750
+    Lithium: 500
 
 - type: latheRecipe
   id: UllmanWeaponPulseSniper
@@ -146,6 +160,8 @@
     UraniumDepleted: 700
     UraniumFissile: 200
     Diamond: 100
+    Copper: 750
+    Lithium: 500
 
 - type: latheRecipe
   id: UllmanMeleePlasmaBlade
@@ -162,3 +178,5 @@
     Gold: 1000
     Plasma: 500
     UraniumFissile: 50
+    Copper: 750
+    Lithium: 500

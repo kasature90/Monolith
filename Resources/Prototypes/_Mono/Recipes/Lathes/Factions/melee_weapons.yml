@@ -10,6 +10,8 @@
     Plasteel: 3000
     Plastic: 400
     Plasma: 3000
+    Copper: 500
+    Lithium: 500
 
 - type: latheRecipe
   parent: BaseWeaponRecipe
@@ -23,6 +25,8 @@
     Plasteel: 1500
     Plastic: 300
     Plasma: 500
+    Copper: 200
+    Lithium: 200
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
@@ -37,6 +41,8 @@
     Plastic: 6000
     Plasma: 10000
     Uranium: 6000
+    Copper: 2000
+    Lithium: 1000
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
@@ -50,6 +56,8 @@
     Plasteel: 6500
     Plastic: 800
     Plasma: 4000
+    Copper: 1000
+    Lithium: 500
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
@@ -63,6 +71,8 @@
     Plasteel: 6500
     Plastic: 800
     Plasma: 4000
+    Copper: 1000
+    Lithium: 500
 
 - type: latheRecipe
   parent: BaseWeaponRecipe

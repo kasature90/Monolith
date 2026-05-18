@@ -6,6 +6,8 @@
     Steel: 250
     Plastic: 100
     Glass: 250
+    Copper: 200 # Mono
+    Lithium: 25 # Mono
 
 - type: latheRecipe
   abstract: true
@@ -15,6 +17,8 @@
     Steel: 250
     Plasma: 100
     Plastic: 100
+    Copper: 100 # Mono
+    Lithium: 25 # Mono
 
 # - type: latheRecipe
 #   parent: BaseRoboticsRecipe

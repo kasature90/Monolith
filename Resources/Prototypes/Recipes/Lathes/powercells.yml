@@ -7,6 +7,8 @@
   materials:
     Steel: 100
     Plastic: 50
+    Lithium: 50 # Mono
+    Copper: 50 # Mono
 
 - type: latheRecipe
   id: PowerCellMedium
@@ -19,6 +21,8 @@
     Glass: 300
     Plastic: 100
     Gold: 10
+    Lithium: 250 # Mono
+    Copper: 250 # Mono
 
 - type: latheRecipe
   id: PowerCellHigh
@@ -31,6 +35,8 @@
     Glass: 400
     Plastic: 200
     Gold: 50
+    Lithium: 500 # Mono
+    Copper: 500 # Mono
 
 - type: latheRecipe
   id: PowerCellMicroreactor
@@ -41,8 +47,10 @@
   materials:
     Steel: 500
     Glass: 400
-    UraniumFissile: 50
+    Plutonium: 50 # Mono - It's basically a mini-RTG, so what?
     Gold: 100
+    Lithium: 300 # Mono
+    Copper: 750 # Mono
 
 - type: latheRecipe
   id: PowerCageSmall
@@ -56,6 +64,8 @@
     Uranium: 200
     Gold: 200
     Diamond: 50
+    Lithium: 150 # Mono
+    Copper: 250 # Mono
 
 - type: latheRecipe
   id: PowerCageMedium
@@ -67,6 +77,8 @@
     Plastic: 500
     Silver: 250
     Gold: 500
+    Lithium: 300 # Mono
+    Copper: 600 # Mono
 
 - type: latheRecipe
   id: PowerCageHigh
@@ -80,3 +92,5 @@
     Plastic: 500
     Silver: 500
     Gold: 500
+    Lithium: 750 # Mono
+    Copper: 1000 # Mono

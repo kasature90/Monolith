@@ -19,6 +19,7 @@
   materials:
     Steel: 250
     Plastic: 50
+    Lithium: 500 # Mono
 
 - type: latheRecipe
   id: SyringeCryostasis
@@ -27,6 +28,7 @@
   materials:
     Steel: 200
     Plastic: 50
+    Lithium: 200 # Mono
 
 - type: latheRecipe
   id: Dropper
@@ -54,6 +56,8 @@
     Plasma: 50
     Silver: 50
     Bluespace: 100 #DeltaV: Bluespace
+    Copper: 200 # Mono
+    Lithium: 200 # Mono
 
 - type: latheRecipe
   id: SyringeBluespace
@@ -65,7 +69,9 @@
 #    Glass: 200 # Frontier
     Plasma: 30 # Frontier 50<30
     Silver: 30 # Frontier 50<30
-    Bluespace: 60 #DeltaV: Bluespace   
+    Bluespace: 60 #DeltaV: Bluespace
+    Copper: 25 # Mono
+    Lithium: 25 # Mono
 
 - type: latheRecipe
   id: PillCanister
@@ -90,7 +96,8 @@
   completetime: 2
   materials:
     Plastic: 100
-    Steel: 250
+    Steel: 200 # Mono
+    Lithium: 50 # Mono
 
 - type: latheRecipe
   id: ClothingEyesGlassesChemical

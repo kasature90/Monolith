@@ -20,6 +20,8 @@
     Uranium: 1000
     Silver: 500
     Gold: 500
+    Copper: 1500
+    Lithium: 1000
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
@@ -34,6 +36,8 @@
     Uranium: 2500
     Silver: 1000
     Gold: 1000
+    Copper: 1500
+    Lithium: 1000
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
@@ -48,6 +52,8 @@
     Uranium: 2500
     Silver: 1500
     Gold: 1500
+    Copper: 1500
+    Lithium: 1000
 
 # PDV
 
@@ -64,6 +70,8 @@
     Uranium: 1000
     Silver: 2500
     Gold: 2500
+    Copper: 1500
+    Lithium: 1000
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
@@ -78,6 +86,8 @@
     Uranium: 2000
     Silver: 4500
     Gold: 4500
+    Copper: 1500
+    Lithium: 1000
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
@@ -92,6 +102,8 @@
     Uranium: 1500
     Silver: 3000
     Gold: 3000
+    Copper: 1500
+    Lithium: 1000
 
 # Merc
 
@@ -109,3 +121,5 @@
     Uranium: 1500
     Silver: 500
     Gold: 500
+    Copper: 1000
+    Lithium: 500

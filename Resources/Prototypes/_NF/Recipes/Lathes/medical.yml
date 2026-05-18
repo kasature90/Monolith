@@ -8,6 +8,8 @@
     Glass: 1200
     Steel: 1000
     Plastic: 1400
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   parent: BaseToolRecipe

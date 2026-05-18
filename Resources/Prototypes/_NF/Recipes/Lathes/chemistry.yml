@@ -15,6 +15,8 @@
     Plasma: 100
     Silver: 100
     Bluespace: 175 #small discount, less flexible than a beaker
+    Copper: 500 # Mono
+    Lithium: 500 # Mono
 
 - type: latheRecipe
   id: VialBluespace
@@ -26,6 +28,8 @@
     Plasma: 15
     Silver: 15
     Bluespace: 30 #DeltaV: Bluespace
+    Copper: 25 # Mono
+    Lithium: 25 # Mono
 
 - type: latheRecipe
   id: BlankMediPen

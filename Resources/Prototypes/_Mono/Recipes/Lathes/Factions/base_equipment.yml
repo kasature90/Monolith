@@ -12,9 +12,11 @@
     Steel: 3000
     Plastic: 1000
     Plasteel: 4000
-    Durathread: 1500
+    Durathread: 1000
     Silver: 500
     Gold: 500
+    Copper: 200
+    Lithium: 50
 
 - type: latheRecipe
   abstract: true
@@ -26,9 +28,11 @@
     Steel: 3500
     Plastic: 1250
     Plasteel: 5000
-    Durathread: 2500
+    Durathread: 2000
     Silver: 500
     Gold: 500
+    Copper: 200
+    Lithium: 75
 
 - type: latheRecipe
   abstract: true
@@ -39,9 +43,11 @@
     Plastic: 2000
     Steel: 6000
     Plasteel: 8000
-    Durathread: 4000
+    Durathread: 3000
     Silver: 500
     Gold: 500
+    Copper: 200
+    Lithium: 100
 
 - type: latheRecipe
   abstract: true
@@ -53,6 +59,8 @@
     Steel: 4000
     Plastitanium: 2500
     Plasteel: 4000
-    Durathread: 3000
+    Durathread: 2500
     Silver: 500
     Gold: 500
+    Copper: 200
+    Lithium: 200

@@ -187,6 +187,8 @@
     Plasteel: 1500
     Silver: 250
     Plasma: 250
+    Copper: 200
+    Lithium: 100
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
@@ -202,6 +204,8 @@
     Silver: 500
     Gold: 500
     Plasma: 1000
+    Copper: 200
+    Lithium: 100
 
 # PDV energy
 
@@ -218,6 +222,8 @@
     Plasteel: 1500
     Silver: 250
     Uranium: 250
+    Copper: 200
+    Lithium: 100
 
 # syndicate ballistics
 

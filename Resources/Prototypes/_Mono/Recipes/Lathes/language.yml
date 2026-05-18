@@ -8,6 +8,7 @@
     Glass: 100
     Plastic: 50
     Gold: 50
+    Copper: 75 # Mono
 
 - type: latheRecipe
   id: NovaCygniTranslator
@@ -18,6 +19,7 @@
     Glass: 100
     Plastic: 50
     Gold: 50
+    Copper: 75 # Mono
 
 # Implanters
 - type: latheRecipe
@@ -30,6 +32,8 @@
     Plastic: 100
     Gold: 50
     Silver: 50
+    Copper: 150 # Mono
+    Lithium: 150 # Mono
 
 - type: latheRecipe
   id: NovaCygniTranslatorImplanter
@@ -41,3 +45,5 @@
     Plastic: 100
     Gold: 50
     Silver: 50
+    Copper: 150 # Mono
+    Lithium: 150 # Mono

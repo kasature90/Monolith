@@ -22,6 +22,8 @@
   materials:
     Steel: 1500
     Plastic: 100
+    Copper: 100
+    Lithium: 100
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
@@ -34,6 +36,8 @@
     Steel: 1000
     Plastic: 1000
     Plasteel: 500
+    Copper: 200
+    Lithium: 100
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
@@ -46,6 +50,8 @@
     Steel: 1500
     Plastic: 1500
     Plasteel: 750
+    Copper: 250
+    Lithium: 200
 
 # NT-WS Ammo
 
@@ -60,8 +66,8 @@
     Steel: 2000
     Plastic: 500
     Glass: 1500
-    Gold: 200
-    Silver: 200
+    Copper: 250
+    Lithium: 200
     Plasma: 1000
     Uranium: 500
 
@@ -76,8 +82,8 @@
     Steel: 2500
     Plastic: 200
     Glass: 500
-    Gold: 100
-    Silver: 100
+    Copper: 150
+    Lithium: 100
     Plasma: 500
 
 - type: latheRecipe
@@ -91,7 +97,8 @@
     Steel: 2000
     Plastic: 400
     Glass: 500
-    Silver: 500
+    Copper: 150
+    Lithium: 100
     Plasma: 750
     UraniumDepleted: 50
 

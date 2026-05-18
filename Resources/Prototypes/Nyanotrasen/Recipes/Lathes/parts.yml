@@ -8,6 +8,9 @@
     Gold: 50
     Plasma: 50
     Bluespace: 100
+    Copper: 200 # Mono
+    Lithium: 200 # Mono
+    Plutonium: 15 # Mono
 
 - type: latheRecipe
   id: FemtoManipulatorStockPart
@@ -18,6 +21,9 @@
     Gold: 50
     Plasma: 50
     Bluespace: 100
+    Copper: 200 # Mono
+    Lithium: 200 # Mono
+    Plutonium: 15 # Mono
 
 - type: latheRecipe
   id: BluespaceMatterBinStockPart
@@ -28,3 +34,6 @@
     Gold: 50
     Plasma: 50
     Bluespace: 100
+    Copper: 200 # Mono
+    Lithium: 200 # Mono
+    Plutonium: 15 # Mono

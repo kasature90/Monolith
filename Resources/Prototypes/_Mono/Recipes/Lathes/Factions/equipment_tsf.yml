@@ -30,9 +30,11 @@
     Steel: 3000
     Plastic: 1000
     Plasteel: 4000
-    Durathread: 2250 # very slightly higher durathread cost
+    Durathread: 1500 # Slightly higher
     Silver: 500
     Gold: 500
+    Copper: 200
+    Lithium: 50
 
 - type: latheRecipe
   id: ClothingOuterHardsuitM86Tsf

@@ -3,12 +3,14 @@
   result: ConveyorBeltAssembly
   completetime: 4
   materials:
-    Steel: 250
+    Steel: 200 # Mono
     Plastic: 50
+    Copper: 50 # Mono
 
 - type: latheRecipe
   id: AppraisalTool
   result: AppraisalTool
   completetime: 4
   materials:
-    Steel: 500
+    Steel: 400 # Mono
+    Copper: 100 # Mono

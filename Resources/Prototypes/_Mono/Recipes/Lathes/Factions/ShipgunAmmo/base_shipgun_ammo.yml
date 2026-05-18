@@ -40,8 +40,10 @@
     Steel: 400
     Plasma: 50 # explosive payload
     Glass: 80 # optical seeker
-    Gold: 50 # electronics
-    Silver: 50 # electronics
+    Gold: 25 # electronics
+    Silver: 25 # electronics
+    Copper: 25 # electronics
+    Lithium: 25 # electronics
 
 - type: latheRecipe
   parent: BaseShipgunAmmoRecipe
@@ -51,8 +53,10 @@
     Steel: 200
     Plasma: 20 # explosive payload
     Glass: 30 # optical seeker
-    Gold: 15 # electronics
-    Silver: 15 # electronics
+    Gold: 10 # electronics
+    Silver: 10 # electronics
+    Copper: 10 # electronics
+    Lithium: 10 # electronics
 
 # Research ordinance
 
@@ -80,8 +84,10 @@
     Steel: 1500
     Plasma: 300 # explosive payload
     Glass: 150 # optical seeker
-    Gold: 100 # electronics
-    Silver: 100 # electronics
+    Gold: 50 # electronics
+    Silver: 50 # electronics
+    Copper: 50 # electronics
+    Lithium: 50 # electronics
 
 - type: latheRecipe
   parent: BaseShipgunAmmoRecipe
@@ -91,6 +97,8 @@
     Steel: 1200
     Plasma: 400 # explosive payload
     Silver: 200 # electronics/misc
+    Copper: 50 # electronics
+    Lithium: 25 # electronics
 
 - type: latheRecipe
   parent: BaseShipgunAmmoRecipe
@@ -100,5 +108,7 @@
     Steel: 1200
     Plasma: 600 # explosive payload/advanced
     Glass: 400 # opticals/misc
-    Gold: 200 # more electronics/misc
-    Silver: 200 # electronics/misc
+    Gold: 100 # more electronics/misc
+    Silver: 100 # electronics/misc
+    Copper: 100 # electronics
+    Lithium: 100 # electronics

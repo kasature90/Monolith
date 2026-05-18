@@ -31,8 +31,10 @@
     Steel: 1200 # shell/casing
     Plasteel: 1000 # penetrator
     Glass: 400 # opticals
-    Gold: 200 # electronics
-    Silver: 200 # electronics
+    Gold: 100 # electronics
+    Silver: 100 # electronics
+    Copper: 100 # electronics
+    Lithium: 100 # electronics
 
 - type: latheRecipe
   id: 150mmApShellUniversal

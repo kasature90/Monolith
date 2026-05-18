@@ -55,6 +55,8 @@
   materials:
     Glass: 550
     Plasma: 250
+    Copper: 200 # Mono
+    Lithium: 200 # Mono
 
 # AI
 - type: latheRecipe
@@ -66,3 +68,5 @@
     Glass: 400
     Gold: 400
     Silver: 200
+    Copper: 500 # Mono
+    Lithium: 500 # Mono

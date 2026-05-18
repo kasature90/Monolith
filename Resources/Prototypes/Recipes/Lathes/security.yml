@@ -75,6 +75,8 @@
     Steel: 2000
     Glass: 800
     Plastic: 500
+    Copper: 500 # Mono
+    Lithium: 200 # Mono
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
@@ -88,6 +90,8 @@
     Steel: 1500
     Glass: 1000
     Gold: 850
+    Copper: 500 # Mono
+    Lithium: 350 # Mono
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
@@ -102,6 +106,8 @@
     Steel: 1250
     Plastic: 750
     Gold: 500
+    Copper: 750 # Mono
+    Lithium: 450 # Mono
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
@@ -114,6 +120,7 @@
   materials:
     Steel: 2000
     Gold: 500
+    Copper: 200 # Mono
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
@@ -128,6 +135,9 @@
     Glass: 500
     Plastic: 250
     Gold: 100
+    Copper: 300 # Mono
+    Lithium: 300 # Mono
+    Plutonium: 10 # Mono
 
 - type: latheRecipe
   id: ClothingBackpackElectropack
@@ -137,6 +147,8 @@
     Steel: 500
     Plastic: 250
     Cloth: 500
+    Copper: 200 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: ForensicPad
@@ -186,6 +198,7 @@
     Glass: 100
     Plastic: 200
     Steel: 100
+    Lithium: 25 # Mono
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
@@ -228,6 +241,7 @@
     Steel: 1800
     Glass: 400
     Plastic: 250
+    Copper: 100 # Mono
 
 - type: latheRecipe
   parent: BaseWeaponRecipe
@@ -238,6 +252,7 @@
     Steel: 500
     Glass: 100
     Plastic: 200
+    Copper: 100 # Mono
 
 - type: latheRecipe
   parent: BaseWeaponRecipe
@@ -257,6 +272,8 @@
     Steel: 300
     Glass: 200
     Plastic: 200
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   parent: WeaponDisabler
@@ -270,6 +287,8 @@
     Steel: 1000
     Glass: 500
     Plastic: 500
+    Copper: 250 # Mono
+    Lithium: 400 # Mono
 
 - type: latheRecipe
   id: Magazine40mmEmpty
@@ -321,10 +340,12 @@
   completetime: 15
   materials:
     Steel: 2000
-    UraniumFissile: 100
+    Plutonium: 10 # Mono
     Plastic: 1000
     Plasma: 500
     Glass: 500
+    Copper: 500 # Mono
+    Lithium: 750 # Mono
 
 # Shitmed Recipes
 
@@ -338,3 +359,5 @@
     Plastic: 500
     Gold: 300
     Silver: 300
+    Copper: 500 # Mono
+    Lithium: 750 # Mono

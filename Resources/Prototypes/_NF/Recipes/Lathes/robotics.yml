@@ -8,6 +8,8 @@
     Plastic: 250
     Gold: 50
     Bluespace: 60 # SyringeBluespace Bluepsace price
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: BorgModuleAdvancedMining
@@ -19,6 +21,8 @@
     Plastic: 250
     Bluespace: 200 # OreBagOfHolding Bluepsace price
     Diamond: 100 # MiningDrillDiamond Diamond price
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: BorgModuleJetpack
@@ -29,3 +33,5 @@
     Glass: 500
     Plastic: 250
     Gold: 50
+    Copper: 100 # Mono
+    Lithium: 25 # Mono

@@ -57,7 +57,7 @@
   - Parts
   completetime: 0.1
   materials:
-    Steel: 30
+    Copper: 30 # Mono
 
 - type: latheRecipe
   parent: CableStack
@@ -100,6 +100,8 @@
   materials:
     Steel: 200
     Plastic: 200
+    Copper: 50 # Mono
+    Lithium: 25 # Mono
 
 - type: latheRecipe
   parent: Multitool
@@ -113,6 +115,8 @@
   materials:
     Steel: 600
     Plastic: 200
+    Copper: 50 # Mono
+    Lithium: 25 # Mono
 
 #- type: latheRecipe
 #  parent: BaseToolRecipe
@@ -176,6 +180,7 @@
     Steel: 300
     Glass: 50
     Plastic: 50
+    Copper: 50 # Mono
 
 - type: latheRecipe
   parent: BaseToolRecipe
@@ -185,6 +190,8 @@
   materials:
     Steel: 800
     Plasma: 200
+    Copper: 100 # Mono
+    Lithium: 500 # Mono
 
 - type: latheRecipe
   parent: BaseToolRecipe
@@ -196,6 +203,8 @@
     Glass: 500
     Plasma: 300
     Gold: 50
+    Copper: 200 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   parent: BaseToolRecipe
@@ -206,6 +215,7 @@
     Steel: 500
     Plasma: 300
     Glass: 100
+    Copper: 50 # Mono
 
 - type: latheRecipe
   parent: BaseToolRecipe
@@ -216,3 +226,5 @@
     Steel: 750
     Plasma: 150
     Uranium: 150
+    Copper: 500 # Mono
+    Lithium: 100 # Mono

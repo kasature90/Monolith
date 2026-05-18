@@ -1,4 +1,3 @@
-
 - type: latheRecipe
   id: PrintableC4
   categories:
@@ -10,6 +9,8 @@
     Plastic: 500
     Plasma: 1000
     Silver: 200
+    Copper: 100
+    Lithium: 20
 
 - type: latheRecipe
   id: PrintableEmpGrenade
@@ -22,6 +23,8 @@
     Plastic: 500
     Uranium: 500
     Silver: 500
+    Copper: 100
+    Lithium: 20
 
 - type: latheRecipe
   id: PrintableExplosiveGrenade
@@ -34,6 +37,7 @@
     Plastic: 500
     Plasma: 1000
     Silver: 300
+    Copper: 100
 
 - type: latheRecipe
   id: PrintableStickyBomb
@@ -46,6 +50,7 @@
     Plastic: 1000
     Plasma: 1000
     Silver: 300
+    Copper: 100
 
 - type: latheRecipe
   id: PrintableDirtyBomb
@@ -58,6 +63,8 @@
     Plastic: 500
     Uranium: 1000
     Silver: 300
+    Copper: 100
+    Lithium: 100
 
 - type: latheRecipe
   id: PrintableBombCollar
@@ -70,6 +77,8 @@
     Plastic: 500
     Plasma: 400
     Silver: 100
+    Copper: 100
+    Lithium: 100
 
 - type: latheRecipe
   id: PrintableBombCollarSealer
@@ -82,3 +91,5 @@
     Plastic: 500
     Silver: 200
     Gold: 100
+    Copper: 100
+    Lithium: 100

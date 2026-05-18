@@ -7,6 +7,8 @@
     Glass: 100
     Silver: 100
     Gold: 100
+    Copper: 200 # Mono
+    Lithium: 150 # Mono
 
 - type: latheRecipe
   id: ClothingHelmetAttachmentNVGsBasic
@@ -17,6 +19,8 @@
     Glass: 100
     Silver: 100
     Gold: 100
+    Copper: 100 # Mono
+    Lithium: 100 # Mono
 
 - type: latheRecipe
   id: ClothingEyesThermalVisionGoggles
@@ -27,6 +31,8 @@
     Glass: 100
     Silver: 100
     Gold: 100
+    Copper: 200 # Mono
+    Lithium: 150 # Mono
 
 - type: latheRecipe
   id: ClothingHelmetAttachmentInfraredBasic
@@ -37,3 +43,5 @@
     Glass: 100
     Silver: 100
     Gold: 100
+    Copper: 100 # Mono
+    Lithium: 100 # Mono

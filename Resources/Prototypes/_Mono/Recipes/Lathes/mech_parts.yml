@@ -189,8 +189,10 @@
     Plastic: 500
     Silver: 500
     Gold: 500
-    UraniumFissile: 100
+    Plutonium: 50
     Diamond: 100
+    Copper: 1000
+    Lithium: 1000
 
 #IFFs
 
@@ -204,6 +206,7 @@
     Steel: 400
     Plastic: 50
     Glass: 50
+    Copper: 75
 
 - type: latheRecipe
   id: MechIFFPDV
@@ -215,3 +218,4 @@
     Steel: 400
     Plastic: 50
     Glass: 50
+    Copper: 75

@@ -12,6 +12,8 @@
     Steel: 300
     Cloth: 300
     Durathread: 500
+    Copper: 50 # Mono
+    Lithium: 50 # Mono
 
 - type: latheRecipe
   abstract: true
@@ -36,6 +38,8 @@
     Durathread: 2000
     Silver: 1500
     Gold: 1000
+    Copper: 150 # Mono
+    Lithium: 50 # Mono
 
 - type: latheRecipe
   abstract: true
@@ -53,6 +57,8 @@
     Durathread: 2000
     Silver: 1500
     Gold: 1000
+    Copper: 150 # Mono
+    Lithium: 50 # Mono
 
 - type: latheRecipe
   abstract: true
@@ -65,6 +71,8 @@
   materials:
     Silver: 1000
     Gold: 500
+    Copper: 50 # Mono
+    Lithium: 50 # Mono
 
 # Recipes
 
@@ -100,6 +108,8 @@
     Cloth: 300
     Durathread: 2500
     Silver: 1000
+    Copper: 150 # Mono
+    Lithium: 150 # Mono
 
 - type: latheRecipe
   id: ClothingOuterHardsuitEVAPrisoner
@@ -114,6 +124,8 @@
     Glass: 500
     Plasteel: 1500
     Durathread: 2500
+    Copper: 50 # Mono
+    Lithium: 50 # Mono
 
 - type: latheRecipe # EMAG
   id: ClothingOuterHardsuitSyndicate
@@ -123,6 +135,8 @@
     Steel: 200
     Cloth: 300
     Durathread: 600
+    Copper: 250 # Mono
+    Lithium: 250 # Mono
 
 - type: latheRecipe
   id: ClothingOuterEVASuitContractor
@@ -260,6 +274,8 @@
     Cloth: 300
     Durathread: 1500
     Silver: 1000
+    Copper: 50 # Mono
+    Lithium: 50 # Mono
 
 # Departmental hardsuits (T2 research)
 - type: latheRecipe
@@ -354,6 +370,8 @@
     Durathread: 2000
     Silver: 1500
     Gold: 1000
+    Copper: 150 # Mono
+    Lithium: 50 # Mono
 
 - type: latheRecipe
   id: ClothingOuterHardsuitRd
@@ -382,6 +400,8 @@
     Durathread: 2000
     Silver: 1000
     Gold: 2000
+    Copper: 250 # Mono
+    Lithium: 250 # Mono
 
 # Better security hardsuits (T3 Research)
 

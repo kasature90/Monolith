@@ -7,8 +7,9 @@
   - Lights
   completetime: 2
   materials:
-    Steel: 50
+    Steel: 25 # Mono
     Glass: 50
+    Copper: 25 # Mono
 
 - type: latheRecipe
   abstract: true
@@ -81,6 +82,7 @@
     Steel: 100
     Glass: 100
     Plastic: 100
+    Copper: 15 # Mono
 
 - type: latheRecipe
   parent: BaseToolRecipe
@@ -104,6 +106,8 @@
     Steel: 300
     Plastic: 300
     Glass: 100
+    Copper: 100 # Mono
+    Lithium: 25 # Mono
 
 - type: latheRecipe
   parent: BaseToolRecipe
@@ -158,6 +162,9 @@
     Plastic: 1000
     Silver: 500
     Bluespace: 200 #DeltaV
+    Copper: 300 # Mono
+    Lithium: 50 # Mono
+    Plutonium: 100 # Mono
 
 - type: latheRecipe
   id: ModularReceiver
@@ -176,6 +183,8 @@
     Plastic: 600
     Silver: 200
     Plasma: 200
+    Copper: 150 # Mono
+    Lithium: 50 # Mono
 
 - type: latheRecipe
   parent: BaseFauxTileRecipe
@@ -233,6 +242,7 @@
   materials:
     Steel: 300
     Plastic: 100
+    Copper: 25 # Mono
 
 - type: latheRecipe
   id: ClothingHeadHatWelding

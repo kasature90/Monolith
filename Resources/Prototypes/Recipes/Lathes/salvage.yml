@@ -7,6 +7,7 @@
     Glass: 300
     Plastic: 300
     Gold: 500
+    Copper: 50 # Mono
 
 - type: latheRecipe
   id: AdvancedMineralScannerEmpty
@@ -17,6 +18,8 @@
     Glass: 300
     Plastic: 300
     Uranium: 500
+    Copper: 100 # Mono
+    Lithium: 50 # Mono
 
 - type: latheRecipe
   id: Fulton
@@ -58,6 +61,7 @@
   materials:
     Steel: 500
     Plastic: 100
+    Copper: 100 # Mono
 
 - type: latheRecipe
   parent: MiningDrill
@@ -68,3 +72,5 @@
     Plastic: 200
     Silver: 200
     Diamond: 100
+    Copper: 100 # Mono
+    Lithium: 100 # Mono

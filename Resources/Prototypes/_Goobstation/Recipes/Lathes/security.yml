@@ -18,6 +18,8 @@
     Plastic: 300
     Plasma: 250
     Glass: 200
+    Copper: 500 # Mono
+    Lithium: 200 # Mono
 
 - type: latheRecipe
   id: WeaponMechCombatFiredartLaser
@@ -28,6 +30,8 @@
     Plastic: 200
     Plasma: 150
     Glass: 50
+    Copper: 500 # Mono
+    Lithium: 200 # Mono
 
 - type: latheRecipe
   id: WeaponMechCombatUltraRifle
@@ -71,6 +75,8 @@
     Steel: 750
     Glass: 250
     Plastic: 300
+    Copper: 100 # Mono
+    Lithium: 50 # Mono
 
 - type: latheRecipe
   id: WeaponMechCombatFlashbangLauncher
@@ -115,6 +121,8 @@
     Plastic: 750
     Silver: 500
     Gold: 500
+    Copper: 500 # Mono
+    Lithium: 200 # Mono
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
@@ -124,4 +132,6 @@
   - MiscAmmo
   - Ammo
   materials:
-    Steel: 550
+    Steel: 450 # Mono
+    Copper: 25 # Mono
+    Lithium: 25 # Mono

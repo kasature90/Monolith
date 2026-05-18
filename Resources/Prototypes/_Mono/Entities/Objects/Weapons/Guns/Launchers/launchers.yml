@@ -220,7 +220,7 @@
     minAngle: 27
     maxAngle: 39
     projectileSpeed: 70
-    fireRate: 0.3
+    fireRate: 0.2
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto

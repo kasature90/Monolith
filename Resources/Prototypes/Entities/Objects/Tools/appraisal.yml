@@ -19,7 +19,7 @@
     - Belt
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
+      Steel: 150 # Mono
   - type: Tag
     tags:
     - AppraisalTool

@@ -52,7 +52,7 @@
 - type: entity
   parent: BaseGunAttachmentGrip
   id: GunAttachmentGripPistolLAM
-  name: Soyuz PRL laser-aiming module (handgun mount)
+  name: Soyuz PGL laser-aiming module (handgun mount)
   description: A visual-spectrum green laser for aiming. Looks awesome, and helps a lot with first shot accuracy!
   components:
   - type: Sprite

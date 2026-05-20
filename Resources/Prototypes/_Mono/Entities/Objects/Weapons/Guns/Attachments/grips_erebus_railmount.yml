@@ -8,10 +8,10 @@
     sprite: _Mono/Objects/Weapons/Guns/Attachments/Grips/erebus_railmount.rsi
     state: vfg
   - type: ESGunRecoilAttachment
-    recoilRecoveryModifier: 1.5
+    recoilRecoveryModifier: 0.65
     recoilIncreaseModifier: 0.35
     minSpreadModifier: 0.8
-    maxSpreadModifier: 1.1
+    maxSpreadModifier: 0.95
   - type: Tag
     tags:
     - MonoGrip

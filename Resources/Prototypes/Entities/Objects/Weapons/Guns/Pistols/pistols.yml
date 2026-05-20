@@ -249,7 +249,7 @@
   name: MA Mk-58 (.45 ACP)
   parent: BaseWeaponPistol
   id: WeaponPistolMk58
-  description: The Mark 58 Offensive Handgun, the most abundant sidearm in the entire galaxy. Commonly called a Corporate War fragment, it was used until the bitter end. Uses .45 ACP ammo.
+  description: The Mark 58 Offensive Handgun, the most abundant sidearm in the entire galaxy. Commonly called a Corporate War fragment, it was used until the bitter end. Uses .45 ACP ammo. Outfitted with a threaded barrel & tactical device mount.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
@@ -258,6 +258,9 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
+    - map: ["gripAttachment"] # Mono
+    - map: ["barrelAttachment"] # Mono
+      offset: 0.5620, 0 # Lowered by 0.0005 to prevent the gap
   - type: Clothing
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
   - type: Gun
@@ -288,6 +291,64 @@
         whitelist:
           tags:
             - Cartridge45_ACPFMJ
+      # Mono
+      attachment_grip:
+        insertSound: /Audio/Items/screwdriver2.ogg
+        ejectSound: /Audio/Items/screwdriver2.ogg
+        priority: 0
+        whitelist:
+          tags:
+          - MonoGripPistolMount
+      # Mono
+      attachment_barrel:
+        insertSound: /Audio/Items/screwdriver.ogg
+        ejectSound: /Audio/Items/screwdriver.ogg
+        priority: 0
+        whitelist:
+          tags:
+          - MonoSuppressorMulticalRifle
+  # Mono start
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      attachment_grip: !type:ContainerSlot
+      attachment_barrel: !type:ContainerSlot
+  - type: ESAttachableGun
+    slots:
+    - name: es-gun-attachments-slot-name-barrel
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - MonoSuppressorMulticalPistol
+    - name: es-gun-attachments-slot-name-grip
+      containerId: attachment_grip
+      whitelist:
+        tags:
+        - MonoGripPistolMount
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      gripAttachment:
+      - containerId: attachment_grip
+        state: lam
+        whitelist:
+          tags:
+          - MonoGripLAM
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: suppressed
+        whitelist:
+          tags:
+          - MonoSuppressor
+  # Mono end
   - type: StaticPrice # Mono
     price: 150
 

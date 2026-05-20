@@ -48,3 +48,34 @@
     - MonoGrip
     - MonoGripErebusRailmount
     - MonoGripLAM
+
+- type: entity
+  parent: BaseGunAttachmentGrip
+  id: GunAttachmentGripPistolLAM
+  name: Soyuz PRL laser-aiming module (handgun mount)
+  description: A visual-spectrum green laser for aiming. Looks awesome, and helps a lot with first shot accuracy!
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Attachments/Grips/pistol_mount.rsi
+    layers:
+    - state: lam
+    - state: lam_unshaded
+      shader: unshaded
+  - type: Item
+    size: Small
+    storedRotation: -90
+  - type: ESGunRecoilAttachment
+    recoilRecoveryModifier: 1.2
+    recoilIncreaseModifier: 1.0
+    minSpreadModifier: 0.25
+    maxSpreadModifier: 1.0
+  - type: ESGunComponentAttachment
+    component:
+    - type: LaserPointer
+      targetedColor: "#00FF22"
+      defaultColor: "#00FF22"
+  - type: Tag
+    tags:
+    - MonoGrip
+    - MonoGripPistolMount
+    - MonoGripLAM

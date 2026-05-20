@@ -70,6 +70,9 @@
   id: MonoGripLAM
 
 - type: Tag
+  id: MonoGripLight
+
+- type: Tag
   id: MonoGripVFG
 
 - type: Tag

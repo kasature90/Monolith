@@ -277,6 +277,11 @@
           whitelist:
             tags:
             - MonoGripLAM
+        - containerId: attachment_grip
+          state: light
+          whitelist:
+            tags:
+            - MonoGripLight
         barrelAttachment:
         - containerId: attachment_barrel
           state: suppressed

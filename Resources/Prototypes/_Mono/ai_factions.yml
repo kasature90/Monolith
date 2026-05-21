@@ -70,3 +70,7 @@
   friendly:
   - AberrantFleshExpeditionNF
   defaultHostile: true
+
+- type: npcFaction
+  id: PMCExpeditionMono
+  defaultHostile: true

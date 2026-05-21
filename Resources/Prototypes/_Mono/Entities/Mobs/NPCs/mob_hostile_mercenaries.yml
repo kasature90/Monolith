@@ -16,7 +16,7 @@
     damageModifierSet: MobMercenaryDamageModifierSet
   - type: NpcFactionMember
     factions:
-    - MercenariesExpeditionNF # Placeholder. Its really annoying adding more factions.
+    - PMCExpeditionMono
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -49,7 +49,7 @@
     nextAdvertisementTime: 10
   - type: AutoWakeUp
   - type: MovementSpeedModifier
-    baseWalkSpeed : 4.5
+    baseWalkSpeed : 2.5
     baseSprintSpeed : 4.5
   - type: FootstepModifier
     footstepSoundCollection:

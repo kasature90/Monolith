@@ -25,6 +25,7 @@
 - type: entity
   parent: MonoPMCDuffelGiftBox
   id: ClothingBackpackDuffelMonoTier2PMC
+  suffix: NPC Loot, T2
   components:
   - type: SpawnItemsOnUse
     items:
@@ -56,6 +57,7 @@
 - type: entity
   parent: MonoPMCDuffelGiftBox
   id: ClothingBackpackDuffelMonoTier2PMCShotgun
+  suffix: NPC Loot, T2 Shotgun
   components:
   - type: SpawnItemsOnUse
     items:
@@ -79,6 +81,7 @@
 - type: entity
   parent: MonoPMCDuffelGiftBox
   id: ClothingBackpackDuffelMonoTier3PMC
+  suffix: NPC Loot, T3
   components:
   - type: SpawnItemsOnUse
     items:
@@ -104,6 +107,7 @@
 - type: entity
   parent: MonoPMCDuffelGiftBox
   id: ClothingBackpackDuffelMonoTier4PMC
+  suffix: NPC Loot, T4
   components:
   - type: SpawnItemsOnUse
     items:

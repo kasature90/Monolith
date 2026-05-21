@@ -17,9 +17,9 @@
   result: CryostasisBeaker
   completetime: 2
   materials:
-    Steel: 250
+    Steel: 150
     Plastic: 50
-    Lithium: 500 # Mono
+    Lithium: 200 # Mono
 
 - type: latheRecipe
   id: SyringeCryostasis
@@ -51,10 +51,10 @@
   result: BluespaceBeaker
   completetime: 2
   materials:
-    Steel: 200  #Cheaper Due to Needing Bluespace
+    Steel: 100  #Cheaper Due to Needing Bluespace
     Plastic: 200
     Plasma: 50
-    Silver: 50
+    Silver: 25 # Mono
     Bluespace: 100 #DeltaV: Bluespace
     Copper: 200 # Mono
     Lithium: 200 # Mono

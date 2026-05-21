@@ -23,7 +23,7 @@
     Plastic: 150
     Plasma: 75
     Gold: 75
-    Plutonium: 10 # Mono
+    UraniumFissile: 10 # Mono
     Copper: 100 # Mono
     Lithium: 100 # Mono
 

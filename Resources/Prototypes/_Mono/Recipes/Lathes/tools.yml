@@ -31,7 +31,7 @@
     Steel: 2400
     Plastic: 1200
     Glass: 1200
-    Plasteel: 1600
+    Plasteel: 1200
     Plasma: 2000
     Gold: 2000
     Copper: 1000
@@ -45,7 +45,7 @@
     Steel: 1600
     Plastic: 800
     Glass: 800
-    Plasteel: 1600
+    Plasteel: 1200
     Copper: 200
     Lithium: 200
 

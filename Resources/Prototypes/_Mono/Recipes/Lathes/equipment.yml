@@ -13,8 +13,8 @@
     Plastic: 3000
     Plasteel: 6000
     Durathread: 2500
-    Silver: 500
-    Gold: 500
+    Silver: 250
+    Gold: 250
     Copper: 500
     Lithium: 100
 
@@ -37,7 +37,7 @@
     Steel: 500
     Plastic: 500
     Plasma: 500
-    Silver: 200
+    Silver: 100
     Copper: 500
     Lithium: 100
 
@@ -100,7 +100,7 @@
     Plasteel: 3000
     Plastic: 2500
     Plasma: 1500
-    Gold: 1000
+    Gold: 500
     Diamond: 150
     Copper: 500
     Lithium: 100

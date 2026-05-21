@@ -4,9 +4,9 @@
   id: BaseUpgradeKit
   completetime: 5
   materials:
-    Glass: 800
+    Glass: 400 # Mono
     Steel: 600
-    Plastic: 400
+    Plastic: 300 # Mono
     Gold: 200
     Copper: 500 # Mono
     Lithium: 500 # Mono

@@ -53,8 +53,8 @@
   result: ModsuitCoreStandard
   completetime: 5
   materials:
-    Glass: 550
-    Plasma: 250
+    Glass: 300 # Mono
+    Plasma: 100 # Mono
     Copper: 200 # Mono
     Lithium: 200 # Mono
 
@@ -65,8 +65,8 @@
   completetime: 4
   materials:
     Steel: 300
-    Glass: 400
-    Gold: 400
-    Silver: 200
+    Glass: 200 # Mono
+    Gold: 200 # Mono
+    Silver: 150 # Mono
     Copper: 500 # Mono
     Lithium: 500 # Mono

@@ -7,10 +7,10 @@
     Plastic: 100
     Gold: 50
     Plasma: 50
-    Bluespace: 100
+    Bluespace: 10
     Copper: 200 # Mono
     Lithium: 200 # Mono
-    Plutonium: 15 # Mono
+    UraniumFissile: 15 # Mono
 
 - type: latheRecipe
   id: FemtoManipulatorStockPart
@@ -20,10 +20,10 @@
     Plastic: 100
     Gold: 50
     Plasma: 50
-    Bluespace: 100
+    Bluespace: 10
     Copper: 200 # Mono
     Lithium: 200 # Mono
-    Plutonium: 15 # Mono
+    UraniumFissile: 15 # Mono
 
 - type: latheRecipe
   id: BluespaceMatterBinStockPart
@@ -33,7 +33,7 @@
     Plastic: 100
     Gold: 50
     Plasma: 50
-    Bluespace: 100
+    Bluespace: 10
     Copper: 200 # Mono
     Lithium: 200 # Mono
-    Plutonium: 15 # Mono
+    UraniumFissile: 15 # Mono

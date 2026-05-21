@@ -199,7 +199,7 @@
     Steel: 1500
     Plasteel: 6500
     Plastic: 800
-    Plasma: 4000
+    Plasma: 2000
     Copper: 1000
     Lithium: 500
 
@@ -214,7 +214,7 @@
     Plasteel: 1000
     Plastic: 3000
     Plasma: 1500
-    Gold: 1000
+    Gold: 500
     Diamond: 150
     Copper: 100
     Lithium: 50

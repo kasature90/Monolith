@@ -38,8 +38,8 @@
     Lithium: 10000
     Glass: 5000
     Plasma: 5000
-    Gold: 5000
-    Silver: 5000
+    Gold: 2000
+    Silver: 2000
     UraniumDepleted: 1000
     UraniumFissile: 250
 
@@ -56,8 +56,8 @@
     Plasma: 5000
     UraniumFissile: 600
     UraniumDepleted: 4000
-    Silver: 10000
-    Gold: 5000
+    Silver: 7000
+    Gold: 3000
     Copper: 15000
     Lithium: 7500
 
@@ -121,8 +121,8 @@
     Lithium: 10000
     Glass: 5000
     Plasma: 5000
-    Gold: 5000
-    Silver: 5000
+    Gold: 2000
+    Silver: 2000
     UraniumDepleted: 1000
     UraniumFissile: 250
 
@@ -138,8 +138,8 @@
     Plasma: 5000
     UraniumFissile: 600
     UraniumDepleted: 4000
-    Silver: 5000
-    Gold: 5000
+    Silver: 3000
+    Gold: 3000
     Copper: 15000
     Lithium: 7500
 

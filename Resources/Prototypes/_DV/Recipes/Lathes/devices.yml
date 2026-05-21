@@ -16,7 +16,7 @@
   materials:
     Steel: 2000
     Silver: 750
-    Plasma: 1000
+    Plasma: 500 # Mono
     Bluespace: 200
     Copper: 500 # Mono
     Lithium: 500 # Mono

@@ -14,8 +14,8 @@
     Durathread: 2000
     Plastic: 1000
     Plasteel: 500
-    Silver: 250
-    Gold: 250
+    Silver: 125
+    Gold: 125
     Copper: 150
     Lithium: 75
 
@@ -33,8 +33,8 @@
     Durathread: 1500
     Plastic: 2000
     Plasteel: 1500
-    Silver: 500
-    Gold: 500
+    Silver: 250
+    Gold: 250
     Uranium: 500
     Copper: 150
     Lithium: 75
@@ -53,8 +53,8 @@
     Durathread: 3000
     Plastic: 2000
     Plasteel: 2000
-    Silver: 500
-    Gold: 500
+    Silver: 250
+    Gold: 250
     UraniumDepleted: 500
     Copper: 150
     Lithium: 75
@@ -73,8 +73,8 @@
     Durathread: 3000
     Plastic: 2500
     Plasteel: 1500
-    Silver: 1000
-    Gold: 1000
+    Silver: 750
+    Gold: 250
     Glass: 1000
     UraniumDepleted: 500
     UraniumFissile: 100
@@ -94,8 +94,8 @@
   materials:
     Steel: 1500
     Plastic: 2000
-    Silver: 500
-    Gold: 500
+    Silver: 300
+    Gold: 300
     UraniumFissile: 50
     Plasma: 500
     Copper: 750
@@ -114,11 +114,11 @@
   materials:
     Steel: 1500
     Plastic: 2500
-    Silver: 1000
-    Gold: 1000
+    Silver: 400
+    Gold: 400
     Plasteel: 1500
     Copper: 750
-    Lithium: 500
+    Lithium: 250
 
 - type: latheRecipe
   id: UllmanWeaponPulseRifle
@@ -133,8 +133,8 @@
     Steel: 2500
     Plasteel: 1500
     Silver: 1500
-    Gold: 2000
-    Plasma: 2500
+    Gold: 1000
+    Plasma: 1500
     Plastic: 2500
     UraniumDepleted: 800
     UraniumFissile: 100
@@ -153,8 +153,8 @@
   materials:
     Steel: 3000
     Plasteel: 2000
-    Silver: 2000
-    Gold: 2000
+    Silver: 1350
+    Gold: 1350
     Plastic: 2500
     Plasma: 3000
     UraniumDepleted: 700
@@ -174,8 +174,8 @@
     Steel: 2000
     Plasteel: 3000
     Plastic: 500
-    Silver: 1000
-    Gold: 1000
+    Silver: 650
+    Gold: 650
     Plasma: 500
     UraniumFissile: 50
     Copper: 750

@@ -53,7 +53,7 @@
 - type: entity
   name: random pen
   id: SpawnDungeonLootBureaucracyPen
-  categories: [ HideSpawnMenu ]
+  #categories: [ HideSpawnMenu ]
   parent: MarkerBasePlaceFree
   suffix: Dungeon
   components:
@@ -585,7 +585,7 @@
   id: SpawnDungeonMachineFrame
   parent: MarkerBase
   suffix: Dungeon
-  categories: [ HideSpawnMenu ]
+  #categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     layers:
@@ -608,7 +608,7 @@
   id: SpawnDungeonComputerFrame
   parent: MarkerBase
   suffix: Dungeon
-  categories: [ HideSpawnMenu ]
+  #categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     layers:
@@ -631,7 +631,7 @@
   id: SpawnDungeonCanisterBroken
   parent: MarkerBase
   suffix: Dungeon
-  categories: [ HideSpawnMenu ]
+  #categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     layers:

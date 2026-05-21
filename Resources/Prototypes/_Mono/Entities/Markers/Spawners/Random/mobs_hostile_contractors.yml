@@ -11,10 +11,12 @@
   - type: RandomSpawner
     prototypes:
     - MobMonoPMCT1Soldier
+    - MobMonoPMCT1Handguns
     chance: 1
     offset: 0.0
     rarePrototypes:
     - SpawnMobMonoPMCT2
+    - MobMonoPMCT1Rifleman
     rareChance: 0.3
 
 - type: entity
@@ -36,6 +38,7 @@
     rarePrototypes:
     - SpawnMobMonoPMCT3
     - MobMonoPMCSniperT2
+    - MobMonoPMCJackdawT2
     rareChance: 0.2
 
 - type: entity
@@ -55,4 +58,5 @@
     offset: 0.0
     rarePrototypes:
     - MobMonoPMCAutoriflemanT3
-    rareChance: 0.2
+    - MobMonoPMCGrenadierT3
+    rareChance: 0.1

@@ -1,6 +1,6 @@
 # Base
 - type: entity
-  name: contractor
+  name: PMC
   abstract: true
   parent:
   - BaseC3MobHuman
@@ -61,6 +61,7 @@
 - type: entity
   parent: MobMonoPMCBase
   id: MobMonoPMCT1Soldier
+  suffix: T1, AK-220
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -115,6 +116,120 @@
       70: 0.9
       80: 0.6
 
+- type: entity
+  parent: MobMonoPMCBase
+  id: MobMonoPMCT1Rifleman
+  suffix: T1, AKM
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-uniform
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-gloves
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-boots
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-vest
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-webbing
+    - sprite: Objects/Tanks/oxygen.rsi
+      state: equipped-BACKPACK
+    - sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+      state: equipped-BALACLAVA
+      color: "#1F1F1F"
+    - sprite: _Mono/Clothing/Eyes/Glasses/ballistic_goggles_red.rsi
+      state: equipped-EYES
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-gasmask
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-helmet
+    - sprite: _Mono/Objects/Weapons/Guns/Rifles/akm_inhands_32x.rsi
+      state: wielded-inhand-right
+  - type: BasicEntityAmmoProvider
+    proto: Cartridge762x39mmFMJ
+    capacity: 30
+    count: 30
+  - type: Gun
+    minAngle: 1
+    maxAngle: 2
+    fireRate: 5
+    projectileSpeed: 55
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      110: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      70: 0.9
+      80: 0.6
+
+- type: entity
+  parent: MobMonoPMCBase
+  id: MobMonoPMCT1Handguns
+  suffix: T1, Pollock
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-uniform
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-gloves
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-boots
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-vest
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-webbing
+    - sprite: Objects/Tanks/oxygen.rsi
+      state: equipped-BACKPACK
+    - sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+      state: equipped-BALACLAVA
+      color: "#1F1F1F"
+    - sprite: _Mono/Clothing/Eyes/Glasses/ballistic_goggles_red.rsi
+      state: equipped-EYES
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-gasmask
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-helmet
+    - sprite: _DV/Objects/Weapons/Guns/Pistols/pollock.rsi
+      state: inhand-right
+  - type: BasicEntityAmmoProvider
+    proto: Cartridge9x19mmFMJ
+    capacity: 17
+    count: 17
+  - type: Gun
+    minAngle: 1
+    maxAngle: 2
+    fireRate: 5
+    projectileSpeed: 40
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/pistol.ogg
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      110: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      80: 0.9
+      90: 0.75
+
 ## Tier 2
 
 - type: startingGear
@@ -123,7 +238,7 @@
     back: ClothingBackpackDuffelMonoTier2PMC
 
 - type: entity
-  name: contractor
+  name: PMC operator
   parent: MobMonoPMCBase
   id: MobMonoPMCSubmachineGunT2
   suffix: T2, 9mm Vector
@@ -187,7 +302,70 @@
       80: 0.6
 
 - type: entity
-  name: contractor
+  name: PMC operator
+  parent: MobMonoPMCBase
+  id: MobMonoPMCJackdawT2
+  suffix: T2, CAWS-25 Jackdaw
+  components:
+  - type: Loadout
+    prototypes:
+    - ClothingBackpackDuffelMonoTier2PMC
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-jumpsuit
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-gloves
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-boots
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-vest
+    - sprite: Objects/Tanks/oxygen.rsi
+      state: equipped-BACKPACK
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: bag-equipped
+    - sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+      state: equipped-BALACLAVA
+      color: "#1F1F1F"
+    - sprite: _Mono/Clothing/Eyes/Glasses/ballistic_goggles_red.rsi
+      state: equipped-EYES
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-gasmask
+    - sprite: _DV/Objects/Weapons/Guns/Rifles/jackdaw.rsi
+      state: inhand-right
+  - type: BasicEntityAmmoProvider
+    proto: Cartridge635x40mmCaseless
+    capacity: 30
+    count: 30
+  - type: Gun
+    minAngle: 2
+    maxAngle: 4
+    angleIncrease: 2
+    angleDecay: 8
+    fireRate: 8
+    projectileSpeed: 35
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      params:
+        volume: -1
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      120: Critical
+      150: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      40: 0.9
+      80: 0.6
+
+- type: entity
+  name: PMC marksman
   parent: MobMonoPMCBase
   id: MobMonoPMCSniperT2
   suffix: T2, AK-410
@@ -250,7 +428,7 @@
     back: ClothingBackpackDuffelMonoTier2ShotgunPMC
 
 - type: entity
-  name: contractor
+  name: PMC breacher
   parent: MobMonoPMCBase
   id: MobMonoPMCShotgunT2
   suffix: T2, Big Buddy
@@ -316,7 +494,7 @@
     back: ClothingBackpackDuffelMonoTier3PMC
 
 - type: entity
-  name: contractor assaulter
+  name: PMC assaulter
   parent: MobMonoPMCBase
   id: MobMonoPMCAssaultT3
   suffix: T3, LTR-556
@@ -369,7 +547,7 @@
       100: 0.6
 
 - type: entity
-  name: contractor autorifleman
+  name: PMC autorifleman
   parent: MobMonoPMCBase
   id: MobMonoPMCAutoriflemanT3
   suffix: T3, Grizzly
@@ -421,6 +599,63 @@
       70: 0.9
       100: 0.6
 
+- type: entity
+  name: PMC grenadier
+  parent: MobMonoPMCBase
+  id: MobMonoPMCGrenadierT3
+  suffix: T3, Anubis
+  components:
+  - type: Loadout
+    prototypes:
+    - ClothingBackpackDuffelMonoTier3PMC
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-jumpsuit
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-hardsuit
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-webbing
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: pmc-hardsuit-head
+    - sprite: Objects/Tanks/oxygen.rsi
+      state: equipped-BACKPACK
+    - sprite: _Mono/Clothing/NPC/pmc.rsi
+      state: bag-equipped
+    - sprite: _Mono/Objects/Weapons/Guns/Launchers/mk6-tpgl_inhands_32x.rsi
+      state: wielded-inhand-right
+  - type: BasicEntityAmmoProvider
+    proto: Cartridge35mmGrenadeSAPHE
+    capacity: 6
+    count: 6
+  - type: Gun
+    minAngle: 0
+    maxAngle: 3
+    projectileSpeed: 70
+    fireRate: 0.2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Harmony/Weapons/Guns/Gunshots/hristov_fire_alt.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: LaserPointer
+    targetedColor: "#ff0037"
+    defaultColor: "#03c2fc"
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      140: Critical
+      150: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      70: 0.9
+      100: 0.6
+
 ## Tier 4 - Boss
 
 - type: startingGear
@@ -429,7 +664,7 @@
     back: ClothingBackpackDuffelMonoTier4PMC
 
 - type: entity
-  name: contractor field commander
+  name: PMC field commander
   parent: [ MobMonoPMCBase, NFMobBossRestrictions ]
   id: MobMonoPMCBoss
   suffix: T4, MR-8B

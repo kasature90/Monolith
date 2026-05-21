@@ -32,7 +32,23 @@
       prob: 0.6
     - id: Magazine9x19mmSubMachineGunFMJ
       prob: 0.6
+    - id: Magazine762x39mmFMJ
+      prob: 0.6
+    - id: Magazine762x39mmFMJ
+      prob: 0.6
+    - id: Magazine762x54mmRFMJ
+      prob: 0.4
+    - id: AmmoBox762x39mmFMJ
+      prob: 0.2
+    - id: Magazine635x40mmCaseless
+      prob: 0.2
     - id: Tourniquet
+      prob: 0.4
+    - id: SpawnDungeonLootMaterialsValuableFull
+      prob: 0.05
+    - id: SpaceCash500
+      prob: 0.2
+    - id: SpawnLootMonoPMCMisc
       prob: 0.4
     sound:
       path: /Audio/Items/jumpsuit_equip.ogg
@@ -43,10 +59,20 @@
   components:
   - type: SpawnItemsOnUse
     items:
-    - id: AmmoBox12_gaugeBuckshot
+    - id: AmmoBox23x75mmBuckshot
       prob: 0.9
-    - id: AmmoBox12_gaugeBuckshot
+    - id: AmmoBox23x75mmDozd
       prob: 0.2
+    - id: AmmoBox23x75mmSlug
+      prob: 0.2
+    - id: AmmoBox23x75mmFlashbang
+      prob: 0.1
+    - id: SpawnDungeonLootMaterialsValuableFull
+      prob: 0.05
+    - id: SpaceCash500
+      prob: 0.2
+    - id: SpawnLootMonoPMCMisc
+      prob: 0.4
     sound:
       path: /Audio/Items/jumpsuit_equip.ogg
 
@@ -63,6 +89,14 @@
     - id: AmmoBox68x52mmCaseless
       prob: 0.7
     - id: Tourniquet
+      prob: 0.4
+    - id: SpawnDungeonLootMaterialsValuableFull
+      prob: 0.2
+    - id: SpaceCash500
+      prob: 0.65
+    - id: SpaceCash500
+      prob: 0.45
+    - id: SpawnLootMonoPMCMisc
       prob: 0.4
     sound:
       path: /Audio/Items/jumpsuit_equip.ogg
@@ -82,9 +116,11 @@
       prob: 0.45
     - id: SpaceCash2500
       prob: 0.1
+    - id: SpaceCash2500
+      prob: 0.1
     # Weapons
     - id: WeaponRifleMR8C # mono
-      prob: 0.5
+      prob: 0.3
     # Items
     - id: Magazine8x65mmSKR
       prob: 0.9
@@ -102,9 +138,50 @@
     - id: SpawnDungeonLootMaterialsValuableFull
       prob: 0.7
     - id: SpawnDungeonLootPartsEngi
-      amount: 3
+      amount: 2
       prob: 0.7
     - id: SpawnDungeonLootVaultGuns
       prob: 0.4
+    - id: BlueprintWeaponRifleNtsfLtr
+      prob: 0.05
+    - id: SpawnLootMonoPMCMisc
+      prob: 0.4
     sound:
       path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  name: random MonoPMC misc loot drop
+  id: SpawnLootMonoPMCMisc
+  parent: MarkerBasePlaceFree
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _NF/Markers/general.rsi
+      state: questionmark
+      color: white
+  - type: RandomSpawner
+    prototypes:
+    - MedkitFilled
+    - GunAttachmentGripErebusVFG
+    - GunAttachmentGripErebusLAM
+    - GunAttachmentOpticErebus2x
+    - GunAttachmentOpticErebus4x
+    - GunAttachmentOpticErebus8x
+    - GunAttachmentSuppressorMulticalPistol
+    - GunAttachmentSuppressorMulticalRifle
+    - POILootWeaponsAmmoMarker
+    - FentanylSolidified
+    - SpaceCash2500
+    - SpaceCash2000
+    - SpaceCash1000
+    - SpaceCash500
+    - SpawnDungeonLootPartsEngi
+    chance: 0.4
+    offset: 0.0
+    rarePrototypes:
+    - StimkitFilled
+    - BlueprintWeaponRifleNtsfLtr
+    - BlueprintWeaponSubMachineGunVectorNtsfHclm
+    - BlueprintLauncherRocket # Its hilarious, and it has a really low chance to actually happen.
+    rareChance: 0.01

@@ -245,7 +245,7 @@
   components:
   - type: Loadout
     prototypes:
-    - ClothingBackpackDuffelMonoTier2PMC
+    - MobHumanoidMonoPMCGearTier2
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -309,7 +309,7 @@
   components:
   - type: Loadout
     prototypes:
-    - ClothingBackpackDuffelMonoTier2PMC
+    - MobHumanoidMonoPMCGearTier2
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -372,7 +372,7 @@
   components:
   - type: Loadout
     prototypes:
-    - ClothingBackpackDuffelMonoTier2PMC
+    - MobHumanoidMonoPMCGearTier2
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -435,7 +435,7 @@
   components:
   - type: Loadout
     prototypes:
-    - ClothingBackpackDuffelMonoTier2PMC
+    - MobHumanoidMonoPMCGearTier2Shotgun
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -501,7 +501,7 @@
   components:
   - type: Loadout
     prototypes:
-    - ClothingBackpackDuffelMonoTier3PMC
+    - MobHumanoidMonoPMCGearTier3
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -554,7 +554,7 @@
   components:
   - type: Loadout
     prototypes:
-    - ClothingBackpackDuffelMonoTier3PMC
+    - MobHumanoidMonoPMCGearTier3
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -607,7 +607,7 @@
   components:
   - type: Loadout
     prototypes:
-    - ClothingBackpackDuffelMonoTier3PMC
+    - MobHumanoidMonoPMCGearTier3
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -671,7 +671,7 @@
   components:
   - type: Loadout
     prototypes:
-    - ClothingBackpackDuffelMonoTier4PMC
+    - MobHumanoidMonoPMCGearTier4
   - type: Sprite
     drawdepth: Mobs
     layers:

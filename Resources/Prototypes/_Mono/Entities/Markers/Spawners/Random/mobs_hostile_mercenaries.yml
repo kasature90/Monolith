@@ -1,0 +1,58 @@
+- type: entity
+  name: PMC spawner
+  id: SpawnMobMonoPMCT1
+  parent: MarkerBase
+  suffix: AI, Hostile, T1
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+  - type: RandomSpawner
+    prototypes:
+    - MobMonoPMCT1Soldier
+    chance: 1
+    offset: 0.0
+    rarePrototypes:
+    - SpawnMobMonoPMCT2
+    rareChance: 0.3
+
+- type: entity
+  name: PMC spawner
+  id: SpawnMobMonoPMCT2
+  parent: MarkerBase
+  suffix: AI, Hostile, T2
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+  - type: RandomSpawner
+    prototypes:
+    - MobMonoPMCSubmachineGunT2
+    - MobMonoPMCShotgunT2
+    chance: 1
+    offset: 0.0
+    rarePrototypes:
+    - SpawnMobMonoPMCT3
+    - MobMonoPMCSniperT2
+    rareChance: 0.2
+
+- type: entity
+  name: PMC spawner
+  id: SpawnMobMonoPMCT3
+  parent: MarkerBase
+  suffix: AI, Hostile, T3
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+  - type: RandomSpawner
+    prototypes:
+    - MobMonoPMCAssaultT3
+    chance: 1
+    offset: 0.0
+    rarePrototypes:
+    - MobMonoPMCAutoriflemanT3
+    rareChance: 0.2

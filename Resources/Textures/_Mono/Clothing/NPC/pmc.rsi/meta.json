@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from SS13 Shiptest.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pmc-hardsuit-heavy",
+      "directions": 4
+    },
+    {
+      "name": "pmc-hardsuit-heavy-head",
+      "directions": 4
+    },
+    {
+      "name": "pmc-hardsuit-heavy-head-unshaded",
+      "directions": 4
+    },
+    {
+      "name": "pmc-hardsuit",
+      "directions": 4
+    },
+    {
+      "name": "pmc-hardsuit-head",
+      "directions": 4
+    },
+    {
+      "name": "pmc-webbing",
+      "directions": 4
+    },
+    {
+      "name": "pmc-gasmask",
+      "directions": 4
+    },
+    {
+      "name": "pmc-helmet",
+      "directions": 4
+    },
+    {
+      "name": "pmc-jumpsuit",
+      "directions": 4
+    },
+    {
+      "name": "pmc-uniform",
+      "directions": 4
+    },
+    {
+      "name": "pmc-vest",
+      "directions": 4
+    },
+    {
+      "name": "pmc-boots",
+      "directions": 4
+    },
+    {
+      "name": "pmc-gloves",
+      "directions": 4
+    },
+    {
+      "name": "bag-equipped",
+      "directions": 4
+    },
+    {
+      "name": "bag"
+    }
+  ]
+}

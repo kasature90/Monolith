@@ -1,0 +1,110 @@
+# BASE
+## BACK - for gear and cash
+- type: entity
+  parent: BaseItem
+  id: MonoPMCDuffelGiftBox
+  name: PMC gear bundle
+  description: Loot boxes? Here?
+  abstract: true
+  suffix: NPC Loot
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/NPC/pmc.rsi
+    state: bag
+  - type: Item
+    size: Normal
+  - type: Clothing
+    sprite: _Mono/Clothing/NPC/pmc.rsi
+    clothingVisuals:
+      back:
+      - state: bag-equipped
+    quickEquip: false
+    slots:
+    - back
+
+- type: entity
+  parent: MonoPMCDuffelGiftBox
+  id: ClothingBackpackDuffelMonoTier2PMC
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: Magazine9x19mmSubMachineGunFMJ
+      prob: 0.6
+    - id: Magazine9x19mmSubMachineGunFMJ
+      prob: 0.6
+    - id: Tourniquet
+      prob: 0.4
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: MonoPMCDuffelGiftBox
+  id: ClothingBackpackDuffelMonoTier2PMCShotgun
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: AmmoBox12_gaugeBuckshot
+      prob: 0.9
+    - id: AmmoBox12_gaugeBuckshot
+      prob: 0.2
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: MonoPMCDuffelGiftBox
+  id: ClothingBackpackDuffelMonoTier3PMC
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: Magazine68x52mmCaseless
+      prob: 0.6
+    - id: Magazine68x52mmCaseless
+      prob: 0.6
+    - id: AmmoBox68x52mmCaseless
+      prob: 0.7
+    - id: Tourniquet
+      prob: 0.4
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: MonoPMCDuffelGiftBox
+  id: ClothingBackpackDuffelMonoTier4PMC
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    # Cash
+    - id: SpaceCash2500
+      prob: 0.9
+    - id: SpaceCash500
+      prob: 0.65
+    - id: SpaceCash500
+      prob: 0.45
+    - id: SpaceCash2500
+      prob: 0.1
+    # Weapons
+    - id: WeaponRifleMR8C # mono
+      prob: 0.5
+    # Items
+    - id: Magazine8x65mmSKR
+      prob: 0.9
+    - id: AmmoBox8x65mmSKR
+      prob: 0.4
+    - id: AmmoTechFabCircuitboard
+      prob: 0.1
+    # Bonus Loot T4
+    - id: SpaceCash2500
+      prob: 0.9
+    - id: SpawnDungeonLootFlatpacks
+      prob: 0.9
+    - id: SpaceCash1000
+      prob: 0.7
+    - id: SpawnDungeonLootMaterialsValuableFull
+      prob: 0.7
+    - id: SpawnDungeonLootPartsEngi
+      amount: 3
+      prob: 0.7
+    - id: SpawnDungeonLootVaultGuns
+      prob: 0.4
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg

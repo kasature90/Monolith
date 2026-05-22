@@ -94,6 +94,7 @@
 
 - type: tile
   id: FloorDesertPlanet
+  suffix: Planet
   name: tiles-desert-floor
   sprite: /Textures/_Mono/Tiles/planet/auto_sand/sand_1_var.png
   variants: 16
@@ -164,6 +165,7 @@
 
 - type: tile
   id: FloorRiverbed
+  suffix: Riverbed
   name: tiles-low-desert-floor
   sprite: /Textures/_RMC14/Tiles/planet/desert/desert.png
   variants: 6
@@ -185,6 +187,7 @@
 
 - type: tile
   id: FloorAsteroidSandUnvariantizedPlanet
+  suffix: Planet
   name: tiles-asteroid-sand
   sprite: /Textures/Tiles/Asteroid/asteroid0.png
   isSubfloor: true
@@ -212,6 +215,7 @@
 
 - type: tile
   id: FloorAsteroidSandPlanet
+  suffix: Planet
   name: tiles-asteroid-sand
   sprite: /Textures/Tiles/Asteroid/asteroid.png
   variants: 13

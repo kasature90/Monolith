@@ -11,6 +11,7 @@ using Robust.Server.GameObjects;
 using Robust.Shared.EntitySerialization;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.Map;
+using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
@@ -23,9 +24,11 @@ public sealed class LoadMapRuleSystem : StationEventSystem<LoadMapRuleComponent>
     [Dependency] private readonly MapLoaderSystem _mapLoader = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly GridPreloaderSystem _gridPreloader = default!;
-    [Dependency] private readonly BiomeSystem _biome = default!;
-    [Dependency] private readonly MetaDataSystem _meta = default!;
-    [Dependency] private readonly AtmosphereSystem _atmos = default!;
+    [Dependency] private readonly BiomeSystem _biome = default!; // Mono
+    [Dependency] private readonly MetaDataSystem _meta = default!; // Mono
+    [Dependency] private readonly AtmosphereSystem _atmos = default!; // Mono
+
+    private readonly List<(Vector2i, Tile)> _setTiles = new(); // Mono
 
     protected override void Added(EntityUid uid, LoadMapRuleComponent comp, GameRuleComponent rule, GameRuleAddedEvent args)
     {
@@ -50,6 +53,7 @@ public sealed class LoadMapRuleSystem : StationEventSystem<LoadMapRuleComponent>
             grids = GameTicker.LoadGameMap(gameMap, out mapId, null);
             Log.Info($"Created map {mapId} for {ToPrettyString(uid):rule}");
         }
+        // Mono start
         if (comp.PlanetMap != null)
         {
             var planet = _prototypeManager.Index(comp.PlanetMap);
@@ -68,16 +72,23 @@ public sealed class LoadMapRuleSystem : StationEventSystem<LoadMapRuleComponent>
             _meta.SetEntityName(map, Loc.GetString(planet.MapName));
 
             if (comp.GridPath is { } gPath)
-                if (!_mapLoader.TryLoadGrid(mapId, gPath, out var grid, opts))
+            {
+                _mapLoader.TryLoadGrid(mapId, gPath, out var grid, opts);
+                if (grid != null)
                 {
-                    Log.Error($"Failed to load grid from {gPath}!");
-                    ForceEndSelf(uid, rule);
-                    return;
+                    // clears area of the grid thing whatever its stolen from DV planet slop
+                    _setTiles.Clear();
+                    var aabb = Comp<MapGridComponent>(grid.Value).LocalAABB;
+                    _biome.ReserveTiles(map, aabb.Enlarged(0.2f), _setTiles);
                 }
+            }
+
+            _map.InitializeMap(map);
 
             grids = new List<EntityUid> {map};
             Log.Info($"Created map {mapId} for {ToPrettyString(uid):rule}");
         }
+        // Mono end
         else if (comp.MapPath is {} path)
         {
             DebugTools.AssertNull(comp.GridPath);

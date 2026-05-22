@@ -1,0 +1,31 @@
+- type: planet
+  id: GameruleDesertWorld60Minutes
+  biome: MonoDesertPermanentPlanet
+  mapName: shuttle-destination-planet-zone
+  mapLight: "#FEFEFE"
+  addedComponents:
+  - type: FTLDestination
+  - type: TimedDespawn
+    lifetime: 3600
+  atmosphere:
+    volume: 2500
+    temperature: 303.6 # 30.45 celsius
+    moles:
+    - 32.458
+    - 68.213
+
+- type: planet
+  id: GameruleOcean60Minutes
+  biome: MonoContinentalDesertOcean
+  mapName: shuttle-destination-planet-zone
+  mapLight: "#FEFEFE"
+  addedComponents:
+  - type: FTLDestination
+  - type: TimedDespawn
+    lifetime: 3600
+  atmosphere:
+    volume: 2500
+    temperature: 283.9 # 10.75 celsius
+    moles:
+    - 32.458
+    - 68.213

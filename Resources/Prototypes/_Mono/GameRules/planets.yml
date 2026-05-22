@@ -26,12 +26,12 @@
       path: /Audio/Announcements/attention.ogg
     warningAnnouncement: mono-planet-event-warning-announcement
     endAnnouncement: mono-planet-event-end-announcement
-    duration: 3600
-    maxDuration: 3600
+    duration: 3600 # This means nothing outside of announcements if you're trying to change this, it uses a TimedDespawn comp added to the planet prototype.
+    maxDuration: 3600 # Same as above.
     weight: 2
     maxOccurrences: 1
   - type: GameRule
     minPlayers: 15
   - type: LoadMapRule
-    planetMap: DesertWorld
-    gridPath: /Maps/_Mono/ShuttleEvent/zenith.yml
+    planetMap: GameruleDesertWorld60Minutes
+    #gridPath: /Maps/_Mono/ShuttleEvent/zenith.yml # WHATEVER

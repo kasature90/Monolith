@@ -83,8 +83,6 @@ public sealed class LoadMapRuleSystem : StationEventSystem<LoadMapRuleComponent>
                 }
             }
 
-            _map.InitializeMap(map);
-
             grids = new List<EntityUid> {map};
             Log.Info($"Created map {mapId} for {ToPrettyString(uid):rule}");
         }

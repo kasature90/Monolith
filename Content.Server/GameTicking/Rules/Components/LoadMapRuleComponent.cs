@@ -2,6 +2,7 @@ using Content.Server.GameTicking.Rules;
 using Content.Server.Maps;
 using Content.Shared._DV.Planet;
 using Content.Shared.GridPreloader.Prototypes;
+using Content.Shared.Weather;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
@@ -26,6 +27,18 @@ public sealed partial class LoadMapRuleComponent : Component
     /// </summary>
     [DataField]
     public ProtoId<PlanetPrototype>? PlanetMap;
+
+    /// <summary>
+    /// If theres a planet prototype set, loads this weather onto it.
+    /// </summary>
+    [DataField]
+    public ProtoId<WeatherPrototype>? PlanetWeather;
+
+    /// <summary>
+    /// How much time until the thing ends or whatever who cares.
+    /// </summary>
+    [DataField]
+    public double PlanetWeatherEndTime;
     // Mono end
 
     /// <summary>

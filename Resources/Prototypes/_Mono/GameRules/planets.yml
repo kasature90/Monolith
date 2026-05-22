@@ -34,4 +34,6 @@
     minPlayers: 15
   - type: LoadMapRule
     planetMap: GameruleDesertWorld60Minutes
+    planetWeather: SandstormHeavy
+    planetWeatherEndTime: 600
     #gridPath: /Maps/_Mono/ShuttleEvent/zenith.yml # WHATEVER

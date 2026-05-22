@@ -5,6 +5,7 @@ using Content.Server.GameTicking.Rules.Components;
 using Content.Server.GridPreloader;
 using Content.Server.Parallax;
 using Content.Server.StationEvents.Events;
+using Content.Server.Weather;
 using Content.Shared.GameTicking.Components;
 using Content.Shared.Parallax.Biomes;
 using Robust.Server.GameObjects;
@@ -68,6 +69,8 @@ public sealed class LoadMapRuleSystem : StationEventSystem<LoadMapRuleComponent>
             }
             if (planet.AddedComponents is {} added)
                 EntityManager.AddComponents(map, added);
+            if (comp.PlanetWeather != null)
+                EntityManager.System<WeatherSystem>().SetWeather(mapId, _prototypeManager.Index(comp.PlanetWeather), TimeSpan.FromSeconds(comp.PlanetWeatherEndTime));
             _atmos.SetMapAtmosphere(map, false, planet.Atmosphere);
             _meta.SetEntityName(map, Loc.GetString(planet.MapName));
 

@@ -425,7 +425,7 @@
 - type: startingGear
   id: MobHumanoidMonoPMCGearTier2Shotgun
   equipment:
-    back: ClothingBackpackDuffelMonoTier2ShotgunPMC
+    back: ClothingBackpackDuffelMonoTier2PMCShotgun
 
 - type: entity
   name: PMC breacher

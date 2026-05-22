@@ -1,5 +1,6 @@
 using Content.Server.GameTicking.Rules;
 using Content.Server.Maps;
+using Content.Shared._DV.Planet;
 using Content.Shared.GridPreloader.Prototypes;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
@@ -18,6 +19,14 @@ public sealed partial class LoadMapRuleComponent : Component
     /// </summary>
     [DataField]
     public ProtoId<GameMapPrototype>? GameMap;
+
+    // Mono start
+    /// <summary>
+    /// A planet prototype to load on a new map.
+    /// </summary>
+    [DataField]
+    public ProtoId<PlanetPrototype>? PlanetMap;
+    // Mono end
 
     /// <summary>
     /// A map to load.

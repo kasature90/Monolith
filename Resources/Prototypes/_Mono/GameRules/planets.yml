@@ -1,0 +1,37 @@
+- type: entity
+  id: MonoPlanetmapSpawnerScheduler
+  parent: BaseGameRule
+  components:
+  - type: BasicStationEventScheduler
+    scheduledGameRules: !type:NestedSelector
+      tableId: PlanetMapsTable
+    minimumTimeUntilFirstEvent: 1800 # 30 minutes
+    minMaxEventTiming:
+      min: 3900 # 65 minutes between events - 5 min buffer between
+      max: 3900 # 65 minutes between events - 5 min buffer between
+
+- type: entityTable
+  id: MonoPlanetmapSpawnerScheduler
+  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
+    children:
+    - id: PlanetZoneDesertA
+
+- type: entity
+  parent: BaseRandomShuttleRule
+  id: PlanetZoneDesertA
+  components:
+  - type: StationEvent
+    startAnnouncement: mono-planet-event-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    warningAnnouncement: mono-planet-event-warning-announcement
+    endAnnouncement: mono-planet-event-end-announcement
+    duration: 3600
+    maxDuration: 3600
+    weight: 2
+    maxOccurrences: 1
+  - type: GameRule
+    minPlayers: 15
+  - type: LoadMapRule
+    planetMap: DesertWorld
+    gridPath: /Maps/_Mono/ShuttleEvent/zenith.yml

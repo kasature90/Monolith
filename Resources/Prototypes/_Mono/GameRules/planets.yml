@@ -23,8 +23,10 @@
   - type: StationEvent
     startAnnouncement: mono-planet-event-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Misc/notice2.ogg
     warningAnnouncement: mono-planet-event-warning-announcement
+    warningAudio:
+      path: /Audio/Misc/notice1.ogg
     endAnnouncement: mono-planet-event-end-announcement
     duration: 3600 # This means nothing outside of announcements if you're trying to change this, it uses a TimedDespawn comp added to the planet prototype.
     maxDuration: 3600 # Same as above.
@@ -36,4 +38,26 @@
     planetMap: GameruleDesertWorld60Minutes
     planetWeather: SandstormHeavy
     planetWeatherEndTime: 600
-    #gridPath: /Maps/_Mono/ShuttleEvent/zenith.yml # WHATEVER
+
+- type: entity
+  parent: BaseRandomShuttleRule
+  id: PlanetZoneSnowA
+  components:
+  - type: StationEvent
+    startAnnouncement: mono-planet-event-start-announcement
+    startAudio:
+      path: /Audio/Misc/notice2.ogg
+    warningAnnouncement: mono-planet-event-warning-announcement
+    warningAudio:
+      path: /Audio/Misc/notice1.ogg
+    endAnnouncement: mono-planet-event-end-announcement
+    duration: 3600 # This means nothing outside of announcements if you're trying to change this, it uses a TimedDespawn comp added to the planet prototype.
+    maxDuration: 3600 # Same as above.
+    weight: 2
+    maxOccurrences: 1
+  - type: GameRule
+    minPlayers: 15
+  - type: LoadMapRule
+    planetMap: GameruleDesertWorld60Minutes
+    planetWeather: SandstormHeavy
+    planetWeatherEndTime: 600

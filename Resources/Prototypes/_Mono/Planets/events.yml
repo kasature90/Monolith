@@ -1,6 +1,6 @@
 - type: planet
   id: GameruleDesertWorld60Minutes
-  biome: MonoDesertPermanentPlanet
+  biome: MonoDesertEventPlanet
   mapName: shuttle-destination-planet-zone
   mapLight: "#FEFEFE"
   addedComponents:
@@ -14,9 +14,139 @@
     - 32.458
     - 68.213
 
+- type: biomeTemplate
+  id: MonoDesertEventPlanet
+  layers:
+  # Boulder Placement
+  - !type:BiomeEntityLayer
+    threshold: 0.975
+    noise:
+      seed: 0
+      frequency: 5
+      noiseType: OpenSimplex2
+    allowedTiles:
+    - FloorDesert
+    - FloorDesertRocky
+    - FloorDesertPlanet
+    - FloorAsteroidSandUnvariantizedPlanet
+    entities:
+    - FloraRockSolidPlanet
+  # Flora Placement
+  # Piluma
+  - !type:BiomeEntityLayer
+    threshold: 0.915
+    noise:
+      seed: 0
+      frequency: 2
+      noiseType: OpenSimplex2
+    allowedTiles:
+    - FloorDesert
+    - FloorDesertPlanet
+    - FloorAsteroidSandUnvariantizedPlanet
+    entities:
+    - FloraPilumaPlant
+  # Orakim
+  - !type:BiomeEntityLayer
+    threshold: 0.925
+    noise:
+      seed: 0
+      frequency: 2
+      noiseType: OpenSimplex2
+    allowedTiles:
+    - FloorDesert
+    - FloorDesertPlanet
+    entities:
+    - FloraOrakimPlant
+  # Rock decals
+  - !type:BiomeDecalLayer
+    allowedTiles:
+    - FloorDesert
+    - FloorDesertRocky
+    - FloorDesertPlanet
+    - FloorAsteroidSandUnvariantizedPlanet
+    - FloorAsteroidSandPlanet
+    threshold: 0.9
+    divisions: 1
+    noise:
+      seed: 1
+      frequency: 5
+    decals:
+    - Basalt1
+    - Basalt2
+    - Basalt3
+    - Basalt4
+    - Basalt5
+    - Basalt6
+    - Basalt7
+    - Basalt8
+    - Basalt9
+  # Bush decals
+  - !type:BiomeDecalLayer
+    allowedTiles:
+    - FloorDesert
+    - FloorDesertPlanet
+    threshold: 0.9
+    divisions: 1
+    noise:
+      seed: 1
+      frequency: 0.9
+    decals:
+    - Bushj1
+    - Bushj2
+    - Bushj3
+  # Large rock areas
+  - !type:BiomeEntityLayer
+    allowedTiles:
+    - FloorAsteroidSandUnvariantizedPlanet
+    threshold: -0.05
+    noise:
+      seed: 0
+      noiseType: Cellular
+      frequency: 0.05
+      lacunarity: 5
+      fractalType: FBm
+      octaves: 2
+      cellularDistanceFunction: Euclidean
+      cellularReturnType: Distance2
+    entities:
+    - WallRockSand
+  - !type:BiomeDummyLayer
+    id: Loot
+  # Fill layer
+  # Base tiles
+  - !type:BiomeTileLayer
+    threshold: -1
+    tile: FloorAsteroidSandPlanet
+  # Apply planet desert tile as noise so it doesnt look flat and boring
+  - !type:BiomeTileLayer
+    threshold: -0.40
+    tile: FloorDesertPlanet
+    noise:
+      seed: 0
+      noiseType: Cellular
+      frequency: 0.2
+      lacunarity: 2
+      fractalType: FBm
+      octaves: 2
+      cellularDistanceFunction: Euclidean
+      cellularReturnType: Distance2
+  # Unvariantized tile for rock walls to be placed on
+  - !type:BiomeTileLayer
+    tile: FloorAsteroidSandUnvariantizedPlanet
+    threshold: -0.30
+    noise:
+      seed: 0
+      noiseType: Cellular
+      frequency: 0.05
+      lacunarity: 2
+      fractalType: FBm
+      octaves: 5
+      cellularDistanceFunction: Euclidean
+      cellularReturnType: Distance2
+
 - type: planet
-  id: GameruleOcean60Minutes
-  biome: MonoContinentalDesertOcean
+  id: GameruleSnowWorld60Minutes
+  biome: MonoSnowEventPlanet
   mapName: shuttle-destination-planet-zone
   mapLight: "#FEFEFE"
   addedComponents:
@@ -25,7 +155,153 @@
     lifetime: 3600
   atmosphere:
     volume: 2500
-    temperature: 283.9 # 10.75 celsius
+    temperature: 237.55 # -35.6 celsius
     moles:
     - 32.458
     - 68.213
+
+- type: biomeTemplate
+  id: MonoSnowEventPlanet
+  layers:
+  # Sparse vegetation
+  - !type:BiomeDecalLayer
+    allowedTiles:
+    - FloorSnow
+    divisions: 2
+    threshold: -0.50
+    noise:
+      seed: 0
+      noiseType: Cellular
+      frequency: 1
+    decals:
+    - grasssnowa1
+    - grasssnowa2
+    - grasssnowa3
+    - grasssnowb1
+    - grasssnowb2
+    - grasssnowb3
+    - grasssnowc1
+    - grasssnowc2
+    - grasssnowc3
+  # Dense, bland grass
+  - !type:BiomeDecalLayer
+    allowedTiles:
+    - FloorSnow
+    divisions: 1
+    threshold: -0.35
+    noise:
+      seed: 0
+      noiseType: Cellular
+      frequency: 0.2
+      fractalType: FBm
+      octaves: 5
+      lacunarity: 2
+      cellularDistanceFunction: Euclidean
+      cellularReturnType: Distance2
+    decals:
+    - grasssnow
+    - grasssnow01
+    - grasssnow02
+    - grasssnow03
+    - grasssnow04
+    - grasssnow05
+    - grasssnow06
+    - grasssnow07
+    - grasssnow08
+    - grasssnow09
+    - grasssnow10
+    - grasssnow11
+    - grasssnow12
+    - grasssnow13
+  # Little bit of coloured grass
+  - !type:BiomeDecalLayer
+    allowedTiles:
+    - FloorSnow
+    divisions: 1
+    threshold: -0.0
+    noise:
+      seed: 0
+      noiseType: Cellular
+      frequency: 1
+      fractalType: None
+      cellularDistanceFunction: Euclidean
+      cellularReturnType: Distance2
+    decals:
+    - bushsnowa1
+    - bushsnowa2
+    - bushsnowa3
+    - bushsnowb3
+    - bushsnowb2
+    - bushsnowb3
+  - !type:BiomeEntityLayer
+    threshold: 0.3
+    noise:
+      seed: 0
+      noiseType: OpenSimplex2
+      fractalType: FBm
+      frequency: 2
+    allowedTiles:
+    - FloorSnow
+    entities:
+    - FloraTreeConifer
+  # Boulder Placement
+  - !type:BiomeEntityLayer
+    threshold: 0.975
+    noise:
+      seed: 0
+      frequency: 5
+      noiseType: OpenSimplex2
+    allowedTiles:
+    - FloorSnow
+    - FloorSnowDug
+    entities:
+    - FloraRockSolidPlanet
+  # Large rock areas
+  - !type:BiomeEntityLayer
+    allowedTiles:
+    - FloorBasalt
+    threshold: -1
+    noise:
+      seed: 0
+      noiseType: Cellular
+      frequency: 0.05
+      lacunarity: 5
+      fractalType: FBm
+      octaves: 2
+      cellularDistanceFunction: Euclidean
+      cellularReturnType: Distance2
+    entities:
+    - WallRockBasalt
+  - !type:BiomeDummyLayer
+    id: Loot
+  # Fill layer
+  # Base tiles
+  - !type:BiomeTileLayer
+    threshold: -1
+    tile: FloorSnowDug
+  # Apply planet desert tile as noise so it doesnt look flat and boring
+  - !type:BiomeTileLayer
+    threshold: -0.40
+    tile: FloorSnow
+    noise:
+      seed: 0
+      noiseType: Cellular
+      frequency: 0.4
+      lacunarity: 2
+      fractalType: FBm
+      octaves: 4
+      cellularDistanceFunction: Euclidean
+      cellularReturnType: Distance2
+  # Unvariantized tile for rock walls to be placed on
+  - !type:BiomeTileLayer
+    tile: FloorBasalt
+    threshold: -0.2
+    noise:
+      seed: 0
+      noiseType: Cellular
+      frequency: 0.03
+      lacunarity: 2
+      fractalType: FBm
+      octaves: 5
+      cellularDistanceFunction: Euclidean
+      cellularReturnType: Distance2

@@ -585,7 +585,7 @@
 - type: entity
   name: HWL FG.J "Iroh" (5.56x45mm)
   parent: BaseWeaponRifle
-  id: WeaponRiflePrometheusA3
+  id: WeaponRifleIroh
   description: A premium, finely-tuned rifle. Accurate, fast firing, and expensive as shit. Outfitted with Erebus rails on the handguard and carryhandle, and a threaded barrel for attachments.
   components:
   - type: Sprite
@@ -744,3 +744,51 @@
         whitelist:
           tags:
           - MonoOptic8x
+
+- type: entity
+  parent: WeaponRifleIroh
+  id: WeaponRifleIrohSecurityGuard
+  suffix: Judge, 2x Optic & VFG
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine556x45mmFMJ
+        insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg
+        ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine556x45mmFMJ
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge556x45mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+          - Cartridge556x45mmFMJ
+      attachment_grip:
+        priority: 0
+        startingItem: GunAttachmentGripErebusVFG
+        insertSound: /Audio/Items/screwdriver2.ogg
+        ejectSound: /Audio/Items/screwdriver2.ogg
+        whitelist:
+          tags:
+          - MonoGripErebusRailmount
+      attachment_barrel:
+        insertSound: /Audio/Items/screwdriver.ogg
+        ejectSound: /Audio/Items/screwdriver.ogg
+        priority: 0
+        whitelist:
+          tags:
+          - MonoSuppressorMulticalRifle
+      attachment_optic:
+        startingItem: GunAttachmentOpticErebus2x
+        insertSound: /Audio/Items/screwdriver2.ogg
+        ejectSound: /Audio/Items/screwdriver2.ogg
+        priority: 0
+        whitelist:
+          tags:
+          - MonoOpticErebusRailmount

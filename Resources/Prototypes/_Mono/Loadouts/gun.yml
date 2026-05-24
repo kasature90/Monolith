@@ -401,10 +401,10 @@
 
 - type: loadout #Iroh
   id: SecurityGuardIrohLoadout
+  name: iroh gun case
   price: 0
-  storage:
-    back:
-    - WeaponRifleIrohSecurityGuard
+  inhand:
+  - WeaponCaseLongIrohSecurity
 
 - type: loadout #Iroh Ammo
   id: SecurityGuard556x45mmAmmoLoadout

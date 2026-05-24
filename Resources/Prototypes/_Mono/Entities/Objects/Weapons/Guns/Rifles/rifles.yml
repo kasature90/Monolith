@@ -747,49 +747,18 @@
           - MonoOptic8x
 
 - type: entity
-  parent: WeaponRifleIroh
-  id: WeaponRifleIrohSecurityGuard
-  suffix: Judge, 2x Optic & VFG
+  parent: WeaponCaseLong
+  id: WeaponCaseLongIrohSecurity
+  suffix: CC, Iroh
   components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: Magazine556x45mmFMJ
-        insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg
-        ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-          - Magazine556x45mmFMJ
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: Cartridge556x45mmFMJ
-        priority: 1
-        whitelist:
-          tags:
-          - Cartridge556x45mmFMJ
-      attachment_grip:
-        priority: 0
-        startingItem: GunAttachmentGripErebusVFG
-        insertSound: /Audio/Items/screwdriver2.ogg
-        ejectSound: /Audio/Items/screwdriver2.ogg
-        whitelist:
-          tags:
-          - MonoGripErebusRailmount
-      attachment_barrel:
-        insertSound: /Audio/Items/screwdriver.ogg
-        ejectSound: /Audio/Items/screwdriver.ogg
-        priority: 0
-        whitelist:
-          tags:
-          - MonoSuppressorMulticalRifle
-      attachment_optic:
-        startingItem: GunAttachmentOpticErebus2x
-        insertSound: /Audio/Items/screwdriver2.ogg
-        ejectSound: /Audio/Items/screwdriver2.ogg
-        priority: 0
-        whitelist:
-          tags:
-          - MonoOpticErebusRailmount
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleIroh
+      amount: 1
+    - id: Magazine556x45mmFMJ
+      amount: 2
+    - id: GunAttachmentGripErebusVFG
+      amount: 1
+    - id: GunAttachmentOpticErebus2x
+      amount: 1
+

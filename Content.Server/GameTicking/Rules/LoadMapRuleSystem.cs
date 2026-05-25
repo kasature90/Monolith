@@ -1,18 +1,12 @@
 using System.Linq;
-using Content.Server._DV.Planet;
-using Content.Server.Atmos.EntitySystems;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.GridPreloader;
-using Content.Server.Parallax;
 using Content.Server.StationEvents.Events;
-using Content.Server.Weather;
 using Content.Shared.GameTicking.Components;
-using Content.Shared.Parallax.Biomes;
 using Robust.Server.GameObjects;
 using Robust.Shared.EntitySerialization;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.Map;
-using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
@@ -25,11 +19,6 @@ public sealed class LoadMapRuleSystem : StationEventSystem<LoadMapRuleComponent>
     [Dependency] private readonly MapLoaderSystem _mapLoader = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly GridPreloaderSystem _gridPreloader = default!;
-    [Dependency] private readonly BiomeSystem _biome = default!; // Mono
-    [Dependency] private readonly MetaDataSystem _meta = default!; // Mono
-    [Dependency] private readonly AtmosphereSystem _atmos = default!; // Mono
-
-    private readonly List<(Vector2i, Tile)> _setTiles = new(); // Mono
 
     protected override void Added(EntityUid uid, LoadMapRuleComponent comp, GameRuleComponent rule, GameRuleAddedEvent args)
     {
@@ -54,42 +43,6 @@ public sealed class LoadMapRuleSystem : StationEventSystem<LoadMapRuleComponent>
             grids = GameTicker.LoadGameMap(gameMap, out mapId, null);
             Log.Info($"Created map {mapId} for {ToPrettyString(uid):rule}");
         }
-        // Mono start
-        if (comp.PlanetMap != null)
-        {
-            var planet = _prototypeManager.Index(comp.PlanetMap);
-            var map = _map.CreateMap(out mapId, runMapInit: true);
-            var opts = DeserializationOptions.Default with {InitializeMaps = true};
-            _biome.EnsurePlanet(map, _prototypeManager.Index(planet.Biome), mapLight: planet.MapLight);
-            // add each marker layer
-            var biome = Comp<BiomeComponent>(map);
-            foreach (var layer in planet.BiomeMarkerLayers)
-            {
-                _biome.AddMarkerLayer(map, biome, layer);
-            }
-            if (planet.AddedComponents is {} added)
-                EntityManager.AddComponents(map, added);
-            if (comp.PlanetWeather != null)
-                EntityManager.System<WeatherSystem>().SetWeather(mapId, _prototypeManager.Index(comp.PlanetWeather), TimeSpan.FromSeconds(comp.PlanetWeatherEndTime));
-            _atmos.SetMapAtmosphere(map, false, planet.Atmosphere);
-            _meta.SetEntityName(map, Loc.GetString(planet.MapName));
-
-            if (comp.GridPath is { } gPath)
-            {
-                _mapLoader.TryLoadGrid(mapId, gPath, out var grid, opts);
-                if (grid != null)
-                {
-                    // clears area of the grid thing whatever its stolen from DV planet slop
-                    _setTiles.Clear();
-                    var aabb = Comp<MapGridComponent>(grid.Value).LocalAABB;
-                    _biome.ReserveTiles(map, aabb.Enlarged(0.2f), _setTiles);
-                }
-            }
-
-            grids = new List<EntityUid> {map};
-            Log.Info($"Created map {mapId} for {ToPrettyString(uid):rule}");
-        }
-        // Mono end
         else if (comp.MapPath is {} path)
         {
             DebugTools.AssertNull(comp.GridPath);

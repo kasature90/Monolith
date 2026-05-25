@@ -1,0 +1,19 @@
+- type: gameMap
+  id: SnowZoneA
+  mapName: 'Landing Zone'
+  mapPath: /Maps/_Mono/Planet/Snow/ # Nothing to use yet lol im ignoring fail
+  maxRandomOffset: 0
+  randomRotation: false
+  minPlayers: 0
+  maxPlayers: 100
+  stations:
+    Planet:
+      stationProto: StandardNanotrasenStation
+      gridComponents:
+      - type: TimedDespawn
+        lifetime: 3600
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'Landing Zone'
+      - type: StationBiome
+        biome: MonoSnowEventPlanet

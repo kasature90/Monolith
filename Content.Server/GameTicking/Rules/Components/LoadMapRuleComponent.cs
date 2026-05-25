@@ -21,26 +21,6 @@ public sealed partial class LoadMapRuleComponent : Component
     [DataField]
     public ProtoId<GameMapPrototype>? GameMap;
 
-    // Mono start
-    /// <summary>
-    /// A planet prototype to load on a new map.
-    /// </summary>
-    [DataField]
-    public ProtoId<PlanetPrototype>? PlanetMap;
-
-    /// <summary>
-    /// If theres a planet prototype set, loads this weather onto it.
-    /// </summary>
-    [DataField]
-    public ProtoId<WeatherPrototype>? PlanetWeather;
-
-    /// <summary>
-    /// How much time until the thing ends or whatever who cares.
-    /// </summary>
-    [DataField]
-    public double PlanetWeatherEndTime;
-    // Mono end
-
     /// <summary>
     /// A map to load.
     /// </summary>

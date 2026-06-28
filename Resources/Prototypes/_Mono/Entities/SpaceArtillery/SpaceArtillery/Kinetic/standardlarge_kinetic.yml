@@ -82,6 +82,95 @@
     repairTime: 30
     repairCost: 150
 
+# AK-820 120mm
+
+- type: entity
+  id: WeaponTurretAk820
+  name: AK-820 120mm autocannon
+  parent:
+  - BallisticArtilleryUnanchorableCartridge
+  - BallisticArtilleryTier4HP
+  suffix: Large, T4
+  description: Large hard hitting naval gun for steady damage. Fires APHEDS rounds, allowing for enhanced penetration, but not as much explosive power as full-sized APHE rounds. Feeds from an 96 round internal magazine.
+  components:
+  - type: StaticPrice
+    price: 16000
+  - type: Sprite
+    sprite: _Mono/Objects/ShuttleWeapons/ak820.rsi
+    layers:
+    - state: space_artillery
+    - state: fcs-unshaded
+      shader: unshaded
+    scale: 2, 2
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: GunSignalControl
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.6,-0.6,0.6,0.6"
+        density: 1500
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Gun
+    projectileSpeed: 360
+    minAngle: 0
+    maxAngle: 0.5
+    fireRate: 2
+    recoil: 10
+    selectedMode: FullAuto
+    availableModes: FullAuto
+    shootThermalSignature: 12000000
+    soundGunshot:
+      collection: 120mmAutocannonAK820
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 12000
+    powerUsePassive: 1500
+    powerUseActive: 0
+  - type: Actions
+  - type: RadarBlip
+    radarColor: "#FF0000"
+    scale: 2
+    visibleFromOtherGrids: true
+    gridConfig:
+      color: "#FF0000"
+      shape: Square
+      respectZoom: true
+      rotate: true
+      bounds: "-1.5,-1.5,1.5,1.5"
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: true
+    whitelist:
+      tags:
+      - 120mmCartridge
+    capacity: 96
+    proto: 120mmCartridgeAPHEDS
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Heavy
+  - type: ShipRepairable
+    repairTime: 30
+    repairCost: 150
+
+- type: soundCollection
+  id: 120mmAutocannonAK820
+  files:
+  - /Audio/_Mono/Weapons/Guns/Gunshots/autocannon_1.ogg
+  - /Audio/_Mono/Weapons/Guns/Gunshots/autocannon_2.ogg
+  - /Audio/_Mono/Weapons/Guns/Gunshots/autocannon_3.ogg
+
 # Bofors 255mm
 
 - type: entity

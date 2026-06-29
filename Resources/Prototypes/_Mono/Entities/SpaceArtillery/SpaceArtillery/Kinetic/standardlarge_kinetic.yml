@@ -329,6 +329,83 @@
     repairTime: 45
     repairCost: 300
 
+# R-300 430mm
+
+- type: entity
+  id: WeaponTurretR300
+  name: R-300 430mm howitzer
+  parent:
+  - BallisticArtilleryUnanchorableCartridge
+  - BallisticArtilleryTier5HP
+  suffix: Capital/Station, T4
+  description: A giant, stupid howitzer. A stupid low velocity, a stupid long reload, and a stupidly powerful explosion if you can get it to hit. No AP whatsover.
+  components:
+  - type: StaticPrice
+    price: 15000
+  - type: Sprite
+    sprite: _Mono/Objects/ShuttleWeapons/r300.rsi
+    layers:
+    - state: space_artillery
+    - state: fcs-unshaded
+      shader: unshaded
+    scale: 2.5, 2.5
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.6,-0.6,0.6,0.6"
+        density: 1500
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Gun
+    projectileSpeed: 40 # Perhaps the slowest shipweapon. Im investing all my yummy pyrotechnics into explosive power and none into propellant.
+    minAngle: 0
+    maxAngle: 0
+    fireRate: 0.05
+    recoil: 300
+    selectedMode: SemiAuto
+    availableModes: SemiAuto
+    shootThermalSignature: 160000000
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/cannon.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - R300Shell
+    capacity: 1
+    proto: R300ShellHE
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: SpaceArtillery
+  - type: Actions
+  - type: RadarBlip
+    radarColor: "#FF0000"
+    scale: 2.5
+    visibleFromOtherGrids: true
+    gridConfig:
+      color: "#FF0000"
+      shape: Square
+      respectZoom: true
+      rotate: true
+      bounds: "-2,-2,2,2"
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Superheavy
+  - type: ShipRepairable
+    repairTime: 45
+    repairCost: 200
+
 # Longbow
 
 - type: entity

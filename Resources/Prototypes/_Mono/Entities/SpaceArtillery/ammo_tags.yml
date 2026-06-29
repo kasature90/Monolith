@@ -50,6 +50,11 @@
 - type: Tag
   id: 150mmShell
 
+# 430mm
+
+- type: Tag
+  id: R300Shell
+
 # Railguns
 
 - type: Tag

@@ -123,7 +123,7 @@
     projectileSpeed: 360
     minAngle: 0
     maxAngle: 0.5
-    fireRate: 2
+    fireRate: 2.5
     recoil: 10
     selectedMode: FullAuto
     availableModes: FullAuto
@@ -133,9 +133,6 @@
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: SpaceArtillery
-    powerChargeRate: 12000
-    powerUsePassive: 1500
-    powerUseActive: 0
   - type: Actions
   - type: RadarBlip
     radarColor: "#FF0000"

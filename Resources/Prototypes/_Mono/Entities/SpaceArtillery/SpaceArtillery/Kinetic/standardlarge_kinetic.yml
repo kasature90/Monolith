@@ -156,7 +156,7 @@
   - type: ShipGunType
     shipType: Ballistic
   - type: ShipGunClass
-    shipClass: Heavy
+    shipClass: Superheavy
   - type: ShipRepairable
     repairTime: 30
     repairCost: 150

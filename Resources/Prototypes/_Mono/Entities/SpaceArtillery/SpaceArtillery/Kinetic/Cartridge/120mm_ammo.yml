@@ -56,7 +56,7 @@
     layers:
     - state: 220mmAPHE
   - type: Ammo
-    muzzleFlash: MuzzleFlashEffect30Rapid
+    muzzleFlash: MuzzleFlashEffect120mm
   - type: ShipWeaponProjectile
   - type: RadarBlip
     scale: 1.25

@@ -15,6 +15,7 @@
   # Missiles
   - VanykMagazineAmmoRecipe
   - MissileMagazine50mmHEAmmoRecipe
+  - R300ShellHEAmmoRecipe
 
 - type: latheRecipePack
   id: UniversalMissileAmmo
@@ -34,7 +35,6 @@
   recipes:
   - 150mmApShellUniversal
   - 150mmEmpShellUniversal
-  - R300ShellHEAmmoRecipe
 
 - type: latheRecipePack
   id: UniversalOrdinance

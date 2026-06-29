@@ -82,11 +82,11 @@
     repairTime: 30
     repairCost: 150
 
-# AK-820 120mm
+# AK820 120mm
 
 - type: entity
   id: WeaponTurretAk820
-  name: AK-820 120mm autocannon
+  name: AK820 120mm autocannon
   parent:
   - BallisticArtilleryUnanchorableCartridge
   - BallisticArtilleryTier4HP

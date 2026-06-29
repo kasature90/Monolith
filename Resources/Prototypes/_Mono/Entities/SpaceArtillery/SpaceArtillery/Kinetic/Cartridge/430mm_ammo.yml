@@ -43,7 +43,7 @@
 - type: entity
   id: R300BulletHE
   name: 430mm HE projectile
-  parent: BaseBulletTrigger
+  parent: ShipMissileBase # For shootdown
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -76,6 +76,18 @@
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 2000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:ExplodeBehavior
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
 
 - type: entity
   id: MuzzleFlashEffectR300

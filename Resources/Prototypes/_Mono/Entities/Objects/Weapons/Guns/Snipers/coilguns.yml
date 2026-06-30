@@ -67,6 +67,6 @@
     sprintModifier: 0.5
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
-    maxOffset: 3
-    pvsIncrease: 1
+    maxOffset: 7
+    pvsIncrease: 0.7
   - type: GunRequiresWield

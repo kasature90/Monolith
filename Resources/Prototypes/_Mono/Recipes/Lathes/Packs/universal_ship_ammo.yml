@@ -16,6 +16,9 @@
   - VanykMagazineAmmoRecipe
   - MissileMagazine50mmHEAmmoRecipe
   - R300ShellHEAmmoRecipe
+  - VanquisherMagazineAmmoRecipe
+  - PaladinMagazineAmmoRecipe
+  - PaladinMagazineEMPHEAmmoRecipe
 
 - type: latheRecipePack
   id: UniversalMissileAmmo

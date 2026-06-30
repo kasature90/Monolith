@@ -160,6 +160,7 @@
      - id: WelderExperimental
      - id: ClothingEyesGlassesMesonTray
      - id: RCD
+     - id: RPD
      - id: ShipRepairDeviceEmpty
 # Scrap
 - type: entityTable
@@ -269,6 +270,7 @@
     - id: MaterialReclaimerMachineCircuitboard
     - id: OreProcessorIndustrialMachineCircuitboard
     - id: OreProcessorMachineCircuitboard
+    - id: OreMagnetMachineCircuitboard # Mono
     - id: ShredderMachineCircuitboard
     - id: ShuttleGunKineticCircuitboard
     - id: NFScrapProcessorCircuitboard

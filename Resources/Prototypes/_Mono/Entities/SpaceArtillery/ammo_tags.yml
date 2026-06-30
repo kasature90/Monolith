@@ -29,7 +29,12 @@
 
 - type: Tag
   id: 90mmCartridge
+  
+# 120mm
 
+- type: Tag
+  id: 120mmCartridge
+  
 # 140mm
 
 - type: Tag
@@ -53,6 +58,11 @@
 - type: Tag
   id: 150mmShell
 
+# 430mm
+
+- type: Tag
+  id: R300Shell
+
 # Railguns
 
 - type: Tag
@@ -62,6 +72,9 @@
 
 - type: Tag
   id: VanykCartridge
+
+- type: Tag
+  id: VanykCartridgeUnguided
 
 - type: Tag
   id: VanykMagazine
@@ -80,6 +93,15 @@
 
 - type: Tag
   id: LightFighterOrdinance
+
+- type: Tag
+  id: VanquisherMagazine
+
+- type: Tag
+  id: MissileCartridge250mm
+
+- type: Tag
+  id: PaladinMagazine
 
 # Other
 

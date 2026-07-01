@@ -84,7 +84,9 @@
         Structural: 500
   - type: HitscanBasicRaycast
     maxDistance: 200
-    collisionMask: Impassable
+    collisionMask:
+    - Impassable
+    - Opaque
   - type: HitscanBasicVisuals
     muzzleFlash:
       sprite: _Mono/Objects/Weapons/Guns/Projectiles/lasers.rsi

@@ -21980,3 +21980,61 @@ Entries:
   id: 2427
   time: '2026-06-30T09:51:34.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4161
+- author: Corrupt142
+  changes:
+    - type: Tweak
+      message: Minor fixes for kalisto/ganymede
+    - type: Tweak
+      message: Replaced kalistos 520mm for 2 Paladin missile launchers.
+  id: 2428
+  time: '2026-06-30T12:40:09.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4171
+- author: kasature90
+  changes:
+    - type: Add
+      message: >-
+        Readded TSFN Polaris with some changes to armaments & updates for modern
+        standards.
+  id: 2429
+  time: '2026-06-30T12:45:47.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4172
+- author: kasature90
+  changes:
+    - type: Add
+      message: Added 'Shenzhen' chemrail AMR for TSF T3.
+  id: 2430
+  time: '2026-07-01T09:53:43.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4168
+- author: kasature90
+  changes:
+    - type: Tweak
+      message: >-
+        Changed coloring on USSP techfab, minor consistency for VG techfab
+        sprite.
+    - type: Tweak
+      message: >-
+        Changed USSP job icons for Rifleman & Sergeant to use white instead of
+        red. Just for better contrast.
+  id: 2431
+  time: '2026-07-01T19:03:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4177
+- author: Mrrpip
+  changes:
+    - type: Fix
+      message: >-
+        4 gauge canisters are no longer small items due to infringing on a MACo
+        patent.
+  id: 2432
+  time: '2026-07-01T19:03:34.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4169
+- author: thoughtlessuser
+  changes:
+    - type: Add
+      message: Added PDV guidebook.
+    - type: Tweak
+      message: >-
+        Changed TSFMC guidebook (only a little.) Changed new player guide (only
+        a little.)
+  id: 2433
+  time: '2026-07-01T19:08:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4167

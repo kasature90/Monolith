@@ -15,13 +15,6 @@
       params:
         volume: 0.9
     distanceAlertSettings:
-    - maximumDistance: 100
-      sound:
-        path: /Audio/_Mono/Effects/Alerts/spo15_lock.ogg
-        params:
-          loop: true
-          volume: 1.0
-          pitch: 0.6
     - maximumDistance: 1000
       sound:
         path: /Audio/_Mono/Effects/Alerts/tsfn_launchwarning.ogg

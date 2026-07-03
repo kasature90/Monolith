@@ -57,7 +57,6 @@
           tags:
           - MonoGripErebusRailmount
       attachment_optic:
-        startingItem: GunAttachmentOpticErebus4x
         insertSound: /Audio/Items/screwdriver2.ogg
         ejectSound: /Audio/Items/screwdriver2.ogg
         priority: 0

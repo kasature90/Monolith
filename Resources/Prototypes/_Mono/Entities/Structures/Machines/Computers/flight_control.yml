@@ -28,7 +28,7 @@
   components:
   - type: Sprite
     drawdepth: SmallObjects
-    layers: &NFTabletopShuttleConsoleVisuals
+    layers:
     - map: ["computerLayerBody"]
       sprite: _NF/Structures/Machines/computer_tabletop.rsi
       state: computer_tabletop
@@ -54,3 +54,62 @@
     prototype: ComputerShuttleTSFNVWS
   - type: ComputerTabletopBoard # Frontier
     prototype: ComputerTabletopShuttleTSFNVWS # Frontier
+
+# PDV/USSP RWR (SPO-15)
+
+- type: entity
+  parent: ComputerShuttle
+  id: ComputerShuttleKPV63RWR
+  name: shuttle console
+  suffix: PDV/USSP KPV-63 RWR
+  description: Used to pilot a shuttle. This one is outfitted with a KPV-63 RWR for missile warning tones.
+  components:
+  - type: Computer
+    board: ShuttleConsoleCircuitboardKPV63RWR
+  - type: TargetSeekerAlert
+    targetGainSound:
+      path: /Audio/_Mono/Effects/Alerts/spo15_lock.ogg
+      params:
+        volume: 0.9
+        pitch: 1.4
+    distanceAlertSettings:
+    - maximumDistance: 400
+      sound:
+        path: /Audio/_Mono/Effects/Alerts/spo15_launch.ogg
+        params:
+          loop: true
+          volume: 1.0
+          pitch: 1.6
+
+- type: entity
+  parent: [BaseStructureComputerTabletop, ComputerShuttleKPV63RWR]
+  id: ComputerTabletopShuttleKPV63RWR
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    layers:
+    - map: ["computerLayerBody"]
+      sprite: _NF/Structures/Machines/computer_tabletop.rsi
+      state: computer_tabletop
+    - map: ["computerLayerKeyboard"]
+      sprite: _NF/Structures/Machines/computer_tabletop.rsi
+      state: generic_keyboard_tabletop
+    - map: ["computerLayerScreen"]
+      sprite: Structures/Machines/computers.rsi
+      state: shuttle
+    - map: ["computerLayerKeys"]
+      sprite: Structures/Machines/computers.rsi
+      state: generic_keys
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: ShuttleConsoleCircuitboardKPV63RWR
+  name: shuttle console board (KPV-63 RWR)
+  description: A computer printed circuit board for a shuttle console. This one has a KPV-63 RWR for missile lock tones.
+  components:
+  - type: Sprite
+    state: cpu_supply
+  - type: ComputerBoard
+    prototype: ComputerShuttleKPV63RWR
+  - type: ComputerTabletopBoard # Frontier
+    prototype: ComputerTabletopShuttleKPV63RWR # Frontier

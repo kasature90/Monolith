@@ -73,7 +73,7 @@
         volume: 0.9
         pitch: 1.4
     distanceAlertSettings:
-    - maximumDistance: 400
+    - maximumDistance: 250
       sound:
         path: /Audio/_Mono/Effects/Alerts/spo15_launch.ogg
         params:

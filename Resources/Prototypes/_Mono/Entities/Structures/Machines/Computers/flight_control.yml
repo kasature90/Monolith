@@ -80,6 +80,13 @@
           loop: true
           volume: 1.0
           pitch: 1.6
+    - maximumDistance: 1000
+      sound:
+        path: /Audio/_Mono/Effects/Alerts/kpv63_long_range.ogg
+        params:
+          loop: true
+          volume: 1.0
+          pitch: 1.0
 
 - type: entity
   parent: [BaseStructureComputerTabletop, ComputerShuttleKPV63RWR]

@@ -456,7 +456,8 @@
     - Tethys
     - Carrion
     - Ontos
-
+    - Metis
+    
 # start T1
 
 - type: entity
@@ -635,6 +636,7 @@
     - Fenrir
     - Garm
     - Kalisto
+    - Metis
 # end T1
 
 # start T2

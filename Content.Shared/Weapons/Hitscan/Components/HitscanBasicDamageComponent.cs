@@ -16,6 +16,9 @@ public sealed partial class HitscanBasicDamageComponent : Component
     public DamageSpecifier Damage;
 
     // Mono start
+    /// <summary>
+    ///     How much of the target's armor to ignore. 0.5 means the damage is affected half as much by armor, I think.
+    /// </summary>
     [DataField]
     public float ArmorPenetration;
 

@@ -14,4 +14,15 @@ public sealed partial class HitscanBasicDamageComponent : Component
     /// </summary>
     [DataField(required: true)]
     public DamageSpecifier Damage;
+
+    // Mono start
+    [DataField]
+    public float ArmorPenetration;
+
+    /// <summary>
+    ///     Ignore all damage resistances the target has.
+    /// </summary>
+    [DataField]
+    public bool IgnoreResistances = false;
+    // Mono end
 }

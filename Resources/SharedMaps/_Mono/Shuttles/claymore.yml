@@ -4963,7 +4963,7 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: DebugGyroscopeSecurity
+- proto: GyroscopeSecurity
   entities:
   - uid: 645
     components:

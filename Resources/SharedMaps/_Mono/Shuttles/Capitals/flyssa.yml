@@ -2331,7 +2331,7 @@ entities:
     - type: Transform
       pos: -0.5,36.5
       parent: 1
-- proto: APCHyperCapacity
+- proto: APCBasic
   entities:
   - uid: 80
     components:

@@ -16,7 +16,7 @@
   maximumDistance: 19000
   spawnGamePreset: [ NFAdventure, NFPirate, MonoStandard, MonoRogueTSF, MonoRogueUSSP, MonoADS, MonoChimera, MonoMixed, MonoAllAtOnce ]
   spawnGroup: Required
-  gridPath: /Maps/_Mono/POI/jupiter.yml
+  gridPath: /Maps/_Mono/Supercapitals/jupiter.yml
   addComponents:
   - type: IFF
     color: "#d1bf58"
@@ -26,7 +26,7 @@
 - type: gameMap
   id: Jupiter
   mapName: 'PDV Jupiter Class Carrier'
-  mapPath: /Maps/_Mono/POI/jupiter.yml
+  mapPath: /Maps/_Mono/Supercapitals/jupiter.yml
   minPlayers: 0
   stations:
     Jupiter:

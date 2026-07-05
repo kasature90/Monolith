@@ -9,7 +9,7 @@
   category: Small
   group: BlackMarket
   access: Pirate
-  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/ontos.yml
+  shuttlePath: /SharedMaps/_Mono/Shuttles/BlackMarket/ontos.yml
   guidebookPage: Null
   class:
   - Pirate
@@ -20,7 +20,7 @@
 - type: gameMap
   id: Ontos
   mapName: 'PDV Ontos'
-  mapPath: /Maps/_Mono/Shuttles/BlackMarket/ontos.yml
+  mapPath: /SharedMaps/_Mono/Shuttles/BlackMarket/ontos.yml
   minPlayers: 0
   stations:
     Ontos:

@@ -8,7 +8,7 @@
   category: Medium
   group: Security
   access: Security
-  shuttlePath: /Maps/_Mono/Shuttles/Nfsd/fracture.yml
+  shuttlePath: /SharedMaps/_Mono/Shuttles/Nfsd/fracture.yml
   guidebookPage: Null
   class:
   - Patrol
@@ -19,7 +19,7 @@
 - type: gameMap
   id: Fracture
   mapName: 'Fracture'
-  mapPath: /Maps/_Mono/Shuttles/Nfsd/fracture.yml
+  mapPath: /SharedMaps/_Mono/Shuttles/Nfsd/fracture.yml
   minPlayers: 0
   stations:
     Fracture:

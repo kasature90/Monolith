@@ -4,7 +4,7 @@
   id: Mercury
   parent: BaseVesselAntag
   name: TSF-SKR Mercury
-  description: Corvette with 4 frontal facing Paladin missile pods, and some light PD.
+  description: Naval designation Type-32D Missile Corvette. Equipped with 4 frontal facing Paladin missile pods, and some light PD in the form of 4 L85 20mms.
   price: 228621 # Appraises at 190518. 20% tax.
   purchasable: false # voucher only
   category: Medium

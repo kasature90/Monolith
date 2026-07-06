@@ -24,7 +24,7 @@
     scale: 4
     shape: triangle
   - type: TimedDespawn
-    lifetime: 25
+    lifetime: 50
   - type: PointLight
     radius: 5
     color: orange
@@ -42,7 +42,7 @@
     detectionRange: 3000
     scanArc: 15
     launchSpeed: 60
-    maxSpeed: 170
+    maxSpeed: 250
     trackDelay: 3
   # destructible components below
   - type: Destructible
@@ -126,7 +126,7 @@
     scale: 4
     shape: triangle
   - type: TimedDespawn
-    lifetime: 15
+    lifetime: 30
   - type: PointLight
     radius: 5
     color: orange
@@ -226,7 +226,7 @@
     scale: 4
     shape: triangle
   - type: TimedDespawn
-    lifetime: 15
+    lifetime: 30
   - type: PointLight
     radius: 5
     color: orange

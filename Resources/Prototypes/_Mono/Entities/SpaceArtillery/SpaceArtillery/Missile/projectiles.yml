@@ -70,7 +70,7 @@
     scale: 1
     shape: hexagon
   - type: TimedDespawn
-    lifetime: 2.5
+    lifetime: 5
   - type: PointLight
     radius: 3.5
     color: orange
@@ -129,7 +129,7 @@
     scale: 1.5
     shape: hexagon
   - type: TimedDespawn
-    lifetime: 6
+    lifetime: 12
   - type: PointLight
     radius: 3.5
     color: orange
@@ -189,7 +189,7 @@
     scale: 2.5
     shape: hexagon
   - type: TimedDespawn
-    lifetime: 8
+    lifetime: 16
   - type: PointLight
     radius: 3.5
     color: orange
@@ -209,7 +209,7 @@
     scanArc: 15
     launchSpeed: 120
     maxSpeed: 450
-    trackDelay: 0.25
+    trackDelay: 0.15
 
 - type: entity
   id: ShipMissileASM250
@@ -233,7 +233,7 @@
     scale: 2
     shape: hexagon
   - type: TimedDespawn
-    lifetime: 7
+    lifetime: 14
   - type: PointLight
     radius: 3.5
     color: orange
@@ -258,7 +258,7 @@
     scanArc: 15
     launchSpeed: 60
     maxSpeed: 400
-    trackDelay: 0.6
+    trackDelay: 0.2
 
 # Serpent Torpedo
 
@@ -285,7 +285,7 @@
     scale: 4
     shape: hexagon
   - type: TimedDespawn
-    lifetime: 18
+    lifetime: 36
   - type: PointLight
     radius: 5
     color: orange
@@ -345,7 +345,7 @@
     scale: 4
     shape: triangle
   - type: TimedDespawn
-    lifetime: 6.5
+    lifetime: 13
   - type: PointLight
     radius: 5
     color: orange

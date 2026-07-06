@@ -78,16 +78,16 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 6
+    totalIntensity: 8
     intensitySlope: 3
-    maxIntensity: 3
+    maxIntensity: 5
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 50
-    detectionRange: 500
-    scanArc: 35
+    detectionRange: 1200
+    scanArc: 15
     launchSpeed: 150
     maxSpeed: 300
     trackDelay: 0.1
@@ -137,16 +137,16 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 10
+    totalIntensity: 50
     intensitySlope: 4
-    maxIntensity: 4
+    maxIntensity: 15
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 50
-    detectionRange: 600
-    scanArc: 40
+    detectionRange: 1600
+    scanArc: 20
     launchSpeed: 90
     maxSpeed: 300
     trackDelay: 0.2
@@ -160,7 +160,7 @@
   - type: TargetSeeking
     acceleration: 50
     detectionRange: 0
-    scanArc: 40
+    scanArc: 0
     launchSpeed: 90
     maxSpeed: 300
 
@@ -197,16 +197,16 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 35
+    totalIntensity: 300
     intensitySlope: 6
-    maxIntensity: 10
+    maxIntensity: 25
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 80
-    detectionRange: 1000
-    scanArc: 40
+    detectionRange: 2400
+    scanArc: 15
     launchSpeed: 120
     maxSpeed: 450
     trackDelay: 0.25
@@ -245,17 +245,17 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 20
+    totalIntensity: 40
     intensitySlope: 10
-    maxIntensity: 15
-    maxTileBreak: 1
+    maxIntensity: 25
+    maxTileBreak: 3
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 60
-    detectionRange: 600
-    scanArc: 45
+    detectionRange: 2400
+    scanArc: 15
     launchSpeed: 60
     maxSpeed: 400
     trackDelay: 0.6
@@ -293,16 +293,16 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 10
+    maxIntensity: 600
     intensitySlope: 3
-    totalIntensity: 75
+    totalIntensity: 150
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 10 # low
-    detectionRange: 600
-    scanArc: 30
+    detectionRange: 2000
+    scanArc: 10
     launchSpeed: 25
     maxSpeed: 300
     trackDelay: 2
@@ -353,15 +353,15 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBombShipGun
-    maxIntensity: 350
+    maxIntensity: 450
     intensitySlope: 5
     totalIntensity: 550
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
-    acceleration: 80
-    detectionRange: 1000
-    scanArc: 45
+    acceleration: 170
+    detectionRange: 1200
+    scanArc: 60
     launchSpeed: 100
     maxSpeed: 300
     trackDelay: 2

@@ -96,9 +96,9 @@ public sealed partial class ShipShieldsSystem : EntitySystem
                 UnshieldEntity(parent.Value);
                 emitter.Shield = null;
                 emitter.Shielded = null;
-                _audio.PlayGlobal(emitter.PowerDownSound, filter, true, emitter.PowerUpSound.Params);
+                if (!HasComp<ShipShieldDisabledGridComponent>(Transform(uid).GridUid))
+                    _audio.PlayGlobal(emitter.PowerDownSound, filter, true, emitter.PowerUpSound.Params);
             }
-
         }
     }
     public override void Initialize()

@@ -9,7 +9,7 @@
     fixtures:
       hit:
         shape: !type:PhysShapeCircle
-          radius: 2
+          radius: 4
         layer:
         - BulletImpassable # Mono - ProjectileGridPhase will take care of collisions with same ship shots
         - Opaque
@@ -37,7 +37,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 50
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -95,7 +95,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 15
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -310,7 +310,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 100
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

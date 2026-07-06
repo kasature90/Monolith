@@ -1,9 +1,13 @@
 using System.Numerics;
+using Content.Server._Mono.Radar;
 using Content.Shared.Interaction;
 using Content.Server.Shuttles.Components;
 using Content.Shared.Projectiles;
 using Robust.Server.GameObjects;
+using Robust.Shared.Enums;
+using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
+using Robust.Shared.Physics.Dynamics;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
@@ -174,6 +178,12 @@ public sealed partial class TargetSeekingSystem : EntitySystem
                     continue;
 
                 var targetXform = Transform(target);
+                if (TryComp(uid, out HitscanRadarComponent? radar))
+                {
+                    radar.StartPosition = _transform.GetWorldPosition(xform);
+                    radar.EndPosition = _transform.GetWorldPosition(targetXform);
+                    radar.RadarColor = Color.FromHex("#FF0040");
+                }
 
                 Angle wantAngle = new Angle(0);
                 switch (seekingComp.TrackingAlgorithm)
@@ -199,6 +209,17 @@ public sealed partial class TargetSeekingSystem : EntitySystem
             {
                 // Try to acquire a new target
                 AcquireTarget(uid, seekingComp, xform);
+                // draw the thingy to the place
+                var worldCoords = _transform.GetWorldPosition(xform);
+                var trackPos = Vector2.Create(
+                    worldCoords.X + 20 * (float)Math.Cos(_transform.GetWorldRotation(xform) - Math.PI * 0.5),
+                    worldCoords.Y + 20 * (float)Math.Sin(_transform.GetWorldRotation(xform) - Math.PI * 0.5));
+                if (TryComp(uid, out HitscanRadarComponent? radar))
+                {
+                    radar.StartPosition = _transform.GetWorldPosition(xform);
+                    radar.EndPosition = trackPos;
+                    radar.RadarColor = Color.FromHex("#00AACC");
+                }
             }
         }
     }

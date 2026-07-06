@@ -145,11 +145,15 @@
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 50
-    detectionRange: 600
-    scanArc: 40
+    detectionRange: 300
+    scanArc: 30
     launchSpeed: 90
-    maxSpeed: 300
+    maxSpeed: 60
     trackDelay: 0.2
+  - type: HitscanRadarSignature
+    radarColor: "#00AACC"
+  - type: HitscanRadar
+    radarColor: "#00AACC"
 
 - type: entity
   id: ShipMissileASM150Unguided

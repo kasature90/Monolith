@@ -27,6 +27,7 @@
   - TsfmcRankE6FTL
   - TsfmcRankE7FTL
   - TsfmcRankE8FTL
+  - TsfmcRankO1
   - TsfnCNRankE3
   - TsfnCNRankE4
   - TsfnCNRankE5
@@ -39,7 +40,6 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
-  - TsfmcRankO1
   - TsfmcRankO2
   - TsfmcRankO3
   - TsfmcRankO4
@@ -55,7 +55,6 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
-  - TsfmcRankO4
   - TsfmcRankO5
   - TsfmcRankO6
   - TsfnCNRankE8

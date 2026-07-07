@@ -1,11 +1,4 @@
 - type: loadout
-  id: TsfmcRankO1
-  name: TSFMC O-1 (2LT)
-  components:
-  - type: ChatRank
-    rank: tsf-o1
-
-- type: loadout
   id: TsfmcRankO2
   name: TSFMC O-2 (1LT)
   components:

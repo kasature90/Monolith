@@ -72,6 +72,6 @@
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
-    - !type:DepartmentTimeRequirement
+      !type:DepartmentTimeRequirement
       department: Security
       time: 720000 # 200hr

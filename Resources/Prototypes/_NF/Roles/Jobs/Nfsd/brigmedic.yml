@@ -30,6 +30,8 @@
       - TSFMC
     - type: SurgerySpeedModifier
       SpeedModifier: 1.65
+    - type: ChatRank
+      rank: tsf-marine-us
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, TrackingImplant ]
   - !type:AddLanguageSpecial # Monolith - Languages

@@ -85,6 +85,8 @@
       types:
         Blunt: 35
         Piercing: 25
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectAk570
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/shells.rsi
     layers:
@@ -172,6 +174,46 @@
     scale: 2.5
     shape: triangle
     radarColor: "#1df5cd"
+
+# 140mm
+
+- type: entity
+  id: 140mmBulletAPHE
+  name: 140mm APHE projectile
+  parent: BaseBulletTriggerSpent
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 250
+        Piercing: 75
+    penetrationThreshold: 1500
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/shells.rsi
+    layers:
+    - state: 90mmHE
+  - type: Ammo
+    muzzleFlash: null
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    scale: 2.75
+    shape: triangle
+  - type: TimedDespawn
+    lifetime: 4
+  - type: PointLight
+    color: "#FCBA03"
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    deleteAfterExplosion: false
+    explosionType: Default
+    totalIntensity: 40
+    intensitySlope: 5
+    maxIntensity: 25
+    maxTileBreak: 2
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
 
 # 220mm
 
@@ -514,6 +556,26 @@
     intensitySlope: 2
     maxIntensity: 2
     maxTileBreak: 1
+
+- type: entity
+  id: ShipFragmentProjectile
+  parent: ShipShardProjectile
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 200
+        Blunt: 60
+        Piercing: 10
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 6
+    intensitySlope: 2
+    maxIntensity: 2
+    maxTileBreak: 1
+  - type: ProjectileKnockback
+    knockback: 25
 
 - type: entity
   id: ShipPinholeProjectile

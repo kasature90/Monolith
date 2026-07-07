@@ -9,7 +9,7 @@
       types:
         Piercing: 120
         Structural: 500
-    armorPenetration: 0.7
+    armorPenetration: 0.8
     penetrationThreshold: 500
     penetrationDamageTypeRequirement:
     - Structural

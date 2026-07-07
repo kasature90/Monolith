@@ -101,7 +101,7 @@ public sealed partial class TargetSeekingComponent : Component
     /// Color for scanning arc lines
     /// </summary>
     [DataField]
-    public Color ArcLinesColor = Color.FromHex("#FF0040");
+    public Color ArcLinesColor = Color.FromHex("#FF0000");
 
     /// <summary>
     /// Thickness.

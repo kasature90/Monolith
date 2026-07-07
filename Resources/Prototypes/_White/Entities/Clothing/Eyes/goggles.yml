@@ -10,7 +10,7 @@
     sprite: _White/Clothing/Eyes/Goggles/nightvision.rsi
   - type: Clothing
     sprite: _White/Clothing/Eyes/Goggles/nightvision.rsi
-  - type: NightVision
+  - type: WWDPNightVision
     flashDurationMultiplier: 2
     isEquipment: true
   - type: IdentityBlocker

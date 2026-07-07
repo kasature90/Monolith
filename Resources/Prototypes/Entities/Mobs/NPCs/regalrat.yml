@@ -137,7 +137,7 @@
     attributes:
       gender: male
   - type: Sharp
-  - type: NightVision # Goobstation - Nigthvision
+  - type: WWDPNightVision # Goobstation - Nigthvision
     toggleAction: null
     activateSound: null
     deactivateSound: null
@@ -323,7 +323,7 @@
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
-  - type: NightVision # Goobstation - Nigthvision
+  - type: WWDPNightVision # Goobstation - Nigthvision
     activateSound: null
     deactivateSound: null
 

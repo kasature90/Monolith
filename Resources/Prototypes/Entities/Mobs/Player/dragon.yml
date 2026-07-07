@@ -171,7 +171,7 @@
     - DoorBumpOpener
   - type: Puller
     needsHands: false
-  - type: NightVision # Goobstation - Nigthvision
+  - type: WWDPNightVision # Goobstation - Nigthvision
     activateSound: null
     deactivateSound: null
 

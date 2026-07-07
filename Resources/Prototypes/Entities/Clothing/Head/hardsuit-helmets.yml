@@ -359,7 +359,7 @@
   - type: PressureProtection
     highPressureMultiplier: 0.60
     lowPressureMultiplier: 1000
-  - type: NightVision # Mono - remove light, replace with NVG
+  - type: WWDPNightVision # Mono - remove light, replace with NVG
     flashDurationMultiplier: 2
     isEquipment: true
 

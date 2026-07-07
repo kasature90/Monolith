@@ -93,7 +93,7 @@
     interfaces:
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
-  - type: NightVision # Goobstation - Nigthvision
+  - type: WWDPNightVision # Goobstation - Nigthvision
     activateSound: null
     deactivateSound: null
 

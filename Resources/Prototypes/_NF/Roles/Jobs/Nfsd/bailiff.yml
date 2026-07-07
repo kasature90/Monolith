@@ -34,8 +34,6 @@
     - type: NpcFactionMember
       factions:
       - TSFMC
-    - type: ChatRank
-      rank: tsf-captain-us
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, TrackingImplant ]
   - !type:AddLanguageSpecial

@@ -31,8 +31,6 @@
     - type: NpcFactionMember
       factions:
       - TSFMC
-    - type: ChatRank
-      rank: tsf-ftl-us
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, TrackingImplant ]
   - !type:AddLanguageSpecial # Monolith - Languages

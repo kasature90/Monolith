@@ -16,7 +16,7 @@
   components:
   - type: Organ
     onAdd:
-    - type: NightVision
+    - type: WWDPNightVision
       isEquipment: false
       activateSound: null
       deactivateSound: null

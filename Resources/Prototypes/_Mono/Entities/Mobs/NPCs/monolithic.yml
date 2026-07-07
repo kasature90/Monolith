@@ -219,7 +219,7 @@
   - type: Bloodstream
     bloodReagent: Gestalzitine
     bloodMaxVolume: 0.01
-  - type: NightVision
+  - type: WWDPNightVision
     activateSound: null
     deactivateSound: null
   - type: CollectiveMind

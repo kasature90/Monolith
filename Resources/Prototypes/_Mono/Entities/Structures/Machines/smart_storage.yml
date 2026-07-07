@@ -136,7 +136,7 @@
       - SpeedLoader
       - MeleeWeapon
       - ThermalVision
-      - NightVision
+      - WWDPNightVision
       - FlashImmunity
       - Armor
       - WeaponCaseInsertable

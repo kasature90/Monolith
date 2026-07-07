@@ -13,7 +13,7 @@
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
   - type: FlashImmunity
-  - type: NightVision
+  - type: WWDPNightVision
     flashDurationMultiplier: 0.85
     isEquipment: true
   - type: Armor
@@ -58,7 +58,7 @@
       enum.RadarConsoleUiKey.Key:
         type: RadarConsoleBoundUserInterface
   - type: FlashImmunity
-  - type: NightVision
+  - type: WWDPNightVision
     flashDurationMultiplier: 0.85
     isEquipment: true
   - type: Armor
@@ -92,7 +92,7 @@
   - type: PressureProtection
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
-  - type: NightVision
+  - type: WWDPNightVision
     flashDurationMultiplier: 0.85
     isEquipment: true
   - type: Armor
@@ -126,7 +126,7 @@
   - type: PressureProtection
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
-  - type: NightVision
+  - type: WWDPNightVision
     flashDurationMultiplier: 0.85
     isEquipment: true
   - type: Armor
@@ -172,7 +172,7 @@
       enum.RadarConsoleUiKey.Key:
         type: RadarConsoleBoundUserInterface
   - type: FlashImmunity
-  - type: NightVision
+  - type: WWDPNightVision
     flashDurationMultiplier: 0.85
     isEquipment: true
   - type: Armor

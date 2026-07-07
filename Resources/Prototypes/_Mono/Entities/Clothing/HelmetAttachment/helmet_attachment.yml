@@ -85,7 +85,7 @@
     clothingVisuals:
       helmetattachment:
       - state: equipped-HELMETATTACHMENT
-  - type: NightVision
+  - type: WWDPNightVision
     flashDurationMultiplier: 3
     isEquipment: true
   - type: IdentityBlocker

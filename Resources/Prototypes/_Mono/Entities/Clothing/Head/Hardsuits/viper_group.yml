@@ -11,7 +11,7 @@
     sprite: _Mono/Clothing/Head/Hardsuits/viper_group_standard.rsi
   - type: PointLight
     color: "#eb772a"
-  - type: NightVision
+  - type: WWDPNightVision
     isEquipment: true
   - type: PressureProtection
     highPressureMultiplier: 0.08
@@ -80,7 +80,7 @@
     sprite: _Mono/Clothing/Head/Hardsuits/viper_group_juggernaut.rsi
   - type: PointLight
     color: "#eb772a"
-  - type: NightVision
+  - type: WWDPNightVision
     flashDurationMultiplier: 2
     isEquipment: true
   - type: PressureProtection

@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Server._Mono.Projectiles.TargetSeeking;
 using Content.Shared._Mono.Radar;
 using Content.Shared.Projectiles;
 using Content.Shared.Shuttles.Components;
@@ -161,6 +162,7 @@ public sealed partial class RadarBlipSystem : EntitySystem
         var radarXform = Transform(uid);
 
         var hitscanQuery = EntityQueryEnumerator<HitscanRadarComponent>();
+        var scanArcsQuery = EntityQueryEnumerator<TargetSeekingComponent>();
 
         while (hitscanQuery.MoveNext(out var hitscanUid, out var hitscan))
         {
@@ -171,6 +173,27 @@ public sealed partial class RadarBlipSystem : EntitySystem
                 continue;
 
             _tempHitscansCache.Add(new(hitscan.StartPosition, hitscan.EndPosition, hitscan.LineThickness, hitscan.RadarColor));
+        }
+
+        while (scanArcsQuery.MoveNext(out var missileUid, out var seeker))
+        {
+            // draw the thingy to the place
+            // This is awful, I fucking hate doing this shit.
+            var xform = missileUid;
+            var worldCoords = _xform.GetWorldPosition(xform);
+            var angleOffset = MathHelper.DegreesToRadians(seeker.ScanArc * 0.5);
+            var targetPosLeft = Vector2.Create(
+                worldCoords.X + (seeker.MaxSpeed * 2f) * (float)Math.Cos(_xform.GetWorldRotation(xform) - (Math.PI * 0.5 - angleOffset)),
+                worldCoords.Y + (seeker.MaxSpeed * 2f) * (float)Math.Sin(_xform.GetWorldRotation(xform) - (Math.PI * 0.5 - angleOffset)));
+            var targetPosRight = Vector2.Create(
+                worldCoords.X + (seeker.MaxSpeed * 2f) * (float)Math.Cos(_xform.GetWorldRotation(xform) - (Math.PI * 0.5 + angleOffset)),
+                worldCoords.Y + (seeker.MaxSpeed * 2f) * (float)Math.Sin(_xform.GetWorldRotation(xform) - (Math.PI * 0.5 + angleOffset)));
+
+            if (seeker.ScanArc > 0) // simple check to not draw lines if it doesnt scan (such as unguided rockets using it for constant acceleration)
+            {
+                _tempHitscansCache.Add(new(worldCoords, targetPosLeft, seeker.ArcLinesThickness, seeker.ArcLinesColor));
+                _tempHitscansCache.Add(new(worldCoords, targetPosRight, seeker.ArcLinesThickness, seeker.ArcLinesColor));
+            }
         }
     }
 

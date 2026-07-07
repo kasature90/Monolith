@@ -1,3 +1,5 @@
+using System.Numerics;
+
 namespace Content.Server._Mono.Projectiles.TargetSeeking;
 
 /// <summary>
@@ -94,6 +96,18 @@ public sealed partial class TargetSeekingComponent : Component
     /// </summary>
     [DataField]
     public Color IdleColor = Color.FromHex("#00AACC");
+
+    /// <summary>
+    /// Color for scanning arc lines
+    /// </summary>
+    [DataField]
+    public Color ArcLinesColor = Color.FromHex("#FF0040");
+
+    /// <summary>
+    /// Thickness.
+    /// </summary>
+    [DataField]
+    public float ArcLinesThickness = 0.1f;
 }
 
 /// <summary>

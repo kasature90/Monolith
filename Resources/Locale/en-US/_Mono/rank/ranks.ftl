@@ -7,7 +7,7 @@ tsf-marine-us = Cpl.
 tsf-marine-cn = Xsh.
 
 # Sergeant / 中士
-tsf-ftl-us = Srg.
+tsf-ftl-us = Sgt.
 tsf-ftl-cn = Zhs.
 
 # Captain / 上尉

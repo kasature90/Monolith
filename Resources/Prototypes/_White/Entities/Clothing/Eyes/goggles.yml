@@ -10,9 +10,14 @@
     sprite: _White/Clothing/Eyes/Goggles/nightvision.rsi
   - type: Clothing
     sprite: _White/Clothing/Eyes/Goggles/nightvision.rsi
-  - type: WWDPNightVision
-    flashDurationMultiplier: 2
-    isEquipment: true
+    # TODO TESTING REMOVE THIS TODO TESTING REMOVE THIS
+  - type: NightVision
+    relayOverlay: true
+    action: ActionToggleNightVision
+    overlayColor: "#00FF0050"
+    lightingColor: "#00FF0050"
+    noiseAmount: 1
+    noiseMultiplier: 2
   - type: IdentityBlocker
     coverage: EYES
 

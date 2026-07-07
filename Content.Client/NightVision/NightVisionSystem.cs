@@ -50,6 +50,11 @@ public sealed partial class NightVisionSystem : SharedNightVisionSystem
             Deactivate(localPlayer.Value);
     }
 
+    /// <summary>
+    /// Update the state of the overlay. Add/remove/modify based on <see cref="NightVisionComponent"/>s if any.
+    /// </summary>
+    /// <param name="entity">The entity to have an overlay added/removed from.</param>
+    /// <param name="entities">A list of entities with a <see cref="NightVisionComponent"/>.</param>
     private void Update(EntityUid entity, List<Entity<NightVisionComponent>> entities)
     {
         if (entity != _player.LocalSession?.AttachedEntity)
@@ -57,7 +62,6 @@ public sealed partial class NightVisionSystem : SharedNightVisionSystem
 
 // Find the component with the lowest noise.
         NightVisionComponent? nvision = null;
-        var bestNoise = float.MaxValue;
         foreach (var ent in entities)
         {
             if (!ent.Comp.Enabled)
@@ -66,17 +70,11 @@ public sealed partial class NightVisionSystem : SharedNightVisionSystem
             if (ent.Comp.RelayOverlay == (ent.Owner == entity))
                 continue;
 
+            nvision = ent.Comp;
+
+            // Take the first priority component
             if (ent.Comp.Prioritized)
-            {
-                nvision = ent.Comp;
                 break;
-            }
-            var noise = ent.Comp.NoiseAmount * ent.Comp.NoiseMultiplier;
-            if (noise < bestNoise)
-            {
-                nvision = ent.Comp;
-                bestNoise = noise;
-            }
         }
 
         // There is no active night vision components, so we disable the overlay.
@@ -86,7 +84,15 @@ public sealed partial class NightVisionSystem : SharedNightVisionSystem
             return;
         }
 
-        _overlay.SetParameters(nvision.OverlayColor, nvision.LightingColor, nvision.NoiseAmount, nvision.NoiseMultiplier);
+        // Relay all the settings from the component.
+        _overlay.SetParameters(
+            nvision.LightingColor,
+            nvision.PhosphorColor,
+            nvision.GoggleEffect,
+            nvision.ViewCircleRadius,
+            nvision.ViewCircleSpacing,
+            nvision.ViewCircleCount,
+            nvision.Amplification);
 
         if (!_overlayMan.HasOverlay<NightVisionOverlay>())
             _overlayMan.AddOverlay(_overlay);

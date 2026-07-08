@@ -3,8 +3,8 @@
 - type: vessel
   id: Kortik
   parent: BaseVesselAntag
-  name: PDV Kortik
-  description: A heavily armored frigate, with multiple layers of reinforced plastitanium hull. Comes with a full medbay & chemlab, and equipped with 2 spinal R-300s, 2 HADES, 2 CYREXA, 4 Draupnirs, 4 VESPERAs, and 4 20mms. FULLY UNABLE TO USE SHIELD GENERATORS.
+  name: PDV-NCI Kortik-EM
+  description: Converted from recently purchased & outdated USSP Kortiks. A heavily armored frigate, with multiple layers of reinforced plastitanium hull. Comes with a full medbay & chemlab, and equipped with 2 spinal R-300s, 2 HADES, 2 CYREXA, 4 Draupnirs, 4 VESPERAs, and 4 20mms. FULLY UNABLE TO USE SHIELD GENERATORS.
   limit: 2
   hyperwarLimit: 4
   price: 278000

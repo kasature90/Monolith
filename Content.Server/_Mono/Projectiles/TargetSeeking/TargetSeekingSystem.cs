@@ -174,12 +174,6 @@ public sealed partial class TargetSeekingSystem : EntitySystem
                     continue;
 
                 var targetXform = Transform(target);
-                if (TryComp(uid, out HitscanRadarComponent? radar))
-                {
-                    radar.StartPosition = _transform.GetWorldPosition(xform);
-                    radar.EndPosition = _transform.GetWorldPosition(targetXform);
-                    radar.RadarColor = seekingComp.TrackingColor;
-                }
 
                 Angle wantAngle = new Angle(0);
                 switch (seekingComp.TrackingAlgorithm)
@@ -205,17 +199,6 @@ public sealed partial class TargetSeekingSystem : EntitySystem
             {
                 // Try to acquire a new target
                 AcquireTarget(uid, seekingComp, xform);
-                // draw the thingy to the place
-                var worldCoords = _transform.GetWorldPosition(xform);
-                var trackPos = Vector2.Create(
-                    worldCoords.X + (seekingComp.MaxSpeed) * (float)Math.Cos(_transform.GetWorldRotation(xform) - Math.PI * 0.5),
-                    worldCoords.Y + (seekingComp.MaxSpeed) * (float)Math.Sin(_transform.GetWorldRotation(xform) - Math.PI * 0.5));
-                if (TryComp(uid, out HitscanRadarComponent? radar))
-                {
-                    radar.StartPosition = _transform.GetWorldPosition(xform);
-                    radar.EndPosition = trackPos;
-                    radar.RadarColor = seekingComp.IdleColor;
-                }
             }
         }
     }

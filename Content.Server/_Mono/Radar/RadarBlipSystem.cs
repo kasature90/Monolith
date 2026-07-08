@@ -16,6 +16,7 @@ public sealed partial class RadarBlipSystem : EntitySystem
 
     // Pooled collections to avoid per-request heap churn
     private readonly List<BlipNetData> _tempBlipsCache = new();
+    private readonly List<MissileVectorNetData> _tempMissileCache = new();
     private readonly List<HitscanNetData> _tempHitscansCache = new();
     private readonly List<EntityUid> _tempSourcesCache = new();
     private readonly List<BlipConfig> _tempPaletteCache = new();
@@ -49,10 +50,11 @@ public sealed partial class RadarBlipSystem : EntitySystem
         AssembleHitscanReport((EntityUid)radarUid, _tempSourcesCache, radar);
 
         // Combine the blips and hitscan lines
-        var giveEv = new GiveBlipsEvent(_tempPaletteCache, _tempBlipsCache, _tempHitscansCache);
+        var giveEv = new GiveBlipsEvent(_tempPaletteCache, _tempBlipsCache, _tempMissileCache, _tempHitscansCache);
         RaiseNetworkEvent(giveEv, args.SenderSession);
 
         _tempBlipsCache.Clear();
+        _tempMissileCache.Clear();
         _tempHitscansCache.Clear();
         _tempSourcesCache.Clear();
         _tempPaletteCache.Clear();
@@ -128,6 +130,32 @@ public sealed partial class RadarBlipSystem : EntitySystem
                             rotation,
                             configIdx,
                             gridConfigIdx));
+
+            if (TryComp<TargetSeekingComponent>(blipUid, out var seeker))
+            {
+                var missileRotation = _xform.GetWorldRotation(blipXform);
+                var missileArcOffset = MathHelper.DegreesToRadians(seeker.ScanArc / 2);
+                    _tempMissileCache.Add(new(netBlipUid,
+                        GetNetCoordinates(coord),
+                        seeker.MaxSpeed * 0.5,
+                        missileRotation,
+                        blipVelocity,
+                        seeker.IdleColor));
+
+                    _tempMissileCache.Add(new(netBlipUid,
+                        GetNetCoordinates(coord),
+                        seeker.MaxSpeed * 2,
+                        missileRotation - missileArcOffset,
+                        blipVelocity,
+                        seeker.ArcLinesColor));
+
+                    _tempMissileCache.Add(new(netBlipUid,
+                        GetNetCoordinates(coord),
+                        seeker.MaxSpeed * 2,
+                        missileRotation + missileArcOffset,
+                        blipVelocity,
+                        seeker.ArcLinesColor));
+            }
         }
     }
 

@@ -5,10 +5,6 @@
   abstract: true
   components:
   - type: ShipWeaponProjectile
-  - type: HitscanRadarSignature
-    radarColor: "#00AACC"
-  - type: HitscanRadar
-    radarColor: "#00AACC"
   - type: Fixtures
     fixtures:
       hit:

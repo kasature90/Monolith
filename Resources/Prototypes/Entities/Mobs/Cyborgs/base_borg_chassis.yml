@@ -139,9 +139,12 @@
     activated: false # gets activated when a mind is added
     onUse: false # no item-borg toggling sorry
   #- type: ItemTogglePointLight # Mono - Light removal PR: Borg Adjustments
-  - type: NightVision # Gen 3 fullscreen
-    relayOverlay: true
-    goggleEffect: false
+  - type: NightVision # Gen 3 wide-quadtube
+    relayOverlay: false
+    goggleEffect: true
+    viewCircleRadius: 450
+    viewCircleCount: 4
+    viewCircleSpacing: 280
     action: ActionToggleNightVision
     phosphorColor: "#00FF00"
     lightingColor: "#FFFFFF32"

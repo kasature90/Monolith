@@ -15,7 +15,7 @@ public sealed partial class NightVisionComponent : Component
     /// Whether the overlay should be visible.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public bool Enabled = true;
+    public bool Enabled; // Mono - false so you dont get flashbanged from helmets lol
 
     /// <summary>
     /// Whether this night vision is prioritized.

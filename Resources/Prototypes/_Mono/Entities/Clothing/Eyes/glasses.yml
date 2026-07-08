@@ -173,9 +173,12 @@
     isEquipment: true
     color: "#FFFFFFFF"
     lightRadius: 45
-  - type: NightVision # Gen 3 fullscreen
+  - type: NightVision # Gen 3 wide-quadtube
     relayOverlay: true
-    goggleEffect: false
+    goggleEffect: true
+    viewCircleRadius: 450
+    viewCircleCount: 4
+    viewCircleSpacing: 280
     action: ActionToggleNightVision
     phosphorColor: "#00FF00"
     lightingColor: "#FFFFFF32"

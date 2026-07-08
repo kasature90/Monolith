@@ -306,6 +306,7 @@
     launchSpeed: 25
     maxSpeed: 300
     trackDelay: 2
+    trackingAlgorithm: AdvancedPredictive
   - type: Destructible
     thresholds:
     - trigger:
@@ -365,6 +366,7 @@
     launchSpeed: 100
     maxSpeed: 300
     trackDelay: 2
+    trackingAlgorithm: AdvancedPredictive
   - type: EmpOnTrigger
     range: 7
     energyConsumption: 2900000

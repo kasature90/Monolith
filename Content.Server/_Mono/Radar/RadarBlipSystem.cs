@@ -137,7 +137,7 @@ public sealed partial class RadarBlipSystem : EntitySystem
                 var missileArcOffset = MathHelper.DegreesToRadians(seeker.ScanArc / 2);
                     _tempMissileCache.Add(new(netBlipUid,
                         GetNetCoordinates(coord),
-                        seeker.MaxSpeed * 0.5,
+                        seeker.MaxSpeed * 0.4,
                         missileRotation,
                         blipVelocity,
                         seeker.IdleColor));
@@ -146,14 +146,14 @@ public sealed partial class RadarBlipSystem : EntitySystem
                     {
                         _tempMissileCache.Add(new(netBlipUid,
                             GetNetCoordinates(coord),
-                            seeker.MaxSpeed * 2,
+                            seeker.MaxSpeed * 0.9,
                             missileRotation - missileArcOffset,
                             blipVelocity,
                             seeker.ArcLinesColor));
 
                         _tempMissileCache.Add(new(netBlipUid,
                             GetNetCoordinates(coord),
-                            seeker.MaxSpeed * 2,
+                            seeker.MaxSpeed * 0.9,
                             missileRotation + missileArcOffset,
                             blipVelocity,
                             seeker.ArcLinesColor));

@@ -86,12 +86,6 @@ public sealed partial class TargetSeekingComponent : Component
     public bool SeekingDisabled;
 
     /// <summary>
-    /// Color for radar line signature (if it has one) when it's locked onto a target.
-    /// </summary>
-    [DataField]
-    public Color TrackingColor = Color.FromHex("#FF0040");
-
-    /// <summary>
     /// Color for radar line signature (if it has one) when it's not locked to any target.
     /// </summary>
     [DataField]

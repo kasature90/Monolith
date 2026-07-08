@@ -111,8 +111,8 @@ public sealed partial class RadarBlipsSystem : EntitySystem
     {
         // clear the cache and bail early if the data is stale
         _cachedMissileData.Clear();
-        //if (_timing.CurTime.TotalSeconds - _lastUpdatedTime.TotalSeconds > BlipStaleSeconds)
-        //    return _cachedMissileData;
+        if (_timing.CurTime.TotalSeconds - _lastUpdatedTime.TotalSeconds > BlipStaleSeconds)
+            return _cachedMissileData;
 
         // populate the cached list instead of allocating a new one each frame
         foreach (var missile in _missiles)

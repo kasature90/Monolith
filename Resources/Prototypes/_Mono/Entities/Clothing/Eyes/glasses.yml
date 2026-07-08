@@ -173,6 +173,9 @@
     isEquipment: true
     color: "#FFFFFFFF"
     lightRadius: 45
-  - type: WWDPNightVision
-    flashDurationMultiplier: 2.75
-    isEquipment: true
+  - type: NightVision # Gen 3 fullscreen
+    relayOverlay: true
+    goggleEffect: false
+    action: ActionToggleNightVision
+    phosphorColor: "#00FF00"
+    lightingColor: "#FFFFFF32"

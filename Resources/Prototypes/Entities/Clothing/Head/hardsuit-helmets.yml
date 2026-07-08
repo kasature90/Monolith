@@ -359,9 +359,16 @@
   - type: PressureProtection
     highPressureMultiplier: 0.60
     lowPressureMultiplier: 1000
-  - type: WWDPNightVision # Mono - remove light, replace with NVG
-    flashDurationMultiplier: 2
-    isEquipment: true
+    # Mono - remove light, replace with NVG
+  - type: NightVision # Gen 4 fullscreen
+    relayOverlay: true
+    goggleEffect: false
+    action: ActionToggleNightVision
+    viewCircleRadius: 400
+    viewCircleCount: 2
+    viewCircleSpacing: 260
+    phosphorColor: "#41D7D9"
+    lightingColor: "#FFFFFF32"
 
 #Head of Security's hardsuit
 - type: entity

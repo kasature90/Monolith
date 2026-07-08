@@ -139,8 +139,12 @@
     activated: false # gets activated when a mind is added
     onUse: false # no item-borg toggling sorry
   #- type: ItemTogglePointLight # Mono - Light removal PR: Borg Adjustments
-  - type: WWDPNightVision # Mono
-    color: "#808080"
+  - type: NightVision # Gen 3 fullscreen
+    relayOverlay: true
+    goggleEffect: false
+    action: ActionToggleNightVision
+    phosphorColor: "#00FF00"
+    lightingColor: "#FFFFFF32"
   - type: AccessToggle
   # TODO: refactor movement to just be based on toggle like speedboots but for the boots themselves
   # TODO: or just have sentient speedboots be fast idk

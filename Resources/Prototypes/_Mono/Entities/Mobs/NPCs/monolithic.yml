@@ -219,9 +219,12 @@
   - type: Bloodstream
     bloodReagent: Gestalzitine
     bloodMaxVolume: 0.01
-  - type: WWDPNightVision
-    activateSound: null
-    deactivateSound: null
+  - type: NightVision # Gen 3 fullscreen
+    relayOverlay: true
+    goggleEffect: false
+    action: ActionToggleNightVision
+    phosphorColor: "#00FF00"
+    lightingColor: "#FFFFFF32"
   - type: CollectiveMind
     channels:
     - MonolithicMind

@@ -16,10 +16,12 @@
   components:
   - type: Organ
     onAdd:
-    - type: WWDPNightVision
-      isEquipment: false
-      activateSound: null
-      deactivateSound: null
+    - type: NightVision # Gen 3 fullscreen
+      relayOverlay: false
+      goggleEffect: false
+      action: ActionToggleNightVision
+      phosphorColor: "#00FF00"
+      lightingColor: "#FFFFFF32"
 
 - type: entity
   id: OrganAsakimHeart

@@ -58,7 +58,7 @@
   components:
   - type: NightVision
     action: ActionToggleNightVision
-    viewCircleRadius: 350
+    viewCircleRadius: 450
     viewCircleCount: 2
     viewCircleSpacing: 280
     phosphorColor: "#00FF00"

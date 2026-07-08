@@ -5024,8 +5024,6 @@ entities:
       pos: 3.5,-3.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 737
       - 2
@@ -5037,8 +5035,6 @@ entities:
       pos: 2.5,-0.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 10
       - 743

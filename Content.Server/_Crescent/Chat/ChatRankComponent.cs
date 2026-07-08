@@ -9,5 +9,5 @@ namespace Content.Server.Crescent.Chat;
 public sealed partial class ChatRankComponent : Component
 {
     [DataField]
-    public string Rank;
+    public LocId Rank;
 }

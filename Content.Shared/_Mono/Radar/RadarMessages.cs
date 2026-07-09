@@ -91,7 +91,7 @@ public record struct BlipNetData
 public record struct MissileVectorNetData
 (
     NetEntity Uid,
-    double Range,
+    float Range,
     Angle ScanArc
 );
 

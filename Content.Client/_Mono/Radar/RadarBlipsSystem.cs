@@ -124,19 +124,19 @@ public sealed partial class RadarBlipsSystem : EntitySystem
 
             var predictedPosStart = new NetCoordinates(missile.Uid, coord.Position + tiedBlip.Vel * (float)(_timing.CurTime - _lastUpdatedTime).TotalSeconds);
             var posEnd = Vector2.Create(
-                predictedPosStart.X + ((float)missile.Range / 2) * (float)Math.Cos(tiedBlip.Rotation + Math.PI * -0.5),
-                predictedPosStart.Y + ((float)missile.Range / 2) * (float)Math.Sin(tiedBlip.Rotation + Math.PI * -0.5));
+                predictedPosStart.X + (missile.Range / 2) * (float)Math.Cos(tiedBlip.Rotation + Math.PI * -0.5),
+                predictedPosStart.Y + (missile.Range / 2) * (float)Math.Sin(tiedBlip.Rotation + Math.PI * -0.5));
             var predictedPosEnd = new NetCoordinates(missile.Uid, posEnd);
 
             _cachedMissileData.Add(new(missile.Uid, predictedPosStart, predictedPosEnd, color));
             if (missile.ScanArc > 0)
             {
                 var posEndLeft = Vector2.Create(
-                    predictedPosStart.X + ((float)missile.Range) * (float)Math.Cos(tiedBlip.Rotation + Math.PI * -0.5 - (missile.ScanArc * 0.5)),
-                    predictedPosStart.Y + ((float)missile.Range) * (float)Math.Sin(tiedBlip.Rotation + Math.PI * -0.5 - (missile.ScanArc * 0.5)));
+                    predictedPosStart.X + (missile.Range) * (float)Math.Cos(tiedBlip.Rotation + Math.PI * -0.5 - (missile.ScanArc * 0.5)),
+                    predictedPosStart.Y + (missile.Range) * (float)Math.Sin(tiedBlip.Rotation + Math.PI * -0.5 - (missile.ScanArc * 0.5)));
                 var posEndRight = Vector2.Create(
-                    predictedPosStart.X + ((float)missile.Range) * (float)Math.Cos(tiedBlip.Rotation + Math.PI * -0.5 + (missile.ScanArc * 0.5)),
-                    predictedPosStart.Y + ((float)missile.Range) * (float)Math.Sin(tiedBlip.Rotation + Math.PI * -0.5+ (missile.ScanArc * 0.5)));
+                    predictedPosStart.X + (missile.Range) * (float)Math.Cos(tiedBlip.Rotation + Math.PI * -0.5 + (missile.ScanArc * 0.5)),
+                    predictedPosStart.Y + (missile.Range) * (float)Math.Sin(tiedBlip.Rotation + Math.PI * -0.5+ (missile.ScanArc * 0.5)));
                 var predictedPosLeft = new NetCoordinates(missile.Uid, posEndLeft);
                 var predictedPosRight = new NetCoordinates(missile.Uid, posEndRight);
                 _cachedMissileData.Add(new(missile.Uid, predictedPosStart, predictedPosLeft, colorArcs));

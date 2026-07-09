@@ -117,18 +117,31 @@ public sealed partial class RadarBlipsSystem : EntitySystem
         // populate the cached list instead of allocating a new one each frame
         foreach (var missile in _missiles)
         {
-            var coord = GetCoordinates(missile.Start);
+            var tiedBlip = _blips.FirstOrDefault(x => x.Uid == missile.Uid);
+            var coord = tiedBlip.Position;
+            var color = Color.FromHex("#00AACC");
+            var colorArcs = Color.FromHex("#FF0040");
 
-            if (!coord.IsValid(EntityManager))
-                continue;
-
-            var predictedPosStart = new EntityCoordinates(coord.EntityId, coord.Position + missile.Vel * (float)(_timing.CurTime - _lastUpdatedTime).TotalSeconds);
+            var predictedPosStart = new NetCoordinates(missile.Uid, coord.Position + tiedBlip.Vel * (float)(_timing.CurTime - _lastUpdatedTime).TotalSeconds);
             var posEnd = Vector2.Create(
-                predictedPosStart.X + ((float)missile.Range) * (float)Math.Cos(missile.Rotation + Math.PI * -0.5),
-                predictedPosStart.Y + ((float)missile.Range) * (float)Math.Sin(missile.Rotation + Math.PI * -0.5));
-            var predictedPosEnd = new EntityCoordinates(coord.EntityId, posEnd);
+                predictedPosStart.X + ((float)missile.Range / 2) * (float)Math.Cos(tiedBlip.Rotation + Math.PI * -0.5),
+                predictedPosStart.Y + ((float)missile.Range / 2) * (float)Math.Sin(tiedBlip.Rotation + Math.PI * -0.5));
+            var predictedPosEnd = new NetCoordinates(missile.Uid, posEnd);
 
-            _cachedMissileData.Add(new(missile.Uid, predictedPosStart, predictedPosEnd, missile.Color));
+            _cachedMissileData.Add(new(missile.Uid, predictedPosStart, predictedPosEnd, color));
+            if (missile.ScanArc > 0)
+            {
+                var posEndLeft = Vector2.Create(
+                    predictedPosStart.X + ((float)missile.Range) * (float)Math.Cos(tiedBlip.Rotation + Math.PI * -0.5 - (missile.ScanArc * 0.5)),
+                    predictedPosStart.Y + ((float)missile.Range) * (float)Math.Sin(tiedBlip.Rotation + Math.PI * -0.5 - (missile.ScanArc * 0.5)));
+                var posEndRight = Vector2.Create(
+                    predictedPosStart.X + ((float)missile.Range) * (float)Math.Cos(tiedBlip.Rotation + Math.PI * -0.5 + (missile.ScanArc * 0.5)),
+                    predictedPosStart.Y + ((float)missile.Range) * (float)Math.Sin(tiedBlip.Rotation + Math.PI * -0.5+ (missile.ScanArc * 0.5)));
+                var predictedPosLeft = new NetCoordinates(missile.Uid, posEndLeft);
+                var predictedPosRight = new NetCoordinates(missile.Uid, posEndRight);
+                _cachedMissileData.Add(new(missile.Uid, predictedPosStart, predictedPosLeft, colorArcs));
+                _cachedMissileData.Add(new(missile.Uid, predictedPosStart, predictedPosRight, colorArcs));
+            }
         }
 
         return _cachedMissileData;
@@ -158,7 +171,7 @@ public record struct BlipData
 public record struct MissileVectorData
 (
     NetEntity NetUid,
-    EntityCoordinates PositionStart,
-    EntityCoordinates PositionEnd,
+    NetCoordinates PositionStart,
+    NetCoordinates PositionEnd,
     Color Color
 );

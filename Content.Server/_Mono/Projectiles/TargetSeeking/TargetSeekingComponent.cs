@@ -84,24 +84,6 @@ public sealed partial class TargetSeekingComponent : Component
     /// Whether seeking has been disabled (e.g., after entering an enemy grid).
     /// </summary>
     public bool SeekingDisabled;
-
-    /// <summary>
-    /// Color for radar line signature (if it has one) when it's not locked to any target.
-    /// </summary>
-    [DataField]
-    public Color IdleColor = Color.FromHex("#00AACC");
-
-    /// <summary>
-    /// Color for scanning arc lines
-    /// </summary>
-    [DataField]
-    public Color ArcLinesColor = Color.FromHex("#FF0000");
-
-    /// <summary>
-    /// Thickness.
-    /// </summary>
-    [DataField]
-    public float ArcLinesThickness = 0.1f;
 }
 
 /// <summary>

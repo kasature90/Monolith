@@ -931,10 +931,8 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
         var missileLines = _blips.GetMissileLines();
         foreach (var line in missileLines)
         {
-            var startPosWc = _transform.ToMapCoordinates(line.PositionStart);
-            var startEndWc = _transform.ToMapCoordinates(line.PositionEnd);
-            var startPos = new Vector2(startPosWc.X, startPosWc.Y);
-            var startEnd = new Vector2(startEndWc.X, startEndWc.Y);
+            var startPos = new Vector2(line.PositionStart.X, line.PositionStart.Y);
+            var startEnd = new Vector2(line.PositionEnd.X, line.PositionEnd.Y);
             var startPosInView = Vector2.Transform(startPos, worldToView);
             var endPosInView = Vector2.Transform(startEnd, worldToView);
 

@@ -131,33 +131,14 @@ public sealed partial class RadarBlipSystem : EntitySystem
                             configIdx,
                             gridConfigIdx));
 
-            if (TryComp<TargetSeekingComponent>(blipUid, out var seeker))
+            var missileQuery = EntityQueryEnumerator<TargetSeekingComponent, RadarBlipComponent, TransformComponent>();
+            while (missileQuery.MoveNext(out var missile, out var seeker, out var missileBlip, out var missileBlipXform))
             {
-                var missileRotation = _xform.GetWorldRotation(blipXform);
-                var missileArcOffset = MathHelper.DegreesToRadians(seeker.ScanArc / 2);
-                    _tempMissileCache.Add(new(netBlipUid,
-                        GetNetCoordinates(coord),
+                var netMissileUid = GetNetEntity(missile);
+                var missileArc = MathHelper.DegreesToRadians(seeker.ScanArc);
+                    _tempMissileCache.Add(new(netMissileUid,
                         seeker.MaxSpeed * 0.2,
-                        missileRotation,
-                        blipVelocity,
-                        seeker.IdleColor));
-
-                    if (seeker.ScanArc > 0) // simple check to not draw lines if it doesnt scan (such as unguided rockets using it for constant acceleration)
-                    {
-                        _tempMissileCache.Add(new(netBlipUid,
-                            GetNetCoordinates(coord),
-                            seeker.MaxSpeed * 0.3,
-                            missileRotation - missileArcOffset,
-                            blipVelocity,
-                            seeker.ArcLinesColor));
-
-                        _tempMissileCache.Add(new(netBlipUid,
-                            GetNetCoordinates(coord),
-                            seeker.MaxSpeed * 0.3,
-                            missileRotation + missileArcOffset,
-                            blipVelocity,
-                            seeker.ArcLinesColor));
-                    }
+                        missileArc));
             }
         }
     }

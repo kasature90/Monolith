@@ -91,11 +91,8 @@ public record struct BlipNetData
 public record struct MissileVectorNetData
 (
     NetEntity Uid,
-    NetCoordinates Start,
     double Range,
-    Angle Rotation,
-    Vector2 Vel,
-    Color Color
+    Angle ScanArc
 );
 
 [Serializable, NetSerializable]

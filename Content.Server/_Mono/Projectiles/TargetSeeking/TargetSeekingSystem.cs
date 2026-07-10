@@ -1,5 +1,4 @@
 using System.Numerics;
-using Content.Server._Mono.Radar;
 using Content.Shared.Interaction;
 using Content.Shared.Projectiles;
 using Robust.Server.GameObjects;

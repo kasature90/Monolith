@@ -1,5 +1,3 @@
-using System.Numerics;
-
 namespace Content.Server._Mono.Projectiles.TargetSeeking;
 
 /// <summary>

@@ -130,16 +130,16 @@ public sealed partial class RadarBlipSystem : EntitySystem
                             rotation,
                             configIdx,
                             gridConfigIdx));
+        }
 
-            var missileQuery = EntityQueryEnumerator<TargetSeekingComponent, RadarBlipComponent, TransformComponent>();
-            while (missileQuery.MoveNext(out var missile, out var seeker, out var missileBlip, out var missileBlipXform))
-            {
-                var netMissileUid = GetNetEntity(missile);
-                var missileArc = MathHelper.DegreesToRadians(seeker.ScanArc);
-                    _tempMissileCache.Add(new(netMissileUid,
-                        (float)(seeker.MaxSpeed * 0.2),
-                        missileArc));
-            }
+        var missileQuery = EntityQueryEnumerator<TargetSeekingComponent, RadarBlipComponent, TransformComponent>();
+        while (missileQuery.MoveNext(out var missile, out var seeker, out var missileBlip, out var missileBlipXform))
+        {
+            var netMissileUid = GetNetEntity(missile);
+            var missileArc = MathHelper.DegreesToRadians(seeker.ScanArc);
+            _tempMissileCache.Add(new(netMissileUid,
+                (float)(seeker.MaxSpeed * 0.2),
+                missileArc));
         }
     }
 
@@ -174,7 +174,6 @@ public sealed partial class RadarBlipSystem : EntitySystem
         var radarXform = Transform(uid);
 
         var hitscanQuery = EntityQueryEnumerator<HitscanRadarComponent>();
-        var scanArcsQuery = EntityQueryEnumerator<TargetSeekingComponent>();
 
         while (hitscanQuery.MoveNext(out var hitscanUid, out var hitscan))
         {

@@ -2,7 +2,7 @@
 
 - type: vessel
   id: ZephyrEC
-  parent: BaseVesselAntag
+  parent: BaseVessel
   name: TSF-SKR Zephyr-EC
   description: A Zephyr w/ an TSFN-EC overhaul package, converting it into a light unmanned drone.
   limit: 8

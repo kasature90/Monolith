@@ -765,7 +765,7 @@
       amount: 1
 
 - type: entity
-  name: LA/53 Molot (7.62x51mm)
+  name: PD-VI LA/53 Molot (7.62x51mm)
   parent: BaseWeaponRifle
   id: WeaponRifleMolot
   description: "Hard-hitting rifle firing 7.62x51mm for PDV Janissaries. Good firerate, and exceptional muzzle velocity."

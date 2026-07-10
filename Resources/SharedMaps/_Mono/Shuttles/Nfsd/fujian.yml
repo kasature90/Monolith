@@ -12332,7 +12332,7 @@ entities:
     - type: Transform
       pos: -9.431575,20.458296
       parent: 1
-- proto: TSFCarrierComputer
+- proto: TSFCarrierComputerFujian
   entities:
   - uid: 1619
     components:

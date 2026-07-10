@@ -63,7 +63,7 @@
     - QJ340
 
 - type: entity
-  id: TSFCarrierComputer
+  id: TSFCarrierComputerFujian
   parent: BaseCarrierComputer
   name: TSF fujian carrier console # Yes it can -hypothetically- carry the same ships as tumour, but it can't carry 4 of them (QJ-340 is really too long!)
   components:

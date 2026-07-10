@@ -342,4 +342,22 @@
   components:
   - type: MaterialStorage
     storage:
-      FuelGradePlasma: 2500
+      FuelGradePlasma: 25000
+
+# identical but different name for larp lol
+- type: entity
+  parent: GeneratorSterling
+  name: RD-540 sterling generator
+  description: A highly inefficient and expensive yet stealthy generator, reverse-engineered from TSF ZQ-340s. Drains plasma like there's no tomorrow, but you can bet on it hiding you thermally.
+  id: GeneratorSterlingPDV
+
+- type: entity
+  parent:
+  - BaseGeneratorShuttle
+  - GeneratorSterlingPDV
+  id: GeneratorSterlingPDVShuttle
+  suffix: Plasma, 40 kW, Ship
+  components:
+  - type: MaterialStorage
+    storage:
+      FuelGradePlasma: 25000

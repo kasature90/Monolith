@@ -11,6 +11,7 @@
   name: stealth thruster
   parent: [BaseStructureDisableToolUse, ThrusterNfsd]
   suffix: TSFMC, Stealth
+  description: A thruster with a reduced drive-plume and thermal output, but significantly less thrust.
   components:
   - type: Sprite
     sprite: _Mono/Structures/Shuttles/thruster_stealth.rsi

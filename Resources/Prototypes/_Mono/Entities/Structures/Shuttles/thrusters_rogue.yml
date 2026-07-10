@@ -16,7 +16,7 @@
   description: A thruster with a reduced drive-plume and thermal output, but significantly less thrust.
   components:
   - type: Sprite
-    sprite: _Mono/Structures/Shuttles/thrusterrouge_stealth.rsi
+    sprite: _Mono/Structures/Shuttles/thrusterrogue_stealth.rsi
   - type: Anchorable
     flags: Anchorable
   - type: Thruster

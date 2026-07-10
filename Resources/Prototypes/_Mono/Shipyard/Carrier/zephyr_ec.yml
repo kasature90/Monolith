@@ -6,7 +6,7 @@
   name: TSF-SKR Zephyr-EC
   description: A Zephyr w/ an TSFN-EC overhaul package, converting it into a light unmanned drone.
   limit: 8
-  limit: 12
+  hyperwarLimit: 12
   price: 19600
   category: Small
   group: Custom

@@ -4,7 +4,7 @@ meta:
   engineVersion: 277.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/11/2026 22:54:35
+  time: 07/11/2026 22:55:45
   entityCount: 4177
 maps: []
 grids:
@@ -26005,31 +26005,31 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 21.5,-56.5
       parent: 1
-- proto: WeaponTurretCyrexa
+- proto: WeaponTurretHades
   entities:
   - uid: 4147
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: 9.5,-39.5
+      pos: 10.5,-42.5
       parent: 1
   - uid: 4148
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
-      pos: -9.5,-42.5
+      pos: -8.5,-39.5
       parent: 1
   - uid: 4149
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
-      pos: -8.5,-39.5
+      pos: -9.5,-42.5
       parent: 1
   - uid: 4150
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: 10.5,-42.5
+      pos: 9.5,-39.5
       parent: 1
 - proto: WeaponTurretPaladinInfinite
   entities:

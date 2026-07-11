@@ -43,15 +43,14 @@
         - type: StationJobs
           availableJobs:
             Sheriff: [ 0, 1 ]
-            Bailiff: [ 0, 2 ]
-            SeniorOfficer: [ 0, 4 ]
+            Bailiff: [ 0, 1 ]
+            SeniorOfficer: [ 0, 2 ]
             Brigmedic: [ 0, 2 ]
             Deputy: [ 0, -1 ]
             TsfEngineer: [ 0, 2 ]
             TsfBorg: [ 0, 2 ]
           tags:
-          - HeadOfPersonnel
-          - HeadOfSecurity
+          - CentralCommand
         - type: StationDeadDropReporting
           messageSet: Nfsd
         - type: StationDeadDropHintExempt

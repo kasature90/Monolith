@@ -96,3 +96,40 @@
   - NocturineChemistryBottle
   - WeaponSubMachineGunMla73
   - Magazine635x40mmCaselessBig
+
+# PDV Tarkhan
+
+- type: thiefBackpackSet # shotgun set
+  id: KitSelectorPDVTarkhanBreacher
+  name: selectable-set-pdvtarkhan-breacher-kit-name
+  description: selectable-set-pdvtarkhan-breacher-kit-desc
+  sprite:
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/flagbearer.rsi
+    state: icon
+  content:
+  - WeaponShotgunFlagbearer
+  - WeaponPistolAnaconda
+  - AmmoBox12_gaugeBuckshot
+  - AmmoBox12_gaugeBuckshot
+  - AmmoBox12_gaugeBuckshot
+  - AmmoBox12_gaugeBuckshot
+  - AccessBreaker
+  - JawsOfLife
+  - MedkitCombatFilled
+
+- type: thiefBackpackSet # rifle set
+  id: KitSelectorPDVTarkhanMolot
+  name: selectable-set-pdvtarkhan-molot-kit-name
+  description: selectable-set-pdvtarkhan-molot-kit-desc
+  sprite:
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/molot.rsi
+    state: icon
+  content:
+  - WeaponRifleMolot
+  - WeaponVT7
+  - Magazine762x51mmFMJ
+  - Magazine762x51mmFMJ
+  - Magazine762x51mmFMJ
+  - Magazine762x51mmFMJ
+  - AccessBreaker
+  - MedkitCombatFilled

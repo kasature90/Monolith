@@ -238,6 +238,34 @@
   - type: PdaBorderColor
     borderColor: "#533980"
 
+- type: entity
+  parent: BasePDVPDA
+  id: PDVTarkhanPDA
+  name: PDV tarkhan PDA
+  components:
+  - type: Pda
+    id: PDVTarkhanIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-tarkhan
+  - type: Geiger # Mono
+    showExamine: true
+    showControl: true
+    isEnabled: true
+    attachedToSuit: true # Mono
+  - type: CartridgeLoader
+    preinstalled:
+    - LedgerCartridge
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NewsReaderCartridge
+    - BountyContractsCartridge
+    - AstroNavCartridge
+  - type: PdaBorderColor
+    borderColor: "#EEEEEE"
+
 
 - type: entity
   parent: BasePDVPDA

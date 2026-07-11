@@ -22,3 +22,11 @@ selectable-set-pdvinfiltrator-sabotage-kit-desc =
 selectable-set-pdvinfiltrator-chameleon-kit-name = Infiltration expert kit
 selectable-set-pdvinfiltrator-chameleon-kit-desc =
     A full set of chameleon gear and espionage tools that are perfect for any imperial spy operating outside the Vanguard's ranks.
+
+selectable-set-pdvtarkhan-shotgun-kit-name = Breacher kit
+selectable-set-pdvtarkhan-shotgun-kit-desc =
+    A kit with a Flagbearer shotgun, 4 boxes, an Anaconda, an access breaker, a jaws of life, and a combat medkit.
+
+selectable-set-pdvtarkhan-molot-kit-name = Rifle kit
+selectable-set-pdvtarkhan-molot-kit-desc =
+    A kit with a Molot rifle, 4 mags, a VT-7 HF blade, an access breaker, and a combat medkit.

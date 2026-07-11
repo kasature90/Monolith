@@ -557,8 +557,10 @@
     sprite: _Mono/Objects/Weapons/Guns/Rifles/wspr_tarkhan_inhands_32x.rsi
   - type: GunWieldBonus
     minAngle: -14
-    maxAngle: -41
+    maxAngle: -47
   - type: Gun
+    minAngle: 14
+    maxAngle: 52
     availableModes:
     - Burst
     - FullAuto
@@ -567,7 +569,7 @@
     burstCooldown: 0.6
     projectileSpeed: 45
     fireRate: 7
-    damageModifier: 0.8
+    damageModifier: 0.9
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/wspr_fire.ogg
   - type: ItemSlots
@@ -592,7 +594,6 @@
           tags:
           - Cartridge762x51mmFMJ
       attachment_optic:
-        startingItem: GunAttachmentOpticErebus8x
         insertSound: /Audio/Items/screwdriver2.ogg
         ejectSound: /Audio/Items/screwdriver2.ogg
         priority: 0

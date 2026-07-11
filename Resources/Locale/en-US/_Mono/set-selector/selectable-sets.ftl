@@ -42,6 +42,14 @@ selectable-set-pdvtarkhan-molot-kit-desc =
     - an access breaker
     - and a combat medkit.
 
+selectable-set-pdvtarkhan-wspr-kit-name = LA/22 Kord kit
+selectable-set-pdvtarkhan-wspr-kit-desc =
+    A kit with:
+    - a LA/22 Kord LMG
+    - 4 boxes of 7.62x51mm
+    - an access breaker
+    - and a combat medkit.
+
 selectable-set-tsfmarsoc-fenghuang-kit-name = Fenghuang kit
 selectable-set-tsfmarsoc-fenghuang-kit-desc =
     A kit with:

@@ -32,6 +32,7 @@
     possibleSets:
     - KitSelectorPDVTarkhanBreacher
     - KitSelectorPDVTarkhanMolot
+    - KitSelectorPDVTarkhanWSPR
     maxSelectedSets: 1
   - type: ActivatableUI
     key: enum.ThiefBackpackUIKey.Key

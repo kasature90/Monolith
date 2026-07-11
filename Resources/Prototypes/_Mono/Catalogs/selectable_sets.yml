@@ -134,6 +134,22 @@
   - AccessBreaker
   - MedkitCombatFilled
 
+- type: thiefBackpackSet # LMG set
+  id: KitSelectorPDVTarkhanWSPR
+  name: selectable-set-pdvtarkhan-wspr-kit-name
+  description: selectable-set-pdvtarkhan-wspr-kit-desc
+  sprite:
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/wspr_tarkhan.rsi
+    state: icon
+  content:
+  - WeaponRifleWSPRTarkhan
+  - AmmoBox762x51mmFMJ
+  - AmmoBox762x51mmFMJ
+  - AmmoBox762x51mmFMJ
+  - AmmoBox762x51mmFMJ
+  - AccessBreaker
+  - MedkitCombatFilled
+
 # TSF MARSOC
 
 - type: thiefBackpackSet # rifle set

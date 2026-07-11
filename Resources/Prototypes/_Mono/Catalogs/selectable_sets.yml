@@ -185,3 +185,34 @@
   - AmmoBoxShenzhenBig
   - JawsOfLife
   - MedkitCombatFilled
+
+- type: thiefBackpackSet # pulse carbine set
+  id: KitSelectorTSFMarsocPulseCarbine
+  name: selectable-set-tsfmarsoc-pulse-kit-name
+  description: selectable-set-tsfmarsoc-pulse-kit-desc
+  sprite:
+    sprite: Objects/Weapons/Guns/Battery/pulse_carbine.rsi
+    state: base
+  content:
+  - WeaponPulseCarbine
+  - PortableRecharger
+  - WeaponEnergyRevolver
+  - JawsOfLife
+  - MedkitCombatFilled
+
+- type: thiefBackpackSet # hailstorm set
+  id: KitSelectorTSFMarsocHailstorm
+  name: selectable-set-tsfmarsoc-hailstorm-kit-name
+  description: selectable-set-tsfmarsoc-hailstorm-kit-desc
+  sprite:
+    sprite: _Mono/Objects/Weapons/Guns/Snipers/shenzhen.rsi
+    state: icon
+  content:
+  - WeaponLauncherMk348
+  - AmmoBox9x19mmFMJ
+  - AmmoBox9x19mmFMJ
+  - AmmoBox9x19mmFMJ
+  - AmmoBox9x19mmFMJ
+  - WeaponEnergyRevolver
+  - JawsOfLife
+  - MedkitCombatFilled

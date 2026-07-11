@@ -329,7 +329,6 @@
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/bigshotgun_fire.ogg
     fireRate: 4
-    damageModifier: 1.2
     selectedMode: FullAuto
     availableModes:
     - FullAuto

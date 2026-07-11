@@ -107,7 +107,7 @@
         - type: StationJobs
           availableJobs:
             Sheriff: [ 1, 1 ]
-            TsfMarsoc: [ 4, 4 ]
+            TsfMarsoc: [ 3, 3 ]
             Bailiff: [ 3, 3 ]
             SeniorOfficer: [ 6, 6 ] # Mono
             Brigmedic: [ 4, 4 ] # Mono

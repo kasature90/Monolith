@@ -67,3 +67,21 @@ selectable-set-tsfmarsoc-shenzhen-kit-desc =
     - a 30rnd box of 13.4x92mm
     - a jaws of life
     - and a combat medkit.
+
+selectable-set-tsfmarsoc-pulse-kit-name = Pulse Carbine kit
+selectable-set-tsfmarsoc-pulse-kit-desc =
+    A kit with:
+    - a retrieved NT-WS Pulse Carbine
+    - a portable recharger
+    - an EG-4 energy magnum
+    - a jaws of life
+    - and a combat medkit.
+
+selectable-set-tsfmarsoc-hailstorm-kit-name = Hailstorm kit
+selectable-set-tsfmarsoc-hailstorm-kit-desc =
+    A kit with:
+    - a retrieved NT-WS Mk.348 hailstorm
+    - 4 boxes of 9x19mm
+    - an EG-4 energy magnum
+    - a jaws of life
+    - and a combat medkit.

@@ -54,6 +54,8 @@
     possibleSets:
     - KitSelectorTSFMarsocFenghuang
     - KitSelectorTSFMarsocShenzhen
+    - KitSelectorTSFMarsocPulseCarbine
+    - KitSelectorTSFMarsocHailstorm
     maxSelectedSets: 1
   - type: ActivatableUI
     key: enum.ThiefBackpackUIKey.Key

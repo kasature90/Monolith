@@ -107,13 +107,13 @@
         - type: StationJobs
           availableJobs:
             Sheriff: [ 1, 1 ]
+            TsfMarsoc: [ 0, 4 ]
             Bailiff: [3, 3 ]
             SeniorOfficer: [ 5, 5 ] # Mono
             Brigmedic: [ 2, 2 ] # Mono
             Deputy: [ -1, -1 ] # Mono
             TsfEngineer: [ 2, 2 ]
             TsfBorg: [ 2, 2 ]
-            TsfMarsoc: [ 0, 4 ]
           tags:
           - HeadOfPersonnel
           - HeadOfSecurity

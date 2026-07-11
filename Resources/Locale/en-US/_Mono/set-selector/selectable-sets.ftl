@@ -23,18 +23,39 @@ selectable-set-pdvinfiltrator-chameleon-kit-name = Infiltration expert kit
 selectable-set-pdvinfiltrator-chameleon-kit-desc =
     A full set of chameleon gear and espionage tools that are perfect for any imperial spy operating outside the Vanguard's ranks.
 
-selectable-set-pdvtarkhan-shotgun-kit-name = Flagbearer kit
-selectable-set-pdvtarkhan-shotgun-kit-desc =
-    A kit with a Flagbearer shotgun, 4 boxes, an Anaconda, an access breaker, a jaws of life, and a combat medkit.
+selectable-set-pdvtarkhan-breacher-kit-name = Flagbearer kit
+selectable-set-pdvtarkhan-breacher-kit-desc =
+    A kit with:
+    - a Flagbearer shotgun
+    - 4 boxes of Buckshot
+    - an Anaconda
+    - an access breaker
+    - a jaws of life
+    - and a combat medkit.
 
 selectable-set-pdvtarkhan-molot-kit-name = Molot kit
 selectable-set-pdvtarkhan-molot-kit-desc =
-    A kit with a Molot rifle, 4 mags, a VT-7 HF blade, an access breaker, and a combat medkit.
+    A kit with:
+    - a Molot rifle
+    - 4 mags of 7.62x51mm
+    - a VT-7 HF blade
+    - an access breaker
+    - and a combat medkit.
 
 selectable-set-tsfmarsoc-fenghuang-kit-name = Fenghuang kit
 selectable-set-tsfmarsoc-fenghuang-kit-desc =
-    A kit with a Fenghuang rifle, 4 mags, a vertical foregrip, a jaws of life, and a combat medkit.
+    A kit with:
+    - a Fenghuang rifle
+    - 4 mags of 8x65mm
+    - a vertical foregrip
+    - a jaws of life
+    - and a combat medkit.
 
 selectable-set-tsfmarsoc-shenzhen-kit-name = Shenzhen kit
 selectable-set-tsfmarsoc-shenzhen-kit-desc =
-    A kit with a Shenzhen coilgun AMR, 4 mags, a large ammunition box, a jaws of life, and a combat medkit.
+    A kit with:
+    - a Shenzhen coilgun AMR
+    - 4 mags of 13.4x92mm
+    - a 30rnd box of 13.4x92mm
+    - a jaws of life
+    - and a combat medkit.

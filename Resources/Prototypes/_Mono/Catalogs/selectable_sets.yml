@@ -133,3 +133,39 @@
   - Magazine762x51mmFMJ
   - AccessBreaker
   - MedkitCombatFilled
+
+# TSF MARSOC
+
+- type: thiefBackpackSet # rifle set
+  id: KitSelectorTSFMarsocFenghuang
+  name: selectable-set-tsfmarsoc-fenghuang-kit-name
+  description: selectable-set-tsfmarsoc-fenghuang-kit-desc
+  sprite:
+    sprite: _Mono/Objects/Weapons/Guns/LMGs/fenghuang.rsi
+    state: icon
+  content:
+  - WeaponLMGMR8B
+  - Magazine8x65mmSKR
+  - Magazine8x65mmSKR
+  - Magazine8x65mmSKR
+  - Magazine8x65mmSKR
+  - GunAttachmentGripErebusVFG
+  - JawsOfLife
+  - MedkitCombatFilled
+
+- type: thiefBackpackSet # amr set
+  id: KitSelectorTSFMarsocShenzhen
+  name: selectable-set-tsfmarsoc-shenzhen-kit-name
+  description: selectable-set-tsfmarsoc-shenzhen-kit-desc
+  sprite:
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/molot.rsi
+    state: icon
+  content:
+  - WeaponAMRShenzhen
+  - MagazineShenzhen
+  - MagazineShenzhen
+  - MagazineShenzhen
+  - MagazineShenzhen
+  - AmmoBoxShenzhenBig
+  - JawsOfLife
+  - MedkitCombatFilled

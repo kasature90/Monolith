@@ -11,14 +11,12 @@
     department: Antag
     time: 108000 # 30 hours # mono
   startingGear: PDVTarkhanGear
-  alwaysUseSpawner: true
-  hideConsoleVisibility: true
-  canBeAntag: true
-  icon: "JobIconPDVTarkhan"
+  icon: JobIconPDVTarkhan
   supervisors: job-supervisors-nobody
   weight: 45
   displayWeight: 45
   assignedCompany: PDV
+  canBeAntag: false
   setPreference: true
   access:
   - Pirate
@@ -59,6 +57,3 @@
     neck: ClothingNeckIFFOrange
   inhand:
   - UndeterminedPDVTarkhanKit
-  storage:
-    back:
-    - RadioHandheldNF

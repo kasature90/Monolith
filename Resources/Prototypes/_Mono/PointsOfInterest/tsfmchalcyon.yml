@@ -113,6 +113,7 @@
             Deputy: [ -1, -1 ] # Mono
             TsfEngineer: [ 2, 2 ]
             TsfBorg: [ 2, 2 ]
+            TsfMarsoc: [ 0, 4 ]
           tags:
           - HeadOfPersonnel
           - HeadOfSecurity

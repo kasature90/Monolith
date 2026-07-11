@@ -93,6 +93,7 @@
             PDVInfiltrator: [ 2, 2 ]
             Pirate: [ -1, -1 ]
             PdvBorg: [ 2, 2 ]
+            PDVTarkhan: [ 0, 4 ]
           tags:
           - GrandVizier
         - type: StationDeadDropReporting

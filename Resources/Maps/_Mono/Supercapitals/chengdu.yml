@@ -4,7 +4,7 @@ meta:
   engineVersion: 277.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/11/2026 22:55:45
+  time: 07/12/2026 14:11:18
   entityCount: 4177
 maps: []
 grids:
@@ -1365,10 +1365,10 @@ entities:
             507: 5,-76
     - type: SpreaderGrid
       spreadQueues:
-        Smoke: []
+        MetalFoam: []
         Kudzu: []
         Puddle: []
-        MetalFoam: []
+        Smoke: []
     - type: GridAtmosphere
       version: 2
       data:
@@ -25955,30 +25955,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -9.5,-24.5
       parent: 1
-  - uid: 4139
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -4.5,-6.5
-      parent: 1
-  - uid: 4140
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -5.5,-8.5
-      parent: 1
-  - uid: 4141
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 5.5,-6.5
-      parent: 1
-  - uid: 4142
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 6.5,-8.5
-      parent: 1
 - proto: WeaponTurretASM220Station
   entities:
   - uid: 4143
@@ -26016,8 +25992,8 @@ entities:
   - uid: 4148
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -8.5,-39.5
+      rot: 1.5707963267948966 rad
+      pos: 9.5,-39.5
       parent: 1
   - uid: 4149
     components:
@@ -26028,8 +26004,46 @@ entities:
   - uid: 4150
     components:
     - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -8.5,-39.5
+      parent: 1
+  - uid: 4156
+    components:
+    - type: Transform
       rot: 1.5707963267948966 rad
-      pos: 9.5,-39.5
+      pos: 11.5,-45.5
+      parent: 1
+  - uid: 4157
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -10.5,-45.5
+      parent: 1
+- proto: WeaponTurretLongbow
+  entities:
+  - uid: 4139
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 6.5,-8.5
+      parent: 1
+  - uid: 4140
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 5.5,-6.5
+      parent: 1
+  - uid: 4141
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -5.5,-8.5
+      parent: 1
+  - uid: 4142
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -4.5,-6.5
       parent: 1
 - proto: WeaponTurretPaladinInfinite
   entities:
@@ -26062,26 +26076,14 @@ entities:
   - uid: 4155
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 12.5,-48.5
-      parent: 1
-  - uid: 4156
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 11.5,-45.5
-      parent: 1
-  - uid: 4157
-    components:
-    - type: Transform
       rot: -1.5707963267948966 rad
-      pos: -10.5,-45.5
+      pos: -11.5,-48.5
       parent: 1
   - uid: 4158
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -11.5,-48.5
+      rot: 1.5707963267948966 rad
+      pos: 12.5,-48.5
       parent: 1
 - proto: WhiteCatwalkMono
   entities:

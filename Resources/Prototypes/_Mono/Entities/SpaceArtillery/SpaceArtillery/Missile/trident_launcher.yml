@@ -65,4 +65,4 @@
     infiniteUnspawned: True
     proto: Asm220TorpedoHE
   - type: ShipGunClass
-    shipClass: Superheavy
+    shipClass: Heavy

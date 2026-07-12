@@ -5,7 +5,7 @@
 # Notes: Goida.
 
 - type: pointOfInterest
-  id: Jupiter
+  id: Jupiter_HW
   parent: [BaseMobilePOI, BaseRepairablePOI]
   name: 'PDV Jupiter'
   minimumDistance: 12000
@@ -20,7 +20,7 @@
     readOnly: false
 
 - type: gameMap
-  id: Jupiter
+  id: Jupiter_HW
   mapName: 'PDV Jupiter'
   mapPath: /Maps/_Mono/Supercapitals/jupiter_hw.yml
   minPlayers: 0

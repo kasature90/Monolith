@@ -40,11 +40,9 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
     [Dependency] private StoreSystem _store = default!;
     [Dependency] private TagSystem _tag = default!;
 
-    [ValidatePrototypeId<CurrencyPrototype>]
-    private const string TelecrystalCurrencyPrototype = "Telecrystal";
+    private static readonly ProtoId<TagPrototype> TelecrystalCurrencyPrototype = "Telecrystal"; // Mono - cleanup
 
-    [ValidatePrototypeId<TagPrototype>]
-    private const string NukeOpsUplinkTagPrototype = "NukeOpsUplink";
+    private static readonly ProtoId<TagPrototype> NukeOpsUplinkTagPrototype = "NukeOpsUplink"; // Mono - cleanup
 
     // Mono start
     private static readonly ProtoId<TagPrototype> TsfStationTagPrototype = "TsfStation";
@@ -92,7 +90,6 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
             return;
 
         component.TargetStation = RobustRandom.Pick(eligible);
-        Log.Info("Target station: " + component.TargetStation);
     }
 
     #region Event Handlers
@@ -135,12 +132,14 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
                         nukeops.WinConditions.Add(WinCondition.NukeExplodedOnTSFStation);
                         SetWinType((uid, nukeops), WinType.TSFMajor);
                         _roundEndSystem.EndRound();
+                        return;
                     }
                     if(_tag.HasTag(tags, TsfStationTagPrototype))
                     {
                         nukeops.WinConditions.Add(WinCondition.NukeExplodedOnPDVStation);
                         SetWinType((uid, nukeops), WinType.PDVMajor);
                         _roundEndSystem.EndRound();
+                        return;
                     }
                 }
 
@@ -199,7 +198,7 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
         if (ent.Comp.WinType == WinType.OpsMajor || ent.Comp.WinType == WinType.CrewMajor)
             return;
 
-        // Mono - ignore if TSF/PDV major
+        // Mono - ignore if TSF/PDV major or neutral. I don't care where my disk is.
         if (ent.Comp.WinType == WinType.PDVMajor || ent.Comp.WinType == WinType.TSFMajor || ent.Comp.WinType == WinType.Neutral)
             return;
 

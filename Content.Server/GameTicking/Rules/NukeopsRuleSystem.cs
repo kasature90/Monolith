@@ -26,6 +26,7 @@ using Robust.Shared.Utility;
 using System.Linq;
 using Content.Shared.Station.Components;
 using Content.Shared.Store.Components;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -44,6 +45,11 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
 
     [ValidatePrototypeId<TagPrototype>]
     private const string NukeOpsUplinkTagPrototype = "NukeOpsUplink";
+
+    // Mono start
+    private static readonly ProtoId<TagPrototype> TsfStationTagPrototype = "TsfStation";
+    private static readonly ProtoId<TagPrototype> PdvStationTagPrototype = "PdvStation";
+    // Mono end
 
     public override void Initialize()
     {
@@ -86,6 +92,7 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
             return;
 
         component.TargetStation = RobustRandom.Pick(eligible);
+        Log.Info("Target station: " + component.TargetStation);
     }
 
     #region Event Handlers
@@ -103,14 +110,15 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
             args.AddLine(text);
         }
 
-        args.AddLine(Loc.GetString("nukeops-list-start"));
+        /*
+        args.AddLine(Loc.GetString("nukeops-list-start")); // Mono - Unneeded. Lazy.
 
         var antags =_antag.GetAntagIdentifiers(uid);
 
         foreach (var (_, sessionData, name) in antags)
         {
             args.AddLine(Loc.GetString("nukeops-list-name-user", ("name", name), ("user", sessionData.UserName)));
-        }
+        }*/ // Mono - Unneeded. Lazy.
     }
 
     private void OnNukeExploded(NukeExplodedEvent ev)
@@ -120,6 +128,22 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
         {
             if (ev.OwningStation != null)
             {
+                if (TryComp<TagComponent>(ev.OwningStation, out var tags))
+                {
+                    if(_tag.HasTag(tags, TsfStationTagPrototype))
+                    {
+                        nukeops.WinConditions.Add(WinCondition.NukeExplodedOnTSFStation);
+                        SetWinType((uid, nukeops), WinType.TSFMajor);
+                        _roundEndSystem.EndRound();
+                    }
+                    if(_tag.HasTag(tags, PdvStationTagPrototype))
+                    {
+                        nukeops.WinConditions.Add(WinCondition.NukeExplodedOnPDVStation);
+                        SetWinType((uid, nukeops), WinType.PDVMajor);
+                        _roundEndSystem.EndRound();
+                    }
+                }
+
                 if (ev.OwningStation == GetOutpost(uid))
                 {
                     nukeops.WinConditions.Add(WinCondition.NukeExplodedOnNukieOutpost);
@@ -175,6 +199,10 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
         if (ent.Comp.WinType == WinType.OpsMajor || ent.Comp.WinType == WinType.CrewMajor)
             return;
 
+        // Mono - ignore if TSF/PDV major
+        if (ent.Comp.WinType == WinType.PDVMajor || ent.Comp.WinType == WinType.TSFMajor || ent.Comp.WinType == WinType.Neutral)
+            return;
+
         var nukeQuery = AllEntityQuery<NukeComponent, TransformComponent>();
         var centcomms = _emergency.GetCentcommMaps();
 
@@ -211,13 +239,15 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
         if (_antag.AllAntagsAlive(ent.Owner))
         {
             SetWinType(ent, WinType.OpsMinor);
-            ent.Comp.WinConditions.Add(WinCondition.AllNukiesAlive);
+            // ent.Comp.WinConditions.Add(WinCondition.AllNukiesAlive); // Mono - Unneeded. Lazy.
             return;
         }
 
+        /*
         ent.Comp.WinConditions.Add(_antag.AnyAliveAntags(ent.Owner)
             ? WinCondition.SomeNukiesAlive
             : WinCondition.AllNukiesDead);
+        */// Mono - Unneeded. Lazy.
 
         var diskAtCentCom = false;
         var diskQuery = AllEntityQuery<NukeDiskComponent, TransformComponent>();
@@ -233,6 +263,7 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
 
         // If the disk is currently at Central Command, the crew wins - just slightly.
         // This also implies that some nuclear operatives have died.
+        /*
         SetWinType(ent,
             diskAtCentCom
             ? WinType.CrewMinor
@@ -240,6 +271,7 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
         ent.Comp.WinConditions.Add(diskAtCentCom
             ? WinCondition.NukeDiskOnCentCom
             : WinCondition.NukeDiskNotOnCentCom);
+        */// Mono - Unneeded. Lazy.
     }
 
     private void OnNukeDisarm(NukeDisarmSuccessEvent ev)

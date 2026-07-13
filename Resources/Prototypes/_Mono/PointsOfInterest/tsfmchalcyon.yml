@@ -72,7 +72,7 @@
   name: 'TSFMC Flagship Halcyon'
   minimumDistance: 4500
   maximumDistance: 5500
-  spawnGamePreset: [ MonoRogueTSFHyperwar ]
+  spawnGamePreset: [ MonoRogueTSFHyperwar, MonoRogueTSFHyperwarNuclear ]
   spawnGroup: Required
   gridPath: /Maps/_Mono/POI/tsfmchalcyon_hw.yml
   addComponents:
@@ -94,9 +94,16 @@
       gridComponents:
       - type: VesselInfo
         description: "A mothballed battleship-turned-FOB, and Home of the TSFMC operations."
+      - type: Tag
+        tags:
+        - TsfStation
       components:
         - type: StationNameSetup
           mapNameTemplate: 'TSFMC Flagship Halcyon'
+        - type: StationEventEligible
+        - type: NpcFactionMember
+          factions:
+          - TSFMC
         - type: ExtraStationInformation
           icon:
             sprite: _NF/Structures/Decoration/banner.rsi

@@ -59,7 +59,7 @@
   name: 'PDV Helios Fortress'
   minimumDistance: 7500
   maximumDistance: 9500
-  spawnGamePreset: [ MonoRogueTSFHyperwar ]
+  spawnGamePreset: [ MonoRogueTSFHyperwar, MonoRogueTSFHyperwarNuclear ]
   spawnGroup: Required
   gridPath: /Maps/_Mono/POI/pdvhelios_hw.yml
   addComponents:
@@ -78,9 +78,16 @@
       gridComponents:
       - type: VesselInfo
         description: "An oppressive imperial aura lurks here. Glory to the Sultan."
+      - type: Tag
+        tags:
+        - PdvStation
       components:
         - type: StationNameSetup
           mapNameTemplate: 'PDV Helio Fortress'
+        - type: StationEventEligible
+        - type: NpcFactionMember
+          factions:
+          - PirateNF
         - type: ExtraStationInformation
           icon: /Textures/_NF/Interface/Pirate/piratelogo.png
           stationSubtext: 'frontier-lobby-pirate-subtext'

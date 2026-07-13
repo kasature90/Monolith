@@ -154,3 +154,14 @@
   - Hyperwar
   - RoundEndRuleHour3
   - PortstrikeAnnounceRuleHour2
+
+- type: gamePreset
+  id: MonoRogueTSFHyperwarNuclear
+  name: mono-roguetsf-hyperwar-nuclear-title
+  description: mono-roguetsf-hyperwar-nuclear-description
+  showInVote: false # AO
+  rules:
+  - NFAdventure
+  - HyperwarNukeops
+  - RoundEndRuleHour3
+  - PortstrikeAnnounceRuleHour2

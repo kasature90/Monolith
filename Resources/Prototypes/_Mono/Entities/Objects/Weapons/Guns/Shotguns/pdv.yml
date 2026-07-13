@@ -49,9 +49,7 @@
   description: A fully-automatic 12 gauge shotgun feeding from a giant built-in drum. 32 round capacity.
   components:
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,5,0
+    size: Ginormous
     sprite: _Mono/Objects/Weapons/Guns/Shotguns/flagbearer_inhands_32x.rsi
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Shotguns/flagbearer.rsi

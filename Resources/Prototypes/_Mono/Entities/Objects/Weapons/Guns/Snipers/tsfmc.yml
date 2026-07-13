@@ -58,7 +58,7 @@
   - type: Clothing
     sprite: _Mono/Objects/Weapons/Guns/Snipers/shenzhen_inhands_32x.rsi
   - type: Item
-    size: Huge
+    size: Ginormous
     sprite: _Mono/Objects/Weapons/Guns/Snipers/shenzhen_inhands_32x.rsi
   - type: StaticPrice
     price: 2400

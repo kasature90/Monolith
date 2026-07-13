@@ -9,5 +9,5 @@
     - operationPrefix
     - operationSuffix
   - type: NukeopsRule
-    roundEndBehaviour: InstantEnd
+    roundEndBehavior: InstantEnd
     canEnableWarOps: false

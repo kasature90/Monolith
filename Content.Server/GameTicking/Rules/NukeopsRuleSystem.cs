@@ -130,13 +130,13 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
             {
                 if (TryComp<TagComponent>(ev.OwningStation, out var tags))
                 {
-                    if(_tag.HasTag(tags, TsfStationTagPrototype))
+                    if(_tag.HasTag(tags, PdvStationTagPrototype))
                     {
                         nukeops.WinConditions.Add(WinCondition.NukeExplodedOnTSFStation);
                         SetWinType((uid, nukeops), WinType.TSFMajor);
                         _roundEndSystem.EndRound();
                     }
-                    if(_tag.HasTag(tags, PdvStationTagPrototype))
+                    if(_tag.HasTag(tags, TsfStationTagPrototype))
                     {
                         nukeops.WinConditions.Add(WinCondition.NukeExplodedOnPDVStation);
                         SetWinType((uid, nukeops), WinType.PDVMajor);

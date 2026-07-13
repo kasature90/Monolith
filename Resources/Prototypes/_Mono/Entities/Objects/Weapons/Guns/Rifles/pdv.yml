@@ -189,16 +189,19 @@
   - type: ChamberMagazineAmmoProvider # Mono
     soundRack:
       path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: GunWieldBonus
+    minAngle: -3
+    maxAngle: -54
   - type: Gun
-    minAngle: 13
-    maxAngle: 20
+    minAngle: 3
+    maxAngle: 64
     angleIncrease: 5
     angleDecay: 25
-    fireRate: 3
-    burstFireRate: 6
+    fireRate: 6
+    burstFireRate: 12
     burstCooldown: 0.5
     shotsPerBurst: 2
-    selectedMode: Burst
+    selectedMode: FullAuto
     availableModes:
     - FullAuto
     - Burst

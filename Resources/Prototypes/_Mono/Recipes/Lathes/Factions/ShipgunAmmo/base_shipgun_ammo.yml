@@ -50,7 +50,7 @@
   id: BaseHeavyMissileShipgunAmmoRecipe
   abstract: true
   materials:
-    Steel: 3500
+    Steel: 900
     Plasma: 250 # explosive payload
     Glass: 600 # optical seeker
     Gold: 250 # electronics

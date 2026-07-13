@@ -35,6 +35,7 @@
   cost: 15000
   recipeUnlocks:
   - WeaponSubMachineGunC20rRogue
+  - WeaponRifleVympelRogue
   - WeaponRevolverPythonRogue
   - WeaponShotgunSultanPulsar
   - PrintableDirtyBomb

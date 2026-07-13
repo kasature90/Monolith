@@ -2,6 +2,7 @@
   parent: [BaseStructure, StructureWheeled ]
   id: NuclearBombHyperwar
   name: nuclear fission explosive
+  suffix: Hyperwar
   description: You probably shouldn't stick around to see if this is armed. Detonate this on your opponent's main station to win!
   components:
   - type: Transform

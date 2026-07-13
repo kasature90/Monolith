@@ -1,7 +1,7 @@
 - type: entity
   id: CrateMaterialNukeSupplies
   parent: CrateBaseSecure
-  name: nuke supplies crate
+  name: nuclear fission explosive supplies crate
   description: The authentication disk, 4 disk trackers, and the codes. Something has gone very wrong here.
   components:
   - type: Icon

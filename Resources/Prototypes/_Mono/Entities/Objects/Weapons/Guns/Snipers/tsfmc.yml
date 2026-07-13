@@ -98,6 +98,7 @@
     angleIncrease: 27
     angleDecay: 2
     fireRate: 3 # 180 rpm
+    damageModifier: 1.5
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto

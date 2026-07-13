@@ -28,6 +28,7 @@
     minAngle: 27
     maxAngle: 39
     fireRate: 2.25
+    damageModifier: 1.5
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto

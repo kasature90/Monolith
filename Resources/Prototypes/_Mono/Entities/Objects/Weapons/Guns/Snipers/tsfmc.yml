@@ -63,8 +63,8 @@
   - type: StaticPrice
     price: 2400
   - type: SpeedModifiedOnWield
-    walkModifier: 0.5
-    sprintModifier: 0.5
+    walkModifier: 0.3
+    sprintModifier: 0.3
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 7

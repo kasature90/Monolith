@@ -24,7 +24,6 @@
     angleIncrease: 5
     angleDecay: 20
     fireRate: 8
-    damageModifier: 0.9
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mla_fire.ogg
   - type: ChamberMagazineAmmoProvider
@@ -191,6 +190,7 @@
     minAngle: 21
     maxAngle: 32
     shotsPerBurst: 5
+    damageModifier: 0.85
     availableModes:
     - Burst
     - FullAuto

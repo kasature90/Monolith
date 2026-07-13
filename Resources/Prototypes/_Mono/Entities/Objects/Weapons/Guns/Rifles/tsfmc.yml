@@ -254,7 +254,6 @@
     shotsPerBurst: 4
     fireRate: 7
     projectileSpeed: 42.5 # Mono
-    damageModifier: 0.9
     soundGunshot:
       path: /Audio/_Goobstation/Weapons/Guns/Gunshots/thock.ogg
   - type: ChamberMagazineAmmoProvider

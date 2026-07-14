@@ -75,6 +75,9 @@
     flags: None # 1984
   - type: ItemMiner
     interval: 1 # previously 20
+  - type: PowerConsumer
+    voltage: High
+    drawRate: 150000
 
 - type: entity
   name: random ores

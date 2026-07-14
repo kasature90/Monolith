@@ -210,6 +210,9 @@
       mask:
       - BulletImpassable
       - Opaque
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
 
 - type: entity
   id: Shrapnel90mmFlak

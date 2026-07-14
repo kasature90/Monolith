@@ -40,7 +40,7 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
     [Dependency] private StoreSystem _store = default!;
     [Dependency] private TagSystem _tag = default!;
 
-    private static readonly ProtoId<TagPrototype> TelecrystalCurrencyPrototype = "Telecrystal"; // Mono - cleanup
+    private static readonly ProtoId<CurrencyPrototype> TelecrystalCurrencyPrototype = "Telecrystal"; // Mono - cleanup
 
     private static readonly ProtoId<TagPrototype> NukeOpsUplinkTagPrototype = "NukeOpsUplink"; // Mono - cleanup
 

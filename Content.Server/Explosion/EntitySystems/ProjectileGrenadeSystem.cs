@@ -57,7 +57,7 @@ public sealed partial class ProjectileGrenadeSystem : EntitySystem
     {
         var grenadeCoord = _transformSystem.GetMapCoordinates(uid);
         var shootCount = 0;
-        var totalCount = component.Container.ContainedEntities.Count + component.UnspawnedCount;
+        var totalCount = component.UnspawnedCount; // Mono - remove container amount check fuck off
         var segmentAngle = 360 / totalCount;
 
         while (TrySpawnContents(grenadeCoord, component, out var contentUid))

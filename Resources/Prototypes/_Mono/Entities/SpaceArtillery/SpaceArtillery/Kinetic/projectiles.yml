@@ -181,7 +181,6 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    deleteOnCollide: false
     damage:
       types:
         Piercing: 70
@@ -197,10 +196,6 @@
     scale: 2.5
     shape: triangle
     radarColor: "#1df5cd"
-  - type: ContainerContainer
-    containers:
-      cluster-payload: !type:Container
-  - type: DeleteOnTrigger
   - type: ProjectileGrenade
     fillPrototype: Shrapnel90mmFlak
     capacity: 12 # lag!
@@ -251,11 +246,11 @@
         - LowImpassable
         hard: False
   - type: RadarBlip
-    scale: 1
+    scale: 2
     shape: circle
     radarColor: "#1df5cd"
   - type: TimedDespawn
-    lifetime: 1
+    lifetime: 0.4
 
 # 140mm
 

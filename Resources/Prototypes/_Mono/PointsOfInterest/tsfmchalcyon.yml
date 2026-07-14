@@ -72,7 +72,7 @@
   name: 'TSFMC Flagship Halcyon'
   minimumDistance: 4500
   maximumDistance: 5500
-  spawnGamePreset: [ MonoRogueTSFHyperwar, MonoRogueTSFHyperwarNuclear ]
+  spawnGamePreset: [ MonoRogueTSFHyperwar ]
   spawnGroup: Required
   gridPath: /Maps/_Mono/POI/tsfmchalcyon_hw.yml
   addComponents:

@@ -59,7 +59,7 @@
   name: 'PDV Helios Fortress'
   minimumDistance: 7500
   maximumDistance: 9500
-  spawnGamePreset: [ MonoRogueTSFHyperwar, MonoRogueTSFHyperwarNuclear ]
+  spawnGamePreset: [ MonoRogueTSFHyperwar ]
   spawnGroup: Required
   gridPath: /Maps/_Mono/POI/pdvhelios_hw.yml
   addComponents:

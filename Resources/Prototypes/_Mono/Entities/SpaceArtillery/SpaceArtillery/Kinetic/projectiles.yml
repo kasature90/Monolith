@@ -196,11 +196,16 @@
     scale: 2.5
     shape: triangle
     radarColor: "#1df5cd"
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: DeleteOnTrigger
   - type: ProjectileGrenade
     fillPrototype: Shrapnel90mmFlak
     capacity: 12 # lag!
     minVelocity: 8
     maxVelocity: 8
+    randomAngle: true
   - type: TriggerOnProximity
     enabled: true
     shape:

@@ -176,7 +176,7 @@ public sealed partial class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleCompon
                 nukeops.WinConditions.Add(WinCondition.NukeExplodedOnIncorrectLocation);
             }
 
-            _roundEndSystem.EndRound();
+            // _roundEndSystem.EndRound(); // Mono - comment out; we have 2 nukes and a end timer at 4 hours
         }
     }
 

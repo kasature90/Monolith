@@ -39,6 +39,7 @@
   id: UniversalShellAmmo
   recipes:
   - 150mmApShellUniversal
+  - 150mmApheShellUniversal
   - 150mmEmpShellUniversal
 
 - type: latheRecipePack

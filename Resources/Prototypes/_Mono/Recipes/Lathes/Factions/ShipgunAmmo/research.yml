@@ -48,6 +48,11 @@
   result: 150mmApShell
 
 - type: latheRecipe
+  id: 150mmApheShellUniversal
+  parent: Base150mmShellAmmoRecipe
+  result: 150mmApheShell
+
+- type: latheRecipe
   id: 150mmEmpShellUniversal
   parent: Base150mmShellAmmoRecipe
   result: 150mmEmpShell

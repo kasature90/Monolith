@@ -185,7 +185,7 @@
       types:
         Piercing: 70
         Structural: 100
-    penetrationThreshold: 2000
+    penetrationThreshold: 500
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/shells.rsi
     layers:

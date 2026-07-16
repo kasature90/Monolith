@@ -30,6 +30,36 @@
   category: cargoproduct-category-name-shipammo
   group: market
 
+- type: cargoProduct
+  id: ArmoryShipAmmo150mmEMP
+  icon:
+    sprite: _Mono/Objects/Storage/Cases/ammocaseheavy.rsi
+    state: icon
+  product: WeaponCaseHeavyAmmo150EMP
+  cost: 6000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
+- type: cargoProduct
+  id: ArmoryShipAmmo150mmAP
+  icon:
+    sprite: _Mono/Objects/Storage/Cases/ammocaseheavy.rsi
+    state: icon
+  product: WeaponCaseHeavyAmmo150AP
+  cost: 6000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
+- type: cargoProduct
+  id: ArmoryShipAmmo150mmAPHE
+  icon:
+    sprite: _Mono/Objects/Storage/Cases/ammocaseheavy.rsi
+    state: icon
+  product: WeaponCaseHeavyAmmo150APHE
+  cost: 6000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
 # Mag/Drum reload
 
 - type: cargoProduct

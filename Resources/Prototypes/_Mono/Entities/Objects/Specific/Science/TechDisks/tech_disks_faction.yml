@@ -146,6 +146,7 @@
     recipes:
     - CharonSlugUniversal
     - CharonApheSlugUniversal
+    - CharonEmpSlugUniversal
     - ASM220TorpedoHEUniversal
     - ASM220TorpedoECMUniversal
     - 150mmApShellUniversal
@@ -172,6 +173,7 @@
     recipes:
     - CharonSlugUniversal
     - CharonApheSlugUniversal
+    - CharonEmpSlugUniversal
     - ASM220TorpedoHEUniversal
     - ASM220TorpedoECMUniversal
     - ASM220TorpedoLOSATUniversal

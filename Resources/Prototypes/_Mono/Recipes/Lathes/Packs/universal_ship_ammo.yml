@@ -36,6 +36,7 @@
   recipes:
   - CharonSlugUniversal
   - CharonApheSlugUniversal
+  - CharonEmpSlugUniversal
   - CharonSubnuclearSlugUniversal
 
 - type: latheRecipePack

@@ -1,5 +1,6 @@
 # Cartridge reload
 
+# Charon slugs
 - type: cargoProduct
   id: ArmoryShipAmmoCharon
   icon:
@@ -21,6 +22,17 @@
   group: market
 
 - type: cargoProduct
+  id: ArmoryShipAmmoCharonEMP
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBoxCharonEMP
+  cost: 7500
+  category: cargoproduct-category-name-shipammo
+  group: market
+
+# R300 shells
+- type: cargoProduct
   id: ArmoryShipAmmoR300
   icon:
     sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
@@ -30,6 +42,7 @@
   category: cargoproduct-category-name-shipammo
   group: market
 
+# Tarnyx shells
 - type: cargoProduct
   id: ArmoryShipAmmo150mmEMP
   icon:

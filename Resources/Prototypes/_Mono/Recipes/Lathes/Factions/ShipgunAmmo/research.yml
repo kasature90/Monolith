@@ -9,6 +9,11 @@
   result: CharonApheSlugAmmo
 
 - type: latheRecipe
+  id: CharonEmpSlugUniversal
+  parent: BaseRailgunSlugRecipe
+  result: CharonEmpSlugAmmo
+
+- type: latheRecipe
   id: CharonSubnuclearSlugUniversal
   parent: BaseRailgunSlugRecipe
   result: CharonSubnuclearSlugAmmo

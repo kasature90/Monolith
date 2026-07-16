@@ -563,6 +563,44 @@
   - type: MiningGatheringHard
 
 - type: entity
+  id: ShipRailgunProjectileEMP
+  name: M381 CHARON 280mm 26.5 kg EMP slug
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 5000
+        Blunt: 3000
+        Radiation: 200000 # Shield-killer 9k
+    penetrationThreshold: 3000
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+    layers:
+    - state: omnilaser
+  - type: Ammo
+    muzzleFlash: null
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#CF0E0E"
+    scale: 4
+    shape: triangle
+  - type: TimedDespawn
+    lifetime: 3.1 # ~2.4 km range
+  - type: PointLight
+    color: "#2e50d9"
+  - type: LightningOnTrigger
+    chance: 1.5
+    range: 15
+    arcDepth: 3
+    lightningProto: LightningEMPCharon
+    lightningEffects: false
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+
+- type: entity
   id: ShipRailgunProjectileAphe
   name: M381 CHARON 280mm 26.5kg APHE slug
   parent: BaseBulletTrigger

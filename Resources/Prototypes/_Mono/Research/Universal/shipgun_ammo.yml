@@ -8,6 +8,7 @@
   recipeUnlocks:
   - CharonSlugUniversal
   - CharonApheSlugUniversal
+  - CharonEmpSlugUniversal
   technologyPrerequisites:
   - UniversalPlastitaniumCore
   position: 7, 8

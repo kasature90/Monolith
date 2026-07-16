@@ -157,3 +157,36 @@
     contents:
     - id: TovekCartridge
       amount: 4 # 2 reloads
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxPaladinHE
+  name: MLRS-382 Paladin HE missile box
+  description: Contains 2 autoloaders of 24 missiles each.
+  components:
+  - type: StorageFill
+    contents:
+    - id: PaladinMagazine
+      amount: 2 # 48 missiles
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxPaladinEMPHE
+  name: MLRS-382 Paladin EMP-HE missile box
+  description: Contains 2 autoloaders of 24 missiles each.
+  components:
+  - type: StorageFill
+    contents:
+    - id: PaladinMagazineEMPHE
+      amount: 2 # 48 missiles
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxPaladinHV
+  name: MLRS-382 Paladin HV missile box
+  description: Contains 2 autoloaders of 24 missiles each.
+  components:
+  - type: StorageFill
+    contents:
+    - id: PaladinMagazineHV
+      amount: 2 # 48 missiles

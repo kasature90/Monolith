@@ -81,5 +81,10 @@
 
 - type: latheRecipe
   parent: BaseHeavyMissileShipgunAmmoRecipe
+  id: PaladinMagazineHVAmmoRecipe
+  result: PaladinMagazineHV
+
+- type: latheRecipe
+  parent: BaseHeavyMissileShipgunAmmoRecipe
   id: VanquisherMagazineAmmoRecipe
   result: VanquisherMagazine

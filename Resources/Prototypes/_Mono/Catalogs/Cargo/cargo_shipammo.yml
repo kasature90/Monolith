@@ -173,3 +173,33 @@
   cost: 7500
   category: cargoproduct-category-name-shipammo
   group: market
+
+- type: cargoProduct
+  id: ArmoryShipAmmoPaladinHE
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBoxPaladinHE
+  cost: 15000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
+- type: cargoProduct
+  id: ArmoryShipAmmoPaladinEMPHE
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBoxPaladinEMPHE
+  cost: 15000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
+- type: cargoProduct
+  id: ArmoryShipAmmoPaladinHV
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBoxPaladinHV
+  cost: 25000
+  category: cargoproduct-category-name-shipammo
+  group: market

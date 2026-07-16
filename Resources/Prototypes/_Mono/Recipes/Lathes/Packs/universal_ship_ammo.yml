@@ -5,6 +5,7 @@
   recipes:
   # Magfed
   - Magazine20mmAmmoRecipe
+  - Magazine20mmASAmmoRecipe
   - Magazine30mmAmmoRecipe
   - Magazine30mmHEAmmoRecipe
   - Magazine57mmHEAmmoRecipe

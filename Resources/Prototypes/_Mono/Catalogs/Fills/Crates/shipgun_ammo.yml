@@ -59,6 +59,17 @@
 
 - type: entity
   parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox20mmAS
+  name: L85 20mm AS drum box
+  description: Contains one box of 20mm anti-shield ammunition. Provides an artillery piece with 1250 AS rounds. Can take down a MS-250 in about 150 shots.
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine20mmAS
+      amount: 1
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
   id: CrateAmmoBox30mm
   name: Draupnir 30mm solid drum box
   description: Contains one box of 30mm solid ammunition. Provides an artillery piece with infinite solid rounds. Buy in case you lost the ammo it came with.

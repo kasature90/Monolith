@@ -86,6 +86,16 @@
   group: market
 
 - type: cargoProduct
+  id: ArmoryShipAmmo20mmAS
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBox20mmAS
+  cost: 4000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
+- type: cargoProduct
   id: ArmoryShipAmmo30mm
   icon:
     sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi

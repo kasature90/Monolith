@@ -73,6 +73,32 @@
     shape: arrow
     radarColor: "#1df1f5"
 
+- type: entity
+  id: 30mmBulletHE
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 120
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 3
+  - type: PointLight
+    radius: 3.5
+    energy: 0.5
+  - type: RadarBlip
+    scale: 1.15
+    shape: arrow
+    radarColor: "#991551"
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 1
+    intensitySlope: 2
+    maxIntensity: 2
+
 # 57mm
 
 - type: entity
@@ -523,8 +549,9 @@
     color: "#19AFFF"
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
-    totalIntensity: 2000
+    deleteAfterExplosion: false
+    explosionType: HardBomb
+    totalIntensity: 1000
     intensitySlope: 25
     maxIntensity: 450
   - type: GatheringProjectile
@@ -560,7 +587,7 @@
     color: "#19AFFF"
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: HardBombShipGun
+    explosionType: HardBomb
     totalIntensity: 18000
     intensitySlope: 5
     maxIntensity: 500

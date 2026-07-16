@@ -147,9 +147,9 @@
   - type: Projectile
     damage:
       types:
-        Structural: 6000
+        Structural: 10000
         Blunt: 50
-    penetrationThreshold: 6000
+    penetrationThreshold: 12000
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/shells.rsi
     layers:
@@ -159,10 +159,10 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     deleteAfterExplosion: false
-    explosionType: HardBombShipgun
-    totalIntensity: 70
-    intensitySlope: 5
-    maxIntensity: 60
+    explosionType: HardBomb
+    totalIntensity: 350
+    intensitySlope: 25
+    maxIntensity: 300
   - type: ShipWeaponProjectile
   - type: RadarBlip
     scale: 1.75

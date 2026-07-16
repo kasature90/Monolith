@@ -7,6 +7,7 @@
   cost: 7500
   recipeUnlocks:
   - CharonSlugUniversal
+  - CharonApheSlugUniversal
   technologyPrerequisites:
   - UniversalPlastitaniumCore
   position: 7, 8

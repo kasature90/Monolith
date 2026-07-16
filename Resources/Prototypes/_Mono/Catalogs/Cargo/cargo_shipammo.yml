@@ -11,6 +11,16 @@
   group: market
 
 - type: cargoProduct
+  id: ArmoryShipAmmoCharonAPHE
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBoxCharonAPHE
+  cost: 7500
+  category: cargoproduct-category-name-shipammo
+  group: market
+
+- type: cargoProduct
   id: ArmoryShipAmmoR300
   icon:
     sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi

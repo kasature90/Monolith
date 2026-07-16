@@ -145,6 +145,7 @@
   - type: TechnologyDisk
     recipes:
     - CharonSlugUniversal
+    - CharonApheSlugUniversal
     - ASM220TorpedoHEUniversal
     - ASM220TorpedoECMUniversal
     - 150mmApShellUniversal
@@ -169,6 +170,7 @@
   - type: TechnologyDisk
     recipes:
     - CharonSlugUniversal
+    - CharonApheSlugUniversal
     - ASM220TorpedoHEUniversal
     - ASM220TorpedoECMUniversal
     - ASM220TorpedoLOSATUniversal

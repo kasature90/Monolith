@@ -13,6 +13,17 @@
 
 - type: entity
   parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxCharonAPHE
+  name: 280mm CHARON 26.5kg APHE slug cartridge box
+  description: Contains 3 slugs.
+  components:
+  - type: StorageFill
+    contents:
+    - id: CharonApheSlugAmmo
+      amount: 3
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
   id: CrateAmmoBoxR300
   name: 430mm R-300 HE shell box
   description: Contains 3 HE shells.

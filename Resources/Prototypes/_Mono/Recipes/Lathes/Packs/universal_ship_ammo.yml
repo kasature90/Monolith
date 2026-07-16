@@ -32,6 +32,7 @@
   id: UniversalRailgunAmmo
   recipes:
   - CharonSlugUniversal
+  - CharonApheSlugUniversal
   - CharonSubnuclearSlugUniversal
 
 - type: latheRecipePack

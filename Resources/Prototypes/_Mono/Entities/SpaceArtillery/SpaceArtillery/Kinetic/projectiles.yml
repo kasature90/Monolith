@@ -189,7 +189,7 @@
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/shells.rsi
     layers:
-    - state: 90mmHE
+    - state: 90mmFLAK
   - type: PointLight
     color: orange
   - type: RadarBlip

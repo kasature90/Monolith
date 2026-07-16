@@ -135,6 +135,48 @@
     maxIntensity: 2
     maxTileBreak: 1
 
+- type: entity
+  id: 57mmBulletSmart
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 35
+        Piercing: 25
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectAk570
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/shells.rsi
+    layers:
+    - state: 57mmHMNG
+    scale: 1, 1
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    scale: 1.5
+    shape: triangle
+    radarColor: "#1df1f5"
+  - type: TimedDespawn
+    lifetime: 7
+  - type: PointLight
+    color: "#FCBA03"
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 10 # totalIntensity goes first, please.
+    intensitySlope: 5
+    maxIntensity: 6
+    maxTileBreak: 1
+  - type: TargetSeeking
+    acceleration: 350
+    detectionRange: 1000
+    scanArc: 20
+    launchSpeed: 204
+    maxSpeed: 250
+    trackDelay: 0.1
+    trackingAlgorithm: Direct
+
 # 90mm
 
 - type: entity

@@ -103,6 +103,16 @@
   group: market
 
 - type: cargoProduct
+  id: ArmoryShipAmmo57mmSmart
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBox57mmSmart
+  cost: 4000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
+- type: cargoProduct
   id: ArmoryShipAmmo90mm
   icon:
     sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi

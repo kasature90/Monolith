@@ -108,7 +108,7 @@
     sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
     state: icon
   product: CrateAmmoBox57mmSmart
-  cost: 4000
+  cost: 7000
   category: cargoproduct-category-name-shipammo
   group: market
 

@@ -712,7 +712,7 @@
   - type: PointLight
     color: "#2e50d9"
   - type: LightningOnTrigger
-    chance: 1.5
+    chance: 1
     range: 15
     arcDepth: 3
     lightningProto: LightningEMPCharon

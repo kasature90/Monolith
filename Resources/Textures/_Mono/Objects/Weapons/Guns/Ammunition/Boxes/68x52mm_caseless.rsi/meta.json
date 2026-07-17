@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "incendiary"
+      "name": "base"
+    },
+    {
+      "name": "base-b"
     },
     {
       "name": "practice"
@@ -17,31 +20,13 @@
       "name": "rubber"
     },
     {
-      "name": "emp"
-    },
-    {
       "name": "HP"
     },
     {
-      "name": "steelAP"
+      "name": "RIP"
     },
     {
       "name": "plasteelAP"
-    },
-    {
-      "name": "synthAP"
-    },
-    {
-      "name": "uranium"
-    },
-    {
-      "name": "base"
-    },
-    {
-      "name": "base-b"
-    },
-    {
-      "name": "RIP"
     }
   ]
 }

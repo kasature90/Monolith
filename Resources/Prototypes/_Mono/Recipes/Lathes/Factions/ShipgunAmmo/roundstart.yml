@@ -40,6 +40,11 @@
   id: 90mmMagazineFlakAmmoRecipe
   result: 90mmMagazineFlak
 
+- type: latheRecipe
+  parent: BaseMediumShipgunAmmoRecipe
+  id: 90mmMagazineMinelayerAmmoRecipe
+  result: 90mmMagazineMinelayer
+
 # Individual
 
 - type: latheRecipe

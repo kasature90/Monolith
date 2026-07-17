@@ -1,4 +1,4 @@
-{
+﻿{
   "version": 1,
   "license": "CC-BY-3.0",
   "copyright": "Made by kyres1 (discord), tweaked by Onezero0. Mine state from NSV-13.",
@@ -24,6 +24,9 @@
     },
     {
       "name": "90mmFLAK"
+    },
+    {
+      "name": "90mmMINE"
     },
     {
       "name": "150mmAP"

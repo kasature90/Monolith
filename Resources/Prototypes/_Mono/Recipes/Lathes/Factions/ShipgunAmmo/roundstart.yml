@@ -37,6 +37,11 @@
 
 - type: latheRecipe
   parent: BaseMediumShipgunAmmoRecipe
+  id: 90mmMagazineAPAmmoRecipe
+  result: 90mmMagazineAP
+
+- type: latheRecipe
+  parent: BaseMediumShipgunAmmoRecipe
   id: 90mmMagazineFlakAmmoRecipe
   result: 90mmMagazineFlak
 

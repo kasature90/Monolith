@@ -639,9 +639,9 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: EmpOnTrigger
-    range: 2
-    energyConsumption: 2700000
-    disableDuration: 20
+    range: 7
+    energyConsumption: 2000000
+    disableDuration: 5
 
 # CHARON
 

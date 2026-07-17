@@ -143,6 +143,26 @@
     damageModifierSet: Metallic
 
 - type: entity
+  id: Magazine57mmHMNG
+  name: "57mm HMNG ammo loader"
+  suffix: INFINITE
+  description: "An ammunition loader containing infinite 57mm homing rounds. Usable by vessel-mounted artillery pieces."
+  parent: Magazine57mmHE
+  components:
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: true
+    proto: 57mmBulletSmart
+    capacity: 1 # normally should hold 600
+    mayTransfer: true
+    whitelist:
+      tags:
+      - 57mmCartridge
+  - type: Sprite
+    layers:
+    - state: 57mmHMNG
+      map: [ "enum.GunVisualLayers.Base" ]
+
+- type: entity
   id: MuzzleFlashEffectAk570
   categories: [ HideSpawnMenu ]
   components:

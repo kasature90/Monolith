@@ -86,6 +86,7 @@ public sealed partial class TargetSeekingComponent : Component
     /// <summary>
     /// Do we want to draw arc/velocity lines on radar?
     /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
     public bool ArcLines = true;
 }
 

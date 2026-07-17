@@ -79,3 +79,69 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
+
+# Boxes because I hate manually loading 8 shells
+
+- type: entity
+  id: Box255mmAPHE
+  name: "255mm APHE ammo box"
+  description: "A big box containing 16 255mm APHE rounds. Usable by vessel-mounted artillery pieces."
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Item
+    size: Huge
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: 255mmCartridgeAPHE
+    capacity: 16
+    mayTransfer: true
+    whitelist:
+      tags:
+      - 255mmCartridge
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_heavy_shipgun_box.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: Box255mmEMP
+  name: "255mm EMP ammo box"
+  description: "A big box containing 16 255mm EMP rounds. Usable by vessel-mounted artillery pieces."
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Item
+    size: Huge
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: 255mmCartridgeEMP
+    capacity: 16
+    mayTransfer: true
+    whitelist:
+      tags:
+      - 255mmCartridge
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_heavy_shipgun_box.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance

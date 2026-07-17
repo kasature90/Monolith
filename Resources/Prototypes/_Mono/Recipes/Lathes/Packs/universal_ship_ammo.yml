@@ -18,6 +18,7 @@
   - 220mmCartridgeHEClusterAmmoRecipe
   - 220mmCartridgeSmartClusterAmmoRecipe
   - 255mmCartridgeAPHEAmmoRecipe
+  - 255mmCartridgeEMPAmmoRecipe
   - R300ShellHEAmmoRecipe
   # Missiles
   - VanykMagazineAmmoRecipe

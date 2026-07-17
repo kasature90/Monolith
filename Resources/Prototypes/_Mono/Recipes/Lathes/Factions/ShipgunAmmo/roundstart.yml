@@ -68,6 +68,11 @@
   result: 255mmCartridgeAPHE
 
 - type: latheRecipe
+  parent: BaseShipgunAmmoRecipe
+  id: 255mmCartridgeEMPAmmoRecipe
+  result: 255mmCartridgeEMP
+
+- type: latheRecipe
   parent: BaseHeavyShipgunAmmoRecipe
   id: R300ShellHEAmmoRecipe
   result: R300ShellHE

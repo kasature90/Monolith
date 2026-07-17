@@ -104,6 +104,27 @@
   category: cargoproduct-category-name-shipammo
   group: market
 
+# Bofors shells
+- type: cargoProduct
+  id: ArmoryShipAmmo255mmAPHE
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBox255mmAPHE
+  cost: 15000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
+- type: cargoProduct
+  id: ArmoryShipAmmo255mmEMP
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBox255mmEMP
+  cost: 20000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
 # Mag/Drum reload
 
 - type: cargoProduct

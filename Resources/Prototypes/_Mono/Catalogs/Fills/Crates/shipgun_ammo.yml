@@ -99,6 +99,17 @@
     - id: Box255mmEMP
       amount: 2
 
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox255mmMine
+  name: 255mm Bofors minelayer shell box
+  description: Contains 32 minelayer shells, packaged in 2 big boxes.
+  components:
+  - type: StorageFill
+    contents:
+    - id: Box255mmMine
+      amount: 2
+
 # Magazines
 
 - type: entity

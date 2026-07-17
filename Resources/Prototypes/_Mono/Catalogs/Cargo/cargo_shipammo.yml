@@ -125,6 +125,16 @@
   category: cargoproduct-category-name-shipammo
   group: market
 
+- type: cargoProduct
+  id: ArmoryShipAmmo255mmMine
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBox255mmMine
+  cost: 25000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
 # Mag/Drum reload
 
 - type: cargoProduct

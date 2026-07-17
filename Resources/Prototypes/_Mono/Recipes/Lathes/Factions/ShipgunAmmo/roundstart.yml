@@ -73,6 +73,11 @@
   result: 255mmCartridgeEMP
 
 - type: latheRecipe
+  parent: BaseShipgunAmmoRecipe
+  id: 255mmCartridgeMineAmmoRecipe
+  result: 255mmCartridgeMinelayer
+
+- type: latheRecipe
   parent: BaseHeavyShipgunAmmoRecipe
   id: R300ShellHEAmmoRecipe
   result: R300ShellHE

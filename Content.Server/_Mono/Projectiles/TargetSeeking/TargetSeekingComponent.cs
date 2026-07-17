@@ -82,6 +82,11 @@ public sealed partial class TargetSeekingComponent : Component
     /// Whether seeking has been disabled (e.g., after entering an enemy grid).
     /// </summary>
     public bool SeekingDisabled;
+
+    /// <summary>
+    /// Do we want to draw arc/velocity lines on radar?
+    /// </summary>
+    public bool ArcLines = true;
 }
 
 /// <summary>

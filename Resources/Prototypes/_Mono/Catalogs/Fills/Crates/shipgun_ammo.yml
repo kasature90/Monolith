@@ -44,6 +44,39 @@
     - id: R300ShellHE
       amount: 3
 
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox220mmAPHE
+  name: 220mm CYREXA APHE shell box
+  description: Contains 48 APHE shells, packaged in 2 big boxes.
+  components:
+  - type: StorageFill
+    contents:
+    - id: Box220mmAPHE
+      amount: 2
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox220mmHECluster
+  name: 220mm CYREXA HE-CLST shell box
+  description: Contains 48 HE-CLST shells, packaged in 2 big boxes.
+  components:
+  - type: StorageFill
+    contents:
+    - id: Box220mmHECluster
+      amount: 2
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox220mmSmartCluster
+  name: 220mm CYREXA HMNG-CLST shell box
+  description: Contains 48 HMNG-CLST shells, packaged in 2 big boxes.
+  components:
+  - type: StorageFill
+    contents:
+    - id: Box220mmSmartCluster
+      amount: 2
+
 # Magazines
 
 - type: entity

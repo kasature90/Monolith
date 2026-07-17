@@ -49,6 +49,16 @@
 
 - type: latheRecipe
   parent: BaseLightShipgunAmmoRecipe
+  id: 220mmCartridgeHEClusterAmmoRecipe
+  result: 220mmCartridgeHECluster
+
+- type: latheRecipe
+  parent: BaseLightShipgunAmmoRecipe
+  id: 220mmCartridgeSmartClusterAmmoRecipe
+  result: 220mmCartridgeSmartCluster
+
+- type: latheRecipe
+  parent: BaseLightShipgunAmmoRecipe
   id: 120mmCartridgeAPHEDSAmmoRecipe
   result: 120mmCartridgeAPHEDS
 

@@ -73,6 +73,37 @@
   category: cargoproduct-category-name-shipammo
   group: market
 
+# Cyrexa shells
+- type: cargoProduct
+  id: ArmoryShipAmmo220mmAPHE
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBox220mmAPHE
+  cost: 15000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
+- type: cargoProduct
+  id: ArmoryShipAmmo220mmHECluster
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBox220mmHECluster
+  cost: 20000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
+- type: cargoProduct
+  id: ArmoryShipAmmo220mmSmartCluster
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBox220mmSmartCluster
+  cost: 30000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
 # Mag/Drum reload
 
 - type: cargoProduct

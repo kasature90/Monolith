@@ -460,6 +460,108 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
 
+- type: entity
+  id: 220mmPelletHE
+  name: 220mm HE cluster-projectile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 200
+        Blunt: 200
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 30mm
+  - type: Ammo
+    muzzleFlash: null
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    scale: 2
+    shape: triangle
+    radarColor: "#f55e1d"
+  - type: TimedDespawn
+    lifetime: 4
+  - type: PointLight
+    color: "#FCBA03"
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: HardBombShipGun
+    totalIntensity: 120
+    intensitySlope: 12
+    maxIntensity: 50
+    maxTileBreak: 3
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+
+- type: entity
+  id: 220mmPelletHESpread
+  categories: [ HideSpawnMenu ]
+  parent: 220mmPelletHE
+  components:
+  - type: ProjectileSpread
+    proto: 220mmPelletHE
+    count: 6
+    spread: 3
+
+- type: entity
+  id: 220mmPelletSmart
+  name: 220mm HMNG cluster-projectile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 800
+        Blunt: 200
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 30mm
+  - type: Ammo
+    muzzleFlash: null
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    scale: 2
+    shape: triangle
+    radarColor: "#f55e1d"
+  - type: TimedDespawn
+    lifetime: 15 # pack hunter
+  - type: PointLight
+    color: "#FCBA03"
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: HardBombShipGun
+    totalIntensity: 60
+    intensitySlope: 12
+    maxIntensity: 50
+    maxTileBreak: 3
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+  - type: TargetSeeking
+    acceleration: 150
+    detectionRange: 1000
+    scanArc: 20
+    launchSpeed: 200
+    maxSpeed: 200
+    trackDelay: 0
+    trackingAlgorithm: Direct
+
+- type: entity
+  id: 220mmPelletSmartSpread
+  categories: [ HideSpawnMenu ]
+  parent: 220mmPelletSmart
+  components:
+  - type: ProjectileSpread
+    proto: 220mmPelletSmart
+    count: 6
+    spread: 6
+
 # 255mm
 
 - type: entity

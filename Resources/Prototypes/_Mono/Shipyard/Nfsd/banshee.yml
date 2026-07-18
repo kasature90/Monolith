@@ -1,0 +1,40 @@
+#Author: _starch_
+
+- type: vessel
+  id: Banshee
+  parent: BaseVesselAntag
+  name: TSF-SKR Banshee
+  description: An armored and shielded corvette with a heavy focus on close-in strafing.
+  price: 180200
+  purchasable: false # voucher only
+  category: Medium
+  group: Security
+  access: Security
+  shuttlePath: /SharedMaps/_Mono/Shuttles/Nfsd/banshee.yml
+  guidebookPage: Null
+  class:
+  - Patrol
+  - Pursuit
+  - Corvette
+  engine:
+  - AME
+
+- type: gameMap
+  id: Banshee
+  mapName: 'Banshee'
+  mapPath: /SharedMaps/_Mono/Shuttles/Nfsd/banshee.yml
+  minPlayers: 0
+  stations:
+    Banshee:
+      stationProto: StandardFrontierSecurityVessel
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'Banshee TSF{1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'
+      - type: StationJobs
+        availableJobs:
+          Deputy: [ 0, 0 ]
+          TsfBorg: [ 0, 0 ]
+

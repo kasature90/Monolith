@@ -374,7 +374,7 @@
     examinable: false
   - type: ProjectileGrenade
     fillPrototype: NavalMine90mm
-    capacity: 6
+    capacity: 3
     minVelocity: 2
     maxVelocity: 2
     randomAngle: true

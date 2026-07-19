@@ -328,3 +328,23 @@
   cost: 25000
   category: cargoproduct-category-name-shipammo
   group: market
+
+- type: cargoProduct
+  id: ArmoryShipAmmoTrident
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBoxTrident
+  cost: 25000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
+- type: cargoProduct
+  id: ArmoryShipAmmoTridentSACLOS
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBoxTridentSACLOS
+  cost: 25000
+  category: cargoproduct-category-name-shipammo
+  group: market

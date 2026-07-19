@@ -232,8 +232,6 @@
   - type: TargetGuided
     turnRate: 120
     acceleration: 70
-    detectionRange: 1000
-    scanArc: 20
     launchSpeed: 220
     maxSpeed: 250
     maxLifetime: 7
@@ -570,8 +568,6 @@
   - type: TargetGuided
     turnRate: 120
     acceleration: 70
-    detectionRange: 1000
-    scanArc: 20
     launchSpeed: 220
     maxSpeed: 250
     maxLifetime: 8

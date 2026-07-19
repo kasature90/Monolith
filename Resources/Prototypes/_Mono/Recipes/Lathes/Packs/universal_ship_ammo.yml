@@ -36,6 +36,7 @@
   id: UniversalMissileAmmo
   recipes:
   - ASM220TorpedoHEUniversal
+  - ASM220TorpedoHESACLOSUniversal
   - ASM220TorpedoECMUniversal
   - ASM220TorpedoLOSATUniversal
 

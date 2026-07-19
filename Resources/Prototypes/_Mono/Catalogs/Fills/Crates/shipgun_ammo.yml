@@ -322,3 +322,25 @@
     contents:
     - id: PaladinMagazineHV
       amount: 2 # 48 missiles
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxTrident
+  name: ASM-220 Trident HE torpedo box
+  description: Contains 4 large missiles, enough to fill a single launcher.
+  components:
+  - type: StorageFill
+    contents:
+    - id: Asm220TorpedoHE
+      amount: 4
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxTridentSACLOS
+  name: ASM-220 Trident HE-SACLOS torpedo box
+  description: Contains 4 large missiles, enough to fill a single launcher.
+  components:
+  - type: StorageFill
+    contents:
+    - id: Asm220TorpedoHESACLOS
+      amount: 4

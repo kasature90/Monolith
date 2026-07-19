@@ -230,8 +230,8 @@
     maxIntensity: 6
     maxTileBreak: 1
   - type: TargetGuided
-    turnRate: 120
-    acceleration: 70
+    turnRate: 15
+    acceleration: 30
     launchSpeed: 220
     maxSpeed: 250
     maxLifetime: 7
@@ -566,8 +566,8 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetGuided
-    turnRate: 120
-    acceleration: 70
+    turnRate: 15
+    acceleration: 20
     launchSpeed: 220
     maxSpeed: 250
     maxLifetime: 8

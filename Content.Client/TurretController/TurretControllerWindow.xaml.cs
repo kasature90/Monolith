@@ -208,7 +208,7 @@ public sealed partial class TurretControllerWindow : BaseWindow
 
         // Ensure that the 'general' access group is added to handle
         // misc. access levels that aren't associated with any group
-        if (_protoManager.TryIndex<AccessGroupPrototype>("General", out var generalAccessProto))
+        if (_protoManager.TryIndex<AccessGroupPrototype>("GeneralAccess", out var generalAccessProto)) // Mono
             groupedAccessLevels.TryAdd(generalAccessProto, new());
 
         // Assign known access levels with their associated groups

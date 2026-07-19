@@ -5,3 +5,18 @@
     - type: BiomeSelection
       biomes:
         - MonoWorldgenHyperwarAsteroidRing
+
+- type: worldgenConfig
+  id: MonoDefault
+  components:
+  - type: WorldController
+  - type: BiomeSelection
+    biomes:
+    - MonoRareAsteroidsFallback
+    - MonoClusterA
+    - MonoWilds
+    - MonoWildsOutskirts
+    - MonoWorldgenVeryFarT1
+    - MonoWorldgenVeryFarT2Inner
+    - MonoWorldgenVeryFarT2Middle
+    - MonoWorldgenVeryFarT2Far

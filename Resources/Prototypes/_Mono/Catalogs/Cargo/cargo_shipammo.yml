@@ -188,16 +188,6 @@
   group: market
 
 - type: cargoProduct
-  id: ArmoryShipAmmo57mmSACLOS
-  icon:
-    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
-    state: icon
-  product: CrateAmmoBox57mmSACLOS
-  cost: 7000
-  category: cargoproduct-category-name-shipammo
-  group: market
-
-- type: cargoProduct
   id: ArmoryShipAmmo90mm
   icon:
     sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi

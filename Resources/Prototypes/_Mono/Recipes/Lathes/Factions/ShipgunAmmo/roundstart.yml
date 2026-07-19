@@ -31,6 +31,11 @@
   result: Magazine57mmSmart
 
 - type: latheRecipe
+  parent: BaseShipgunAmmoRecipe
+  id: Magazine57mmSACLOSAmmoRecipe
+  result: Magazine57mmSACLOS
+
+- type: latheRecipe
   parent: BaseMediumShipgunAmmoRecipe
   id: 90mmMagazineHEAmmoRecipe
   result: 90mmMagazineHE

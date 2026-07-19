@@ -180,6 +180,17 @@
 
 - type: entity
   parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox57mmSACLOS
+  name: AK-570 57mm SACLOS drum box
+  description: Contains one box of 57mm SACLOS ammunition. Provides an artillery piece with 600 FCS-guided rounds.
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine57mmSACLOS
+      amount: 1
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
   id: CrateAmmoBox90mm
   name: Dravon 90mm HE box
   description: Contains one box of 90mm high-explosive ammunition. Provides an artillery piece with infinite high-explosive rounds. Buy in case you lost the ammo it came with.

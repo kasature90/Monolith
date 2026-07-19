@@ -1,0 +1,145 @@
+- type: entity
+  parent: WeaponEnergyTurretStationControlPanel
+  id: WeaponEnergyTurretTSFControlPanel
+  name: TSF sentry turret control panel
+  suffix: TSF Engineer access
+  description: A wall-mounted interface that allows a local artifical intelligence to adjust the operational parameters of linked sentry turrets.
+  components:
+  - type: AccessReader
+    access: [["TsfmcEngineering"]]
+  - type: TurretTargetSettings
+    exemptAccessLevels:
+    - HeadOfSecurity
+    - Armory
+    - Bailiff
+    - Sergeant
+    - Security
+    - TsfmcEngineering
+  - type: DeviceNetwork
+    receiveFrequencyId: TurretAITSF
+    transmitFrequencyId: TurretControlAITSF
+
+- type: deviceFrequency
+  id: TurretControlAITSF
+  name: device-frequency-prototype-name-turret-control
+  frequency: 1681
+
+- type: deviceFrequency
+  id: TurretAITSF
+  name: device-frequency-prototype-name-turret
+  frequency: 1682
+
+- type: entity
+  parent: WeaponEnergyTurretStationControlPanel
+  id: WeaponEnergyTurretPDVControlPanel
+  name: PDV sentry turret control panel
+  suffix: PDV Command access
+  description: A wall-mounted interface that allows a local artifical intelligence to adjust the operational parameters of linked sentry turrets.
+  components:
+  - type: AccessReader
+    access: [["PDVCommand"]]
+  - type: TurretTargetSettings
+    exemptAccessLevels:
+    - GrandVizier
+    - PDVCommand
+    - Pirate
+  - type: DeviceNetwork
+    receiveFrequencyId: TurretAIPDV
+    transmitFrequencyId: TurretControlAIPDV
+
+- type: deviceFrequency
+  id: TurretControlAIPDV
+  name: device-frequency-prototype-name-turret-control
+  frequency: 1683
+
+- type: deviceFrequency
+  id: TurretAIPDV
+  name: device-frequency-prototype-name-turret
+  frequency: 1684
+
+- type: entity
+  parent: WeaponEnergyTurretStationControlPanel
+  id: WeaponEnergyTurretUSSPControlPanel
+  name: USSP sentry turret control panel
+  suffix: USSP Secure access
+  description: A wall-mounted interface that allows a local artifical intelligence to adjust the operational parameters of linked sentry turrets.
+  components:
+  - type: AccessReader
+    access: [["USSPHigh"]]
+  - type: TurretTargetSettings
+    exemptAccessLevels:
+    - USSPCommand
+    - USSPHigh
+    - USSP
+  - type: DeviceNetwork
+    receiveFrequencyId: TurretAIUSSP
+    transmitFrequencyId: TurretControlAIUSSP
+
+- type: deviceFrequency
+  id: TurretControlAIUSSP
+  name: device-frequency-prototype-name-turret-control
+  frequency: 1685
+
+- type: deviceFrequency
+  id: TurretAIUSSP
+  name: device-frequency-prototype-name-turret
+  frequency: 1686
+
+- type: entity
+  parent: WeaponEnergyTurretStationControlPanel
+  id: WeaponEnergyTurretFreeportControlPanel
+  name: freeport sentry turret control panel
+  suffix: USSP Commissar access
+  description: A wall-mounted interface that allows a local artifical intelligence to adjust the operational parameters of linked sentry turrets.
+  components:
+  - type: AccessReader
+    access: [["USSPHigh"]]
+  - type: TurretTargetSettings
+    exemptAccessLevels:
+    - USSPCommand
+    - USSPHigh
+    - USSP
+    - ViperCommand
+    - Viper
+    - Mercenary
+    - Pilot
+  - type: DeviceNetwork
+    receiveFrequencyId: TurretAIFP
+    transmitFrequencyId: TurretControlAIFP
+
+- type: deviceFrequency
+  id: TurretControlAIFP
+  name: device-frequency-prototype-name-turret-control
+  frequency: 1687
+
+- type: deviceFrequency
+  id: TurretAIFP
+  name: device-frequency-prototype-name-turret
+  frequency: 1688
+
+- type: entity
+  parent: WeaponEnergyTurretStationControlPanel
+  id: WeaponEnergyTurretViperControlPanel
+  name: VG sentry turret control panel
+  suffix: VG Command access
+  description: A wall-mounted interface that allows a local artifical intelligence to adjust the operational parameters of linked sentry turrets.
+  components:
+  - type: AccessReader
+    access: [["ViperCommand"]]
+  - type: TurretTargetSettings
+    exemptAccessLevels:
+    - ViperCommand
+    - Viper
+  - type: DeviceNetwork
+    receiveFrequencyId: TurretAIVG
+    transmitFrequencyId: TurretControlAIVG
+
+- type: deviceFrequency
+  id: TurretControlAIVG
+  name: device-frequency-prototype-name-turret-control
+  frequency: 1689
+
+- type: deviceFrequency
+  id: TurretAIVG
+  name: device-frequency-prototype-name-turret
+  frequency: 1690

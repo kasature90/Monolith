@@ -198,7 +198,7 @@
   parent: WeaponEnergyTurretStationControlPanel
   id: WeaponEnergyTurretAIControlPanel
   name: AI sentry turret control panel
-  suffix: DEPRECATED ACCESS, DO NOT MAP # Mono
+  abstract: true
   description: A wall-mounted interface that allows a local artifical intelligence to adjust the operational parameters of linked sentry turrets.
   components:
   - type: AccessReader

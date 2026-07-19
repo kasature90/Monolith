@@ -188,16 +188,6 @@
   group: market
 
 - type: cargoProduct
-  id: ArmoryShipAmmo57mmSmart
-  icon:
-    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
-    state: icon
-  product: CrateAmmoBox57mmSmart
-  cost: 7000
-  category: cargoproduct-category-name-shipammo
-  group: market
-
-- type: cargoProduct
   id: ArmoryShipAmmo57mmSACLOS
   icon:
     sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
@@ -234,16 +224,6 @@
     state: icon
   product: CrateAmmoBox90mmFlak
   cost: 6500
-  category: cargoproduct-category-name-shipammo
-  group: market
-
-- type: cargoProduct
-  id: ArmoryShipAmmo90mmMinelayer
-  icon:
-    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
-    state: icon
-  product: CrateAmmoBox90mmMinelayer
-  cost: 12500
   category: cargoproduct-category-name-shipammo
   group: market
 

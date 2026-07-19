@@ -9,12 +9,10 @@
   - Magazine30mmAmmoRecipe
   - Magazine30mmHEAmmoRecipe
   - Magazine57mmHEAmmoRecipe
-  - Magazine57mmSmartAmmoRecipe
   - Magazine57mmSACLOSAmmoRecipe
   - 90mmMagazineHEAmmoRecipe
   - 90mmMagazineAPAmmoRecipe
   - 90mmMagazineFlakAmmoRecipe
-  - 90mmMagazineMinelayerAmmoRecipe
   # Individual load
   - 120mmCartridgeAPHEDSAmmoRecipe
   - 220mmCartridgeAPHEAmmoRecipe

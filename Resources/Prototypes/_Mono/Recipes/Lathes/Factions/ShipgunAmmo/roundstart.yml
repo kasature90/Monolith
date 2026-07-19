@@ -27,11 +27,6 @@
 
 - type: latheRecipe
   parent: BaseShipgunAmmoRecipe
-  id: Magazine57mmSmartAmmoRecipe
-  result: Magazine57mmSmart
-
-- type: latheRecipe
-  parent: BaseShipgunAmmoRecipe
   id: Magazine57mmSACLOSAmmoRecipe
   result: Magazine57mmSACLOS
 
@@ -49,11 +44,6 @@
   parent: BaseMediumShipgunAmmoRecipe
   id: 90mmMagazineFlakAmmoRecipe
   result: 90mmMagazineFlak
-
-- type: latheRecipe
-  parent: BaseMediumShipgunAmmoRecipe
-  id: 90mmMagazineMinelayerAmmoRecipe
-  result: 90mmMagazineMinelayer
 
 - type: latheRecipe
   parent: BaseHeavyShipgunAmmoRecipe

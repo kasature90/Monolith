@@ -12,6 +12,7 @@
   - 90mmMagazineHEAmmoRecipe
   - 90mmMagazineAPAmmoRecipe
   - 90mmMagazineFlakAmmoRecipe
+  - Magazine140mmAmmoRecipe
   - Magazine140mmSACLOSAmmoRecipe
   # Individual load
   - 120mmCartridgeAPHEDSAmmoRecipe

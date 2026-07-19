@@ -23,7 +23,7 @@
   description: A large turbine used for generating power using hot gas. Locked to the PDV.
   components:
   - type: AccessReader
-    access: [["PDV"]]
+    access: [["Pirate"]]
 
 # No use really, but just in case.
 - type: entity
@@ -70,11 +70,11 @@
 - type: entity
   id: TurbinePDVSmall
   parent: TurbineSmall
-  suffix: PDV Denasvar Locked
+  suffix: PDV Locked
   description: A large turbine used for generating power using hot gas. Locked to the PDV.
   components:
   - type: AccessReader
-    access: [["PDVCommand"]]
+    access: [["Pirate"]]
 
 # No use really, but just in case.
 - type: entity

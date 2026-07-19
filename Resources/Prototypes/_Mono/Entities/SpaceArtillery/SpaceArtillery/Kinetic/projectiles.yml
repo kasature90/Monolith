@@ -505,7 +505,7 @@
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/shells.rsi
     layers:
-    - state: 140mmAP
+    - state: 150mmAP
   - type: Ammo
     muzzleFlash: null
   - type: ShipWeaponProjectile
@@ -543,7 +543,7 @@
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/shells.rsi
     layers:
-    - state: 140mmSACLOS
+    - state: 150mmSACLOS
   - type: Ammo
     muzzleFlash: null
   - type: ShipWeaponProjectile

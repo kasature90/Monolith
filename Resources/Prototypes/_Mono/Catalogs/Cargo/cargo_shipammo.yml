@@ -257,6 +257,16 @@
   category: cargoproduct-category-name-shipammo
   group: market
 
+- type: cargoProduct
+  id: ArmoryShipAmmo140mmSACLOS
+  icon:
+    sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
+    state: icon
+  product: CrateAmmoBox140mmSACLOS
+  cost: 18000
+  category: cargoproduct-category-name-shipammo
+  group: market
+
 # Missile reloads
 
 - type: cargoProduct

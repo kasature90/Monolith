@@ -236,12 +236,23 @@
 - type: entity
   parent: CrateAmmoSecureMercenary
   id: CrateAmmoBox140mm
-  name: Longbow 140mm HE box
+  name: Longbow 140mm HEAT box
   description: Contains one box of 140mm HEAT ammunition. Provides an artillery piece with infinite HEAT rounds. Buy in case you lost the ammo it came with.
   components:
   - type: StorageFill
     contents:
     - id: Magazine140mm
+      amount: 1
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox140mmSACLOS
+  name: Longbow 140mm SACLOS box
+  description: Contains one box of 140mm SACLOS ammunition. Provides an artillery piece with 120 SACLOS rounds.
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine140mmSACLOS
       amount: 1
 
 # Missiles

@@ -55,6 +55,16 @@
   id: 90mmMagazineMinelayerAmmoRecipe
   result: 90mmMagazineMinelayer
 
+- type: latheRecipe
+  parent: BaseHeavyShipgunAmmoRecipe
+  id: Magazine140mmAmmoRecipe
+  result: Magazine140mm
+
+- type: latheRecipe
+  parent: BaseHeavyShipgunAmmoRecipe
+  id: Magazine140mmSACLOSAmmoRecipe
+  result: Magazine140mmSACLOS
+
 # Individual
 
 - type: latheRecipe

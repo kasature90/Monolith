@@ -507,7 +507,7 @@
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/shells.rsi
     layers:
-    - state: 90mmHE
+    - state: 140mmAP
   - type: Ammo
     muzzleFlash: null
   - type: ShipWeaponProjectile
@@ -529,6 +529,53 @@
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
+
+- type: entity
+  id: 140mmBulletSACLOS
+  name: 140mm SACLOS projectile
+  parent: BaseBulletTriggerSpent
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 250
+        Piercing: 75
+    penetrationThreshold: 1500
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/shells.rsi
+    layers:
+    - state: 140mmSACLOS
+  - type: Ammo
+    muzzleFlash: null
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    scale: 2.75
+    shape: triangle
+  - type: TimedDespawn
+    lifetime: 4
+  - type: PointLight
+    color: "#FCBA03"
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    deleteAfterExplosion: false
+    explosionType: Default
+    totalIntensity: 30
+    intensitySlope: 5
+    maxIntensity: 25
+    maxTileBreak: 2
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+  - type: TargetGuided
+    turnRate: 120
+    acceleration: 70
+    detectionRange: 1000
+    scanArc: 20
+    launchSpeed: 220
+    maxSpeed: 250
+    maxLifetime: 8
+    fallbackTime: 5
 
 # 220mm
 

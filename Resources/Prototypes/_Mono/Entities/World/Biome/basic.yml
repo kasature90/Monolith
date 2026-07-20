@@ -228,7 +228,7 @@
     - id: MonoDroneSpawnerT1
       prob: 0.05
       orGroup: wreck
-    - id: MonoDroneSpawnerT2
+    - id: MonoDroneSpawnerT2Inner
       prob: 0.025
       orGroup: wreck
 

@@ -35,6 +35,18 @@
   minimum: 0.25
 
 - type: noiseChannel
+  id: DensityExtremelyRare
+  noiseType: Perlin
+  fractalLacunarityByPi: 0.666666666
+  clippingRanges:
+  - 0.0, 0.4
+  clippedValue: 100
+  remapTo0Through1: true
+  inputMultiplier: 1
+  outputMultiplier: 15000.0
+  minimum: 0.05
+
+- type: noiseChannel
   id: WreckRare
   noiseType: Perlin
   fractalLacunarityByPi: 0.666666666
@@ -44,6 +56,17 @@
   remapTo0Through1: true
   outputMultiplier: 0
   minimum: 0.2 # constant probability
+
+- type: noiseChannel
+  id: WreckExtremelyRare
+  noiseType: Perlin
+  fractalLacunarityByPi: 0.666666666
+  clippingRanges:
+  - 0.0, 0.1
+  clippedValue: 0.6
+  remapTo0Through1: true
+  outputMultiplier: 0.05
+  minimum: 0.05
 
 # region Cluster
 - type: spaceBiome
@@ -277,10 +300,9 @@
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
-    densityNoiseChannel: DensityVeryRare
+    densityNoiseChannel: DensityExtremelyRare
   - type: SimpleDebrisSelector
     debrisTable:
-    # Medium (1.44)
     - id: NFAsteroidDebrisMedium
       prob: 0.24
       orGroup: debris
@@ -290,7 +312,6 @@
     - id: NFAsteroidRockDebrisMedium
       prob: 0.24
       orGroup: debris
-    # Large (1.44)
     - id: NFAsteroidDebrisLarge
       prob: 0.24
       orGroup: debris
@@ -300,7 +321,6 @@
     - id: NFAsteroidRockDebrisLarge
       prob: 0.24
       orGroup: debris
-    # Huge (.36)
     - id: NFAsteroidDebrisHuge
       prob: 0.06
       orGroup: debris
@@ -311,7 +331,7 @@
       prob: 0.046
       orGroup: debris
   - type: NoiseDrivenDebrisSelector
-    noiseChannel: WreckRare
+    noiseChannel: WreckExtremelyRare
     debrisTable:
     - id: NFWreckDebrisSmall
       prob: 2

@@ -12,8 +12,9 @@
   - type: WorldController
   - type: BiomeSelection
     biomes:
-    - MonoRareAsteroidsFallback
+    - MonoEmptyFallback
     - MonoClusterA
+    - MonoWorldgenAsteroidRing9km
     - MonoWilds
     - MonoWildsOutskirts
     - MonoWorldgenVeryFarT1

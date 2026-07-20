@@ -4,7 +4,7 @@
   id: Layak
   parent: BaseVesselAntag
   name: PD-VI Layak
-  description: A light escort corvette for combating light ships and incoming missiles. Outfitted with 4 DRAVONs for flak, 4 Fangs, 2 Hydras, and 2 flare pods.
+  description: A light escort corvette for combating light ships and incoming missiles. Outfitted with 4 DRAVONs for flak, 4 AK-570s, 2 CYREXAs, and 2 flare pods.
   price: 134000 #~120k appraisal
   purchasable: false # voucher only
   category: Medium

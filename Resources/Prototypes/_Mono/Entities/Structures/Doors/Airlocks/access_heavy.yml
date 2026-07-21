@@ -213,7 +213,7 @@
       board: [ DoorElectronicsViperCommand ]
 
 - type: entity
-  parent: AirlockHeavyMieyo
+  parent: AirlockHeavyCommand
   id: AirlockHeavyMieyoLocked
   suffix: Mieyo Security, Locked
   components:

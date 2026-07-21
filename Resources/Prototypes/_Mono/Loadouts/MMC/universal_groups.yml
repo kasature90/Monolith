@@ -67,23 +67,27 @@
 - type: loadoutGroup
   id: MMCCorpSecOuterClothing
   name: loadout-group-contractor-outerclothing
-  minLimit: 0
+  minLimit: 1
   loadouts:
   - MercenaryVestSlim
   - MercenaryVestNormal
   - MercenaryClothingOuterArmorBPVestLight
   - MMCClothingOuterHardsuitMieyoMining
   - MMCClothingOuterHardsuitMieyoCombat
+  fallbacks:
+  - MercenaryVestSlim
 
 - type: loadoutGroup
   id: MMCCorpSecBelt
   name: loadout-group-contractor-belt
-  minLimit: 0
+  minLimit: 1
   loadouts:
   - MercenaryClothingBeltWebbingsNormalBlack
   - MercenaryClothingBeltWebbingsBigBlack
   - MercenaryClothingBeltSecurity
   - MercenaryClothingBeltSecurityEmpty
+  fallbacks:
+  - MercenaryClothingBeltWebbingsNormalBlack
 
 - type: loadoutGroup
   id: MMCCorpSecShoes
@@ -115,6 +119,8 @@
   - MMCFieldSuitJeans
   - MMCFieldSuitCargos
   - MMCFieldSuitWarm
+  fallbacks:
+  - MMCFieldSuit
 
 - type: loadoutGroup
   id: MMCCorpSecEars
@@ -136,11 +142,13 @@
 - type: loadoutGroup
   id: MMCCorpSecGloves
   name: loadout-group-contractor-gloves
-  minLimit: 0
+  minLimit: 1
   loadouts:
   - MercenaryClothingHandsGlovesCombat
   - MercenaryClothingHandsGlovesTacticalCombatBlack
   - ContractorClothingHandsGlovesFingerless
+  fallbacks:
+  - MercenaryClothingHandsGlovesCombat
 
 - type: loadoutGroup
   id: MMCRanksCorpSec

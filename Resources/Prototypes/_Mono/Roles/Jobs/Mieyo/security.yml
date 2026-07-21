@@ -39,14 +39,6 @@
 
 - type: startingGear
   id: MMCSecurityGear
-  equipment:
-    pocket1: WeaponPistolKuosame
-    pocket2: Magazine57x28mmPistolFMJ
   storage:
     back:
     - RadioHandheldNF
-    - WeaponSubMachineGunMasamune
-    belt:
-    - Magazine57x28mmSubMachineGunFMJ
-    - Magazine57x28mmSubMachineGunFMJ
-    - Magazine57x28mmSubMachineGunFMJ

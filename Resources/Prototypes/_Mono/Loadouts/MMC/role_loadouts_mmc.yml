@@ -19,6 +19,8 @@
   - ContractorBureaucracy
   - NFSpeciesSpecific
   - ContractorArmorPlates # Mono
+  - MieyoSidearm
+  - MieyoSidearmAmmo
 
 - type: roleLoadout
   id: JobMMCSecurity
@@ -44,6 +46,10 @@
   - ContractorBureaucracy
   - NFSpeciesSpecific
   - ContractorArmorPlates # Mono
+  - MieyoCorpSecPrimary
+  - MieyoCorpSecPrimaryAmmo
+  - MieyoSidearm
+  - MieyoSidearmAmmo
 
 - type: roleLoadout
   id: JobMMCLiason
@@ -67,3 +73,5 @@
   - ContractorBureaucracy
   - NFSpeciesSpecific
   - ContractorArmorPlates # Mono
+  - MieyoSidearm
+  - MieyoSidearmAmmo

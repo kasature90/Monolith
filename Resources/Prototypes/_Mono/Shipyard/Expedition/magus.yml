@@ -9,7 +9,7 @@
   parent: BaseVessel
   name: SHM Magus
   description: An armed, PMC-rated medical lighter designed for planetary expeditions.
-  price: 69420 # ~20,000$ markup
+  price: 87400
   category: Medium
   group: Expedition
   shuttlePath: /SharedMaps/_Mono/Shuttles/Expedition/magus.yml

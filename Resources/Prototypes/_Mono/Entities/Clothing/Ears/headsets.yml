@@ -194,7 +194,7 @@
 
 - type: entity
   parent: ClothingHeadsetAlt
-  id: ClothingHeadsetMieyo
+  id: ClothingHeadsetMieyoCorpsec
   name: MMC corpsec headset
   description: A standard headset for MMC employees. This headset will accept standard encryption keys and comes prefitted with a key for corporate communications.
   components:

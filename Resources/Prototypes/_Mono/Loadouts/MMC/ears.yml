@@ -2,10 +2,10 @@
   id: MMCHeadset
   price: 0
   equipment:
-    ears: ClothingHeadsetViperAlt
+    ears: ClothingHeadsetMieyo
 
 - type: loadout
   id: MMCCommandHeadset
   price: 0
   equipment:
-    ears: ClothingHeadsetViperAlt
+    ears: ClothingHeadsetMieyoCorpsec

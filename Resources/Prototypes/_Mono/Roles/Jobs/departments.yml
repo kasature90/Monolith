@@ -26,11 +26,11 @@
   name: department-MieyoManufacturingConcern
   description: department-MieyoManufacturingConcern-description
   color: "#EEEEEE"
-  weight: 105
+  weight: 0
   roles:
-  - USSPCommissar
-  - USSPSergeant
-  - USSPRifleman
+  - MMCLiason
+  - MMCSecurity
+  - MMCEmployee
   primary: false
 
 - type: department

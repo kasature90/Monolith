@@ -3,16 +3,12 @@
   name: loadout-group-weapon
   minLimit: 0
   loadouts:
-  # - MercenaryEnforcerLoadout
-  # - MercenaryWt550Loadout
-  # - MercenaryC20rLoadout
   - MercenaryGestioLoadout
   - MercenaryNovaliteLoadout
   - MercenaryAk220Loadout
   - MercenaryKnallstockLoadout
   - MercenaryKeyboardLoadout
   - MercenaryPrometheusLoadout
-  - MercenaryIrohLoadout
   - MercenaryLeeEnfieldLoadout
   - MercenaryVulcanCLoadout
   - MercenaryMosinLoadout

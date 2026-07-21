@@ -155,8 +155,6 @@
     - WeaponCaseLongRepeaterExpedition
     - WeaponCaseLongAK220 # Mono
     - WeaponCaseLongTypewriterExpedition
-    - L58Flatpack
-    - AK570Flatpack
     chance: 1.0
     offset: 0.0
     rarePrototypes:
@@ -239,20 +237,15 @@
     - WeaponCaseShortMateba
     - WeaponCaseShortCobra
     - WeaponCaseLongWT550Expedition
-    - WeaponCaseLongDrozdExpedition
-    - WeaponCaseLongLecterExpedition
-    - WeaponCaseLongIrohExpedition # Mono
     - WeaponCaseLongLaserCarbineExpedition
     - WeaponCaseShortAdvancedLaserExpedition
-    - WeaponCaseShortEg4 # Mono
-    - WeaponCaseShortAnaconda # Mono
+    - WeaponCaseShortAnaconda
     - WeaponCaseLongM90Expedition
-    - WeaponCaseLongC20r
     - WeaponCaseLongBulldog
     - WeaponCaseLongVulcanExpedition
-    - WeaponCaseMla73 # Mono
-    - Type35Flatpack
-    - AK570Flatpack
+    - WeaponCaseShortEg4
+    - WeaponCaseMla34
+    - WeaponCaseAbielle
     #- WeaponCaseLongMusketExpedition
     chance: 1.0
     offset: 0.0
@@ -340,10 +333,8 @@
     - WeaponCaseLongEnforcerExpedition
     - WeaponCaseLongLaserCannonExpedition
     - WeaponCaseDP29
-    - WeaponCaseMla34
-    - WeaponCaseAbielle # Mono
-    - WeaponCaseWspr # Mono
-    - WeaponCaseAnnie # Mono
+    - WeaponCaseWspr
+    - WeaponCaseLongIrohExpedition
     chance: 1.0
     offset: 0.0
     rarePrototypes:
@@ -425,8 +416,7 @@
     - WeaponCaseLongXrayCannonExpedition
     - WeaponCaseLongJackdaw
     - WeaponCaseLongHristovExpedition
-    - WeaponCaseMr8c # Mono
-    - WeaponCaseMla79 # Mono
+    - WeaponCaseMla79
     chance: 1.0
     offset: 0.0
 

@@ -107,7 +107,7 @@
 
 - type: loadout #Gestio
   id: MercenaryGestioLoadout
-  price: 5000
+  price: 10000
   storage:
     back:
     - WeaponRifleGestio
@@ -135,7 +135,7 @@
 
 - type: loadout #Vulcan-C
   id: MercenaryVulcanCLoadout
-  price: 30000
+  price: 50000
   storage:
     back:
     - WeaponRifleVulcanFCMC

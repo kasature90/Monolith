@@ -56,18 +56,12 @@
 
 - type: loadout
   id: MercenaryClothingOuterHardsuitMercenary
-  price: 0
+  price: 10000
   equipment:
     outerClothing: ClothingOuterHardsuitMercenary
 
 - type: loadout
   id: MercenaryClothingOuterHardsuitPrivateSecurity
-  price: 0
+  price: 10000
   equipment:
     outerClothing: ClothingOuterHardsuitPrivateSecurity
-
-- type: loadout
-  id: MercenaryClothingOuterHardsuitMercenaryWarlord
-  price: 50000
-  equipment:
-    outerClothing: ClothingOuterHardsuitMercenaryWarlord

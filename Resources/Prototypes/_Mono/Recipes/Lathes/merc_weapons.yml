@@ -22,6 +22,7 @@
   materials:
     Steel: 2500
     Plastic: 2000
+    Plasteel: 500
 
 - type: latheRecipe
   id: WeaponRifleVulcanFCMC
@@ -34,6 +35,7 @@
   materials:
     Steel: 2500
     Plastic: 1500
+    Plasteel: 500
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
@@ -72,6 +74,7 @@
   materials:
     Steel: 1800
     Plasteel: 1000
+    Plastitanium: 500
     Plastic: 400
 
 - type: latheRecipe
@@ -85,6 +88,7 @@
   materials:
     Steel: 2500
     Plasteel: 1500
+    Plastitanium: 500
     Plastic: 500
 
 - type: latheRecipe
@@ -99,6 +103,7 @@
   materials:
     Steel: 3000
     Plasteel: 2500
+    Plastitanium: 200
     Plastic: 700
 
 - type: latheRecipe
@@ -112,6 +117,7 @@
   materials:
     Steel: 1500
     Plasteel: 1500
+    Plastitanium: 200
     Plastic: 800
 
 - type: latheRecipe
@@ -123,8 +129,9 @@
   - Ballistic
   - Weapons
   materials:
-    Steel: 1500
+    Steel: 2500
     Plastic: 1000
+    Plasteel: 1000
 
 - type: latheRecipe
   id: WeaponSubMachineGunFirestarter
@@ -163,6 +170,7 @@
   materials:
     Steel: 2500
     Plasteel: 1000
+    Plastitanium: 500
     Plastic: 1000
 
 - type: latheRecipe
@@ -174,7 +182,9 @@
   materials:
     Steel: 1500
     Plasteel: 600
-    Uranium: 600
+    UraniumDepleted: 600
+    UraniumFissile: 200
+    Plastitanium: 600
 
 - type: latheRecipe
   id: WeaponShockMaul
@@ -198,6 +208,7 @@
     Plasteel: 6500
     Plastic: 800
     Plasma: 4000
+    UraniumFissile: 100
 
 - type: latheRecipe
   id: ASMGTUniversallyHostile
@@ -212,6 +223,7 @@
     Plasma: 1500
     Gold: 1000
     Diamond: 150
+    Plastitanium: 300
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
@@ -225,3 +237,4 @@
     Steel: 3000
     Plasteel: 2500
     Plastic: 700
+    Plastitanium: 300

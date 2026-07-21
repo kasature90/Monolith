@@ -9,7 +9,7 @@
   parent: BaseVessel
   name: SKR Tzipora
   description: An advanced medical ship, outfitted with cryo, chem, and surgical capabilities.
-  price: 145530
+  price: 175530
   category: Large
   group: Medical
   shuttlePath: /SharedMaps/_Mono/Shuttles/tzipora.yml

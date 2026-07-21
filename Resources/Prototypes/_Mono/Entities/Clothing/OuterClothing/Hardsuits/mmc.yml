@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitMyeioMining
+  id: ClothingOuterHardsuitMieyoMining
   name: MMC mining suit
   description: A basic EVA suit for MMC employees and non-combat use.
   components:
@@ -32,7 +32,7 @@
     blockUnequipWhenAttached: false
     replaceCurrentClothing: true
     clothingPrototypes:
-      head: ClothingHelmetHardsuitMyeioMining
+      head: ClothingHelmetHardsuitMieyoMining
       helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
@@ -42,7 +42,7 @@
 
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitMyeioCombat
+  id: ClothingOuterHardsuitMieyoCombat
   name: MMC kurogane tacsuit
   description: A tactical combat suit for MMC asset protection & corporate security. It's heavy and defensive.
   components:
@@ -73,7 +73,7 @@
     blockUnequipWhenAttached: false
     replaceCurrentClothing: true
     clothingPrototypes:
-      head: ClothingHelmetHardsuitMyeioCombat
+      head: ClothingHelmetHardsuitMieyoCombat
       helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: PirateBountyItem

@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
-  id: ClothingHelmetHardsuitMyeioMining
+  id: ClothingHelmetHardsuitMieyoMining
   name: MMC mining suit helmet
   description: A basic EVA helmet designed for complex industrial operations in space.
   components:
@@ -20,7 +20,7 @@
 
 - type: entity
   parent: ClothingHeadHardsuitBase
-  id: ClothingHelmetHardsuitMyeioCombat
+  id: ClothingHelmetHardsuitMieyoCombat
   name: MMC kurogane tacsuit helmet
   description: A sensor suite disguised as a helmet. Great NVGs, average protection.
   components:

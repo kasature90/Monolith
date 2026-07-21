@@ -47,8 +47,8 @@
 - type: startingGear
   id: MMCLiasonGear
   equipment:
-    pocket1: WeaponRevolverMatebaAP
-    pocket2: SpeedLoader45_magnumAP
+    pocket1: WeaponPistolKuosame
+    pocket2: Magazine57x28mmPistolFMJ
   storage:
     back:
     - RubberStampMMCLiason

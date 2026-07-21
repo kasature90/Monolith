@@ -1,0 +1,11 @@
+- type: loadout
+  id: MMCHeadset
+  price: 0
+  equipment:
+    ears: ClothingHeadsetViperAlt
+
+- type: loadout
+  id: MMCCommandHeadset
+  price: 0
+  equipment:
+    ears: ClothingHeadsetViperAlt

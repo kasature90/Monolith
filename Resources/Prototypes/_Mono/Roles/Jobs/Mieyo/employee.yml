@@ -36,8 +36,8 @@
 - type: startingGear
   id: MMCEmployeeGear
   equipment:
-    pocket1: WeaponPistolPollock
-    pocket2: Magazine9x19mmPistolFMJ
+    pocket1: WeaponPistolKuosame
+    pocket2: Magazine57x28mmPistolFMJ
   storage:
     back:
     - RadioHandheldNF

@@ -31,8 +31,6 @@
     - type: NpcFactionMember
       factions:
       - MMC
-    - type: ChatRank
-      rank: mmc-security
   - !type:AddLanguageSpecial
     languagesSpoken:
     - Nekomimetic
@@ -42,8 +40,13 @@
 - type: startingGear
   id: MMCSecurityGear
   equipment:
-    pocket1: WeaponPistolPollock
-    pocket2: Magazine9x19mmPistolFMJ
+    pocket1: WeaponPistolKuosame
+    pocket2: Magazine57x28mmPistolFMJ
   storage:
     back:
     - RadioHandheldNF
+    - WeaponSubMachineGunMasamune
+    belt:
+    - Magazine57x28mmSubMachineGunFMJ
+    - Magazine57x28mmSubMachineGunFMJ
+    - Magazine57x28mmSubMachineGunFMJ

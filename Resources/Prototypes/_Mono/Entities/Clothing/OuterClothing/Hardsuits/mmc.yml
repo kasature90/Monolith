@@ -44,7 +44,7 @@
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitMieyoCombat
   name: MMC kurogane tacsuit
-  description: A tactical combat suit for MMC asset protection & corporate security. It's heavy and defensive.
+  description: A tactical combat suit for MMC asset protection & corporate security. It's very light, but not too defensive.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/mmc_combat.rsi
@@ -65,8 +65,8 @@
         Radiation: 0.8
         Caustic: 0.8
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 1
+    sprintModifier: 1
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     requiredSlot: outerclothing

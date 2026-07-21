@@ -56,4 +56,11 @@
   name: chat-radio-mieyo
   keycode: 'h'
   frequency: 1532
-  color: "#fca503" #Brighter color used for visual clarity.
+  color: "#fca503"
+
+- type: radioChannel
+  id: MieyoCommand
+  name: chat-radio-mieyo-command
+  keycode: 'x'
+  frequency: 1536
+  color: "#b5b5b5"

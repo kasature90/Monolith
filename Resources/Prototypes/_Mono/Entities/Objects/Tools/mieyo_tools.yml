@@ -54,6 +54,15 @@
     sprite: _Mono/Objects/Tools/mieyo_rcd.rsi
 
 - type: entity
+  id: RCDMMCEmpty
+  parent: RCDMMC
+  suffix: empty
+  components:
+  - type: LimitedCharges
+    maxCharges: 250
+    charges: 0
+
+- type: entity
   id: RPDMMC
   parent: RPD
   name: mieyo RPD
@@ -70,10 +79,19 @@
     sprite: _Mono/Objects/Tools/mieyo_rpd.rsi
 
 - type: entity
+  id: RPDMMCEmpty
+  parent: RPDMMC
+  suffix: empty
+  components:
+  - type: LimitedCharges
+    maxCharges: 180
+    charges: 0
+
+- type: entity
   parent: BaseItem
   id: AccessBreakerMMC
-  name: mieyo authentication disruptor
-  description: A corporate single-use hacking device, specialized to unlock and erase access from digital locks.
+  name: mieyo disposable authentication disruptor
+  description: A single-use hacking device, specialized to unlock and erase access from digital locks.
   components:
   - type: Emag
     emagType: Access
@@ -83,8 +101,8 @@
   - type: Item
     sprite: _Mono/Objects/Tools/mieyo_access_breaker.rsi
   - type: LimitedCharges
-    maxCharges: 12 # more than normal but it doesnt recharge
-    charges: 12
+    maxCharges: 15 # more than normal but it doesnt recharge
+    charges: 15
 
 - type: entity
   parent: MotionDetector

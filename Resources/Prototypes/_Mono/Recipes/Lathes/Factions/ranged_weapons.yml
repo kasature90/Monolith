@@ -586,3 +586,31 @@
     Plasteel: 3500
     Plastic: 500
     Plasma: 1000
+
+# Mieyo
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponSubMachineGunMasamuneMMC
+  result: WeaponSubMachineGunMasamune
+  categories:
+  - SMGs
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 1000
+    Plasteel: 500
+    Plastic: 600
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponPistolKuosameMMC
+  result: WeaponPistolKuosame
+  categories:
+  - Sidearms
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 400
+    Plasteel: 100
+    Plastic: 400

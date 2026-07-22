@@ -43,3 +43,4 @@ FloorWaterEntity: CEWater
 # kill pirate scaf
 ClothingOuterHardsuitPirateScaf: ClothingOuterHardsuitAshen
 SuitStoragePirateCap: SuitStorageEVAPirate
+SuitStorageWallmountPirateCap: SuitStorageWallmountEVAPirate

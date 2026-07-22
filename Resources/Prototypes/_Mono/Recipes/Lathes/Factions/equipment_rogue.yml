@@ -1,47 +1,21 @@
-# T1 scaf
-
-- type: latheRecipe
-  id: ClothingOuterHardsuitPirateScafRogue
-  parent: MonoHardsuitT1Recipe
-  result: ClothingOuterHardsuitPirateScaf
-
-# T2 medic
-
-- type: latheRecipe
-  id: ClothingOuterHardsuitPDVMedic
-  parent: MonoHardsuitT2Recipe
-  result: ClothingOuterHardsuitPDVMedic
-
-# T2 syndie
+# T1
 
 - type: latheRecipe
   id: ClothingOuterHardsuitSyndieRogue
-  parent: MonoHardsuitT2Recipe
-  result: ClothingOuterHardsuitAshen
+  parent: MonoHardsuitT1Recipe
+  result: ClothingOuterHardsuitAshen # CV-32
+
+# T2
 
 - type: latheRecipe
   id: ClothingOuterHardsuitSyndieEliteRogue
   parent: MonoHardsuitT2Recipe
-  result: ClothingOuterHardsuitAshenElite
-
-# T2 stealthsuit
+  result: ClothingOuterHardsuitAshenElite # CV-53
 
 - type: latheRecipe
   id: ClothingOuterHardsuitCybersunStealthRogue
   parent: MonoHardsuitT3Recipe
   result: ClothingOuterHardsuitCybersunStealth
-
-# T3 plastitanium
-
-- type: latheRecipe
-  id: ClothingOuterHardsuitJuggernautRogue
-  parent: MonoHardsuitT3TsfRecipe
-  result: ClothingOuterHardsuitJuggernaut
-
-- type: latheRecipe
-  id: ClothingOuterHardsuitSyndieCommanderRogue
-  parent: MonoHardsuitT3TsfRecipe
-  result: ClothingOuterHardsuitSyndieCommander
 
 # misc
 

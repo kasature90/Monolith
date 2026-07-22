@@ -477,6 +477,21 @@
       tags:
       - SecurityUplink
 
+- type: listing
+  id: UplinkSecurityFactionLathe
+  name:  uplink-faction-lathe-name
+  description: uplink-faction-lathe-desc
+  productEntity: FactionLatheFlatpack
+  cost:
+    FederationMilitaryCredit: 125
+  categories:
+  - UplinkSecurityHardsuits
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - SecurityUplink
+
 # - type: listing
 #   id: UplinkSecurityAuroraExosuit
 #   name:  uplink-exosuit-aurora-name

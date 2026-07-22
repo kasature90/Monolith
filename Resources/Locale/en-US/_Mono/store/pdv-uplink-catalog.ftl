@@ -219,6 +219,12 @@ uplink-pirate-webvest-desc = A webvest smuggled into the sector that hasn't been
 uplink-pirate-syndie-mask-name = Syndicate Gas Mask
 uplink-pirate-syndie-mask-desc = A tactical flash resistant gas mask that can be connected to an air supply.
 
+uplink-pdv-cv82-name = CV-82 Hardsuit
+uplink-pdv-cv82-desc = A suit with slightly lighter armor plating than the CV-53, but an inbuilt shield generator to compensate.
+
+uplink-pdv-jugg-name = Juggernaut Suit
+uplink-pdv-jugg-desc = A slow and bulky suit, with heavy protection but an equally large slowdown.
+
 uplink-pirate-modsuit-name = RX-01 PDV Modsuit
 uplink-pirate-modsuit-desc = An experimental modsuit prototype developed by Ullman Industries. When powered it provides enhanced agility and boosted sensors. "The original client died so uh, go nuts" - Felix Ullman
 

@@ -2,6 +2,7 @@
   parent: [ ClothingOuterHardsuitBase, BaseFactionGearPDVT2 ]
   id: ClothingOuterHardsuitPirateScaf
   name: PDV SCAF hardsuit
+  suffix: DEPRECATED
   description: An old SCAF suit painted in an PDV tan color scheme. The armor feels degraded, but lighter.
   components:
   - type: Sprite
@@ -46,10 +47,10 @@
     - RogueHardsuit
 
 - type: entity
-  parent: [ ClothingOuterHardsuitSyndie, BaseFactionGearPDVT2 ]
+  parent: [ ClothingOuterHardsuitSyndie, BaseFactionGearPDVT1 ]
   id: ClothingOuterHardsuitAshen
   name: PDV CV-32 combat hardsuit
-  description: A combat hardsuit designed by the Phaethon Dynasty. A heavier but still general-purpose hardsuit. Sacrifices most of its protection for reinforced ballistic platings.
+  description: A general-purpose combat hardsuit designed by the Phaethon Dynasty. Sacrifices most of its protection for staying light.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/syndicate.rsi
@@ -66,15 +67,15 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.7
-        Slash: 0.75
-        Piercing: 0.35
-        Heat: 0.75
-        Radiation: 0.7
-        Caustic: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.65
+        Heat: 0.7
+        Radiation: 0.8
+        Caustic: 0.8
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 0.95
+    sprintModifier: 0.95
   - type: ExplosionResistance
     damageCoefficient: 0.7
   - type: Tag
@@ -84,10 +85,10 @@
     coefficient: 0.75
 
 - type: entity
-  parent: [ ClothingOuterHardsuitBase, BaseFactionGearPDVT2 ]
+  parent: [ ClothingOuterHardsuitBase, MonoEnergyShieldClothingT3Suits, BaseFactionGearPDVT3 ]
   id: ClothingOuterHardsuitPDVMedic
   name: PDV CV-82 combat tacsuit
-  description: A field medic combat hardsuit designed by the Phaethon Dynasty. The armor features various reinforced plating in vital areas.
+  description: An advanced combat hardsuit designed by the Phaethon Dynasty. The armor features less reinforced plating than the CV-53, but has an inbuilt shield generator.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/pdv_medic.rsi
@@ -103,17 +104,17 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.67
-        Slash: 0.34
-        Piercing: 0.625
-        Heat: 0.55
-        Radiation: 0.1
-        Caustic: 0.1
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.6
+        Radiation: 0.4
+        Caustic: 0.6
   - type: StaminaDamageResistance # Mono - Stamres
-    coefficient: 0.67
+    coefficient: 0.5
   - type: ClothingSpeedModifier
-    walkModifier: 1.05
-    sprintModifier: 1.05
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
     requiredSlot: outerclothing
@@ -140,6 +141,20 @@
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/pdv_vizier.rsi
   - type: Clothing
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/pdv_vizier.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.55
+        Heat: 0.6
+        Radiation: 0.8
+        Caustic: 0.8
+  - type: StaminaDamageResistance
+    coefficient: 0.4
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: ToggleableClothing
     requiredSlot: outerclothing
     blockUnequipWhenAttached: false
@@ -153,10 +168,10 @@
     - RogueHardsuit
 
 - type: entity
-  parent: [ ClothingOuterHardsuitSyndieElite, EnergyShieldClothing ]
+  parent: ClothingOuterHardsuitSyndieElite
   id: ClothingOuterHardsuitAshenElite
   name: PDV CV-53 combat tacsuit
-  description: Originally based off of the CV-32 hardsuit, the CV-53 tacsuit sacrifices conventional armor plating for environmental protection, and a rechargeable hard-shield.
+  description: Originally based off of the CV-32 hardsuit, the CV-53 adds extra plating and better visual suites, but is heavier as a result.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/syndieelite.rsi
@@ -174,53 +189,25 @@
     damageCoefficient: 0.3
   - type: FireProtection
     reduction: 0.8
-  - type: Armor # Mono - Armor Value Changes
+  - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.75
-        Slash: 0.75
-        Piercing: 0.7
-        Heat: 0.2
-        Radiation: 0.01
-        Caustic: 0.5
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.55
+        Heat: 0.6
+        Radiation: 0.8
+        Caustic: 0.8
+  - type: StaminaDamageResistance
+    coefficient: 0.4
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: Item
     size: Huge
-  - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0 # 0.9-> 1 Mono
   - type: Tag
     tags:
     - RogueHardsuit
-  # Shielding
-  - type: Blocking
-    passiveBlockModifier:
-      coefficients:
-        Blunt: 0.1
-        Slash: 0.1
-        Piercing: 0.1
-        Heat: 0.1
-    activeBlockModifier:
-      coefficients:
-        Blunt: 0.1
-        Slash: 0.1
-        Piercing: 0.1
-        Heat: 0.1
-      flatReductions:
-        Heat: 5
-    passiveBlockFraction: 1.0
-    activeBlockFraction: 1.0
-    isClothing: true
-  - type: Damageable
-    damageContainer: Shield
-  - type: Battery
-    maxCharge: 10
-    startingCharge: 10
-  - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargeRate: 1
-  - type: RechargeableBlocking
-    chargedRechargeRate: 0
-    dischargedRechargeRate: 0.3
   - type: UseDelay
     delay: 10
   - type: PointLight

@@ -477,6 +477,21 @@
       tags:
       - SecurityUplink
 
+- type: listing
+  id: UplinkSecurityM92X
+  name:  uplink-hardsuit-m92x-name
+  description: uplink-hardsuit-m92x-desc
+  productEntity: ClothingOuterHardsuitNfsdExperimental
+  cost:
+    FederationMilitaryCredit: 125
+  categories:
+  - UplinkSecurityHardsuits
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - SecurityUplink
+
 # - type: listing
 #   id: UplinkSecurityAuroraExosuit
 #   name:  uplink-exosuit-aurora-name

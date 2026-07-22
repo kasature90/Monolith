@@ -73,6 +73,9 @@ uplink-security-medical-assembler-desc = An assembler that can be used to make u
 uplink-security-hfblade-name = HF-Katana
 uplink-security-hfblade-desc = A tool of justice.
 
+uplink-hardsuit-m92x-name = M-92X Hardsuit
+uplink-hardsuit-m92x-desc = A hardsuit with slightly-less plating than the M86 (and thus less heavy), but is equipped an inbuilt shield generator.
+
 uplink-exosuit-aurora-name = M-320X AURORA
 uplink-exosuit-aurora-desc = A prototype exosuit for the future of warfare. Utilizes nanomachines in a basic amount to protect the wearer from vacuum, and protects very well against HF blades, while enhancing the wearers mobility.
 

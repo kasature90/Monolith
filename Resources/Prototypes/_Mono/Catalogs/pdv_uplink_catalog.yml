@@ -1011,22 +1011,6 @@
 #MARK: Equipment
 
 - type: listing
-  id: UplinkPirateCombatHardsuit
-  name: uplink-pirate-combat-hardsuit-name
-  description: uplink-pirate-combat-hardsuit-desc
-  productEntity: ClothingOuterHardsuitPirateScaf
-  icon: { sprite: _Mono/Clothing/OuterClothing/Hardsuits/scaf_pirate.rsi, state: icon }
-  cost:
-    Doubloon: 15
-  categories:
-  - UplinkPirateEquipment
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - PirateUplink
-
-- type: listing
   id: UplinkPirateWebVest
   name: uplink-pirate-webvest-name
   description: uplink-pirate-webvest-desc
@@ -1050,6 +1034,36 @@
   icon: { sprite: Clothing/Mask/gassyndicate.rsi, state: icon }
   cost:
     Doubloon: 15
+  categories:
+  - UplinkPirateEquipment
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPdvCv82
+  name: uplink-pdv-cv82-name
+  description: uplink-pdv-cv82-desc
+  productEntity: ClothingOuterHardsuitPDVMedic
+  cost:
+    Doubloon: 125
+  categories:
+  - UplinkPirateEquipment
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPdvJuggSuit
+  name: uplink-pdv-jugg-name
+  description: uplink-pdv-jugg-desc
+  productEntity: ClothingOuterHardsuitJuggernaut
+  cost:
+    Doubloon: 250
   categories:
   - UplinkPirateEquipment
   conditions:

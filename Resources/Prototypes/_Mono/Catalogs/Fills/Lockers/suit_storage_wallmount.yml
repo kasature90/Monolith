@@ -304,11 +304,6 @@
   id: SuitStorageWallmountSyndie
   parent: [SuitStorageWallmount, SuitStorageSyndie]
 
-#Pirate Captain's hardsuit
-- type: entity
-  id: SuitStorageWallmountPirateCap
-  parent: [SuitStorageWallmount, SuitStoragePirateCap]
-
 #Wizard
 - type: entity
   id: SuitStorageWallmountWizard

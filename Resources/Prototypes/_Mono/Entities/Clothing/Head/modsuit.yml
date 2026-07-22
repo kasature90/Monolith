@@ -134,11 +134,6 @@
         Piercing: 0.9
         Heat: 0.9
         Radiation: 0.95
-  - type: ThermalVision
-    flashDurationMultiplier: 2
-    pulseTime: 2
-    isEquipment: true
-    toggleAction: PulseThermalVision
   - type: NightVision # Gen 4 dualtube
     relayOverlay: true
     goggleEffect: true

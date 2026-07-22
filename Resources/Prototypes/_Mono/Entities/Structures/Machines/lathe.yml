@@ -425,7 +425,7 @@
 - type: entity
   id: MMCLathe
   parent: BaseLatheLube
-  name: MMC field assembler
+  name: MMC multipurpose assembler
   description: Capable of manufacturing equipment from MMC design patterns. Sent to anywhere that needs a large-scale industrial startup.
   components:
   - type: Sprite
@@ -433,7 +433,7 @@
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
-    - state: techfab-ussp
+    - state: techfab-mieyo
     - state: unlit
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]

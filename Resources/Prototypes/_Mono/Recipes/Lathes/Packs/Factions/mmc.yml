@@ -24,9 +24,7 @@
   recipes:
   - WeaponSubMachineGunMasamuneMMC
   - WeaponPistolKuosameMMC
-  - SecBreachingHammerMMC
   - ClothingOuterHardsuitMieyoMiningMMC
-  - ClothingOuterHardsuitMieyoCombatMMC
 
 - type: latheRecipePack
   id: MonoMMCUtilityResearch
@@ -51,3 +49,4 @@
   recipes:
   - ClothingOuterHardsuitMieyoCombatMMC
   - WeaponSubMachineGunSakuraMMC
+  - SecBreachingHammerMMC

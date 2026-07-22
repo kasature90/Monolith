@@ -32,7 +32,7 @@
   - type: Sprite
     scale: 0.8, 0.8
     sprite: _Mono/Objects/Tools/mieyo_srd.rsi
-    state: item
+    state: icon
   - type: Item
     sprite: _Mono/Objects/Tools/mieyo_srd.rsi
     size: Normal
@@ -109,6 +109,7 @@
   id: MotionDetectorMMC
   name: mieyo motion detector
   description: A handheld motion detector. Detects people not in the same company of the user.
+  components:
   - type: Sprite
     sprite: _Mono/Objects/Tools/mieyo_motion_detector.rsi
     layers:

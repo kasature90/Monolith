@@ -54,7 +54,7 @@
 - type: radioChannel
   id: Mieyo
   name: chat-radio-mieyo
-  keycode: 'h'
+  keycode: 'a'
   frequency: 1532
   color: "#fca503"
 
@@ -63,4 +63,4 @@
   name: chat-radio-mieyo-command
   keycode: 'x'
   frequency: 1536
-  color: "#b5b5b5"
+  color: "#AAAAAA"

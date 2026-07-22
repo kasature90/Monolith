@@ -535,7 +535,7 @@
     burstFireRate: 40
     shotsPerBurst: 5
     burstCooldown: 0.5
-    damageModifier: 1.3
+    damageModifier: 1.05
     lockOnTargetBurst: true
     cameraRecoilScalar: 0
     selectedMode: Burst

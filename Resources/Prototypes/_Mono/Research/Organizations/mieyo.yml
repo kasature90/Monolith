@@ -18,7 +18,7 @@
 - type: technology
   id: MieyoShipworking
   name: research-technology-mieyo-srd
-  entityIcon: ShipRepairDeviceMMC
+  entityIcon: NaniteApplicatorMMC
   discipline: Mieyo
   tier: 1
   cost: 10000
@@ -48,7 +48,7 @@
 - type: technology
   id: MieyoCorpsecSuits
   name: research-technology-mieyo-corpsec-gear
-  entityIcon: ClothingOuterHardsuitMieyoMining
+  entityIcon: ClothingOuterHardsuitMieyoCombat
   discipline: Mieyo
   tier: 2
   cost: 25000

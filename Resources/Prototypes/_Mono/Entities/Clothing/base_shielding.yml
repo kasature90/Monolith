@@ -108,8 +108,8 @@
   components:
   - type: PersonalShield
     shield:
-      maxCharge: 300
-      regenRate: 3
+      maxCharge: 500
+      regenRate: 6
       spinupTime: 1
       breakCooldown: 7.5
       powerDraw: 0.5

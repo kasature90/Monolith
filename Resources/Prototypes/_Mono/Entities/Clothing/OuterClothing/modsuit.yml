@@ -19,7 +19,7 @@
       coefficients:
         Blunt: 0.5
         Slash: 0.5
-        Piercing: 0.4 # Modsuits are pain to use. Needs some kind of benefit.
+        Piercing: 0.5
         Heat: 0.75
         Radiation: 0.5
         Caustic: 0.5
@@ -47,7 +47,7 @@
       coefficients:
         Blunt: 0.45
         Slash: 0.45
-        Piercing: 0.3 # It has a lot of slowdown, I want to jugglarp
+        Piercing: 0.4
         Heat: 0.55
         Caustic: 0.4
         Radiation: 0.35
@@ -113,7 +113,7 @@
       coefficients:
         Blunt: 0.75
         Slash: 0.8
-        Piercing: 0.65
+        Piercing: 0.7
         Heat: 0.5
         Shock: 0.9
         Radiation: 0.01
@@ -154,7 +154,7 @@
       coefficients:
         Blunt: 0.55
         Slash: 0.55
-        Piercing: 0.55
+        Piercing: 0.6
         Heat: 0.6
         Caustic: 0.45 # Mono
         Radiation: 0.75 # Mono

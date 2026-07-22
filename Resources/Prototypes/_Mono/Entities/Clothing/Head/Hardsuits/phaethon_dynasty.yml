@@ -20,10 +20,10 @@
     lightingColor: "#FFFFFF32"
 
 - type: entity
-  parent: [ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ShowMedicalIcons, ShowSecurityIcons]
+  parent: [ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ShowSecurityIcons]
   id: ClothingHeadHelmetHardsuitPDVMedic
   name: PDV CV-82 combat tacsuit helmet
-  description: A hardsuit helmet by the Phaethon Dynasty. Has a built-in medical HUD complemented by thermal pulse systems.
+  description: A hardsuit helmet by the Phaethon Dynasty.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -32,11 +32,6 @@
     sprite: _Mono/Clothing/Head/Hardsuits/pdv_medic.rsi
   - type: PointLight
     color: "#eb772a"
-  - type: ThermalVision
-    flashDurationMultiplier: 2
-    pulseTime: 4
-    isEquipment: true
-    toggleAction: PulseThermalVision
   - type: ShowHealthBars
   - type: PressureProtection
     highPressureMultiplier: 0.08

@@ -478,10 +478,10 @@
       - SecurityUplink
 
 - type: listing
-  id: UplinkSecurityFactionLathe
-  name:  uplink-faction-lathe-name
-  description: uplink-faction-lathe-desc
-  productEntity: FactionLatheFlatpack
+  id: UplinkSecurityM92X
+  name:  uplink-hardsuit-m92x-name
+  description: uplink-hardsuit-m92x-desc
+  productEntity: ClothingOuterHardsuitNfsdExperimental
   cost:
     FederationMilitaryCredit: 125
   categories:

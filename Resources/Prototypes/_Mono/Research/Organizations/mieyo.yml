@@ -40,6 +40,7 @@
   recipeUnlocks:
   - AccessBreakerMMC
   - SecBreachingHammerMMC
+  - WeaponSubMachineGunSakuraMMC
   technologyPrerequisites:
   - UniversalMaterialResearchT1
   position: 18, 1

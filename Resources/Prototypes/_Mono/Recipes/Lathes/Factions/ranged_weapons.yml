@@ -604,6 +604,20 @@
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
+  id: WeaponSubMachineGunSakuraMMC
+  result: WeaponSubMachineGunSakura
+  categories:
+  - SMGs
+  - SmartGuns
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 2500
+    Plasteel: 1500
+    Plastic: 1000
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
   id: WeaponPistolKuosameMMC
   result: WeaponPistolKuosame
   categories:

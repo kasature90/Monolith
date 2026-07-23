@@ -118,10 +118,10 @@
   description: Used to transfer ships from the MMC employ reserves.
   components:
   - type: ActivatableUI
-    key: enum.ShipyardConsoleUiKey.MMC
+    key: enum.ShipyardConsoleUiKey.Mieyo
   - type: UserInterface
     interfaces:
-      enum.ShipyardConsoleUiKey.MMC:
+      enum.ShipyardConsoleUiKey.Mieyo:
         type: ShipyardConsoleBoundUserInterface
   - type: Sprite
     sprite: _Mono/Structures/Machines/computers.rsi

@@ -1,7 +1,7 @@
 # Sustained-firepower alternative to Kite
 - type: vessel
   id: Yukikaze
-  parent: Yukikaze
+  parent: BaseVessel
   name: MMC-CSC Yukikaze
   description: A craft with slightly-more armor than the Kite, with a layer of plasteel and plastitanium, plus a shield! Only comes with a 2 AK-820s + 20mms and very cramped interior however.
   price: 87400

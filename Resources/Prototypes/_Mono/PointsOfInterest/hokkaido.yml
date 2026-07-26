@@ -33,7 +33,7 @@
         - type: StationNameSetup
           mapNameTemplate: 'MMC Hokkaido'
         - type: ExtraStationInformation
-          icon: /Textures/Structures/Machines/autolathe.rsi/icon.png
+          icon: /Textures/_Mono/Interface/Misc/LateJoin/lathe.png
           stationSubtext: 'frontier-lobby-hokkaido-subtext'
           stationDescription: 'frontier-lobby-hokkaido-description'
         - type: StationJobs

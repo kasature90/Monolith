@@ -62,7 +62,7 @@
   - type: Sprite
     sprite: _Mono/Structures/Doors/Airlocks/Glass/mieyo.rsi
   - type: PaintableAirlock
-    department: Mieyo
+    department: MieyoManufacturingConcern
   - type: Wires
     layoutId: AirlockSecurity
 

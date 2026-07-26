@@ -1,3 +1,4 @@
+# High alpha/burst damage but low sustained damage, more for hit & run (poor armor)
 - type: vessel
   id: Kite
   parent: BaseVessel

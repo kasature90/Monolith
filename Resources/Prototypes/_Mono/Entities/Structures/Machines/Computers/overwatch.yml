@@ -3,6 +3,7 @@
   id: BaseComputerOverwatch
   name: overwatch console
   description: A computer console used to track faction members via wearable cameras.
+  abstract: true
   placement:
     mode: SnapgridCenter
   components:
@@ -28,8 +29,6 @@
         type: OverwatchBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
-  - type: Computer
-    board: CommsComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6

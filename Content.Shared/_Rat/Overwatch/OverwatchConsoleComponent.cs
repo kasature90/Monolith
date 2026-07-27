@@ -15,7 +15,7 @@ public sealed partial class OverwatchConsoleComponent : Component
     /// Фракция, которую отслеживает эта консоль.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public ProtoId<CompanyPrototype> Faction;
+    public ProtoId<CompanyPrototype> Faction = "None";
 
     /// <summary>
     /// Текущий фильтр по статусу.

@@ -13,7 +13,7 @@ namespace Content.Client._Rat.Overwatch;
 /// </summary>
 public sealed class OverwatchAnnouncementOverlay : Overlay
 {
-    private const string FontPath = "/Fonts/Fondamento-Regular.ttf";
+    private const string FontPath = "/Fonts/Helvetica/Helvetica-Bold.ttf";
     private const int TitleFontSize = 20;
     private const int MessageFontSize = 25;
     private const float TitleAnimationDuration = 1.5f;

@@ -156,6 +156,12 @@ public sealed partial class OverwatchWindow : FancyWindow
         _allMembers = state.Members;
         _factionColor = state.FactionColor;
 
+        if (!string.IsNullOrEmpty(state.SearchQuery) && string.IsNullOrEmpty(_searchQuery))
+        {
+            _searchQuery = state.SearchQuery;
+            SearchInput.Text = state.SearchQuery;
+        }
+
         var squadsChanged = _availableSquads.Count != state.AvailableSquads.Count ||
                             state.AvailableSquads.Any(kvp =>
                                 !_availableSquads.ContainsKey(kvp.Key) ||
@@ -596,9 +602,6 @@ public sealed class OverwatchMemberRow : BoxContainer
 
         _viewButton.OnPressed += _ =>
         {
-            if (_ui == null)
-                return;
-
             _onStartWatching(this);
             _ui.ViewCamera(_member);
             _window?.SetWatching(_member, true);

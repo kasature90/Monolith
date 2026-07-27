@@ -34,7 +34,7 @@
     sprite: _Mono/Objects/Tools/mieyo_srd.rsi
     state: icon
   - type: Item
-    sprite: _Mono/Objects/Tools/mieyo_srd.rsi
+    sprite: _Mono/Objects/Tools/mieyo_srd_inhands.rsi
     size: Normal
 
 - type: entity
@@ -103,6 +103,8 @@
   - type: LimitedCharges
     maxCharges: 15 # more than normal but it doesnt recharge
     charges: 15
+  - type: UseDelay
+    delay: 1.0
 
 - type: entity
   parent: MotionDetector

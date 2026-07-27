@@ -1,0 +1,58 @@
+- type: entity
+  parent: [BaseStructureDisableToolUse, BaseStructureDestructible, BaseComputerAiAccess]
+  id: BaseComputerOverwatch
+  name: overwatch console
+  description: A computer console used to track faction members via wearable cameras.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: OverwatchConsole
+  - type: StationAiWhitelist
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: comm
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: ActivatableUI
+    key: enum.OverwatchUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.OverwatchUiKey.Key:
+        type: OverwatchBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: Computer
+    board: CommsComputerCircuitboard
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#3c5eb5"
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
+  - type: ShipRepairable
+    repairTime: 4
+    repairCost: 8
+
+- type: entity
+  parent: BaseComputerOverwatch
+  id: TSFOverwatchComputer
+  name: TSFMC overwatch console
+  components:
+  - type: OverwatchConsole
+    faction: TSF
+
+- type: entity
+  parent: BaseComputerOverwatch
+  id: PDVOverwatchComputer
+  name: PDV overwatch console
+  components:
+  - type: OverwatchConsole
+    faction: PDV

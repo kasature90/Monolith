@@ -4,8 +4,8 @@ meta:
   engineVersion: 277.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/28/2026 13:21:51
-  entityCount: 5933
+  time: 07/28/2026 13:25:28
+  entityCount: 5941
 maps: []
 grids:
 - 1
@@ -14822,6 +14822,75 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
+  - uid: 5930
+    components:
+    - type: Transform
+      pos: -27.5,-10.5
+      parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 50
+    - type: ApcPowerReceiverBattery
+      enabled: True
+  - uid: 5936
+    components:
+    - type: Transform
+      pos: -0.5,0.5
+      parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 0
+  - uid: 5937
+    components:
+    - type: Transform
+      pos: -1.5,4.5
+      parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 0
+  - uid: 5938
+    components:
+    - type: Transform
+      pos: -1.5,-6.5
+      parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 0
+  - uid: 5939
+    components:
+    - type: Transform
+      pos: 30.5,9.5
+      parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 0
+  - uid: 5940
+    components:
+    - type: Transform
+      pos: 29.5,-18.5
+      parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 25
+    - type: ApcPowerReceiverBattery
+      enabled: True
+  - uid: 5941
+    components:
+    - type: Transform
+      pos: -26.5,16.5
+      parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 67.5
+    - type: ApcPowerReceiverBattery
+      enabled: True
 - proto: ComputerCargoOrders
   entities:
   - uid: 2233
@@ -28060,7 +28129,7 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: MMCLatheImmmovable
+- proto: MMCLathe
   entities:
   - uid: 4082
     components:
@@ -31427,13 +31496,13 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -24.5,-26.5
       parent: 1
-  - uid: 5930
+  - uid: 5931
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 30.5,5.5
       parent: 1
-  - uid: 5931
+  - uid: 5932
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -31483,13 +31552,13 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 27.5,27.5
       parent: 1
-  - uid: 5932
+  - uid: 5933
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 29.5,-17.5
       parent: 1
-  - uid: 5933
+  - uid: 5934
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -31868,6 +31937,11 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 41.5,6.5
+      parent: 1
+  - uid: 5935
+    components:
+    - type: Transform
+      pos: -39.5,18.5
       parent: 1
 - proto: SmartFridge
   entities:

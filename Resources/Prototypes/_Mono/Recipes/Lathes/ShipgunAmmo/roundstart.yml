@@ -73,6 +73,7 @@
   result: Box220mmAPHE
   materials:
     Steel: 24000 # x24
+    Plastic: 200
 
 - type: latheRecipe
   parent: BaseLightShipgunAmmoRecipe
@@ -80,6 +81,7 @@
   result: Box220mmHECluster
   materials:
     Steel: 24000 # x24
+    Plastic: 200
 
 - type: latheRecipe
   parent: BaseLightShipgunAmmoRecipe
@@ -87,6 +89,7 @@
   result: Box220mmSmartCluster
   materials:
     Steel: 24000 # x24
+    Plastic: 200
 
 - type: latheRecipe
   parent: BaseLightShipgunAmmoRecipe
@@ -113,21 +116,24 @@
   id: Box255mmAPHEAmmoRecipe
   result: Box255mmAPHE
   materials:
-    Steel: 48000 # x24
+    Steel: 32000 # x16
+    Plastic: 200
 
 - type: latheRecipe
   parent: BaseShipgunAmmoRecipe
   id: Box255mmEMPAmmoRecipe
   result: Box255mmEMP
   materials:
-    Steel: 48000 # x24
+    Steel: 32000 # x16
+    Plastic: 200
 
 - type: latheRecipe
   parent: BaseShipgunAmmoRecipe
   id: Box255mmMineAmmoRecipe
   result: Box255mmMine
   materials:
-    Steel: 48000 # x24
+    Steel: 32000 # x16
+    Plastic: 200
 
 - type: latheRecipe
   parent: BaseHeavyShipgunAmmoRecipe

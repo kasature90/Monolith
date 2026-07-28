@@ -21,6 +21,7 @@
   - ContractorArmorPlates # Mono
   - MieyoSidearm
   - MieyoSidearmAmmo
+  - MMCProducts
 
 - type: roleLoadout
   id: JobMMCSecurity
@@ -50,6 +51,7 @@
   - MieyoCorpSecPrimaryAmmo
   - MieyoSidearm
   - MieyoSidearmAmmo
+  - MMCProducts
 
 - type: roleLoadout
   id: JobMMCLiason
@@ -75,3 +77,4 @@
   - ContractorArmorPlates # Mono
   - MieyoSidearm
   - MieyoSidearmAmmo
+  - MMCProducts

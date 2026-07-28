@@ -1,9 +1,6 @@
-using System.Linq;
 using Content.Shared._Mono.Company;
 using Content.Shared._Rat.Squad;
 using Content.Shared.GameTicking;
-using Robust.Shared.Configuration;
-using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._Rat.Squad;

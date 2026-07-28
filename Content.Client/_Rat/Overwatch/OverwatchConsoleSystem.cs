@@ -5,9 +5,7 @@ using Robust.Client.Player;
 using Robust.Client.ResourceManagement;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Components;
-using Robust.Shared.Localization;
 using Robust.Shared.Map;
-using Robust.Shared.Maths;
 using Robust.Shared.Timing;
 using System.Numerics;
 
@@ -23,13 +21,13 @@ public sealed class OverwatchConsoleSystem : EntitySystem
     /// </summary>
     private const float MaxSoundRelayDistance = 50f;
 
-    [Dependency] private readonly AudioSystem _audio = default!;
-    [Dependency] private readonly IEyeManager _eye = default!;
-    [Dependency] private readonly IPlayerManager _player = default!;
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly IOverlayManager _overlay = default!;
-    [Dependency] private readonly IResourceCache _cache = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private AudioSystem _audio = default!;
+    [Dependency] private IEyeManager _eye = default!;
+    [Dependency] private IPlayerManager _player = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private IOverlayManager _overlay = default!;
+    [Dependency] private IResourceCache _cache = default!;
+    [Dependency] private IGameTiming _timing = default!;
 
     /// <summary>
     /// Кэш ретранслируемых звуков для отслеживания активных ретрансляций.

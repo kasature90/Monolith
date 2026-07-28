@@ -1,7 +1,5 @@
 using Content.Shared._Rat.Overwatch;
-using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
-using Robust.Shared.GameObjects;
 
 namespace Content.Client._Rat.Overwatch;
 

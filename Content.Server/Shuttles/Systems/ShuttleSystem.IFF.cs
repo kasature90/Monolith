@@ -27,7 +27,7 @@ public sealed partial class ShuttleSystem
     private void OnIFFStartup(EntityUid uid, IFFComponent component, ComponentStartup args)
     {
         var num = _random.Next();
-        var address = $"{num >> 16:X4}-{num & 0xFFFF:X4}";
+        var address = $" {num >> 16:X4}-{num & 0xFFFF:X4}";
         component.Address = address;
     }
     // Mono end

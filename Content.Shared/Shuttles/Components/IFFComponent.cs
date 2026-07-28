@@ -1,4 +1,3 @@
-using System.Security.Cryptography;
 using Content.Shared.Shuttles.Systems;
 using Robust.Shared.GameStates;
 

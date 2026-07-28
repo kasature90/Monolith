@@ -68,9 +68,9 @@
   minLimit: 0
   maxLimit: 1
   loadouts:
-  - VendingMachineMieyoAutomated
+  - MMCVendorLoadout
   fallbacks:
-  - VendingMachineMieyoAutomated
+  - MMCVendorLoadout
 
 # Corpsec below
 

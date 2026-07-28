@@ -14,7 +14,7 @@
   id: MieyoAds
   values:
     prefix: advertisement-mieyo-ads-
-    count: 1
+    count: 2
 
 - type: localizedDataset
   id: WaywardComments

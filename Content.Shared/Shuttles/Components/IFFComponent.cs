@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using Content.Shared.Shuttles.Systems;
 using Robust.Shared.GameStates;
 
@@ -25,6 +26,12 @@ public sealed partial class IFFComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
     public Color Color = IFFColor;
+
+    /// <summary>
+    ///     Mono - ID to use for track
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
+    public string? Address = string.Empty;
 
     // Frontier: POI IFF protection
     /// <summary>

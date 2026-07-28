@@ -50,7 +50,7 @@
   id: Magazine140mmSACLOSAmmoRecipe
   result: Magazine140mmSACLOS
 
-# Individual
+# Cartridge-fed (and their boxes)
 
 - type: latheRecipe
   parent: BaseLightShipgunAmmoRecipe
@@ -66,6 +66,27 @@
   parent: BaseLightShipgunAmmoRecipe
   id: 220mmCartridgeSmartClusterAmmoRecipe
   result: 220mmCartridgeSmartCluster
+
+- type: latheRecipe
+  parent: BaseLightShipgunAmmoRecipe
+  id: Box220mmAPHEAmmoRecipe
+  result: Box220mmAPHE
+  materials:
+    Steel: 24000 # x24
+
+- type: latheRecipe
+  parent: BaseLightShipgunAmmoRecipe
+  id: Box220mmHEClusterAmmoRecipe
+  result: Box220mmHECluster
+  materials:
+    Steel: 24000 # x24
+
+- type: latheRecipe
+  parent: BaseLightShipgunAmmoRecipe
+  id: Box220mmSmartClusterAmmoRecipe
+  result: Box220mmSmartCluster
+  materials:
+    Steel: 24000 # x24
 
 - type: latheRecipe
   parent: BaseLightShipgunAmmoRecipe
@@ -86,6 +107,27 @@
   parent: BaseShipgunAmmoRecipe
   id: 255mmCartridgeMineAmmoRecipe
   result: 255mmCartridgeMinelayer
+
+- type: latheRecipe
+  parent: BaseShipgunAmmoRecipe
+  id: Box255mmAPHEAmmoRecipe
+  result: Box255mmAPHE
+  materials:
+    Steel: 48000 # x24
+
+- type: latheRecipe
+  parent: BaseShipgunAmmoRecipe
+  id: Box255mmEMPAmmoRecipe
+  result: Box255mmEMP
+  materials:
+    Steel: 48000 # x24
+
+- type: latheRecipe
+  parent: BaseShipgunAmmoRecipe
+  id: Box255mmMineAmmoRecipe
+  result: Box255mmMine
+  materials:
+    Steel: 48000 # x24
 
 - type: latheRecipe
   parent: BaseHeavyShipgunAmmoRecipe

@@ -33,7 +33,7 @@ public sealed class ActiveMultihitSystem : EntitySystem
             args.ModifiersList.Add(modifierSet);
         }
 
-        RemCompDeferred(ent.Owner, ent.Comp);
+        RemComp(ent.Owner, ent.Comp);
     }
 
 }

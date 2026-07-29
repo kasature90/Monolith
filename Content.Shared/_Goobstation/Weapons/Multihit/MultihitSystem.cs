@@ -119,7 +119,7 @@ public sealed class MultihitSystem : EntitySystem
                         if (TerminatingOrDeleted(args.User) || TerminatingOrDeleted(target) ||
                             !Resolve(weapon, ref melee, false) || !_hands.IsHolding(args.User, weapon))
                         {
-                            RemCompDeferred(weapon, activeMultihit);
+                            RemComp(weapon, activeMultihit);
                             return;
                         }
 
@@ -131,7 +131,7 @@ public sealed class MultihitSystem : EntitySystem
                             _combatMode.SetInCombatMode(args.User, false);
 
                         if (Resolve(weapon, ref activeMultihit, false))
-                            RemCompDeferred(weapon, activeMultihit);
+                            RemComp(weapon, activeMultihit);
                     });
             }
             else
@@ -147,7 +147,7 @@ public sealed class MultihitSystem : EntitySystem
                             !TryComp(args.User, out TransformComponent? xform) ||
                             !Resolve(weapon, ref melee, false) || !_hands.IsHolding(args.User, weapon))
                         {
-                            RemCompDeferred(weapon, activeMultihit);
+                            RemComp(weapon, activeMultihit);
                             return;
                         }
 
@@ -174,7 +174,7 @@ public sealed class MultihitSystem : EntitySystem
                             _combatMode.SetInCombatMode(args.User, false);
 
                         if (Resolve(weapon, ref activeMultihit, false))
-                            RemCompDeferred(weapon, activeMultihit);
+                            RemComp(weapon, activeMultihit);
                     });
             }
 

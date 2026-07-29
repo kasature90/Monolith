@@ -23,3 +23,14 @@
     Lithium: 800
     Copper: 800
     Durathread: 1000
+
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: AutosurgeonDermalArmorPDV
+  result: AutosurgeonDermalArmorPDVFlatpack
+  materials:
+    Steel: 4000
+    Plastic: 2500
+    Glass: 400
+    Plasteel: 4500
+    Durathread: 1000

@@ -124,6 +124,7 @@
   recipeUnlocks:
   - AutosurgeonIASPDV
   - AutosurgeonAdvHeartPDV
+  - AutosurgeonDermalArmorPDV
   technologyPrerequisites:
   - UniversalMaterialResearchT2
   position: 13, -4

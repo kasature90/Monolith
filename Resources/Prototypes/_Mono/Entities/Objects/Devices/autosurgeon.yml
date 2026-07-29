@@ -96,7 +96,6 @@
           coefficients:
             Shock: 1.25
             Heat: 1.1
-          coefficients:
             Piercing: 0.85
             Blunt: 0.9
             Slash: 0.9
@@ -129,8 +128,8 @@
 - type: entity
   parent: BaseNFFlatpack
   id: AutosurgeonAdvHeartPDVFlatpack
-  name: TSF autosurgeon (KR-22 shunt device) flatpack
-  description: A flatpack used for constructing a TSF autosurgeon.
+  name: PDV autosurgeon (VV/KE prosthetic heart) flatpack
+  description: A flatpack used for constructing a PDV autosurgeon.
   components:
   - type: Flatpack
     entity: AutosurgeonAdvHeartPDV

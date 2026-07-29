@@ -46,6 +46,8 @@
     IriditeCrystal: 1
   reagents:
     SodiumPolyacrylate: 5
-    SodiumHydroxide: 5
-    Oxygen: 20
+    Acetone: 10
+    PolytrinicAcid: 5
+    Fersillicite: 5
+    Opporozidone: 15
   recipeType: ArcFurnace

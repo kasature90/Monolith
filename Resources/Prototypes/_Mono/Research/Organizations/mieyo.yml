@@ -76,12 +76,13 @@
 - type: technology
   id: MieyoBionicsT2
   name: research-technology-mieyo-bionics-basic
-  entityIcon: WeaponRifleOsaka
+  entityIcon: MantisBlade
   discipline: Mieyo
   tier: 2
   cost: 50000
   recipeUnlocks:
-  - WeaponRifleOsakaMMC
+  - AutosurgeonRightMantisBladeMMC
+  - AutosurgeonLeftMantisBladeMMC
   technologyPrerequisites:
   - UniversalMaterialResearchT2
   position: 18, 7
@@ -89,12 +90,12 @@
 - type: technology
   id: MieyoBionicsT3
   name: research-technology-mieyo-bionics-advanced
-  entityIcon: WeaponRifleOsaka
+  entityIcon: OrganHeartSandevistan
   discipline: Mieyo
-  tier: 2
+  tier: 3
   cost: 125000
   recipeUnlocks:
-  - WeaponRifleOsakaMMC
+  - AutosurgeonSandevistanMMC
   technologyPrerequisites:
   - UniversalMaterialResearchT3
   - MieyoBionicsT2

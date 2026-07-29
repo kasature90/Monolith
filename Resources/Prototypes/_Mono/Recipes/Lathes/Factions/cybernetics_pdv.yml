@@ -1,0 +1,11 @@
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: AutosurgeonIASPDV
+  result: AutosurgeonIASPDVFlatpack
+  materials:
+    Steel: 2000
+    Plastic: 2500
+    Glass: 400
+    Plasteel: 1600
+    Lithium: 500
+    Copper: 500

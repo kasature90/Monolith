@@ -12,7 +12,6 @@
     sprite: _Goobstation/Objects/Weapons/Melee/mantis_blade.rsi
     state: icon
   - type: MeleeWeapon
-    animationRotation: 120
     swingLeft: true
     wideAnimationRotation: 135
     attackRate: 1.5

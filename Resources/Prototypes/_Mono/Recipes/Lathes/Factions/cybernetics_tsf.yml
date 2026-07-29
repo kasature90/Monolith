@@ -18,7 +18,7 @@
   parent: BaseToolRecipe
   id: AutosurgeonShuntTSF
   result: AutosurgeonShuntTSFFlatpack
-  materials: # He is insanely expensive because it is cool as hell and OP as hell.
+  materials:
     Steel: 3000
     Plastic: 2500
     Glass: 2000

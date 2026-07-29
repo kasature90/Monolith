@@ -3,7 +3,7 @@
 - type: entity
   parent: BaseAutosurgeon
   id: AutosurgeonSandevistanTSF
-  name: TSF autosurgeon (WJY-21X)
+  name: TSF autosurgeon (WJY-21X sandevistan)
   description: Replaces the heart with a reverse-engineered MMC Sandevistan. Doesn't cool down as fast as the real thing.
   components:
   - type: AutoSurgeon
@@ -14,7 +14,7 @@
 - type: entity
   parent: BaseNFFlatpack
   id: AutosurgeonSandevistanTSFFlatpack
-  name: TSF autosurgeon (WJY-21X) flatpack
+  name: TSF autosurgeon (WJY-21X sandevistan) flatpack
   description: A flatpack used for constructing a TSF autosurgeon.
   components:
   - type: Flatpack
@@ -25,12 +25,37 @@
     layers:
     - state: medical_lathe
 
+- type: entity
+  parent: BaseAutosurgeon
+  id: AutosurgeonShuntTSF
+  name: TSF autosurgeon (KR-22 shunt device)
+  description: Replaces the heart with a highly experimental shunt device. Thats some scary tech.
+  components:
+  - type: AutoSurgeon
+    targetBodyPart: Torso
+    targetOrgan: Heart
+    newPartProto: OrganHeartTSFShunt
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: AutosurgeonShuntTSFFlatpack
+  name: TSF autosurgeon (KR-22 shunt device) flatpack
+  description: A flatpack used for constructing a TSF autosurgeon.
+  components:
+  - type: Flatpack
+    entity: AutosurgeonShuntTSF
+  - type: StaticPrice
+    price: 50000
+  - type: Sprite
+    layers:
+    - state: medical_lathe
+
 # PDV
 
 - type: entity
   parent: BaseAutosurgeon
   id: AutosurgeonIASPDV
-  name: PDV autosurgeon (WJY-21X)
+  name: PDV autosurgeon (LS-210 IAS)
   description: Replaces the lungs with an advanced internal-air-system. Capable of filtering out most atmos gases and increasing respiratory efficiency greatly.
   components:
   - type: AutoSurgeon

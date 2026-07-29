@@ -8,12 +8,27 @@
   - type: Sprite
     sprite: _Mono/Objects/Misc/cybernetics.rsi
     state: leuko
-    scale: 0.5, 0.5
   - type: Organ
     onAdd:
     - type: SandevistanUser # This is worse than the mieyo one, because its reverse engineered or something. My secrets are propietary to my company. I mean, the only difference though is that it cools down a little bit slower.
       loadPerActiveSecond: 5
       loadPerInactiveSecond: -0.15
+
+- type: entity
+  parent: OrganHumanHeart
+  id: OrganHeartTSFShunt
+  name: TSF KR-22 "Zenit" implant suite
+  description: A highly experimental piece of cyberware developed in some hellish TSF blacksite that replaces the heart. Allows the user to do a short localized teleport to any position in their line of sight.
+  components:
+  - type: Cybernetics
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/cybernetics.rsi
+    state: cranial_aug
+  - type: Organ
+    onAdd:
+    - type: DashAbility # Hilarious
+      dashAction: ActionEnergyCyberneticsShuntTSF
+      requireItem: false
 
 - type: entity
   parent: OrganHumanLungs
@@ -25,7 +40,6 @@
   - type: Sprite
     sprite: _Mono/Objects/Misc/cybernetics.rsi
     state: internal_air_system
-    scale: 0.5, 0.5
   - type: Lung
   - type: Metabolizer
     removeEmpty: true

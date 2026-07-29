@@ -222,10 +222,10 @@
         conditions:
         - !type:OrganType
           type: Hydrakin
-        - !type:Oxygenate # Mono - IAS
-          conditions:
-          - !type:OrganType
-            type: IAS
+      - !type:Oxygenate # Mono - IAS
+        conditions:
+        - !type:OrganType
+          type: IAS
       - !type:HealthChange
         conditions:
         - !type:OrganType

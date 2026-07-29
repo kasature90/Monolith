@@ -1,0 +1,91 @@
+# Mieyo
+
+- type: entity
+  parent: BaseAutosurgeon
+  id: BaseAutosurgeonMieyo
+  abstract: true
+  components:
+  - type: Sprite
+    state: icon-mmc
+
+# Right mantis blade
+
+- type: entity
+  parent: BaseAutosurgeonMieyo
+  id: AutosurgeonRightMantisBladeMieyo
+  name: MMC autosurgeon (right mantis blade)
+  components:
+  - type: AutoSurgeon
+    targetBodyPart: Arm
+    targetBodyPartSymmetry: Right
+    componentsToPart:
+    - type: MantisBladeArm
+      actionProto: ActionToggleRightMantisBlade
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: AutosurgeonRightMantisBladeMieyoFlatpack
+  name: MMC autosurgeon (right mantis blade) flatpack
+  description: A flatpack used for constructing a MMC autosurgeon.
+  components:
+  - type: Flatpack
+    entity: AutosurgeonRightMantisBladeMieyo
+  - type: StaticPrice
+    price: 2500
+  - type: Sprite
+    layers:
+    - state: medical_lathe
+
+# Left mantis blade
+
+- type: entity
+  parent: BaseAutosurgeonMieyo
+  id: AutosurgeonLeftMantisBladeMieyo
+  name: MMC autosurgeon (left mantis blade)
+  components:
+  - type: AutoSurgeon
+    targetBodyPart: Arm
+    targetBodyPartSymmetry: Left
+    componentsToPart:
+    - type: MantisBladeArm
+      actionProto: ActionToggleLeftMantisBlade
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: AutosurgeonLeftMantisBladeMieyoFlatpack
+  name: MMC autosurgeon (left mantis blade) flatpack
+  description: A flatpack used for constructing a MMC autosurgeon.
+  components:
+  - type: Flatpack
+    entity: AutosurgeonLeftMantisBladeMieyo
+  - type: StaticPrice
+    price: 2500
+  - type: Sprite
+    layers:
+    - state: medical_lathe
+
+# Sandevistan
+
+- type: entity
+  parent: BaseAutosurgeonMieyo
+  id: AutosurgeonSandevistanMieyo
+  name: MMC autosurgeon (sandevistan)
+  components:
+  - type: AutoSurgeon
+    targetBodyPart: Torso
+    targetOrgan: Heart
+    newPartProto: OrganHeartSandevistan
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: AutosurgeonSandevistanMieyoFlatpack
+  name: MMC autosurgeon (sandevistan) flatpack
+  description: A flatpack used for constructing a MMC autosurgeon.
+  components:
+  - type: Flatpack
+    entity: AutosurgeonSandevistanMieyo
+  - type: StaticPrice
+    price: 20000
+  - type: Sprite
+    layers:
+    - state: medical_lathe

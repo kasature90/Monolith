@@ -73,3 +73,30 @@
   - MieyoCorpsecSuits
   position: 17, 8
 
+- type: technology
+  id: MieyoBionicsT2
+  name: research-technology-mieyo-bionics-basic
+  entityIcon: WeaponRifleOsaka
+  discipline: Mieyo
+  tier: 2
+  cost: 50000
+  recipeUnlocks:
+  - WeaponRifleOsakaMMC
+  technologyPrerequisites:
+  - UniversalMaterialResearchT2
+  position: 18, 7
+
+- type: technology
+  id: MieyoBionicsT3
+  name: research-technology-mieyo-bionics-advanced
+  entityIcon: WeaponRifleOsaka
+  discipline: Mieyo
+  tier: 2
+  cost: 125000
+  recipeUnlocks:
+  - WeaponRifleOsakaMMC
+  technologyPrerequisites:
+  - UniversalMaterialResearchT3
+  - MieyoBionicsT2
+  position: 18, 9
+

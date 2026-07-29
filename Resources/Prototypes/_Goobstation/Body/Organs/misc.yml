@@ -2,7 +2,7 @@
   parent: OrganHumanHeart #, BaseSyndicateContraband ]
   id: OrganHeartSandevistan
   name: Sandevistan
-  description: Illegal cyberware that replaces the user's heart and allows them to greatly increase their speed for the cost of the endurance.
+  description: Advanced cyberware that replaces the user's heart and allows them to greatly increase their agility for a short period, at the cost of their endurance.
   components:
   - type: Cybernetics
   - type: Sprite
@@ -12,3 +12,5 @@
   - type: Organ
     onAdd:
     - type: SandevistanUser
+      loadPerActiveSecond: 5 # Mono
+      loadPerInactiveSecond: -0.25 # Mono

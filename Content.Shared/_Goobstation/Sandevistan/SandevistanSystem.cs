@@ -203,13 +203,13 @@ public sealed class SandevistanSystem : EntitySystem
 
         if (comp.DogVision != null)
         {
-            RemComp(uid, comp.DogVision);
+            RemCompDeferred(uid, comp.DogVision);
             comp.DogVision = null;
         }
 
         if (comp.Trail != null)
         {
-            RemComp(uid, comp.Trail);
+            RemCompDeferred(uid, comp.Trail);
             comp.Trail = null;
         }
     }

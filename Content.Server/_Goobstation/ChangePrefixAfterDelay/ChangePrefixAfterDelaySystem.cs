@@ -36,7 +36,7 @@ public sealed class ChangePrefixAfterDelaySystem : EntitySystem
 
             _clothing.SetEquippedPrefix(uid, comp.NewEquippedPrefix);
             _item.SetHeldPrefix(uid, comp.NewHeldPrefix);
-            RemComp(uid, comp);
+            RemCompDeferred(uid, comp);
         }
     }
 

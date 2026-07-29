@@ -25,6 +25,17 @@
         density: 190
         mask:
         - TableMask
+  - type: Destructible # Mono
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
   - type: Strap
     position: Down
     rotation: -90

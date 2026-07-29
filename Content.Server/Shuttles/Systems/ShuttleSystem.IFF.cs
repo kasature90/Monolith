@@ -9,8 +9,6 @@ namespace Content.Server.Shuttles.Systems;
 
 public sealed partial class ShuttleSystem
 {
-    private EntityQuery<IFFComponent> _iffQuery; // Mono
-
     private void InitializeIFF()
     {
         SubscribeLocalEvent<IFFConsoleComponent, AnchorStateChangedEvent>(OnIFFConsoleAnchor);
@@ -18,19 +16,7 @@ public sealed partial class ShuttleSystem
         SubscribeLocalEvent<IFFConsoleComponent, IFFShowVesselMessage>(OnIFFShowVessel);
         SubscribeLocalEvent<IFFConsoleComponent, BoundUIOpenedEvent>(OnIFFConsoleOpen);
         SubscribeLocalEvent<GridSplitEvent>(OnGridSplit);
-
-        _iffQuery = GetEntityQuery<IFFComponent>(); // Mono
-        SubscribeLocalEvent<IFFComponent, ComponentStartup>(OnIFFStartup); // Mono
     }
-
-    // Mono start
-    private void OnIFFStartup(EntityUid uid, IFFComponent component, ComponentStartup args)
-    {
-        var num = _random.Next();
-        var address = $" {num >> 16:X4}-{num & 0xFFFF:X4}";
-        component.Address = address;
-    }
-    // Mono end
 
     private void OnGridSplit(ref GridSplitEvent ev)
     {

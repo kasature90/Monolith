@@ -25,13 +25,16 @@
   - type: GuideHelp
     guides:
     - ArcFurnace
+  - type: Stack
+    stackType: IriditeSlag
+    count: 1
 
 - type: stack
   id: IriditeSlag
   name: iridite slag
   icon: { sprite: /Textures/_Mono/Objects/Materials/iridite_midsteps.rsi, state: slag }
   spawn: MaterialIriditeSlag
-  maxCount: 1
+  maxCount: 5
 
 - type: material
   id: IriditeSlag

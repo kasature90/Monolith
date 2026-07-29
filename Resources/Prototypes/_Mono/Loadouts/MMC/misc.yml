@@ -35,7 +35,7 @@
 
 - type: loadout
   id: MMCSandevistanLoadout # Biggest money sink ever
-  price: 1000000
+  price: 2500000
   storage:
     back:
     - AutosurgeonSandevistanMieyoFlatpack

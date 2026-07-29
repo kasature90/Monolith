@@ -25,6 +25,12 @@ public sealed partial class DashAbilityComponent : Component
     [DataField]
     public bool RequireItem = true;
 
+    /// <summary>
+    /// Mono - Is it a separate item from the user or is it itself the user?
+    /// </summary>
+    [DataField]
+    public bool IsUser = false;
+
     [DataField, AutoNetworkedField]
     public EntityUid? DashActionEntity;
 }

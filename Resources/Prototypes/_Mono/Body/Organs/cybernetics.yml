@@ -29,6 +29,7 @@
     - type: DashAbility # Hilarious
       dashAction: ActionEnergyCyberneticsShuntTSF
       requireItem: false
+      isUser: true
 
 - type: entity
   parent: BaseItem

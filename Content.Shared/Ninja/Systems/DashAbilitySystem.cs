@@ -50,12 +50,14 @@ public sealed partial class DashAbilitySystem : EntitySystem
 
     private void OnComponentInit(EntityUid uid, DashAbilityComponent comp, ref ComponentInit args)
     {
-        comp.DashActionEntity = _actions.AddAction(uid, comp.DashAction);
+        if (comp.IsUser)
+            comp.DashActionEntity = _actions.AddAction(uid, comp.DashAction);
     }
 
     private void OnComponentShutdown(EntityUid uid, DashAbilityComponent comp, ref ComponentShutdown args)
     {
-        _actions.RemoveAction(comp.DashActionEntity);
+        if (comp.IsUser)
+            _actions.RemoveAction(comp.DashActionEntity);
     }
 
     private void OnGetActions(Entity<DashAbilityComponent> ent, ref GetItemActionsEvent args)

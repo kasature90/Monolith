@@ -9,3 +9,17 @@
     Plasteel: 1600
     Lithium: 500
     Copper: 500
+
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: AutosurgeonAdvHeartPDV
+  result: AutosurgeonAdvHeartPDVFlatpack
+  materials:
+    Steel: 2000
+    Plastic: 2500
+    Glass: 400
+    Plasteel: 2500
+    Plasma: 500
+    Lithium: 800
+    Copper: 800
+    Durathread: 1000

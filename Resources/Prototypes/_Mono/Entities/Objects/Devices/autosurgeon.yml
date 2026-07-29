@@ -77,6 +77,80 @@
     layers:
     - state: medical_lathe
 
+
+# Dermal armor
+
+- type: entity
+  parent: BaseAutosurgeonMieyo
+  id: AutosurgeonDermalArmorPDV
+  name: PDV autosurgeon (E-SAPI dermal armor)
+  description: Implants an array of E-SAPI armor plates into the body. Makes you more vulnerable to heat and shock, but makes you more resistant to bullets.
+  components:
+  - type: AutoSurgeon
+    targetBodyPart: Torso
+    componentsToUser:
+    - type: DamageProtectionBuff
+      modifiers:
+        dermal:
+          id: DermalArmorCybernetics
+          coefficients:
+            Shock: 1.25
+            Heat: 1.1
+          coefficients:
+            Piercing: 0.85
+            Blunt: 0.9
+            Slash: 0.9
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: AutosurgeonDermalArmorPDVFlatpack
+  name: PDV autosurgeon (E-SAPI dermal armor) flatpack
+  description: A flatpack used for constructing a PDV autosurgeon.
+  components:
+  - type: Flatpack
+    entity: AutosurgeonDermalArmorPDV
+  - type: StaticPrice
+    price: 2500
+  - type: Sprite
+    layers:
+    - state: medical_lathe
+
+- type: entity
+  parent: BaseAutosurgeon
+  id: AutosurgeonAdvHeartPDV
+  name: PDV autosurgeon (VV/KE prosthetic heart)
+  description: Replaces the heart with a more powerful one. Lets you process reagents faster and take more damage before going down, but lowers your stamina and processes medicine slower.
+  components:
+  - type: AutoSurgeon
+    targetBodyPart: Torso
+    targetOrgan: Heart
+    newPartProto: OrganPDVAdvancedHeart
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: AutosurgeonAdvHeartPDVFlatpack
+  name: TSF autosurgeon (KR-22 shunt device) flatpack
+  description: A flatpack used for constructing a TSF autosurgeon.
+  components:
+  - type: Flatpack
+    entity: AutosurgeonAdvHeartPDV
+  - type: StaticPrice
+    price: 3000
+  - type: Sprite
+    layers:
+    - state: medical_lathe
+
+# Mieyo
+
+- type: entity
+  parent: BaseAutosurgeon
+  id: BaseAutosurgeonMieyo
+  abstract: true
+  components:
+  - type: Sprite
+    state: icon-mmc
+
+
 # Dash
 # This one is kinda broken right now for some reason. I think it's because of gravity refactor.
 
@@ -105,16 +179,6 @@
   - type: Sprite
     layers:
     - state: medical_lathe
-
-# Mieyo
-
-- type: entity
-  parent: BaseAutosurgeon
-  id: BaseAutosurgeonMieyo
-  abstract: true
-  components:
-  - type: Sprite
-    state: icon-mmc
 
 # Right mantis blade
 

@@ -123,6 +123,7 @@
   cost: 20000
   recipeUnlocks:
   - AutosurgeonIASPDV
+  - AutosurgeonAdvHeartPDV
   technologyPrerequisites:
   - UniversalMaterialResearchT2
   position: 13, -4

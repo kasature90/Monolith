@@ -52,6 +52,35 @@
     layers:
     - state: medical_lathe
 
+# Dash
+# This one is kinda broken right now for some reason. I think it's because of gravity refactor.
+
+- type: entity
+  parent: BaseAutosurgeonMieyo
+  id: AutosurgeonMuscleFibersMieyo
+  name: MMC autosurgeon (muscle fibers suite)
+  description: Implants a suite of muscle enhancements into the body. Now you can dash around like a pro.
+  components:
+  - type: AutoSurgeon
+    targetBodyPart: Torso
+    componentsToUser:
+    - type: DashAction
+      actionProto: ActionDashMuscleFibersImplant
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: AutosurgeonMuscleFibersMieyoFlatpack
+  name: MMC autosurgeon (muscle fibers suite) flatpack
+  description: A flatpack used for constructing a MMC autosurgeon.
+  components:
+  - type: Flatpack
+    entity: AutosurgeonMuscleFibersMieyo
+  - type: StaticPrice
+    price: 2500
+  - type: Sprite
+    layers:
+    - state: medical_lathe
+
 # Mieyo
 
 - type: entity

@@ -1,0 +1,17 @@
+- type: entity
+  id: ActionDashMuscleFibersImplant
+  name: muscle fibers dash
+  description: Use your muscle fibers implant to do a quick dash.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: WorldTargetAction
+    checkCanAccess: false
+    range: 0
+    useDelay: 7
+    icon: { sprite: _Mono/Objects/Misc/cybernetics.rsi, state: muscule }
+    itemIconStyle: NoItem
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Effects/Footsteps/suitstep2.ogg
+      params:
+        volume: 1
+    event: !type:DashActionEvent

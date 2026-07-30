@@ -12,7 +12,8 @@
     Lithium: 1500
     Copper: 1200 # A little less copper than the MMC one, maybe say it has smaller heatsinks or something.
     UraniumFissile: 150
-    Iridite: 20 # It felt fitting. Just a high cost via the problem of obtaining it, not the problem of making it in bulk. No point making it cost 5 or 20 or whatever when its made in crystalizer.
+    Bluespace: 100
+    Iridite: 500 # It felt fitting. Just a high cost via the problem of obtaining it, not the problem of making it in bulk. No point making it cost 5 or 20 or whatever when its made in crystalizer.
 
 - type: latheRecipe
   parent: BaseToolRecipe
@@ -29,4 +30,4 @@
     Copper: 2000
     UraniumFissile: 150
     Bluespace: 200
-    Iridite: 50
+    Iridite: 1000

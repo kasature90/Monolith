@@ -22,14 +22,14 @@
   id: AutosurgeonSandevistanMMC
   result: AutosurgeonSandevistanMieyoFlatpack
   materials: # He is insanely expensive because it is cool as hell and OP as hell.
-    Steel: 3000
+    Steel: 6000
     Plastic: 2500
     Glass: 2000
-    Plasteel: 3000
+    Plasteel: 5000
     Plasma: 1500
-    Gold: 1000
-    Lithium: 1500
-    Copper: 1500
+    Gold: 2000
+    Lithium: 5000
+    Copper: 5000
     UraniumFissile: 150
     Bluespace: 100
     Iridite: 500 # It felt fitting. Just a high cost via the problem of obtaining it, not the problem of making it in bulk. No point making it cost 5 or 20 or whatever when its made in crystalizer.

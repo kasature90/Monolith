@@ -32,16 +32,41 @@ public static class AmmoLoaderLocale
         if (TryGetEntityAttribute(prototypeId, WeightAttr, out var value)) return value;
         return Loc.GetString("ammo-loader-item-weight-unknown");
     }
+    // Mono start
+    private static string CompactAmmoLabel(string label)//shit code, mb any idea?
+    {
+        label = RemoveToken(label, " ammo loader");
+        label = RemoveToken(label, " ammo box");
+        label = RemoveToken(label, " magazine");
+        label = RemoveToken(label, " box");
+        label = RemovePrefix(label, "M381 CHARON "); // He gets a special pass, those slug names are too long.
+        label = RemovePrefix(label, "cartridge (");
+        label = RemoveToken(label, ")");
+        label = RemoveToken(label, " shell");
+        label = RemoveToken(label, " torpedo");
+        label = RemoveToken(label, " missile");
+        label = RemoveToken(label, " cruise missile");
+        return label.Trim();
+    }
+    private static string RemovePrefix(string value, string prefix)
+    { return value.StartsWith(prefix, StringComparison.OrdinalIgnoreCase) ? value[prefix.Length..] : value; }
+    private static string RemoveToken(string value, string token)
+    {
+        var index = value.IndexOf(token, StringComparison.OrdinalIgnoreCase);
+        return index >= 0 ? value.Remove(index, token.Length) : value;
+    }
+    // Mono end
 
     public static string FormatItemStats(string prototypeId, string displayName)
     {
         var type = GetAmmoType(prototypeId);
-        var caliber = GetAmmoCaliber(prototypeId, displayName);
+        var caliber = CompactAmmoLabel(GetAmmoCaliber(prototypeId, displayName)); // Mono
         var weight = GetAmmoWeight(prototypeId);
         var typeLine = Loc.GetString("ammo-loader-item-stats-type", ("value", type));
         var caliberLine = Loc.GetString("ammo-loader-item-stats-caliber", ("value", caliber));
         var weightLine = Loc.GetString("ammo-loader-item-stats-weight", ("value", weight));
-        return typeLine + '\n' + caliberLine + '\n' + weightLine;
+        // return typeLine + '\n' + caliberLine + '\n' + weightLine; // Mono - TODO make this not need locales to work then uncomment it
+        return caliberLine; // Mono
     }
 
     private static bool TryGetEntityAttribute(string prototypeId, string attribute, out string value)

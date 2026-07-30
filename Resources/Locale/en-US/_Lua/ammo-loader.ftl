@@ -21,6 +21,6 @@ ammo-loader-window-turret-ammo = { $current }/{ $max }
 
 ammo-loader-item-type-default = AMMUNITION
 ammo-loader-item-weight-unknown = UNKNOWN
-ammo-loader-item-stats-type = [color=#8a93a3]TYPE:[/color] { $value }
-ammo-loader-item-stats-caliber = [color=#8a93a3]CAL:[/color] { $value }
+ammo-loader-item-stats-type = [color=#8a93a3]AMMO CLASS:[/color] { $value }
+ammo-loader-item-stats-caliber = [color=#8a93a3]AMMO TYPE:[/color] { $value }
 ammo-loader-item-stats-weight = [color=#8a93a3]WT. (kg.):[/color] { $value }

@@ -187,9 +187,9 @@
   recipeType: PrecisionAssembler
 
 - type: microwaveMealRecipe
-  id: RecipeMaterialIndustryElectronicsMechanical
+  id: RecipeMaterialIndustryMechanical
   name: mechanical components recipe
-  result: MaterialIndustryElectronicsMechanical
+  result: MaterialIndustryMechanical
   time: 10
   group: PrecisionAssembler
   resultCount: 2

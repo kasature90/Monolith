@@ -471,6 +471,7 @@
     - type: Tag
       tags:
         - EconomyGood
+        - RadioEconomy1
     - type: Sprite
       sprite: _Mono/Objects/Materials/bayponents.rsi
       state: "radio1"
@@ -484,6 +485,7 @@
     - type: Tag
       tags:
         - EconomyGood
+        - RadioEconomy2
     - type: Sprite
       sprite: _Mono/Objects/Materials/bayponents.rsi
       state: "radio2"
@@ -565,6 +567,7 @@
   - type: Tag
     tags:
     - EconomyGood
+    - MotorEconomy1
   - type: Sprite
     sprite: _Mono/Objects/Materials/bayponents.rsi
     state: "motor"

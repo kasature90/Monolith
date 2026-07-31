@@ -715,6 +715,15 @@
 - type: Tag
   id: ElectromagnetEconomy2
 
+- type: Tag
+  id: RadioEconomy1
+
+- type: Tag
+  id: RadioEconomy2
+
+- type: Tag
+  id: MotorEconomy1
+
 # Static uplinks
 
 - type: Tag

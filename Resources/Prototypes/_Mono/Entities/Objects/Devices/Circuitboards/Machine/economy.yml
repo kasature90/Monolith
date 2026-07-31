@@ -31,17 +31,18 @@
   - type: MachineBoard
     flatpackable: false
     prototype: IndustrialFurnaceEconomyCompact
-    requirements:
-      MatterBin: 2
-      Manipulator: 2
-      Capacitor: 8
     stackRequirements:
-      Glass: 5
       CableHV: 5
     tagRequirements:
       ArmorPlateEconomy3:
-        amount: 2
+        amount: 1
         defaultPrototype: ArmorPlateEconomy3
+      ElectromagnetEconomy1:
+        amount: 3
+        defaultPrototype: ElectromagnetEconomy1
+      ComponentBrickEconomy1:
+        amount: 2
+        defaultPrototype: ComponentBrickEconomy1
 
 - type: entity
   id: IndustrialPressEconomyPlatesMachineCircuitboard

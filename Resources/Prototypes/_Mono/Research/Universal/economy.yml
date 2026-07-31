@@ -33,7 +33,7 @@
   - UniversalMaterialResearchT2
   - BasicProcessing
   - AdvancedProcessing
-  position: 9, 7
+  position: 8, 11
 
 - type: entity
   id: UraniumEnrichedProcessingIcon
@@ -45,7 +45,7 @@
 - type: technology
   id: AdvancedProcessing
   name: research-technology-processing-advanced
-  entityIcon: UraniumEnrichedProcessingIcon
+  entityIcon: IndustrialFurnaceEconomyCompact
   discipline: FactionUniversal
   tier: 2
   cost: 60000
@@ -53,4 +53,4 @@
   - IndustrialFurnaceEconomyCompactCircuitboard
   technologyPrerequisites:
   - UniversalMaterialResearchT2
-  position: 8, 7
+  position: 8, 10

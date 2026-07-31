@@ -6,7 +6,7 @@
   - type: Sprite
     state: science
   - type: MachineBoard
-    prototype: MachineCarpCaller
+    prototype: MachineCarpCallerU
     requirements:
       Capacitor: 2
       Manipulator: 2

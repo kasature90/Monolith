@@ -1552,9 +1552,9 @@
       MotorEconomy1:
         amount: 2
         defaultPrototype: ElectromagnetEconomy1
-      OpticEconomy1:
+      OpticsEconomy1:
         amount: 2
-        defaultPrototype: OpticEconomy1
+        defaultPrototype: OpticsEconomy1
 
 - type: entity
   id: EmitterCircuitboard

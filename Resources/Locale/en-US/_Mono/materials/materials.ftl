@@ -26,7 +26,7 @@ materials-components-plates = armor components
 materials-components-recievers = recievers
 materials-components-sensors = sensors
 materials-components-ship = ship components
-materials-components-sterile = sterilized parts
+materials-components-steriles = sterilized parts
 
 # Sheets
 materials-iridite-slag = iridite slag

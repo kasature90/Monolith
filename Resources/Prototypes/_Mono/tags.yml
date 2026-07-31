@@ -686,7 +686,16 @@
   id: ComponentBrickEconomy1
 
 - type: Tag
+  id: ComponentBrickEconomy2
+
+- type: Tag
   id: MicroprocessorEconomy1
+
+- type: Tag
+  id: MicroprocessorEconomy2
+
+- type: Tag
+  id: MicroprocessorEconomy3
 
 - type: Tag
   id: CapacitorEconomy1
@@ -699,6 +708,12 @@
 
 - type: Tag
   id: OpticsEconomy1
+
+- type: Tag
+  id: OpticsEconomy2
+
+- type: Tag
+  id: CameraEconomy1
 
 - type: Tag
   id: ArmorPlateEconomy1
@@ -714,6 +729,9 @@
 
 - type: Tag
   id: ElectromagnetEconomy2
+
+- type: Tag
+  id: ElectromagnetEconomy3
 
 - type: Tag
   id: RadioEconomy1

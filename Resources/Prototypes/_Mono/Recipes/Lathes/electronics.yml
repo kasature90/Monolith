@@ -122,6 +122,26 @@
   id: IndustrialFurnaceEconomyCompactCircuitboard
   result: IndustrialFurnaceEconomyCompactCircuitboard
 
+- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
+  id: IndustrialPressEconomyElectronicsMachineCircuitboard
+  result: IndustrialPressEconomyElectronicsMachineCircuitboard
+
+- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
+  id: IndustrialPressEconomyPlatesMachineCircuitboard
+  result: IndustrialPressEconomyPlatesMachineCircuitboard
+
+- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
+  id: IndustrialPressEconomyElectronicsMMCMachineCircuitboard
+  result: IndustrialPressEconomyElectronicsMMCMachineCircuitboard
+
+- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
+  id: IndustrialPressEconomyPlatesMMCMachineCircuitboard
+  result: IndustrialPressEconomyPlatesMMCMachineCircuitboard
+
 # faction-specific RWR shuttle consoles - can be made by anyone because it doesnt do shit gameplay wise
 
 - type: latheRecipe

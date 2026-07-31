@@ -1443,6 +1443,9 @@
         ElectromagnetEconomy1:
           amount: 2
           defaultPrototype: ElectromagnetEconomy1
+        ArmorPlateEconomy2:
+          amount: 1
+          defaultPrototype: ArmorPlateEconomy2Finished
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -1468,6 +1471,9 @@
       ElectromagnetEconomy2:
         amount: 1
         defaultPrototype: ElectromagnetEconomy1
+      ArmorPlateEconomy3:
+        amount: 1
+        defaultPrototype: ArmorPlateEconomy3
 
 - type: entity
   id: SheetifierMachineCircuitboard

@@ -65,7 +65,7 @@
     tagRequirements: # todo: make it take a press plate component
       ArmorPlateEconomy2: # Stand in for the base of the press or something
         amount: 1
-        defaultPrototype: ArmorPlateEconomy2
+        defaultPrototype: ArmorPlateEconomy2Finished
       ComponentBrickEconomy1:
         amount: 1
         defaultPrototype: ComponentBrickEconomy1
@@ -93,7 +93,7 @@
     tagRequirements: # todo: make it take a press plate component
       ArmorPlateEconomy2: # Stand in for the base of the press or something
         amount: 2
-        defaultPrototype: ArmorPlateEconomy2
+        defaultPrototype: ArmorPlateEconomy2Finished
       ComponentBrickEconomy1:
         amount: 1
         defaultPrototype: ComponentBrickEconomy1
@@ -120,7 +120,7 @@
     tagRequirements: # todo: make it take a press plate component
       ArmorPlateEconomy2: # Stand in for the base of the press or something
         amount: 1
-        defaultPrototype: ArmorPlateEconomy2
+        defaultPrototype: ArmorPlateEconomy2Finished
       ComponentBrickEconomy1:
         amount: 1
         defaultPrototype: ComponentBrickEconomy1
@@ -148,7 +148,7 @@
     tagRequirements: # todo: make it take a press plate component
       ArmorPlateEconomy2: # Stand in for the base of the press or something
         amount: 2
-        defaultPrototype: ArmorPlateEconomy2
+        defaultPrototype: ArmorPlateEconomy2Finished
       ComponentBrickEconomy1:
         amount: 1
         defaultPrototype: ComponentBrickEconomy1

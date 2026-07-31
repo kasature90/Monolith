@@ -384,7 +384,7 @@
         defaultPrototype: MotorEconomy1
       ArmorPlateEconomy2:
         amount: 1
-        defaultPrototype: ArmorPlateEconomy2
+        defaultPrototype: ArmorPlateEconomy2Finished
 
 - type: entity
   id: OrganHarvesterMachineCircuitboard
@@ -412,7 +412,7 @@
         defaultPrototype: MotorEconomy1
       ArmorPlateEconomy2:
         amount: 1
-        defaultPrototype: ArmorPlateEconomy2
+        defaultPrototype: ArmorPlateEconomy2Finished
 
 - type: entity
   parent: BaseMachineCircuitboard

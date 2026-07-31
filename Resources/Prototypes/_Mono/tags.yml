@@ -689,6 +689,9 @@
   id: ComponentBrickEconomy2
 
 - type: Tag
+  id: ComponentBrickEconomy3
+
+- type: Tag
   id: MicroprocessorEconomy1
 
 - type: Tag

@@ -566,7 +566,7 @@
   id: IndustrialFurnaceEconomyCompact
   parent: [ BaseMachinePowered, ConstructibleMachine ]
   name: compact arc furnace
-  description: A compact version advanced arc furnace capable of melting ore and refining material through heat. Essential for creating advanced alloys. Less efficient, and uses much more power while being slower.
+  description: A compact version advanced arc furnace capable of melting ore and refining material through heat. Essential for creating advanced alloys. Slower and less capacity.
   components:
   - type: Appearance
   - type: Animateable

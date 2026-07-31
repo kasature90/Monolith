@@ -173,9 +173,9 @@
   recipeType: PrecisionAssembler
 
 - type: microwaveMealRecipe
-  id: RecipeMaterialIndustryElectronicsFCS
+  id: RecipeMaterialIndustryFCS
   name: FCS components recipe
-  result: MaterialIndustryElectronicsFCS
+  result: MaterialIndustryFCS
   time: 10
   group: PrecisionAssembler
   resultCount: 1
@@ -258,5 +258,5 @@
     MaterialIndustrySensors: 1 # Here bro have a tung tung
     MaterialIndustryPlates: 1
     MaterialIndustryElectronics: 1
-    MaterialIndustryElectronicsFCS: 1
+    MaterialIndustryFCS: 1
   recipeType: PrecisionAssembler

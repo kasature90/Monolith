@@ -704,6 +704,12 @@
   id: ArmorPlateEconomy1
 
 - type: Tag
+  id: ArmorPlateEconomy2
+
+- type: Tag
+  id: ArmorPlateEconomy3
+
+- type: Tag
   id: ElectromagnetEconomy1
 
 - type: Tag

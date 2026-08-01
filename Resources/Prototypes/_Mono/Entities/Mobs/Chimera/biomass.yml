@@ -55,7 +55,8 @@
         Slash: -3
         Piercing: -3
         Blunt: -3
-        Heat: -3
+        Heat: -
+        Caustic: -3
     whitelist:
       tags:
       - Chimera
@@ -78,9 +79,9 @@
         scaleByQuantity: true
         damage:
           groups:
-            Burn: 60
+            Burn: -60
           types:
-            Heat: 30
+            Heat: -30
   - type: AtmosExposed
   - type: SpeedModifierContacts
     walkSpeedModifier: 0.45

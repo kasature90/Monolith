@@ -49,6 +49,16 @@
         Heat: -1
         Cold: -1
         Blunt: -1.25
+  - type: DamageContacts
+    damage:
+      types:
+        Slash: -3
+        Piercing: -3
+        Blunt: -3
+        Heat: -3
+    whitelist:
+      tags:
+      - Chimera
   - type: Flammable
     fireSpread: true
     alwaysCombustible: true

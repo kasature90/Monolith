@@ -48,7 +48,7 @@
   - Materials
   completetime: 10
   materials:
+    Glass: 500
+    Copper: 300
     Steel: 300
-    Copper: 100
-    Glass: 300
 

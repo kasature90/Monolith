@@ -8,7 +8,7 @@ public sealed partial class WarLevelRule : StationEventSystem<WarLevelRuleCompon
 {
     [Dependency] private WarLevelSystem _warLevelSystem = default!;
 
-    protected override void Started(EntityUid uid, WarLevelRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args) // Goobstation - Changed an indent.
+    protected override void Started(EntityUid uid, WarLevelRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
         base.Started(uid, component, gameRule, args);
         _warLevelSystem.SetLevel(component.WarLevel);

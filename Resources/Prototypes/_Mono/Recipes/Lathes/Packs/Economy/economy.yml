@@ -1,6 +1,6 @@
 - type: latheRecipePack
   id: IndustrialPressEconomyElectronics
-  recipes:y
+  recipes:
   - MicroprocessorEconomy1Recipe
   - CapacitorEconomy1Recipe
   - OpticsEconomy1Recipe

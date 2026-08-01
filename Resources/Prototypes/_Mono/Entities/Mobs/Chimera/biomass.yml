@@ -55,7 +55,7 @@
         Slash: -3
         Piercing: -3
         Blunt: -3
-        Heat: -
+        Heat: -3
         Caustic: -3
     whitelist:
       tags:

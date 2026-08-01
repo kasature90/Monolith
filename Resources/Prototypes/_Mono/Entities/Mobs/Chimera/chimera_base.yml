@@ -247,7 +247,7 @@
   - type: BonusMeleeDamage
     damageModifierSet:
       coefficients:
-        Blunt: 1
+        Blunt: 0.5
         Slash: 1
         Piercing: 0.65 # spear is clunky
         Heat: 0.5 # fire is scary (esword is op)

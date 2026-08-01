@@ -134,28 +134,17 @@
         - id: CapacitorStockPart
         - id: MicroManipulatorStockPart
         - id: MatterBinStockPart
-        - id: SalvagePartsT2Spawner
       - !type:GroupSelector
         children:
-        - id: AdvancedCapacitorStockPart
-        - id: NanoManipulatorStockPart
-        - id: AdvancedMatterBinStockPart
         - id: SalvagePartsT2Spawner
+      - !type:GroupSelector
+        weight: 0.5
+        children:
         - id: SalvagePartsT3Spawner
       - !type:GroupSelector
         weight: 0.5
         children:
-        - id: SuperCapacitorStockPart
-        - id: PicoManipulatorStockPart
-        - id: SuperMatterBinStockPart
-        - id: SalvagePartsT3Spawner
-      - !type:GroupSelector
-        weight: 0.5
-        children:
-        - id: QuadraticCapacitorStockPart
-        - id: FemtoManipulatorStockPart
-        - id: BluespaceMatterBinStockPart
-        - id: SalvagePartsT3T4Spawner
+        - id: SalvagePartsT4Spawner
    - !type:GroupSelector
      weight: 0.75
      children:

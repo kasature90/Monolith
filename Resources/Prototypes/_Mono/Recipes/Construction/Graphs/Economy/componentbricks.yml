@@ -13,6 +13,14 @@
           state: "optics1"
         name: optical sensor
         doAfter: 1
+      - tool: Cutting
+        doAfter: 1
+      - tool: Cutting
+        doAfter: 1
+      - tool: Cutting
+        doAfter: 1
+      - tool: Cutting
+        doAfter: 1
 
   - node: MatterBinEconomy2
     edges:

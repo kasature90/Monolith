@@ -19,6 +19,8 @@
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/bigshotgun_fire.ogg
     fireRate: 0.7
     selectedMode: Semiauto
+    autoCycle: false
+    damageModifier: 1.5
     availableModes:
     - SemiAuto
   - type: GunSpreadModifier

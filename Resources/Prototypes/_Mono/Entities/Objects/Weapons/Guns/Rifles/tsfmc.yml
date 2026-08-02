@@ -316,7 +316,6 @@
       attachment_grip: !type:ContainerSlot
       attachment_barrel: !type:ContainerSlot
       attachment_optic: !type:ContainerSlot
-       start
   - type: ESAttachableGun
     slots:
     - name: es-gun-attachments-slot-name-barrel
@@ -382,7 +381,6 @@
         whitelist:
           tags:
           - MonoOptic8x
-   end
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -478,7 +476,6 @@
       attachment_grip: !type:ContainerSlot
       attachment_barrel: !type:ContainerSlot
       attachment_optic: !type:ContainerSlot
-       start
   - type: ESAttachableGun
     slots:
     - name: es-gun-attachments-slot-name-barrel
@@ -544,7 +541,6 @@
         whitelist:
           tags:
           - MonoOptic8x
-   end
   - type: MagazineVisuals
     magState: mag
     steps: 1

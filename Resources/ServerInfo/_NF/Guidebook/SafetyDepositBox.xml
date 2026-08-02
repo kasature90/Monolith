@@ -7,7 +7,7 @@ The [color=#44cc00]Safety Deposit Box System[/color] allows you to securely stor
   <Box>
     <GuideEntityEmbed Entity="SafetyDepositConsole"/>
   </Box>
-  The [color=#44cc00]Safety Deposit Console[/color] is your interface for managing your deposit boxes. Located at Frontier Outpost and Tinnia's Rest, it allows you to:
+  The [color=#44cc00]Safety Deposit Console[/color] is your interface for managing your deposit boxes. Located at TODO, it allows you to:
 - [bold]Purchase[/bold] new safety deposit boxes
 - [bold]Deposit[/bold] boxes to store items in the database
 - [bold]Withdraw[/bold] stored boxes to retrieve your items
@@ -20,9 +20,10 @@ The [color=#44cc00]Safety Deposit Box System[/color] allows you to securely stor
     <GuideEntityEmbed Entity="SafetyDepositBoxLarge"/>
   </Box>
   Three box sizes are available, each with different storage capacity:
-- [bold]Small (2x2)[/bold] - $2,250,000 Spesos
-- [bold]Medium (2x4)[/bold] - $3,500,000 Spesos
-- [bold]Large (2x6)[/bold] - $4,250,000 Spesos
+- [bold]Trial (1x1)[/bold] - $10,000 (max of 1)
+- [bold]Small (2x2)[/bold] - $2,000,000
+- [bold]Medium (2x4)[/bold] - $3,500,000
+- [bold]Large (2x6)[/bold] - $5,000,000
 
 The cost is deducted from your [color=#44cc00]bank account[/color] when you purchase a box.
 

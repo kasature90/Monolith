@@ -29,7 +29,7 @@
     whitelist:
       tags:
       - ShellShotgun23x75mmBuckshot
-    capacity: 8
+    capacity: 4
     proto: ShellShotgun23x75mmBuckshot
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg

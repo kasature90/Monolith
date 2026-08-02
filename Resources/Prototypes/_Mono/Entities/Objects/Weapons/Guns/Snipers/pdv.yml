@@ -12,7 +12,7 @@
   - type: Gun
     fireRate: 0.75
     selectedMode: SemiAuto
-    damageModifier: 2
+    damageModifier: 1.4
     availableModes:
     - SemiAuto
     soundGunshot:

@@ -774,3 +774,8 @@
 - type: Tag
   id: Central
 
+# Stashes
+
+- type: Tag
+  id: Unstashable
+

@@ -13,23 +13,17 @@
           True: { state: icon-open }
           False: { state: icon }
   - type: Storage
-    whitelist:
-      tags:
-      - Document
-      - Paper
-      - Write
-      components:
-      - Clothing
     blacklist:
       components:
       - IdCard
       - Currency
       - Store
-      - Gun
       - EncryptionKey
-      - Battery
-      - PowerCell
       - Implant
+      - Storage
+      - SafetyDepositBox
+      tags:
+      - Unstashable
   - type: SafetyDepositBox
   - type: Appearance
   - type: Tag

@@ -24,6 +24,7 @@ safety-deposit-console-box-lost = Lost
 
 # Safety Deposit Box Entity
 safety-deposit-box-boxSlot = Box Slot
+safety-deposit-console-boxSlot = Box Slot
 
 # Examine text
 safety-deposit-stored-examine = [color=gray]This item has a signature on it that indicates that it was at one point stowed in a deposit box.[/color]

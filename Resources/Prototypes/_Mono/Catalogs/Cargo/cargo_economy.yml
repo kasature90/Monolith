@@ -4,7 +4,7 @@
   id: EconomyPlanner
   icon:
     sprite: _Mono/Objects/Misc/Economy/economyplanner.rsi
-    state: icon
+    state: tablet
   product: EconomyPlanner
   cost: 500
   category: cargoproduct-category-name-economy

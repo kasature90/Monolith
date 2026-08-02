@@ -30,8 +30,6 @@
       - Battery
       - PowerCell
       - Implant
-      - ShockOnTrigger  # Prevents shock collars
-      - AdvancedCollar  # Prevents advanced collars
   - type: SafetyDepositBox
   - type: Appearance
   - type: Tag

@@ -251,7 +251,6 @@
     sprite: _DV/Objects/Weapons/Guns/Shotguns/sawn.rsi # Delta-V: add _DV prefix, sawn_inhands_64x<sawn
   - type: Gun
     fireRate: 3.5
-    damageModifier: 2 # Mono
   - type: BallisticAmmoProvider
     soundRack: /Audio/Weapons/Guns/Cock/smg_cock.ogg #Mono
     capacity: 2

@@ -9,7 +9,6 @@
   cost: 500
   category: cargoproduct-category-name-economy
   group: market
-  group: market
 
 # T1
 
@@ -22,7 +21,6 @@
   cost: 2000
   category: cargoproduct-category-name-economy
   group: market
-  group: market
 
 - type: cargoProduct
   id: ElectromagnetEconomy1
@@ -32,7 +30,6 @@
   product: ElectromagnetEconomy1
   cost: 2000
   category: cargoproduct-category-name-economy
-  group: market
   group: market
 
 - type: cargoProduct
@@ -44,7 +41,6 @@
   cost: 400
   category: cargoproduct-category-name-economy
   group: market
-  group: market
 
 - type: cargoProduct
   id: OpticsEconomy1
@@ -54,7 +50,6 @@
   product: OpticsEconomy1
   cost: 400
   category: cargoproduct-category-name-economy
-  group: market
   group: market
 
 - type: cargoProduct
@@ -66,7 +61,6 @@
   cost: 600
   category: cargoproduct-category-name-economy
   group: market
-  group: market
 
 - type: cargoProduct
   id: MicroprocessorEconomy1
@@ -76,7 +70,6 @@
   product: MicroprocessorEconomy1
   cost: 600
   category: cargoproduct-category-name-economy
-  group: market
   group: market
 
 # T2
@@ -90,7 +83,6 @@
   cost: 1000
   category: cargoproduct-category-name-economy
   group: market
-  group: market
 
 - type: cargoProduct
   id: MotorEconomy1
@@ -100,5 +92,4 @@
   product: MotorEconomy1
   cost: 1200
   category: cargoproduct-category-name-economy
-  group: market
   group: market

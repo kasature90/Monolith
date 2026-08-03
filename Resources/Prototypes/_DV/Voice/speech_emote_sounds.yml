@@ -356,10 +356,6 @@
       collection: MothDeathGasp
     Gnash:
       collection: FeroxiGnashes
-    Gulp: # Goob
-      path: /Audio/_Goobstation/Voice/gulpexotic.ogg
-    Surprised: # Goob
-      path: /Audio/_Goobstation/Voice/surprised.ogg
 
 - type: emoteSounds
   id: MaleFeroxi
@@ -398,7 +394,3 @@
       collection: MothDeathGasp
     Gnash:
       collection: FeroxiGnashes
-    Gulp: # Goob
-      path: /Audio/_Goobstation/Voice/gulpexotic.ogg
-    Surprised: # Goob
-      path: /Audio/_Goobstation/Voice/surprised.ogg

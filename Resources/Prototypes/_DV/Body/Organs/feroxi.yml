@@ -42,12 +42,6 @@
     - state: lung-l
     - state: lung-r
   - type: Organ
-    intCap: 17 # Goob start
-    integrity: 17
-    integrityThresholds:
-      Normal: 17
-      Damaged: 9
-      Destroyed: 0
     slotId: lungs
     removable: False # Goob end, make them actualy unremovable
   - type: Lung
@@ -81,4 +75,3 @@
     tags:
       - Meat
       - Organ
-      - Lungs

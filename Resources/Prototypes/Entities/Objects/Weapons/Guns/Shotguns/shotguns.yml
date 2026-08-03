@@ -233,6 +233,7 @@
     - WeaponShotgunKammerer
   - type: BallisticAmmoProvider
     capacity: 5
+    autoCycle: false # Mono
   - type: PirateBountyItem # Mono
     id: StandardFactionLongarm
 

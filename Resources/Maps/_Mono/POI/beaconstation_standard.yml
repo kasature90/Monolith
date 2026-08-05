@@ -97,6 +97,13 @@ entities:
     - type: ImplicitRoof
     - type: RadiationGridResistance
     - type: ExplosionAirtightGrid
+- proto: SpawnPointObserver
+  entities:
+  - uid: 217
+    components:
+    - type: Transform
+      pos: 0.5071793,-0.62499994
+      parent: 1
 - proto: CableApcExtension
   entities:
   - uid: 218

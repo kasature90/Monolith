@@ -16,7 +16,7 @@
     MonoMixed: 0.1
     MonoChimera: 0.1
     MonoAllAtOnce: 0.1
-    #MonoRogueTSFHyperwar: 0.05
+    MonoRogueTSFHyperwar: 0.02 # Close enough to 1 in 50.
 
 - type: gamePreset
   id: MonoStandard
@@ -111,6 +111,7 @@
   name: mono-chimera-title
   description: mono-chimera-description
   showInVote: true
+  minPlayers: 30
   rules:
   - NFAdventure
   - BasicStationEventScheduler
@@ -128,6 +129,7 @@
   name: mono-mixed-title
   description: mono-mixed-description
   showInVote: true
+  minPlayers: 30
   rules:
   - NFAdventure
   - BasicStationEventScheduler
@@ -149,6 +151,7 @@
   description: mono-allatonce-description
   showInVote: true # we ball
   weight: 0.25 # requires 80% votes
+  minPlayers: 40
   rules:
   - NFAdventure
   - BasicStationEventScheduler
@@ -169,6 +172,8 @@
   name: mono-roguetsf-hyperwar-title
   description: mono-roguetsf-hyperwar-description
   showInVote: false # AO
+  supportedMaps: EmptyMapPool
+  minPlayers: 40
   rules:
   - NFAdventure
   - Hyperwar

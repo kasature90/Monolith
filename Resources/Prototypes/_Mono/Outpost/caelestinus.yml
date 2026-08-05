@@ -69,3 +69,22 @@
         # - type: StationJobs # mono edit
         #   availableJobs:
         #     Passenger: [ -1, -1 ]
+
+- type: gameMap
+  id: BeaconStandard
+  mapName: Empty (Beacon)
+  mapPath: /Maps/Test/beaconstation_standard.yml
+  minPlayers: 0
+  stations:
+    BeaconStandard:
+      gridComponents:
+      - type: IFF
+        flags: [HideLabel]
+        readOnly: true
+      - type: SolarPoweredGrid
+        trackOnInit: true
+        doNotCull: true
+      stationProto: StandardFrontierStation
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: "Beacon"

@@ -79,7 +79,7 @@ public sealed partial class CCVars
     ///     Controls the game map prototype to load. SS14 stores these prototypes in Prototypes/Maps.
     /// </summary>
     public static readonly CVarDef<string>
-        GameMap = CVarDef.Create("game.map", "Frontier", CVar.SERVERONLY); // Frontier: string.Empty<Frontier
+        GameMap = CVarDef.Create("game.map", string.Empty, CVar.SERVERONLY); // Mono - deforce this from Frontier, so modes like Hyperwar can take back control in their evil ways for their evil maps..
 
     /// <summary>
     ///     Controls whether to use world persistence or not.

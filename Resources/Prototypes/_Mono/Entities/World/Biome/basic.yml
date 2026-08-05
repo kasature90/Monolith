@@ -413,6 +413,12 @@
   distanceRange: 0, 18000
   noiseRanges: {}
 
+- type: spaceBiome
+  id: MonoEmptyFallbackHyperwar # No concern for far reaches here.
+  priority: -4
+  distanceRange: null
+  noiseRanges: {}
+
 # 9km Ring
 - type: spaceBiome
   id: MonoWorldgenAsteroidRing9km

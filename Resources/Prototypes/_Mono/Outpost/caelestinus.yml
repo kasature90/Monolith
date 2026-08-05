@@ -72,9 +72,12 @@
 
 - type: gameMap
   id: BeaconStandard
-  mapName: Empty (Beacon)
-  mapPath: /Maps/Test/beaconstation_standard.yml
+  mapName: 'Empty (Beacon)'
+  mapPath: /Maps/_Mono/POI/beaconstation_standard.yml
   minPlayers: 0
+  maxPlayers: 100
+  randomRotation: true
+  maxRandomOffset: 0
   stations:
     BeaconStandard:
       gridComponents:

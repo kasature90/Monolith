@@ -4,6 +4,7 @@
     - type: WorldController
     - type: BiomeSelection
       biomes:
+        - MonoEmptyFallbackHyperwar # Stupid but needed to prevent console error spam
         - MonoWorldgenHyperwarAsteroidRing
 
 - type: worldgenConfig

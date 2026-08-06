@@ -23472,3 +23472,70 @@ Entries:
   id: 2585
   time: '2026-08-03T14:35:26.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4407
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: Flatpackers cost bluespace for tax instead of iridite.
+    - type: Fix
+      message: Armor plates should now fit in interactors.
+  id: 2586
+  time: '2026-08-03T20:54:51.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4439
+- author: NazrinNya
+  changes:
+    - type: Tweak
+      message: >-
+        Medical assembler, precision assembler and arc furnace now use better
+        UI.
+    - type: Tweak
+      message: Machine frame construction is now faster
+  id: 2587
+  time: '2026-08-04T10:06:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4436
+- author: kasature90
+  changes:
+    - type: Tweak
+      message: >-
+        Replaced gameplay voting for now with random gamemode (like normal
+        station servers). Now has a chance for greenshifts (no ADS/chimera
+        threat).
+  id: 2588
+  time: '2026-08-04T17:33:53.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4443
+- author: Onezero0
+  changes:
+    - type: Fix
+      message: Silicon wafer craft now has an icon.
+    - type: Tweak
+      message: >-
+        A bunch of recipes have been split - previously chemical-requiring
+        recipes are now "alternative recipes" that are more efficient but have
+        complexity from chemicals.
+    - type: Add
+      message: >-
+        Component crafts, alternate recipes and component materials now have
+        lathe categories.
+    - type: Add
+      message: >-
+        Added the new (and inefficient) only-parts-requiring T2 component crafts
+        to industrial presses just to make basic machine construction less
+        dependent on poi things (if you want to be efficient/faster tho POI
+        lathes are the way to go)
+    - type: Tweak
+      message: Compact precision assembler now has an actual sprite
+    - type: Add
+      message: >-
+        Assembly lathes now have an extended description explaining how to add
+        entities for crafting recipes.
+  id: 2589
+  time: '2026-08-06T00:28:46.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4444
+- author: kasature90
+  changes:
+    - type: Add
+      message: >-
+        Ported better/unified sprites for those alerts on the side of your
+        screen (like health) from Hullrot.
+  id: 2590
+  time: '2026-08-06T02:27:49.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4450

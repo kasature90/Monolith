@@ -425,8 +425,9 @@
     shootThermalSignature: 12000000 # ~6km after firing
     soundGunshot:
       collection: ShipGunMjolnir
-      pitch: 0.8
-      volume: 1.2
+      params:
+        pitch: 0.8
+        volume: 1.2
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: BatterySelfRecharger

@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Sprites provided by @WillyBillyGilly",
+    "copyright": "Sprites provided by @WillyBillyGilly. Edited by onezero00 (discord).",
     "size": {
         "x": 32,
         "y": 32
@@ -17,10 +17,26 @@
           "name": "stamina4"
         },
         {
-          "name": "stamina3"
+          "name": "stamina3",
+          "delays": [
+            [
+              0.3,
+              0.3,
+              0.3,
+              0.3
+            ]
+          ]
         },
         {
-          "name": "stamina2"
+          "name": "stamina2",
+          "delays": [
+            [
+              0.3,
+              0.3,
+              0.3,
+              0.3
+            ]
+          ]
         },
         {
           "name": "stamina1",

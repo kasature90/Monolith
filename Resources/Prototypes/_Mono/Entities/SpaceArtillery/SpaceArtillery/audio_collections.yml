@@ -49,3 +49,10 @@
   - /Audio/_Mono/Weapons/Guns/Gunshots/shell_out_tiny_01.ogg
   - /Audio/_Mono/Weapons/Guns/Gunshots/shell_out_tiny_02.ogg
   - /Audio/_Mono/Weapons/Guns/Gunshots/shell_out_tiny_03.ogg
+
+- type: soundCollection
+  id: ShipGunGenericMissile
+  files:
+  - /Audio/_Mono/Weapons/Guns/Gunshots/rpg_1.ogg
+  - /Audio/_Mono/Weapons/Guns/Gunshots/rpg_2.ogg
+  - /Audio/_Mono/Weapons/Guns/Gunshots/rpg_3.ogg

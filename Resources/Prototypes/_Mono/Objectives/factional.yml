@@ -1,0 +1,24 @@
+- type: weightedRandom
+  id: PDVOperations
+  weights:
+    PDVOperationStealCCDisk: 0.1
+
+- type: nukieOperation
+  id: PDVOperationStealCCDisk
+  operationObjectives:
+  - PDVStealDiskObjective
+
+- type: entity
+  parent: BaseStealObjective
+  id: PDVStealDiskObjective
+  components:
+  - type: Objective
+    difficulty: 4.0
+    issuer: objective-issuer-pdv
+    icon:
+      sprite: Objects/Misc/nukedisk.rsi
+      state: icon
+  - type: StealCondition
+    stealGroup: NukeDisk
+    owner: objective-condition-steal-cc
+    verifyMapExistence: false

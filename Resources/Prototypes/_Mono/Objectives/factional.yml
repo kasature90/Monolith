@@ -1,7 +1,11 @@
+# PDV start
+
 - type: weightedRandom
   id: PDVOperations
   weights:
     PDVOperationStealCCDisk: 0.1
+
+# PDV CC nuke theft stuff
 
 - type: nukieOperation
   id: PDVOperationStealCCDisk
@@ -22,3 +26,6 @@
     stealGroup: NukeDisk
     owner: objective-condition-steal-cc
     verifyMapExistence: false
+    checkStealAreas: true
+    objectiveText: objective-condition-steal-title-faction
+    descriptionText: objective-condition-steal-description-faction

@@ -12,3 +12,10 @@ objective-condition-thief-multiply-description = I need to get {$count} {MAKEPLU
 
 # Mono
 objective-condition-steal-cc = CC
+objective-condition-steal-vg = VG
+objective-condition-steal-mmc = MMC
+objective-condition-steal-pdv = the PDV
+objective-condition-steal-tsf = the TSF
+objective-condition-steal-ussp = the USSP
+objective-condition-steal-title-faction = Acquire {$owner}'s {$itemName}.
+objective-condition-steal-description-faction = Acquire {$itemName}.

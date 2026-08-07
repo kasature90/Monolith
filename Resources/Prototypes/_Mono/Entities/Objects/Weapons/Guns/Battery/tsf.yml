@@ -20,8 +20,9 @@
     maxAngle: 54
     angleIncrease: 27
     angleDecay: 2
-    fireRate: 6
+    fireRate: 3.5
     selectedMode: FullAuto
+    damageModifier: 1.2
     availableModes:
     - SemiAuto
     - FullAuto
@@ -94,7 +95,7 @@
     maxAngle: 22
     angleIncrease: -0.5
     angleDecay: -3
-    fireRate: 10
+    fireRate: 6
     selectedMode: FullAuto
     availableModes:
     - FullAuto

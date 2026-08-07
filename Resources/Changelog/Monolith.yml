@@ -23350,3 +23350,226 @@ Entries:
   id: 2574
   time: '2026-08-01T20:22:11.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4420
+- author: kasature90
+  changes:
+    - type: Tweak
+      message: >-
+        Iridite arc furnace recipe is now easier to do reagent-wise, and outputs
+        2 sheets instead of 1.
+  id: 2575
+  time: '2026-08-02T08:31:22.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4423
+- author: kasature90
+  changes:
+    - type: Add
+      message: >-
+        Did a lot of chimera changes. They can make hives and stuff now, and
+        they finally have a real sprite.
+  id: 2576
+  time: '2026-08-02T09:47:37.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4418
+- author: kasature90
+  changes:
+    - type: Add
+      message: >-
+        Added a compact precision assembler. It's only half the speed of the
+        real one.
+    - type: Add
+      message: Basic industry comps can be bought at cargo.
+    - type: Tweak
+      message: Added basic industry machines to Helios and Halcyon.
+    - type: Tweak
+      message: Added industry planner to autolathe and cargo.
+    - type: Fix
+      message: Fixed a duping issue with composite armor plates.
+    - type: Fix
+      message: Fixed missing steps in the basic components alt recipe w/ optics.
+  id: 2577
+  time: '2026-08-02T10:23:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4425
+- author: AthrunZala33092
+  changes:
+    - type: Tweak
+      message: Updates the TSFMC guidebook with additional lore
+  id: 2578
+  time: '2026-08-02T17:45:40.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4422
+- author: kasature90
+  changes:
+    - type: Add
+      message: Ported ingame PDA date from DV.
+    - type: Add
+      message: Ported breathing SFX for internals from Hullrot.
+  id: 2579
+  time: '2026-08-02T18:43:42.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4427
+- author: NazrinNya
+  changes:
+    - type: Tweak
+      message: Portstrike timing has been changed - Now its random from 3.5h to 4.5h
+  id: 2580
+  time: '2026-08-02T20:48:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4433
+- author: kasature90
+  changes:
+    - type: Tweak
+      message: Nerfed tiny-chimera-things.
+    - type: Tweak
+      message: Chimeras are unrevivable now if they go down.
+    - type: Fix
+      message: Fixed chimeras not having a crit state.
+  id: 2581
+  time: '2026-08-02T20:52:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4431
+- author: kasature90
+  changes:
+    - type: Add
+      message: Added ready-to-use 1x1 machine frames to RCD electrical category.
+    - type: Tweak
+      message: >-
+        Reduced some of the more extreme economy recipes (such as crystallizer,
+        cloning gear, data/bitcoin farms, etc) to use simpler and/or less
+        components.
+    - type: Fix
+      message: Fixed infinite money from vendor flatpacks with their components.
+    - type: Fix
+      message: Fixed economy matter bins having the same name as real ones.
+  id: 2582
+  time: '2026-08-02T21:31:15.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4434
+- author: Onezero0
+  changes:
+    - type: Add
+      message: >-
+        You can now shoot over other people's shoulders. Just be careful not to
+        magdump them.
+  id: 2583
+  time: '2026-08-02T22:10:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4435
+- author: tonotom1
+  changes:
+    - type: Add
+      message: Ruined and lootable Medicus derelict to derelict event circulation.
+    - type: Remove
+      message: Frontier Tide ship from derelict event circulation
+    - type: Tweak
+      message: >-
+        Medicus power capacity increased for QOL, guns rearranged to meet
+        guidelines.
+    - type: Tweak
+      message: There are now always 3 salvage wrecks and never 2.
+  id: 2584
+  time: '2026-08-03T14:24:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4428
+- author: ondrej008
+  changes:
+    - type: Tweak
+      message: SRD & tools are now more forgiving if you move a bit
+    - type: Fix
+      message: >-
+        SRD now works better when not standing on the grid that is being
+        repaired
+  id: 2585
+  time: '2026-08-03T14:35:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4407
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: Flatpackers cost bluespace for tax instead of iridite.
+    - type: Fix
+      message: Armor plates should now fit in interactors.
+  id: 2586
+  time: '2026-08-03T20:54:51.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4439
+- author: NazrinNya
+  changes:
+    - type: Tweak
+      message: >-
+        Medical assembler, precision assembler and arc furnace now use better
+        UI.
+    - type: Tweak
+      message: Machine frame construction is now faster
+  id: 2587
+  time: '2026-08-04T10:06:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4436
+- author: kasature90
+  changes:
+    - type: Tweak
+      message: >-
+        Replaced gameplay voting for now with random gamemode (like normal
+        station servers). Now has a chance for greenshifts (no ADS/chimera
+        threat).
+  id: 2588
+  time: '2026-08-04T17:33:53.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4443
+- author: Onezero0
+  changes:
+    - type: Fix
+      message: Silicon wafer craft now has an icon.
+    - type: Tweak
+      message: >-
+        A bunch of recipes have been split - previously chemical-requiring
+        recipes are now "alternative recipes" that are more efficient but have
+        complexity from chemicals.
+    - type: Add
+      message: >-
+        Component crafts, alternate recipes and component materials now have
+        lathe categories.
+    - type: Add
+      message: >-
+        Added the new (and inefficient) only-parts-requiring T2 component crafts
+        to industrial presses just to make basic machine construction less
+        dependent on poi things (if you want to be efficient/faster tho POI
+        lathes are the way to go)
+    - type: Tweak
+      message: Compact precision assembler now has an actual sprite
+    - type: Add
+      message: >-
+        Assembly lathes now have an extended description explaining how to add
+        entities for crafting recipes.
+  id: 2589
+  time: '2026-08-06T00:28:46.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4444
+- author: kasature90
+  changes:
+    - type: Add
+      message: >-
+        Ported better/unified sprites for those alerts on the side of your
+        screen (like health) from Hullrot.
+  id: 2590
+  time: '2026-08-06T02:27:49.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4450
+- author: NazrinNya
+  changes:
+    - type: Fix
+      message: Reagent requirements for lathes displaying incorrectly
+    - type: Fix
+      message: Fixed beaker slot of assembler lathes being able to accept any item .
+  id: 2591
+  time: '2026-08-06T12:53:52.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4452
+- author: NazrinNya
+  changes:
+    - type: Remove
+      message: Firing through shoulder.
+  id: 2592
+  time: '2026-08-06T13:37:05.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4453
+- author: kasature90
+  changes:
+    - type: Remove
+      message: Replaced the T2/T3 armory on Jupiter/Helios with a T1 one.
+    - type: Tweak
+      message: >-
+        Adjusted the stats of a lot of rarely-used faction guns (not major
+        nerfs!). Maybe check them out a little bit.
+  id: 2593
+  time: '2026-08-06T14:43:02.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4430
+- author: kasature90
+  changes:
+    - type: Add
+      message: Feroxi species. From DV.
+  id: 2594
+  time: '2026-08-07T00:22:34.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4441

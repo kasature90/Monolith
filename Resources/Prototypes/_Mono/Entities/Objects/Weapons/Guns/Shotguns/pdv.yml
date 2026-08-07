@@ -18,17 +18,18 @@
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/bigshotgun_fire.ogg
     fireRate: 0.7
-    damageModifier: 2 # Mono
     selectedMode: Semiauto
+    damageModifier: 1.5
     availableModes:
     - SemiAuto
   - type: GunSpreadModifier
     spread: 0.4
   - type: BallisticAmmoProvider
+    autoCycle: false
     whitelist:
       tags:
       - ShellShotgun23x75mmBuckshot
-    capacity: 8
+    capacity: 4
     proto: ShellShotgun23x75mmBuckshot
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
@@ -60,7 +61,6 @@
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/bigshotgun_fire.ogg
     fireRate: 4
-    damageModifier: 1.2 # Mono
     selectedMode: FullAuto
     availableModes:
     - FullAuto

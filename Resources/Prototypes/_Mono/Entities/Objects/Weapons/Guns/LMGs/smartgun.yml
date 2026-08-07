@@ -19,9 +19,10 @@
     maxAngle: 73
     angleIncrease: 2
     angleDecay: 22
-    fireRate: 14
+    fireRate: 9.5
     cameraRecoilScalar: 0
     selectedMode: FullAuto
+    damageModifier: 1.2
     availableModes:
     - FullAuto
     soundGunshot:

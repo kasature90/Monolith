@@ -27,5 +27,6 @@
     owner: objective-condition-steal-cc
     verifyMapExistence: false
     checkStealAreas: true
+    checkCompanyMembers: true
     objectiveText: objective-condition-steal-title-faction
     descriptionText: objective-condition-steal-description-faction

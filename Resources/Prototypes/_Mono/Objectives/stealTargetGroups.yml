@@ -63,7 +63,7 @@
 
 - type: stealTargetGroup
   id: PDVWeapons
-  name: steal-target-pdv-weapons
+  name: steal-target-groups-pdv-weapons
   sprite:
     sprite: _Mono/Objects/Weapons/Guns/Rifles/basilisk.rsi
     state: icon
@@ -77,23 +77,23 @@
 
 - type: stealTargetGroup
   id: MonolithCrystals
-  name: steal-target-monolith-crystals
+  name: steal-target-groups-monolith-crystals
   sprite:
     sprite: _Mono/Objects/Materials/monolith_crystal.rsi
     state: crystal_medium
 
 - type: stealTargetGroup
   id: BlackBoxes
-  name: steal-target-blackboxes
+  name: steal-target-groups-blackboxes
   sprite:
     sprite: _NF/Objects/Tools/bundles.rsi
     state: engi-base
 
 - type: stealTargetGroup
   id: TSFLPCs
-  name: steal-target-lpcs
+  name: steal-target-groups-lpcs
   sprite:
     sprite: _Mono/Objects/Misc/lpcnew.rsi
-  - state: icon_capital
+    state: icon_capital
 
 

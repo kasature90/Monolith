@@ -8,7 +8,7 @@
     - operationPrefix
     - operationSuffix
   - type: GameRule
-    minPlayers: 20
+    minPlayers: 0
 
 - type: entity
   parent: BaseFactionalObjectives

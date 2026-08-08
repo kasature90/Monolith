@@ -70,7 +70,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 - type: entity
   parent: BaseStealObjective
@@ -93,7 +93,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 - type: entity
   parent: BaseStealObjective
@@ -116,7 +116,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 # Mono survey (environmental and technology data)
 
@@ -147,7 +147,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 - type: entity
   parent: BaseStealObjective
@@ -170,7 +170,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 # Misc
 
@@ -212,13 +212,7 @@
     issuer: objective-issuer-tsf
     icon:
       sprite: _Mono/Objects/Misc/lpcnew.rsi
-      layers:
-      - state: icon_fighter
-      - state: screen
-        color: "#05ffff"
-      - state: screen5
-        color: "#05ffff"
-        shader: unshaded
+      state: icon_capital
   - type: StealCondition
     minCollectionSize: 2
     maxCollectionSize: 4
@@ -260,7 +254,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 - type: entity
   parent: BaseStealObjective
@@ -283,4 +277,4 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction

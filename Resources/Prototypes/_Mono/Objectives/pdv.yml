@@ -101,7 +101,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 - type: entity
   parent: BaseStealObjective
@@ -124,7 +124,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 # PDV Chimera stuff
 
@@ -154,7 +154,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 # PDV TSF stuff
 
@@ -186,7 +186,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 - type: entity
   parent: BaseStealObjective
@@ -209,7 +209,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 - type: entity
   parent: BaseStealObjective
@@ -232,7 +232,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 # PDV MMC stuff
 
@@ -264,7 +264,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 - type: entity
   parent: BaseStealObjective
@@ -287,7 +287,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 - type: entity
   parent: BaseStealObjective
@@ -309,7 +309,7 @@
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
 
 - type: entity
   parent: BaseKillObjective

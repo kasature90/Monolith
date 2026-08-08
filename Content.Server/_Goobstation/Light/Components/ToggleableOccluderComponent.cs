@@ -1,7 +1,7 @@
 using Content.Shared.DeviceLinking;
 using Robust.Shared.Prototypes;
 
-namespace Content.Goobstation.Server.Light.Components;
+namespace Content.Server._Goobstation.Light.Components;
 
 /// <summary>
 ///     Allows entities with OccluderComponent to toggle that component on and off, early upstream merge of #30743

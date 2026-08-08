@@ -1,8 +1,8 @@
 using Content.Server.DeviceLinking.Systems;
-using Content.Goobstation.Server.Light.Components;
+using Content.Server._Goobstation.Light.Components;
 using Content.Shared.DeviceLinking.Events;
 
-namespace Content.Goobstation.Server.Light.EntitySystems;
+namespace Content.Server._Goobstation.Light.Systems;
 
 /// <summary>
 ///     Handles the logic between signals and toggling OccluderComponent, early upstream merge of #30743

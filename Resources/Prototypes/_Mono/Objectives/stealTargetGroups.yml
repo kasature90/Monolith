@@ -7,10 +7,10 @@
 
 - type: stealTargetGroup
   id: ChimeraOrgans
-  name: steal-target-groups-weapon-cc
+  name: steal-target-groups-organs-chimera
   sprite:
     sprite: _Mono/Mobs/Chimera/organs.rsi
-    state: metabolism-chimera
+    state: brain
 
 - type: stealTargetGroup
   id: TSFSuits
@@ -94,12 +94,6 @@
   name: steal-target-lpcs
   sprite:
     sprite: _Mono/Objects/Misc/lpcnew.rsi
-    layers:
-    - state: icon_fighter
-    - state: screen
-      color: "#05ffff"
-    - state: screen5
-      color: "#05ffff"
-      shader: unshaded
+  - state: icon_capital
 
 

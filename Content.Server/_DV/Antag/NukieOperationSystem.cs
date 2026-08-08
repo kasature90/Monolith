@@ -28,15 +28,11 @@ public sealed class NukieOperationSystem : GameRuleSystem<NukieOperationComponen
     private void OnPlayerCompanyCompSpawned(PlayerSpawnCompleteEvent args)
     {
         if (!_mind.TryGetMind(args.Player, out var mindId, out var mind))
-        {
-            Log.Error("FAILED TRYGETMIND");
             return;
-        }
+
         if (!TryComp<CompanyComponent>(args.Mob, out var userCompany))
-        {
-            Log.Error("FAILED TRYCOMPCHECK");
             return;
-        }
+
         var query = QueryActiveRules();
         var rules = new List<(EntityUid, NukieOperationComponent)>();
         while (query.MoveNext(out var uid, out _, out var operation, out _))
@@ -48,26 +44,18 @@ public sealed class NukieOperationSystem : GameRuleSystem<NukieOperationComponen
             if (operation.ChosenOperation == null)
             {
                 if (!_proto.TryIndex(operation.Operations, out var opProto))
-                {
-                    Log.Error("FAILED OPERATIONS INDEX");
                     return;
-                }
 
                 operation.ChosenOperation = _random.Pick(opProto.Weights);
             }
 
             if (!_proto.TryIndex(operation.ChosenOperation, out var chosenOp))
-            {
-                Log.Error("FAILED CHOSENOPERATION INDEX");
                 return;
-            }
+
             foreach (var objectiveProto in chosenOp.OperationObjectives)
             {
                 if (operation.ParticipatingCompany != userCompany.CompanyName)
-                {
-                    Log.Error("PARTCOMP != USERCOMP: " + userCompany.CompanyName + " != " + operation.ParticipatingCompany);
                     return;
-                }
                 if (!_objectives.TryCreateObjective((mindId, mind), objectiveProto, out var objective))
                 {
                     Log.Error("Couldn't create objective for company member: " + mindId); // This should never happen.

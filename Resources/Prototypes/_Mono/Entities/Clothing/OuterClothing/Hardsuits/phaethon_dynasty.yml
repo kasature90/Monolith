@@ -153,10 +153,10 @@
     - RogueHardsuit
 
 - type: entity
-  parent: [ ClothingOuterHardsuitSyndieElite, EnergyShieldClothing ]
+  parent: [ ClothingOuterHardsuitSyndieElite, MonoEnergyShieldClothing ]
   id: ClothingOuterHardsuitAshenElite
   name: PDV CV-53 combat tacsuit
-  description: Originally based off of the CV-32 hardsuit, the CV-53 tacsuit sacrifices conventional armor plating for environmental protection, and a rechargeable hard-shield.
+  description: Originally based off of the CV-32 hardsuit, the CV-53 tacsuit sacrifices conventional armor plating for environmental protection, and a fast-recharging energy shield.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/syndieelite.rsi
@@ -192,42 +192,22 @@
     tags:
     - RogueHardsuit
   # Shielding
-  - type: Blocking
-    passiveBlockModifier:
-      coefficients:
-        Blunt: 0.1
-        Slash: 0.1
-        Piercing: 0.1
-        Heat: 0.1
-    activeBlockModifier:
-      coefficients:
-        Blunt: 0.1
-        Slash: 0.1
-        Piercing: 0.1
-        Heat: 0.1
-      flatReductions:
-        Heat: 5
-    passiveBlockFraction: 1.0
-    activeBlockFraction: 1.0
-    isClothing: true
-  - type: Damageable
-    damageContainer: Shield
+  - type: PersonalShield
+    color: "#FF3300"
+    shatterTime: 0.4
+    scale: 1.6
+    shield:
+      maxCharge: 175
+      regenRate: 20 # Basically a free glancing shot-shield, spools and recharges super fast but cant take much damage.
+      spinupTime: 0.1
+      breakCooldown: 3
+      powerDraw: 0.5
   - type: Battery
-    maxCharge: 10
-    startingCharge: 10
+    maxCharge: 20
+    startingCharge: 20
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 1
-  - type: RechargeableBlocking
-    chargedRechargeRate: 0
-    dischargedRechargeRate: 0.3
-  - type: UseDelay
-    delay: 10
-  - type: PointLight
-    enabled: false
-    radius: 1.4
-    energy: 2
-    color: "#5dd439"
+    autoRechargeRate: 0.6
 
 - type: entity
   parent: ClothingOuterHardsuitAshen

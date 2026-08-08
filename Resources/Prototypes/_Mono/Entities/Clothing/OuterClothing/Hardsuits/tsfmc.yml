@@ -154,10 +154,10 @@
     id: ClothingOuterHardsuitTacsuitHighValue
 
 - type: entity
-  parent: [ClothingOuterHardsuitJuggernaut, EnergyShieldClothing, BaseFactionGearTSFT3 ] # Jugger Suit
+  parent: [ClothingOuterHardsuitJuggernaut, MonoEnergyShieldClothing, BaseFactionGearTSFT3 ] # Jugger Suit
   id: ClothingOuterHardsuitNfsdExperimental
   name: TSFMC M92-X tacsuit
-  description: An experimental modification of the M92 tacsuit for spec-ops units of the TSFMC. Durable, and comes with an integrated soft-shield along with numerous gadgets at the cost of insulation and solid armor.
+  description: An experimental modification of the M92 tacsuit for spec-ops units of the TSFMC. Durable, and comes with an integrated slow-recharging yet sturdy shield along with numerous gadgets at the cost of insulation and solid armor.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/tsfmc_experimental.rsi # Mono
@@ -197,42 +197,30 @@
     coefficient: 0.25
   - type: PirateBountyItem # Mono
     id: ClothingOuterHardsuitTacsuitHighValue
-  # Mono - Shielding comps
-  - type: Blocking
-    passiveBlockModifier:
-      coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.5
-    activeBlockModifier:
-      coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.5
-      flatReductions:
-        Heat: 5
-        Piercing: 5
-    passiveBlockFraction: 0.6
-    activeBlockFraction: 0.6
-    isClothing: true
-  - type: Damageable
-    damageContainer: Shield
+  # Shielding
+  - type: PersonalShield
+    color: "#179EFF"
+    shatterTime: 0.2
+    scale: 1.9
+    breathDepth: 0.12
+    rimLevel: 0.9
+    shield:
+      maxCharge: 750
+      regenRate: 5 # Slow recharge. Giant health pool.
+      spinupTime: 2
+      breakCooldown: 30
+      powerDraw: 5
   - type: Battery
-    maxCharge: 150
-    startingCharge: 150
+    maxCharge: 80
+    startingCharge: 80
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 1.5
-  - type: RechargeableBlocking
-  - type: UseDelay
-    delay: 10
+    autoRechargeRate: 6
 
 # MARSOC only
 
 - type: entity
-  parent: [EnergyShieldClothing, ClothingOuterHardsuitM86, BaseFactionGearTSFT3]
+  parent: [MonoEnergyShieldClothing, ClothingOuterHardsuitM86, BaseFactionGearTSFT3]
   id: ClothingOuterHardsuitM86Mk4
   name: M86 Mk.4(B) hardsuit
   description: A limited-production redesign proposal for the M86 Mk.3(R), outfitted with an inbuilt personal shield generator.
@@ -268,3 +256,20 @@
       head: ClothingHeadHelmetHardsuitM86Mk4
       helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
+  # Shielding - buffed dupe of CV-53 cuz im lazy
+  - type: PersonalShield
+    color: "#FF0059"
+    shatterTime: 0.4
+    scale: 1.6
+    shield:
+      maxCharge: 250
+      regenRate: 35
+      spinupTime: 0.1
+      breakCooldown: 3
+      powerDraw: 0.5
+  - type: Battery
+    maxCharge: 20
+    startingCharge: 20
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 0.6

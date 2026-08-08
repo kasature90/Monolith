@@ -79,5 +79,5 @@ steal-target-groups-pdv-cybernetics = cybernetics
 steal-target-groups-pdv-weapons = T2/T3 weapon
 steal-target-groups-mono-disks = tech disk
 steal-target-groups-monolith-crystals = crystals
-steal-target-groups-blackboxes = blackbox data recorders
+steal-target-groups-blackboxes = blackbox data recorder
 steal-target-groups-lpcs = T2+ LPC

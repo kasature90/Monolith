@@ -1,87 +1,69 @@
 - type: weightedRandom
-  id: PDVOperations
+  id: TSFOperations
   weights:
-    PDVOperationStealCCDisk: 0.2
-    PDVOperationChimeraOrgans: 0.1
-    PDVOperationTSFGear: 0.5
-    PDVOperationMMCGear: 0.4
-    PDVOperationMMCAndCCTheft: 0.2
-    PDVOperationBodyParts: 0.05
-    PDVOperationHell: 0.05
-    PDVOperationHighTechAdventure: 0.3
+    TSFOperationMonolithSurvey: 0.3
+    TSFOperationPDVDisarming: 0.2
+    TSFOperationIndustrial: 0.1
+    TSFOperationTechnology: 0.2
+    TSFOperationWhatever: 0.2
+    TSFOperationMMCGear: 0.05
+    TSFOperationIHateEveryone: 0.05
 
-# Mixed ops
-
-- type: nukieOperation
-  id: PDVOperationMMCAndCCTheft
-  operationObjectives:
-  - PDVDisarmCCObjective
-  - PDVMMCToolsObjective
+# Mixed
 
 - type: nukieOperation
-  id: PDVOperationBodyParts
+  id: TSFOperationTechnology
   operationObjectives:
-  - PDVChimeraOrgansObjective
-  - PDVMMCAutosurgeonFlatpacksObjective
+  - TSFTechDisksObjective
+  - TSFPDVCyberneticsObjective
+  - TSFMMCAutosurgeonFlatpacksObjective
 
 - type: nukieOperation
-  id: PDVOperationHell
+  id: TSFOperationIndustrial
   operationObjectives:
-  - PDVChimeraOrgansObjective
-  - PDVStealDiskObjective
-  - PDVTSFFrostObjective
+  - TSFLPCsObjective
+  - TSFComponentsObjectiveBulk
 
 - type: nukieOperation
-  id: PDVOperationHighTechAdventure
+  id: TSFOperationWhatever
   operationObjectives:
-  - PDVTSFFrostObjective
-  - PDVMMCToolsObjective
-  - PDVComponentsObjective
-
-# PDV CC theft stuff
+  - TSFPDVWeaponsObjective
+  - TSFComponentsObjectiveBulk
+  - TSFCrystalsObjective
 
 - type: nukieOperation
-  id: PDVOperationStealCCDisk
+  id: TSFOperationIHateEveryone
   operationObjectives:
-  - PDVStealDiskObjective
-  - PDVDisarmCCObjective
+  - TSFPDVWeaponsObjective
+  - TSFPDVCyberneticsObjective
+  - TSFMMCAutosurgeonFlatpacksObjective
+  - TSFMMCToolsObjective
+  - TSFBlackBoxesObjective
+
+# Mono survey (environmental and technology data)
+
+- type: nukieOperation
+  id: TSFOperationMonolithSurvey
+  operationObjectives:
+  - TSFBlackBoxesObjective
+  - TSFCrystalsObjective
+  - TSFTechDisksObjective
 
 - type: entity
   parent: BaseStealObjective
-  id: PDVStealDiskObjective
-  components:
-  - type: Objective
-    difficulty: 4.0
-    issuer: objective-issuer-pdv
-    icon:
-      sprite: Objects/Misc/nukedisk.rsi
-      state: icon
-  - type: StealCondition
-    stealGroup: NukeDisk
-    owner: objective-condition-steal-cc
-    verifyMapExistence: false
-    checkStealAreas: true
-    checkCompanyMembers: true
-    objectiveText: objective-condition-steal-title-faction
-    objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
-    descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
-
-- type: entity
-  parent: BaseStealObjective
-  id: PDVDisarmCCObjective
+  id: TSFBlackBoxesObjective
   components:
   - type: Objective
     difficulty: 1.0
-    issuer: objective-issuer-pdv
+    issuer: objective-issuer-tsf
     icon:
-      sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
-      state: base
+      sprite: _NF/Objects/Tools/bundles.rsi
+      state: engi-base
   - type: StealCondition
     minCollectionSize: 2
     maxCollectionSize: 4
-    stealGroup: CCWeapons
-    owner: objective-condition-steal-cc
+    stealGroup: BlackBoxes
+    owner: objective-condition-steal-drone
     verifyMapExistence: false
     checkStealAreas: true
     checkCompanyMembers: true
@@ -90,28 +72,21 @@
     descriptionText: objective-condition-steal-description-faction
     descriptionMultiplyText: objective-condition-thief-multiply-description-faction
 
-# PDV Chimera stuff
-
-- type: nukieOperation
-  id: PDVOperationChimeraOrgans
-  operationObjectives:
-  - PDVChimeraOrgansObjective
-
 - type: entity
   parent: BaseStealObjective
-  id: PDVChimeraOrgansObjective
+  id: TSFCrystalsObjective
   components:
   - type: Objective
-    difficulty: 6.0
-    issuer: objective-issuer-pdv
+    difficulty: 1.0
+    issuer: objective-issuer-tsf
     icon:
-      sprite: _Mono/Mobs/Chimera/organs.rsi
-      state: metabolism-chimera
+      sprite: _Mono/Objects/Materials/monolith_crystal.rsi
+      state: crystal_medium
   - type: StealCondition
-    minCollectionSize: 5
-    maxCollectionSize: 20
-    stealGroup: ChimeraOrgans
-    owner: objective-condition-steal-chimera
+    minCollectionSize: 2
+    maxCollectionSize: 12
+    stealGroup: MonolithCrystals
+    owner: objective-condition-steal-monolith
     verifyMapExistence: false
     checkStealAreas: true
     checkCompanyMembers: true
@@ -120,30 +95,52 @@
     descriptionText: objective-condition-steal-description-faction
     descriptionMultiplyText: objective-condition-thief-multiply-description-faction
 
-# PDV TSF stuff
-
-- type: nukieOperation
-  id: PDVOperationTSFGear
-  operationObjectives:
-  - PDVTSFSuitsObjective
-  - PDVTSFGunsObjective
-  - PDVTSFFrostObjective
-
 - type: entity
   parent: BaseStealObjective
-  id: PDVTSFSuitsObjective
+  id: TSFTechDisksObjective
   components:
   - type: Objective
-    difficulty: 2.0
-    issuer: objective-issuer-pdv
+    difficulty: 1.0
+    issuer: objective-issuer-tsf
     icon:
-      sprite: _Mono/Clothing/OuterClothing/Hardsuits/m86.rsi
+      sprite: _Mono/Objects/Specific/Research/researchdisk.rsi
       state: icon
   - type: StealCondition
-    minCollectionSize: 1 # needs to be on person and suits are really big
-    maxCollectionSize: 2
-    stealGroup: TSFSuits
-    owner: objective-condition-steal-tsf
+    minCollectionSize: 1
+    maxCollectionSize: 10
+    stealGroup: MonoTechDisks
+    owner: objective-condition-steal-sevas
+    verifyMapExistence: false
+    checkStealAreas: true
+    checkCompanyMembers: true
+    objectiveText: objective-condition-steal-title-faction
+    objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
+    descriptionText: objective-condition-steal-description-faction
+    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
+
+# Mono survey (environmental and technology data)
+
+- type: nukieOperation
+  id: TSFOperationPDVDisarming
+  operationObjectives:
+  - TSFPDVWeaponsObjective
+  - TSFPDVCyberneticsObjective
+
+- type: entity
+  parent: BaseStealObjective
+  id: TSFPDVWeaponsObjective
+  components:
+  - type: Objective
+    difficulty: 1.0
+    issuer: objective-issuer-tsf
+    icon:
+      sprite: _Mono/Objects/Weapons/Guns/Rifles/basilisk.rsi
+      state: icon
+  - type: StealCondition
+    minCollectionSize: 2
+    maxCollectionSize: 10
+    stealGroup: PDVWeapons
+    owner: objective-condition-steal-pdv
     verifyMapExistence: false
     checkStealAreas: true
     checkCompanyMembers: true
@@ -154,19 +151,19 @@
 
 - type: entity
   parent: BaseStealObjective
-  id: PDVTSFGunsObjective
+  id: TSFPDVCyberneticsObjective
   components:
   - type: Objective
-    difficulty: 2.0
-    issuer: objective-issuer-pdv
+    difficulty: 1.0
+    issuer: objective-issuer-tsf
     icon:
-      sprite: _Mono/Objects/Weapons/Guns/Rifles/xlr556.rsi
-      state: icon
+      sprite: _Mono/Objects/Misc/cybernetics.rsi
+      state: internal_air_system
   - type: StealCondition
     minCollectionSize: 1
     maxCollectionSize: 4
-    stealGroup: TSFGuns
-    owner: objective-condition-steal-tsf
+    stealGroup: PDVCybernetics
+    owner: objective-condition-steal-pdv
     verifyMapExistence: false
     checkStealAreas: true
     checkCompanyMembers: true
@@ -175,51 +172,86 @@
     descriptionText: objective-condition-steal-description-faction
     descriptionMultiplyText: objective-condition-thief-multiply-description-faction
 
+# Misc
+
 - type: entity
   parent: BaseStealObjective
-  id: PDVTSFFrostObjective
+  id: TSFComponentsObjective # Identical to PDV, just different issuer
   components:
   - type: Objective
     difficulty: 2.0
-    issuer: objective-issuer-pdv
+    issuer: objective-issuer-tsf
     icon:
-      sprite: _Mono/Objects/Weapons/Guns/Battery/frost.rsi
-      state: base
+      sprite: _Mono/Objects/Materials/bayponents.rsi
+      state: armor4
   - type: StealCondition
-    minCollectionSize: 1
-    maxCollectionSize: 1
-    stealGroup: TSFFrost
-    owner: objective-condition-steal-tsf
-    verifyMapExistence: true
+    minCollectionSize: 4
+    maxCollectionSize: 12
+    stealGroup: EconomyComponentsT3T4
+    verifyMapExistence: false
     checkStealAreas: true
     checkCompanyMembers: true
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
     descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
 
-# PDV MMC stuff
-
-- type: nukieOperation
-  id: PDVOperationMMCGear
-  operationObjectives:
-  - PDVMMCToolsObjective
-  - PDVMMCAutosurgeonFlatpacksObjective
-  - PDVComponentsObjective
+- type: entity
+  parent: TSFComponentsObjective
+  id: TSFComponentsObjectiveBulk
+  components:
+  - type: StealCondition
+    minCollectionSize: 8
+    maxCollectionSize: 24
 
 - type: entity
   parent: BaseStealObjective
-  id: PDVMMCToolsObjective
+  id: TSFLPCsObjective # Not theft, just making your own. Since they're expensive.
   components:
   - type: Objective
     difficulty: 2.0
-    issuer: objective-issuer-pdv
+    issuer: objective-issuer-tsf
+    icon:
+      sprite: _Mono/Objects/Misc/lpcnew.rsi
+      layers:
+      - state: icon_fighter
+      - state: screen
+        color: "#05ffff"
+      - state: screen5
+        color: "#05ffff"
+        shader: unshaded
+  - type: StealCondition
+    minCollectionSize: 2
+    maxCollectionSize: 4
+    stealGroup: TSFLPCs
+    verifyMapExistence: false
+    checkStealAreas: true
+    checkCompanyMembers: true
+    objectiveText: objective-condition-steal-title-faction
+    objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
+    descriptionText: objective-condition-steal-description-faction
+
+# MMC raiding
+
+- type: nukieOperation
+  id: TSFOperationMMCGear
+  operationObjectives:
+  - TSFMMCToolsObjective
+  - TSFMMCAutosurgeonFlatpacksObjective
+  - TSFComponentsObjective
+
+- type: entity
+  parent: BaseStealObjective
+  id: TSFMMCToolsObjective
+  components:
+  - type: Objective
+    difficulty: 2.0
+    issuer: objective-issuer-tsf
     icon:
       sprite: _Mono/Objects/Tools/mieyo_rpd.rsi
       state: icon
   - type: StealCondition
-    minCollectionSize: 4
-    maxCollectionSize: 15
+    minCollectionSize: 2
+    maxCollectionSize: 6
     stealGroup: MMCTools
     owner: objective-condition-steal-mmc
     verifyMapExistence: false
@@ -232,41 +264,19 @@
 
 - type: entity
   parent: BaseStealObjective
-  id: PDVMMCAutosurgeonFlatpacksObjective
+  id: TSFMMCAutosurgeonFlatpacksObjective
   components:
   - type: Objective
     difficulty: 2.0
-    issuer: objective-issuer-pdv
+    issuer: objective-issuer-tsf
     icon:
       sprite: _Goobstation/Objects/Devices/autosurgeon.rsi
       state: icon-mmc
   - type: StealCondition
-    minCollectionSize: 2
-    maxCollectionSize: 4 # Remember, these need to be carried on people!
+    minCollectionSize: 3
+    maxCollectionSize: 6 # Remember, these need to be carried on people!
     stealGroup: MMCFlatpacks
     owner: objective-condition-steal-mmc
-    verifyMapExistence: false
-    checkStealAreas: true
-    checkCompanyMembers: true
-    objectiveText: objective-condition-steal-title-faction
-    objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
-    descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-thief-multiply-description-faction
-
-- type: entity
-  parent: BaseStealObjective
-  id: PDVComponentsObjective
-  components:
-  - type: Objective
-    difficulty: 2.0
-    issuer: objective-issuer-pdv
-    icon:
-      sprite: _Mono/Objects/Materials/bayponents.rsi
-      state: armor4
-  - type: StealCondition
-    minCollectionSize: 4
-    maxCollectionSize: 12
-    stealGroup: EconomyComponentsT3T4
     verifyMapExistence: false
     checkStealAreas: true
     checkCompanyMembers: true

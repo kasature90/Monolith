@@ -7,7 +7,7 @@
   parent: BaseItem
   id: TechDiskBase
   name: tech disk
-  suffix: DO NOT MAP
+  abstract: true
   description: A disk capable of adding a specific research to a server.
   components:
   - type: Sprite
@@ -22,6 +22,9 @@
     - type: Tag
       tags:
       - TechDiskMono
+    - type: StealTarget
+      stealGroup:
+      - MonoTechDisks
 
 - type: weightedRandom
   id: TechDiskTierWeightsNormal

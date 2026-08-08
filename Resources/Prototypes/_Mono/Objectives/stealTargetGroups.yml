@@ -54,4 +54,52 @@
     sprite: _Mono/Objects/Materials/bayponents.rsi
     state: armor4
 
+- type: stealTargetGroup
+  id: PDVCybernetics
+  name: steal-target-groups-pdv-cybernetics
+  sprite:
+    sprite: _Mono/Objects/Misc/cybernetics.rsi
+    state: internal_air_system
+
+- type: stealTargetGroup
+  id: PDVWeapons
+  name: steal-target-pdv-weapons
+  sprite:
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/basilisk.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: MonoTechDisks
+  name: steal-target-groups-mono-disks
+  sprite:
+    sprite: _Mono/Objects/Specific/Research/researchdisk.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: MonolithCrystals
+  name: steal-target-monolith-crystals
+  sprite:
+    sprite: _Mono/Objects/Materials/monolith_crystal.rsi
+    state: crystal_medium
+
+- type: stealTargetGroup
+  id: BlackBoxes
+  name: steal-target-blackboxes
+  sprite:
+    sprite: _NF/Objects/Tools/bundles.rsi
+    state: engi-base
+
+- type: stealTargetGroup
+  id: TSFLPCs
+  name: steal-target-lpcs
+  sprite:
+    sprite: _Mono/Objects/Misc/lpcnew.rsi
+    layers:
+    - state: icon_fighter
+    - state: screen
+      color: "#05ffff"
+    - state: screen5
+      color: "#05ffff"
+      shader: unshaded
+
 

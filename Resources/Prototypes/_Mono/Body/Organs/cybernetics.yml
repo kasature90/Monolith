@@ -67,6 +67,9 @@
       Lung:
         maxVol: 100.0
         canReact: false
+  - type: StealTarget
+    stealGroup:
+    - PDVCybernetics
 
 - type: entity
   parent: BaseItem
@@ -115,3 +118,6 @@
       rateModifier: 0.2
   - type: Item
     size: Small
+  - type: StealTarget
+    stealGroup:
+    - PDVCybernetics

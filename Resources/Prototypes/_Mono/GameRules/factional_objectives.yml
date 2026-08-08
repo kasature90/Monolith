@@ -17,3 +17,11 @@
   - type: NukieOperation
     operations: PDVOperations
     participatingCompany: PDV
+
+- type: entity
+  parent: BaseFactionalObjectives
+  id: TSFObjectives
+  components:
+  - type: NukieOperation
+    operations: TSFOperations
+    participatingCompany: TSF

@@ -12,6 +12,9 @@ objective-condition-thief-multiply-description = I need to get {$count} {MAKEPLU
 
 # Mono
 objective-condition-steal-chimera = Chimera
+objective-condition-steal-sevas = Sevastopol
+objective-condition-steal-drone = drone
+objective-condition-steal-monolith = the Monolith
 objective-condition-steal-cc = CC
 objective-condition-steal-vg = VG
 objective-condition-steal-mmc = MMC

@@ -50,3 +50,4 @@ traitor-role-uplink-implant-short = Your uplink was implanted. Access it from yo
 
 # Mono
 objective-issuer-pdv = [color=tan]Phaeton Dynasty Military Command[/color]
+objective-issuer-tsf = [color=cornflowerblue]Winter Solstice[/color]

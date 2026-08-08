@@ -32,3 +32,6 @@
     pvsIncrease: 0.7
   - type: StaticPrice
     price: 1250
+  - type: StealTarget
+    stealGroup:
+    - PDVWeapons

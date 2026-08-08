@@ -19,12 +19,12 @@
     - state: protect
     - state: holo
       shader: unshaded
-    - type: Tag
-      tags:
-      - TechDiskMono
-    - type: StealTarget
-      stealGroup:
-      - MonoTechDisks
+  - type: Tag
+    tags:
+    - TechDiskMono
+  - type: StealTarget
+    stealGroup:
+    - MonoTechDisks
 
 - type: weightedRandom
   id: TechDiskTierWeightsNormal

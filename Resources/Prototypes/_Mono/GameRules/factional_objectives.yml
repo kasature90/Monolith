@@ -8,7 +8,8 @@
     - operationPrefix
     - operationSuffix
   - type: GameRule
-    minPlayers: 0
+    minPlayers: 20
+    cancelPresetOnTooFewPlayers: false
 
 - type: entity
   parent: BaseFactionalObjectives

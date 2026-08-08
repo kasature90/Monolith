@@ -14,7 +14,4 @@ public sealed partial class NukieOperationPrototype : IPrototype
 
     [DataField(required: true)]
     public List<EntProtoId> OperationObjectives = new();
-
-    [DataField]
-    public LocId? NukeCodePaperOverride;
 }

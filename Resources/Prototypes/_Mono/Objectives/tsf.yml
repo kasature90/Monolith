@@ -1,13 +1,13 @@
 - type: weightedRandom
   id: TSFOperations
   weights:
-    TSFOperationMonolithSurvey: 0.3
+    TSFOperationMonolithSurvey: 0.2
     TSFOperationPDVDisarming: 0.2
-    TSFOperationIndustrial: 0.1
+    TSFOperationIndustrial: 0.2
     TSFOperationTechnology: 0.2
-    TSFOperationWhatever: 0.2
+    TSFOperationWhatever: 0.1
     TSFOperationMMCGear: 0.05
-    TSFOperationIHateEveryone: 0.05
+    TSFOperationIHateEveryone: 0.02
 
 # Mixed
 

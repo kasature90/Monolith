@@ -61,7 +61,7 @@ public sealed partial class CCVars
     ///     The preset for the game to fall back to if the selected preset could not be used, and fallback is enabled.
     /// </summary>
     public static readonly CVarDef<string>
-        GameLobbyFallbackPreset = CVarDef.Create("game.fallbackpreset", "Traitor,Extended", CVar.ARCHIVE);
+        GameLobbyFallbackPreset = CVarDef.Create("game.fallbackpreset", "Deathmatch", CVar.ARCHIVE); // mono - trol
 
     /// <summary>
     ///     Controls if people can win the game in Suspicion or Deathmatch.
@@ -364,7 +364,7 @@ public sealed partial class CCVars
     ///     The prototype to use for secret weights.
     /// </summary>
     public static readonly CVarDef<string> SecretWeightPrototype =
-        CVarDef.Create("game.secret_weight_prototype", "Secret", CVar.SERVERONLY);
+        CVarDef.Create("game.secret_weight_prototype", "MonoSecret", CVar.SERVERONLY); // Mono
 
     /// <summary>
     ///     The id of the sound collection to randomly choose a sound from and play when the round ends.
@@ -421,5 +421,5 @@ public sealed partial class CCVars
     ///     Set to 0 to always disable timers and whitelists when dynamic roles are enabled.
     /// </summary>
     public static readonly CVarDef<int> DynamicRolesPlayerThreshold =
-         CVarDef.Create("game.dynamic_roles.player_threshold", 5, CVar.SERVERONLY | CVar.ARCHIVE);
+         CVarDef.Create("game.dynamic_roles.player_threshold", 20, CVar.SERVERONLY | CVar.ARCHIVE);
 }

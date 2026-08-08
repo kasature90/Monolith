@@ -73,6 +73,9 @@
   - type: LaserPointer
     targetedColor: "#03c2fc"
     defaultColor: "#03c2fc"
+  - type: StealTarget
+    stealGroup:
+    - TSFGuns
 
 - type: entity
   name: VFD QBU-243 Xian DMR (8x65mm SKR)
@@ -214,6 +217,9 @@
         whitelist:
           tags:
           - MonoOptic8x
+  - type: StealTarget
+    stealGroup:
+    - TSFGuns
 
 - type: entity
   parent: BaseWeaponRifle # Mono

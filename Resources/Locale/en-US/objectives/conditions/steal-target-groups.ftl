@@ -65,3 +65,13 @@ steal-target-groups-animal-morty = Morty
 steal-target-groups-animal-renault = Renault
 steal-target-groups-animal-shiva = Shiva
 steal-target-groups-animal-tropico = Tropico
+
+# Mono
+steal-target-groups-weapon-cc = judge weapon
+steal-target-groups-organs-chimera = organ
+steal-target-groups-suits-tsf = T2/T3 tacsuit
+steal-target-groups-guns-tsf = T3 gun
+steal-target-groups-guns-tsf-frost = QBH-5 FROST
+steal-target-groups-mmc-tools = proprietary tool
+steal-target-groups-mmc-flatpacks = autosurgeon flatpack
+steal-target-groups-comps = T3/T4 machine component

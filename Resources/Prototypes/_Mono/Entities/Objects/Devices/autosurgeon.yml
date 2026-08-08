@@ -81,7 +81,7 @@
 # Dermal armor
 
 - type: entity
-  parent: BaseAutosurgeonMieyo
+  parent: BaseAutosurgeon
   id: AutosurgeonDermalArmorPDV
   name: PDV autosurgeon (E-SAPI dermal armor)
   description: Implants an array of E-SAPI armor plates into the body. Makes you more vulnerable to heat and shock, but makes you more resistant to bullets.
@@ -178,6 +178,10 @@
   - type: Sprite
     layers:
     - state: medical_lathe
+  - type: StealTarget
+    stealGroup:
+    - MMCFlatpacks
+    - MMCTools
 
 # Right mantis blade
 
@@ -207,6 +211,10 @@
   - type: Sprite
     layers:
     - state: medical_lathe
+  - type: StealTarget
+    stealGroup:
+    - MMCFlatpacks
+    - MMCTools
 
 # Left mantis blade
 
@@ -236,6 +244,10 @@
   - type: Sprite
     layers:
     - state: medical_lathe
+  - type: StealTarget
+    stealGroup:
+    - MMCFlatpacks
+    - MMCTools
 
 # Sandevistan
 
@@ -263,3 +275,7 @@
   - type: Sprite
     layers:
     - state: medical_lathe
+  - type: StealTarget
+    stealGroup:
+    - MMCFlatpacks
+    - MMCTools

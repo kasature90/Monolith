@@ -1,0 +1,57 @@
+- type: stealTargetGroup
+  id: CCWeapons
+  name: steal-target-groups-weapon-cc
+  sprite:
+    sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
+    state: base
+
+- type: stealTargetGroup
+  id: ChimeraOrgans
+  name: steal-target-groups-weapon-cc
+  sprite:
+    sprite: _Mono/Mobs/Chimera/organs.rsi
+    state: metabolism-chimera
+
+- type: stealTargetGroup
+  id: TSFSuits
+  name: steal-target-groups-suits-tsf
+  sprite:
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/m86.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: TSFGuns
+  name: steal-target-groups-guns-tsf
+  sprite:
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/xlr556.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: TSFFrost
+  name: steal-target-groups-guns-tsf-frost
+  sprite:
+    sprite: _Mono/Objects/Weapons/Guns/Battery/frost.rsi
+    state: base
+
+- type: stealTargetGroup
+  id: MMCTools
+  name: steal-target-groups-mmc-tools
+  sprite:
+    sprite: _Mono/Objects/Tools/mieyo_rpd.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: MMCFlatpacks
+  name: steal-target-groups-mmc-flatpacks
+  sprite:
+    sprite: _Goobstation/Objects/Devices/autosurgeon.rsi
+    state: icon-mmc
+
+- type: stealTargetGroup
+  id: EconomyComponentsT3T4
+  name: steal-target-groups-comps
+  sprite:
+    sprite: _Mono/Objects/Materials/bayponents.rsi
+    state: armor4
+
+

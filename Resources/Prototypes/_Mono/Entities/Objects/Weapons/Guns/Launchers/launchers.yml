@@ -188,6 +188,9 @@
     baseDelay: 2
     modifiedDelay: 2
     preventFiring: true
+  - type: StealTarget
+    stealGroup:
+    - TSFGuns
 
 # TPGL (its just a QLU-11...)
 
@@ -278,3 +281,6 @@
   - type: LaserPointer
     targetedColor: "#ff0037"
     defaultColor: "#03c2fc"
+  - type: StealTarget
+    stealGroup:
+    - TSFGuns

@@ -53,7 +53,7 @@ public sealed partial class StealConditionSystem : EntitySystem
         var query = AllEntityQuery<StealTargetComponent>();
         while (query.MoveNext(out var target))
         {
-            if (condition.Comp.StealGroup != target.StealGroup)
+            if (!target.StealGroup.Contains(condition.Comp.StealGroup)) // Mono
                 continue;
 
             targetList.Add(target);
@@ -200,7 +200,7 @@ public sealed partial class StealConditionSystem : EntitySystem
         if (!TryComp<StealTargetComponent>(entity, out var target))
             return 0;
 
-        if (target.StealGroup != condition.StealGroup)
+        if (!target.StealGroup.Contains(condition.StealGroup)) // Mono
             return 0;
 
         // check if cartridge is installed

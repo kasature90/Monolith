@@ -35,8 +35,6 @@
     components:
     - type: ChatRank
       rank: cc-overseer
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ] # Mono - remove TSFMC implant
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff

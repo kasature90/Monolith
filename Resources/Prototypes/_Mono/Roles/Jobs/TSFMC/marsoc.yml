@@ -31,7 +31,7 @@
     - type: ChatRank
       rank: tsf-marsoc
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, TrackingImplant ]
+    implants: [ TrackingImplant ]
   - !type:AddLanguageSpecial
     languagesSpoken:
     - SolCommon

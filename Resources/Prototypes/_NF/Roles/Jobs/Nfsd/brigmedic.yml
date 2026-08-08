@@ -31,7 +31,7 @@
     - type: SurgerySpeedModifier
       SpeedModifier: 1.65
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, TrackingImplant ]
+    implants: [ TrackingImplant ]
   - !type:AddLanguageSpecial # Monolith - Languages
     languagesSpoken:
     - SolCommon

@@ -37,7 +37,7 @@
       factions:
       - TSFMC
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, TrackingImplant ]
+    implants: [ TrackingImplant ]
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff

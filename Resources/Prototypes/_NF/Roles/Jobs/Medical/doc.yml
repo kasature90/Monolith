@@ -27,8 +27,6 @@
   access:
   - ChiefMedicalOfficer #Mono
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ] # Mono - remove TSFMC implant
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff

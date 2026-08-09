@@ -137,16 +137,6 @@
       Capacitor: 1 # Mono 1<4
     stackRequirements:
       Steel: 5
-    tagRequirements:
-      ComponentBrickEconomy1:
-        amount: 1
-        defaultPrototype: ComponentBrickEconomy1
-      ElectromagnetEconomy1:
-        amount: 1
-        defaultPrototype: ElectromagnetEconomy1
-      ArmorPlateEconomy1:
-        amount: 1
-        defaultPrototype: ArmorPlateEconomy1
   - type: StaticPrice
     price: 18 # 12.5<18
   - type: Tag # Frontier
@@ -198,13 +188,6 @@
       Capacitor: 1
     stackRequirements:
       Glass: 2
-    tagRequirements:
-      ComponentBrickEconomy1:
-        amount: 1
-        defaultPrototype: ComponentBrickEconomy1
-      ArmorPlateEconomy1:
-        amount: 1
-        defaultPrototype: ArmorPlateEconomy1
   - type: StaticPrice
     price: 17.5
 

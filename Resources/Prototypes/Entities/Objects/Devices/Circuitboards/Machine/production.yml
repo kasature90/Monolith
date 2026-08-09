@@ -977,16 +977,6 @@
       Capacitor: 1 # Frontier stackRequirements<requirements. Mono 4<1
     stackRequirements:
       Steel: 5
-    tagRequirements: # Mono
-      ComponentBrickEconomy1:
-        amount: 1
-        defaultPrototype: ComponentBrickEconomy1
-      ElectromagnetEconomy1:
-        amount: 2
-        defaultPrototype: ElectromagnetEconomy1
-      ArmorPlateEconomy1:
-        amount: 2
-        defaultPrototype: ArmorPlateEconomy1
 
 - type: entity
   id: GyroscopeMachineCircuitboard
@@ -1000,13 +990,6 @@
       Capacitor: 1 # Frontier stackRequirements<requirements
     stackRequirements:
       Glass: 2
-    tagRequirements: # Mono
-      ComponentBrickEconomy1:
-        amount: 2
-        defaultPrototype: ComponentBrickEconomy1
-      ArmorPlateEconomy1:
-        amount: 2
-        defaultPrototype: ArmorPlateEconomy1
 
 - type: entity
   id: PortableGeneratorSuperPacmanMachineCircuitboard

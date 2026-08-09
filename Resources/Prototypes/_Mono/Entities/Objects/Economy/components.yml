@@ -559,8 +559,8 @@
       !type:PhysShapeCircle
       radius: 2
     repeating: true
-    - type: StaticPrice
-      price: 1200
+  - type: StaticPrice
+    price: 1200
 
 # end camera
 

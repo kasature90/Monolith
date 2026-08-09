@@ -15,9 +15,6 @@
         GlassBeaker:
           amount: 2
           defaultPrototype: Beaker
-        MotorEconomy1:
-          amount: 1
-          defaultPrototype: MotorEconomy1
 
 - type: entity
   parent: BaseMachineCircuitboard

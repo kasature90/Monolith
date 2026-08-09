@@ -85,13 +85,7 @@
     stackRequirements:
       Lithium: 5
       CableHV: 10
-    tagRequirements: # todo: make it take a press plate component
-      ArmorPlateEconomy1: # Stand in for the base of the press or something
-        amount: 1
-        defaultPrototype: ArmorPlateEconomy1
-      ComponentBrickEconomy1:
-        amount: 1
-        defaultPrototype: ComponentBrickEconomy1
+    # Doesnt require industry comps because it's entry-level. Let's you get to the other ones. It's called progression sir.
   - type: Construction
     deconstructionTarget: null
     graph: IndustrialPress
@@ -113,13 +107,10 @@
     stackRequirements: # faster mmc variant
       Lithium: 10
       CableHV: 20
-    tagRequirements: # todo: make it take a press plate component
-      ArmorPlateEconomy2: # Stand in for the base of the press or something
+    tagRequirements:
+      ArmorPlateEconomy1:
         amount: 1
-        defaultPrototype: ArmorPlateEconomy2
-      ComponentBrickEconomy1:
-        amount: 1
-        defaultPrototype: ComponentBrickEconomy1
+        defaultPrototype: ArmorPlateEconomy1
   - type: Construction
     deconstructionTarget: null
     graph: IndustrialPressMMC
@@ -141,13 +132,7 @@
     stackRequirements:
       Lithium: 5
       CableHV: 10
-    tagRequirements: # todo: make it take a press plate component
-      ArmorPlateEconomy1: # Stand in for the base of the press or something
-        amount: 1
-        defaultPrototype: ArmorPlateEconomy1
-      ComponentBrickEconomy1:
-        amount: 1
-        defaultPrototype: ComponentBrickEconomy1
+    # Doesnt require industry comps because it's entry-level. Let's you get to the other ones. It's called progression sir.
   - type: Construction
     deconstructionTarget: null
     graph: IndustrialPress
@@ -169,13 +154,10 @@
     stackRequirements: # faster mmc variant
       Lithium: 10
       CableHV: 20
-    tagRequirements: # todo: make it take a press plate component
-      ArmorPlateEconomy2: # Stand in for the base of the press or something
+    tagRequirements:
+      ArmorPlateEconomy1:
         amount: 1
-        defaultPrototype: ArmorPlateEconomy2
-      ComponentBrickEconomy1:
-        amount: 1
-        defaultPrototype: ComponentBrickEconomy1
+        defaultPrototype: ArmorPlateEconomy1
   - type: Construction
     deconstructionTarget: null
     graph: IndustrialPressMMC

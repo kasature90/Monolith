@@ -51,12 +51,6 @@
         GlassBeaker:
           amount: 2
           defaultPrototype: Beaker
-        MicroprocessorEconomy1:
-          amount: 2
-          defaultPrototype: MicroprocessorEconomy1
-        MotorEconomy1:
-          amount: 1
-          defaultPrototype: MotorEconomy1
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -88,10 +82,6 @@
         MatterBin: 4 # Frontier stackRequirements<requirements
       stackRequirements:
         Glass: 1
-      tagRequirements: # Mono
-        MicroprocessorEconomy1:
-          amount: 2
-          defaultPrototype: MicroprocessorEconomy1
 
 - type: entity
   id: SecurityTechFabCircuitboard
@@ -110,12 +100,6 @@
         GlassBeaker:
           amount: 2
           defaultPrototype: Beaker
-        MicroprocessorEconomy1: # Mono
-          amount: 3
-          defaultPrototype: MicroprocessorEconomy1
-        MotorEconomy1: # Mono
-          amount: 1
-          defaultPrototype: MotorEconomy1
 
 - type: entity
   id: AmmoTechFabCircuitboard
@@ -131,12 +115,9 @@
         MatterBin: 1 # Frontier stackRequirements<requirements
         Manipulator: 1 # Frontier stackRequirements<requirements
       tagRequirements:
-        MicroprocessorEconomy1: # Mono
+        GlassBeaker:
           amount: 1
-          defaultPrototype: MicroprocessorEconomy1
-        ComponentBrickEconomy1: # Mono
-          amount: 1
-          defaultPrototype: ComponentBrickEconomy1
+          defaultPrototype: Beaker
 
 - type: entity
   id: MedicalTechFabCircuitboard
@@ -155,12 +136,6 @@
         GlassBeaker:
           amount: 2
           defaultPrototype: Beaker
-        MicroprocessorEconomy1: # Mono
-          amount: 2
-          defaultPrototype: MicroprocessorEconomy1
-        MotorEconomy1: # Mono
-          amount: 1
-          defaultPrototype: MotorEconomy1
     - type: StealTarget
       stealGroup: MedicalTechFabCircuitboard
     - type: PirateBountyItem # Frontier
@@ -178,16 +153,10 @@
     requirements: # Frontier
       MatterBin: 1 # Frontier stackRequirements<requirements
       Manipulator: 1 # Frontier stackRequirements<requirements
-    tagRequirements: # Mono
+    tagRequirements:
       GlassBeaker:
         amount: 2
         defaultPrototype: Beaker
-      MicroprocessorEconomy1:
-        amount: 2
-        defaultPrototype: MicroprocessorEconomy1
-      MotorEconomy1:
-        amount: 1
-        defaultPrototype: MotorEconomy1
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -224,15 +193,9 @@
     stackRequirements:
       Glass: 5
     tagRequirements: # Mono
-      MicroprocessorEconomy1:
+      GlassBeaker:
         amount: 2
-        defaultPrototype: MicroprocessorEconomy1
-      MotorEconomy1:
-        amount: 4
-        defaultPrototype: MotorEconomy1
-      ComponentBrickEconomy1:
-        amount: 2
-        defaultPrototype: ComponentBrickEconomy1
+        defaultPrototype: Beaker
   - type: GuideHelp
     guides:
     - Robotics
@@ -274,9 +237,6 @@
       GlassBeaker:
         amount: 1
         defaultPrototype: Beaker
-      MicroprocessorEconomy1: # Mono
-        amount: 2
-        defaultPrototype: MicroprocessorEconomy1
 
 - type: entity
   id: UniformPrinterMachineCircuitboard
@@ -288,10 +248,6 @@
     requirements: # Frontier
       MatterBin: 1 # Frontier stackRequirements<requirements
       Manipulator: 2 # Frontier stackRequirements<requirements
-    tagRequirements: # Mono
-      MicroprocessorEconomy1:
-        amount: 1
-        defaultPrototype: MicroprocessorEconomy1
 
 - type: entity
   id: VaccinatorMachineCircuitboard
@@ -347,16 +303,6 @@
         Capacitor: 1 # Frontier stackRequirements<requirements
       stackRequirements:
         Glass: 5
-      tagRequirements: # Mono
-        MicroprocessorEconomy1:
-          amount: 3
-          defaultPrototype: MicroprocessorEconomy1
-        RadioEconomy1:
-          amount: 1
-          defaultPrototype: RadioEconomy1
-        ComponentBrickEconomy1:
-          amount: 1
-          defaultPrototype: ComponentBrickEconomy1
     - type: PirateBountyItem # Frontier
       id: ArtifactAnalyzerMachineCircuitboard # Frontier
 
@@ -375,13 +321,6 @@
     stackRequirements:
       Glass: 1
       Steel: 5
-    tagRequirements: # Mono
-      MotorEconomy1:
-        amount: 4
-        defaultPrototype: MotorEconomy1
-      ArmorPlateEconomy1:
-        amount: 1
-        defaultPrototype: ArmorPlateEconomy1
 
 - type: entity
   id: OrganHarvesterMachineCircuitboard
@@ -400,13 +339,6 @@
     stackRequirements:
       Glass: 1
       Steel: 3
-    tagRequirements: # Mono
-      MotorEconomy1:
-        amount: 2
-        defaultPrototype: MotorEconomy1
-      ArmorPlateEconomy1:
-        amount: 1
-        defaultPrototype: ArmorPlateEconomy1
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -423,13 +355,6 @@
       stackRequirements:
         Cable: 1
         PlasmaGlass: 10
-      tagRequirements: # Mono
-        MicroprocessorEconomy1:
-          amount: 1
-          defaultPrototype: MicroprocessorEconomy1
-        RadioEconomy1:
-          amount: 1
-          defaultPrototype: RadioEconomy1
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -448,15 +373,12 @@
       PlasmaGlass: 15
       MetalRod: 4
     tagRequirements: # Mono
-      MicroprocessorEconomy2:
+      MicroprocessorEconomy3:
         amount: 2
-        defaultPrototype: MicroprocessorEconomy2
+        defaultPrototype: MicroprocessorEconomy3
       RadioEconomy1:
         amount: 1
         defaultPrototype: RadioEconomy1
-      ComponentBrickEconomy1:
-        amount: 1
-        defaultPrototype: ComponentBrickEconomy1
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -474,13 +396,6 @@
       stackRequirements:
         PlasmaGlass: 5
         Cable: 5
-      tagRequirements: # Mono
-        MicroprocessorEconomy1:
-          amount: 1
-          defaultPrototype: MicroprocessorEconomy1
-        RadioEconomy1:
-          amount: 2
-          defaultPrototype: RadioEconomy1
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -497,13 +412,6 @@
       stackRequirements:
         Cable: 1
         Glass: 1
-      tagRequirements: # Mono
-        MicroprocessorEconomy1:
-          amount: 1
-          defaultPrototype: MicroprocessorEconomy1
-        ElectromagnetEconomy1:
-          amount: 2
-          defaultPrototype: ElectromagnetEconomy1
 
 - type: entity
   id: ThermomachineFreezerMachineCircuitBoard
@@ -520,10 +428,6 @@
       Capacitor: 2 # Frontier stackRequirements<requirements
     stackRequirements:
       Cable: 5
-    tagRequirements: # Mono
-      MotorEconomy1:
-        amount: 1
-        defaultPrototype: MotorEconomy1
   - type: Construction
     deconstructionTarget: null
     graph: ThermomachineBoard
@@ -544,10 +448,6 @@
       Capacitor: 2 # Frontier stackRequirements<requirements
     stackRequirements:
       Cable: 5
-    tagRequirements: # Mono
-      MotorEconomy1:
-        amount: 1
-        defaultPrototype: MotorEconomy1
   - type: Construction
     graph: ThermomachineBoard
     deconstructionTarget: null
@@ -621,10 +521,6 @@
       MatterBin: 1 # Frontier stackRequirements<requirements
     stackRequirements:
       Glass: 1
-    tagRequirements: # Mono
-      MotorEconomy1:
-        amount: 1
-        defaultPrototype: MotorEconomy1
 
 - type: entity
   id: PortableScrubberMachineCircuitBoard
@@ -642,10 +538,6 @@
     stackRequirements:
       Cable: 5
       Glass: 2
-    tagRequirements: # Mono
-      MotorEconomy1:
-        amount: 1
-        defaultPrototype: MotorEconomy1
 
 - type: entity
   id: SpaceHeaterMachineCircuitBoard
@@ -769,12 +661,6 @@
         GlassBeaker:
           amount: 2
           defaultPrototype: Beaker
-        MicroprocessorEconomy1: # Mono
-          amount: 4
-          defaultPrototype: MicroprocessorEconomy1
-        OpticsEconomy1: # Mono
-          amount: 1
-          defaultPrototype: OpticsEconomy1
 
 - type: entity
   id: ChemDispenserMachineCircuitboard
@@ -796,12 +682,6 @@
         GlassBeaker:
           amount: 2
           defaultPrototype: Beaker
-        MicroprocessorEconomy1: # Mono
-          amount: 4
-          defaultPrototype: MicroprocessorEconomy1
-        OpticsEconomy1: # Mono
-          amount: 1
-          defaultPrototype: OpticsEconomy1
 
 - type: entity
   id: BiomassReclaimerMachineCircuitboard
@@ -821,9 +701,6 @@
           amount: 2
           defaultPrototype: KitchenKnife
           examineName: construction-insert-info-examine-name-knife
-        MotorEconomy1: # Mono
-          amount: 4
-          defaultPrototype: MotorEconomy1
 
 - type: entity
   id: HydroponicsTrayMachineCircuitboard
@@ -874,17 +751,10 @@
     - type: MachineBoard
       prototype: SMESBasicEmpty
       requirements: # Frontier
-        Capacitor: 1 # Frontier stackRequirements<requirements
+        Capacitor: 4 # Frontier stackRequirements<requirements
         PowerCell: 4 # Frontier componentRequirements<requirements
       stackRequirements:
         CableHV: 10
-      tagRequirements: # Mono
-        MicroprocessorEconomy1:
-          amount: 1
-          defaultPrototype: MicroprocessorEconomy1
-        ElectromagnetEconomy1:
-          amount: 2
-          defaultPrototype: ElectromagnetEconomy1
 
 - type: entity
   id: SMESAdvancedMachineCircuitboard
@@ -898,17 +768,10 @@
   - type: MachineBoard
     prototype: SMESAdvancedEmpty
     requirements: # Frontier
-        Capacitor: 2 # Frontier stackRequirements<requirements
+        Capacitor: 8 # Frontier stackRequirements<requirements
         PowerCell: 8 # Frontier componentRequirements<requirements, 4<8
     stackRequirements:
       CableHV: 20
-    tagRequirements: # Mono
-      MicroprocessorEconomy1:
-        amount: 1
-        defaultPrototype: MicroprocessorEconomy1
-      ElectromagnetEconomy2:
-        amount: 2
-        defaultPrototype: ElectromagnetEconomy2
 
 - type: entity
   id: CellRechargerCircuitboard
@@ -948,13 +811,6 @@
       stackRequirements:
         Steel: 5
         Cable: 10
-      tagRequirements: # Mono
-        MicroprocessorEconomy1:
-          amount: 1
-          defaultPrototype: MicroprocessorEconomy1
-        ElectromagnetEconomy1:
-          amount: 1
-          defaultPrototype: ElectromagnetEconomy1
     - type: PhysicalComposition
       materialComposition:
         Steel: 30
@@ -977,13 +833,6 @@
         Capacitor: 2 # Frontier stackRequirements<requirements
       stackRequirements:
         Cable: 5
-      tagRequirements: # Mono
-        MicroprocessorEconomy1:
-          amount: 1
-          defaultPrototype: MicroprocessorEconomy1
-        ElectromagnetEconomy1:
-          amount: 1
-          defaultPrototype: ElectromagnetEconomy1
     - type: PhysicalComposition
       materialComposition:
         Steel: 30
@@ -1054,13 +903,6 @@
       stackRequirements:
         CableMV: 5
         CableHV: 5
-      tagRequirements: # Mono
-        MicroprocessorEconomy1:
-          amount: 1
-          defaultPrototype: MicroprocessorEconomy1
-        ComponentBrickEconomy1:
-          amount: 1
-          defaultPrototype: ComponentBrickEconomy1
     - type: PhysicalComposition
       materialComposition:
         Glass: 200
@@ -1116,15 +958,9 @@
       stackRequirements:
         CableHV: 5
       tagRequirements: # Mono
-        ComponentBrickEconomy1:
-          amount: 1
-          defaultPrototype: ComponentBrickEconomy1
         MotorEconomy1: # Stator!
           amount: 1
           defaultPrototype: MotorEconomy1
-        MicroprocessorEconomy1:
-          amount: 2
-          defaultPrototype: MicroprocessorEconomy1
     - type: PhysicalComposition
       materialComposition:
         Glass: 200
@@ -1189,15 +1025,9 @@
       stackRequirements:
         CableHV: 10
       tagRequirements: # Mono
-        ComponentBrickEconomy1:
-          amount: 2
-          defaultPrototype: ComponentBrickEconomy1
         MotorEconomy1: # Stator!
           amount: 1
           defaultPrototype: MotorEconomy1
-        MicroprocessorEconomy1:
-          amount: 3
-          defaultPrototype: MicroprocessorEconomy1
     - type: PhysicalComposition
       materialComposition:
         Glass: 200
@@ -1219,10 +1049,6 @@
         Capacitor: 1 # Frontier stackRequirements<requirements
       stackRequirements:
         Cable: 10
-      tagRequirements: # Mono
-        MicroprocessorEconomy1:
-          amount: 1
-          defaultPrototype: MicroprocessorEconomy1
     - type: PhysicalComposition
       materialComposition:
         Glass: 200
@@ -1246,9 +1072,6 @@
         GlassBeaker:
           amount: 1
           defaultPrototype: Beaker
-        MotorEconomy1: # Mono
-          amount: 1
-          defaultPrototype: MotorEconomy1
 
 - type: entity
   id: HotplateMachineCircuitboard
@@ -1292,13 +1115,6 @@
       stackRequirements:
         Cable: 3
         Steel: 2
-      tagRequirements: # Mono
-        MicroprocessorEconomy1:
-          amount: 2
-          defaultPrototype: MicroprocessorEconomy1
-        ComponentBrickEconomy1:
-          amount: 1
-          defaultPrototype: ComponentBrickEconomy1
 
 - type: entity
   id: ElectrolysisUnitMachineCircuitboard
@@ -1365,19 +1181,6 @@
         Manipulator: 3 # Frontier stackRequirements<requirements
       stackRequirements:
         Glass: 1
-      tagRequirements: # Mono
-        MicroprocessorEconomy1:
-          amount: 2
-          defaultPrototype: MicroprocessorEconomy1
-        ComponentBrickEconomy1:
-          amount: 1
-          defaultPrototype: ComponentBrickEconomy1
-        ElectromagnetEconomy1:
-          amount: 2
-          defaultPrototype: ElectromagnetEconomy1
-        ArmorPlateEconomy2:
-          amount: 1
-          defaultPrototype: ArmorPlateEconomy2
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -1478,19 +1281,6 @@
     requirements: # Frontier
       Manipulator: 2 # Frontier stackRequirements<requirements
       MatterBin: 1 # Frontier stackRequirements<requirements
-    tagRequirements: # Mono
-      MicroprocessorEconomy1:
-        amount: 2
-        defaultPrototype: MicroprocessorEconomy1
-      ComponentBrickEconomy1:
-        amount: 1
-        defaultPrototype: ComponentBrickEconomy1
-      ElectromagnetEconomy1:
-        amount: 1
-        defaultPrototype: ElectromagnetEconomy1
-      OpticsEconomy1:
-        amount: 2
-        defaultPrototype: OpticsEconomy1
 
 - type: entity
   id: EmitterCircuitboard
@@ -1581,13 +1371,6 @@
       stackRequirements:
         Cable: 2
         Glass: 1
-      tagRequirements: # Mono
-        RadioEconomy1:
-          amount: 1
-          defaultPrototype: RadioEconomy1
-        CameraEconomy1:
-          amount: 1
-          defaultPrototype: CameraEconomy1
 
 - type: entity
   id: GasRecyclerMachineCircuitboard
@@ -1603,13 +1386,6 @@
     stackRequirements:
       Steel: 10
       Plasma: 5
-    tagRequirements: # Mono
-      MotorEconomy1:
-        amount: 2
-        defaultPrototype: RadioEconomy1
-      ComponentBrickEconomy1:
-        amount: 2
-        defaultPrototype: CameraEconomy1
 
 - type: entity
   id: BoozeDispenserMachineCircuitboard
@@ -1699,13 +1475,6 @@
       Steel: 5
       CableHV: 5
       Cable: 2
-    tagRequirements: # Mono
-      ComponentBrickEconomy1:
-        amount: 1
-        defaultPrototype: ComponentBrickEconomy1
-      ElectromagnetEconomy1:
-        amount: 2
-        defaultPrototype: ElectromagnetEconomy1
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -1760,9 +1529,6 @@
     stackRequirements:
       Glass: 1
     tagRequirements: # Mono
-      ComponentBrickEconomy1:
-        amount: 2
-        defaultPrototype: ComponentBrickEconomy1
       MotorEconomy1:
         amount: 4
         defaultPrototype: MotorEconomy1
@@ -1794,13 +1560,6 @@
     stackRequirements:
       Steel: 2
       Cable: 1
-    tagRequirements: # Mono
-      ComponentBrickEconomy1:
-        amount: 1
-        defaultPrototype: ComponentBrickEconomy1
-      MotorEconomy1:
-        amount: 2
-        defaultPrototype: MotorEconomy1
 
 # Shitmed Change Start
 - type: entity
@@ -1816,13 +1575,6 @@
       requirements:
         MatterBin: 2
         Manipulator: 2
-      tagRequirements: # Mono
-        ComponentBrickEconomy1:
-          amount: 2
-          defaultPrototype: ComponentBrickEconomy1
-        MotorEconomy1:
-          amount: 1
-          defaultPrototype: MotorEconomy1
 # Shitmed Change End
 
 # Assmos - /tg/ gases

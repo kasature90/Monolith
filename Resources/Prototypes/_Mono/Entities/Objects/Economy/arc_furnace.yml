@@ -296,6 +296,8 @@
     chemicalComposition:
       Carbon: 15
       Silicon: 15
+  - type: StaticPrice
+    price: 1500
 
 # silicon
 

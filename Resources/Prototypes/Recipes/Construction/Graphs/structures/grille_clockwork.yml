@@ -1,18 +1,18 @@
-- type: constructionGraph
-  id: ClockGrille
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: clockGrille
-          completed:
-            - !type:SnapToGrid
-              southRotation: true
-          steps:
-            - material: MetalRod
-              amount: 2
-              doAfter: 1
-
+#- type: constructionGraph
+#  id: ClockGrille
+#  start: start
+#  graph:
+#    - node: start
+#      edges:
+#        - to: clockGrille
+#          completed:
+#            - !type:SnapToGrid
+#              southRotation: true
+#          steps:
+#            - material: MetalRod
+#              amount: 2
+#              doAfter: 1
+#
 #    - node: clockGrille
 #      entity: ClockworkGrille
 #      edges:
@@ -27,7 +27,7 @@
 #          steps:
 #            - tool: Cutting
 #              doAfter: 0.25
-
+#
 #    - node: clockGrilleBroken
 #      entity: ClockworkGrilleBroken
 #      edges:

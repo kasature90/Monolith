@@ -633,23 +633,23 @@
   objectType: Structure
   placementMode: SnapgridCenter
 
-- type: construction
-  name: directional clockwork window
-  id: WindowClockworkDirectional
-  graph: WindowDirectional
-  startNode: start
-  targetNode: windowClockworkDirectional
-  category: construction-category-structures
-  description: Clear and tough, with a golden tint.
-  canBuildInImpassable: true
-  conditions:
-    - !type:EmptyOrWindowValidInTile
-    - !type:NoWindowsInTile
-  icon:
-    sprite: Structures/Windows/directional.rsi
-    state: clock_window
-  objectType: Structure
-  placementMode: SnapgridCenter
+#- type: construction
+#  name: directional clockwork window
+#  id: WindowClockworkDirectional
+#  graph: WindowDirectional
+#  startNode: start
+#  targetNode: windowClockworkDirectional
+#  category: construction-category-structures
+#  description: Clear and tough, with a golden tint.
+#  canBuildInImpassable: true
+#  conditions:
+#    - !type:EmptyOrWindowValidInTile
+#    - !type:NoWindowsInTile
+#  icon:
+#    sprite: Structures/Windows/directional.rsi
+#    state: clock_window
+#  objectType: Structure
+#  placementMode: SnapgridCenter
 
 - type: construction
   name: directional plasma window

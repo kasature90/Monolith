@@ -1,6 +1,5 @@
 using Content.Server.Shuttles.Components;
 using Content.Shared.Doors.Components;
-using Content.Shared._SS220.CCVars;
 using Content.Shared.Tag;
 using Robust.Server.GameObjects;
 using Robust.Shared.Configuration;
@@ -17,7 +16,6 @@ public sealed partial class MapMigrationSystem_SS220 : EntitySystem
     [Dependency] private IConfigurationManager _cfg = default!;
 
     private static readonly HashSet<ProtoId<TagPrototype>> TagsForTileOccupied = ["Wall", "Window"];
-    private bool _rotateDoors;
 
     private static readonly EntProtoId BaseSecretDoorId = "BaseSecretDoor";
 
@@ -25,22 +23,12 @@ public sealed partial class MapMigrationSystem_SS220 : EntitySystem
     {
         base.Initialize();
 
-        _cfg.OnValueChanged(CCVars220.MigrationAlignDoors, value =>
-        {
-            _rotateDoors = value;
-
-            if (value)
-                SubscribeLocalEvent<AirlockComponent, MapInitEvent>(OnCompInit);
-        }, true);
-
+        SubscribeLocalEvent<AirlockComponent, MapInitEvent>(OnCompInit);
         SubscribeLocalEvent<DoorComponent, MapInitEvent>(OnDoorMapInit);
     }
 
     private void OnCompInit(Entity<AirlockComponent> entity, ref MapInitEvent args)
     {
-        if (!_rotateDoors)
-            return;
-
         RotateDoor(entity);
     }
 

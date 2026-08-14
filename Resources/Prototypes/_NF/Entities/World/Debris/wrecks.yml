@@ -122,14 +122,12 @@
           prob: 0.3
         - id: Window
           prob: 0.2
-        - id: PinionAirlock
-          prob: 0.01
         - id: WindoorClockwork
           prob: 0.005
         # Floor loot
         - id: SalvageSpawnerScrapBrass75
           prob: 1
-        - id: SalvageSpawnerPlastitaniumCommon ## mono
+        - id: SalvageSpawnerPlastitaniumCommon # mono
           prob: 0.2
         # Mono - Traps
         - id: LandMineExplosive

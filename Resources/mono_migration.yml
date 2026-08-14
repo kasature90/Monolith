@@ -65,3 +65,12 @@ FloorWaterEntity: CEWater
 ClockworkGrille: Grille
 ClockworkGrilleBroken: GrilleBroken
 ClockworkGrilleDiagonal: GrilleDiagonal
+
+ClockworkWindow: Window
+WindowClockworkDirectional: WindowDirectional
+ClockworkWindowDiagonal: WindowDiagonal
+
+WallShuttleInterior: WallShuttle
+# Annoying, but it was the closest stat-wise.
+MiningWindow: PlasmaWindow
+MiningWindowDiagonal: PlasmaWindowDiagonal

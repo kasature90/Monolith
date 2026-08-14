@@ -120,7 +120,7 @@
           prob: 0.3
         - id: WallClock
           prob: 0.3
-        - id: ClockworkWindow
+        - id: Window
           prob: 0.2
         - id: PinionAirlock
           prob: 0.01

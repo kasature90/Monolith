@@ -89,7 +89,7 @@
     - !type:TileNotBlocked
 
 - type: construction
-  name: clock wall
+  name: brass wall
   id: WallClock
   graph: ClockworkGirder
   startNode: start
@@ -97,7 +97,7 @@
   category: construction-category-structures
   description: Keeps the air in and the greytide out.
   icon:
-    sprite: Structures/Walls/clock.rsi
+    sprite: Structures/Walls/brass.rsi
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
@@ -232,23 +232,23 @@
   conditions:
     - !type:TileNotBlocked
 
-- type: construction
-  name: interior shuttle wall
-  id: InteriorShuttleWall
-  graph: Girder
-  startNode: start
-  targetNode: shuttleInteriorWall
-  category: construction-category-structures
-  description: Keeps the air in and the greytide out.
-  icon:
-    sprite: Structures/Walls/shuttleinterior.rsi
-    state: full
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canRotate: false
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
+#- type: construction
+#  name: interior shuttle wall
+#  id: InteriorShuttleWall
+#  graph: Girder
+#  startNode: start
+#  targetNode: shuttleInteriorWall
+#  category: construction-category-structures
+#  description: Keeps the air in and the greytide out.
+#  icon:
+#    sprite: Structures/Walls/shuttleinterior.rsi
+#    state: full
+#  objectType: Structure
+#  placementMode: SnapgridCenter
+#  canRotate: false
+#  canBuildInImpassable: false
+#  conditions:
+#    - !type:TileNotBlocked
 
 - type: construction
   name: diagonal shuttle wall
@@ -467,42 +467,42 @@
   placementMode: SnapgridCenter
   canRotate: false
 
-- type: construction
-  name: clockwork window
-  id: ClockworkWindow
-  graph: Window
-  startNode: start
-  targetNode: clockworkWindow
-  category: construction-category-structures
-  description: Clear and tough, with a golden tint.
-  canBuildInImpassable: true
-  conditions:
-    - !type:EmptyOrWindowValidInTile
-    - !type:NoWindowsInTile
-  icon:
-    sprite: Structures/Windows/clockwork_window.rsi
-    state: full
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canRotate: false
+#- type: construction
+#  name: clockwork window
+#  id: ClockworkWindow
+#  graph: Window
+#  startNode: start
+#  targetNode: clockworkWindow
+#  category: construction-category-structures
+#  description: Clear and tough, with a golden tint.
+#  canBuildInImpassable: true
+#  conditions:
+#    - !type:EmptyOrWindowValidInTile
+#    - !type:NoWindowsInTile
+#  icon:
+#    sprite: Structures/Windows/clockwork_window.rsi
+#    state: full
+#  objectType: Structure
+#  placementMode: SnapgridCenter
+#  canRotate: false
 
-- type: construction
-  name: diagonal clockwork window
-  id: ClockworkWindowDiagonal
-  graph: WindowDiagonal
-  startNode: start
-  targetNode: clockworkWindowDiagonal
-  category: construction-category-structures
-  description: Clear and tough, with a golden tint.
-  canBuildInImpassable: true
-  conditions:
-    - !type:EmptyOrWindowValidInTile
-    - !type:NoWindowsInTile
-  icon:
-    sprite: Structures/Windows/clockwork_diagonal.rsi
-    state: state0
-  objectType: Structure
-  placementMode: SnapgridCenter
+#- type: construction
+#  name: diagonal clockwork window
+#  id: ClockworkWindowDiagonal
+#  graph: WindowDiagonal
+#  startNode: start
+#  targetNode: clockworkWindowDiagonal
+#  category: construction-category-structures
+#  description: Clear and tough, with a golden tint.
+#  canBuildInImpassable: true
+#  conditions:
+#    - !type:EmptyOrWindowValidInTile
+#    - !type:NoWindowsInTile
+#  icon:
+#    sprite: Structures/Windows/clockwork_diagonal.rsi
+#    state: state0
+#  objectType: Structure
+#  placementMode: SnapgridCenter
 
 - type: construction
   name: plasma window

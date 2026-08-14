@@ -74,3 +74,4 @@ WallShuttleInterior: WallShuttle
 # Annoying, but it was the closest stat-wise.
 MiningWindow: PlasmaWindow
 MiningWindowDiagonal: PlasmaWindowDiagonal
+WallDiamond: WallPlastitanium # Idk

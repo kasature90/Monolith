@@ -191,25 +191,25 @@
     key: walls
     base: debug
 
-- type: entity
-  parent: BaseWallTierThree # Mono - surely its fine since diamonds are so rare
-  id: WallDiamond
-  name: diamond wall
-  components:
-  - type: Tag
-    tags:
-    - Wall
-  - type: Sprite
-    sprite: Structures/Walls/diamond.rsi
-  - type: Icon
-    sprite: Structures/Walls/diamond.rsi
-  - type: RCDDeconstructable
-    cost: 6
-    delay: 8
-    fx: EffectRCDDeconstruct8
-  - type: IconSmooth
-    key: walls
-    base: diamond
+#- type: entity
+#  parent: BaseWallTierThree # Mono - surely its fine since diamonds are so rare
+#  id: WallDiamond
+#  name: diamond wall
+#  components:
+#  - type: Tag
+#    tags:
+#    - Wall
+#  - type: Sprite
+#    sprite: Structures/Walls/diamond.rsi
+#  - type: Icon
+#    sprite: Structures/Walls/diamond.rsi
+#  - type: RCDDeconstructable
+#    cost: 6
+#    delay: 8
+#    fx: EffectRCDDeconstruct8
+#  - type: IconSmooth
+#    key: walls
+#    base: diamond
 
 - type: entity
   parent: BaseWallTierOne # Mono

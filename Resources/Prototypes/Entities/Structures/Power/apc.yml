@@ -26,6 +26,7 @@
   - type: Sprite
     drawdepth: WallMountedItems
     sprite: Structures/Power/apc.rsi
+    offset: 0, -0.25
     layers:
     - state: base
     - state: panel
@@ -75,6 +76,7 @@
     loadNode: output
     collectionName: apc
     sprite: Structures/Power/apc.rsi
+    offset: 0, -0.25
     state: static
   - type: BatteryCharger
     voltage: Medium
@@ -164,6 +166,7 @@
   - type: Sprite
     drawdepth: WallMountedItems
     sprite: Structures/Power/apc.rsi
+    offset: 0, -0.25
     state: frame
   - type: Construction
     graph: APC

@@ -36,7 +36,7 @@ public sealed partial class SignalSwitchSystem : EntitySystem
         if (comp.OnPort != comp.OffPort)
         {
             _deviceLink.SendSignal(uid, comp.StatusPort, comp.State);
-            _appearance.SetData(uid, SwitchVisuals.Visuals, comp.State);
+            //_appearance.SetData(uid, SwitchVisuals.Visuals, comp.State);
         }
 
         _audio.PlayPvs(comp.ClickSound, uid, AudioParams.Default.WithVariation(0.125f).WithVolume(8f));

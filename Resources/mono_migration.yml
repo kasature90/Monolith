@@ -89,3 +89,14 @@ UraniumSecretDoorAssembly: BaseSecretDoorAssembly
 UraniumSecretDoor: SolidSecretDoor
 ShuttleSecretDoorAssembly: BaseSecretDoorAssembly
 ShuttleSecretDoor: SolidSecretDoor
+
+# Shipyard culling
+MiningCarrierComputer: null
+HiveCarrierComputer: null
+TSFCarrierComputer: null
+TSFCarrierComputerFujian: null
+LedokolAttachmentComputer: null
+WindreignCarrierComputer: null
+PDVMotleyAnneCarrierComputer: null
+RavagerCarrierComputer: null
+BalorCarrierComputer: null

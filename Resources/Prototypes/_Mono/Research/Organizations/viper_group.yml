@@ -49,12 +49,12 @@
 - type: technology
   id: ViperGroupShipyardAdvanced
   name: research-technology-viper-group-shipyard-adv
-  entityIcon: ShipVoucherVGWolf
+  entityIcon: WeaponRifleAK410 # PLACEHOLDER 26AUG15
   discipline: ViperGroup
   tier: 2
   cost: 60000
   recipeUnlocks:
-  - ShipVoucherVGWolf
+  - WeaponRifleAK410USSP # PLACEHOLDER 26AUG15
   technologyPrerequisites:
   - UniversalMaterialResearchT2
   position: 14, 8

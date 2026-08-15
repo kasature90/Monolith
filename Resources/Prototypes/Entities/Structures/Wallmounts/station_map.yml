@@ -57,7 +57,7 @@
         state: unshaded
     - type: Icon
       sprite: Structures/Machines/station_map.rsi
-      state: station_map0
+      state: base
     - type: ContainerFill
       containers:
         board: [ StationMapCircuitboard ]

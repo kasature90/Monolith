@@ -42,7 +42,7 @@ public sealed partial class SignalSwitchComponent : Component
 /// Enum for the appearance system.
 /// </summary>
 [Serializable, NetSerializable]
-public enum SwitchVisuals
+public enum SwitchVisuals : byte
 {
     Visuals,
 }

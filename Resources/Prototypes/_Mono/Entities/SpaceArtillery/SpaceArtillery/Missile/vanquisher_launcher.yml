@@ -75,6 +75,9 @@
         - MachineMask
         layer:
         - MachineLayer
+  - type: HardpointAnchorableOnly
+    class: Ballistic
+    size: Heavy
 
 - type: entity
   id: WeaponTurretVanquisherInfinite

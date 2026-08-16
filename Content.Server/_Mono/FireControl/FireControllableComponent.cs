@@ -25,4 +25,10 @@ public sealed partial class FireControllableComponent : Component
     /// </summary>
     [DataField]
     public float FireCooldown = 0.2f;
+
+    /// <summary>
+    /// Is the gun functioning? Used by hardpoints.
+    /// </summary>
+    [DataField]
+    public bool Functioning = false;
 }

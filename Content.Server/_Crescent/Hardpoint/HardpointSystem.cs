@@ -76,7 +76,6 @@ public class HardpointSystem : SharedHardpointSystem
         // This is just for turret-cannons!
         if (!TryComp<FireControllableComponent>(args.cannonUid, out var compx))
             return;
-        compx.Functioning = true;
         QueueHardpointRefresh(args.gridUid);
     }
 
@@ -85,7 +84,6 @@ public class HardpointSystem : SharedHardpointSystem
         // This is just for turret-cannons!
         if (!TryComp<FireControllableComponent>(args.CannonUid, out var compx))
             return;
-        compx.Functioning = false;
         QueueHardpointRefresh(args.gridUid);
     }
 

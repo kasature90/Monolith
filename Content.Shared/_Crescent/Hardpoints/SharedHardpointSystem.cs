@@ -195,7 +195,7 @@ public class SharedHardpointSystem : EntitySystem
         var typeColor = Color.CornflowerBlue;
 
         // WELCOME TO HARDCODE CENTRAL...
-        // I don't care enough to make this definable anywhere else.
+        // I don't care enough to make this definable anywhere else. This would be really easy to make prototypable, but we don't need more than 5 sizes.
         // Sorry ilya.
         switch (ent.Comp.CompatibleSizes)
         {

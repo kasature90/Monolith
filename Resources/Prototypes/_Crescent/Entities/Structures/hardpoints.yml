@@ -12,6 +12,7 @@
   - type: ExaminableDamage
     messages: WindowMessages
   - type: InteractionOutline
+  - type: Clickable
   - type: Transform
     noRot: false
     anchored: true

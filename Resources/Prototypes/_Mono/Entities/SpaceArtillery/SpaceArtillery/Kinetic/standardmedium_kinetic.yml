@@ -73,6 +73,9 @@
   - type: ShipRepairable
     repairTime: 15
     repairCost: 60
+  - type: HardpointAnchorableOnly
+    class: Ballistic
+    size: Light
 
 # Dravon
 
@@ -138,6 +141,9 @@
   - type: ShipRepairable
     repairTime: 15
     repairCost: 60
+  - type: HardpointAnchorableOnly
+    class: Ballistic
+    size: Medium
 
 - type: entity
   id: WeaponTurretDravonFlak

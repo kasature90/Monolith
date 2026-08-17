@@ -1,15 +1,24 @@
 - type: entity
   id: BaseHardpoint
-  parent: BaseStructure
   name: Hardpoint
   abstract: true
+  placement:
+    mode: SnapgridCenter
   components:
   - type: Sprite
     sprite: _Crescent/Structures/hardpoints.rsi
     state: medium
-    drawDepth: HighFloorObjects
+    drawdepth: HighFloorObjects
+  - type: ExaminableDamage
+    messages: WindowMessages
+  - type: InteractionOutline
   - type: Transform
     noRot: false
+    anchored: true
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: RequiresGrid # Mono
   - type: Destructible
     thresholds:
     - trigger:
@@ -43,8 +52,6 @@
   - type: ShipRepairable
     repairTime: 15
     repairCost: 50 # Main cost is in the guns.
-  placement:
-    mode: SnapgridCenter
 
 - type: entity
   id: HardpointDebugSuperlight

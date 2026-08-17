@@ -71,3 +71,12 @@
       state: shipyard_pdv
     - map: ["computerLayerKeys"]
       state: telesci_key
+
+- type: entity
+  id: TSFCarrierComputerFujian
+  parent: BaseCarrierComputer
+  name: TSF fujian carrier console
+  #components:
+  #- type: ShipyardListing
+  #  shuttles:
+  #  - ZephyrEC

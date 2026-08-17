@@ -48,7 +48,7 @@
     repairTime: 30
     repairCost: 100
   - type: HardpointAnchorableOnly
-    class: Ballistic
+    class: Missile
     size: Heavy
 
 - type: entity
@@ -70,5 +70,5 @@
   - type: ShipGunClass
     shipClass: Heavy
   - type: HardpointAnchorableOnly
-    class: Ballistic
+    class: Missile
     size: Superheavy

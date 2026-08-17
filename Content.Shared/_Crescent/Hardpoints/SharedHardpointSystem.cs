@@ -4,6 +4,7 @@ using Content.Shared.Construction;
 using Content.Shared.Construction.Components;
 using Content.Shared.Construction.EntitySystems;
 using Content.Shared.Destructible;
+using Content.Shared.Examine;
 using Content.Shared.Popups;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Map.Components;
@@ -30,6 +31,7 @@ public class SharedHardpointSystem : EntitySystem
         SubscribeLocalEvent<HardpointAnchorableOnlyComponent, MapInitEvent>(OnMapLoad);
         SubscribeLocalEvent<HardpointComponent, AnchorStateChangedEvent>(OnHardpointAnchor);
         SubscribeLocalEvent<HardpointAnchorableOnlyComponent, ComponentRemove>(OnShipgunRemove);
+        SubscribeLocalEvent<HardpointAnchorableOnlyComponent, ExaminedEvent>(OnExamined);
         // TODO: ACCOUNT FOR REMOVING IT IN ADMIN MODE
         _sawmill = IoCManager.Resolve<ILogManager>().GetSawmill("crescent.hardpoints");
     }
@@ -185,6 +187,51 @@ public class SharedHardpointSystem : EntitySystem
         }
 
         return false;
+    }
+
+    private void OnExamined(Entity<HardpointAnchorableOnlyComponent> ent, ref ExaminedEvent args)
+    {
+        var sizeColor = Color.Yellow;
+        var typeColor = Color.CornflowerBlue;
+
+        // WELCOME TO HARDCODE CENTRAL...
+        // I don't care enough to make this definable anywhere else.
+        // Sorry ilya.
+        switch (ent.Comp.CompatibleSizes)
+        {
+            case weaponSizes.Superlight:
+                sizeColor = Color.LightSkyBlue;
+                break;
+            case weaponSizes.Light:
+                sizeColor = Color.MediumSpringGreen;
+                break;
+            case weaponSizes.Medium:
+                sizeColor = Color.Gold;
+                break;
+            case weaponSizes.Heavy:
+                sizeColor = Color.DarkOrange;
+                break;
+            case weaponSizes.Superheavy:
+                sizeColor = Color.Crimson;
+                break;
+        }
+        switch (ent.Comp.CompatibleTypes)
+        {
+            case weaponTypes.Ballistic:
+                typeColor = Color.Goldenrod;
+                break;
+            case weaponTypes.Energy:
+                typeColor = Color.DeepPink;
+                break;
+            case weaponTypes.Missile:
+                typeColor = Color.Lime;
+                break;
+            case weaponTypes.Universal:
+                typeColor = Color.White;
+                break;
+        }
+
+        args.PushMarkup(Loc.GetString("gunnery-hardpoint-examine-detail", ("size", ent.Comp.CompatibleSizes), ("sizeColor", sizeColor),  ("type", ent.Comp.CompatibleTypes), ("typeColor", typeColor)));
     }
 
     public void AnchorEntityToHardpoint(EntityUid target, EntityUid anchor, HardpointAnchorableOnlyComponent targetComp, HardpointComponent hardpoint, EntityUid grid)

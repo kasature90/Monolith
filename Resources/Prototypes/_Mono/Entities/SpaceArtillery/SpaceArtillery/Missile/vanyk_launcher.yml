@@ -58,5 +58,5 @@
     repairTime: 30
     repairCost: 100
   - type: HardpointAnchorableOnly
-    class: Ballistic
+    class: Missile
     size: Light

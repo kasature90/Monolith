@@ -76,7 +76,7 @@
         layer:
         - MachineLayer
   - type: HardpointAnchorableOnly
-    class: Ballistic
+    class: Missile
     size: Heavy
 
 - type: entity

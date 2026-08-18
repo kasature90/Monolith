@@ -2,6 +2,7 @@
   id: BaseHardpoint
   name: Hardpoint
   abstract: true
+  description: A point for ship weapons to anchor into a ship's various systems such as pneumatic ammo loaders or fire control systems.
   placement:
     mode: SnapgridCenter
   components:
@@ -11,6 +12,9 @@
     drawdepth: HighFloorObjects
   - type: ExaminableDamage
     messages: WindowMessages
+  - type: Physics
+    bodyType: Static
+  - type: GravityAffected
   - type: InteractionOutline
   - type: Clickable
   - type: Transform
@@ -53,6 +57,13 @@
   - type: ShipRepairable
     repairTime: 15
     repairCost: 50 # Main cost is in the guns.
+  - type: Pullable
+  - type: Tag
+    tags:
+    - Structure
+  - type: Repairable
+    qualities:
+    - Applicating
 
 - type: entity
   id: HardpointDebugSuperlight

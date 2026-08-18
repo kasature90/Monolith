@@ -66,6 +66,8 @@
     solution: capsule
   - type: Spillable
     solution: capsule
+  - type: StaticPrice
+    price: 200
 
 - type: entity
   id: MatterBinEconomy2
@@ -101,6 +103,8 @@
       Steel: 1000
       Plastic: 1000
       Glass: 500
+  - type: StaticPrice
+    price: 600
 
 - type: entity
   name: basic components
@@ -155,6 +159,8 @@
   - type: StealTarget
     stealGroup:
     - EconomyComponentsT3T4
+  - type: StaticPrice
+    price: 2000
 
 # end matter bins
 
@@ -186,6 +192,8 @@
           collection: MetalBreak
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 300
 
 - type: entity
   name: nanoprocessor
@@ -213,6 +221,8 @@
           collection: MetalBreak
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 600
 
 - type: entity
   name: quantum processor
@@ -243,6 +253,8 @@
   - type: StealTarget
     stealGroup:
     - EconomyComponentsT3T4
+  - type: StaticPrice
+    price: 2500
 
 # end microprocessors
 
@@ -265,6 +277,8 @@
     - type: MachinePart
       part: Capacitor
       rating: 1
+    - type: StaticPrice
+      price: 200
 
 - type: entity
   name: industrial advanced capacitor
@@ -282,6 +296,8 @@
     - type: MachinePart
       part: Capacitor
       rating: 3
+    - type: StaticPrice
+      price: 600
 
 - type: entity
   name: industrial supercapacitor
@@ -301,6 +317,8 @@
     - type: StealTarget
       stealGroup:
       - EconomyComponentsT3T4
+    - type: StaticPrice
+      price: 1400
 
 # end capacitors
 
@@ -319,6 +337,8 @@
   - type: Sprite
     sprite: _Mono/Objects/Materials/bayponents.rsi
     state: "componentbrick1"
+  - type: StaticPrice
+    price: 800
 
 - type: entity
   name: basic components
@@ -352,6 +372,8 @@
   - type: StealTarget
     stealGroup:
     - EconomyComponentsT3T4
+  - type: StaticPrice
+    price: 3000
 
 - type: entity
   name: super components
@@ -369,6 +391,8 @@
   - type: StealTarget
     stealGroup:
     - EconomyComponentsT3T4
+  - type: StaticPrice
+    price: 5000
 
 # end component bricks
 
@@ -387,6 +411,8 @@
   - type: Sprite
     sprite: _Mono/Objects/Materials/bayponents.rsi
     state: "electromagnet1"
+  - type: StaticPrice
+    price: 800
 
 - type: entity
   name: compound electromagnet (unfinished)
@@ -414,6 +440,8 @@
   - type: Sprite
     sprite: _Mono/Objects/Materials/bayponents.rsi
     state: "electromagnet2"
+  - type: StaticPrice
+    price: 1600
 
 - type: entity
   name: superconductive electromagnet (unfinished)
@@ -444,6 +472,8 @@
   - type: StealTarget
     stealGroup:
     - EconomyComponentsT3T4
+  - type: StaticPrice
+    price: 3000
 
 # end magnets
 
@@ -462,6 +492,8 @@
     - type: Sprite
       sprite: _Mono/Objects/Materials/bayponents.rsi
       state: "radio1"
+    - type: StaticPrice
+      price: 800
 
 - type: entity
   name: HF signal tranciever component
@@ -479,6 +511,8 @@
     - type: StealTarget
       stealGroup:
       - EconomyComponentsT3T4
+    - type: StaticPrice
+      price: 1200
 
 # end radios
 
@@ -497,6 +531,8 @@
     - type: Sprite
       sprite: _Mono/Objects/Materials/bayponents.rsi
       state: "optics1"
+    - type: StaticPrice
+      price: 800
 
 - type: entity
   name: precision optical sensor
@@ -514,6 +550,8 @@
     - type: StealTarget
       stealGroup:
       - EconomyComponentsT3T4
+    - type: StaticPrice
+      price: 1200
 
 # end optics
 
@@ -545,6 +583,8 @@
       !type:PhysShapeCircle
       radius: 2
     repeating: true
+  - type: StaticPrice
+    price: 1200
 
 # end camera
 
@@ -563,3 +603,5 @@
   - type: Sprite
     sprite: _Mono/Objects/Materials/bayponents.rsi
     state: "motor"
+  - type: StaticPrice
+    price: 800

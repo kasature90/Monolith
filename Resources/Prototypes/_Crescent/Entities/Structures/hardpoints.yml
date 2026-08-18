@@ -37,6 +37,8 @@
           collection: MetalGlassBreak
   - type: Repairable
     doAfterDelay: 8
+    qualities:
+    - Applicating
   - type: Appearance
   - type: Hardpoint
     class: Ballistic
@@ -61,9 +63,6 @@
   - type: Tag
     tags:
     - Structure
-  - type: Repairable
-    qualities:
-    - Applicating
 
 - type: entity
   id: HardpointDebugSuperlight

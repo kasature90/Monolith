@@ -246,7 +246,7 @@
 - type: entity
   id: HardpointEnergySuperlight
   parent: BaseHardpoint
-  name: superlight ballistic hardpoint
+  name: superlight energy hardpoint
   components:
   - type: Hardpoint
     class: Energy

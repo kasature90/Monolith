@@ -1,0 +1,21 @@
+- type: entity
+  parent: SurgeryStepBase
+  id: SurgeryStepRemoveIPCPart
+  name: Remove IPC part
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SurgeryStep
+    tool:
+    - type: Prying
+    duration: 8
+  - type: Sprite
+    sprite: _NF/Objects/Tools/crowbar.rsi
+    state: icon
+  - type: SurgeryRemoveOrganStep
+  - type: SurgeryStepEmoteEffect
+
+- type: entity
+  parent: SurgeryStepInsertOrgan
+  id: SurgeryStepInsertPump
+  name: Add servopump
+  categories: [ HideSpawnMenu ]

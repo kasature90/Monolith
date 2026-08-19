@@ -4,7 +4,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared._WF.SafetyDepositBox;
 
-public sealed class SafetyDepositStoredSystem : EntitySystem
+public sealed partial class SafetyDepositStoredSystem : EntitySystem
 {
     public override void Initialize()
     {

@@ -1,5 +1,6 @@
 using Content.Shared.Storage;
 using Robust.Shared.GameStates;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._WF.SafetyDepositBox.Components;
@@ -38,7 +39,7 @@ public sealed partial class SafetyDepositBoxComponent : Component
     /// The prototype ID of this box (SafetyDepositBoxSmall, Medium, or Large).
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public string? BoxPrototypeId;
+    public EntProtoId BoxPrototypeId;
 }
 
 [Serializable, NetSerializable]

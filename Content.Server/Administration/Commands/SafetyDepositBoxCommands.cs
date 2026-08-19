@@ -5,9 +5,9 @@ using Robust.Shared.Console;
 namespace Content.Server.Administration.Commands;
 
 [AdminCommand(AdminFlags.Admin)]
-public sealed class CleanStaleSafetyDepositBoxesCommand : IConsoleCommand
+public sealed partial class CleanStaleSafetyDepositBoxesCommand : IConsoleCommand
 {
-    [Dependency] private readonly IServerDbManager _db = default!;
+    [Dependency] private IServerDbManager _db = default!;
 
     public string Command => "cleanstalesafetyboxes";
     public string Description => "Deletes safety deposit boxes that have been withdrawn and have no items for more than the specified number of days.";

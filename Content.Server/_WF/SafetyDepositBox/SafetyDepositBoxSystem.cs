@@ -342,12 +342,123 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
         SafetyDepositBoxComponent boxComp,
         StorageComponent storageComp)
     {
+        var entityDataList = new List<string>();
 
         Log.Info($"DepositBoxAsync: Box has {storageComp.Container.ContainedEntities.Count} items");
-        // Serialize each item in the box - store prototype + component data
-        var serialized = _loader.SerializeEntitiesRecursive(storageComp.Container.ContainedEntities.ToHashSet()).Node;
 
-        Log.Info($"Saving {storageComp.Container.ContainedEntities.Count} items to database for box {boxComp.BoxId}");
+        // Serialize each item in the box - store prototype + component data
+        foreach (var item in storageComp.Container.ContainedEntities)
+        {
+            try
+            {
+                Log.Info($"Serializing item: {ToPrettyString(item)}");
+
+                // Blacklist ID cards - they should not be stored
+                if (HasComp<IdCardComponent>(item))
+                {
+                    Log.Warning($"Item {ToPrettyString(item)} is an ID card, skipping");
+                    continue;
+                }
+
+                // Get the prototype and metadata
+                var prototype = MetaData(item).EntityPrototype;
+                if (prototype == null)
+                {
+                    Log.Warning($"Item {ToPrettyString(item)} has no prototype, skipping");
+                    continue;
+                }
+
+                var protoId = prototype.ID;
+
+                // Create a JSON object to store entity data
+                var entityData = new Dictionary<string, object>
+                {
+                    ["prototype"] = protoId
+                };
+
+                // Store paper content and stamps/signatures if it's a paper
+                if (TryComp<PaperComponent>(item, out var paper))
+                {
+                    entityData["paperContent"] = paper.Content;
+
+                    // Store stamps and signatures - store each stamp as a separate entry to preserve structure
+                    if (paper.StampedBy.Count > 0)
+                    {
+                        // Store as a list that can be properly serialized
+                        var stampsList = new List<Dictionary<string, object>>();
+                        foreach (var stamp in paper.StampedBy)
+                        {
+                            stampsList.Add(new Dictionary<string, object>
+                            {
+                                ["stampedName"] = stamp.StampedName,
+                                ["stampedColor"] = stamp.StampedColor.ToHex(),
+                                ["stampType"] = (int)stamp.Type,
+                                ["reapply"] = stamp.Reapply
+                            });
+                        }
+                        entityData["paperStamps"] = stampsList;
+                    }
+
+                    if (!string.IsNullOrEmpty(paper.StampState))
+                    {
+                        entityData["paperStampState"] = paper.StampState;
+                    }
+
+                    Log.Info($"Stored paper content: {paper.Content.Substring(0, Math.Min(50, paper.Content.Length))}... with {paper.StampedBy.Count} stamps");
+                }
+
+                // Store label if it has one
+                if (TryComp<LabelComponent>(item, out var label) && !string.IsNullOrEmpty(label.CurrentLabel))
+                {
+                    entityData["label"] = label.CurrentLabel;
+                    Log.Info($"Stored label: {label.CurrentLabel}");
+                }
+
+                // Store entity name if it differs from prototype default
+                if (TryComp<MetaDataComponent>(item, out var metadata))
+                {
+                    var entityName = metadata.EntityName;
+                    var prototypeName = metadata.EntityPrototype?.Name ?? "";
+
+                    // Only store if custom name differs from prototype
+                    if (!string.IsNullOrEmpty(entityName) && entityName != prototypeName)
+                    {
+                        entityData["entityName"] = entityName;
+                        Log.Info($"Stored custom entity name: {entityName}");
+                    }
+
+                    // Store entity description if it differs from prototype default
+                    var entityDesc = metadata.EntityDescription;
+                    var prototypeDesc = metadata.EntityPrototype?.Description ?? "";
+
+                    // Only store if custom description differs from prototype
+                    if (!string.IsNullOrEmpty(entityDesc) && entityDesc != prototypeDesc)
+                    {
+                        entityData["entityDescription"] = entityDesc;
+                        Log.Info($"Stored custom entity description: {entityDesc}");
+                    }
+                }
+
+                // Store stack count if it's a stack
+                if (TryComp<StackComponent>(item, out var stack))
+                {
+                    entityData["stackCount"] = stack.Count;
+                    Log.Info($"Stored stack count: {stack.Count}");
+                }
+
+                // Serialize to JSON
+                var json = JsonSerializer.Serialize(entityData);
+
+                Log.Info($"Serialized as JSON: {json}");
+                entityDataList.Add(json);
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"Failed to serialize item {ToPrettyString(item)} in safety deposit box: {ex}");
+            }
+        }
+
+        Log.Info($"Saving {entityDataList.Count} items to database for box {boxComp.BoxId}");
 
         // Get nickname from label if it exists
         string? nickname = null;
@@ -358,8 +469,7 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
         }
 
         // Save to database
-        var document = new YamlDocument(serialized.ToYaml());
-        await _dbManager.DepositSafetyDepositBoxItems(boxComp.BoxId!.Value, document);
+        await _dbManager.DepositSafetyDepositBoxItems(boxComp.BoxId!.Value, entityDataList);
 
         // Update nickname if one was set
         if (nickname != null)

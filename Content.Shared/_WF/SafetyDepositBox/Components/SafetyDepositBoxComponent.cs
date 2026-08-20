@@ -40,6 +40,12 @@ public sealed partial class SafetyDepositBoxComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public EntProtoId BoxPrototypeId;
+
+    /// <summary>
+    /// I think you get the idea.
+    /// </summary>
+    [DataField(required:true), ViewVariables(VVAccess.ReadWrite)]
+    public int Cost;
 }
 
 [Serializable, NetSerializable]

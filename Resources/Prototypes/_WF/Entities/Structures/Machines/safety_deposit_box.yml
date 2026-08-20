@@ -31,22 +31,6 @@
     - SafetyDepositBox
 
 - type: entity
-  id: SafetyDepositBoxTrial
-  name: safety deposit box (trial)
-  description: A trial box for storing a single item. Can hold 1x1 items. Limited to one per character.
-  parent: SafetyDepositBoxBase
-  components:
-  - type: Sprite
-    sprite: _WF/Objects/Economy/depositboxsmall.rsi
-    state: icon
-  - type: Item
-    size: Tiny
-  - type: Storage
-    maxItemSize: Tiny
-    grid:
-    - 0,0,0,0
-
-- type: entity
   id: SafetyDepositBoxSmall
   name: safety deposit box (small)
   description: A small secure box for storing valuables. Can hold 2x2 items.
@@ -57,6 +41,8 @@
     state: icon
   - type: Item
     size: Small
+  - type: SafetyDepositBox
+    cost: 2000000
   - type: Storage
     maxItemSize: Small
     grid:
@@ -73,6 +59,8 @@
     state: icon
   - type: Item
     size: Normal
+  - type: SafetyDepositBox
+    cost: 3500000
   - type: Storage
     maxItemSize: Normal
     grid:
@@ -89,6 +77,8 @@
     state: icon
   - type: Item
     size: Large
+  - type: SafetyDepositBox
+    cost: 5000000
   - type: Storage
     maxItemSize: Large
     grid:
@@ -110,6 +100,9 @@
     - map: ["computerLayerScreen"]
       state: unshaded
   - type: SafetyDepositConsole
+    smallBoxProto: SafetyDepositBoxSmall
+    mediumBoxProto: SafetyDepositBoxMedium
+    largeBoxProto: SafetyDepositBoxLarge
     boxSlot:
       name: safety-deposit-console-boxSlot
       insertSound: /Audio/Machines/scanning.ogg

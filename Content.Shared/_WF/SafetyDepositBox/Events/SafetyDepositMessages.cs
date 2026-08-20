@@ -1,3 +1,4 @@
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._WF.SafetyDepositBox.Events;
@@ -8,24 +9,12 @@ namespace Content.Shared._WF.SafetyDepositBox.Events;
 [Serializable, NetSerializable]
 public sealed class SafetyDepositPurchaseMessage : BoundUserInterfaceMessage
 {
-    public SafetyDepositBoxSize BoxSize;
+    public EntProtoId BoxProto;
 
-    public SafetyDepositPurchaseMessage(SafetyDepositBoxSize boxSize)
+    public SafetyDepositPurchaseMessage(EntProtoId boxProto)
     {
-        BoxSize = boxSize;
+        BoxProto = boxProto;
     }
-}
-
-/// <summary>
-/// Size options for safety deposit boxes.
-/// </summary>
-[Serializable, NetSerializable]
-public enum SafetyDepositBoxSize
-{
-    Trial,
-    Small,
-    Medium,
-    Large
 }
 
 /// <summary>

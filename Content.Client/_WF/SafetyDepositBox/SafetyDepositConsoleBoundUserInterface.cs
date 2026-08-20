@@ -2,6 +2,7 @@ using Content.Client.UserInterface.Controls;
 using Content.Shared._WF.SafetyDepositBox.BUI;
 using Content.Shared._WF.SafetyDepositBox.Events;
 using Robust.Client.UserInterface;
+using Robust.Shared.Prototypes;
 
 namespace Content.Client._WF.SafetyDepositBox;
 
@@ -26,7 +27,7 @@ public sealed class SafetyDepositConsoleBoundUserInterface : BoundUserInterface
         _window.OnReclaimPressed += OnReclaimPressed;
     }
 
-    private void OnPurchasePressed(SafetyDepositBoxSize boxSize)
+    private void OnPurchasePressed(EntProtoId boxSize)
     {
         SendMessage(new SafetyDepositPurchaseMessage(boxSize));
     }

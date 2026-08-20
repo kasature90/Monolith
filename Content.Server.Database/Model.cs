@@ -1414,10 +1414,10 @@ namespace Content.Server.Database
         public string? Nickname { get; set; }
 
         /// <summary>
-        /// The size/type of box (Small, Medium, Large)
+        /// Entity prototype for the box.
         /// </summary>
         [Required]
-        public string BoxSize { get; set; } = "Small";
+        public string ProtoId { get; set; } = null!;
 
         /// <summary>
         /// When the box was purchased

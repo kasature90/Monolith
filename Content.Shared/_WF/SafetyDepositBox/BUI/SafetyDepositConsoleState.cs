@@ -1,3 +1,4 @@
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._WF.SafetyDepositBox.BUI;
@@ -29,11 +30,6 @@ public sealed class SafetyDepositConsoleState : BoundUserInterfaceState
     public SafetyDepositBoxInfo? BoxInSlot;
 
     /// <summary>
-    /// Purchase cost for a trial box.
-    /// </summary>
-    public int TrialBoxCost;
-
-    /// <summary>
     /// Purchase cost for a small box.
     /// </summary>
     public int SmallBoxCost;
@@ -58,7 +54,6 @@ public sealed class SafetyDepositConsoleState : BoundUserInterfaceState
         int insertedCash,
         bool hasBoxInSlot,
         SafetyDepositBoxInfo? boxInSlot,
-        int trialBoxCost,
         int smallBoxCost,
         int mediumBoxCost,
         int largeBoxCost,
@@ -68,7 +63,6 @@ public sealed class SafetyDepositConsoleState : BoundUserInterfaceState
         InsertedCash = insertedCash;
         HasBoxInSlot = hasBoxInSlot;
         BoxInSlot = boxInSlot;
-        TrialBoxCost = trialBoxCost;
         SmallBoxCost = smallBoxCost;
         MediumBoxCost = mediumBoxCost;
         LargeBoxCost = largeBoxCost;
@@ -80,24 +74,12 @@ public sealed class SafetyDepositConsoleState : BoundUserInterfaceState
 /// Information about a safety deposit box.
 /// </summary>
 [Serializable, NetSerializable]
-public sealed class SafetyDepositBoxInfo
-{
-    public Guid BoxId;
-    public string OwnerName;
-    public bool IsDeposited;
-    public string? Nickname;
-    public string BoxSize;
-    public DateTime? LastWithdrawn;
-    public int? LastWithdrawnRoundId;
-
-    public SafetyDepositBoxInfo(Guid boxId, string ownerName, bool isDeposited, string? nickname = null, string boxSize = "Small", DateTime? lastWithdrawn = null, int? lastWithdrawnRoundId = null)
-    {
-        BoxId = boxId;
-        OwnerName = ownerName;
-        IsDeposited = isDeposited;
-        Nickname = nickname;
-        BoxSize = boxSize;
-        LastWithdrawn = lastWithdrawn;
-        LastWithdrawnRoundId = lastWithdrawnRoundId;
-    }
-}
+public record struct SafetyDepositBoxInfo(
+    Guid BoxId,
+    string OwnerName,
+    bool IsDeposited,
+    string? Nickname,
+    string ProtoId,
+    DateTime? LastWithdrawn,
+    int? LastWithdrawnRoundId
+);

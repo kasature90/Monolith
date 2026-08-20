@@ -4,7 +4,7 @@
                       Title="{Loc 'safety-deposit-console-title'}">
     <BoxContainer Orientation="Vertical" Margin="15">
         <!-- Header -->
-        <Label Text="{Loc 'safety-deposit-console-header'}" 
+        <Label Text="{Loc 'safety-deposit-console-header'}"
                StyleClasses="LabelHeading"
                Margin="0 0 0 15"
                HorizontalAlignment="Center"/>
@@ -14,7 +14,7 @@
             <!-- Purchase Box Cell -->
             <PanelContainer StyleClasses="AngleRect" HorizontalExpand="True" Margin="0 0 5 0">
                 <BoxContainer Orientation="Vertical" Margin="15">
-                    <Label Text="{Loc 'safety-deposit-console-purchase-section'}" 
+                    <Label Text="{Loc 'safety-deposit-console-purchase-section'}"
                            StyleClasses="LabelSubHeading"
                            Margin="0 0 0 10"
                            HorizontalAlignment="Center"/>
@@ -22,25 +22,19 @@
                            Margin="0 0 0 10"
                            HorizontalAlignment="Center"
                            StyleClasses="LabelSecondaryColor LabelSubText"/>
-                    <Button Name="PurchaseTrialButton" 
-                            Text="{Loc 'safety-deposit-console-purchase-trial'}"
-                            HorizontalAlignment="Stretch"
-                            MinSize="0 30"
-                            Margin="0 0 0 5"
-                            StyleClasses="OpenBoth"/>
-                    <Button Name="PurchaseSmallButton" 
+                    <Button Name="PurchaseSmallButton"
                             Text="{Loc 'safety-deposit-console-purchase-small'}"
                             HorizontalAlignment="Stretch"
                             MinSize="0 30"
                             Margin="0 0 0 5"
                             StyleClasses="OpenBoth"/>
-                    <Button Name="PurchaseMediumButton" 
+                    <Button Name="PurchaseMediumButton"
                             Text="{Loc 'safety-deposit-console-purchase-medium'}"
                             HorizontalAlignment="Stretch"
                             MinSize="0 30"
                             Margin="0 0 0 5"
                             StyleClasses="OpenBoth"/>
-                    <Button Name="PurchaseLargeButton" 
+                    <Button Name="PurchaseLargeButton"
                             Text="{Loc 'safety-deposit-console-purchase-large'}"
                             HorizontalAlignment="Stretch"
                             MinSize="0 30"
@@ -51,16 +45,16 @@
             <!-- Deposit Box Cell -->
             <PanelContainer StyleClasses="AngleRect" HorizontalExpand="True" Margin="5 0 0 0">
                 <BoxContainer Orientation="Vertical" Margin="15">
-                    <Label Text="{Loc 'safety-deposit-console-deposit-section'}" 
+                    <Label Text="{Loc 'safety-deposit-console-deposit-section'}"
                            StyleClasses="LabelSubHeading"
                            Margin="0 0 0 10"
                            HorizontalAlignment="Center"/>
-                    <Label Name="BoxSlotLabel" 
+                    <Label Name="BoxSlotLabel"
                            Text="{Loc 'safety-deposit-console-no-box-in-slot'}"
                            Margin="0 0 0 10"
                            HorizontalAlignment="Center"
                            StyleClasses="LabelSecondaryColor"/>
-                    <Button Name="DepositButton" 
+                    <Button Name="DepositButton"
                             Text="{Loc 'safety-deposit-console-deposit-button'}"
                             HorizontalAlignment="Stretch"
                             MinSize="0 35"
@@ -73,12 +67,12 @@
 
         <!-- Owned Boxes List -->
         <BoxContainer Orientation="Vertical" VerticalExpand="True">
-            <Label Text="{Loc 'safety-deposit-console-owned-boxes'}" 
+            <Label Text="{Loc 'safety-deposit-console-owned-boxes'}"
                    StyleClasses="LabelSubHeading"
                    Margin="0 0 0 10"/>
             <PanelContainer StyleClasses="AngleRect" VerticalExpand="True" ModulateSelfOverride="#0A0A0A">
                 <ScrollContainer VerticalExpand="True" Margin="5">
-                    <BoxContainer Name="OwnedBoxesContainer" 
+                    <BoxContainer Name="OwnedBoxesContainer"
                                   Orientation="Vertical"
                                   VerticalExpand="True"
                                   SeparationOverride="2"/>

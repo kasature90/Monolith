@@ -29,6 +29,9 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using System.Text.Json;
+using Robust.Shared.EntitySerialization;
+using Robust.Shared.EntitySerialization.Systems;
+using Robust.Shared.Serialization.Manager;
 using YamlDotNet.RepresentationModel;
 
 namespace Content.Server._WF.SafetyDepositBox;
@@ -45,13 +48,15 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
     [Dependency] private HandsSystem _hands = default!;
     [Dependency] private TransformSystem _transform = default!;
     [Dependency] private IServerDbManager _dbManager = default!;
-    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private ISerializationManager _serialization = default!;
     [Dependency] private SharedStorageSystem _storage = default!;
     [Dependency] private ItemSlotsSystem _itemSlots = default!;
     [Dependency] private SharedLabelSystem _label = default!; // Wicce: LabelSystem -> SharedLabelSystem
     [Dependency] private IServerPreferencesManager _prefsManager = default!;
     [Dependency] private MetaDataSystem _metaDataSystem = default!;
     [Dependency] private GameTicker _gameTicker = default!;
+    [Dependency] private IComponentFactory _componentFactory = default!;
+    [Dependency] private MapLoaderSystem _loader = default!;
 
     public override void Initialize()
     {
@@ -118,12 +123,12 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
                 isDeposited = box.Items.Count > 0;
             }
 
-            boxInfoList.Add(new SafetyDepositBoxInfo(
+            boxInfoList.Add(new (
                 box.BoxId,
                 box.OwnerName,
                 isDeposited,
                 box.Nickname,
-                box.BoxSize,
+                box.ProtoId,
                 box.LastWithdrawn,
                 box.LastWithdrawnRoundId
             ));
@@ -146,7 +151,7 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
                 boxComp.OwnerName ?? "Unknown",
                 false,
                 nickname,
-                "Unknown",
+                boxComp.BoxPrototypeId,
                 null,
                 null
             );
@@ -157,10 +162,9 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
             0, // No cash display needed anymore
             boxInSlot != null,
             boxInSlotInfo,
-            component.TrialBoxCost,
-            component.SmallBoxCost,
-            component.MediumBoxCost,
-            component.LargeBoxCost,
+            GetBoxCost(component.SmallBoxProto),
+            GetBoxCost(component.MediumBoxProto),
+            GetBoxCost(component.LargeBoxProto),
             _gameTicker.RoundId
         );
 
@@ -169,37 +173,24 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
 
     private void OnPurchase(EntityUid uid, SafetyDepositConsoleComponent component, SafetyDepositPurchaseMessage args)
     {
+        int cost;
+        EntityPrototype prototypeId;
         if (args.Actor is not { Valid: true } player)
             return;
 
         if (!TryComp<ActorComponent>(player, out var actor))
             return;
 
-        // Determine cost and prototype based on box size
-        int cost;
-        string prototypeId;
-        switch (args.BoxSize)
+        if (_prototypeManager.TryIndex(args.BoxProto, out var proto) && proto.TryGetComponent<SafetyDepositBoxComponent>(out var boxComponent, _componentFactory))
         {
-            case SafetyDepositBoxSize.Trial:
-                cost = component.TrialBoxCost;
-                prototypeId = "SafetyDepositBoxTrial";
-                break;
-            case SafetyDepositBoxSize.Small:
-                cost = component.SmallBoxCost;
-                prototypeId = "SafetyDepositBoxSmall";
-                break;
-            case SafetyDepositBoxSize.Medium:
-                cost = component.MediumBoxCost;
-                prototypeId = "SafetyDepositBoxMedium";
-                break;
-            case SafetyDepositBoxSize.Large:
-                cost = component.LargeBoxCost;
-                prototypeId = "SafetyDepositBoxLarge";
-                break;
-            default:
-                ConsolePopup(player, "Error: Invalid box size.");
-                PlayDenySound(uid, component);
-                return;
+            cost = boxComponent.Cost;
+            prototypeId = proto;
+        }
+        else
+        {
+            ConsolePopup(player, "Error: Invalid box size.");
+            PlayDenySound(uid, component);
+            return;
         }
 
         // Check bank account
@@ -237,37 +228,17 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
         var characterIndex = prefs.SelectedCharacterIndex;
         var characterName = MetaData(player).EntityName;
 
-        // Check if trying to purchase a trial box and already owns one
-        if (args.BoxSize == SafetyDepositBoxSize.Trial)
-        {
-            CheckTrialBoxLimitAsync(uid, component, player, userId.UserId, characterIndex, characterName, prototypeId, cost);
-            return;
-        }
-
         PurchaseBoxAsync(uid, component, player, userId.UserId, characterIndex, characterName, prototypeId, cost);
     }
 
-    private async void CheckTrialBoxLimitAsync(
-        EntityUid consoleUid,
-        SafetyDepositConsoleComponent component,
-        EntityUid player,
-        Guid userId,
-        int characterIndex,
-        string characterName,
-        string prototypeId,
-        int cost)
+    // got tired of doing this
+    public int GetBoxCost(EntProtoId boxProto)
     {
-        var ownedBoxes = await _dbManager.GetPlayerSafetyDepositBoxes(userId, characterIndex);
-        var hasTrialBox = ownedBoxes.Any(b => b.BoxSize == "Trial");
-
-        if (hasTrialBox)
-        {
-            ConsolePopup(player, "You already own a Trial Box. Only one Trial Box per character is allowed.");
-            PlayDenySound(consoleUid, component);
-            return;
-        }
-
-        PurchaseBoxAsync(consoleUid, component, player, userId, characterIndex, characterName, prototypeId, cost);
+        if (_prototypeManager.TryIndex(boxProto, out var proto) &&
+            proto.TryGetComponent<SafetyDepositBoxComponent>(out var boxComponent, _componentFactory))
+            return boxComponent.Cost;
+        else
+            return 0;
     }
 
     private async void PurchaseBoxAsync(
@@ -277,24 +248,14 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
         Guid userId,
         int characterIndex,
         string characterName,
-        string prototypeId,
+        EntityPrototype prototypeId,
         int cost)
     {
-        // Determine box size from prototype
-        string boxSize = prototypeId switch
-        {
-            "SafetyDepositBoxTrial" => "Trial",
-            "SafetyDepositBoxSmall" => "Small",
-            "SafetyDepositBoxMedium" => "Medium",
-            "SafetyDepositBoxLarge" => "Large",
-            _ => "Small"
-        };
-
         // Create box in database
-        var box = await _dbManager.PurchaseSafetyDepositBox(userId, characterIndex, characterName, boxSize);
+        var box = await _dbManager.PurchaseSafetyDepositBox(userId, characterIndex, characterName, prototypeId.ID);
 
         // Spawn the physical box
-        var boxEntity = Spawn(prototypeId, Transform(player).Coordinates);
+        var boxEntity = Spawn(prototypeId.ID, Transform(player).Coordinates);
         var boxComp = EnsureComp<SafetyDepositBoxComponent>(boxEntity);
         boxComp.BoxId = box.BoxId;
         boxComp.OwnerId = userId;
@@ -381,123 +342,12 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
         SafetyDepositBoxComponent boxComp,
         StorageComponent storageComp)
     {
-        var entityDataList = new List<string>();
 
         Log.Info($"DepositBoxAsync: Box has {storageComp.Container.ContainedEntities.Count} items");
-
         // Serialize each item in the box - store prototype + component data
-        foreach (var item in storageComp.Container.ContainedEntities)
-        {
-            try
-            {
-                Log.Info($"Serializing item: {ToPrettyString(item)}");
+        var serialized = _loader.SerializeEntitiesRecursive(storageComp.Container.ContainedEntities.ToHashSet()).Node;
 
-                // Blacklist ID cards - they should not be stored
-                if (HasComp<IdCardComponent>(item))
-                {
-                    Log.Warning($"Item {ToPrettyString(item)} is an ID card, skipping");
-                    continue;
-                }
-
-                // Get the prototype and metadata
-                var prototype = MetaData(item).EntityPrototype;
-                if (prototype == null)
-                {
-                    Log.Warning($"Item {ToPrettyString(item)} has no prototype, skipping");
-                    continue;
-                }
-
-                var protoId = prototype.ID;
-
-                // Create a JSON object to store entity data
-                var entityData = new Dictionary<string, object>
-                {
-                    ["prototype"] = protoId
-                };
-
-                // Store paper content and stamps/signatures if it's a paper
-                if (TryComp<PaperComponent>(item, out var paper))
-                {
-                    entityData["paperContent"] = paper.Content;
-
-                    // Store stamps and signatures - store each stamp as a separate entry to preserve structure
-                    if (paper.StampedBy.Count > 0)
-                    {
-                        // Store as a list that can be properly serialized
-                        var stampsList = new List<Dictionary<string, object>>();
-                        foreach (var stamp in paper.StampedBy)
-                        {
-                            stampsList.Add(new Dictionary<string, object>
-                            {
-                                ["stampedName"] = stamp.StampedName,
-                                ["stampedColor"] = stamp.StampedColor.ToHex(),
-                                ["stampType"] = (int)stamp.Type,
-                                ["reapply"] = stamp.Reapply
-                            });
-                        }
-                        entityData["paperStamps"] = stampsList;
-                    }
-
-                    if (!string.IsNullOrEmpty(paper.StampState))
-                    {
-                        entityData["paperStampState"] = paper.StampState;
-                    }
-
-                    Log.Info($"Stored paper content: {paper.Content.Substring(0, Math.Min(50, paper.Content.Length))}... with {paper.StampedBy.Count} stamps");
-                }
-
-                // Store label if it has one
-                if (TryComp<LabelComponent>(item, out var label) && !string.IsNullOrEmpty(label.CurrentLabel))
-                {
-                    entityData["label"] = label.CurrentLabel;
-                    Log.Info($"Stored label: {label.CurrentLabel}");
-                }
-
-                // Store entity name if it differs from prototype default
-                if (TryComp<MetaDataComponent>(item, out var metadata))
-                {
-                    var entityName = metadata.EntityName;
-                    var prototypeName = metadata.EntityPrototype?.Name ?? "";
-
-                    // Only store if custom name differs from prototype
-                    if (!string.IsNullOrEmpty(entityName) && entityName != prototypeName)
-                    {
-                        entityData["entityName"] = entityName;
-                        Log.Info($"Stored custom entity name: {entityName}");
-                    }
-
-                    // Store entity description if it differs from prototype default
-                    var entityDesc = metadata.EntityDescription;
-                    var prototypeDesc = metadata.EntityPrototype?.Description ?? "";
-
-                    // Only store if custom description differs from prototype
-                    if (!string.IsNullOrEmpty(entityDesc) && entityDesc != prototypeDesc)
-                    {
-                        entityData["entityDescription"] = entityDesc;
-                        Log.Info($"Stored custom entity description: {entityDesc}");
-                    }
-                }
-
-                // Store stack count if it's a stack
-                if (TryComp<StackComponent>(item, out var stack))
-                {
-                    entityData["stackCount"] = stack.Count;
-                    Log.Info($"Stored stack count: {stack.Count}");
-                }
-
-                // Serialize to JSON
-                var json = JsonSerializer.Serialize(entityData);
-
-                Log.Info($"Serialized as JSON: {json}");
-                entityDataList.Add(json);
-            }
-            catch (Exception ex)
-            {
-                Log.Error($"Failed to serialize item {ToPrettyString(item)} in safety deposit box: {ex}");
-            }
-        }
-
-        Log.Info($"Saving {entityDataList.Count} items to database for box {boxComp.BoxId}");
+        Log.Info($"Saving {storageComp.Container.ContainedEntities.Count} items to database for box {boxComp.BoxId}");
 
         // Get nickname from label if it exists
         string? nickname = null;
@@ -508,7 +358,8 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
         }
 
         // Save to database
-        await _dbManager.DepositSafetyDepositBoxItems(boxComp.BoxId!.Value, entityDataList);
+        var document = new YamlDocument(serialized.ToYaml());
+        await _dbManager.DepositSafetyDepositBoxItems(boxComp.BoxId!.Value, document);
 
         // Update nickname if one was set
         if (nickname != null)
@@ -526,7 +377,7 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
         PlayConfirmSound(consoleUid, component);
 
         _adminLogger.Add(LogType.Action, LogImpact.Medium,
-            $"{ToPrettyString(player):actor} deposited safety deposit box {boxComp.BoxId} with {entityDataList.Count} items");
+            $"{ToPrettyString(player):actor} deposited safety deposit box {boxComp.BoxId} with {storageComp.Container.ContainedEntities.Count} items");
 
         UpdateUI(consoleUid, component, player);
     }
@@ -612,17 +463,11 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
             userId,
             characterIndex,
             MetaData(player).EntityName,
-            box.BoxSize
+            box.ProtoId
         );
 
         // Spawn a new empty physical box
-        string prototypeId = box.BoxSize switch
-        {
-            "Small" => "SafetyDepositBoxSmall",
-            "Medium" => "SafetyDepositBoxMedium",
-            "Large" => "SafetyDepositBoxLarge",
-            _ => "SafetyDepositBoxSmall"
-        };
+        string prototypeId = box.ProtoId;
 
         var boxEntity = Spawn(prototypeId, Transform(player).Coordinates);
         var boxComp = EnsureComp<SafetyDepositBoxComponent>(boxEntity);
@@ -685,22 +530,14 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
             return;
         }
 
-        // Spawn the physical box (use stored box size to determine prototype)
-        string prototypeId = box.BoxSize switch
-        {
-            "Trial" => "SafetyDepositBoxTrial",
-            "Small" => "SafetyDepositBoxSmall",
-            "Medium" => "SafetyDepositBoxMedium",
-            "Large" => "SafetyDepositBoxLarge",
-            _ => "SafetyDepositBoxSmall"
-        };
+        // Spawn the physical box (use stored box size to determine prototype);
 
-        var boxEntity = Spawn(prototypeId, Transform(player).Coordinates);
+        var boxEntity = Spawn(box.ProtoId, Transform(player).Coordinates);
         var boxComp = EnsureComp<SafetyDepositBoxComponent>(boxEntity);
         boxComp.BoxId = box.BoxId;
         boxComp.OwnerId = userId;
         boxComp.CharacterIndex = characterIndex;
-        boxComp.BoxPrototypeId = prototypeId;
+        boxComp.BoxPrototypeId = box.ProtoId;
         // Use current character name instead of stored name in case they changed it
         boxComp.OwnerName = MetaData(player).EntityName;
         Dirty(boxEntity, boxComp);

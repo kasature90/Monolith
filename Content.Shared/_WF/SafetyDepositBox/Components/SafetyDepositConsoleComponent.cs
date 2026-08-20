@@ -1,6 +1,7 @@
 using Content.Shared.Containers.ItemSlots;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared._WF.SafetyDepositBox.Components;
 
@@ -11,34 +12,28 @@ namespace Content.Shared._WF.SafetyDepositBox.Components;
 public sealed partial class SafetyDepositConsoleComponent : Component
 {
     /// <summary>
-    /// Cost to purchase a trial safety deposit box.
-    /// </summary>
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public int TrialBoxCost = 10000;
-
-    /// <summary>
-    /// Cost to purchase a small safety deposit box.
-    /// </summary>
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public int SmallBoxCost = 2000000;
-
-    /// <summary>
-    /// Cost to purchase a medium safety deposit box.
-    /// </summary>
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public int MediumBoxCost = 3500000;
-
-    /// <summary>
-    /// Cost to purchase a large safety deposit box.
-    /// </summary>
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public int LargeBoxCost = 5000000;
-
-    /// <summary>
     /// Slot for depositing/withdrawing boxes.
     /// </summary>
     [DataField]
     public ItemSlot BoxSlot = new();
+
+    /// <summary>
+    /// Entity to use for small boxes.
+    /// </summary>
+    [DataField(required:true)]
+    public EntProtoId SmallBoxProto;
+
+    /// <summary>
+    /// Entity to use for medium boxes.
+    /// </summary>
+    [DataField(required: true)]
+    public EntProtoId MediumBoxProto;
+
+    /// <summary>
+    /// Entity to use for large boxes.
+    /// </summary>
+    [DataField(required:true)]
+    public EntProtoId LargeBoxProto;
 
     public static string BoxSlotId = "safety-deposit-console-boxSlot";
 

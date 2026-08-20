@@ -20,7 +20,6 @@ The [color=#44cc00]Safety Deposit Box System[/color] allows you to securely stor
     <GuideEntityEmbed Entity="SafetyDepositBoxLarge"/>
   </Box>
   Three box sizes are available, each with different storage capacity:
-- [bold]Trial (1x1)[/bold] - $10,000 (max of 1)
 - [bold]Small (2x2)[/bold] - $2,000,000
 - [bold]Medium (2x4)[/bold] - $3,500,000
 - [bold]Large (2x6)[/bold] - $5,000,000

@@ -2089,7 +2089,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             Guid ownerUserId,
             int characterIndex,
             string ownerName,
-            string boxSize,
+            EntProtoId protoId,
             CancellationToken cancel = default)
         {
             await using var db = await GetDb(cancel);
@@ -2100,7 +2100,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                 OwnerUserId = ownerUserId,
                 CharacterIndex = characterIndex,
                 OwnerName = ownerName,
-                BoxSize = boxSize,
+                ProtoId = protoId,
                 PurchaseDate = DateTime.UtcNow
             };
 
@@ -2201,11 +2201,11 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                 return;
 
             db.DbContext.WayfarerSafetyDepositBoxItem.RemoveRange(box.Items);
-            
+
             // Set LastWithdrawn to indicate the box is now in the world
             box.LastWithdrawn = DateTime.UtcNow;
             box.LastWithdrawnRoundId = roundId;
-            
+
             await db.DbContext.SaveChangesAsync(cancel);
         }
 
@@ -2220,8 +2220,8 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             // Find boxes that have been withdrawn and have no items for longer than the cutoff period
             var staleBoxes = await db.DbContext.WayfarerSafetyDepositBox
                 .Include(b => b.Items)
-                .Where(b => b.LastWithdrawn != null && 
-                            b.LastWithdrawn < cutoffDate && 
+                .Where(b => b.LastWithdrawn != null &&
+                            b.LastWithdrawn < cutoffDate &&
                             b.Items.Count == 0)
                 .ToListAsync(cancel);
 

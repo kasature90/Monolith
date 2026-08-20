@@ -1,12 +1,13 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace Content.Server.Database.Migrations.Sqlite
+namespace Content.Server.Database.Migrations.Postgres
 {
     /// <inheritdoc />
-    public partial class WayfarerSafetyDepositBox : Migration
+    public partial class MonoSafetyDepositBoxes : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,12 +16,17 @@ namespace Content.Server.Database.Migrations.Sqlite
                 name: "wayfarer_safety_deposit_box",
                 columns: table => new
                 {
-                    wayfarer_safety_deposit_box_id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    box_id = table.Column<Guid>(type: "TEXT", nullable: false),
-                    owner_user_id = table.Column<Guid>(type: "TEXT", nullable: false),
-                    owner_name = table.Column<string>(type: "TEXT", nullable: false),
-                    purchase_date = table.Column<DateTime>(type: "TEXT", nullable: false)
+                    wayfarer_safety_deposit_box_id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    box_id = table.Column<Guid>(type: "uuid", nullable: false),
+                    proto_id = table.Column<string>(type: "text", nullable: false, defaultValue: ""),
+                    owner_user_id = table.Column<Guid>(type: "uuid", nullable: false),
+                    owner_name = table.Column<string>(type: "text", nullable: false),
+                    nickname = table.Column<string>(type: "text", nullable: true),
+                    purchase_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    last_withdrawn = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    last_withdrawn_round_id = table.Column<int>(type: "integer", nullable: true),
+                    character_index = table.Column<int>(type: "integer", nullable: false, defaultValue:0)
                 },
                 constraints: table =>
                 {
@@ -31,17 +37,17 @@ namespace Content.Server.Database.Migrations.Sqlite
                 name: "wayfarer_safety_deposit_box_item",
                 columns: table => new
                 {
-                    wayfarer_safety_deposit_box_item_id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    box_id = table.Column<int>(type: "INTEGER", nullable: false),
-                    entity_data = table.Column<string>(type: "TEXT", nullable: false),
-                    deposit_date = table.Column<DateTime>(type: "TEXT", nullable: false)
+                    wayfarer_safety_deposit_box_item_id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    box_id = table.Column<int>(type: "integer", nullable: false),
+                    entity_data = table.Column<string>(type: "text", nullable: false),
+                    deposit_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_wayfarer_safety_deposit_box_item", x => x.wayfarer_safety_deposit_box_item_id);
                     table.ForeignKey(
-                        name: "FK_wayfarer_safety_deposit_box_item_wayfarer_safety_deposit_box_box_id",
+                        name: "FK_wayfarer_safety_deposit_box_item_wayfarer_safety_deposit_bo~",
                         column: x => x.box_id,
                         principalTable: "wayfarer_safety_deposit_box",
                         principalColumn: "wayfarer_safety_deposit_box_id",
@@ -76,3 +82,4 @@ namespace Content.Server.Database.Migrations.Sqlite
         }
     }
 }
+

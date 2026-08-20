@@ -1384,11 +1384,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("box_id");
 
-                    b.Property<string>("ProtoId")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("box_proto");
-
                     b.Property<int>("CharacterIndex")
                         .HasColumnType("INTEGER")
                         .HasColumnName("character_index");
@@ -1413,6 +1408,11 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Property<Guid>("OwnerUserId")
                         .HasColumnType("TEXT")
                         .HasColumnName("owner_user_id");
+
+                    b.Property<string>("ProtoId")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("proto_id");
 
                     b.Property<DateTime>("PurchaseDate")
                         .HasColumnType("TEXT")

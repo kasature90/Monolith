@@ -11,7 +11,7 @@ namespace Content.Server.Database.Migrations.Sqlite
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "box_size",
+                name: "box_proto",
                 table: "wayfarer_safety_deposit_box",
                 type: "TEXT",
                 nullable: false,
@@ -28,7 +28,7 @@ namespace Content.Server.Database.Migrations.Sqlite
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "box_size",
+                name: "box_proto",
                 table: "wayfarer_safety_deposit_box");
 
             migrationBuilder.DropColumn(

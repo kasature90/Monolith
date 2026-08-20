@@ -1488,10 +1488,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("uuid")
                         .HasColumnName("box_id");
 
-                    b.Property<string>("BoxSize")
+                    b.Property<string>("ProtoId")
                         .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("box_size");
+                        .HasColumnName("box_proto");
 
                     b.Property<int>("CharacterIndex")
                         .HasColumnType("integer")

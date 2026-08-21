@@ -21,6 +21,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                     proto_id = table.Column<string>(type: "TEXT", nullable: false, defaultValue: ""),
                     owner_user_id = table.Column<Guid>(type: "TEXT", nullable: false),
                     owner_name = table.Column<string>(type: "TEXT", nullable: false),
+                    nickname = table.Column<string>(type: "TEXT", nullable: true),
                     purchase_date = table.Column<DateTime>(type: "TEXT", nullable: false),
                     last_withdrawn = table.Column<DateTime>(type: "TEXT", nullable: true),
                     last_withdrawn_round_id = table.Column<int>(type: "INTEGER", nullable: true),

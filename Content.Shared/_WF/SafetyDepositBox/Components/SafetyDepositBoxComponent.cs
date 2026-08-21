@@ -36,12 +36,6 @@ public sealed partial class SafetyDepositBoxComponent : Component
     public string? OwnerName;
 
     /// <summary>
-    /// The prototype ID of this box (SafetyDepositBoxSmall, Medium, or Large).
-    /// </summary>
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public EntProtoId BoxPrototypeId;
-
-    /// <summary>
     /// I think you get the idea.
     /// </summary>
     [DataField(required:true), ViewVariables(VVAccess.ReadWrite)]

@@ -130,12 +130,15 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
                 nickname = labelComp.CurrentLabel;
             }
 
+            if (!TryPrototype(boxInSlot.Value, out var boxProto))
+                return;
+
             boxInSlotInfo = new SafetyDepositBoxInfo(
                 boxComp.BoxId.Value,
                 boxComp.OwnerName ?? "Unknown",
                 false,
                 nickname,
-                boxComp.BoxPrototypeId,
+                boxProto.ToString(),
                 null,
                 null
             );
@@ -241,11 +244,11 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
         // Spawn the physical box
         var boxEntity = Spawn(prototypeId.ID, Transform(player).Coordinates);
         var boxComp = EnsureComp<SafetyDepositBoxComponent>(boxEntity);
+
         boxComp.BoxId = box.BoxId;
         boxComp.OwnerId = userId;
         boxComp.CharacterIndex = characterIndex;
         boxComp.OwnerName = characterName;
-        boxComp.BoxPrototypeId = prototypeId;
         Dirty(boxEntity, boxComp);
 
         // Try to put it in player's hands
@@ -472,7 +475,6 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
         boxComp.BoxId = newBox.BoxId;
         boxComp.OwnerId = userId;
         boxComp.CharacterIndex = characterIndex;
-        boxComp.BoxPrototypeId = prototypeId;
         boxComp.OwnerName = MetaData(player).EntityName;
         Dirty(boxEntity, boxComp);
 
@@ -535,7 +537,6 @@ public sealed partial class SafetyDepositBoxSystem : EntitySystem
         boxComp.BoxId = box.BoxId;
         boxComp.OwnerId = userId;
         boxComp.CharacterIndex = characterIndex;
-        boxComp.BoxPrototypeId = box.ProtoId;
         // Use current character name instead of stored name in case they changed it
         boxComp.OwnerName = MetaData(player).EntityName;
         Dirty(boxEntity, boxComp);

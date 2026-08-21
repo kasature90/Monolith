@@ -9,7 +9,7 @@
   - WeaponRifleAK410USSP # PLACEHOLDER 26AUG15
   technologyPrerequisites:
   - UniversalMaterialResearchT1
-  position: 12, 4
+  position: 3, -8
 
 - type: technology
   id: UsspMediumShips
@@ -22,7 +22,7 @@
   - WeaponRifleAK410USSP # PLACEHOLDER 26AUG15
   technologyPrerequisites:
   - UsspBasicShips
-  position: 12, 9
+  position: 3, -16
 
 - type: technology
   id: UsspAdvancedShips
@@ -36,4 +36,4 @@
   technologyPrerequisites:
   - UsspMediumShips
   - UniversalMaterialResearchT3
-  position: 12, 14
+  position: 3, -26

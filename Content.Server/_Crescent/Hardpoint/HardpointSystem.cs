@@ -94,6 +94,9 @@ public class HardpointSystem : SharedHardpointSystem
         if (!_gameTiming.IsFirstTimePredicted)
             return;
 
+        if (!_gameTiming.IsFirstTimePredicted)
+            return;
+
         InternalTimer += frameTime;
         if (InternalTimer < UpdateDelay)
             return;

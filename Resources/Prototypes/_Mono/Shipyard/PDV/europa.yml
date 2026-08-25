@@ -12,7 +12,7 @@
   group: BlackMarket
   access: Pirate
   shuttlePath: /SharedMaps/_Mono/Shuttles/PDV/europa.yml
-  guidebookPage: Null
+  guidebookPage: ShipyardNFROperation
   class:
   - Brawler
   - Frigate
@@ -26,9 +26,6 @@
   minPlayers: 0
   stations:
     Europa:
-      gridComponents:
-      - type: VesselInfo
-        description: "The Saturn's Sister ship."
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup

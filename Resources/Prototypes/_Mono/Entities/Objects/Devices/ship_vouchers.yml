@@ -75,15 +75,11 @@
     destroyOnEmpty: true
     consoleType: Security
     companyName: TSF
-#    vessels:
-#    - Welder
-#    - Hoplite
-#    - Shiv
-#    - Syringe
-#    - Ocelot
-#    - Jaguar
-#    - Tumour
-#    - Fracture
+    vessels:
+    - Dagger
+    - Fracture
+    - Shiv
+    - Ocelot
 
 - type: entity
   parent: ShipVoucherTsfT0
@@ -104,15 +100,9 @@
     cooldown: 7200 # one hour
     consoleType: Security
     companyName: TSF
-#    vessels:
-#    - Aldebaran
-#    - Tarantula
-#    - Spica
-#    - Mercury
-#    - Sentinel
-#    - Dagger
-#    - Calypso
-#    - Razorback
+    vessels:
+    - Banshee
+    - Calypso
 
 - type: entity
   parent: ShipVoucherTsfT0
@@ -133,9 +123,10 @@
     cooldown: 7200 # one hour
     consoleType: Security
     companyName: TSF
-#    vessels:
-#    - Andromeda
-#    - Spekter
+    vessels:
+    - Fujian
+    - Mercury
+    - Spekter
 
 # TSF Fujian Fighters
 
@@ -159,7 +150,6 @@
     consoleType: Custom
     companyName: TSF
     vessels:
-    - Zephyr
     - ZephyrEC
   - type: StaticPrice
     vendPrice: 30000
@@ -187,12 +177,9 @@
     destroyOnEmpty: true
     consoleType: BlackMarket
     companyName: PDV
-#    vessels:
-#    - Hazel
-#    - Eris
-#    - Tethys
-#    - Carrion
-#    - Metis
+    vessels:
+    - Scorpion
+    - Tethys
 
 - type: entity
   parent: ShipVoucherPdvT0
@@ -213,16 +200,8 @@
     cooldown: 7200 # one hour
     consoleType: BlackMarket
     companyName: PDV
-#    vessels:
-#    - Scorpion
-#    - Bastion
-#    - Neptune
-#    - Fenrir
-#    - Garm
-#    - Kalisto
-#    - Metis
-#    - Prowler
-#    - Layak
+    vessels:
+    - Layak
 
 - type: entity
   parent: ShipVoucherPdvT0
@@ -243,12 +222,59 @@
     cooldown: 7200 # one hour
     consoleType: BlackMarket
     companyName: PDV
-#    vessels:
-#    - MotleyAnne
-#    - Europa
-#    - Vulture
-#    - Ganymede
-#    - KortikR
+    vessels:
+    - MotleyAnne
+    - Neptune
+
+- type: entity
+  parent: BaseShipLPCRenewable
+  id: ShipVoucherKortikT3
+  name: PDV Kortik-R LPC [T3]
+  description: A small card that contains the data for the procurement of a Kortik-R-class frigate from the shipyard's reserves.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/lpcnew.rsi
+    layers:
+    - state: icon_capital
+    - state: screen
+      color: "#1eff00"
+    - state: screen4
+      color: "#1eff00"
+      shader: unshaded
+  - type: ShipyardVoucher
+    destroyOnEmpty: false
+    cooldown: 5400 # 1 & 1/2 hours
+    consoleType: BlackMarket
+    companyName: PDV
+    vessels:
+    - KortikR
+  - type: StaticPrice
+    vendPrice: 20000
+
+- type: entity
+  parent: BaseShipLPCRenewable
+  id: ShipVoucherEuropaT3
+  name: PDV Europa LPC [T3]
+  description: A small card that contains the data for the procurement of a Europa-class frigate from the shipyard's reserves.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/lpcnew.rsi
+    layers:
+    - state: icon_capital
+    - state: screen
+      color: "#1eff00"
+    - state: screen4
+      color: "#1eff00"
+      shader: unshaded
+  - type: ShipyardVoucher
+    destroyOnEmpty: false
+    cooldown: 5400 # 1 & 1/2 hours
+    consoleType: BlackMarket
+    companyName: PDV
+    vessels:
+    - Europa
+  - type: StaticPrice
+    vendPrice: 20000
 
 # USSP
 

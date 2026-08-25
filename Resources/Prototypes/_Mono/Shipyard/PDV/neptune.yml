@@ -28,6 +28,8 @@
   stations:
     Neptune:
       stationProto: StandardFrontierVessel
+      gridComponents:
+      - type: ShipShieldDisabledGrid
       components:
         - type: StationNameSetup
           mapNameTemplate: 'Neptune PDV{1}'

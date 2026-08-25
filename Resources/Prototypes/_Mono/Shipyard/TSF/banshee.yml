@@ -19,19 +19,19 @@
   - Brawler
   - Corvette
   engine:
-  - AME
+  - Plasma
 
 - type: gameMap
-  id: Calypso
-  mapName: 'Calypso'
+  id: Banshee
+  mapName: 'Banshee'
   mapPath: /SharedMaps/_Mono/Shuttles/TSF/calypso.yml
   minPlayers: 0
   stations:
-    Calypso:
+    Banshee:
       stationProto: StandardFrontierSecurityVessel
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'Calypso TSF{1}'
+        mapNameTemplate: 'Banshee TSF{1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'

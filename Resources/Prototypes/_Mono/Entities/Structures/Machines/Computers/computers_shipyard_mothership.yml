@@ -38,9 +38,8 @@
   description: Lighter shipyard using the Chengdu's internal hangars, doesn't have access to the full roster of TSFMC ships.
   components:
   - type: ShipyardListing
-#    shuttles:
-#    - Jaguar
-#    - Ocelot
+    shuttles:
+    - Ocelot
   - type: CompanyAccessReader
     requiredCompanies:
     - TSF
@@ -52,14 +51,10 @@
   description: Lighter shipyard using the Jupiter's internal hangars, doesn't have access to the full roster of Phaethon Dynasty ships.
   components:
   - type: ShipyardListing
-#    shuttles:
-#    - Hazel
-#    - Tethys
-#    - Eris
-#    - Layak
-#    - Metis
-#    - Kalisto
-#    - Prowler
+    shuttles:
+    - Tethys
+    - Layak
+    - Scorpion
   - type: Sprite
     sprite: _NF/Structures/Machines/computers.rsi
     layers:
@@ -71,3 +66,34 @@
       state: shipyard_pdv
     - map: ["computerLayerKeys"]
       state: telesci_key
+
+- type: entity
+  id: TSFCarrierComputerFujian
+  parent: BaseCarrierComputer
+  name: TSF fujian carrier console
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - ZephyrEC
+
+- type: entity
+  id: PDVMotleyAnneCarrierComputer
+  parent: BaseCarrierComputer
+  name: motley anne shipyard console
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - Snakelet
+    - Inertia
+    - Mock
+  - type: Sprite
+    sprite: _NF/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer_blackmarket
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: shipyard_blackmarket
+    - map: ["computerLayerKeys"]
+      state: blackmarket_key

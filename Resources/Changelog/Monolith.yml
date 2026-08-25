@@ -14775,7 +14775,7 @@ Entries:
     - type: Add
       message: >-
         The DIS Pluto MK. II has pierced it's way on the hull market. A
-        replacement of the honorable Pluto. 
+        replacement of the honorable Pluto.
     - type: Remove
       message: >-
         DIS Pluto hulls are no longer available on the hull market. We will miss
@@ -14885,7 +14885,7 @@ Entries:
     - type: Tweak
       message: >-
         Spasaka sabotage kit has gotten equipment changes to help with boarding
-        as well as receiving the RX-01 suit. 
+        as well as receiving the RX-01 suit.
   id: 1651
   time: '2025-12-13T08:10:05.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2782
@@ -15226,7 +15226,7 @@ Entries:
     - type: Tweak
       message: >-
         Bluespace crates occur more frequently. By extension there will be fewer
-        solar flares. 
+        solar flares.
     - type: Tweak
       message: >-
         Increased the number of smuggling hints sent out to ships. Happy
@@ -15789,7 +15789,7 @@ Entries:
     - type: Add
       message: >-
         A new challanger! BT-Y Hazel enters the PDV Roster as a small-strafer in
-        place of the Vega featuring a 3 barreled 220m Battery! 
+        place of the Vega featuring a 3 barreled 220m Battery!
     - type: Remove
       message: PDV Vega is now gone, o7.
   id: 1752
@@ -15815,7 +15815,7 @@ Entries:
         The Europa is now a beefy capital ship with medical and cloning
         capabilities. She is now restricted to two vessels active at a time, as
         well as costing 240k. These changes come with the benefit of a heavy
-        upgrade. Glory to Phaethon. 
+        upgrade. Glory to Phaethon.
   id: 1754
   time: '2026-01-05T16:53:42.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2929
@@ -16677,7 +16677,7 @@ Entries:
     - type: Tweak
       message: >-
         Advanced chemicals now have 0.15u metabolism rate. Pyrazine healing was
-        buffed to 2. 
+        buffed to 2.
     - type: Tweak
       message: Overseer's heavy maul sprite received changes.
   id: 1847
@@ -16904,7 +16904,7 @@ Entries:
     - type: Tweak
       message: >-
         Horizon Energy has begun sale of modernized versions of the Windreign to
-        the Colossus Sector. 
+        the Colossus Sector.
   id: 1871
   time: '2026-02-01T19:28:28.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3141
@@ -17076,7 +17076,7 @@ Entries:
       message: >-
         the local syndicate outpost has finally invested in some automated
         defenses. woe be the raider who tries to illegally park their ship right
-        in front of the outpost. 
+        in front of the outpost.
   id: 1887
   time: '2026-02-11T01:31:25.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3044
@@ -17408,7 +17408,7 @@ Entries:
     - type: Tweak
       message: >-
         Mech Fuel Cell now costs Fissile Uranium (1) and Diamond (1) among other
-        cost changes, but auto-regens to full within 4 minutes. 
+        cost changes, but auto-regens to full within 4 minutes.
     - type: Tweak
       message: >-
         Balance pass on Armored Frame (S2/S4 mech) weapons - RAC-6 spreads
@@ -18895,7 +18895,7 @@ Entries:
     - type: Tweak
       message: >-
         The DIS Femur has seen a light rework, see PR for more details. Report
-        feedback & issues to me on discord (@unicornonlsd) 
+        feedback & issues to me on discord (@unicornonlsd)
   id: 2085
   time: '2026-03-26T05:55:13.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3560
@@ -19240,7 +19240,7 @@ Entries:
     - type: Add
       message: >-
         ASM-220 "Trident" 500mm torpedo rack and GPOB-L Light Munitions Bay are
-        now anchorable. 
+        now anchorable.
     - type: Add
       message: ASM-220 HE and ECM torpedos are now significantly faster.
   id: 2122
@@ -19413,7 +19413,7 @@ Entries:
     - type: Tweak
       message: >-
         Tweaks and standardizes shipgun HPs. Guns of the same class and usage
-        have similar HP totals. 
+        have similar HP totals.
     - type: Tweak
       message: >-
         Overall decrease shipgun HP to be more reasonable but still somewhat
@@ -20011,7 +20011,7 @@ Entries:
     - type: Tweak
       message: >-
         Companies that are known pirates/antagonistic (Redsail Corsairs as an
-        example) can be Killed on Sight. Review rule 1 for changes. 
+        example) can be Killed on Sight. Review rule 1 for changes.
   id: 2209
   time: '2026-04-17T00:41:48.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3809
@@ -20233,7 +20233,7 @@ Entries:
     - type: Tweak
       message: >-
         PDV Bank increased to 423k per hour naturally, to compete with the TSF
-        bank. 
+        bank.
   id: 2230
   time: '2026-04-21T02:20:59.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3851
@@ -21538,7 +21538,7 @@ Entries:
     - type: Remove
       message: >-
         USSP Merc content removed including loadout changes, ships & language
-        trait (Translators still available). 
+        trait (Translators still available).
     - type: Tweak
       message: USSP are now a Minor Faction, see PR for full changes.
   id: 2375
@@ -21728,7 +21728,7 @@ Entries:
     - type: Tweak
       message: >-
         The osmium based parts in the Grizzly have been replaced with lighter
-        plastic parts. You don't need to wait to draw the gun. 
+        plastic parts. You don't need to wait to draw the gun.
   id: 2395
   time: '2026-06-23T22:03:51.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4127
@@ -22934,7 +22934,7 @@ Entries:
     - type: Fix
       message: >-
         Colonel double checked their closets and remember to actually bring
-        their gun 
+        their gun
   id: 2531
   time: '2026-07-23T22:01:45.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4346
@@ -23820,3 +23820,443 @@ Entries:
   id: 2619
   time: '2026-08-17T09:55:21.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4499
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Faction AI now require faction borg playtime instead of captain/asanvar,
+        requires 8 hours of it instead of 15.
+  id: 2620
+  time: '2026-08-17T10:26:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3813
+- author: NazrinNya
+  changes:
+    - type: Tweak
+      message: All crates capacity 30 -> 100.
+    - type: Tweak
+      message: MMC industrial press is now actually better than normal one.
+  id: 2621
+  time: '2026-08-17T21:43:56.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4502
+- author: marklyfied
+  changes:
+    - type: Tweak
+      message: Spationaut Suit now costs 4k in the astrovend
+  id: 2622
+  time: '2026-08-17T21:44:14.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4507
+- author: SuperGDPWYL
+  changes:
+    - type: Tweak
+      message: >-
+        The TSF and PDV's uplinks now unbox the grenades automatically for
+        convenience. Explosives are now bought individually.
+  id: 2623
+  time: '2026-08-18T01:09:05.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4508
+- author: marklyfied
+  changes:
+    - type: Tweak
+      message: Rebranded smuggling from Syndicate to monolith
+  id: 2624
+  time: '2026-08-18T05:14:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4506
+- author: kasature90
+  changes:
+    - type: Fix
+      message: Fixed Chimeras getting drunk from letoferol.
+  id: 2625
+  time: '2026-08-18T08:22:29.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4514
+- author: kasature90
+  changes:
+    - type: Fix
+      message: Fixed IPCs not having a surgery to reinsert their pump (heart).
+    - type: Fix
+      message: >-
+        Fixed dwarf livers/liquor lifeline not healing damage when drinking
+        ethanol.
+  id: 2626
+  time: '2026-08-18T08:23:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4513
+- author: eris-webserv
+  changes:
+    - type: Add
+      message: >-
+        Those who fight with their hands have reported some sort of strange
+        energy amplifying some of their hits.
+  id: 2627
+  time: '2026-08-18T08:33:19.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4496
+- author: kasature90
+  changes:
+    - type: Fix
+      message: Fixed Feroxi being able to take nanite repair drones trait.
+  id: 2628
+  time: '2026-08-18T13:35:30.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4515
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: Vermin were bestowed shoulder-fire protection.
+  id: 2629
+  time: '2026-08-18T15:41:06.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4497
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: >-
+        Nerfed M92-x, ICWS, Lee Enfield, civ Vulcan, DB shotgun and buffed the
+        Python. Made CV-53 better against heat.
+    - type: Tweak
+      message: >-
+        Doubles smilodon battery box capacity, Jugsuit has slightly less stamres
+        and pulse weapons deal slightly less damage.
+    - type: Tweak
+      message: 400thz does a smidge more damage.
+    - type: Tweak
+      message: >-
+        Hristov has a laser pointer. Hristov and Shenzhen laser pointers switch
+        color when detecting a target.
+    - type: Tweak
+      message: Plating no longer cancels out other footstep modifiers.
+  id: 2630
+  time: '2026-08-18T20:53:47.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4510
+- author: lordsej
+  changes:
+    - type: Add
+      message: Added all the mothroaches
+    - type: Remove
+      message: Removed animal legs
+  id: 2631
+  time: '2026-08-18T21:08:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4290
+- author: kasature90
+  changes:
+    - type: Add
+      message: Added a handheld industrial mining laser to salvage vendors for 20k.
+  id: 2632
+  time: '2026-08-18T21:12:53.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4481
+- author: kasature90
+  changes:
+    - type: Add
+      message: (hopefully) All guns have basic secondary melee attacks now.
+  id: 2633
+  time: '2026-08-19T07:20:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4511
+- author: thoughtlessuser
+  changes:
+    - type: Tweak
+      message: >-
+        The tech tree is different now. Your muscle memory is now mildly skewed.
+        You are all welcome.
+  id: 2634
+  time: '2026-08-20T09:57:03.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4410
+- author: lordsej
+  changes:
+    - type: Add
+      message: bullets to come out of the Riversong rifle
+  id: 2635
+  time: '2026-08-20T21:51:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4526
+- author: SuperGDPWYL
+  changes:
+    - type: Tweak
+      message: >-
+        Firelocks and TSF holographic forcefields are now more susceptible to
+        structural damage. The most notable difference is that they can now be
+        destroyed by the Hristov in one shot.
+  id: 2636
+  time: '2026-08-21T01:09:51.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4529
+- author: Kiterny
+  changes:
+    - type: Add
+      message: Added bodycams to TSF/PDV uplinks and neck loadouts.
+  id: 2637
+  time: '2026-08-21T01:30:27.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4474
+- author: Onezero0
+  changes:
+    - type: Add
+      message: >-
+        Factions now have affiliated civ roles. They spawn in improved civilian
+        areas of their bases.
+    - type: Tweak
+      message: >-
+        Spacers are now known as Vagrant Spacers and are timelocked. Feel free
+        to steal their loot.
+    - type: Tweak
+      message: Everyone should have merc access now.
+    - type: Tweak
+      message: Factions start with some materials.
+    - type: Add
+      message: Factions have datafarms again. 35 points.
+  id: 2638
+  time: '2026-08-21T01:30:42.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4498
+- author: Onezero0
+  changes:
+    - type: Remove
+      message: Removed RIP and HP ammo because they're boring and difficult to balance.
+    - type: Tweak
+      message: AP ammo deals a bit less damage but now has universal 80% penetration.
+  id: 2639
+  time: '2026-08-21T01:34:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4523
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: Partial smuggling crate resprite
+  id: 2640
+  time: '2026-08-21T01:35:08.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4525
+- author: Minerva
+  changes:
+    - type: Add
+      message: >-
+        Tape recorders have been ported from Frontier for recording speech. They
+        can be printed in Autolathes or selected in loadout. They can also be
+        signal-controlled by using four signal ports corresponding to their
+        buttons.
+  id: 2641
+  time: '2026-08-21T01:42:34.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4170
+- author: Onezero0
+  changes:
+    - type: Add
+      message: >-
+        Added 6.8x52mm Plasma, in cartridge form and rechargable battery.
+        Expensive but basically incendiary+. Great against chimera. 
+    - type: Add
+      message: >-
+        Added 14.5x114 (hristov) EMPHE ammo, for advanced EMP application and
+        area denial.
+    - type: Tweak
+      message: >-
+        Buffed smilodon accuracy gain rate, slight damage buff but increased
+        slowdown on wield.
+  id: 2642
+  time: '2026-08-21T01:49:39.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4522
+- author: kasature90
+  changes:
+    - type: Add
+      message: >-
+        Ported status/emotes/config panel for separated HUD from
+        Goob/BF14/Cata14/wherever. Too much port chaining for me to keep track.
+  id: 2643
+  time: '2026-08-21T02:02:09.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4500
+- author: SuperGDPWYL
+  changes:
+    - type: Fix
+      message: TSF Contractors and PDV Freemen can now use civilian shipyard consoles.
+  id: 2644
+  time: '2026-08-21T04:55:33.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4532
+- author: SuperGDPWYL
+  changes:
+    - type: Remove
+      message: Special guns have been removed from civilian loadouts.
+  id: 2645
+  time: '2026-08-21T12:49:15.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4531
+- author: tonotom1
+  changes:
+    - type: Add
+      message: >-
+        New trait, Helmsmanship: Increases your turn rate and acceleration by
+        10% for ships you pilot
+  id: 2646
+  time: '2026-08-21T12:50:51.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4534
+- author: Helicaste
+  changes:
+    - type: Add
+      message: >-
+        Added Dynasty Stamped Gold and Federation Nanite Canisters as high-value
+        event items for use in mapping. Not currently implemented anywhere.
+  id: 2647
+  time: '2026-08-21T18:17:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4493
+- author: SuperGDPWYL
+  changes:
+    - type: Remove
+      message: >-
+        Mercenaries have been removed. Play as a Vagrant if you want to be a
+        lone wolf fending for yourself.
+  id: 2648
+  time: '2026-08-21T18:36:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4535
+- author: SuperGDPWYL
+  changes:
+    - type: Remove
+      message: >-
+        The vast majority of civilian/neutral military ships are no longer
+        obtainable.
+  id: 2649
+  time: '2026-08-21T20:43:01.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4537
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Replaced broken deconstruction method for soil with a stopgap method:
+        Destroy soil to return a flatpack.
+    - type: Tweak
+      message: >-
+        Spade now counts as a shovel for the purposes of unpacking a soil
+        flatpack
+    - type: Fix
+      message: Soil flatpack tooltip now correctly asks for a shovel
+  id: 2650
+  time: '2026-08-21T20:51:37.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4533
+- author: Onezero0
+  changes:
+    - type: Fix
+      message: Fixed sevastopol data farms being really weak.
+    - type: Tweak
+      message: Hyperwar faction bases have better point generators.
+  id: 2651
+  time: '2026-08-22T01:19:23.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4542
+- author: lordsej
+  changes:
+    - type: Fix
+      message: Sandevistan Recharge Fixed
+  id: 2652
+  time: '2026-08-23T12:51:20.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4551
+- author: kasature90
+  changes:
+    - type: Add
+      message: >-
+        Zvezda is now a spawn for vagrants. Only vagrants. No factions allowed
+        here pal. Also updated the station a bit.
+  id: 2653
+  time: '2026-08-23T12:52:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4546
+- author: AthrunZala33092
+  changes:
+    - type: Tweak
+      message: Captain now gets access to TSF Funds.
+    - type: Fix
+      message: Armory access added back to Colonel.
+  id: 2654
+  time: '2026-08-23T13:04:34.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4553
+- author: lordsej
+  changes:
+    - type: Tweak
+      message: More EVA helmets are compatible with Vim Construction
+  id: 2655
+  time: '2026-08-23T13:05:00.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4550
+- author: SuperGDPWYL
+  changes:
+    - type: Add
+      message: >-
+        You can now, for the most part, equip your old Mercenary drip as a
+        Vagrant!
+  id: 2656
+  time: '2026-08-23T13:09:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4540
+- author: lordsej
+  changes:
+    - type: Tweak
+      message: mantis blades cause flammable damage on first five strikes
+  id: 2657
+  time: '2026-08-23T13:10:29.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4528
+- author: kasature90
+  changes:
+    - type: Add
+      message: >-
+        Added persistent safety deposit boxes. Consoles are mapped at the
+        Camelot and CC shipyards.
+  id: 2658
+  time: '2026-08-23T13:31:00.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4424
+- author: szyefan
+  changes:
+    - type: Remove
+      message: hotplate
+    - type: Tweak
+      message: replaces hotplates with thermobaths
+  id: 2659
+  time: '2026-08-23T15:10:11.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4554
+- author: Onezero0
+  changes:
+    - type: Add
+      message: >-
+        Added the "Stellar Blessing" colonization frigate, a new civ spawn for
+        TSF contractors.
+    - type: Remove
+      message: >-
+        Removed TSF civilians spawning on the Halcyon. it still has good civ
+        amenities though.
+  id: 2660
+  time: '2026-08-23T19:32:57.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4556
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: Zvezda is now less of a deathtrap. Its still kind of a deathtrap though.
+  id: 2661
+  time: '2026-08-23T23:41:50.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4557
+- author: kasature90
+  changes:
+    - type: Add
+      message: Safety deposit boxes can be bought with savings money too now.
+    - type: Fix
+      message: Fixed safety deposit boxes being able to store LPCs.
+  id: 2662
+  time: '2026-08-24T00:27:09.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4560
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: Caelestinus station received much deserved love and care
+    - type: Tweak
+      message: You can pawn your vessel off at Zeta node now
+    - type: Fix
+      message: >-
+        The world now once again has biome markers. Biome information was
+        touched up to match recent topological reworks.
+  id: 2663
+  time: '2026-08-24T09:17:08.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4480
+- author: pizzay30tyd
+  changes:
+    - type: Add
+      message: Added Show IFF and Show Detailed IFF Buttons to Mass Scanners/Radars
+  id: 2664
+  time: '2026-08-24T09:17:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4562
+- author: kasature90
+  changes:
+    - type: Fix
+      message: Fixed military assemblers not linking to silo.
+  id: 2665
+  time: '2026-08-24T09:48:45.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4563
+- author: Onezero0
+  changes:
+    - type: Add
+      message: TSF/PDV civilians now get faction comms.
+    - type: Tweak
+      message: >-
+        TSF command comms have been rebranded as "TSF Military" and should be
+        accessible to all military roles.
+    - type: Add
+      message: There is now a beginner guide guidebook entry.
+  id: 2666
+  time: '2026-08-24T18:01:04.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4565

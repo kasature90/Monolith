@@ -52,6 +52,8 @@
   - ShipVoucherPdvT0Recipe
   - ShipVoucherPdvT1Recipe
   - ShipVoucherPdvT2Recipe
+  - ShipVoucherKortikT3Recipe
+  - ShipVoucherEuropaT3Recipe
 
 - type: latheRecipePack
   id: MonoRogueMiscDynamic

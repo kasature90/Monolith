@@ -1,15 +1,29 @@
 - type: entity
   id: BaseHardpoint
-  parent: BaseStructure
   name: Hardpoint
   abstract: true
+  description: A point for ship weapons to anchor into a ship's various systems such as pneumatic ammo loaders or fire control systems.
+  placement:
+    mode: SnapgridCenter
   components:
   - type: Sprite
     sprite: _Crescent/Structures/hardpoints.rsi
     state: medium
-    drawDepth: HighFloorObjects
+    drawdepth: HighFloorObjects
+  - type: ExaminableDamage
+    messages: WindowMessages
+  - type: Physics
+    bodyType: Static
+  - type: GravityAffected
+  - type: InteractionOutline
+  - type: Clickable
   - type: Transform
     noRot: false
+    anchored: true
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: RequiresGrid # Mono
   - type: Destructible
     thresholds:
     - trigger:
@@ -23,6 +37,8 @@
           collection: MetalGlassBreak
   - type: Repairable
     doAfterDelay: 8
+    qualities:
+    - Applicating
   - type: Appearance
   - type: Hardpoint
     class: Ballistic
@@ -43,8 +59,10 @@
   - type: ShipRepairable
     repairTime: 15
     repairCost: 50 # Main cost is in the guns.
-  placement:
-    mode: SnapgridCenter
+  - type: Pullable
+  - type: Tag
+    tags:
+    - Structure
 
 - type: entity
   id: HardpointDebugSuperlight
@@ -228,7 +246,7 @@
 - type: entity
   id: HardpointEnergySuperlight
   parent: BaseHardpoint
-  name: superlight ballistic hardpoint
+  name: superlight energy hardpoint
   components:
   - type: Hardpoint
     class: Energy

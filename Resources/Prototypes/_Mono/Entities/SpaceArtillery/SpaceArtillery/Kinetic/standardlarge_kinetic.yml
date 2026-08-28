@@ -479,6 +479,40 @@
     proto: R300BulletHE
     fireCost: 1500
 
+- type: entity
+  id: WeaponTurretR300
+  parent:
+  - WeaponTurretR300Base
+  - BallisticArtilleryUnanchorableCartridge
+  suffix: Capital, T4
+  components:
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - R300Shell
+    capacity: 1
+    proto: R300ShellHE
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+- type: entity
+  id: WeaponTurretR300Infinite
+  parent:
+  - WeaponTurretR300Base
+  - BallisticArtilleryUnanchorable
+  suffix: Station, Recharging Ammo
+  components:
+  - type: Battery
+    maxCharge: 40000
+    startingCharge: 40000
+  - type: ExaminableBattery
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 350
+  - type: ProjectileBatteryAmmoProvider
+    proto: R300BulletHE
+    fireCost: 1500
+
 # Longbow
 
 - type: entity

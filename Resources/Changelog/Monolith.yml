@@ -14775,7 +14775,7 @@ Entries:
     - type: Add
       message: >-
         The DIS Pluto MK. II has pierced it's way on the hull market. A
-        replacement of the honorable Pluto.
+        replacement of the honorable Pluto. 
     - type: Remove
       message: >-
         DIS Pluto hulls are no longer available on the hull market. We will miss
@@ -14885,7 +14885,7 @@ Entries:
     - type: Tweak
       message: >-
         Spasaka sabotage kit has gotten equipment changes to help with boarding
-        as well as receiving the RX-01 suit.
+        as well as receiving the RX-01 suit. 
   id: 1651
   time: '2025-12-13T08:10:05.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2782
@@ -15226,7 +15226,7 @@ Entries:
     - type: Tweak
       message: >-
         Bluespace crates occur more frequently. By extension there will be fewer
-        solar flares.
+        solar flares. 
     - type: Tweak
       message: >-
         Increased the number of smuggling hints sent out to ships. Happy
@@ -15789,7 +15789,7 @@ Entries:
     - type: Add
       message: >-
         A new challanger! BT-Y Hazel enters the PDV Roster as a small-strafer in
-        place of the Vega featuring a 3 barreled 220m Battery!
+        place of the Vega featuring a 3 barreled 220m Battery! 
     - type: Remove
       message: PDV Vega is now gone, o7.
   id: 1752
@@ -15815,7 +15815,7 @@ Entries:
         The Europa is now a beefy capital ship with medical and cloning
         capabilities. She is now restricted to two vessels active at a time, as
         well as costing 240k. These changes come with the benefit of a heavy
-        upgrade. Glory to Phaethon.
+        upgrade. Glory to Phaethon. 
   id: 1754
   time: '2026-01-05T16:53:42.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2929
@@ -16677,7 +16677,7 @@ Entries:
     - type: Tweak
       message: >-
         Advanced chemicals now have 0.15u metabolism rate. Pyrazine healing was
-        buffed to 2.
+        buffed to 2. 
     - type: Tweak
       message: Overseer's heavy maul sprite received changes.
   id: 1847
@@ -16904,7 +16904,7 @@ Entries:
     - type: Tweak
       message: >-
         Horizon Energy has begun sale of modernized versions of the Windreign to
-        the Colossus Sector.
+        the Colossus Sector. 
   id: 1871
   time: '2026-02-01T19:28:28.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3141
@@ -17076,7 +17076,7 @@ Entries:
       message: >-
         the local syndicate outpost has finally invested in some automated
         defenses. woe be the raider who tries to illegally park their ship right
-        in front of the outpost.
+        in front of the outpost. 
   id: 1887
   time: '2026-02-11T01:31:25.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3044
@@ -17408,7 +17408,7 @@ Entries:
     - type: Tweak
       message: >-
         Mech Fuel Cell now costs Fissile Uranium (1) and Diamond (1) among other
-        cost changes, but auto-regens to full within 4 minutes.
+        cost changes, but auto-regens to full within 4 minutes. 
     - type: Tweak
       message: >-
         Balance pass on Armored Frame (S2/S4 mech) weapons - RAC-6 spreads
@@ -18895,7 +18895,7 @@ Entries:
     - type: Tweak
       message: >-
         The DIS Femur has seen a light rework, see PR for more details. Report
-        feedback & issues to me on discord (@unicornonlsd)
+        feedback & issues to me on discord (@unicornonlsd) 
   id: 2085
   time: '2026-03-26T05:55:13.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3560
@@ -19240,7 +19240,7 @@ Entries:
     - type: Add
       message: >-
         ASM-220 "Trident" 500mm torpedo rack and GPOB-L Light Munitions Bay are
-        now anchorable.
+        now anchorable. 
     - type: Add
       message: ASM-220 HE and ECM torpedos are now significantly faster.
   id: 2122
@@ -19413,7 +19413,7 @@ Entries:
     - type: Tweak
       message: >-
         Tweaks and standardizes shipgun HPs. Guns of the same class and usage
-        have similar HP totals.
+        have similar HP totals. 
     - type: Tweak
       message: >-
         Overall decrease shipgun HP to be more reasonable but still somewhat
@@ -20011,7 +20011,7 @@ Entries:
     - type: Tweak
       message: >-
         Companies that are known pirates/antagonistic (Redsail Corsairs as an
-        example) can be Killed on Sight. Review rule 1 for changes.
+        example) can be Killed on Sight. Review rule 1 for changes. 
   id: 2209
   time: '2026-04-17T00:41:48.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3809
@@ -20233,7 +20233,7 @@ Entries:
     - type: Tweak
       message: >-
         PDV Bank increased to 423k per hour naturally, to compete with the TSF
-        bank.
+        bank. 
   id: 2230
   time: '2026-04-21T02:20:59.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3851
@@ -21538,7 +21538,7 @@ Entries:
     - type: Remove
       message: >-
         USSP Merc content removed including loadout changes, ships & language
-        trait (Translators still available).
+        trait (Translators still available). 
     - type: Tweak
       message: USSP are now a Minor Faction, see PR for full changes.
   id: 2375
@@ -21728,7 +21728,7 @@ Entries:
     - type: Tweak
       message: >-
         The osmium based parts in the Grizzly have been replaced with lighter
-        plastic parts. You don't need to wait to draw the gun.
+        plastic parts. You don't need to wait to draw the gun. 
   id: 2395
   time: '2026-06-23T22:03:51.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4127
@@ -22934,7 +22934,7 @@ Entries:
     - type: Fix
       message: >-
         Colonel double checked their closets and remember to actually bring
-        their gun
+        their gun 
   id: 2531
   time: '2026-07-23T22:01:45.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4346
@@ -24260,3 +24260,113 @@ Entries:
   id: 2666
   time: '2026-08-24T18:01:04.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4565
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: Vagrants have a tweaked icon.
+    - type: Fix
+      message: >-
+        PDV/TSF civilians have merc loadout options again (no special gun still
+        for now though)
+  id: 2667
+  time: '2026-08-25T13:27:05.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4570
+- author: eris-webserv
+  changes:
+    - type: Add
+      message: >-
+        MMC's replacement heart implant has been weakened for commercial use due
+        to repeated incidents of abuse by factions.
+  id: 2668
+  time: '2026-08-25T22:14:51.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4579
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: POI walls are now twice as durable.
+    - type: Tweak
+      message: POI shields are now twice as durable and recharge faster.
+  id: 2669
+  time: '2026-08-26T19:43:57.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4574
+- author: Onezero0
+  changes:
+    - type: Fix
+      message: MK-29 sentries no longer spawn with ammo, preventing ammo dupe.
+    - type: Fix
+      message: Fixed being unable to make medsec huds. They take a microprocessor now.
+    - type: Fix
+      message: MMC has access to their sandevistans now.
+    - type: Fix
+      message: EMAG armor plates can now be completed in precision assemblers.
+    - type: Fix
+      message: >-
+        You can now make superconductant in thermobaths. Thermobath max
+        temperature is now much higher (1200 degrees)
+    - type: Fix
+      message: >-
+        You can now make reagent-requiring recipes (like plasma ammo) in
+        milfabs.
+    - type: Tweak
+      message: >-
+        You can no longer produce industry materials due to them not having any
+        use yet.
+  id: 2670
+  time: '2026-08-26T21:25:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4578
+- author: AthrunZala33092
+  changes:
+    - type: Add
+      message: Two additional neck slots
+  id: 2671
+  time: '2026-08-27T23:34:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4541
+- author: eris-webserv
+  changes:
+    - type: Add
+      message: >-
+        A revision of most machine material storage to save on costs has reduced
+        the lead lining to prevent radiation leaks.
+  id: 2672
+  time: '2026-08-27T23:48:39.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4584
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Mapping change: You can now put start-on volumetrics and pressure pumps
+        in secondary and tertiary pipe layers.
+    - type: Tweak
+      message: Caelestinus minor atmos and lighting touchups
+  id: 2673
+  time: '2026-08-28T09:26:22.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4566
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: IRE canisters now have a smaller, radioactive explosion.
+    - type: Tweak
+      message: >-
+        Most grenades now start their timer upon being damaged rather than
+        instantly exploding.
+  id: 2674
+  time: '2026-08-28T09:28:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4569
+- author: Ghost581X
+  changes:
+    - type: Add
+      message: Viper Group has a new hardsuit capable of projecting a personal shield.
+  id: 2675
+  time: '2026-08-28T09:30:06.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4587
+- author: kasature90
+  changes:
+    - type: Tweak
+      message: >-
+        Expanded the safety deposit box blacklist for entities. No more 6ku of
+        persistent letoferol guys. It's over.
+    - type: Fix
+      message: Fixed safety deposit box withdrawing being able to duplicate boxes.
+  id: 2676
+  time: '2026-08-28T09:36:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4589

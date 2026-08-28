@@ -8,6 +8,7 @@
   - ClothingOuterHardsuitViperGroupStandard
   - ClothingOuterHardsuitViperGroupMedic
   - ClothingOuterHardsuitViperGroupJuggernaut
+  - ClothingOuterHardsuitViperGroupShield
 
 - type: latheRecipePack
   id: MonoViperGroupStatic

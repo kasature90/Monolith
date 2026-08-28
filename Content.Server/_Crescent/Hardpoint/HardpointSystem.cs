@@ -109,6 +109,8 @@ public class HardpointSystem : SharedHardpointSystem
                 continue;
             }
             HashSet<Entity<HardpointComponent>> lookupList = new();
+            if (!TryComp<FireControlGridComponent>(grid, out var gridFireControlComp))
+                return;
             _fcsSystem.RefreshControllables(grid);
         }
         QueuedGrids.Clear();

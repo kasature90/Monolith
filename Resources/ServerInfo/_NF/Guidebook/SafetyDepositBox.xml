@@ -84,16 +84,17 @@ The safety deposit system preserves:
   - [bold]Box nicknames[/bold] - Custom labels on the boxes themselves
 
 The following items are explicitly blacklisted (not an extensive list!):
-  - ID Cards
-  - LPCs
-  - Uplinks
-  - Currency (such as FMC/DC or just normal cash)
-  - Encryption Keys
-  - Implanters
-  - Anything with storage
-  - Overwatch Consoles
-  - Ghostrole spawners (such as reinforcement radios)
-  - Anything with secret storage (such as plushies)
-  - Reagent storages (such as beakers); note that seeds are excluded!
-  - Iridite & Monolithic Crystals <!--NOTE - I don't mind if someone adds a way to store Iridite, perhaps in a compressed form w/ much lower stack size.-->
+  - [bold]ID Cards[/bold]
+  - [bold]LPCs[/bold]
+  - [bold]Uplinks[/bold]
+  - [bold]Currency[/bold]
+  - [bold]Encryption Keys[/bold]
+  - [bold]Implanters[/bold]
+  - [bold]Anything with storage[/bold]
+  - [bold]Overwatch Consoles[/bold]
+  - [bold]Ghostrole spawners (such as reinforcement radios)[/bold]
+  - [bold]Anything with secret storage (such as plushies)[/bold]
+  - [bold]Reagent storages (such as beakers)[/bold]
+  - [bold]Iridite[/bold] <!--NOTE - I don't mind if someone adds a way to store Iridite, perhaps in a compressed form w/ much lower stack size?-->
+  - [bold]Monolithic Crystals[/bold]
 </Document>

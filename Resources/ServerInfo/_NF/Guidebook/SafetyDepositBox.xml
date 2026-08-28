@@ -83,7 +83,7 @@ The safety deposit system preserves:
   - [bold]Stack counts[/bold] - The exact number of items in stacks
   - [bold]Box nicknames[/bold] - Custom labels on the boxes themselves
 
-The following items are explicitly blacklisted (not an extensive list!):
+[italic][color=gold]The following items are explicitly blacklisted (not an extensive list!):[/color][/italic]
   - [bold]ID Cards[/bold]
   - [bold]LPCs[/bold]
   - [bold]Uplinks[/bold]

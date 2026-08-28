@@ -96,11 +96,13 @@ public sealed partial class MapMigrationSystem_SS220 : EntitySystem
                 Array.IndexOf(proto.Parents, "BaseClockworkWindoor") > -1 ||
                 Array.IndexOf(proto.Parents, "WindoorClockwork") > -1 ||
                 Array.IndexOf(proto.Parents, "BasePlasmaWindoor") > -1 ||
-                Array.IndexOf(proto.Parents, "PlasmaWindoor") > -1 ||
+                Array.IndexOf(proto.Parents, "WindoorPlasma") > -1 ||
                 Array.IndexOf(proto.Parents, "BaseSecurePlasmaWindoor") > -1 ||
-                Array.IndexOf(proto.Parents, "SecurePlasmaWindoor") > -1 ||
+                Array.IndexOf(proto.Parents, "WindoorSecurePlasma") > -1 ||
                 Array.IndexOf(proto.Parents, "BaseSecureUraniumWindoor") > -1 ||
-                Array.IndexOf(proto.Parents, "BaseUraniumWindoor") > -1)
+                Array.IndexOf(proto.Parents, "WindoorSecureUranium") > -1 ||
+                Array.IndexOf(proto.Parents, "BaseUraniumWindoor") > -1 ||
+                Array.IndexOf(proto.Parents, "WindoorUranium") > -1)
             {
                 return;
             }

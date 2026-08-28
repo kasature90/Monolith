@@ -1,31 +1,30 @@
 - type: vessel
-  id: Tethys
+  id: Ontos
   parent: BaseVesselIFFDisabled
-  name: PDV Tethys
-  description: A stealthy survelliance and early-warning ship for monitoring. Stealth thrusters aren't very good for fighting though, so be careful.
-  price: 102700
+  name: PDV Ontos
+  description: Carries a large howitzer for fire-support and heavy anti-ship duties with 2 scattercannons for escort duty, but struggles against anything moving faster than a snail.
+  price: 49500
   category: Medium
   group: BlackMarket
   access: Pirate
-  shuttlePath: /SharedMaps/_Mono/Shuttles/PDV/tethys.yml
+  shuttlePath: /SharedMaps/_Mono/Shuttles/PDV/ontos.yml
   guidebookPage: Null
   class:
-  - Stealth
-  - EarlyWarning
+  - Escort
   engine:
   - Uranium
 
 - type: gameMap
-  id: Tethys
-  mapName: 'PDV Tethys'
-  mapPath: /SharedMaps/_Mono/Shuttles/PDV/tethys.yml
+  id: Ontos
+  mapName: 'PDV Ontos'
+  mapPath: /SharedMaps/_Mono/Shuttles/PDV/ontos.yml
   minPlayers: 0
   stations:
-    Tethys:
+    Ontos:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Tethys PDV{1}'
+          mapNameTemplate: 'Ontos PDV{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

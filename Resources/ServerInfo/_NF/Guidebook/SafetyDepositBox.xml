@@ -94,6 +94,6 @@ The following items are explicitly blacklisted (not an extensive list!):
   - Overwatch Consoles
   - Ghostrole spawners (such as reinforcement radios)
   - Anything with secret storage (such as plushies)
-  - Reagent storages (such as beakers)
+  - Reagent storages (such as beakers); note that seeds are excluded!
   - Iridite & Monolithic Crystals <!--NOTE - I don't mind if someone adds a way to store Iridite, perhaps in a compressed form w/ much lower stack size.-->
 </Document>

@@ -15,6 +15,9 @@
     layers:
     - state: 8k30
       map: ["enum.AmmoVisualLayers.Base"]
+    - state: plume
+      shader: unshaded
+      offset: 1, 0
     rotation: 90
   - type: Ammo
     muzzleFlash: null
@@ -123,6 +126,9 @@
     layers:
     - state: atlant
       map: ["enum.AmmoVisualLayers.Base"]
+    - state: plume
+      shader: unshaded
+      offset: 1, 0
     rotation: 90
   - type: Ammo
     muzzleFlash: null

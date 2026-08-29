@@ -57,7 +57,7 @@
   parent: BaseTorpedoRecipe
   result: SandboxHEMissile
   materials: # You will fucking feel it when you launch this and it misses.
-    Steel: 5000
+    Steel: 2000
     Plasteel: 3000
     Gold: 500
     Silver: 500

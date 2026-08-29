@@ -1,6 +1,6 @@
 - type: entity
   id: ShipMissileSandboxHE
-  name: SS-N-40 missile (HE-SACLOS)
+  name: SS-N-40 8K30 missile
   parent: ShipMissileBase
   categories: [ HideSpawnMenu ]
   components:
@@ -11,13 +11,15 @@
         Blunt: 200
         Heat: 100
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/mini_rocket.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/sandbox.rsi
     layers:
-    - state: mini-rocket
-    scale: 1, 2
+    - state: 8k30
+      map: ["enum.AmmoVisualLayers.Base"]
+    rotation: 90
   - type: Ammo
     muzzleFlash: null
   - type: RadarBlip
+    maxDistance: 4096
     radarColor: "#00ffdd"
     scale: 5
     shape: Triangle
@@ -41,7 +43,7 @@
     launchSpeed: 150
     maxSpeed: 400
     maxLifetime: 60
-    fallbackTime: 100
+    fallbackTime: 60
   # destructible components below
   - type: Destructible
     thresholds:
@@ -55,6 +57,8 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
+  - type: WarpPoint
+    follow: true
 
 - type: entity
   id: SandboxHEMissile
@@ -72,9 +76,9 @@
     deleteOnSpawn: true
     muzzleFlash: null
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/asm220.rsi # TEMP
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/sandbox.rsi
     layers:
-    - state: standard
+    - state: 8k30
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
@@ -115,18 +119,20 @@
         Blunt: 200
         Heat: 100
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/mini_rocket.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/sandbox.rsi
     layers:
-    - state: mini-rocket
-    scale: 1, 2
+    - state: atlant
+      map: ["enum.AmmoVisualLayers.Base"]
+    rotation: 90
   - type: Ammo
     muzzleFlash: null
   - type: RadarBlip
+    maxDistance: 4096
     radarColor: "#00ffdd"
     scale: 5
     shape: Triangle
   - type: TimedDespawn
-    lifetime: 60
+    lifetime: 120
   - type: PointLight
     radius: 5
     color: orange
@@ -137,6 +143,7 @@
     maxIntensity: 5000
     intensitySlope: 30
     totalIntensity: 500000
+    detonationAlert: "delta"
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetGuided
@@ -144,8 +151,8 @@
     acceleration: 60
     launchSpeed: 150
     maxSpeed: 300
-    maxLifetime: 60
-    fallbackTime: 100
+    maxLifetime: 120
+    fallbackTime: 120
   # destructible components below
   - type: Destructible
     thresholds:
@@ -159,6 +166,8 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
+  - type: WarpPoint
+    follow: true
 
 - type: entity
   id: SandboxNuclearMissile
@@ -176,9 +185,9 @@
     deleteOnSpawn: true
     muzzleFlash: null
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/asm220.rsi # TEMP
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/sandbox.rsi
     layers:
-    - state: standard
+    - state: atlant
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals

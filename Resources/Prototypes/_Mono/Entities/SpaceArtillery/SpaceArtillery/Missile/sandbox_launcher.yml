@@ -1,6 +1,6 @@
 - type: entity
   id: WeaponTurretSandbox
-  name: SS-N-40 'Sandbox' launcher
+  name: SS-N-40 "Sandbox" launcher
   parent:
   - BallisticArtilleryUnanchorableCartridge
   - BallisticArtilleryTier5HP
@@ -25,7 +25,7 @@
     recoil: 10
     shootThermalSignature: 32000000 # 8000m after firing
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/Gunshots/towfire.ogg
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/launcher.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
   - type: SpaceArtillery
@@ -38,7 +38,7 @@
       - SandboxCruiseMissiles
     capacity: 2
     soundInsert:
-      path: /Audio/Items/rped.ogg
+      path: /Audio/_Mono/Weapons/Guns/autoloader.ogg
   - type: Actions
   - type: RadarBlip
     radarColor: "#00ffdd"

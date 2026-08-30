@@ -42,6 +42,9 @@
   - type: StealTarget
     stealGroup:
     - MonolithCrystals
+  - type: Tag
+    tags:
+    - Unstashable
 
 - type: entity
   name: medium monolithic crystal
@@ -88,6 +91,9 @@
   - type: StealTarget
     stealGroup:
     - MonolithCrystals
+  - type: Tag
+    tags:
+    - Unstashable
 
 - type: entity
   name: large monolithic crystal
@@ -136,5 +142,8 @@
   - type: StealTarget
     stealGroup:
     - MonolithCrystals
+  - type: Tag
+    tags:
+    - Unstashable
 
 

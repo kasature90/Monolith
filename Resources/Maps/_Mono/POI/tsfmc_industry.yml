@@ -673,8 +673,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 10.5,-4.5
       parent: 1
-<<<<<<<< HEAD:Resources/Maps/_Mono/POI/tsfmc_industry.yml
-========
 - proto: CarpetBlack
   entities:
   - uid: 563
@@ -2372,7 +2370,6 @@ entities:
       parent: 1
     - type: AtmosPipeColor
       color: '#0055CCFF'
->>>>>>>> monomain/main:Resources/SharedMaps/_Mono/Shuttles/intermission.yml
   - uid: 809
     components:
     - type: Transform

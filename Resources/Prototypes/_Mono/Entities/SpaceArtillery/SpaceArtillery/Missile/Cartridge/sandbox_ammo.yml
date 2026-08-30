@@ -178,7 +178,7 @@
 - type: entity
   id: SandboxNuclearMissile
   name: SS-N-40 'Atlant' nuclear cruise missile
-  description: A high-velocity cruise missile equipped with multi-kiloton nuclear warhead, capable of disabling any ship in a single blow. Almost unstoppable, and looks identical to a normal 8K30 on radar. This is a weapon of mass destruction, the destroyer of worlds.
+  description: A high-velocity cruise missile equipped with multi-kiloton nuclear warhead, capable of disabling any ship in a single blow. Almost unstoppable, and looks identical to a normal 8K30 on radar. This is a weapon of mass destruction, the destroyer of worlds. Hopefully you don't need to use it.
   parent: BaseGrenade
   components:
   - type: Tag

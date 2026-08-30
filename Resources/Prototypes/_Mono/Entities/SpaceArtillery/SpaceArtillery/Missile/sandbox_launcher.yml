@@ -4,7 +4,7 @@
   parent:
   - BallisticArtilleryUnanchorableCartridge
   - BallisticArtilleryTier5HP
-  description: Strategic-level cruise missile launcher. Ignores LOS check for ship gunnery, and capable of firing SACLOS nuclear-capable missiles moving at high velocity for long-range. An unavoidable looming terror to the plans of anyone up against it, and a long-written genetic fear deep inside your core.
+  description: A strategic cruise missile launcher, able to fire extremely fast, long-ranged and nuclear-capable SARH munitions. Born from an almost genetic fear from long ago, this weapon system has long brought peace... until now.
   components:
   - type: StaticPrice
     price: 50000

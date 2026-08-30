@@ -1,30 +1,31 @@
 - type: vessel
-  id: Ontos
+  id: Bazalt
   parent: BaseVesselIFFDisabled
-  name: PDV Ontos
-  description: Carries a large howitzer for fire-support and heavy anti-ship duties with 2 scattercannons for escort duty, but struggles against anything moving faster than a snail.
-  price: 49500
+  name: PDV Bazalt
+  description: Light attack craft equipped with a 30mm chaingun and a TOVEK missile launcher. Not very durable at all, and doesn't have any basic ammenities like a FTL drive.
+  price: 28000
   category: Small
   group: BlackMarket
   access: Pirate
-  shuttlePath: /SharedMaps/_Mono/Shuttles/PDV/ontos.yml
+  shuttlePath: /SharedMaps/_Mono/Shuttles/PDV/bazalt.yml
   guidebookPage: Null
   class:
   - Escort
+  - Pursuit
   engine:
-  - Uranium
+  - Plasma
 
 - type: gameMap
-  id: Ontos
-  mapName: 'PDV Ontos'
-  mapPath: /SharedMaps/_Mono/Shuttles/PDV/ontos.yml
+  id: Bazalt
+  mapName: 'PDV Bazalt'
+  mapPath: /SharedMaps/_Mono/Shuttles/PDV/bazalt.yml
   minPlayers: 0
   stations:
-    Ontos:
+    Bazalt:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Ontos PDV{1}'
+          mapNameTemplate: 'Bazalt PDV{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

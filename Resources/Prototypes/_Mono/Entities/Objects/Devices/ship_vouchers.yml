@@ -154,33 +154,6 @@
   - type: StaticPrice
     vendPrice: 30000
 
-# TSF Fujian Fighters
-
-- type: entity
-  parent: BaseShipLPCRenewable
-  id: ShipVoucherZephyr
-  name: TSF Zephyr LPC
-  description: A small card that authorizes the procurement of a Zephyr aboard the Fujian.
-  components:
-  - type: Sprite
-    sprite: _Mono/Objects/Misc/lpcnew.rsi
-    layers:
-    - state: icon_fighter
-    - state: screen
-      color: "#05ffff"
-    - state: screen4
-      color: "#05ffff"
-      shader: unshaded
-  - type: ShipyardVoucher
-    destroyOnEmpty: true
-    consoleType: Custom
-    companyName: TSF
-    vessels:
-    - Zephyr
-    - ZephyrEC
-  - type: StaticPrice
-    vendPrice: 30000
-
 # PDV
 
 - type: entity
@@ -205,7 +178,8 @@
     consoleType: BlackMarket
     companyName: PDV
     vessels:
-    - Scorpion
+    - Bazalt
+    - Ontos
     - Tethys
 
 - type: entity
@@ -229,6 +203,7 @@
     companyName: PDV
     vessels:
     - Layak
+    - Scorpion
 
 - type: entity
   parent: ShipVoucherPdvT0
@@ -252,6 +227,7 @@
     vessels:
     - MotleyAnne
     - Neptune
+    - Osa
 
 - type: entity
   parent: BaseShipLPCRenewable

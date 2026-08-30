@@ -76,8 +76,6 @@
     consoleType: Security
     companyName: TSF
     vessels:
-    - Dagger
-    - Fracture
     - Shiv
     - Ocelot
 
@@ -101,8 +99,9 @@
     consoleType: Security
     companyName: TSF
     vessels:
-    - Banshee
     - Calypso
+    - Dagger
+    - Fracture
 
 - type: entity
   parent: ShipVoucherTsfT0
@@ -125,6 +124,7 @@
     companyName: TSF
     vessels:
     - Fujian
+    - Banshee
     - Mercury
     - Spekter
 

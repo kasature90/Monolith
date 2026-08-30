@@ -59,7 +59,7 @@
 - type: technology
   id: TsfTierTwoVouchers
   name: research-technology-tsfmc-tier-two-vouchers
-  entityIcon: ShipVoucherAndromeda
+  entityIcon: WeaponRifleAK410 # PLACEHOLDER 26AUG15
   discipline: TsfmcShipyard
   tier: 2
   cost: 60000
@@ -73,16 +73,12 @@
 - type: technology
   id: TsfTierThreeVouchers
   name: research-technology-tsfmc-tier-three-vouchers
-  entityIcon: ShipVoucherFlyssa
+  entityIcon: WeaponRifleAK410 # PLACEHOLDER 26AUG15
   discipline: TsfmcShipyard
   tier: 3
   cost: 80000
   recipeUnlocks:
-  - FlyssaVoucherTSF
-  - AltairVoucherTSF
-  - ZephyrVoucherTSF
-  - FujianVoucherTSF
-  - PolarisVoucherTSF
+  - WeaponRifleAK410USSP # PLACEHOLDER 26AUG15
   technologyPrerequisites:
   - TsfTierTwoVouchers
   - UniversalMaterialResearchT3

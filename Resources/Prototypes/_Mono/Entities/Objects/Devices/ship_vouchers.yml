@@ -128,6 +128,30 @@
     - Mercury
     - Spekter
 
+- type: entity
+  parent: BaseShipLPCRenewable
+  id: ShipVoucherLuda
+  name: TSFN Luda-class LPC [T4]
+  description: A small card that authorizes the procurement of a TSFN Luda-class strategic missile destroyer.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/lpcnew.rsi
+    layers:
+    - state: icon_capital
+    - state: screen
+      color: "#05ffff"
+    - state: screen4
+      color: "#05ffff"
+      shader: unshaded
+  - type: Item
+    heldPrefix: tsf
+  - type: ShipyardVoucher
+    consoleType: Security
+    companyName: TSF
+    cooldown: 14400 # two hour
+    vessels:
+    - Luda
+
 # TSF Fujian Fighters
 
 - type: entity

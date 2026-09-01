@@ -24388,3 +24388,10 @@ Entries:
   id: 2678
   time: '2026-09-01T09:47:37.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4605
+- author: LassiH
+  changes:
+    - type: Add
+      message: vg lancehead a lpc only shuttle
+  id: 2679
+  time: '2026-09-01T23:39:38.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4603

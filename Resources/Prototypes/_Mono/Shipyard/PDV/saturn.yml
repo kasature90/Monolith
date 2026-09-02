@@ -9,7 +9,6 @@
   price: 750000
   category: Large
   purchasable: false # voucher only - T4
-  category: Large
   group: BlackMarket
   shuttlePath: /SharedMaps/_Mono/Shuttles/PDV/saturn.yml
   guidebookPage: Null

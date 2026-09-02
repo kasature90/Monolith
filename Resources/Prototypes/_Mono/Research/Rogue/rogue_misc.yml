@@ -29,7 +29,7 @@
 - type: technology
   id: PdvTierThreeVouchers
   name: research-technology-rogue-tier-three-vouchers
-  entityIcon: ShipVoucherSaturnRecipe
+  entityIcon: ShipVoucherSaturn
   discipline: RogueShipyard
   tier: 3
   cost: 80000

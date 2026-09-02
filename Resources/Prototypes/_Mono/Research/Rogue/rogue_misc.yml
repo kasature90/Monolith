@@ -29,12 +29,14 @@
 - type: technology
   id: PdvTierThreeVouchers
   name: research-technology-rogue-tier-three-vouchers
-  entityIcon: WeaponRifleAK410 # PLACEHOLDER 26AUG15
+  entityIcon: ShipVoucherSaturnRecipe
   discipline: RogueShipyard
   tier: 3
   cost: 80000
   recipeUnlocks:
-  - WeaponRifleAK410USSP # PLACEHOLDER 26AUG15
+  - ShipVoucherKortikT3Recipe
+  - ShipVoucherEuropaT3Recipe
+  - ShipVoucherSaturnRecipe
   technologyPrerequisites:
   - PdvTierTwoVouchers
   - UniversalMaterialResearchT3

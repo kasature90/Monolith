@@ -24392,7 +24392,7 @@ Entries:
   changes:
     - type: Add
       message: vg lancehead a lpc only shuttle
-  id: 2679
+  id: 2688
   time: '2026-09-01T23:39:38.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4603
 - author: Mrrpip
@@ -24401,13 +24401,100 @@ Entries:
       message: >-
         3 Tumour fighters have been moved from the Tumour to the standard
         shipyard.
-  id: 2680
+  id: 2689
   time: '2026-09-03T00:41:59.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4613
 - author: LassiH
   changes:
     - type: Add
       message: vg lancehead a lpc only shuttle
-  id: 2681
+  id: 2690
   time: '2026-09-03T00:42:39.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4608
+- author: eris-webserv
+  changes:
+    - type: Add
+      message: >-
+        A new device revision for the plant analyzer has been broadcasted to all
+        research servers.
+  id: 2678
+  time: '2026-08-31T20:00:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4606
+- author: eris-webserv
+  changes:
+    - type: Add
+      message: The sun now exists.
+  id: 2679
+  time: '2026-08-31T20:48:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4610
+- author: kasature90
+  changes:
+    - type: Remove
+      message: IRS shot dead. Taxes are gone.
+  id: 2680
+  time: '2026-08-31T21:39:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4611
+- author: eris-webserv
+  changes:
+    - type: Add
+      message: 'Plants now have a few more chemicals they can produce. '
+  id: 2681
+  time: '2026-09-02T00:50:00.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4614
+- author: Pcolik505
+  changes:
+    - type: Fix
+      message: Fixed inhand ship repair matter sprite
+  id: 2682
+  time: '2026-09-03T00:40:00.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4619
+- author: kasature90
+  changes:
+    - type: Add
+      message: >-
+        Added Turjan Alyahn's highfleet tracks to the jukebox, and 2 of them to
+        the lobby.
+    - type: Add
+      message: Added the Halo songs from the lobby to jukebox.
+  id: 2683
+  time: '2026-09-03T00:52:38.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4621
+- author: Helicaste
+  changes:
+    - type: Tweak
+      message: Energy-based shipguns now have an ammo counter in the Gunnery Console.
+  id: 2684
+  time: '2026-09-03T01:06:27.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3110
+- author: MantasDab360
+  changes:
+    - type: Fix
+      message: Savings are now included into summary.
+  id: 2685
+  time: '2026-09-03T01:12:14.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4067
+- author: kasature90
+  changes:
+    - type: Tweak
+      message: ER, Judge, Rahk and Marine timelocks lowered to 4 hours.
+    - type: Remove
+      message: Removed timelocks for Vagrants.
+  id: 2686
+  time: '2026-09-03T01:16:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4622
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Plate balance was overhauled to be more impactful. You can now buy
+        piercing plates in cargo. Lathe costs for printing plates have been
+        reduced overall. Iridite plate now costs iridite. You can now repair
+        plates with a nanite applicator.
+    - type: Tweak
+      message: >-
+        Hardsuits with shield generators are now prohibited from equipping
+        plates. You still have the 2x2 inventory to fill with other stuff
+        instead.
+  id: 2687
+  time: '2026-09-03T01:19:14.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4281

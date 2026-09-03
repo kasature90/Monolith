@@ -78,7 +78,7 @@ public class SharedHardpointSystem : EntitySystem
         }
 
         //else, if we UNanchored
-        if (component.anchoredTo == null) //this should literally never happen
+        if (component.anchoredTo == null || TerminatingOrDeleted(uid)) //this should literally never happen
         {
             return;
         }
@@ -94,9 +94,7 @@ public class SharedHardpointSystem : EntitySystem
 
     public void OnHardpointAnchor(EntityUid target, HardpointComponent comp, ref AnchorStateChangedEvent args)
     {
-        if (args.Anchored)
-            return;
-        if (comp.anchoring is null)
+        if (args.Anchored || comp.anchoring is null || TerminatingOrDeleted(target))
             return;
         _transformSystem.Unanchor(comp.anchoring.Value);
     }

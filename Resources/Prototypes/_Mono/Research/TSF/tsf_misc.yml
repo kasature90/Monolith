@@ -59,7 +59,7 @@
 - type: technology
   id: TsfTierTwoVouchers
   name: research-technology-tsfmc-tier-two-vouchers
-  entityIcon: WeaponRifleAK410 # PLACEHOLDER 26AUG15
+  entityIcon: ShipVoucherTsfT2
   discipline: TsfmcShipyard
   tier: 2
   cost: 60000
@@ -73,15 +73,16 @@
 - type: technology
   id: TsfTierThreeVouchers
   name: research-technology-tsfmc-tier-three-vouchers
-  entityIcon: WeaponRifleAK410 # PLACEHOLDER 26AUG15
+  entityIcon: ShipVoucherLuda
   discipline: TsfmcShipyard
   tier: 3
   cost: 80000
   recipeUnlocks:
-  - WeaponRifleAK410USSP # PLACEHOLDER 26AUG15
+  - ShipVoucherLudaRecipe
   technologyPrerequisites:
   - TsfTierTwoVouchers
   - UniversalMaterialResearchT3
+  - UniveralSandboxCruiseMissiles
   position: 2, -27
 
 - type: technology

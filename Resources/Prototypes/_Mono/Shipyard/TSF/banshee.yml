@@ -8,7 +8,7 @@
   hyperwarLimit: 6
   hyperwarTimelock: 1800
   price: 150000
-  purchasable: false # voucher only - T1
+  purchasable: false # voucher only - T2
   category: Medium
   group: Security
   access: Security

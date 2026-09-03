@@ -130,7 +130,7 @@ public class SharedHardpointSystem : EntitySystem
     /// <param name="args"></param>
     public void OnShipgunRemove(EntityUid uid, HardpointAnchorableOnlyComponent component, ComponentRemove args)
     {
-        if (component.anchoredTo is null)
+        if (component.anchoredTo is null || TerminatingOrDeleted(uid))
         {
             return;
         }

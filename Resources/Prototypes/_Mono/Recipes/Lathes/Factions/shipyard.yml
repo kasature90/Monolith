@@ -59,6 +59,24 @@
     Silver: 3000
     Gold: 3000
 
+- type: latheRecipe
+  parent: BaseVoucherRecipe
+  id: ShipVoucherLudaRecipe
+  result: ShipVoucherLuda
+  completetime: 240
+  materialDiscountScale: 0.2
+  materials:
+    Steel: 30000
+    Copper: 15000
+    Plasteel: 25000
+    Lithium: 15000
+    Glass: 5000
+    Plasma: 5000
+    Gold: 5000
+    Silver: 5000
+    Plastitanium: 3000
+    UraniumFissile: 1000
+
 # PDV
 
 - type: latheRecipe
@@ -140,6 +158,24 @@
     Gold: 5000
     Silver: 5000
     Plastitanium: 2000
+
+- type: latheRecipe
+  parent: BaseVoucherRecipe
+  id: ShipVoucherSaturnRecipe
+  result: ShipVoucherSaturn
+  completetime: 240
+  materialDiscountScale: 0.2
+  materials:
+    Steel: 30000
+    Copper: 15000
+    Plasteel: 25000
+    Lithium: 15000
+    Glass: 5000
+    Plasma: 5000
+    Gold: 5000
+    Silver: 5000
+    Plastitanium: 5000
+    UraniumFissile: 500
 
 #USSP
 

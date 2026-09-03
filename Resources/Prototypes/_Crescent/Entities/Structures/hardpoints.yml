@@ -14,6 +14,7 @@
     messages: WindowMessages
   - type: Physics
     bodyType: Static
+    canCollide: False
   - type: GravityAffected
   - type: InteractionOutline
   - type: Clickable

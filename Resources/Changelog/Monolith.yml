@@ -24395,3 +24395,12 @@ Entries:
   id: 2679
   time: '2026-09-01T23:39:38.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4603
+- author: Mrrpip
+  changes:
+    - type: Tweak
+      message: >-
+        3 Tumour fighters have been moved from the Tumour to the standard
+        shipyard.
+  id: 2680
+  time: '2026-09-03T00:41:59.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4613

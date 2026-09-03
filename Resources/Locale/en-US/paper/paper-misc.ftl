@@ -71,17 +71,11 @@ book-text-combat-bakery-kit = Thank you for choosing our combat bakery kit!
       Glass Shard x 1
       Cook Time: 5 seconds
 
-book-text-cargo-instructions = You have tried to activate the machine without any product.
+book-text-cargo-instructions =
 
-      To use the machine properly, insert one of the requested materials for a port's specific dispenser with your hands, and the reward will be deposited on top of the machine.
+      To use the cargo chute machines, insert one of the requested materials for a port's specific dispenser with your hands, and the reward will be deposited on top of the machine.
 
-      These cargo crates can be bought and/or sold at the following locations:
-      - TSFMC Flagship Halcyon - Sell Only
-      - Camelot Station - Buy and Sell
-      - Trade Mall - Buy and Sell
-      - Cargo Depots - Buy and Sell
-      - PDV Base - Sell Only
-      - PDV Jupiter - Sell Only
+      Manifests can be bought at the vendors for trade materials (located on CC, cargo depots, and Camelot).
 
       This paper will automatically disintegrate after 2 minutes.
 
@@ -101,12 +95,29 @@ book-text-cargo-outage = Dear User,
       This paper will automatically disintegrate after 2 minutes.
 
 
+book-text-cargo-zvezda-tradecrates = MANIFEST
+      AT THIS CHUTE (PER CRATE):
+      - SUPPLIES : $3000
+      - MED. SUPPLIES : $5000
+      - CHEM. SUPPLIES : $2000
+      - VOL. CHEM. SUPPLIES : $6000
+      - FIS. FUEL : $18000
+      - SCRAP : $3000
+      - COMPONENTS : $5000
+      - AMMO : $10000
+      - WEAPON COMPS : $6000
+      - FERTILIZER : $5000
+      - SHIP COMPS : $6000
+
+      This paper will automatically disintegrate after 2 minutes.
+
+
 book-text-cargo-depot-tradecrates = MANIFEST
       AT THIS CHUTE (PER CRATE):
       - SUPPLIES : $3000
       - MED. SUPPLIES : $5000
       - CHEM. SUPPLIES : $2000
-      - VOL. CHEM. SUPPLIES : $2000
+      - VOL. CHEM. SUPPLIES : $6000
       - FIS. FUEL : $24000
       - SCRAP : $3000
       - COMPONENTS : $8000

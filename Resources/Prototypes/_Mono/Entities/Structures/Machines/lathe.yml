@@ -635,6 +635,7 @@
     unlitRunningState: building
     staticPacks:
     - ArcFurnaceStatic
+    - MonoTradeCratesArcFurnace
 
 - type: entity
   id: PrecisionAssemblerEconomy
@@ -701,6 +702,8 @@
     staticPacks:
     - PrecisionAssemblerStatic
     - MonoTradeCratesPrecisionAssembler
+    dynamicPacks:
+    - MonoTradeCratesPrecisionAssemblerMMC
 
 - type: entity
   id: PrecisionAssemblerEconomyCompact
@@ -761,6 +764,9 @@
     unlitRunningState: unlit-building
     staticPacks:
     - PrecisionAssemblerStatic
+    - MonoTradeCratesPrecisionAssembler
+    dynamicPacks:
+    - MonoTradeCratesPrecisionAssemblerMMC
 
 - type: entity
   id: CentrifugeLathe

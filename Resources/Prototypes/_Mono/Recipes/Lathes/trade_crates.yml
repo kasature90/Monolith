@@ -117,6 +117,34 @@
     FloorTileItemGold: 1
     FloorTileItemSilver: 1
 
+# MMC
+- type: latheRecipe
+  id: TradeGoodLuxuriesAlt
+  result: TradeGoodLuxuries
+  categories:
+  - TradeCrates
+  - AltRecipes
+  completetime: 3
+  materialDiscountScale: 0.3
+  materials:
+    Steel: 200
+    Silver: 1000
+    Gold: 1000
+    Diamond: 20
+
+# Goes for 18000 at lowest, 24000 at highest.
+- type: latheRecipe
+  id: TradeGoodFissionFuel
+  result: TradeGoodFissionFuel
+  categories:
+  - TradeCrates
+  completetime: 3
+  materialDiscountScale: 0.2
+  materials:
+    Steel: 200
+    UraniumFissile: 20
+    Plasteel: 100
+
 # Goes for 2500 at lowest, 9000 at highest
 - type: latheRecipe
   id: TradeGoodMedicalSupplies

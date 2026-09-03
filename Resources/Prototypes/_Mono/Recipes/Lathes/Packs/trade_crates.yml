@@ -24,3 +24,9 @@
   - TradeGoodAmmo # felt tuff
   - TradeGoodMetals
   - TradeGoodScrap
+
+- type: latheRecipePack
+  id: MonoTradeCratesPrecisionAssemblerMMC
+  recipes:
+  - TradeGoodLuxuriesAlt
+  - TradeGoodFissionFuel

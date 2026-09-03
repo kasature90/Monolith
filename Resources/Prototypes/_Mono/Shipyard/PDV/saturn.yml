@@ -6,7 +6,7 @@
   limit: 1
   hyperwarLimit: 3
   hyperwarTimelock: 3600
-  price: 750000
+  price: 780000 # only 3k over appraisal btw jfc
   category: Large
   purchasable: false # voucher only - T4
   group: BlackMarket

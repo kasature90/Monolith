@@ -3456,41 +3456,9 @@ entities:
   entities:
   - uid: 380
     components:
-    - type: MetaData
-      desc: A completely normal looking autolathe. There are stripped bolts where it touches the floor and a sticky note reading "Doctor Feelgood."
-      name: LPC fabrication station
     - type: Transform
       pos: -2.5,8.5
       parent: 1
-    - type: MaterialStorage
-      materialWhiteList:
-      - Steel
-      - Plastic
-      - Glass
-      - Cloth
-      - Wood
-      - Gold
-      - Plasteel
-      - Plasma
-      - Uranium
-      - Silver
-    - type: ContainerContainer
-      containers:
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        blueprint: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - invalid
-    missingComponents:
-    - Anchorable
 - proto: Bed
   entities:
   - uid: 381

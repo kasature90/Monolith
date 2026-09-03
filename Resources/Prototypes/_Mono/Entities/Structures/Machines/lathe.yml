@@ -575,6 +575,7 @@
     unlitRunningState: building
     staticPacks:
     - ArcFurnaceStatic
+    - MonoTradeCratesArcFurnace
 
 - type: entity
   id: IndustrialFurnaceEconomyCompact
@@ -699,6 +700,7 @@
     unlitRunningState: unlit-building
     staticPacks:
     - PrecisionAssemblerStatic
+    - MonoTradeCratesPrecisionAssembler
 
 - type: entity
   id: PrecisionAssemblerEconomyCompact

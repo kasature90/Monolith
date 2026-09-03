@@ -4,6 +4,8 @@
 - type: latheRecipe
   id: TradeGoodScrap
   result: TradeGoodScrap
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:
@@ -13,6 +15,8 @@
 - type: latheRecipe
   id: TradeGoodChemicalSupplies
   result: TradeGoodChemicalSupplies
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:
@@ -26,6 +30,8 @@
 - type: latheRecipe
   id: TradeGoodChemicalsVolatile
   result: TradeGoodChemicalsVolatile
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:
@@ -40,6 +46,8 @@
 - type: latheRecipe
   id: TradeGoodComponents
   result: TradeGoodComponents
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:
@@ -54,6 +62,8 @@
 - type: latheRecipe
   id: TradeGoodEquipment
   result: TradeGoodEquipment
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:
@@ -67,6 +77,8 @@
 - type: latheRecipe
   id: TradeGoodFabric
   result: TradeGoodFabric
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:
@@ -78,6 +90,8 @@
 - type: latheRecipe
   id: TradeGoodFertilizer
   result: TradeGoodFertilizer
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:
@@ -90,6 +104,8 @@
 - type: latheRecipe
   id: TradeGoodLuxuries
   result: TradeGoodLuxuries
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:
@@ -105,6 +121,8 @@
 - type: latheRecipe
   id: TradeGoodMedicalSupplies
   result: TradeGoodMedicalSupplies
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:
@@ -118,6 +136,8 @@
 - type: latheRecipe
   id: TradeGoodShipComponents
   result: TradeGoodShipComponents
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:
@@ -131,6 +151,8 @@
 - type: latheRecipe
   id: TradeGoodSupplies
   result: TradeGoodSupplies
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:
@@ -148,6 +170,8 @@
 - type: latheRecipe
   id: TradeGoodWeaponParts
   result: TradeGoodWeaponParts
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:
@@ -160,6 +184,8 @@
 - type: latheRecipe
   id: TradeGoodAmmo
   result: TradeGoodAmmo
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:
@@ -173,6 +199,8 @@
 - type: latheRecipe
   id: TradeGoodMetals
   result: TradeGoodMetals
+  categories:
+  - TradeCrates
   completetime: 3
   materialDiscountScale: 0.2
   materials:

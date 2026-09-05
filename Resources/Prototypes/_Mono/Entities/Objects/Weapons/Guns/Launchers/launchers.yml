@@ -278,3 +278,20 @@
   - type: LaserPointer
     targetedColor: "#ff0037"
     defaultColor: "#03c2fc"
+  - type: WieldDelay
+    baseDelay: 0.5
+    modifiedDelay: 0.5
+    preventFiring: true
+  - type: MeleeRequiresWield
+  - type: MeleeWeapon
+    attackRate: 0.6
+    damage:
+      types:
+        Blunt: 24
+    angle: 0
+    wideAnimationRotation: 45
+    animation: WeaponArcThrust
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee
+    attackType: Light

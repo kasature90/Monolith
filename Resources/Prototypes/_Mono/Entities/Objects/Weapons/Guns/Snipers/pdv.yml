@@ -25,8 +25,8 @@
     capacity: 3
     proto: Cartridge145x114mm
   - type: SpeedModifiedOnWield
-    walkModifier: 0.6
-    sprintModifier: 0.6
+    walkModifier: 0.4
+    sprintModifier: 0.4
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 7

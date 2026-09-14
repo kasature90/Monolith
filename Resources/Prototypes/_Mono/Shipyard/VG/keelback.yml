@@ -33,7 +33,7 @@
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Keelback MIL{1}'
+          mapNameTemplate: 'Keelback VG{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

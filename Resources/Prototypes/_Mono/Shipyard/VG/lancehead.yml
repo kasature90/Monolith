@@ -33,7 +33,7 @@
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Lancehead MIL{1}'
+          mapNameTemplate: 'Lancehead VG{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

@@ -34,7 +34,7 @@
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Wolfsnake MIL{1}'
+          mapNameTemplate: 'Wolfsnake VG{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

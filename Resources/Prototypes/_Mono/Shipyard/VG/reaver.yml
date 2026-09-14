@@ -31,7 +31,7 @@
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Reaver MIL{1}'
+          mapNameTemplate: 'Reaver VG{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

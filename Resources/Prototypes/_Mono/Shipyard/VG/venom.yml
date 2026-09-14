@@ -30,7 +30,7 @@
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Venom MIL{1}'
+          mapNameTemplate: 'Venom VG{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

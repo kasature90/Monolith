@@ -104,11 +104,6 @@
   completetime: 30
   materialDiscountScale: 0.2
   materials:
-    Steel: 2000
-    Copper: 1500
-    Plasteel: 2500
-    Glass: 1500
-    Plasma: 2500
     PdvComposite: 500
 
 - type: latheRecipe
@@ -118,15 +113,7 @@
   completetime: 50
   materialDiscountScale: 0.2
   materials:
-    Steel: 10000
-    Copper: 10000
-    Plasteel: 5000
-    Lithium: 5000
-    Glass: 5000
-    Plasma: 5000
-    Gold: 5000
-    Silver: 5000
-    PdvComposite: 1000
+    PdvComposite: 2000
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
@@ -135,16 +122,7 @@
   completetime: 100
   materialDiscountScale: 0.2
   materials:
-    Steel: 5000
-    Copper: 5000
-    Plasteel: 5000
-    Lithium: 5000
-    Glass: 5000
-    Plasma: 5000
-    Gold: 5000
-    Silver: 5000
-    Plastitanium: 1000
-    PdvComposite: 1000
+    PdvComposite: 4000
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
@@ -153,16 +131,7 @@
   completetime: 100
   materialDiscountScale: 0.2
   materials:
-    Steel: 20000
-    Copper: 8000
-    Plasteel: 5000
-    Lithium: 8000
-    Glass: 5000
-    Plasma: 5000
-    Gold: 5000
-    Silver: 5000
-    Plastitanium: 3000
-    PdvComposite: 2000
+    PdvComposite: 8000
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
@@ -171,15 +140,7 @@
   completetime: 100
   materialDiscountScale: 0.2
   materials:
-    Steel: 15000
-    Copper: 15000
-    Plasteel: 12000
-    Lithium: 15000
-    Glass: 5000
-    Plasma: 5000
-    Gold: 5000
-    Silver: 5000
-    Plastitanium: 2000
+    PdvComposite: 10000
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
@@ -188,16 +149,7 @@
   completetime: 240
   materialDiscountScale: 0.2
   materials:
-    Steel: 30000
-    Copper: 15000
-    Plasteel: 25000
-    Lithium: 15000
-    Glass: 5000
-    Plasma: 5000
-    Gold: 5000
-    Silver: 5000
-    Plastitanium: 5000
-    PdvComposite: 6000
+    PdvComposite: 23000
 
 #USSP
 

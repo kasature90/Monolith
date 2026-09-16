@@ -24955,3 +24955,12 @@ Entries:
   id: 2725
   time: '2026-09-14T23:42:13.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4659
+- author: SuperGDPWYL
+  changes:
+    - type: Add
+      message: Added PDV vouchers to the uplink for rather steep prices.
+    - type: Tweak
+      message: The PDV can use civilian shipyards again.
+  id: 2726
+  time: '2026-09-16T22:05:57.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4676

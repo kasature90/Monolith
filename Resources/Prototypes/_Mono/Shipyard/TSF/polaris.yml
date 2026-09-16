@@ -28,7 +28,7 @@
   mapPath: /SharedMaps/_Mono/Shuttles/TSF/polaris.yml
   minPlayers: 0
   stations:
-    Calypso:
+    TSFNPolaris:
       stationProto: StandardFrontierSecurityVessel
       components:
       - type: StationNameSetup

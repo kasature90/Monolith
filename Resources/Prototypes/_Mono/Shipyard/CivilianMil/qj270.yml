@@ -12,6 +12,7 @@
   class:
   - Pursuit
   - Fighter
+  - Mercenary
   engine:
   - Uranium
 

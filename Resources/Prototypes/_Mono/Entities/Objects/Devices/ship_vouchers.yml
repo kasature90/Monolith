@@ -485,7 +485,7 @@
       shader: unshaded
   - type: ShipyardVoucher
     destroyOnEmpty: false
-    cooldown: 7200 # Two Hours.
+    cooldown: 3600 # One Hour.
     consoleType: Mieyo
     companyName: MMC
     vessels:

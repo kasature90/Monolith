@@ -10,7 +10,7 @@
   group: Security
   access: Security
   shuttlePath: /SharedMaps/_Mono/Shuttles/TSF/spekter.yml
-  guidebookPage: Null
+  guidebookPage: ShipyardNFROperation
   class:
   - Patrol
   - AntiShipMissileCarrier

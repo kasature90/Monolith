@@ -35,11 +35,8 @@
     - state: voucherservice
   - type: ShipyardVoucher
     consoleType: Shipyard
-#    vessels:
-#    - Jitterbug
-#    - McChicken
-#    - McChilly
-#    - Spessbite
+    vessels:
+    - Spessbite
 
 # Frontier vouchers
 - type: entity

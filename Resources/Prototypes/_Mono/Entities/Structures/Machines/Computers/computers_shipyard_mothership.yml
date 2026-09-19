@@ -55,6 +55,9 @@
     - Tethys
     - Layak
     - Scorpion
+    - Bazalt
+    - Gadfly
+    - Ontos
   - type: Sprite
     sprite: _NF/Structures/Machines/computers.rsi
     layers:

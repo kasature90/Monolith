@@ -24993,6 +24993,13 @@ Entries:
       message: >-
         The chimera ship roster has been completely overhauled into a new set of
         ships, mapped by Skye.
-  id: 2729
+  id: 2730
   time: '2026-09-19T18:51:23.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4732
+- author: Mrrpip
+  changes:
+    - type: Add
+      message: Adds more loadout options to Vagrant.
+  id: 2729
+  time: '2026-09-19T01:05:01.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4716

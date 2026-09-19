@@ -24987,3 +24987,12 @@ Entries:
   id: 2728
   time: '2026-09-17T00:54:43.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4714
+- author: SuperGDPWYL
+  changes:
+    - type: Add
+      message: >-
+        The chimera ship roster has been completely overhauled into a new set of
+        ships, mapped by Skye.
+  id: 2729
+  time: '2026-09-19T18:51:23.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4732

@@ -615,7 +615,7 @@
 - type: entity
   id: WeaponLaserTurretApollo
   parent:
-  - BallisticArtiller
+  - BallisticArtillery
   - BallisticArtilleryTier4HP # This shit is massive lol
   suffix: Large, T3
   name: L-20 Apollo Mining Laser Cannon

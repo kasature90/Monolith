@@ -25105,3 +25105,12 @@ Entries:
   id: 2737
   time: '2026-09-21T01:52:44.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4723
+- author: eris-webserv
+  changes:
+    - type: Add
+      message: >-
+        Horizon Energy has released a new revision to their popular Personal
+        Shield technology to address some known issues.
+  id: 2738
+  time: '2026-09-21T01:54:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4710

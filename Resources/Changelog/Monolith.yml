@@ -25188,3 +25188,12 @@ Entries:
   id: 2746
   time: '2026-09-21T19:40:11.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4709
+- author: Mrrpip
+  changes:
+    - type: Fix
+      message: >-
+        Locked windoors on the QJ270 and 490 have been replaced with unlocked
+        variants. Sorry about that.
+  id: 2747
+  time: '2026-09-21T22:12:54.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4746

@@ -25121,3 +25121,16 @@ Entries:
   id: 2739
   time: '2026-09-21T01:55:51.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4671
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: >-
+        Fent crystals now sell for 10k each, cost 5x the amount of fent to make
+        and cost vestine instead of cognizine.
+    - type: Add
+      message: PDV can directly buy vestine vials from their uplink.
+    - type: Tweak
+      message: Fent is marginally less explosive.
+  id: 2740
+  time: '2026-09-21T01:56:30.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4688

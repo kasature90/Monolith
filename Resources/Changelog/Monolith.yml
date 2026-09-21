@@ -25179,3 +25179,12 @@ Entries:
   id: 2745
   time: '2026-09-21T14:58:39.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4741
+- author: SuperGDPWYL
+  changes:
+    - type: Tweak
+      message: >-
+        Stamps can be put into deposit boxes again. They dry up and become
+        nothing more than a collector's item, however.
+  id: 2746
+  time: '2026-09-21T19:40:11.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4709

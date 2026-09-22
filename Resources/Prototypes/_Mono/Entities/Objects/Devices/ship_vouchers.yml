@@ -394,7 +394,7 @@
     - Saturn
 
 - type: entity
-  parent: BaseShipLPC
+  parent: BaseShipLPCRenewable
   id: ShipVoucherMock
   name: PDV mock LPC
   description: A small card that authorizes the procurement of a Mock aboard the Motley Anne.
@@ -409,8 +409,9 @@
       color: "#1eff00"
       shader: unshaded
   - type: ShipyardVoucher
-    destroyOnEmpty: true
-    consoleType: Custom
+    destroyOnEmpty: false
+    cooldown: 1800 # 30 minutes
+    consoleType: BlackMarket
     companyName: PDV
     vessels:
     - Mock
@@ -418,7 +419,7 @@
     vendPrice: 30000
 
 - type: entity
-  parent: BaseShipLPC
+  parent: BaseShipLPCRenewable
   id: ShipVoucherInertia
   name: PDV inertia LPC
   description: A small card that authorizes the procurement of an Inertia aboard the Motley Anne.
@@ -433,8 +434,9 @@
       color: "#1eff00"
       shader: unshaded
   - type: ShipyardVoucher
-    destroyOnEmpty: true
-    consoleType: Custom
+    destroyOnEmpty: false
+    cooldown: 1800 # 30 minutes
+    consoleType: BlackMarket
     companyName: PDV
     vessels:
     - Inertia
@@ -442,7 +444,7 @@
     vendPrice: 30000
 
 - type: entity
-  parent: BaseShipLPC
+  parent: BaseShipLPCRenewable
   id: ShipVoucherSnakelet
   name: PDV snakelet LPC
   description: A small card that authorizes the procurement of a Snakelet aboard the Motley Anne.
@@ -457,8 +459,9 @@
       color: "#1eff00"
       shader: unshaded
   - type: ShipyardVoucher
-    destroyOnEmpty: true
-    consoleType: Custom
+    destroyOnEmpty: false
+    cooldown: 1800 # 30 minutes
+    consoleType: BlackMarket
     companyName: PDV
     vessels:
     - Snakelet

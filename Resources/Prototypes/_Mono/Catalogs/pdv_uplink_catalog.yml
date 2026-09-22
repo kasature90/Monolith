@@ -1675,7 +1675,7 @@
   description: uplink-pdv-t1-voucher-desc
   productEntity: ShipVoucherPdvT1
   cost:
-    Doubloon: 75
+    Doubloon: 50
   categories:
   - UplinkPdvVouchers
   conditions:

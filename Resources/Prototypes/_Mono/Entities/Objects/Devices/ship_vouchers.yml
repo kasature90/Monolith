@@ -76,8 +76,6 @@
     companyName: TSF
     vessels:
     - Shiv
-    - Seax
-    - Xiphos
     - Ocelot
     - Paladin
     - QJ271
@@ -98,13 +96,15 @@
       shader: unshaded
   - type: ShipyardVoucher
     destroyOnEmpty: false
-    cooldown: 7200 # one hour
+    cooldown: 1800 # 30 minutes
     consoleType: Security
     companyName: TSF
     vessels:
     - Calypso
     - Dagger
     - Fracture
+    - Seax
+    - Xiphos
 
 - type: entity
   parent: ShipVoucherTsfT0
@@ -122,7 +122,7 @@
       shader: unshaded
   - type: ShipyardVoucher
     destroyOnEmpty: false
-    cooldown: 7200 # one hour
+    cooldown: 3600 # one hour
     consoleType: Security
     companyName: TSF
     vessels:
@@ -256,7 +256,7 @@
       shader: unshaded
   - type: ShipyardVoucher
     destroyOnEmpty: false
-    cooldown: 3600 # one hour
+    cooldown: 1800 # 30 minutes
     consoleType: BlackMarket
     companyName: PDV
     vessels:
@@ -513,7 +513,7 @@
       shader: unshaded
   - type: ShipyardVoucher
     destroyOnEmpty: false
-    cooldown: 3600 # One Hour.
+    cooldown: 1800 # 30 minutes
     consoleType: Mieyo
     companyName: MMC
     vessels:
@@ -542,7 +542,7 @@
       shader: unshaded
   - type: ShipyardVoucher
     destroyOnEmpty: false
-    cooldown: 7200 # Two Hours.
+    cooldown: 3600 # one hour
     consoleType: Viper
     companyName: TheViperGroup
     vessels:
@@ -567,7 +567,7 @@
       shader: unshaded
   - type: ShipyardVoucher
     destroyOnEmpty: false
-    cooldown: 7200 # Two Hours.
+    cooldown: 3600 # one hour
     consoleType: Viper
     companyName: TheViperGroup
     vessels:

@@ -133,7 +133,7 @@
   completetime: 100
   materialDiscountScale: 0.2
   materials:
-    PdvComposite: 8000
+    PdvComposite: 12000
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
@@ -142,7 +142,7 @@
   completetime: 100
   materialDiscountScale: 0.2
   materials:
-    PdvComposite: 10000
+    PdvComposite: 12000
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
@@ -152,6 +152,27 @@
   materialDiscountScale: 0.2
   materials:
     PdvComposite: 23000
+
+- type: latheRecipe
+  parent: BaseVoucherRecipe
+  id: MockVoucherRogue
+  result: ShipVoucherMock
+  materials:
+    PdvComposite: 250
+
+- type: latheRecipe
+  parent: BaseVoucherRecipe
+  id: InertiaVoucherRogue
+  result: ShipVoucherInertia
+  materials:
+    PdvComposite: 250
+
+- type: latheRecipe
+  parent: BaseVoucherRecipe
+  id: SnakeletVoucherRogue
+  result: ShipVoucherSnakelet
+  materials:
+    PdvComposite: 250
 
 #USSP
 

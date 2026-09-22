@@ -5,7 +5,6 @@
   name: TSF-ELF Xiphos
   description: A rapid-response patrol craft with EMP capabilities. Equipped with a holding cell to transport prisoners.
   price: 120000
-  purchasable: false # voucher only - T1
   category: Small
   group: Security
   access: Security

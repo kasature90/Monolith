@@ -5,7 +5,6 @@
   name: TSF-ELF Seax
   description: Fast moving, low profile medical ship. Equipped with twin TOVEKs for deterrence.
   price: 120000
-  purchasable: false # voucher only - T1
   category: Small
   group: Security
   access: Security

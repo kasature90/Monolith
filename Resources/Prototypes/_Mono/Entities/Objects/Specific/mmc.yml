@@ -1,0 +1,55 @@
+- type: entity
+  name: MMC industrial credit
+  parent: BaseItem
+  id: MMCIndustrialCredit
+  suffix: 100 MIC
+  description: A ticket for use at the MMC requisitions kiosk. Have a pheno-Mieyo day!
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Specific/MMC/mmc_ticket.rsi
+    state: ticket
+  - type: Item
+    sprite: _Mono/Objects/Specific/MMC/mmc_ticket.rsi
+    size: Tiny
+  - type: Stack
+    count: 100
+    stackType: MMCIndustrialCredit
+  - type: StaticPrice
+    price: 0
+  - type: StackPrice
+    price: 40
+  - type: Currency
+    price:
+      MMCIndustrialCredit: 1
+
+- type: entity
+  parent: MMCIndustrialCredit
+  id: MMCIndustrialCredit1
+  suffix: 1 MIC
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MMCIndustrialCredit
+  id: MMCIndustrialCredit5
+  suffix: 5 MIC
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: MMCIndustrialCredit
+  id: MMCIndustrialCredit25
+  suffix: 25 MIC
+  components:
+  - type: Stack
+    count: 25
+
+- type: entity
+  parent: MMCIndustrialCredit
+  id: MMCIndustrialCredit50
+  suffix: 50 MIC
+  components:
+  - type: Stack
+    count: 50

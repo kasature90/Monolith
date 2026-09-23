@@ -120,7 +120,7 @@
     cashSlot: Null
     offState: mmc
     brokenState: broken
-    normalState: normal-unshaded
+    normalState: mmc-unshaded
   - type: Advertise
     pack: MieyoAds
   - type: Sprite

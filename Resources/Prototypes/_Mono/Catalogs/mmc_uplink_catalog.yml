@@ -131,7 +131,7 @@
   description: mmc-uplink-generic-mag-desc
   productEntity: Magazine556x45mmFMJ
   cost:
-    MMCIndustrialCredit: 1
+    MMCIndustrialCredit: 2
   categories:
   - UplinkMmcMunitions
   conditions:
@@ -146,7 +146,7 @@
   description: mmc-uplink-generic-mag-desc
   productEntity: Magazine57x28mmSubMachineGunFMJ
   cost:
-    MMCIndustrialCredit: 1
+    MMCIndustrialCredit: 2
   categories:
   - UplinkMmcMunitions
   conditions:
@@ -176,7 +176,7 @@
   description: mmc-uplink-generic-mag-desc
   productEntity: MagazineSmart
   cost:
-    MMCIndustrialCredit: 1
+    MMCIndustrialCredit: 3
   categories:
   - UplinkMmcMunitions
   conditions:
@@ -193,7 +193,7 @@
   description: mmc-uplink-generic-ammo-box-desc
   productEntity: AmmoBox556x45mmFMJ
   cost:
-    MMCIndustrialCredit: 1
+    MMCIndustrialCredit: 3
   categories:
   - UplinkMmcMunitions
   conditions:
@@ -208,7 +208,7 @@
   description: mmc-uplink-generic-ammo-box-desc
   productEntity: AmmoBox57x28mmFMJ
   cost:
-    MMCIndustrialCredit: 1
+    MMCIndustrialCredit: 2
   categories:
   - UplinkMmcMunitions
   conditions:

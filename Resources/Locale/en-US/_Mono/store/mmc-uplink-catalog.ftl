@@ -4,6 +4,7 @@ store-category-mmc-protection = Protection
 store-category-mmc-munitions = Munitions
 
 store-preset-name-mmc-uplink = MMC Uplink
+store-currency-display-mmc = MIC
 
 mmc-uplink-cash1000-name = 1,000 VSC$
 mmc-uplink-cash10000-name = 10,000 VSC$

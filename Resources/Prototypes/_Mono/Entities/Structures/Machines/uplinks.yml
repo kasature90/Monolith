@@ -147,8 +147,13 @@
     name: store-preset-name-mmc-uplink
     categories:
     - UplinkMmcFlatpacks
+    - UplinkMmcPayout
+    - UplinkMmcProtection
+    - UplinkMmcMunitions
+    - UplinkMmcGear
+    - UplinkMmcTools
     balance:
-      MMCIndustrialCredit: 25
+      MMCIndustrialCredit: 0
     currencyWhitelist:
     - MMCIndustrialCredit
   - type: AccessReader

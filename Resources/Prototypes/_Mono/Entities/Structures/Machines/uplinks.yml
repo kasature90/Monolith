@@ -146,12 +146,15 @@
   - type: Store
     name: store-preset-name-mmc-uplink
     categories:
-    - UplinkMmcFlatpacks
     - UplinkMmcPayout
     - UplinkMmcProtection
     - UplinkMmcMunitions
     - UplinkMmcGear
     - UplinkMmcTools
+    - UplinkMmcFlatpacks
+    - UplinkMmcEngineeringFlatpacks
+    - UplinkMmcAtmosphericsFlatpacks
+    - UplinkMmcCorporateSuppliesFlatpacks
     balance:
       MMCIndustrialCredit: 0
     currencyWhitelist:

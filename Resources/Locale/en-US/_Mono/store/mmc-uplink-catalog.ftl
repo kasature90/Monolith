@@ -1,10 +1,14 @@
+store-category-mmc-flatpacks-engi = Engineering Flatpacks
+store-category-mmc-flatpacks-atmos = Atmospherics Flatpacks
+store-category-mmc-flatpacks-corp = Corporate Supplies
 store-category-mmc-flatpacks = Flatpacks
+store-category-mmc-gear = Gear
+store-category-mmc-tools = Tools
 store-category-mmc-payout = Payout
 store-category-mmc-protection = Protection
 store-category-mmc-munitions = Munitions
 
 store-preset-name-mmc-uplink = MMC Uplink
-store-currency-display-mmc = MIC
 
 mmc-uplink-cash1000-name = 1,000 VSC$
 mmc-uplink-cash10000-name = 10,000 VSC$

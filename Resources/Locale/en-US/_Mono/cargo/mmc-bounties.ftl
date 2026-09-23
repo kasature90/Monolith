@@ -37,5 +37,7 @@ mmc-bounty-name-motor-t1 = Industrial Motors
 mmc-bounty-name-credits = Credits
 mmc-bounty-name-iridite = Iridite Sheets
 mmc-bounty-name-plastitanium = Plastitanium Sheets
+mmc-bounty-name-plasteel = Plasteel Sheets
+mmc-bounty-name-steel = Steel Sheets
 
 mmc-bounty-desc-generic = We require this shipped back for production evaluation.

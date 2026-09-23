@@ -69,3 +69,18 @@
             MMCLiason: [ -1, -1 ]
         - type: StationDeadDrop
           maxDeadDrops: 20 # Testing
+          # for testing just add everything in here yo
+        - type: StationCargoBountyDatabase
+          availableBounties:
+          - USSPBountyArtifact
+          - USSPBountyBread
+          - USSPBountySoup
+          - USSPBountyPizza
+          - USSPBountyVodka
+          - USSPBountyCivilianMech
+          - USSPBountyPotato
+          - USSPBountyBiomass
+          - USSPBountyMilitaryMech
+          - USSPKevlarVest
+          - USSPVT7
+          - USSPBountyLaserGun

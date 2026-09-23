@@ -1,0 +1,14 @@
+- type: listing
+  id: UplinkCash100000
+  name: uplink-Cash100000-name
+  description: uplink-Cash100000-desc
+  productEntity: SpaceCash100000
+  cost:
+    MMCIndustrialCredit: 50
+  categories:
+  - UplinkMmcFlatpacks
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - MMCUplink

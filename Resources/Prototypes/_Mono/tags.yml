@@ -710,6 +710,12 @@
   id: MatterBinEconomy1
 
 - type: Tag
+  id: MatterBinEconomy2
+
+- type: Tag
+  id: MatterBinEconomy3
+
+- type: Tag
   id: OpticsEconomy1
 
 - type: Tag
@@ -726,6 +732,9 @@
 
 - type: Tag
   id: ArmorPlateEconomy3
+
+- type: Tag
+  id: ArmorPlateEconomy4
 
 - type: Tag
   id: ElectromagnetEconomy1

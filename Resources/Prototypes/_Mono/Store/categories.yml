@@ -1,3 +1,7 @@
 - type: storeCategory
   id: UplinkMmcFlatpacks
   name: store-category-mmc-flatpacks
+
+- type: storeCategory
+  id: UplinkMmcPayout
+  name: store-category-mmc-payout

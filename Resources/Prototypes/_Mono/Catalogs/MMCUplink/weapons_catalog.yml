@@ -75,6 +75,22 @@
       tags:
       - MMCUplink
 
+- type: listing
+  id: MMCMyoko
+  name: mmc-uplink-myoko-name
+  description: mmc-uplink-myoko-desc
+  productEntity: WeaponLauncherMyoko
+  cost:
+    MMCIndustrialCredit: 150
+  categories:
+  - UplinkMmcProtection
+  - UplinkMmcMunitions
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - MMCUplink
+
 ### Ammo
 # Magazines
 

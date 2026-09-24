@@ -259,6 +259,20 @@
   id: MMCVendingMachineMieyoAutomatedFlatpack
   productEntity: VendingMachineMieyoAutomatedFlatpack
   cost:
+    MMCIndustrialCredit: 200
+  categories:
+  - UplinkMmcCorporateSuppliesFlatpacks
+  - UplinkMmcFlatpacks
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - MMCUplink
+
+- type: listing
+  id: MMCVendingMachineRestockMMC
+  productEntity: VendingMachineRestockMMC
+  cost:
     MMCIndustrialCredit: 100
   categories:
   - UplinkMmcCorporateSuppliesFlatpacks

@@ -62,7 +62,7 @@
   description: mmc-bounty-desc-generic
   idPrefix: HKD-VLE
   entries:
-  - name: mmc-bounty-name-plastitainum
+  - name: mmc-bounty-name-plastitanium
     amount: 50
     whitelist:
       tags:

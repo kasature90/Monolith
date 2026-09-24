@@ -25327,3 +25327,10 @@ Entries:
   id: 2754
   time: '2026-09-24T23:20:42.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4754
+- author: Mrrpip
+  changes:
+    - type: Tweak
+      message: The name of the Colonial Staff shipyard terminal has been adjusted.
+  id: 2755
+  time: '2026-09-24T23:21:05.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4752

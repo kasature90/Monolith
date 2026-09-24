@@ -16,22 +16,22 @@ mmc-uplink-cash100000-name = 100,000 VSC$
 mmc-uplink-cash1000000-name = 1,000,000 VSC$
 mmc-uplink-generic-desc = Have a pheno-Mieyo day!
 
-mmc-uplink-masamune-name = VK-550 Masamune
+mmc-uplink-masamune-name = VK-550 Masamune PDW
 mmc-uplink-masamune-desc = A light PDW chambered in 5.7x28mm, allowing for great armor penetration.
 
 mmc-uplink-sakura-name = Sakura Smart-SMG
 mmc-uplink-sakura-desc = MMC's flagship consumer smartgun. Chambered in .160-smart and firing fast. Better for employees who can't aim well than a full-sized rifle.
 
-mmc-uplink-mayonaka-name = VC/30 Mayonaka
+mmc-uplink-mayonaka-name = VC/30 Mayonaka Semi-Automatic Shotgun
 mmc-uplink-mayonaka-desc = Compact semi-automatic shotgun for MMC corporate security. Suffers from a lower tube size and short barrel, but hits hard and fits in bags well.
 
-mmc-uplink-osaka-name = V/78 Osaka
+mmc-uplink-osaka-name = V/78 Osaka Rifle
 mmc-uplink-osaka-desc = Standard roller-delayed blowback rifle for MMC corporate security. Slower firing but harder hitting than other intermediate-caliber assault rifles.
 
-mmc-uplink-izumo-name = V/79P Izumo
+mmc-uplink-izumo-name = V/79P Izumo DMR
 mmc-uplink-izumo-desc = A premium, finely tuned Osaka variant. Using the highest performing barrels and components from production lines, the rifle has been converted to a semi-automatic DMR platform.
 
-mmc-uplink-myoko-name = F/87 Myoko
+mmc-uplink-myoko-name = F/87 Myoko LAW
 mmc-uplink-myoko-desc = Light anti-tank disposable launcher. Fires a fast moving HEAT warhead to take out any structure you point it at. Poor area damage.
 
 mmc-uplink-160-mag-name = .160 Smart SMG Magazine

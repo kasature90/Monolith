@@ -25307,3 +25307,12 @@ Entries:
   id: 2752
   time: '2026-09-24T23:18:58.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4758
+- author: Mrrpip
+  changes:
+    - type: Fix
+      message: >-
+        The chimera Gadfly and Pebbles are no longer banished to the shadow
+        realm.
+  id: 2753
+  time: '2026-09-24T23:19:37.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4755

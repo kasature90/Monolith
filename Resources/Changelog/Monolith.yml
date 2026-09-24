@@ -25334,3 +25334,14 @@ Entries:
   id: 2755
   time: '2026-09-24T23:21:05.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4752
+- author: SuperGDPWYL
+  changes:
+    - type: Add
+      message: >-
+        Helios has been installed with a faraday cage that blocks any
+        deathrattles that occur on board and prevent overwatch consoles from
+        detecting anybody on board. PDV deathrattles and the PDV overwatch
+        console are exempt.
+  id: 2756
+  time: '2026-09-24T23:40:14.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4686

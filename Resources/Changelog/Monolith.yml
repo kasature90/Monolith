@@ -25316,3 +25316,14 @@ Entries:
   id: 2753
   time: '2026-09-24T23:19:37.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4755
+- author: SuperGDPWYL
+  changes:
+    - type: Add
+      message: >-
+        The remains of PDV Jupiter have finally washed up in the sector. Perhaps
+        it's worth prospecting?
+    - type: Remove
+      message: Listening Point Bravo is no more.
+  id: 2754
+  time: '2026-09-24T23:20:42.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4754

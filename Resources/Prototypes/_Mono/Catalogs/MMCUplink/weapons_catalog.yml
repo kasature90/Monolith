@@ -31,12 +31,27 @@
       - MMCUplink
 
 - type: listing
+  id: MMCMayonaka
+  name: mmc-uplink-mayonaka-name
+  description: mmc-uplink-mayonaka-desc
+  productEntity: WeaponShotgunMayonaka
+  cost:
+    MMCIndustrialCredit: 80
+  categories:
+  - UplinkMmcProtection
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - MMCUplink
+
+- type: listing
   id: MMCOsaka
   name: mmc-uplink-osaka-name
   description: mmc-uplink-osaka-desc
   productEntity: WeaponRifleOsaka
   cost:
-    MMCIndustrialCredit: 75
+    MMCIndustrialCredit: 100
   categories:
   - UplinkMmcProtection
   conditions:
@@ -145,6 +160,36 @@
   name: mmc-uplink-57-ammo-box-name
   description: mmc-uplink-generic-ammo-box-desc
   productEntity: AmmoBox57x28mmFMJ
+  cost:
+    MMCIndustrialCredit: 2
+  categories:
+  - UplinkMmcMunitions
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - MMCUplink
+
+- type: listing
+  id: MMC12GaugeBox
+  name: mmc-uplink-12ga-ammo-box-name
+  description: mmc-uplink-generic-shell-box-desc
+  productEntity: AmmoBox12_gaugeBuckshot
+  cost:
+    MMCIndustrialCredit: 2
+  categories:
+  - UplinkMmcMunitions
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - MMCUplink
+
+- type: listing
+  id: MMC12GaugeBoxSlugs
+  name: mmc-uplink-12ga-slug-ammo-box-name
+  description: mmc-uplink-generic-shell-box-desc
+  productEntity: AmmoBox12_gaugeSlug
   cost:
     MMCIndustrialCredit: 2
   categories:

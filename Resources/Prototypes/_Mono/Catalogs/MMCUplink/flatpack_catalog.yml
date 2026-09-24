@@ -324,17 +324,3 @@
     whitelist:
       tags:
       - MMCUplink
-
-- type: listing
-  id: MMCAutosurgeonMuscleFibersMieyoFlatpack
-  productEntity: AutosurgeonMuscleFibersMieyoFlatpack
-  cost:
-    MMCIndustrialCredit: 200
-  categories:
-  - UplinkMmcCorporateSuppliesFlatpacks
-  - UplinkMmcFlatpacks
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - MMCUplink

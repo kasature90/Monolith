@@ -22,6 +22,9 @@ mmc-uplink-masamune-desc = A light PDW chambered in 5.7x28mm, allowing for great
 mmc-uplink-sakura-name = Sakura Smart-SMG
 mmc-uplink-sakura-desc = MMC's flagship consumer smartgun. Chambered in .160-smart and firing fast. Better for employees who can't aim well than a full-sized rifle.
 
+mmc-uplink-mayonaka-name = VC/30 Mayonaka
+mmc-uplink-mayonaka-desc = Compact semi-automatic shotgun for MMC corporate security. Suffers from a lower tube size and short barrel, but hits hard and fits in bags well.
+
 mmc-uplink-osaka-name = V/78 Osaka
 mmc-uplink-osaka-desc = Standard roller-delayed blowback rifle for MMC corporate security. Slower firing but harder hitting than other intermediate-caliber assault rifles.
 
@@ -37,3 +40,7 @@ mmc-uplink-generic-mag-desc = A magazine for a gun.
 mmc-uplink-57-ammo-box-name = 5.7x28mm Ammo Box
 mmc-uplink-556-ammo-box-name = 5.56x45mm Ammo Box
 mmc-uplink-generic-ammo-box-desc = A box of bullets for refilling magazines.
+
+mmc-uplink-12ga-ammo-box-name = 12 Gauge Shell Box (Buckshot)
+mmc-uplink-12ga-slug-ammo-box-name = 12 Gauge Shell Box (Slugs)
+mmc-uplink-generic-shell-box-desc = A box of shells for refilling shotguns.

@@ -25369,3 +25369,14 @@ Entries:
   id: 2758
   time: '2026-09-25T01:35:39.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4753
+- author: SuperGDPWYL
+  changes:
+    - type: Tweak
+      message: >-
+        Reduced the number of crates on Derelict Jupiter and added some more
+        threats in the form of more turrets, NPCs and landmines.
+    - type: Fix
+      message: The turrets on Derelict Jupiter no longer kill the hostile NPCs.
+  id: 2759
+  time: '2026-09-25T13:34:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4766

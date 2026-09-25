@@ -25389,3 +25389,10 @@ Entries:
   id: 2760
   time: '2026-09-25T13:48:27.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4761
+- author: Mrrpip
+  changes:
+    - type: Add
+      message: Added a large security thruster for mapping purposes.
+  id: 2761
+  time: '2026-09-25T13:49:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4765

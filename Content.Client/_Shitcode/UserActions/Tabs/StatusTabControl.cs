@@ -41,6 +41,10 @@ public sealed partial class StatusTabControl : BaseTabControl
         {
             var roundTime = _gameTiming.CurTime.Subtract(_gameTicker.RoundStartTimeSpan);
             StationTime.Text = Loc.GetString("lobby-state-player-status-round-time", ("hours", roundTime.Hours), ("minutes", roundTime.Minutes));
+            if (_gameTicker.ServerInfoBlob != null)
+            {
+                ServerInfo.SetInfoBlob(_gameTicker.ServerInfoBlob);
+            }
             return;
         }
 

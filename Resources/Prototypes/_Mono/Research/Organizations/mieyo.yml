@@ -67,6 +67,7 @@
   cost: 20000
   recipeUnlocks:
   - ShipVoucherMieyoYukikaze
+  - ShipVoucherMieyoSenkusha
   technologyPrerequisites:
   - UniversalMaterialResearchT1
   position: -7, -7

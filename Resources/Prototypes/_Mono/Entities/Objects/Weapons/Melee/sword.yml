@@ -119,7 +119,7 @@
         Slash: 25
         Shock: 15
         Structural: 40
-    clickPartDamageModifier: 2.25 # LOL
+    clickPartDamageMultiplier: 2.25 # LOL
   - type: Item
     sprite: _Mono/Objects/Weapons/Melee/hfblade_mieyo.rsi
   - type: Clothing

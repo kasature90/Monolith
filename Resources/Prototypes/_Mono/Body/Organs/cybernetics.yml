@@ -134,8 +134,8 @@
 - type: entity
   parent: OrganHeartSandevistan
   id: OrganHeartMMCSandevistan
-  name: Sandevistan
-  description: Advanced cyberware that replaces the user's heart and allows them to greatly increase their agility for a short period, at the cost of their endurance.
+  name: MMC EVT-002 "Lotus" replacement heart
+  description: It's a sterile bag full of a series of autoinjectors, electroneural/cardiovascular links, and thermomachines designed to allow the user to push themselves to the limit.
   components:
   - type: Cybernetics
   - type: Sprite

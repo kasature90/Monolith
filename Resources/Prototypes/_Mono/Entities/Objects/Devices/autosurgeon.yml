@@ -267,7 +267,7 @@
   parent: BaseAutosurgeonMieyo
   id: AutosurgeonSandevistanMieyo
   name: MMC autosurgeon (EVT-002 Lotus)
-  description: Replaces the heart with a more strange one. Its a sterile bag full of a series of autoinjectors, electroneural/cardiovascular links, and thermomachines designed to allow the user to push themselves to the limit.
+  description: Replaces the heart with a more strange one. It's a sterile bag full of a series of autoinjectors, electroneural/cardiovascular links, and thermomachines designed to allow the user to push themselves to the limit.
   components:
   - type: AutoSurgeon
     targetBodyPart: Torso

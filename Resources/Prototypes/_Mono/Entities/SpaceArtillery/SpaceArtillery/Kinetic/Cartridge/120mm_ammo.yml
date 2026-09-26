@@ -1,7 +1,7 @@
 - type: entity
   id: 120mmCartridgeAPHEDS
-  name: 120mm APHEDS shell
-  description: A chemically-propelled armor-piercing high-explosive discarding-sabot shell for 120mm cannons.
+  name: 100x650mm APHEDS shell
+  description: A chemically-propelled armor-piercing high-explosive discarding-sabot shell for 100x650mm cannons.
   parent: BaseGrenade
   components:
   - type: Tag
@@ -41,7 +41,7 @@
 
 - type: entity
   id: 120mmBulletAPHEDS
-  name: 120mm APHEDS projectile
+  name: 100x650mm APHEDS projectile
   parent: BaseBulletTriggerSpent
   categories: [ HideSpawnMenu ]
   components:

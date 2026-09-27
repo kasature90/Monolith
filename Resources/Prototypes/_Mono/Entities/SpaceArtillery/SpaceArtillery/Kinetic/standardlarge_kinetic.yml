@@ -118,7 +118,7 @@
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
 
-# AK820 100x650mm
+# AK820/AK800 100x650mm
 
 - type: entity
   id: WeaponTurretAk820
@@ -164,6 +164,7 @@
     selectedMode: FullAuto
     availableModes: FullAuto
     shootThermalSignature: 12000000
+    muzzleFlash: MuzzleFlashEffect120mmAK820
     soundGunshot:
       collection: 120mmAutocannonAK820
     soundEmpty:
@@ -199,6 +200,24 @@
   - type: HardpointAnchorableOnly
     class: Ballistic
     size: Heavy # doesnt match who cares
+
+- type: entity
+  id: WeaponTurretAk800
+  name: AK800 100mm autocannon
+  parent:
+  - WeaponTurretAk820
+  suffix: Large, T4
+  description: A single-barreled variant of the AK820 autocannon, with less GCS strain but lower firerate. Large hard hitting naval gun for steady damage. Fires APHEDS rounds, allowing for enhanced penetration, but not as much explosive power as full-sized APHE rounds. Feeds from an 96 round internal magazine.
+  components:
+  - type: StaticPrice
+    price: 8000
+  - type: Sprite
+    sprite: _Mono/Objects/ShuttleWeapons/ak800.rsi
+  - type: Gun
+    fireRate: 1.75
+    muzzleFlash: MuzzleFlashEffect120mmAK800
+  - type: ShipGunClass
+    shipClass: Heavy
 
 # Bofors 203x940mm
 

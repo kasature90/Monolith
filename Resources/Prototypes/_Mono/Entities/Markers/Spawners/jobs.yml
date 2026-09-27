@@ -35,6 +35,17 @@
     state: banner-red
 
 - type: entity
+  id: SpawnPointPDVInfantry
+  parent: SpawnPointJobBase
+  name: PDV Infantry
+  components:
+  - type: SpawnPoint
+    job_id: PdvInfantry
+  - type: Sprite
+    sprite: Structures/Decoration/banner.rsi
+    state: banner-red
+
+- type: entity
   id: SpawnPointPDVInfiltrator
   parent: SpawnPointJobBase
   name: pdv infiltrator
@@ -142,6 +153,18 @@
   components:
   - type: SpawnPoint
     job_id: TsfMarsoc
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+    - state: green
+
+- type: entity
+  id: SpawnPointTsfInfantry
+  parent: SpawnPointJobBase
+  name: TSF Infantry
+  components:
+  - type: SpawnPoint
+    job_id: TsfInfantry
   - type: Sprite
     sprite: _NF/Markers/jobs.rsi
     layers:

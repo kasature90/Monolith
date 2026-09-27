@@ -2,3 +2,8 @@
   id: PDVClothingJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitNfsdTacCream
+
+- type: loadout
+  id: PDVClothingJumpsuitInfantry
+  equipment:
+    jumpsuit: ClothingUniformPDVInfantry

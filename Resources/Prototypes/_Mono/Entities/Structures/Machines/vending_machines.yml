@@ -266,3 +266,64 @@
   components:
   - type: Flatpack
     entity: VendingMachineMieyoAutomated
+
+# Ground hw traders
+- type: entity
+  parent: VendingMachineAstroVend
+  id: VendingMachineTSFGear
+  name: TSF infantry gear vendor
+  description: Dispenses gear for ground combat.
+  components:
+  - type: VendingMachine
+    pack: GroundWarTSF
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
+  - type: MarketModifier
+    mod: 0
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/vendomat.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#B0ADA9"
+
+- type: entity
+  parent: VendingMachineAstroVend
+  id: VendingMachinePDVGear
+  name: PDV infantry gear vendor
+  description: Dispenses gear for ground combat.
+  components:
+  - type: VendingMachine
+    pack: GroundWarPDV
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
+  - type: MarketModifier
+    mod: 0
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/vendomat.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#B0ADA9"

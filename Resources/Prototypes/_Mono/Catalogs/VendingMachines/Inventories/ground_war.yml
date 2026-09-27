@@ -1,0 +1,36 @@
+- type: vendingMachineInventory
+  id: GroundWarTSF
+  startingInventory:
+    WeaponRifleLecter: 4294967295
+    WeaponLMGGrizzly: 2
+    Magazine68x52mmCaseless: 4294967295
+    AmmoBox68x52mmCaseless: 4294967295
+    WeaponRifleAnnie: 2
+    Magazine762x39mmFMJ: 8
+    AmmoBox762x39mmFMJ: 1
+    WeaponAMRShenzhen: 1
+    MagazineShenzhen: 4
+    AmmoBoxShenzhenBig: 1
+    BreachingCharge: 8
+    SmokeGrenade: 4294967295
+    GrenadeShrapnel: 4294967295
+    ExGrenade: 4294967295
+    SecBreachingHammer: 2
+
+- type: vendingMachineInventory
+  id: GroundWarPDV
+  startingInventory:
+    WeaponRifleVympel: 4294967295
+    WeaponLMGPKMS: 2
+    Magazine556x45mmFMJ: 4294967295
+    AmmoBox556x45mmFMJ: 4294967295
+    WeaponRifleWSPR: 2
+    Magazine762x39mmFMJ: 8
+    AmmoBox762x39mmFMJ: 1
+    WeaponSniperHristov: 1
+    AmmoBox145x114mmBig: 2
+    BreachingCharge: 8
+    SmokeGrenade: 4294967295
+    GrenadeShrapnel: 4294967295
+    ExGrenade: 4294967295
+    SecBreachingHammer: 2

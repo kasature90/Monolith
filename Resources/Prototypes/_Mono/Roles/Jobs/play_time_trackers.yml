@@ -48,8 +48,16 @@
 
 - type: playTimeTracker
   id: JobMMCLiason
+
 #special adminbus roles
 - type: playTimeTracker
   id: JobPDVAmbassador
+
 - type: playTimeTracker
   id: JobPDVPrince
+
+- type: playTimeTracker
+  id: JobTSFInfantry
+
+- type: playTimeTracker
+  id: JobPDVInfantry

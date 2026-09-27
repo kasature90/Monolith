@@ -9,6 +9,11 @@
     jumpsuit: ClothingUniformTSFMCDesert
 
 - type: loadout
+  id: TsfmcClothingJumpsuitType47F
+  equipment:
+    jumpsuit: ClothingUniformTSFMCForest
+
+- type: loadout
   id: TsfmcEngineeringClothingJumpsuit
   equipment:
     jumpsuit: ClothingUniformTSFMCEngi

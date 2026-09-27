@@ -22,12 +22,14 @@
 # Flags
 
 - type: entity
-  parent: N14FlagWallUS
+  parent: N14SignBase
   id: N14FlagWallChina
+  name: flag
   suffix: China
   description: A Chinese flag.
   components:
   - type: Sprite
+    sprite: _Nuclear14/Structures/Wallmounts/walldecor.rsi
     state: flag_china
 
 # Decor

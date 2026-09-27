@@ -314,6 +314,20 @@
         pine_2: ""
 
 - type: entity
+  parent: FloraTreeCrocusPine
+  id: FloraTreeCrocusPineRed
+  components:
+  - type: Sprite
+    layers:
+    - state: pine_1_red
+      map: ["random"]
+  - type: RandomSprite
+    available:
+    - random:
+        pine_1_red: ""
+        pine_2_red: ""
+
+- type: entity
   parent: CrocusStrippedTree
   id: FloraTreeCrocusDead
   name: crocus dead tree

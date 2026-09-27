@@ -199,3 +199,49 @@
       octaves: 5
       cellularDistanceFunction: Euclidean
       cellularReturnType: Distance2
+
+- type: biomeTemplate
+  id: MonoCrocusUnderground
+  layers:
+  # Rock decals
+  - !type:BiomeDecalLayer
+    allowedTiles:
+    - FloorPlanetCrocusBedrock
+    threshold: 0.9
+    divisions: 1
+    noise:
+      seed: 1
+      frequency: 2
+    decals:
+    - Basalt1
+    - Basalt2
+    - Basalt3
+    - Basalt4
+    - Basalt5
+    - Basalt6
+    - Basalt7
+    - Basalt8
+    - Basalt9
+  # Large rock areas
+  - !type:BiomeEntityLayer
+    allowedTiles:
+    - FloorPlanetCrocusBedrock
+    threshold: -0.4
+    noise:
+      seed: 0
+      noiseType: Cellular
+      frequency: 0.2
+      lacunarity: 2
+      fractalType: FBm
+      octaves: 2
+      cellularDistanceFunction: Euclidean
+      cellularReturnType: Distance2
+    entities:
+    - WallRockCrocus
+  - !type:BiomeDummyLayer
+    id: Loot
+  # Fill layer
+  # Base tiles
+  - !type:BiomeTileLayer
+    threshold: -1
+    tile: FloorPlanetCrocusBedrock

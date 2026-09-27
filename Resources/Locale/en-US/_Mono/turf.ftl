@@ -17,6 +17,7 @@ tiles-maint-floor-grid-dark = dark grid maintenance tile
 tiles-catwalk-floor-tile-horizontal = horizontal catwalk tile
 tiles-catwalk-floor-tile-vertical = vertical catwalk
 
+tiles-bedrock-crocus = crocus bedrock
 tiles-dirt-crocus = crocus dirt
 tiles-grass-crocus = crocus grass
 tiles-redgrass-crocus = crocus red grass

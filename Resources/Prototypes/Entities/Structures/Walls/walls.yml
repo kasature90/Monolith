@@ -78,7 +78,7 @@
     delay: 8
     fx: EffectRCDDeconstruct8
   - type: IconSmooth
-    key: bricks
+    key: walls
     base: brick
 
 # HALF MONO BUT ITS RLLY JUST UPSTREAM CONTENT....
@@ -96,7 +96,7 @@
   - type: Icon
     sprite: Structures/Walls/concrete.rsi
   - type: IconSmooth
-    key: concrete
+    key: walls
     base: concrete
 
 - type: entity

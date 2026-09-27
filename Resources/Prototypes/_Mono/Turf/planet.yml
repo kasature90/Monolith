@@ -176,6 +176,18 @@
   indestructible: true
 
 - type: tile
+  id: FloorPlanetCrocusBedrock
+  parent: BaseFloorPlanet
+  name: tiles-bedrock-crocus
+  sprite: /Textures/_Mono/Tiles/planet/bedrock.png
+  variants: 1
+  isSubfloor: false
+  weather: false
+  footstepSounds:
+    collection: FootstepTile
+  indestructible: true
+
+- type: tile
   id: FloorConcreteCrocus
   name: tiles-concrete-crocus
   sprite: /Textures/_Mono/Tiles/planet/WizDenRespritening/Concrete/concrete.png

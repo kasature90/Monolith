@@ -76,5 +76,5 @@
   - type: Icon
     sprite: _Nuclear14/Structures/Walls/nc14/fencechain.rsi
   - type: IconSmooth
-    key: walls
+    key: wallsn14
     base: fence

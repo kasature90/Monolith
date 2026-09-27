@@ -81,6 +81,24 @@
     key: bricks
     base: brick
 
+# HALF MONO BUT ITS RLLY JUST UPSTREAM CONTENT....
+- type: entity
+  parent: BaseWallTierFour # Mono
+  id: WallConcrete
+  name: concrete wall
+  components:
+  - type: RangedDamageSound # WOLFGATE - material bullet impacts
+    soundGroups:
+      Brute:
+        collection: WolfgateBulletImpactConcrete
+  - type: Sprite
+    sprite: Structures/Walls/concrete.rsi
+  - type: Icon
+    sprite: Structures/Walls/concrete.rsi
+  - type: IconSmooth
+    key: concrete
+    base: concrete
+
 - type: entity
   parent: BaseWallTierTwo # Mono
   id: WallClock

@@ -193,23 +193,23 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: AmmoBox68x52mmCaseless
+        startingItem: AmmoBox556x45mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/lmg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/lmg_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine68x52mmCaselessBoxSmall
-          - Magazine68x52mmCaselessBoxBig
-          - Magazine68x52mmCaseless
+          - Magazine556x45mmBox
+          - Magazine556x45mmAmmoBox
+          - Magazine556x45mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge68x52mmCaseless
+        startingItem: Cartridge556x45mmFMJ
         priority: 1
         whitelist:
           tags:
-          - Cartridge68x52mmCaseless
+          - Cartridge556x45mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

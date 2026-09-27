@@ -2,6 +2,7 @@
   id: MonoCEZLevelsLadderRMCBase
   name: stairs
   abstract: true
+  suffix: ZLEVELS
   components:
   - type: Sprite
     sprite: _RMC14/Structures/stairs.rsi

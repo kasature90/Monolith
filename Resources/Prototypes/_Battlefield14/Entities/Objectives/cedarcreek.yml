@@ -82,3 +82,38 @@
     color: "#FFFF00"
   - type: WarpPoint
     location: "Polizei capture point"
+
+- type: entity
+  id: CapturePointCedarCreekHospital
+  parent: BaseCapturePoint
+  name: hospital control point
+  suffix: cedar creek, 180s / 3m
+  components:
+#  - type: POICapture
+#    poiName: "Cedar Creek Hospital"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Cedar Creek hospital"
+  - type: NavMapBeacon
+    defaultText: "Cedar Creek hospital"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Hospital capture point"
+
+
+- type: entity
+  id: CapturePointCedarCreekCityHall
+  parent: BaseCapturePoint
+  name: city hall control point
+  suffix: cedar creek, 180s / 3m
+  components:
+#  - type: POICapture
+#    poiName: "Cedar Creek city hall"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Cedar Creek city hall"
+  - type: NavMapBeacon
+    defaultText: "Cedar Creek city hall"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "City hall capture point"

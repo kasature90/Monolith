@@ -29,21 +29,6 @@
 
 - type: entity
   parent: N14Television
-  id: N14TelevisionCabinetOpen
-  components:
-  - type: Sprite
-    state: cabinet_tv
-
-- type: entity
-  parent: N14Television
-  id: N14TelevisionRadking
-  description: A Radking brand television.
-  components:
-  - type: Sprite
-    state: radking_tv
-
-- type: entity
-  parent: N14Television
   id: N14TelevisionRedwood
   description: A television in a redwood cabinet.
   components:

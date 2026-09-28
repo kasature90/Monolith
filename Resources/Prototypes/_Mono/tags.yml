@@ -46,6 +46,14 @@
 - type: Tag
   id: UnavoidableTrap # For "traps" (step triggers) that TrapAvoider shouldn't dodge, like lava or chasms.
 
+# Steal areas
+
+- type: Tag
+  id: StealArea
+
+- type: Tag
+  id: PDVStealArea
+
 # Weapon attachments
 
 - type: Tag

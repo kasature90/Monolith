@@ -221,7 +221,8 @@
           params:
             volume: -3
   - type: StealTarget
-    stealGroup: VehicleSecway
+    stealGroup:
+    - VehicleSecway
 
 - type: entity
   parent: BaseVehicleRideable

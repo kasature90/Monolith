@@ -7,7 +7,7 @@ fac-operation-objectives-list-none = There were no objectives.
 fac-operation-objectives-list-start = The objectives were:
 fac-operation-objectives-list-entry = - [color=White]{$name}[/color]
 
-fac-operation-objectives-crocus-nanites = - [color=White]Recover Federation Nanite Canisters.[/color]
-fac-operation-objectives-crocus-pdas = - [color=White]Bring back a sizeable amount of TSF identification.[/color]
+fac-operation-objectives-crocus-nanites = - [color=White]Bring back a sizeable amount of TSF nanite canisters from Crocus.[/color]
+fac-operation-objectives-crocus-pdas = - [color=White]Bring back the identification of killed TSF on Crocus.[/color]
 steal-target-groups-federal-nanites = federation nanite canister
 steal-target-groups-federal-pdas = TSF PDA

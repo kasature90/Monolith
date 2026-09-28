@@ -32,7 +32,7 @@ public sealed partial class StealConditionComponent : Component
     /// <summary>
     /// Mono - what steal area tags to check around?
     /// </summary>
-    [DataField(required: true)]
+    [DataField]
     public string StealAreaTagProto = "StealArea";
 
     /// <summary>

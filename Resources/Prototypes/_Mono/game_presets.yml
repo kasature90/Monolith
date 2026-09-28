@@ -207,3 +207,14 @@
   - RoundEndRuleHour3
   - PortstrikeAnnounceRuleHour2
   - StarSystemKyphrus
+
+- type: gamePreset
+  id: MonoCrocus
+  alias:
+  - crocus
+  - monocrocus
+  name: mono-crocus-title
+  description: mono-crocus-description
+  showInVote: false
+  rules:
+  - PDVObjectivesCrocus

@@ -48,3 +48,6 @@
     allowedDepartments: [ Security ]
   - type: StaticPrice
     price: 150000 #Slightly higher value value than DC turn-in
+  - type: StealTarget
+    stealGroup:
+    - FederalNanites

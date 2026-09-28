@@ -29,6 +29,15 @@ public sealed partial class ObjectiveComponent : Component
     public string LocIssuer => Loc.GetString(Issuer);
 
     /// <summary>
+    /// Mono - Text used for round end in operations.
+    /// </summary>
+    [DataField("roundEndText", required: false)]
+    private LocId RoundEndText { get; set; }
+
+    [ViewVariables(VVAccess.ReadOnly)]
+    public string LocRoundEndText => Loc.GetString(RoundEndText);
+
+    /// <summary>
     /// Unique objectives can only have 1 per prototype id.
     /// Set this to false if you want multiple objectives of the same prototype.
     /// </summary>

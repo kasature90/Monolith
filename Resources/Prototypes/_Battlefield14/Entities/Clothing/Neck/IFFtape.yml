@@ -79,7 +79,7 @@
 #    layers:
 #    - state: icon
 #      map: [ "unfoldedLayer" ]
-#    - state: icon_flipped
+#    - state: icon-flipped
 #      map: ["foldedLayer"]
 #      visible: false
   - type: Clothing

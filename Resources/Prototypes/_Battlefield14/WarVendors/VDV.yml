@@ -244,19 +244,19 @@
     - name: Magazine boxes
       entries:
       - id: BoxMagazineAK12
-        amount: 1
+        amount: 2
       - id: BoxMagazineAK12TracerGreen
         amount: 1
       - id: BoxMagazineAK74
-        amount: 3
+        amount: 2
       - id: BoxMagazineVityaz
         amount: 5
       - id: BoxMagazineASVALShort
         amount: 5
       - id: BoxMagazineAK203
-        amount: 2
-      - id: BoxMagazineAKM
         amount: 3
+      - id: BoxMagazineAKM
+        amount: 2
       - id: BoxFlare
         amount: 4
     - name: Loose rounds

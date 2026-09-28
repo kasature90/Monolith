@@ -239,9 +239,9 @@
       - id: BoxMagazineVityaz
         amount: 5
       - id: BoxMagazineAK103
-        amount: 2
-      - id: BoxMagazineAKM
         amount: 3
+      - id: BoxMagazineAKM
+        amount: 2
       - id: BoxFlare
         amount: 4
     - name: Loose rounds

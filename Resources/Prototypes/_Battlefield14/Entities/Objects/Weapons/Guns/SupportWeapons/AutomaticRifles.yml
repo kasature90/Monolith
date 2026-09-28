@@ -451,3 +451,9 @@
       - description: Takes AKM pattern magazines.
         color: "#4f94ad"
         requireDetailRange: true
+
+- type: entity
+  name: LMGK
+  parent: WeaponRifleRURPK
+  id: WeaponRifleDELMGK
+  description: An east german lisenced copy of the RPK. Quite the rare piece today.

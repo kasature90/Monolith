@@ -527,6 +527,28 @@
     - id: MagazineRifleG3
       amount: 5
 
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEG3A4
+  suffix: G3A4
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleDEG3A4
+    - id: MagazineRifleG3
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEG3A3ZF
+  suffix: G3A3ZF
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleDEG3A3ZF
+    - id: MagazineRifleG3
+      amount: 5
+
 #region Rifles, BE
 
 - type: entity

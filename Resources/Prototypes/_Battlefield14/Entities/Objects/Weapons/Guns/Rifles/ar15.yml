@@ -234,7 +234,7 @@
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 5
-    pvsIncrease: 0.35
+    pvsIncrease: 0.5
   - type: WieldedCrosshair
     rsi:
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi

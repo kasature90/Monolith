@@ -107,6 +107,10 @@
       entries:
       - id: GermanFlagFolded
         amount: 3
+      - id: WeaponRifleDEG3A3
+        amount: 1
+      - id: WeaponRifleDEG3A4
+        amount: 1
 
 #region gear
 
@@ -221,6 +225,8 @@
         amount: 2
       - id: BoxMagazineMP5
         amount: 5
+      - id: BoxMagazineG3
+        amount: 2
       - id: BoxFlare
         amount: 4
     - name: Loose rounds

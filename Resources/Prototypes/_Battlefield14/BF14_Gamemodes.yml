@@ -26,9 +26,21 @@
   alias:
   - USA
   name: Ground war, USA
-  showInVote: true # objectives not working yet, could poison the view of the map into a mindless TDM
+  showInVote: true
   supportedMaps: BF14MapPoolEarthUSA
-  description: Larp and frag.
+  description: Larp and frag. American edition.
+  minPlayers: 15
+  rules:
+  - NFAdventure
+
+- type: gamePreset
+  id: BF14_GroundwarGermany
+  alias:
+  - Germany
+  name: Ground war, Germany
+  showInVote: true
+  supportedMaps: BF14MapPoolEarthGermany
+  description: Larp and frag. German edition.
   minPlayers: 15
   rules:
   - NFAdventure
@@ -38,7 +50,7 @@
   alias:
   - Russia
   name: Ground war, Russia
-  showInVote: true # objectives not working yet, could poison the view of the map into a mindless TDM
+  showInVote: true
   supportedMaps: BF14MapPoolEarthRussia
   description: Larp and frag. Russian edition.
   minPlayers: 15
@@ -52,7 +64,7 @@
   name: Civil Unrest
   showInVote: true
   supportedMaps: BF14MapPoolCivilUnrest
-  description: Maps involving civilians in combat.
+  description: Maps involving civilians in combat. Ten minute rounds.
   minPlayers: 10
   maxPlayers: 30
   rules:

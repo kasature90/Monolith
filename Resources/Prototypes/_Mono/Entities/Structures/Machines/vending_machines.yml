@@ -273,6 +273,7 @@
   id: VendingMachineTSFGear
   name: TSF infantry armaments vendor
   description: Dispenses basic armaments for a TSF platoon.
+  suffix: Crocus, DO NOT MAP
   components:
   - type: VendingMachine
     pack: CrocusTSFArmory

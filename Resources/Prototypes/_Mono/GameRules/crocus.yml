@@ -46,8 +46,8 @@
     checkCompanyMembers: true
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
-    descriptionText: objective-condition-steal-description-faction
-    descriptionMultiplyText: objective-condition-steal-multiply-description-faction
+    descriptionText: objective-condition-steal-description-faction-crocus
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction-crocus
 
 - type: entity
   parent: PDVCrocusObjectiveBase
@@ -59,8 +59,8 @@
       sprite: _Mono/Objects/TradeGoods/factiongoods.rsi
       state: nanitecanister
   - type: StealCondition
-    minCollectionSize: 15
-    maxCollectionSize: 50
+    minCollectionSize: 40
+    maxCollectionSize: 150
     stealGroup: FederalNanites
 
 - type: stealTargetGroup

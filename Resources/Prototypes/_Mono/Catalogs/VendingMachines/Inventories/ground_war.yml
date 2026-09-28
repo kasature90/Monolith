@@ -16,6 +16,14 @@
     GrenadeShrapnel: 4294967295
     ExGrenade: 4294967295
     SecBreachingHammer: 2
+    GunAttachmentOpticErebus2x: 2
+    GunAttachmentOpticErebus4x: 4
+    GunAttachmentGripErebusLight: 4294967295
+    GunAttachmentGripErebusLAM: 4294967295
+    Brutepack: 4294967295
+    Tourniquet: 4294967295
+    ClothingBackpackDuffelSurgeryFilled: 2
+    Gauze: 2
 
 - type: vendingMachineInventory
   id: GroundWarPDV
@@ -34,3 +42,11 @@
     GrenadeShrapnel: 4294967295
     ExGrenade: 4294967295
     SecBreachingHammer: 2
+    GunAttachmentOpticErebus2x: 2
+    GunAttachmentOpticErebus4x: 4
+    GunAttachmentGripErebusLight: 4294967295
+    GunAttachmentGripErebusLAM: 4294967295
+    Brutepack: 4294967295
+    Tourniquet: 4294967295
+    ClothingBackpackDuffelSurgeryFilled: 2
+    Gauze: 2

@@ -36,6 +36,8 @@
   id: PDVInfantryGear
   equipment:
     ears: ClothingHeadsetAltFreelancer
+    helmetcover: ClothingHelmetCoverHelmetMount
+    helmetattachment: ClothingHelmetAttachmentNVGsBasic
   storage:
     back:
     - RadioHandheldNF

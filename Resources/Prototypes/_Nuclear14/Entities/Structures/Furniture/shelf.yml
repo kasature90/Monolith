@@ -55,6 +55,7 @@
     containers:
       storagebase: !type:Container
   - type: InteractionOutline
+  - type: Occluder
 
 - type: entity
   id: N14Bookshelf

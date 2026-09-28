@@ -427,18 +427,39 @@
   components:
   - type: Sprite
     state: pallet_stack
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
         # add destruction drop for materials
   - type: Fixtures
     fixtures:
       fix1:
         shape:
-          !type:PhysShapeCircle
-            radius: 0.20
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
         density: 1000
         mask:
-        - MachineMask
+        - TableMask
         layer:
-        - MachineLayer
+        - TableLayer
+  - type: BarricadeBlock
+    bidirectional: true
+    omnidirectional: true
+    passThroughDistance: 0.5
+    blocking: 20
+  - type: ExtendDescription
+    descriptionList:
+    - description: You can fire over this if you stand near it.
+      color: "#4f94ad"
+      requireDetailRange: false
 
 - type: entity
   parent: N14DecorFloorPalletStack
@@ -448,6 +469,22 @@
   components:
   - type: Sprite
     state: brickpile
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 800
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: BarricadeBlock
+    bidirectional: true
+    omnidirectional: true
+    passThroughDistance: 0.5
+    blocking: 95
 
 - type: entity
   parent: N14DecorFloorWorldBase

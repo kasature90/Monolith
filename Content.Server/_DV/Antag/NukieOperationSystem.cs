@@ -86,7 +86,8 @@ public sealed partial class NukieOperationSystem : GameRuleSystem<NukieOperation
                     compMembers.Add((eligibleUid, mindComp, compComp));
 
             }
-            var startText = Loc.GetString("fac-operation-start", ("company", company.Name), ("$color", company.Color));
+
+            var startText = Loc.GetString("fac-operation-start", ("company", company.Name), ("color", company.Color));
             args.AddLine(startText);
             args.AddLine(Loc.GetString("fac-operation-members-list-start"));
 

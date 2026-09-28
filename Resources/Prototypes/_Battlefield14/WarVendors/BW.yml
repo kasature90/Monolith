@@ -108,7 +108,9 @@
       - id: GermanFlagFolded
         amount: 3
       - id: WeaponRifleDEG3A3
+        amount: 1
       - id: WeaponRifleDEG3A4
+        amount: 1
 
 #region gear
 

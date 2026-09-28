@@ -1,5 +1,5 @@
 - type: vendingMachineInventory
-  id: GroundWarTSF
+  id: CrocusTSFArmory
   startingInventory:
     WeaponRifleLecter: 4294967295
     WeaponLMGGrizzly: 2
@@ -11,22 +11,30 @@
     WeaponAMRShenzhen: 1
     MagazineShenzhen: 4
     AmmoBoxShenzhenBig: 1
+    # TERTIARY ARMAMENTS
     BreachingCharge: 8
     SmokeGrenade: 4294967295
     GrenadeShrapnel: 4294967295
     ExGrenade: 4294967295
     SecBreachingHammer: 2
-    GunAttachmentOpticErebus2x: 2
-    GunAttachmentOpticErebus4x: 4
+    # GEAR
+    ClothingHelmetCoverHelmetMount: 3
+    ClothingHelmetAttachmentNVGsBasic: 3
+    # ATTACHMENTS
+    GunAttachmentOpticErebus2x: 4294967295
+    GunAttachmentOpticErebus4x: 4294967295
+    GunAttachmentOpticErebus8x: 4294967295
     GunAttachmentGripErebusLight: 4294967295
     GunAttachmentGripErebusLAM: 4294967295
+    # MEDS
     Brutepack: 4294967295
     Tourniquet: 4294967295
+    Bloodpack: 4294967295
     ClothingBackpackDuffelSurgeryFilled: 2
     Gauze: 2
 
 - type: vendingMachineInventory
-  id: GroundWarPDV
+  id: CrocusPDVArmory
   startingInventory:
     WeaponRifleVympel: 4294967295
     WeaponLMGPKMS: 2
@@ -37,16 +45,24 @@
     AmmoBox762x39mmFMJ: 1
     WeaponSniperHristov: 1
     AmmoBox145x114mmBig: 2
+    # TERTIARY ARMAMENTS
     BreachingCharge: 8
     SmokeGrenade: 4294967295
     GrenadeShrapnel: 4294967295
     ExGrenade: 4294967295
     SecBreachingHammer: 2
-    GunAttachmentOpticErebus2x: 2
-    GunAttachmentOpticErebus4x: 4
+    # GEAR
+    ClothingHelmetCoverHelmetMount: 3
+    ClothingHelmetAttachmentNVGsBasic: 3
+    # ATTACHMENTS
+    GunAttachmentOpticErebus2x: 4294967295
+    GunAttachmentOpticErebus4x: 4294967295
+    GunAttachmentOpticErebus8x: 4294967295
     GunAttachmentGripErebusLight: 4294967295
     GunAttachmentGripErebusLAM: 4294967295
+    # MEDS
     Brutepack: 4294967295
     Tourniquet: 4294967295
+    Bloodpack: 4294967295
     ClothingBackpackDuffelSurgeryFilled: 2
     Gauze: 2

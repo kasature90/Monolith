@@ -33,9 +33,6 @@
 # Starts unarmed to gear up at vendor
 - type: startingGear
   id: TSFInfantryGear
-  equipment:
-    helmetcover: ClothingHelmetCoverHelmetMount
-    helmetattachment: ClothingHelmetAttachmentNVGsBasic
   storage:
     back:
     - RadioHandheldNF

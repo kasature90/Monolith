@@ -271,59 +271,32 @@
 - type: entity
   parent: VendingMachineAstroVend
   id: VendingMachineTSFGear
-  name: TSF infantry gear vendor
-  description: Dispenses gear for ground combat.
+  name: TSF infantry armaments vendor
+  description: Dispenses basic armaments for a TSF platoon.
   components:
   - type: VendingMachine
-    pack: GroundWarTSF
+    pack: CrocusTSFArmory
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-    ejectState: eject-unshaded
-    denyState: deny-unshaded
   - type: MarketModifier
     mod: 0
   - type: Sprite
-    sprite: Structures/Machines/VendingMachines/vendomat.rsi
+    sprite: _Mono/Structures/Machines/VendingMachines/drivevend.rsi
     layers:
     - state: "off"
-      map: ["enum.VendingMachineVisualLayers.Base"]
+      map: [ "enum.VendingMachineVisualLayers.Base" ]
     - state: "off"
-      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
       shader: unshaded
     - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#B0ADA9"
+      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
 
 - type: entity
-  parent: VendingMachineAstroVend
+  parent: VendingMachineTSFGear
   id: VendingMachinePDVGear
   name: PDV infantry gear vendor
-  description: Dispenses gear for ground combat.
+  description: Dispenses basic armaments for a PDV platoon.
   components:
   - type: VendingMachine
-    pack: GroundWarPDV
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
-    ejectState: eject-unshaded
-    denyState: deny-unshaded
-  - type: MarketModifier
-    mod: 0
-  - type: Sprite
-    sprite: Structures/Machines/VendingMachines/vendomat.rsi
-    layers:
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-      shader: unshaded
-    - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#B0ADA9"
+    pack: CrocusPDVArmory

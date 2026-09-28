@@ -14,12 +14,15 @@
     # TERTIARY ARMAMENTS
     BreachingCharge: 8
     SmokeGrenade: 4294967295
+    GrenadeFlashBang: 4294967295
     GrenadeShrapnel: 4294967295
     ExGrenade: 4294967295
     SecBreachingHammer: 2
     # GEAR
     ClothingHelmetCoverHelmetMount: 3
     ClothingHelmetAttachmentNVGsBasic: 3
+    WeaponFlareGun: 4294967295
+    Flare: 4294967295
     # ATTACHMENTS
     GunAttachmentOpticErebus2x: 4294967295
     GunAttachmentOpticErebus4x: 4294967295
@@ -48,12 +51,15 @@
     # TERTIARY ARMAMENTS
     BreachingCharge: 8
     SmokeGrenade: 4294967295
+    GrenadeFlashBang: 4294967295
     GrenadeShrapnel: 4294967295
     ExGrenade: 4294967295
     SecBreachingHammer: 2
     # GEAR
     ClothingHelmetCoverHelmetMount: 3
     ClothingHelmetAttachmentNVGsBasic: 3
+    WeaponFlareGun: 4294967295
+    Flare: 4294967295
     # ATTACHMENTS
     GunAttachmentOpticErebus2x: 4294967295
     GunAttachmentOpticErebus4x: 4294967295

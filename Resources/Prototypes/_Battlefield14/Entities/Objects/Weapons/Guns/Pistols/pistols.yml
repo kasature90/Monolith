@@ -134,7 +134,7 @@
       params:
         volume: -1
     soundBoltClosed:
-      path: /Audio/_Battlefield14/Weapons/Guns/Glock17/chamber.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/1911/slidedrop.ogg
       params:
         volume: -1
   - type: ItemSlots
@@ -142,8 +142,8 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazinePistolM1911
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/Glock17/magin.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Glock17/magout.ogg
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/1911/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/1911/magout.ogg
         priority: 2
         whitelist:
           tags:

@@ -37,9 +37,11 @@
 - type: soundCollection
   id: BF_M1911_Gunshots # M1911, .45 ACP
   files:
-  - "/Audio/_Battlefield14/Weapons/Guns/M1911/fire1.ogg"
-  - "/Audio/_Battlefield14/Weapons/Guns/M1911/fire2.ogg"
-  - "/Audio/_Battlefield14/Weapons/Guns/M1911/fire3.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/1911/fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/1911/fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/1911/fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/1911/fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/1911/fire-05.ogg"
 
 - type: soundCollection
   id: BF_PPSh_Gunshots # PPSH-41, 7.62x25mm

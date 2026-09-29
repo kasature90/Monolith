@@ -841,6 +841,17 @@
     - id: MagazineRifleAK74
       amount: 5
 
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongRUAN94
+  suffix: AN-94
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleRUAN94
+    - id: MagazineRifleAK74Black
+      amount: 5
+
 #region Machine guns, RU
 
 - type: entity

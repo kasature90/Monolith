@@ -549,6 +549,17 @@
     - id: MagazineRifleG3
       amount: 5
 
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEHK51
+  suffix: HK51
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleDEHK51
+    - id: MagazineRifleG3
+      amount: 5
+
 #region Rifles, BE
 
 - type: entity

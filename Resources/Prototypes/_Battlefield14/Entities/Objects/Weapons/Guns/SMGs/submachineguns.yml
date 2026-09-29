@@ -212,11 +212,6 @@
   parent: WeaponSubmachinegunDEMP5A4
   id: WeaponSubmachinegunDEMP5A4Flashlight
   components:
-  - type: Item
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A4.rsi
-  - type: Icon
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
-    state: icon-MP5A4
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
     layers:
@@ -230,62 +225,12 @@
       shader: unshaded
       visible: false
       map: [ "light" ]
-  - type: HandheldLight
-    addPrefix: false
-    blinkingBehaviourId: blinking
-    radiatingBehaviourId: radiating
-  - type: LightBehaviour
-    behaviours:
-      - !type:FadeBehaviour
-        id: radiating
-        maxDuration: 2.0
-        startValue: 3.0
-        endValue: 2.0
-        isLooped: true
-        reverseWhenFinished: true
-      - !type:PulseBehaviour
-        id: blinking
-        interpolate: Nearest
-        maxDuration: 1.0
-        minValue: 0.1
-        maxValue: 2.0
-        isLooped: true
+  - type: UnpoweredFlashlight
   - type: PointLight
     enabled: false
     mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png
     autoRot: true
     radius: 8
-  - type: ToggleableLightVisuals # Needed for this to actually show a light in-world by the way
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        priority: 1
-        startingItem: PowerCellMedium
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineSubmachinegunMP5
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
-        priority: 3
-        whitelist:
-          tags:
-            - MagazinePistolMP5
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: BF_CartridgePistol9x19
-        priority: 2
-        whitelist:
-          tags:
-            - BF_CartridgePistol9x19
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-      cell_slot: !type:ContainerSlot
-  - type: PowerCellSlot
-    cellSlotId: cell_slot
 
 - type: entity
   name: MP5A5
@@ -423,10 +368,6 @@
     autoOpenBoltOnEmpty: true
   - type: ItemSlots
     slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        priority: 1
-        startingItem: PowerCellMedium
       gun_magazine:
         name: Magazine
         startingItem: MagazineSubmachinegunMP510

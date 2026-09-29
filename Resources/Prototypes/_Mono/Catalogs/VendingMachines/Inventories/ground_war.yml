@@ -12,6 +12,7 @@
     # GEAR
     WeaponFlareGun: 4294967295
     Flare: 4294967295
+    Floodlight: 4294967295
     # ATTACHMENTS
     GunAttachmentOpticErebus2x: 4294967295
     GunAttachmentOpticErebus4x: 4294967295
@@ -37,6 +38,7 @@
     # GEAR
     WeaponFlareGun: 4294967295
     Flare: 4294967295
+    Floodlight: 4294967295
     # ATTACHMENTS
     GunAttachmentOpticErebus2x: 4294967295
     GunAttachmentOpticErebus4x: 4294967295

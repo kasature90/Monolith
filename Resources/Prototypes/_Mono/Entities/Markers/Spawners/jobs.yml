@@ -257,3 +257,18 @@
     sprite: _NF/Markers/jobs.rsi
     layers:
     - state: green
+
+# Crocus
+
+- type: entity
+  id: SpawnPointCrocusDockworker
+  parent: SpawnPointJobBase
+  name: Jianghui Dockworker
+  suffix: Crocus
+  components:
+  - type: SpawnPoint
+    job_id: CrocusDockworker
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+    - state: green

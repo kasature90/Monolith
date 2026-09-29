@@ -150,6 +150,16 @@
     sprite: _Mono/Objects/Flora/flora_trees_crocus.rsi
     drawdepth: Overdoors
     offset: 0,0.9
+  - type: BarricadeBlock
+    bidirectional: true
+    omnidirectional: true
+    passThroughDistance: 0.4
+    blocking: 40
+  - type: ExtendDescription
+    descriptionList:
+    - description: You can fire over this if you stand near it.
+      color: "#4f94ad"
+      requireDetailRange: false
   - type: Physics
     bodyType: Static
   - type: Fixtures
@@ -370,3 +380,13 @@
         basalt_20: ""
         basalt_21: ""
         basalt_23: ""
+  - type: BarricadeBlock
+    bidirectional: true
+    omnidirectional: true
+    passThroughDistance: 0.7
+    blocking: 60
+  - type: ExtendDescription
+    descriptionList:
+    - description: You can fire over this if you stand near it.
+      color: "#4f94ad"
+      requireDetailRange: false

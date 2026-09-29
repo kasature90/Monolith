@@ -61,3 +61,6 @@
 
 - type: playTimeTracker
   id: JobPDVInfantry
+
+- type: playTimeTracker
+  id: JobCrocusDockworker

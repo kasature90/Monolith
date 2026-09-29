@@ -551,6 +551,48 @@
       state: ZF1
 
 - type: entity
+  name: HK51
+  parent: WeaponRifleDEG3A3
+  id: WeaponRifleDEHK51
+  description: A cut down G3 with. Not actually produced by HK. Has significant muzzle flash and report.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/HK51.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    state: icon-HK51
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: furniture-HK51
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/HK51.rsi
+  - type: GunWieldBonus
+    minAngle: -24
+    maxAngle: -25
+  - type: Gun
+    minAngle: 26
+    maxAngle: 40
+    angleIncrease: 1.5
+    projectileSpeed: 45
+    fireRate: 6.5
+    soundGunshot:
+      collection: BF_G3_Gunshots
+      params:
+        volume: -1
+        variation: 0.125
+  - type: PointLight
+    enabled: false
+    mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png
+    autoRot: true
+    radius: 5
+    color: orange
+
+- type: entity
   name: G36K
   parent: WeaponRifleUSM16A3
   id: WeaponRifleDEG36K

@@ -118,6 +118,7 @@
         - BF14WeaponCaseLongRUAK74M
         - BF14WeaponCaseLongRUAK12
         - BF14WeaponCaseLongRUAKS74U
+        - BF14WeaponCaseLongRUAN94
         - BF14WeaponCaseLongCMBOSIPR
       chance: 1
       intervalSeconds: 60
@@ -272,6 +273,7 @@
         - BF14WeaponCaseLongRUAK74M
         - BF14WeaponCaseLongRUAK12
         - BF14WeaponCaseLongRUAKS74U
+        - BF14WeaponCaseLongRUAN94
       chance: 1
       intervalSeconds: 60
       minimumEntitiesSpawned: 1

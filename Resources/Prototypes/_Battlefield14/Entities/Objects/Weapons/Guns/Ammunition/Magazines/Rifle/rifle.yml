@@ -112,7 +112,7 @@
         - BF_CartridgeRifle762x51
     capacity: 20
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/SCARH.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/G3.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

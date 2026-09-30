@@ -657,7 +657,7 @@
   name: VPO-136
   parent: WeaponRifleRUAKMS
   id: WeaponRifleRUVPO136
-  description: A de-militarized AKM made for the civillian market.
+  description: A de-militarized AKM made for the civilian market.
   components:
   - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/VPO136.rsi

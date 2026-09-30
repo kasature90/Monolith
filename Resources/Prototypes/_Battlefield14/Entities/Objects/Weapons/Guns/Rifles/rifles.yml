@@ -900,7 +900,7 @@
   name: OP-SKS Simonov
   parent: WeaponRifleRUSKS
   id: WeaponRifleRUOPSKS
-  description: A SKS with a scope mount made for the civiliian hunter market.
+  description: A SKS with a scope mount made for the civilian hunter market.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/opsks.rsi

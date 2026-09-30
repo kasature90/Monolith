@@ -144,6 +144,22 @@
   abstract: true
   components:
   - type: SpriteFade
+  - type: RangedDamageSound # WOLFGATE - material bullet impacts
+    soundGroups:
+      Brute:
+        collection: WolfgateBulletImpactWood
+  - type: Flammable
+    fireSpread: true
+    firestackFade: 0.5
+    alwaysCombustible: true
+    damage:
+      types:
+        Heat: 1
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Generic_mob_burning
+  - type: Animateable
+  - type: Appearance
   - type: Clickable
   - type: Sprite
     noRot: true
@@ -184,7 +200,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 2000
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -201,7 +217,7 @@
             max: 1
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 500
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -217,6 +233,22 @@
   description: Yep, it's a tree.
   components:
   - type: SpriteFade
+  - type: RangedDamageSound # WOLFGATE - material bullet impacts
+    soundGroups:
+      Brute:
+        collection: WolfgateBulletImpactWood
+  - type: Flammable
+    fireSpread: true
+    firestackFade: 0.5
+    alwaysCombustible: true
+    damage:
+      types:
+        Heat: 1
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Generic_mob_burning
+  - type: Animateable
+  - type: Appearance
   - type: Clickable
   - type: Sprite
     noRot: true
@@ -249,7 +281,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 1000
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -271,6 +303,22 @@
   description: Yep, it's not a tree.
   components:
   - type: SpriteFade
+  - type: RangedDamageSound # WOLFGATE - material bullet impacts
+    soundGroups:
+      Brute:
+        collection: WolfgateBulletImpactWood
+  - type: Flammable
+    fireSpread: true
+    firestackFade: 0.5
+    alwaysCombustible: true
+    damage:
+      types:
+        Heat: 1
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Generic_mob_burning
+  - type: Animateable
+  - type: Appearance
   - type: Clickable
   - type: Sprite
     noRot: true

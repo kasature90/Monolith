@@ -216,5 +216,8 @@
   name: mono-crocus-title
   description: mono-crocus-description
   showInVote: false
+  weight: 0.2 # Giant majority needed
+  supportedMaps: HyperwarMapPool
   rules:
   - PDVObjectivesCrocus
+  - RoundEndRuleHour2

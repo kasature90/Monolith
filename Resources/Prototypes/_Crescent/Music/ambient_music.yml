@@ -117,7 +117,7 @@
   id: BiomeFarReachesIV
   sound:
     collection: BiomeFarReachesIV
-    
+
 - type: soundCollection #I don't know why reusing the far reaches iii soundcollection breaks so here we are
   id: BiomeFarReachesIV
   files:
@@ -206,6 +206,42 @@
    - /Audio/_Crescent/Ambient/InnerRing/inner_ring_6.ogg
 
 # clusters
+- type: ambientMusic
+  id: CrocusBiomeJianghuiIndustrial
+  sound:
+    collection: CrocusBiomeJianghuiIndustrial
+
+- type: soundCollection
+  id: CrocusBiomeJianghuiIndustrial
+  parent: BiomeClusterA
+
+- type: ambientMusic
+  id: CrocusBiomeJianghuiCity
+  sound:
+    collection: CrocusBiomeJianghuiCity
+
+- type: soundCollection
+  id: CrocusBiomeJianghuiCity
+  parent: BiomeClusterA
+
+- type: ambientMusic
+  id: CrocusBiomeJianghuiPort
+  sound:
+    collection: CrocusBiomeJianghuiPort
+
+- type: soundCollection
+  id: CrocusBiomeJianghuiPort
+  parent: BiomeClusterA
+
+- type: ambientMusic
+  id: CrocusBiome
+  sound:
+    collection: CrocusBiome
+
+- type: soundCollection
+  id: CrocusBiome
+  parent: BiomeClusterA
+
 - type: ambientMusic
   id: BiomeClusterA
   sound:

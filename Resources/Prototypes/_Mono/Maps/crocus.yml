@@ -1,0 +1,41 @@
+- type: gameMap
+  id: CrocusJianghuiIndustrial
+  mapName: Jianghui Industrial
+  minPlayers: 0
+  maxPlayers: 650 # Mango
+  mapPath: /Maps/_Mono/Crocus/jianghui_industrial_1.yml
+  stations:
+    Jianghui:
+      stationProto: CEStandardImperialFloatingIsland
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: "Jianghui Industrial"
+      - type: StationJobs
+        availableJobs:
+          CrocusDockworker: [ 0, -1 ]
+          PdvInfantry: [ 0, -1 ]
+          TsfInfantry: [ 0, -1 ]
+      - type: CEStationZLevels
+        mapsAbove:
+        - /Maps/_Mono/Crocus/jianghui_industrial_2.yml
+        - /Maps/_Mono/Crocus/jianghui_industrial_3.yml
+        - /Maps/_Mono/Crocus/jianghui_industrial_4.yml
+        - /Maps/_Mono/Crocus/jianghui_industrial_5.yml
+        zLevelsComponentOverrides:
+        - type: MapAtmosphere
+          space: False
+          mixture:
+            volume: 2500
+            immutable: True
+            temperature: 274.6 # May have to change later if it's too impossible for lizards.
+            moles:
+              Oxygen: 21.824879
+              Nitrogen: 82.10312
+        - type: Parallax
+          parallax: bedrock
+        - type: MapLight #BEFORE Light Cycle
+          ambientLightColor: "#adcfd8"
+        - type: LightCycle #BEFORE Sun shadow cycle!
+        - type: SunShadowCycle
+        - type: CEZLevelRoof
+        - type: SunShadow

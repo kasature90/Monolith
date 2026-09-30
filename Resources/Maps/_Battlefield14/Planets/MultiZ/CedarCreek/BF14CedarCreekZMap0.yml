@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/30/2026 11:41:03
+  time: 09/30/2026 12:10:46
   entityCount: 2345
 maps:
 - 738
@@ -263,10 +263,10 @@ entities:
     - type: GridPathfinding
     - type: SpreaderGrid
       spreadQueues:
-        Puddle: []
-        MetalFoam: []
         Kudzu: []
+        Puddle: []
         Smoke: []
+        MetalFoam: []
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay

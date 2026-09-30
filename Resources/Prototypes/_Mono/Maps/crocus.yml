@@ -6,7 +6,7 @@
   mapPath: /Maps/_Mono/Crocus/jianghui_industrial_1.yml
   stations:
     Jianghui:
-      stationProto: CEStandardImperialFloatingIsland
+      stationProto: RecordsFrontierOutpost
       components:
       - type: StationNameSetup
         mapNameTemplate: "Jianghui Industrial"

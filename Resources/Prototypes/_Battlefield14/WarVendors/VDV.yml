@@ -275,6 +275,8 @@
         amount: 5
       - id: ShellBoxBF12GaugeBuckshot
         amount: 10
+      - id: ShellBoxBF12GaugeFlechette
+        amount: 2
     - name: Misc
       entries:
       - id: MagazinePistolMP443

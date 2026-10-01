@@ -92,6 +92,30 @@
     maxIntensity: 0.5
     maxTileBreak: 0
 
+- type: entity
+  id: FlechetteShotgunBF12Gauge
+  name: 12 gauge flechette
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: sabot
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 7
+        Slash: 3
+    armorPenetration: 0.1
+  - type: ProjectileDamageFalloff
+    falloffStart: 15
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: true
+  - type: StaminaDamageOnCollide
+    damage: 2 # ~50 hits to stun
+
 # 4 gauge
 
 - type: entity

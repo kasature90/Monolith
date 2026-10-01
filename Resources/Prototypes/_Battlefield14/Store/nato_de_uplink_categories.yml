@@ -82,6 +82,22 @@
 #region Ammo
 
 - type: listing
+  id: UplinkNATODEMagazineBoxG3
+  name: uplink-NATODE-magazine-box-G3-name
+  description: uplink-NATODE-magazine-box-G3-desc
+  productEntity: BoxMagazineG3
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/G3.rsi, state: icon }
+  cost:
+    NATORequisition: 4 # 40 seconds
+  categories:
+    - UplinkNATODEAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - BundeswehrUplink
+
+- type: listing
   id: UplinkNATODEAmmoBox
   name: uplink-NATODE-ammo-box-name
   description: uplink-NATODE-ammo-box-desc

@@ -213,7 +213,17 @@
 
 - type: soundCollection
   id: CrocusBiomeJianghuiIndustrial
-  parent: BiomeClusterA
+  files:
+  - /Audio/_Crescent/Ambient/Wilds/wilds_1.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_2.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_3.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_4.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_5.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_6.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_7.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_8.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_9.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_10.ogg
 
 - type: ambientMusic
   id: CrocusBiomeJianghuiCity
@@ -222,7 +232,17 @@
 
 - type: soundCollection
   id: CrocusBiomeJianghuiCity
-  parent: BiomeClusterA
+  files:
+  - /Audio/_Crescent/Ambient/Wilds/wilds_1.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_2.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_3.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_4.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_5.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_6.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_7.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_8.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_9.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_10.ogg
 
 - type: ambientMusic
   id: CrocusBiomeJianghuiPort
@@ -231,7 +251,17 @@
 
 - type: soundCollection
   id: CrocusBiomeJianghuiPort
-  parent: BiomeClusterA
+  files:
+  - /Audio/_Crescent/Ambient/Wilds/wilds_1.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_2.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_3.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_4.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_5.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_6.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_7.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_8.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_9.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_10.ogg
 
 - type: ambientMusic
   id: CrocusBiome
@@ -240,7 +270,17 @@
 
 - type: soundCollection
   id: CrocusBiome
-  parent: BiomeClusterA
+  files:
+  - /Audio/_Crescent/Ambient/Wilds/wilds_1.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_2.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_3.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_4.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_5.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_6.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_7.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_8.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_9.ogg
+  - /Audio/_Crescent/Ambient/Wilds/wilds_10.ogg
 
 - type: ambientMusic
   id: BiomeClusterA

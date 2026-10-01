@@ -419,14 +419,31 @@
         # add destruction drop for materials
 
 - type: entity
-  parent: N14DecorFloorWorldBase
+  parent: BaseStructure
   id: N14DecorFloorPalletStack
   name: pallet stack
   description: a stack of wooden pallets
   suffix: "2 states"
   components:
   - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
     state: pallet_stack
+    netsync: false
+    noRot: true
+  - type: RangedDamageSound # WOLFGATE - material bullet impacts
+    soundGroups:
+      Brute:
+        collection: WolfgateBulletImpactWood
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+    canCollide: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Damageable
+    damageModifierSet: Metallic
+    damageContainer: Inorganic
   - type: Destructible
     thresholds:
     - trigger:
@@ -444,12 +461,13 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0.5"
+          bounds: "-0.4,-0.4,0.4,0.4"
         density: 1000
         mask:
         - TableMask
         layer:
         - TableLayer
+        - BulletImpassable
   - type: BarricadeBlock
     bidirectional: true
     omnidirectional: true
@@ -469,6 +487,10 @@
   components:
   - type: Sprite
     state: brickpile
+  - type: RangedDamageSound # WOLFGATE - material bullet impacts
+    soundGroups:
+      Brute:
+        collection: WolfgateBulletImpactConcrete
   - type: Destructible
     thresholds:
     - trigger:
@@ -480,6 +502,18 @@
           collection: MetalBreak
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+        - BulletImpassable
   - type: BarricadeBlock
     bidirectional: true
     omnidirectional: true

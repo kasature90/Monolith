@@ -28,6 +28,15 @@ public sealed partial class NukieOperationComponent : Component
     /// </summary>
     [DataField("participatingCompany")]
     public ProtoId<CompanyPrototype> ParticipatingCompany;
+
+    /// <summary>
+    /// Mono - The actives objectives of the operation.
+    /// Originally, the system was just adding the objective to each comp member/antag specified, but:
+    /// - That doesn't sync random (eg one can have objective to capture 30 items and other can be 20).
+    /// - I want to list progress on round end.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public List<EntityUid> Objectives = new();
 }
 
 /// <summary>

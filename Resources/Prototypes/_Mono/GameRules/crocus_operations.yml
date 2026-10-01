@@ -24,6 +24,8 @@
   - type: NukieOperation
     operations: PDVOperationsCrocus
     participatingCompany: PDV
+  - type: Company
+    companyName: PDV
 
 - type: nukieOperation
   id: PDVCrocusNanitesOperation
@@ -37,6 +39,7 @@
   components:
   - type: Objective
     difficulty: 1.0
+    unique: false
     issuer: objective-issuer-pdv
   - type: StealCondition
     owner: objective-condition-steal-tsf
@@ -46,15 +49,16 @@
     checkCompanyMembers: true
     objectiveText: objective-condition-steal-title-faction
     objectiveNoOwnerText: objective-condition-steal-title-faction-no-owner
-    descriptionText: objective-condition-steal-description-faction-crocus
+    descriptionText: objective-condition-steal-description-faction-beacon-crocus
     descriptionMultiplyText: objective-condition-steal-multiply-description-faction-crocus
+  - type: Company
+    companyName: PDV
 
 - type: entity
   parent: PDVCrocusObjectiveBase
   id: PDVCrocusObjectiveNanites
   components:
   - type: Objective
-    roundEndText: fac-operation-objectives-crocus-nanites
     icon:
       sprite: _Mono/Objects/TradeGoods/factiongoods.rsi
       state: nanitecanister
@@ -82,7 +86,6 @@
   id: PDVCrocusObjectivePDAs
   components:
   - type: Objective
-    roundEndText: fac-operation-objectives-crocus-pdas
     icon:
       sprite: _NF/Objects/Devices/pda.rsi
       state: pda-security

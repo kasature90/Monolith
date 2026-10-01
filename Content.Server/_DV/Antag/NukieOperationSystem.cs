@@ -1,6 +1,7 @@
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Rules;
 using Content.Server.Objectives;
+using Content.Server.Objectives.Components;
 using Content.Shared._Mono.Company;
 using Content.Shared.GameTicking;
 using Content.Shared.GameTicking.Components;
@@ -27,6 +28,59 @@ public sealed partial class NukieOperationSystem : GameRuleSystem<NukieOperation
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerCompanyCompSpawned);
     }
 
+    protected override void Started(EntityUid uid, NukieOperationComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
+    {
+        base.Started(uid, component, gameRule, args);
+        if (component.ChosenOperation == null)
+        {
+            if (!_proto.TryIndex(component.Operations, out var opProto))
+                return;
+
+            component.ChosenOperation = _random.Pick(opProto.Weights);
+        }
+
+        if (!_proto.TryIndex(component.ChosenOperation, out var chosenOp))
+            return;
+
+        foreach (var objectiveProto in chosenOp.OperationObjectives)
+        {
+            var objectiveData = TryCreateObjective(uid, component, objectiveProto);
+            if (objectiveData == null)
+            {
+                Log.Error("Failed to create objective for operation " + uid.Id);
+                continue;
+            }
+
+            var ev = new ObjectiveAssignedEvent(uid);
+            RaiseLocalEvent(objectiveData.Value.Objective, ref ev);
+            if (ev.Cancelled)
+            {
+                Del(uid);
+                Log.Warning($"Could not assign objective {uid}, deleted it");
+                break;
+            }
+            component.Objectives.Add(objectiveData.Value.Objective);
+            var afterEv = new ObjectiveAfterAssignEvent(uid, objectiveData.Value.Component, MetaData(objectiveData.Value.Objective));
+            RaiseLocalEvent(objectiveData.Value.Objective, ref afterEv);
+        }
+    }
+    public OperationObjectiveData? TryCreateObjective(EntityUid operationUid, NukieOperationComponent component, string proto)
+    {
+        if (!_proto.HasIndex<EntityPrototype>(proto))
+            return null;
+
+        var uid = Spawn(proto);
+        if (!TryComp<ObjectiveComponent>(uid, out var comp))
+        {
+            Del(uid);
+            Log.Error($"Invalid objective prototype {proto}, missing ObjectiveComponent");
+            return null;
+        }
+        // Assigning objectives is done on player spawn, not here!
+        Log.Debug($"Created objective {ToPrettyString(uid):objective}");
+        return new OperationObjectiveData(uid, comp);
+    }
+
     private void OnPlayerCompanyCompSpawned(PlayerSpawnCompleteEvent args)
     {
         if (!_mind.TryGetMind(args.Player, out var mindId, out var mind))
@@ -43,28 +97,18 @@ public sealed partial class NukieOperationSystem : GameRuleSystem<NukieOperation
         }
         foreach (var (uid, operation) in rules)
         {
-            if (operation.ChosenOperation == null)
+            foreach (var objective in operation.Objectives)
             {
-                if (!_proto.TryIndex(operation.Operations, out var opProto))
-                    return;
+                if (operation.ParticipatingCompany != userCompany.CompanyName || !TryComp<ObjectiveComponent>(objective, out var objectiveComp))
+                    break;
 
-                operation.ChosenOperation = _random.Pick(opProto.Weights);
-            }
-
-            if (!_proto.TryIndex(operation.ChosenOperation, out var chosenOp))
-                return;
-
-            foreach (var objectiveProto in chosenOp.OperationObjectives)
-            {
-                if (operation.ParticipatingCompany != userCompany.CompanyName)
-                    return;
-                if (!_objectives.TryCreateObjective((mindId, mind), objectiveProto, out var objective))
+                if (!_objectives.CanBeAssigned(uid, mindId, mind, objectiveComp))
                 {
-                    Log.Error("Couldn't create objective for company member: " + mindId); // This should never happen.
-                    continue;
+                    Log.Warning($"Objective {uid} did not match the requirements for {_mind.MindOwnerLoggingString(mind)}, deleted it");
+                    break;
                 }
 
-                _mind.AddObjective(mindId, mind, objective.Value);
+                _mind.AddObjective(mindId, mind, objective);
                 Log.Info("Adding objective " + objective +  " to mindId " + mindId);
             }
         }
@@ -96,20 +140,21 @@ public sealed partial class NukieOperationSystem : GameRuleSystem<NukieOperation
                 args.AddLine(Loc.GetString("fac-operation-members-list-name",("name", Name(member))));
             }
 
-            var objectives = opProto.OperationObjectives;
             args.AddLine(Loc.GetString("fac-operation-objectives-list-start"));
-            foreach(var obj in objectives)
+            foreach(var objective in component.Objectives)
             {
-                if (_proto.TryIndex<EntityPrototype>(obj, out var entityProto))
-                {
-                    entityProto.Components.TryGetComponent("Objective", out var objComp);
-                    if (objComp != null)
+                    var info = _objectives.GetInfo(objective, uid);
+                    if (info != null)
                     {
-                        var objCompNew = (ObjectiveComponent)objComp;
-                            args.AddLine(objCompNew.LocRoundEndText);
+                        args.AddLine(Loc.GetString("fac-operation-objectives-list-entry",
+                            ("name", info.Value.Title),
+                            ("progress", info.Value.Progress)
+                        ));
                     }
-                }
             }
         }
     }
+
+    [Serializable]
+    public record struct OperationObjectiveData(EntityUid Objective, ObjectiveComponent Component);
 }

@@ -217,7 +217,7 @@
   description: mono-crocus-description
   showInVote: false
   weight: 0.2 # Giant majority needed
-  supportedMaps: HyperwarMapPool
+  supportedMaps: CrocusMapPool
   rules:
   - PDVObjectivesCrocus
   - RoundEndRuleHour2

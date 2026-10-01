@@ -1,16 +1,13 @@
-using Content.Server.Mind;
 using Content.Server.Objectives.Components;
 using Content.Server.Objectives.Components.Targets;
 using Content.Shared._Mono.Company;
 using Content.Shared.CartridgeLoader;
 using Content.Shared.Interaction;
-using Content.Shared.Mind;
 using Content.Shared.Objectives.Components;
 using Content.Shared.Objectives.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
-using Content.Shared.Mind.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Movement.Pulling.Components;
@@ -98,13 +95,12 @@ public sealed partial class StealConditionSystem : EntitySystem
     }
     private void OnGetProgress(Entity<StealConditionComponent> condition, ref ObjectiveGetProgressEvent args)
     {
-        args.Progress = GetProgress(args.Mind, condition);
+        args.Progress = GetProgress(args.MindId, condition);
     }
 
-    private float GetProgress(MindComponent mind, StealConditionComponent condition)
+    private float GetProgress(EntityUid entityUid, StealConditionComponent condition)
     {
-        if (!_containerQuery.TryGetComponent(mind.OwnedEntity, out var currentManager))
-            return 0;
+        // Mono - I changed some of this system to make it not hardcoded to minds.
 
         var containerStack = new Stack<ContainerManagerComponent>();
         var count = 0;
@@ -112,13 +108,13 @@ public sealed partial class StealConditionSystem : EntitySystem
         _countedItems.Clear();
 
         // Mono - Check all other company members if we have one and if the objective calls for it.
-        if (condition.CheckCompanyMembers && TryComp<CompanyComponent>(mind.CurrentEntity, out var mindCompany))
+        if (condition.CheckCompanyMembers && TryComp<CompanyComponent>(entityUid, out var mindCompany))
         {
             var companyQuery = AllEntityQuery<CompanyComponent, TransformComponent>();
             while (companyQuery.MoveNext(out var uid, out var company, out var xform))
             {
                 if (company.CompanyName == mindCompany.CompanyName
-                    && uid != mind.CurrentEntity)
+                    && uid != entityUid)
                 {
                     CheckEntity(uid, condition, ref containerStack, ref count);
                 }
@@ -147,7 +143,7 @@ public sealed partial class StealConditionSystem : EntitySystem
         }
 
         //check pulling object
-        if (TryComp<PullerComponent>(mind.OwnedEntity, out var pull)) //TO DO: to make the code prettier? don't like the repetition
+        if (TryComp<PullerComponent>(entityUid, out var pull)) //TO DO: to make the code prettier? don't like the repetition
         {
             var pulledEntity = pull.Pulling;
             if (pulledEntity != null)
@@ -158,21 +154,25 @@ public sealed partial class StealConditionSystem : EntitySystem
 
         // recursively check each container for the item
         // checks inventory, bag, implants, etc.
-        do
-        {
-            foreach (var container in currentManager.Containers.Values)
-            {
-                foreach (var entity in container.ContainedEntities)
-                {
-                    // check if this is the item
-                    count += CheckStealTarget(entity, condition);
 
-                    // if it is a container check its contents
-                    if (_containerQuery.TryGetComponent(entity, out var containerManager))
-                        containerStack.Push(containerManager);
+        if (_containerQuery.TryGetComponent(entityUid, out var currentManager))
+        {
+            do
+            {
+                foreach (var container in currentManager.Containers.Values)
+                {
+                    foreach (var entity in container.ContainedEntities)
+                    {
+                        // check if this is the item
+                        count += CheckStealTarget(entity, condition);
+
+                        // if it is a container check its contents
+                        if (_containerQuery.TryGetComponent(entity, out var containerManager))
+                            containerStack.Push(containerManager);
+                    }
                 }
-            }
-        } while (containerStack.TryPop(out currentManager));
+            } while (containerStack.TryPop(out currentManager));
+        }
 
         var result = count / (float) condition.CollectionSize;
         result = Math.Clamp(result, 0, 1);

@@ -32,7 +32,7 @@ mono-allatonce-title = Apocalypse (ALL, 3hr)
 mono-allatonce-description = A battleground between PDV, and TSF forces alike, with ancient ADS systems and Chimera bioweapons seeping in.
 
 mono-crocus-title = Crocus (TSF|PDV)
-mono-crocus-description = A TSF garrison must defend against an invading PDV force for 1 1/2 hours. One planet map only, no ships or civilians.
+mono-crocus-description = A TSF garrison must defend against an invading PDV force for  2 hours. One planet map only, no ships.
 
 mono-secret-title = Secret (?)
 mono-secret-description = The main threat of the round is unknown. You'll have to figure that out later.

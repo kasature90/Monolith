@@ -17,7 +17,7 @@
   icon: "JobIconStationEngineer"
   supervisors: job-supervisors-nobody
   canBeAntag: false
-  setPreference: false
+  setPreference: true # For loadout.
   weight: 10
   displayWeight: 10
   accessGroups:
@@ -37,11 +37,5 @@
 - type: startingGear
   id: JianghuiDockworkerGear
   equipment:
-    belt: ClothingBeltSalvageWebbingFilledNF
-    shoes: ClothingShoesBootsWork
-    jumpsuit: ClothingUniformJumpsuitMilitaryContractor
-    outerClothing: ClothingOuterVestHazard
-    gloves: ClothingHandsGlovesColorYellowBudget
-    head: ClothingHeadHatCorpsoft
     pocket1: RadioHandheldNF
     pocket2: FlashlightLantern

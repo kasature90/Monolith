@@ -169,7 +169,7 @@
   - type: BarricadeBlock
     bidirectional: true
     omnidirectional: true
-    passThroughDistance: 0.4
+    passthroughdistance: 0.4
     blocking: 40
   - type: ExtendDescription
     descriptionList:
@@ -431,7 +431,7 @@
   - type: BarricadeBlock
     bidirectional: true
     omnidirectional: true
-    passThroughDistance: 0.7
+    passthroughdistance: 0.7
     blocking: 60
   - type: ExtendDescription
     descriptionList:

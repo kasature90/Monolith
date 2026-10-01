@@ -43,6 +43,7 @@
   id: TSFInfantryGear
   equipment:
     neck: ClothingNeckIFFCyan
+    eyes: ClothingEyesHudNfsd
   storage:
     back:
     - RadioHandheldNF

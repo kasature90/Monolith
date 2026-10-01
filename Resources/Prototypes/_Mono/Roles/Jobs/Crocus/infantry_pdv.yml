@@ -45,6 +45,7 @@
   equipment:
     ears: ClothingHeadsetAltFreelancer
     neck: ClothingNeckIFFOrange
+    eyes: ClothingEyesHudSecurity
   storage:
     back:
     - RadioHandheldNF

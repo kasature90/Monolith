@@ -40,6 +40,44 @@
     randomMode: false
     mode: SensorVitals
 
+# Clothing w/ insulation because reptillians will freeze and pass out instantly on crocus lol
+
+- type: entity
+  parent: ClothingUniformTSFMC
+  id: ClothingUniformTSFMCCrocus
+  suffix: Crocus
+  components:
+  - type: TemperatureProtection
+    heatingCoefficient: 1.1
+    coolingCoefficient: 0.05
+
+- type: entity
+  parent: ClothingUniformTSFMCDesert
+  id: ClothingUniformTSFMCDesertCrocus
+  suffix: Crocus
+  components:
+  - type: TemperatureProtection
+    heatingCoefficient: 1.1
+    coolingCoefficient: 0.05
+
+- type: entity
+  parent: ClothingUniformTSFMCForest
+  id: ClothingUniformTSFMCForestCrocus
+  suffix: Crocus
+  components:
+  - type: TemperatureProtection
+    heatingCoefficient: 1.1
+    coolingCoefficient: 0.05
+
+- type: entity
+  parent: ClothingUniformPDVInfantry
+  id: ClothingUniformPDVInfantryCrocus
+  suffix: Crocus
+  components:
+  - type: TemperatureProtection
+    heatingCoefficient: 1.1
+    coolingCoefficient: 0.05
+
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTsfmcMopp

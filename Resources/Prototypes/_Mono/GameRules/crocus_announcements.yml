@@ -12,7 +12,7 @@
     endAnnouncement: gamerule-crocus-announce-start-announcement
     announceSender: gamerule-crocus-announce-sender
     endAudio:
-      path: /Audio/_Mono/Misc/Effects/Alerts/crocus.ogg
+      path: /Audio/_Mono/Effects/Alerts/crocus.ogg
       params:
         volume: -2
 

@@ -12,7 +12,7 @@
   minLimit: 1
   hidden: true
   loadouts:
-  - PDVClothingJumpsuitInfantry
+  - PDVClothingJumpsuitInfantryCrocus
 
 - type: loadoutGroup
   id: PDVNeck

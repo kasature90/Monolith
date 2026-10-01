@@ -221,3 +221,5 @@
   rules:
   - PDVObjectivesCrocus
   - RoundEndRuleHour2
+  - CrocusAnnouncementMinuteRoundStart
+  - CrocusAnnouncementMinute10m

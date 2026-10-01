@@ -64,7 +64,7 @@
       state: nanitecanister
   - type: StealCondition
     minCollectionSize: 40
-    maxCollectionSize: 150
+    maxCollectionSize: 100 # The map has 115 across all levels.
     stealGroup: FederalNanites
 
 - type: stealTargetGroup

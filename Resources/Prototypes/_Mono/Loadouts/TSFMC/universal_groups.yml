@@ -45,10 +45,10 @@
   minLimit: 1
   hidden: false
   loadouts:
-  - TsfmcClothingJumpsuitType47F
-  - TsfmcClothingJumpsuitType47D
+  - TsfmcClothingJumpsuitType47FCrocus
+  - TsfmcClothingJumpsuitType47DCrocus
   fallbacks:
-  - TsfmcClothingJumpsuitType47F
+  - TsfmcClothingJumpsuitType47FCrocus
 
 - type: loadoutGroup
   id: TsfmcJumpsuitEngi

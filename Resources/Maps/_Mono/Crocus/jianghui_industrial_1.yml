@@ -75,6 +75,8 @@ entities:
         moles:
           Oxygen: 21.824879
           Nitrogen: 82.10312
+    - type: BecomesStation
+      id: Jianghui
     - type: LightCycle
       initialOffset: False
       offset: 600

@@ -3,3 +3,9 @@
   price: 0
   equipment:
     outerClothing: ClothingOuterVestHazard
+
+- type: loadout
+  id: CrocusDockworkerOuterClothingWinterCoat
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterWinterColorBlack

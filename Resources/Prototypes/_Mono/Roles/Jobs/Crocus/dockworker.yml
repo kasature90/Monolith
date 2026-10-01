@@ -3,14 +3,6 @@
   name: job-name-crocus-dockworker
   description: job-description-crocus-dockworker
   playTimeTracker: JobCrocusDockworker
-  requirements:
-  - !type:TraitsRequirement
-    inverted: true
-    traits:
-    # Ironman gives you the LPC. The others are just free upgrades; Crocus has no bionics.
-    - PrybarProsthetics
-    - BionicLegs
-    - Ironman
   startingGear: JianghuiDockworkerGear
   alwaysUseSpawner: true
   hideConsoleVisibility: true
@@ -36,6 +28,7 @@
 
 - type: startingGear
   id: JianghuiDockworkerGear
-  equipment:
-    pocket1: RadioHandheldNF
-    pocket2: FlashlightLantern
+  storage:
+    belt:
+    - RadioHandheldNF
+    - FlashlightLantern

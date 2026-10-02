@@ -7,6 +7,5 @@
   - CrocusDockworkerOuterClothing
   - CrocusDockworkerBelt
   - CrocusDockworkerShoes
-  - CrocusDockworkerGear
-  - NfSpeciesSpecific
+  - NFSpeciesSpecific
   canCustomizeName: true

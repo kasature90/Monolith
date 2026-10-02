@@ -452,11 +452,13 @@
   - type: ContainerFill
     containers:
       item:
-      - WeaponPistolITM9Supp
+      - WeaponPistolM9
+      - GunAttachmentSuppressorPistol9x19mm
   - type: StorageFill
     contents:
       - id: Handcuffs
         amount: 2
+      - id: GunAttachmentSuppressorPistol9x19mm
       - id: FlashlightSeclite
       - id: MagazinePistolM9
         amount: 6
@@ -469,10 +471,11 @@
   - type: ContainerFill
     containers:
       item:
-      - WeaponPistolITM9Supp
+      - WeaponPistolM9
   - type: StorageFill
     contents:
       - id: Handcuffs
+      - id: GunAttachmentSuppressorPistol9x19mm
       - id: FlashlightSeclite
       - id: MagazinePistolM9
         amount: 2

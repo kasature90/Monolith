@@ -384,3 +384,8 @@
 
 - type: Tag
   id: Cartridge43x30mmChemicalSmoke
+
+# Attachments
+
+- type: Tag
+  id: BF14Pistol9x19mmSuppressor

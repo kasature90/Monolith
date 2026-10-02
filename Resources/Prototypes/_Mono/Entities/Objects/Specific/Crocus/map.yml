@@ -24,3 +24,5 @@
   - type: Sprite
     sprite: _Mono/Objects/Misc/maps.rsi
     state: jianghui
+    noRot: false
+    drawdepth: FloorTiles

@@ -2,82 +2,6 @@
 #region US
 
 - type: entity
-  name: MP5
-  parent: BaseWeaponSubMachineGun
-  id: WeaponSubmachinegunUSMP5
-  description: Feather-light recoil, swag, and a high rate of fire; everything you need in a submachine gun, except for a massive flashlight mounted on top.
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
-    clothingVisuals:
-      suitstorage2:
-      - state: equipped-BACKPACK
-  - type: Gun
-    minAngle: 0
-    maxAngle: 10
-    fireRate: 8
-    angleIncrease: 1.5
-    angleDecay: 15
-    projectileSpeed: 35 # pistol caliber
-    availableModes:
-    - SemiAuto
-    - FullAuto
-    soundGunshot:
-      collection: BF_MP5_Gunshots
-      params:
-        volume: -5
-  - type: ChamberMagazineAmmoProvider
-    autoOpenBoltOnEmpty: false
-    soundRack:
-      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
-      params:
-        volume: -3
-    soundBoltClosed:
-      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_slap.ogg
-      params:
-        volume: -3
-    soundBoltOpened:
-      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
-      params:
-        volume: -3
-        variation: 0.125
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineSubmachinegunMP5
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazinePistolMP5
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: BF_CartridgePistol9x19
-        priority: 1
-        whitelist:
-          tags:
-            - BF_CartridgePistol9x19
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
-
-- type: entity
   name: MAC-10
   parent: BaseWeaponSubMachineGun
   id: WeaponSubmachinegunUSMAC10
@@ -182,7 +106,289 @@
         volume: -12
         variation: 0.125
 
+- type: entity
+  name: SP5
+  parent: WeaponSubmachinegunDEMP5A4
+  id: WeaponSubmachinegunUSSP5
+  description: A civilian semi-automatic only version of the MP5A2.
+  components:
+  - type: Gun
+    availableModes:
+    - SemiAuto
+    selectedMode: SemiAuto
+    fireRate: 5
+
 #region DE
+
+- type: entity
+  name: MP5A4
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubmachinegunDEMP5A4
+  description: An MP5A5 rechambered in 10x25mm Auto designed for use by the FBI. Features an automatic bolt hold open.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A4.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    state: icon-MP5A4
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: front-base
+    - state: stock-full
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    equippedPrefix: A4
+    clothingVisuals:
+      suitstorage2:
+      - state: A4-equipped-BACKPACK
+  - type: Gun
+    minAngle: 2
+    maxAngle: 12
+    fireRate: 8
+    angleIncrease: 3
+    angleDecay: 10
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    - Burst
+    burstCooldown: 0.2
+    soundGunshot:
+      collection: BF_MP5_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    autoOpenBoltOnEmpty: false
+#    canRack: false cant decide
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_slap.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
+      params:
+        volume: -3
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunMP5
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolMP5
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x19
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: MP5A4 (flashlight)
+  parent: WeaponSubmachinegunDEMP5A4
+  id: WeaponSubmachinegunDEMP5A4Flashlight
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: front-flashlight
+    - state: stock-full
+    - state: flashlight-overlay
+      shader: unshaded
+      visible: false
+      map: [ "light" ]
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png
+    autoRot: true
+    radius: 8
+
+- type: entity
+  name: MP5A5
+  parent: WeaponSubmachinegunDEMP5A4
+  id: WeaponSubmachinegunDEMP5A5
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A5.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    state: icon-MP5A5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: front-base
+    - state: stock-collapsing
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    equippedPrefix: A5
+    clothingVisuals:
+      suitstorage2:
+      - state: A5-equipped-BACKPACK
+
+- type: entity
+  name: MP5SD5
+  parent: WeaponSubmachinegunDEMP5A4
+  id: WeaponSubmachinegunDEMP5SD5
+  description: For a long while this was your go-to for full auto suppressed action, even surviving when people realised you could just make an AR15 shorter, until they figured out you could put a suppressor on that too.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5SD5.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    state: icon-MP5A5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: front-SD
+    - state: stock-full
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    equippedPrefix: SD5
+    clothingVisuals:
+      suitstorage2:
+      - state: SD5-equipped-BACKPACK
+  - type: Gun
+    soundGunshot:
+      collection: BF_MP5_Gunshots_SUPP
+      params:
+        volume: -9
+        variation: 0.125
+        range: 10
+
+- type: entity
+  name: MP5SD6
+  parent: WeaponSubmachinegunDEMP5SD5
+  id: WeaponSubmachinegunDEMP5SD6
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5SD6.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    state: icon-MP5A6
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: front-SD
+    - state: stock-collapsing
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    equippedPrefix: SD6
+    clothingVisuals:
+      suitstorage2:
+      - state: SD6-equipped-BACKPACK
+
+- type: entity
+  name: MP5/10
+  parent: WeaponSubmachinegunDEMP5A4Flashlight
+  id: WeaponSubmachinegunDEMP510
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A5.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    state: icon-MP510
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-10-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: front-flashlight
+    - state: stock-collapsing
+    - state: flashlight-overlay
+      shader: unshaded
+      visible: false
+      map: [ "light" ]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    equippedPrefix: A5
+    clothingVisuals:
+      suitstorage2:
+      - state: A5-equipped-BACKPACK
+  - type: Gun
+    minAngle: 2
+    maxAngle: 10
+    fireRate: 8
+    angleIncrease: 1.5
+    angleDecay: 15
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    - Burst
+    shotsPerBurst: 2
+    burstCooldown: 0.2
+    soundGunshot:
+      collection: BF_MP5_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    autoOpenBoltOnEmpty: true
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunMP510
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
+        priority: 3
+        whitelist:
+          tags:
+            - MagazinePistolMP510
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol10x25
+        priority: 2
+        whitelist:
+          tags:
+            - BF_CartridgePistol10x25
+  - type: MagazineVisuals
+    magState: mag-10
+    steps: 1
+    zeroVisible: true
 
 - type: entity
   name: MP7
@@ -190,6 +396,10 @@
   id: WeaponSubmachinegunDEMP7
   description: A compact, lightweight, and armour penetrating PDW, or Personal Defence Weapon. It's expensive, but you get what you pay for, if you use it right.
   components:
+#  - type: Item
+#    storedSprite:
+#      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP7.rsi
+#      state: icon-storage
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP7.rsi
     layers:
@@ -205,7 +415,7 @@
   - type: Gun
     minAngle: 2
     maxAngle: 15
-    fireRate: 6.5
+    fireRate: 7
     angleIncrease: 2
     angleDecay: 15
     projectileSpeed: 40
@@ -215,7 +425,7 @@
     soundGunshot:
       collection: BF_MP7_Gunshots
       params:
-        volume: -2
+        volume: -5
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
@@ -259,8 +469,340 @@
     zeroVisible: true
   - type: Appearance
 
+#region BE
+
+- type: entity
+  name: P90
+  parent: [ BaseWeaponSubMachineGun , BaseGunWieldable ]
+  id: WeaponSubmachinegunBEP90
+  description: A compact, lightweight, and armour penetrating PDW, or Personal Defence Weapon. It's expensive, but you get what you pay for, if you use it right.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/P90.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/P90.rsi
+  - type: GunWieldBonus
+    minAngle: -8
+    maxAngle: -12
+  - type: Gun
+    minAngle: 10
+    maxAngle: 20
+    fireRate: 6.5
+    angleIncrease: 2
+    angleDecay: 15
+    projectileSpeed: 40
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      collection: BF_MP7_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_chamber.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
+      params:
+        volume: -3
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunP90
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_magout.ogg
+        swap: false
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolP90
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePDW46x30
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePDW46x30
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+#region AT
+
+- type: entity
+  name: TMP
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubmachinegunATTMP
+  description: A cheap, compact, and concealable package, can give you a belly full of lead in less than a second.
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: tmp-overlay
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+  - type: Gun
+    minAngle: 3
+    maxAngle: 30
+    fireRate: 15
+    angleIncrease: 2.2
+    angleDecay: 20
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      collection: BF_MP5_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_slap.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
+      params:
+        volume: -3
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunMP9
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSubmachinegunMP9
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x19
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: MP9
+  parent: [WeaponSubmachinegunATTMP , BaseGunWieldable ]
+  id: WeaponSubmachinegunATMP9
+  description: A cheap, compact, and concealable package, can give you a belly full of lead in less than a second. This further improvement from the TMP has a sidefolding stock.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: -12
+
+- type: entity
+  name: MP9 SUPP.
+  parent: WeaponSubmachinegunATMP9
+  id: WeaponSubmachinegunATMP9SUPP
+  description: A suppressed MP9, as deadly as it is stealthy
+  components:
+  - type: Item
+    size: Large
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9SUPP.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9SUPP.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
+    - state: supp
+      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9SUPP.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+  - type: Gun
+    soundGunshot:
+      collection: BF_MP5_Gunshots_SUPP
+      params:
+        volume: -8 # slightly worse than MP5SD
+        variation: 0.125
+        range: 12
+
+- type: entity
+  name: TMP SUPP.
+  parent: WeaponSubmachinegunATTMP
+  id: WeaponSubmachinegunATTMPSUPP
+  description: A suppressed MP9, as deadly as it is stealthy
+  components:
+  - type: Item
+    size: Large
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9SUPP.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9SUPP.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
+    - state: tmp-overlay
+      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
+    - state: supp
+      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9SUPP.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+  - type: Gun
+    soundGunshot:
+      collection: BF_MP5_Gunshots_SUPP
+      params:
+        volume: -8 # slightly worse than MP5SD
+        variation: 0.125
+        range: 12
+
+- type: entity
+  name: SP9
+  parent: [WeaponSubmachinegunATMP9 , BaseGunWieldable ]
+  id: WeaponSubmachinegunATSP9
+  description: A cheap, compact, and concealable package. Singlefire only for the civilian market.
+  components:
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: -5
+  - type: Gun
+    minAngle: 3
+    maxAngle: 10
+    availableModes:
+    - SemiAuto
+    selectedMode: SemiAuto
+    fireRate: 5
+
 ## PACT
+
 #region RU
+
+- type: entity
+  name: PP-19 Vityaz-SN
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubmachinegunRUVityaz
+  description: Just as reliable as your AK, with an itty bitty round that doesn't bruise your shoulder too much.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/Vityaz.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/Vityaz.rsi
+  - type: Gun
+    minAngle: 2
+    maxAngle: 10
+    fireRate: 8
+    angleIncrease: 1.5
+    angleDecay: 15
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      collection: BF_UZI_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/AK_9/uc_ak_chback_9.ogg
+      params:
+        volume: -3
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunVityaz
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolVityaz
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x19
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
 
 - type: entity
   name: PP-91 Kedr
@@ -405,71 +947,6 @@
         whitelist:
           tags:
             - BF_CartridgePistol762x25
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
-
-- type: entity
-  name: PP-19 Vityaz-SN
-  parent: BaseWeaponSubMachineGun
-  id: WeaponSubmachinegunRUVityaz
-  description: Just as reliable as your AK, with an itty bitty round that doesn't bruise your shoulder too much.
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/Vityaz.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/Vityaz.rsi
-  - type: Gun
-    minAngle: 0
-    maxAngle: 10
-    fireRate: 8
-    angleIncrease: 1.5
-    angleDecay: 15
-    projectileSpeed: 35 # pistol caliber
-    availableModes:
-    - SemiAuto
-    - FullAuto
-    soundGunshot:
-      collection: BF_UZI_Gunshots
-      params:
-        volume: -5
-        variation: 0.125
-  - type: ChamberMagazineAmmoProvider
-    boltClosed: null
-    soundRack:
-      path: /Audio/_Battlefield14/Weapons/Guns/AK_9/uc_ak_chback_9.ogg
-      params:
-        volume: -3
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineSubmachinegunVityaz
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_magin.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazinePistolVityaz
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: BF_CartridgePistol9x19
-        priority: 1
-        whitelist:
-          tags:
-            - BF_CartridgePistol9x19
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

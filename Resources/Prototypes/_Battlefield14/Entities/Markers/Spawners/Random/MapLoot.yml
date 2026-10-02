@@ -3,7 +3,7 @@
 - type: entity
   parent: MarkerBase
   id: RandomWeaponMapLowTierNATO
-  name: Low tier NATO weapon
+  name: low tier NATO weapon
   components:
   - type: Sprite
     layers:
@@ -15,7 +15,8 @@
       - WeaponPistolUSM1911
       - WeaponPistolM9
       - WeaponPistolATGlock17
-      - WeaponShotgunUSM590
+      - WeaponShotgunUSM590Buckshot
+      - WeaponSubmachinegunATSP9
       - BF14KnifeSwitchblade
     chance: 1
 
@@ -34,13 +35,13 @@
       - WeaponPistolATGlock17
       - WeaponPistolBEFiveSeven
       - WeaponRifleUSAR15
-      - WeaponSubmachinegunUSMP5
+      - WeaponSubmachinegunDEMP5A5
       - WeaponSubmachinegunUSMAC10
       - WeaponSubmachinegunUSMAC10Supp
+      - WeaponSubmachinegunATMP9
       - WeaponRifleUSM16A2
-      - WeaponShotgunUSM590
+      - WeaponShotgunUSM590Buckshot
       - WeaponShotgunUSM870
-      - WeaponRifleUSM14
       - WeaponSniperUSM40A1
       - BF14KnifeFlipTaticool
     chance: 1
@@ -62,8 +63,10 @@
       - WeaponRifleDEG3A3
       - WeaponRifleDEG36
       - WeaponRifleUSM16A4
+      - WeaponRifleUSM14
       - WeaponShotgunUSM870
       - WeaponSubmachinegunDEMP7
+      - WeaponSubmachinegunDEMP5SD6
     chance: 1
 
 ## AMMO
@@ -71,7 +74,7 @@
 - type: entity
   parent: MarkerBase
   id: RandomAmmoMapLowTierNATO
-  name: Low tier NATO ammo
+  name: low tier NATO ammo
   components:
   - type: Sprite
     layers:
@@ -84,13 +87,14 @@
       - MagazinePistolM1911
       - MagazinePistolGlock17
       - ShellBoxBF12GaugeBuckshot
+      - MagazineSubmachinegunMP9
       - SmokeGrenadeUSM18
     chance: 1
 
 - type: entity
   parent: MarkerBase
   id: RandomAmmoMapMidTierNATO
-  name: Mid tier NATO ammo
+  name: mid tier NATO ammo
   components:
   - type: Sprite
     layers:
@@ -103,11 +107,13 @@
       - MagazinePistolFiveSeven
       - MagazineBox762x51
       - MagazineBox556x45
+      - MagazineBox9x19
       - ShellBoxBF12GaugeBuckshot
       - MagazineRifleM14
       - MagazineRifleSTANAG
       - MagazineRifleG36
       - MagazineSubmachinegunMP5
+      - MagazineSubmachinegunMP9
       - MagazineSubmachinegunMAC10
       - SmokeGrenadeUSM18
       - DefensiveGrenadeUSM67
@@ -117,7 +123,7 @@
 - type: entity
   parent: MarkerBase
   id: RandomAmmoMapHighTierNATO
-  name: High tier NATO ammo
+  name: high tier NATO ammo
   components:
   - type: Sprite
     layers:
@@ -137,7 +143,8 @@
       - MagazineSubmachinegunMAC10
       - FlashbangGrenadeUSM84
       - SmokeGrenadeUSM18
-      - OffensiveGrenadeUSMK21
+      - OffensiveGrenadeDEDM51
+      - DefensiveGrenadeUSM67
     chance: 1
 
 #region AMERICAN LOOT
@@ -145,7 +152,7 @@
 - type: entity
   parent: MarkerBase
   id: RandomWeaponMapLowTierUS
-  name: Low tier american weapon
+  name: low tier american weapon
   components:
   - type: Sprite
     layers:
@@ -157,7 +164,8 @@
       - WeaponPistolUSM1911
       - WeaponPistolM9
       - WeaponPistolATGlock17
-      - WeaponShotgunUSM590
+      - WeaponSubmachinegunUSSP5
+      - WeaponShotgunUSM590Buckshot
       - BF14KnifeSwitchblade
     chance: 1
 
@@ -176,13 +184,10 @@
       - WeaponPistolILDeagle
       - WeaponPistolUSMK27
       - WeaponRifleUSAR15
-      - WeaponSubmachinegunUSMP5
+      - WeaponSubmachinegunDEMP5A5
       - WeaponSubmachinegunUSMAC10
-      - WeaponSubmachinegunUSMAC10Supp
-      - WeaponShotgunUSM590
+      - WeaponShotgunUSM590Buckshot
       - WeaponShotgunUSM870
-      - WeaponRifleUSM16A1
-      - WeaponRifleUSM14
       - WeaponSniperUSM40A1
       - BF14KnifeFlipTaticool
     chance: 1
@@ -199,15 +204,14 @@
   - type: RandomSpawner
     offset: 0.3
     prototypes:
-      - WeaponRifleUSM4A1
-      - WeaponRifleUSM4A1ACOG
+      - WeaponRifleUSM16A1
       - WeaponRifleUSM16A2
-      - WeaponRifleUSM16A4
+      - WeaponRifleUSRPK16
       - WeaponShotgunUSM870
       - WeaponRifleUSM14
-      - WeaponSniperUSM14EBR
+      - WeaponSubmachinegunDEMP5SD6
+      - WeaponSubmachinegunDEMP510
       - WeaponSniperUSM40A1
-      - WeaponSniperUSM40A5
     chance: 1
 
 ## AMMO
@@ -215,7 +219,7 @@
 - type: entity
   parent: MarkerBase
   id: RandomAmmoMapLowTierUS
-  name: Low tier american ammo
+  name: low tier american ammo
   components:
   - type: Sprite
     layers:
@@ -228,6 +232,8 @@
       - MagazinePistolM9
       - MagazinePistolM1911
       - MagazinePistolGlock17
+      - MagazineSubmachinegunMP5
+      - MagazineRifleSTANAGShort
       - ShellBoxBF12GaugeBuckshot
       - SmokeGrenadeUSM18
     chance: 1
@@ -235,7 +241,7 @@
 - type: entity
   parent: MarkerBase
   id: RandomAmmoMapMidTierUS
-  name: Mid tier american ammo
+  name: mid tier american ammo
   components:
   - type: Sprite
     layers:
@@ -248,21 +254,21 @@
       - MagazinePistolGlock17
       - MagazineBox762x51
       - MagazineBox556x45
+      - MagazineBox9x19
       - ShellBoxBF12GaugeBuckshot
       - MagazineRifleM14
       - MagazineRifleSTANAG
-      - MagazineSniperM40A5
       - MagazineSubmachinegunMP5
       - MagazineSubmachinegunMAC10
       - SmokeGrenadeUSM18
-      - DefensiveGrenadeUSM67
       - FlashbangGrenadeUSM84
+      - DefensiveGrenadeUSM67
     chance: 1
 
 - type: entity
   parent: MarkerBase
   id: RandomAmmoMapHighTierUS
-  name: High tier american ammo
+  name: high tier american ammo
   components:
   - type: Sprite
     layers:
@@ -278,17 +284,148 @@
       - MagazineSniperM40A5
       - MagazineSubmachinegunMP5
       - MagazineSubmachinegunMAC10
-      - FlashbangGrenadeUSM84
       - SmokeGrenadeUSM18
-      - OffensiveGrenadeUSMK21
+      - FlashbangGrenadeUSM84
+      - OffensiveGrenadeUSMK3A2
+      - DefensiveGrenadeUSM67
     chance: 1
+
+#region GERMAN LOOT
+## WEAPONS
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponMapLowTierDE
+  name: low tier german weapon
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: lowgunde
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - WeaponPistolDEUSP45
+      - WeaponPistolDEUSP9
+      - BF14KnifeSwitchblade
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponMapMidTieDE
+  name: mid tier german weapon
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: midgunde
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - WeaponPistolDEP8A1
+      - WeaponRifleDEG36C
+      - WeaponSubmachinegunDEMP5A5
+      - WeaponShotgunUSM870
+      - BF14KnifeFlipTaticool
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponMapHighTierDE
+  name: high tier german weapon
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: highgunde
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - WeaponPistolDEUSPMatch
+      - WeaponRifleDEG36
+      - WeaponRifleDEG3A3
+      - WeaponShotgunUSM870
+      - WeaponSubmachinegunDEMP5SD6
+      - WeaponSniperDEG28
+    chance: 1
+
+## AMMO
+
+- type: entity
+  parent: MarkerBase
+  id: RandomAmmoMapLowTierDE
+  name: low tier german ammo
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: lowammous
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - MagazinePistolUSP45
+      - MagazinePistolUSP9
+      - MagazineSubmachinegunMP5
+      - ShellBoxBF12GaugeBuckshot
+      - SmokeGrenadeDEDM45
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomAmmoMapMidTierDE
+  name: mid tier german ammo
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: midammous
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - MagazinePistolUSP45
+      - MagazinePistolUSP9
+      - MagazineBox762x51
+      - MagazineBox556x45
+      - ShellBoxBF12GaugeBuckshot
+      - MagazineRifleG3
+      - MagazineRifleG36
+      - MagazineSubmachinegunMP5
+      - SmokeGrenadeDEDM45
+      - FlashbangGrenadeUSM84
+      - OffensiveGrenadeDEDM51
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomAmmoMapHighTierDE
+  name: high tier german ammo
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: highammous
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - ShellBoxBF12GaugeBuckshot
+      - MagazineBox762x51
+      - MagazineBox556x45
+      - MagazineRifleG3
+      - MagazineRifleG28
+      - MagazineRifleG36
+      - MagazineSubmachinegunMP5
+      - SmokeGrenadeDEDM45
+      - FlashbangGrenadeUSM84
+      - DefensiveGrenadeDEDM51
+    chance: 1
+
 #region RUSSIAN LOOT
 ## Weapons
 
 - type: entity
   parent: MarkerBase
   id: RandomWeaponMapLowTierRU
-  name: Low tier russian weapon
+  name: low tier russian weapon
   components:
   - type: Sprite
     layers:
@@ -361,7 +498,7 @@
 - type: entity
   parent: MarkerBase
   id: RandomAmmoMapLowTierRU
-  name: Low tier russian ammo
+  name: low tier russian ammo
   components:
   - type: Sprite
     layers:
@@ -382,7 +519,7 @@
 - type: entity
   parent: MarkerBase
   id: RandomAmmoMapMidTierRU
-  name: Mid tier russian ammo
+  name: mid tier russian ammo
   components:
   - type: Sprite
     layers:
@@ -395,6 +532,7 @@
       - MagazineBox762x54r
       - ShellBoxBF12GaugeBuckshot
       - MagazineBox762x39
+      - MagazineBox9x18
       - MagazineRifleAKM
       - MagazineRifleVPO215
       - MagazineRifleMagpulMosin
@@ -410,7 +548,7 @@
 - type: entity
   parent: MarkerBase
   id: RandomAmmoMapHighTierRU
-  name: High tier russian ammo
+  name: high tier russian ammo
   components:
   - type: Sprite
     layers:
@@ -442,7 +580,7 @@
 - type: entity
   parent: MarkerBase
   id: RandomGearMapLowTierUNI
-  name: Low tier universal gear
+  name: low tier universal gear
   components:
   - type: Sprite
     layers:
@@ -451,16 +589,17 @@
   - type: RandomSpawner
     offset: 0.3
     prototypes:
-      - ClothingHeadHatHelmetHardhat
-      - ClothingBeltMilitaryWebbingIkea
-      - ClothingOuterArmorPlateCarrierCivillian
-      - ArmorPlateLight
+    - ClothingHeadHatHelmetHardhat
+    - ClothingBeltMilitaryWebbingIkea
+    - ClothingBeltMilitaryWebbingMP40
+    - ClothingOuterArmorPlateCarrierCivilian
+    - ArmorPlateLight
     chance: 1
 
 - type: entity
   parent: MarkerBase
   id: RandomGearMapMidTierUNI
-  name: Mid tier universal gear
+  name: mid tier universal gear
   components:
   - type: Sprite
     layers:
@@ -469,23 +608,25 @@
   - type: RandomSpawner
     offset: 0.3
     prototypes:
-     - ArmorPlateLight
-     - ClothingOuterArmorSurplusVestEmpty
-     - ClothingOuterArmorBasicPlateCarrierEmpty
-     - ClothingBeltMilitaryWebbingRU
-     - ClothingBeltMilitaryWebbingIkea
-     - ClothingOuterArmorPlateCarrierCivillian
-     - ClothingOuterArmorSurplusVestUNEmpty
-     - ClothingHeadHatHelmetUN
-     - ClothingHeadHatHelmetSurplus
-     - ClothingBackpackButtpack
-     - ClothingBackpackButtpackSurplus
+    - ArmorPlateLight
+    - ClothingOuterArmorSurplusVestEmpty
+    - ClothingOuterArmorBasicPlateCarrierEmpty
+    - ClothingBeltMilitaryWebbingRU
+    - ClothingBeltMilitaryWebbingSmallPouchesOlive
+    - ClothingBeltMilitaryWebbingIkea
+    - ClothingBeltMilitaryWebbingMP40
+    - ClothingOuterArmorKevlarVest
+    - ClothingOuterArmorSurplusVestUNEmpty
+    - ClothingHeadHatHelmetUN
+    - ClothingHeadHatHelmetSurplus
+    - ClothingBackpackButtpack
+    - ClothingBackpackButtpackSurplus
     chance: 1
 
 - type: entity
   parent: MarkerBase
   id: RandomGearMapHighTierUNI
-  name: High tier universal gear
+  name: high tier universal gear
   components:
   - type: Sprite
     layers:
@@ -494,17 +635,116 @@
   - type: RandomSpawner
     offset: 0.3
     prototypes:
-     - ClothingOuterArmorSurplusVestUNKevlar
-     - ArmorPlateMedium
-     - ArmorPlateLight
-     - ClothingOuterArmorPlateCarrierBlack
-     - ClothingOuterArmorPlateCarrierTan
-     - ClothingOuterArmorBasicPlateCarrierKevlar
-     - ClothingOuterArmorSurplusVestEmpty
-     - ClothingOuterArmorBasicPlateCarrierKevlar
-     - ClothingBeltMilitaryWebbingRU
-     - ClothingBackpackRucksackBlack
-     - ClothingBackpackRucksackTan
-     - ClothingHeadHatHelmetUN
-     - ClothingHeadHatHelmetSurplus
+    - ClothingOuterArmorSurplusVestUNKevlar
+    - ArmorPlateMedium
+    - ArmorPlateLight
+    - ClothingOuterArmorPlateCarrierBlack
+    - ClothingOuterArmorPlateCarrierTan
+    - ClothingOuterArmorBasicPlateCarrierKevlar
+    - ClothingOuterArmorSurplusVestEmpty
+    - ClothingOuterArmorBasicPlateCarrierKevlar
+    - ClothingBeltMilitaryWebbingRU
+    - ClothingBackpackRucksackBlack
+    - ClothingBackpackRucksackTan
+    - ClothingHeadHatHelmetUN
+    - ClothingHeadHatHelmetSurplus
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomClothingMapLowTierUNI
+  name: low tier universal clothing
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: lowclothing
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+    - ClothingUniformJumpsuitPlain
+    - ClothingUniformJumpsuitWorker
+    - ClothingUniformJumpsuitClerk
+    - ClothingUniformJumpsuitDealer
+    - ClothingUniformJumpsuitHunter
+    - ClothingUniformJumpsuitHawaiBlack
+    - ClothingUniformJumpsuitHawaiBlue
+    - ClothingUniformJumpsuitPatrioticUSA1
+    - ClothingUniformJumpsuitGorka
+    - ClothingHeadHatBeanieBlack
+    - ClothingHeadHatPompon
+    - ClothingMaskNeckGaiter
+    - BF14ClothingOuterCoatCivGreen
+    - BF14ClothingOuterCoatCivBlack
+    - BF14ClothingOuterCoatCivRed
+    - BF14ClothingOuterCoatCivUkr
+    - ClothingOuterCoatBomber
+    - ClothingOuterCoatJacketLettermanBrown
+    - ClothingOuterBlackTrenchcoat
+    - ClothingHandsGlovesColorBlack
+    - ClothingHandsGlovesFingerless
+    - ClothingShoesColorBlack
+    - ClothingShoesColorBrown
+    - ClothingShoesBootsJack
+    - ClothingShoesBootsLaceup
+    - ClothingShoesBootsWork
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomClothingMapMidTierUNI
+  name: mid tier universal clothing
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: midclothing
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+    - ClothingUniformJumpsuitPlain
+    - ClothingUniformJumpsuitWorker
+    - ClothingUniformJumpsuitDealer
+    - ClothingUniformJumpsuitHunter
+    - ClothingUniformJumpsuitPatrioticUSA1
+    - ClothingUniformJumpsuitGorka
+    - ClothingHeadHatBeanieBlack
+    - ClothingMaskNeckGaiter
+    - ClothingBalaclavaMilitary
+    - ClothingBalaclavaMilitarySkull
+    - ClothingOuterArmorPlateCarrierCivilian
+    - ClothingOuterArmorKevlarVest
+    - ClothingHandsGlovesColorBlack
+    - ClothingBackpackButtpack
+    - ClothingBackpackButtpackSurplus
+    - ClothingBeltMilitaryWebbingIkea
+    - ClothingBeltMilitaryWebbingSmallPouchesOlive
+    - ClothingBeltMilitaryWebbingMP40
+    - ClothingShoesColorBlack
+    - ClothingShoesBootsJack
+    - ClothingShoesBootsWork
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomClothingMapLowTierIndustrial
+  name: low tier industrial clothing
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: lowclothingindustrial
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+    - ClothingUniformJumpsuitWorker
+    - ClothingUniformJumpsuitEngineer
+    - ClothingUniformJumpsuitMechanic
+    - ClothingHeadHatBeanieBlack
+    - ClothingHeadHatHelmetHardhat
+    - ClothingEyesGlassesSafetyGoggles
+    - ClothingOuterWorkJacket
+    - ClothingOuterWorkerHighViz
+    - ClothingHandsGlovesColorBlack
+    - ClothingShoesBootsWork
     chance: 1

@@ -50,6 +50,8 @@
         name: kaolin powder packet
       - id: DefibrillatorDisposable
         name: disposable defibrillator
+      - id: Pervitin
+        name: pervitin pills
     - name: Backpack/belt
       choices: { BF14Storage: 2 }
       entries:
@@ -74,16 +76,18 @@
       entries:
       - id: WeaponRifleRUAK74M
         amount: 50
-      - id: WeaponRifleRUAK203
+      - id: WeaponRifleRUAK103
         amount: 5
       - id: WeaponRifleRUAKS74U
         amount: 5
       - id: WeaponSubmachinegunRUVityaz
         amount: 5
-      - id: WeaponPistolMP443
-        amount: 2
+      - id: WeaponPistolRUPM
+        amount: 8
     - name: Utility
       entries:
+      - id: ClothingHelmetAttachmentNVGsBasicPACT
+        amount: 3
       - id: RiotBulletShield
         amount: 3
       - id: CombatKnife
@@ -96,6 +100,8 @@
         amount: 50
     - name: Sustainment
       entries:
+      - id: Tourniquet
+        amount: 20
       - id: BoxMRE
         amount: 50
       - id: FoodSnackNutribrick
@@ -112,6 +118,8 @@
         amount: 1
       - id: MagazineSniperSVD
         amount: 3
+      - id: ImpactGrenadeRURGO
+        amount: 2
 
 #region gear
 
@@ -153,15 +161,17 @@
       - id: BoxChargeFuzeKit
         amount: 5
       - id: BF14ExtendableLadderItem
-        amount: 5
+        amount: 10
+      - id: BF14FloorChargeItem
+        amount: 10
     - name: Grenades
       entries:
       - id: OffensiveGrenadeRURGD5
-        amount: 10
-      - id: DefensiveGrenadeRUF1
         amount: 8
-      - id: ImpactGrenadeRURGO
-        amount: 2
+      - id: DefensiveGrenadeRUF1
+        amount: 7
+      - id: OffensiveGrenadeRURG60TB
+        amount: 5
       - id: FlashbangGrenadeRUZarya
         amount: 20
       - id: SmokeGrenadeRURDG
@@ -228,10 +238,10 @@
         amount: 3
       - id: BoxMagazineVityaz
         amount: 5
-      - id: BoxMagazineAK203
-        amount: 2
-      - id: BoxMagazineAKM
+      - id: BoxMagazineAK103
         amount: 3
+      - id: BoxMagazineAKM
+        amount: 2
       - id: BoxFlare
         amount: 4
     - name: Loose rounds
@@ -248,13 +258,15 @@
         amount: 4
       - id: MagazineBox762x54rBig
         amount: 2
-      - id: MagazineBox9x19mmBig
+      - id: MagazineBox9x19Big
         amount: 5
       - id: ShellBoxBF12GaugeBuckshot
         amount: 10
+      - id: ShellBoxBF12GaugeFlechette
+        amount: 2
     - name: Misc
       entries:
-      - id: MagazinePistolMP443
-        amount: 10
+      - id: MagazinePistolPM
+        amount: 24
       - id: CrayonBox
         amount: 1

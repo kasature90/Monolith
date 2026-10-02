@@ -109,6 +109,8 @@
   loadouts:
   - LoadoutMaskBF14NeckGaiter
   - LoadoutMaskBF14MilitaryBalaclava
+  - LoadoutMaskBF14MilitaryBalaclavaSkull
+  - LoadoutMaskBF14MilitaryBalaclavaOpen
 
 
 #region EARS
@@ -183,6 +185,7 @@
   - LoadoutJumpsuitCivilianPatrioticUSA1
   - LoadoutJumpsuitCivilianPatrioticUSA2
   - LoadoutJumpsuitCivilianPatrioticUSA3
+  - LoadoutJumpsuitCivilianSmiley
 
 - type: loadoutGroup
   id: BF_JumpsuitsCivilianRU
@@ -315,6 +318,7 @@
   - LoadoutUniformJumpsuitDealer
   - LoadoutUniformJumpsuitHunter
   - LoadoutJumpsuitCivilianPatrioticUSA1
+  - LoadoutJumpsuitCivilianSmiley
 
 - type: loadoutGroup
   id: BF_JumpsuitsCivilianRUEMT
@@ -441,6 +445,15 @@
   loadouts:
   - LoadoutGunDEUSPMatchBWSLVET
   - LoadoutGunDEUSP45BWVET
+
+- type: loadoutGroup
+  id: BF_PistolsRGFSL
+  name: loadout-group-BF14-sidearm
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunRUSR2UdavRGFSLVET
+  - LoadoutGunRUPMRGFSLVET
 
 - type: loadoutGroup
   id: BF_PistolsVDVSL

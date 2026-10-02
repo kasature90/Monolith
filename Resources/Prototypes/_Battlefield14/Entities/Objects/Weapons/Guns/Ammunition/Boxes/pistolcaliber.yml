@@ -1,6 +1,6 @@
 - type: entity
   parent: MagazineBox762x51Big
-  id: MagazineBox9x19mmBig
+  id: MagazineBox9x19Big
   name: bulk ammunition box (9x19mm)
   components:
   - type: BallisticAmmoProvider
@@ -28,7 +28,7 @@
 
 - type: entity
   parent: MagazineBoxBF14
-  id: MagazineBox9x19mm
+  id: MagazineBox9x19
   name: ammunition pack (9x19mm)
   components:
   - type: BallisticAmmoProvider
@@ -51,7 +51,19 @@
   - type: Appearance
 
 - type: entity
-  parent: MagazineBox9x19mm
+  parent: MagazineBox9x19
+  id: MagazineBox10x25mm
+  name: ammunition pack (10x25mm Auto)
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 60
+    proto: BF_CartridgePistol10x25
+    whitelist:
+      tags:
+        - BF_CartridgePistol10x25
+
+- type: entity
+  parent: MagazineBox9x19
   id: MagazineBox45ACP
   name: ammunition pack (.45 ACP)
   components:
@@ -63,7 +75,7 @@
         - BF_CartridgePistol45ACP
 
 - type: entity
-  parent: MagazineBox9x19mm
+  parent: MagazineBox9x19
   id: MagazineBox762x25
   name: ammunition pack (7.62x25mm)
   components:
@@ -73,3 +85,15 @@
     whitelist:
       tags:
         - BF_CartridgePistol762x25
+
+- type: entity
+  parent: MagazineBox9x19
+  id: MagazineBox9x18
+  name: ammunition pack (9x18mm)
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 60
+    proto: BF_CartridgePistol9x18
+    whitelist:
+      tags:
+        - BF_CartridgePistol9x18

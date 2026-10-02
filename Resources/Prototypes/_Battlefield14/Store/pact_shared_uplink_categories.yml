@@ -100,7 +100,7 @@
   id: UplinkPACTAmmoBox9mmBig
   name: uplink-PACT-ammo-box-9mm-big-name
   description: uplink-PACT-ammo-box-9mm-big-desc
-  productEntity: MagazineBox9x19mmBig
+  productEntity: MagazineBox9x19Big
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi, state: 9x19-nameplate }
   cost:
     PACTRequisition: 4 # 40 seconds
@@ -269,7 +269,7 @@
   productEntity: MedkitCombatFilled
   icon: { sprite: _Battlefield14/Objects/Specific/Medical/firstaidkits.rsi, state: bezerk }
   cost:
-    NATORequisition: 10 # 1 minute 40 seconds
+    PACTRequisition: 10 # 1 minute 40 seconds
   categories:
     - UplinkPACTRUMedical
   conditions:

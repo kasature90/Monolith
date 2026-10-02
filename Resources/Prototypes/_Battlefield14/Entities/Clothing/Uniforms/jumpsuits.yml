@@ -1,17 +1,58 @@
-# US
+#region Base
 
 - type: entity
   parent: ClothingUniformBase
+  id: ClothingUniformBaseNATO
+  components:
+#  - type: Faction
+#    factionId: "Nato"
+  - type: ExtendDescription
+    descriptionList:
+      - description: Allows you to capture points for NATO.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: false
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "NATO"
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformBasePACT
+  components:
+#  - type: Faction
+#    factionId: "Warpact"
+#  - type: ExtendDescription
+#    descriptionList:
+#      - description: Allows you to capture points for PACT.
+#        fontSize: 12
+#        color: "#4f94ad"
+#        requireDetailRange: false
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "PACT"
+
+#region US
+
+- type: entity
+  parent: ClothingUniformBaseNATO
   id: ClothingUniformJumpsuitCamoUS
-  name: american camo BDU
+  name: American camo BDU
   description: FUCK I THINK THAT WAS A CIVILIAN.
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/uscamo.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/uscamo.rsi
-  - type: Faction
-    factionId: "Nato"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "the United States Army"
 
 - type: entity
   parent: ClothingUniformJumpsuitCamoUS
@@ -22,6 +63,11 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/usmarpatdesert.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/usmarpatdesert.rsi
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "the United States Marine Corps"
 
 - type: entity
   parent: ClothingUniformJumpsuitCamoUSMarpatDesert
@@ -34,7 +80,7 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/usmarpatwoodland.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformBaseNATO
   id: ClothingUniformJumpsuitSpaceForceCrewman
   name: USSF crewman uniform
   description: A full uniform for crew aboard United States Space Force vessels.
@@ -43,20 +89,26 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/blue_utility_crew.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/blue_utility_crew.rsi
-  - type: Faction
-    factionId: "Nato"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "the United States Space Force"
 
 - type: entity
-  parent: ClothingUniformJumpsuitMilitaryCaptain # TODO better/unique sprites
+  parent: [ ClothingUniformJumpsuitMilitaryCaptain , ClothingUniformBaseNATO ] # TODO better/unique sprites
   id: ClothingUniformJumpsuitSpaceForceCaptain
   name: USSF captain uniform
   description: A full uniform for captains aboard United States Space Force vessels.
   components:
-  - type: Faction
-    factionId: "Nato"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "the United States Space Force"
 
 - type: entity
-  parent: ClothingUniformJumpsuitCombatSuitUrbanWhite
+  parent: [ ClothingUniformJumpsuitCombatSuitUrbanWhite , ClothingUniformBaseNATO ]
   id: ClothingUniformJumpsuitCamoUSM81Urban
   name: M81 urban BDU
   description: A recolour of M81 woodland to blend in better to urban areas.
@@ -65,16 +117,43 @@
     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/white_urban.rsi
   - type: Clothing
     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/white_urban.rsi
-  - type: SuitSensor
-    randomMode: false
-    mode: SensorVitals
-  - type: Faction
-    factionId: "Nato"
-
-# DE
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "the National Guard"
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformJumpsuitCamoUSM81Urban
+  id: ClothingUniformJumpsuitCamoUSM81UrbanHECU
+  suffix: HECU
+  components:
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "the United States Marine Corps"
+
+- type: entity
+  parent: ClothingUniformBaseNATO
+  id: ClothingUniformJumpsuitCamoUSTigerstripe
+  name: tigerstripe uniform
+  description: As I run through the jungle..
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Clothing/USA/Uniform/tigerstripe.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Clothing/USA/Uniform/tigerstripe.rsi
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "the United States Army"
+
+#region DE
+
+- type: entity
+  parent: ClothingUniformBaseNATO
   id: ClothingUniformJumpsuitCamoDEFlecktarn
   name: flecktarn camo BDU
   description: A uniform loved by german infantry and larpers alike.
@@ -83,26 +162,32 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/decamoflecktarn.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/decamoflecktarn.rsi
-  - type: Faction
-    factionId: "Nato"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "the Bundeswehr"
 
-# RU
+#region RU
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformBasePACT
   id: ClothingUniformJumpsuitCamoRU
-  name: russian camo jumpsuit
+  name: Russian camo jumpsuit
   description: Helo zelenski, it's donetsk children.
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rucamo.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rucamo.rsi
-  - type: Faction
-    factionId: "Warpact"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "the Russian Ground Forces"
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformBasePACT
   id: ClothingUniformJumpsuitCamoRUEMR
   name: EMR camo BDU
   description: Helo zelenski, it's donetsk children.
@@ -111,11 +196,14 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/emrcamo.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/emrcamo.rsi
-  - type: Faction
-    factionId: "Warpact"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "the VDV"
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformBasePACT
   id: ClothingUniformJumpsuitRUGorka
   name: Gorka-4 Uniform
   description: A Gorka-4, used by Russian Spetsnaz, mountain infantry and hunters.
@@ -124,29 +212,38 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rugorka.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rugorka.rsi
-  - type: Faction
-    factionId: "Warpact"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "the Russian Ground Forces"
 
 - type: entity
-  parent: ClothingUniformJumpsuitMilitaryColorGrey
+  parent: [ ClothingUniformJumpsuitMilitaryColorGrey , ClothingUniformBasePACT ]
   id: ClothingUniformJumpsuitVKSCrewman
   name: VKS crewman uniform
   description: A full uniform for crew aboard Russian Aerospace Forces vessels.
   components:
-  - type: Faction
-    factionId: "Warpact"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "the Russian Aerospace Forces"
 
 - type: entity
-  parent: ClothingUniformJumpsuitMilitaryCaptain # TODO better/unique sprites
+  parent: [ ClothingUniformJumpsuitMilitaryCaptain , ClothingUniformBasePACT ] # TODO better/unique sprites
   id: ClothingUniformJumpsuitVKSCaptain
   name: VKS captain uniform
   description: A full uniform for captains aboard Russian Aerospace Forces vessels.
   components:
-  - type: Faction
-    factionId: "Warpact"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "the Russian Aerospace Forces"
 
 - type: entity
-  parent: ClothingUniformJumpsuitCombatSuitUrbanWhite
+  parent: [ ClothingUniformJumpsuitCombatSuitUrbanWhite , ClothingUniformBasePACT ]
   id: ClothingUniformJumpsuitCamoRUDigitalRed
   name: red digital camo BDU
   suffix: BF14 USE THIS
@@ -156,14 +253,14 @@
     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_red.rsi
   - type: Clothing
     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_red.rsi
-  - type: SuitSensor
-    randomMode: false
-    mode: SensorVitals
-  - type: Faction
-    factionId: "Warpact"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "the VDV"
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformBasePACT
   id: ClothingUniformJumpsuitRUOMON
   name: OMON camo BDU
   description: Helo school children, it's RPO-A shmel.
@@ -172,8 +269,11 @@
     sprite: _Civ14/Clothing/Uniforms/Jumpsuit/omon.rsi
   - type: Clothing
     sprite: _Civ14/Clothing/Uniforms/Jumpsuit/omon.rsi
-  - type: Faction
-    factionId: "Warpact"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "OMON"
 
 # MISC
 
@@ -231,3 +331,21 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/navycombat.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/navycombat.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitMilitaryColorBlue
+  id: ClothingUniformJumpsuitMilitaryColorBlueTDM
+  name: blue goon uniform
+  description: unremovable identification suit
+  suffix: Unremoveable
+  components:
+  - type: Unremoveable
+
+- type: entity
+  parent: ClothingUniformJumpsuitMilitaryColorRed
+  id: ClothingUniformJumpsuitMilitaryColorRedTDM
+  description: unremovable identification suit
+  name: red goon uniform
+  suffix: Unremoveable
+  components:
+  - type: Unremoveable

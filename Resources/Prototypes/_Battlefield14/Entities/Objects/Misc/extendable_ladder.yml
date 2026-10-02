@@ -21,8 +21,15 @@
   - type: Tag
     tags:
       - ExtendableLadder
+  - type: SpawnAfterInteract
+    prototype: BF14ExtendableLadder
+    doAfter: 1
+    removeOnInteract: true
   - type: ExtendDescription
     descriptionList:
+      - description: Left click on a tile to place it, then right click or use a keybind to rotate. Places facing south.
+        color: green
+        requireDetailRange: true
       - description: This item can be stored on your auxillary suit storage slot.
         color: "#4f94ad"
         requireDetailRange: true

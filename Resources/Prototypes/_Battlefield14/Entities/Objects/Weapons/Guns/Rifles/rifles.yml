@@ -271,6 +271,66 @@
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
       state: eotech
 
+- type: entity
+  name: F2000
+  parent: WeaponRifleBESCARL
+  id: WeaponRifleBEF2000
+  description: A bullpup rifle often compared to fish because of its strange shape.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/F2000.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/F2000.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/F2000.rsi
+  - type: GunWieldBonus
+    minAngle: -24
+    maxAngle: -27
+  - type: Gun
+    minAngle: 26
+    maxAngle: 40
+    angleIncrease: 1
+    angleDecay: 10
+    projectileSpeed: 50 # bullpup so long barrel
+    soundGunshot:
+      collection: BF_SCARL_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    autoOpenBoltOnEmpty: false
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/rack.ogg
+      params:
+        volume: -2
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/boltcatch.ogg
+      params:
+        volume: -5
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/chpull.ogg
+      params:
+        volume: -5
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: eotech
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: LaserPointer # the hidden..
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes STANAG magazines. It has a laser sight attached which improves recoil recovery.
+        color: "#4f94ad"
+        requireDetailRange: true
+
 #region Germany
 
 - type: entity
@@ -361,6 +421,11 @@
   id: WeaponRifleDEG3A3
   description: Derived from the spanish CETME rifle, think of this weapon as the MP5's older brother who does steroids. Was used by west germany post WW2 until it was replaced by the G36 after reunification.
   components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A3.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    state: icon-G3A3
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
     layers:
@@ -368,8 +433,9 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+      - state: furniture-G3A3
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A3.rsi
   - type: GunWieldBonus
     minAngle: -24
     maxAngle: -27
@@ -431,6 +497,102 @@
         requireDetailRange: true
 
 - type: entity
+  name: G3A4
+  parent: WeaponRifleDEG3A3
+  id: WeaponRifleDEG3A4
+  description: A G3 variant with a collapsable stock and darker furniture. A neat package but you won't be stuffing it in your bag.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A4.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A4.rsi
+    state: icon
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A4.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A4.rsi
+
+- type: entity
+  name: G3A3ZF
+  parent: WeaponRifleDEG3A3
+  id: WeaponRifleDEG3A3ZF
+  description: A G3A3 with a ZF1 scope mounted. Used by sharpshooters and soldiers alike. At least 60 years ago.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A3ZF.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    state: icon-G3A3ZF
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: furniture-G3A3
+      - state: ZF
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A3ZF.rsi
+  - type: Gun
+    angleIncrease: 1.5
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.5
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics31.rsi
+      state: ZF1
+
+- type: entity
+  name: HK51
+  parent: WeaponRifleDEG3A3
+  id: WeaponRifleDEHK51
+  description: A cut down G3 with. Not actually produced by HK. Has significant muzzle flash and report.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/HK51.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    state: icon-HK51
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: furniture-HK51
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/HK51.rsi
+  - type: GunWieldBonus
+    minAngle: -24
+    maxAngle: -25
+  - type: Gun
+    minAngle: 26
+    maxAngle: 40
+    angleIncrease: 1.5
+    projectileSpeed: 45
+    fireRate: 6.5
+    soundGunshot:
+      collection: BF_G3_Gunshots
+      params:
+        volume: -1
+        variation: 0.125
+  - type: PointLight
+    enabled: false
+    mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png
+    autoRot: true
+    radius: 5
+    color: orange
+
+- type: entity
   name: G36K
   parent: WeaponRifleUSM16A3
   id: WeaponRifleDEG36K
@@ -448,6 +610,7 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+      - state: holosight
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36K.rsi
   - type: GunWieldBonus
@@ -507,7 +670,7 @@
   - type: WieldedCrosshair
     rsi:
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
-      state: M68
+      state: eotech
   - type: ExtendDescription
     descriptionList:
       - description: Takes G36 pattern magazines.
@@ -576,6 +739,7 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+      - state: holosight
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36C.rsi
   - type: GunWieldBonus
@@ -592,10 +756,6 @@
       params:
         volume: -5
         variation: 0.125
-  - type: WieldedCrosshair
-    rsi:
-      sprite: _RMC14/Interface/MousePointer/rifle_mouse.rsi
-      state: all
 
 - type: entity
   name: G36C SUPP.
@@ -612,6 +772,7 @@
       - state: stripes
       - state: supp
         offset: 0.22, 0
+      - state: holosight
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36C.rsi
   - type: Gun
@@ -620,6 +781,72 @@
       params:
         volume: -12
         variation: 0.125
+
+#region Britain
+
+- type: entity
+  name: Lee–Enfield No. 1 Mk III
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponRifleGBLeeEnfield
+  description: Objectively the best bolt-action rifle of both world wars. Chambered in .303 british, or 7.7x56mmR if you really like metric.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/leeenfield.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/leeenfield.rsi
+  - type: GunRequiresWield
+  - type: Item
+    shape:
+    - 0,0,4,2
+  - type: Gun
+    fireRate: 0.5
+    projectileSpeed: 55
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/heavy_rifle_1.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleLeeEnfield
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        whitelistFailPopup: gun-magazine-whitelist-fail
+        swap: false
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleLeeEnfield
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle303British
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle303British
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    canRack: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 3000
+  - type: UseDelay
+    delay: 0.2
 
 #region Rifles - RU
 
@@ -673,7 +900,7 @@
   name: OP-SKS Simonov
   parent: WeaponRifleRUSKS
   id: WeaponRifleRUOPSKS
-  description: A SKS with a scope mount made for the civiliian hunter market.
+  description: A SKS with a scope mount made for the civilian hunter market.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/opsks.rsi

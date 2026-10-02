@@ -143,6 +143,33 @@
   - BF_MiscItemsNATO
   - ContractorWallet
 
+- type: roleLoadout
+  id: JobUSSFSquadLeader
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_HelmetAttachmentNATO
+  - BF_BackpacksBlack
+  - BF_MiscItemsNATO
+  - BF_PistolsUSMCSL
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobUSSFRifleman
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_HelmetAttachmentNATO
+  - BF_BackpacksBlack
+  - BF_MiscItemsNATO
+  - BF_Map
+  - ContractorWallet
+
 #region NG
 
 - type: roleLoadout
@@ -774,6 +801,28 @@
   - BF_MiscItemsIND
   - ContractorWallet
 
+- type: roleLoadout
+  id: JobDelta90
+  groups:
+  - BF_HeadCivilianUS
+  - BF_CombatMasks
+  - BF_CrewGlasses
+  - BF_SoldierGloves
+  - BF_MiscItemsNATO
+  - BF_NATOIFF
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobGRU90
+  groups:
+  - BF_HeadCivilianUS
+  - BF_CombatMasks
+  - BF_CrewGlasses
+  - BF_SoldierGloves
+  - BF_MiscItemsPACT
+  - BF_PACTIFF
+  - ContractorWallet
+
 #region Civilian
 
 - type: roleLoadout
@@ -813,6 +862,7 @@
   groups:
   - BF_HeadCivilianRU
   - BF_CombatMasks
+  - BF_NATOIFF
   - BF_JumpsuitsCivilianUANationalist
   - BF_OuterCivilianRU
   - BF_WPSGloves
@@ -823,6 +873,7 @@
 - type: roleLoadout
   id: JobGypsy
   groups:
+  - BF_PACTIFF
   - BF_WPSGloves
   - BF_ShoesCivilian
   - BF_MiscItemsIND

@@ -1,4 +1,4 @@
-﻿using Robust.Shared.Configuration;
+using Robust.Shared.Configuration;
 
 namespace Content.Shared.CCVar;
 
@@ -87,7 +87,7 @@ public sealed partial class CCVars
         CVarDef.Create("gateway.generator_enabled", false); // Frontier: false
 
     public static readonly CVarDef<string> TippyEntity =
-        CVarDef.Create("tippy.entity", "NFTippy", CVar.SERVER | CVar.REPLICATED); // Frontier: Tippy<NFTippy
+        CVarDef.Create("tippy.entity", "PlushieTrumpRealistic", CVar.SERVER | CVar.REPLICATED); // BF14: Tippy<NFTippy<PlushieTrumpRealistic
 
     /// <summary>
     ///     The number of seconds that must pass for a single entity to be able to point at something again.

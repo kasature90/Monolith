@@ -22,7 +22,7 @@
     - id: WeaponPistolM9
     - id: MagazinePistolM9
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19
 
 - type: entity
   parent: WeaponCaseShort
@@ -34,7 +34,31 @@
     - id: WeaponPistolUSHiPower
     - id: MagazinePistolHiPower
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19
+
+- type: entity
+  parent: WeaponCaseShort
+  id: BF14WeaponCaseShortATGlock17
+  suffix: Glock-17
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolATGlock17
+    - id: MagazinePistolGlock17
+      amount: 2
+    - id: MagazineBox9x19
+
+- type: entity
+  parent: WeaponCaseShort
+  id: BF14WeaponCaseShortATGlock20
+  suffix: Glock-20
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolATGlock20
+    - id: MagazinePistolGlock20
+      amount: 2
+    - id: MagazineBox10x25mm
 
 #region Handguns, DE
 
@@ -48,7 +72,7 @@
     - id: WeaponPistolDEUSP9
     - id: MagazinePistolUSP9
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19
 
 - type: entity
   parent: WeaponCaseShort
@@ -60,7 +84,7 @@
     - id: WeaponPistolDEUSPMatch
     - id: MagazinePistolUSP9
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19
 
 - type: entity
   parent: WeaponCaseShort
@@ -105,6 +129,18 @@
 
 - type: entity
   parent: WeaponCaseShort
+  id: BF14WeaponCaseShortRUSR2udav
+  suffix: SR2 Udav
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolRUSR2Udav
+    - id: MagazinePistolSR2Udav
+      amount: 2
+    - id: MagazineBox9x21
+
+- type: entity
+  parent: WeaponCaseShort
   id: BF14WeaponCaseShortRUTT33
   suffix: TT33
   components:
@@ -114,6 +150,30 @@
     - id: MagazinePistolTT33
       amount: 2
     - id: MagazineBox762x25
+
+- type: entity
+  parent: WeaponCaseShort
+  id: BF14WeaponCaseShortRUPM
+  suffix: PM Makarov
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolRUPM
+    - id: MagazinePistolPM
+      amount: 2
+    - id: MagazineBox9x18
+
+- type: entity
+  parent: WeaponCaseShort
+  id: BF14WeaponCaseShortRUAPS
+  suffix: APS Stechkin
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolRUAPS
+    - id: MagazinePistolAPS
+      amount: 2
+    - id: MagazineBox9x18
 
 #region SMGs, US
 
@@ -143,13 +203,46 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: BF14WeaponCaseLongUSMP5
-  suffix: MP5
+  id: BF14WeaponCaseLongDEMP5A4
+  suffix: MP5A4
   components:
   - type: StorageFill
     contents:
-    - id: WeaponSubmachinegunUSMP5
+    - id: WeaponSubmachinegunDEMP5A4
     - id: MagazineSubmachinegunMP5
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEMP5A5
+  suffix: MP5A5
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSubmachinegunDEMP5A5
+    - id: MagazineSubmachinegunMP5
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEMP5SD6
+  suffix: MP5SD6
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSubmachinegunDEMP5SD6
+    - id: MagazineSubmachinegunMP5
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEMP510
+  suffix: MP5/10
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSubmachinegunDEMP510
+    - id: MagazineSubmachinegunMP510
       amount: 5
 
 - type: entity
@@ -246,6 +339,39 @@
 
 - type: entity
   parent: WeaponCaseLong
+  id: BF14WeaponCaseLongUSCAR15
+  suffix: CAR-15
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleUSCAR15
+    - id: MagazineRifleSTANAG
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongUSCAR15SUPP
+  suffix: CAR-15 SUPP.
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleUSCAR15SUPP
+    - id: MagazineRifleSTANAG
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongUSM27RWK
+  suffix: M27RWK
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleUSM27RWK
+    - id: MagazineRifleSTANAG
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
   id: BF14WeaponCaseLongUSAR15
   suffix: AR15
   components:
@@ -332,6 +458,16 @@
     - id: WeaponMachineGunUSM240B
     - id: MagazineBeltBoxM240
 
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongUSM60
+  suffix: M60
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponMachineGunUSM60
+    - id: MagazineBeltBoxM60
+
 #region AMRs, US
 
 - type: entity
@@ -390,6 +526,137 @@
     - id: WeaponRifleDEG3A3
     - id: MagazineRifleG3
       amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEG3A4
+  suffix: G3A4
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleDEG3A4
+    - id: MagazineRifleG3
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEG3A3ZF
+  suffix: G3A3ZF
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleDEG3A3ZF
+    - id: MagazineRifleG3
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEHK51
+  suffix: HK51
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleDEHK51
+    - id: MagazineRifleG3
+      amount: 5
+
+#region Rifles, BE
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBESCARL
+  suffix: SCAR-L
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleBESCARL
+    - id: MagazineRifleSTANAG
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBESCARH
+  suffix: SCAR-H
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleBESCARH
+    - id: MagazineRifleSCARH
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBEF2000
+  suffix: F2000
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleBEF2000
+    - id: MagazineRifleSTANAG
+      amount: 5
+
+#region SMGs, BE
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBEP90
+  suffix: P90
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSubmachinegunBEP90
+    - id: MagazineSubmachinegunP90
+      amount: 5
+
+#region Rifles, GB
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongGBLeeEnfield
+  suffix: Lee Enfield No. 1 Mk III
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleGBLeeEnfield
+    - id: MagazineRifleLeeEnfield
+      amount: 5
+
+#region Snipers, GB
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongGBAWM
+  suffix: AWM
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSniperGBAWM
+    - id: MagazineSniperAWM
+      amount: 6
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongGBAWP
+  suffix: AWP
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSniperGBAWP
+    - id: MagazineSniperAWP
+      amount: 6
+
+#region Snipers, DE
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEG22A2
+  suffix: G22A2/AWM
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSniperDEG22A2
+    - id: MagazineSniperAWM
+      amount: 6
 
 #region Machine guns, DE
 
@@ -492,8 +759,8 @@
   - type: StorageFill
     contents:
     - id: WeaponShotgunRUKSK
-    - id: ShellBoxBF12GaugeBuckshot
-      amount: 2
+    - id: MagazineShotgunKSK
+      amount: 5
 
 - type: entity
   parent: WeaponCaseLong
@@ -574,7 +841,40 @@
     - id: MagazineRifleAK74
       amount: 5
 
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongRUAKS74UB
+  suffix: AKS-74UB
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleRUAKS74UB
+    - id: MagazineRifleAK74
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongRUAN94
+  suffix: AN-94
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleRUAN94
+    - id: MagazineRifleAK74Black
+      amount: 5
+
 #region Machine guns, RU
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongRURPK
+  suffix: RPK
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleRURPK
+    - id: MagazineRifleRPKTracerGreen
+      amount: 6
 
 - type: entity
   parent: WeaponCaseLong
@@ -619,7 +919,7 @@
     - id: MagazineBeltRP46
       amount: 2
 
-#region AMRs, US
+#region AMRs, RU
 
 - type: entity
   parent: WeaponCaseLong
@@ -632,29 +932,7 @@
     - id: MagazineSniperOSV96
       amount: 6
 
-#region Oddballs
-
-- type: entity
-  parent: WeaponCaseLong
-  id: BF14WeaponCaseLongUNSCMA5B
-  suffix: MA5B
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponRifleUNSCMA5B
-    - id: MagazineRifleMA5B
-      amount: 5
-
-- type: entity
-  parent: WeaponCaseLong
-  id: BF14WeaponCaseLongBrigadorBonesaw
-  suffix: Bonesaw
-  components:
-  - type: StorageFill
-    contents:
-    - id: BF14WeaponMachineGunBrigadorBonesaw
-    - id: MagazineBeltBoxBonesaw
-      amount: 2
+#region Ammo
 
 - type: entity
   parent: WeaponCaseLong
@@ -725,3 +1003,61 @@
       amount: 3
     - id: CartridgeRPG7Frag
       amount: 3
+
+
+#region Oddballs
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongUNSCMA5B
+  suffix: MA5B
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleUNSCMA5B
+    - id: MagazineRifleMA5B
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBrigadorBonesaw
+  suffix: Bonesaw
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponMachineGunBrigadorBonesaw
+    - id: MagazineBeltBoxBonesaw
+      amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongCMBOSIPR
+  suffix: OSIPR
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleCMB
+    - id: PulsePlug
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongCMBOSIPRLMG
+  suffix: OSIPR-IAR
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleCMBLMG
+    - id: MagazineBeltBoxAr2
+      amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBreaching
+  suffix: Breaching
+  components:
+  - type: StorageFill
+    contents:
+    - id: FUBAR
+    - id: Boltcutters
+    - id: BF14FloorChargeItem

@@ -4,6 +4,8 @@
   description: A ground map you haven't decided on yet.
   parent: BaseItem
   components:
+  - type: Item
+    size: Tiny
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
     layers:
@@ -17,6 +19,7 @@
     - BF14Set_MapInterchange
     - BF14Set_MapCustoms
     - BF14Set_MapBengalsk
+    - BF14Set_MapCedarCreek
     maxSelectedSets: 1
   - type: ActivatableUI
     key: enum.ThiefBackpackUIKey.Key

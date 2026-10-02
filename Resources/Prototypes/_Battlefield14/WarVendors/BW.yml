@@ -79,12 +79,14 @@
         amount: 25
       - id: WeaponRifleDEG36C
         amount: 5
-      - id: WeaponSubmachinegunUSMP5
+      - id: WeaponSubmachinegunDEMP5A5
         amount: 5
       - id: WeaponPistolDEP8A1
         amount: 2
     - name: Utility
       entries:
+      - id: ClothingHelmetAttachmentNVGsNATOPVS14Binocular
+        amount: 3
       - id: RiotBulletShield
         amount: 3
       - id: FHKnifeM68
@@ -93,6 +95,8 @@
         amount: 50
     - name: Sustainment
       entries:
+      - id: Tourniquet
+        amount: 20
       - id: BoxMRE
         amount: 50
       - id: FoodSnackNutribrick
@@ -101,8 +105,12 @@
         amount: 50
     - name: Misc
       entries:
-      - id: USMCFlagFolded # german flag
+      - id: GermanFlagFolded
         amount: 3
+      - id: WeaponRifleDEG3A3
+        amount: 1
+      - id: WeaponRifleDEG3A4
+        amount: 1
 
 #region gear
 
@@ -139,12 +147,14 @@
       entries:
       - id: BreachingCharge
         amount: 10
-      - id: FUBAR # something DE specific
+      - id: BreachingSaw
         amount: 1
       - id: RemoteSignallerM57
         amount: 10
       - id: BF14ExtendableLadderItem
-        amount: 5
+        amount: 10
+      - id: BF14FloorChargeItem
+        amount: 10
     - name: Grenades
       entries:
       - id: OffensiveGrenadeDEDM51
@@ -215,6 +225,8 @@
         amount: 2
       - id: BoxMagazineMP5
         amount: 5
+      - id: BoxMagazineG3
+        amount: 2
       - id: BoxFlare
         amount: 4
     - name: Loose rounds
@@ -227,10 +239,12 @@
         amount: 1
       - id: MagazineBox762x51
         amount: 5
-      - id: MagazineBox9x19mmBig
+      - id: MagazineBox9x19Big
         amount: 5
       - id: ShellBoxBF12GaugeBuckshot
         amount: 10
+      - id: ShellBoxBF12GaugeFlechette
+        amount: 2
     - name: Misc
       entries:
       - id: MagazinePistolUSP9

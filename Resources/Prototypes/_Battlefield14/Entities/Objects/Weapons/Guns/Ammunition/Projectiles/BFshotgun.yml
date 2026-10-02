@@ -13,10 +13,15 @@
       types:
         Piercing: 7.5
         Slash: 6
-        Structural: 2
+        Structural: 6
     armorPenetration: -0.3
+  - type: ProjectileDamageFalloff
+    falloffStart: 4
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: true
   - type: StaminaDamageOnCollide
-    damage: 3 # ~33 hits to stun
+    damage: 4 # ~25 hits to stun
 
 - type: entity
   id: SlugShotgunBF12Gauge
@@ -78,7 +83,7 @@
         Structural: 15
     armorPenetration: -0.15
   - type: StaminaDamageOnCollide
-    damage: 15 # ~7 hits to stun
+    damage: 10 # ~10 hits to stun
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -86,6 +91,30 @@
     intensitySlope: 0.5
     maxIntensity: 0.5
     maxTileBreak: 0
+
+- type: entity
+  id: FlechetteShotgunBF12Gauge
+  name: 12 gauge flechette
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: sabot
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 7
+        Slash: 3
+    armorPenetration: 0.1
+  - type: ProjectileDamageFalloff
+    falloffStart: 15
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: true
+  - type: StaminaDamageOnCollide
+    damage: 2 # ~50 hits to stun
 
 # 4 gauge
 
@@ -104,8 +133,13 @@
       types:
         Piercing: 17
         Slash: 10
-        Structural: 5
+        Structural: 8
     armorPenetration: -0.1
+  - type: ProjectileDamageFalloff
+    falloffStart: 6
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: true
   - type: StaminaDamageOnCollide
     damage: 9 # ~11-12 hits to stun
 

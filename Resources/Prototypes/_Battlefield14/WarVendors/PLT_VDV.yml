@@ -35,6 +35,9 @@
         points: 1
     - name: anti-personnel solution
       entries:
+      - id: CrateSecgearPACTFilledRPOAShmel
+        name: RPO-A Shmel
+        points: 2
       - id: CrateSecgearPACTFilledRPG26Thermobaric
         name: RShG-2
         points: 2
@@ -47,6 +50,9 @@
         amount: 1
       - id: BoxGrenadesK51
         name: CS gas grenades
+        points: 1
+      - id: BoxGrenadesRG60TB
+        name: RG-60TB thermobaric grenades
         points: 1
       - id: BoxArtilleryShellsMortar2B14Minelaying
         name: PFM-1 mine-laying mortar rounds (82mm)

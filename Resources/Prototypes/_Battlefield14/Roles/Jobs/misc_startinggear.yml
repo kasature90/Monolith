@@ -13,10 +13,21 @@
     pocket2: PouchFirstAidFilled
 
 - type: startingGear
+  id: BF14GoonGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCombatSuitDigitalBlack
+    ears: ClothingHeadsetGrey
+    balaclava: ClothingBalaclavaSkiMaskMouthBlack
+    outerClothing: ClothingOuterArmorWebVestSec
+    belt: ClothingBeltStationSecurityFilledFBI
+    shoes: ClothingShoesBootsJackFilled
+    pocket2: PouchFirstAidFilled
+
+- type: startingGear
   id: BF14TDMGearBlue
   equipment:
     id: USMCRiflemanIDCard
-    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlue
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlueTDM
     head: ClothingHeadHatHelmetSecurityBF14
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltUS
@@ -49,7 +60,7 @@
   id: BF14TDMGearRed
   equipment:
     id: VDVRiflemanIDCard
-    jumpsuit: ClothingUniformJumpsuitMilitaryColorRed
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorRedTDM
     head: ClothingHeadHatHelmetSecurityBF14
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltRU
@@ -77,3 +88,28 @@
     - MagazineRifleAK74Black
     - MagazineRifleAK74Black
     - MagazineRifleAK74Black
+
+- type: startingGear
+  id: BF14FBIGoonGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPlain
+    ears: ClothingHeadsetAltUS
+    balaclava: ClothingBalaclavaClassicMouthRangerGreen
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    gloves: ClothingHandsGlovesCombat
+    belt: ClothingBeltStationSecurityFilledFBI
+    shoes: ClothingShoesBootsJackFilled
+    pocket2: PouchFirstAidFilled
+
+- type: startingGear
+  id: BF14FBISMGGoonGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPlain
+    ears: ClothingHeadsetAltUS
+    balaclava: ClothingBalaclavaClassicMouthRangerGreen
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    suitstorage: WeaponSubmachinegunDEMP510
+    gloves: ClothingHandsGlovesCombat
+    belt: ClothingBeltStationSecurityFilledFBISMG
+    shoes: ClothingShoesBootsJackFilled
+    pocket2: PouchFirstAidFilled

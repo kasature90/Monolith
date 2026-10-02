@@ -64,6 +64,42 @@
   name: buddy bipod
   artist: Bundeswehr
 
+- type: lobbyBackground
+  id: BackgroundDingDongDitch
+  background: /Textures/_Battlefield14/LobbyScreens/dingdongditch.png
+  name: ding dong ditch
+  artist: WillyBillyGilly
+
+- type: lobbyBackground
+  id: BackgroundInterchange
+  background: /Textures/_Battlefield14/LobbyScreens/interchange_troubles.jpg
+  name: Interchange Troubles
+  artist: Belwoods
+
+- type: lobbyBackground
+  id: BackgroundMobiks
+  background: /Textures/_Battlefield14/LobbyScreens/mobiks.png
+  name: build to survive mobiks
+  artist: WillyBillyGilly
+
+- type: lobbyBackground
+  id: BackgroundMyGang
+  background: /Textures/_Battlefield14/LobbyScreens/mygang.png
+  name: my gang
+  artist: WillyBillyGilly
+
+- type: lobbyBackground
+  id: BackgroundBoxArt
+  background: /Textures/_Battlefield14/LobbyScreens/boxart.png
+  name: box art
+  artist: WillyBillyGilly
+
+- type: lobbyBackground
+  id: BackgroundSuddih
+  background: /Textures/_Battlefield14/LobbyScreens/tungtungtungsahur.jpg
+  name: Suddih Town Incident
+  artist: Belwoods
+
 #- type: lobbyBackground # IDF, not yet
 #  id: BackgroundWestBank
 #  background: /Textures/_Battlefield14/LobbyScreens/westbank.jpg

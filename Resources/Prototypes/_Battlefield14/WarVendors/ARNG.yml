@@ -80,7 +80,7 @@
         amount: 2
       - id: WeaponRifleUSM4
         amount: 5
-      - id: WeaponSubmachinegunUSMP5
+      - id: WeaponSubmachinegunDEMP5A5
         amount: 5
       - id: WeaponPistolM9
         amount: 2
@@ -94,6 +94,8 @@
         amount: 50
     - name: Sustainment
       entries:
+      - id: Tourniquet
+        amount: 20
       - id: BoxMRE
         amount: 50
       - id: FoodSnackNutribrick
@@ -106,6 +108,8 @@
         amount: 1
       - id: ShellBoxBF12GaugeBreaching
         amount: 1
+      - id: USAFlagFolded
+        amount: 3
 
 - type: entity
   parent: ColMarTechBase
@@ -143,11 +147,15 @@
       - id: RemoteSignallerM57
         amount: 10
       - id: BF14ExtendableLadderItem
-        amount: 5
+        amount: 10
+      - id: BF14FloorChargeItem
+        amount: 10
     - name: Grenades
       entries:
       - id: DefensiveGrenadeUSM67
-        amount: 20
+        amount: 10
+      - id: OffensiveGrenadeUSMK3A2
+        amount: 10
       - id: FlashbangGrenadeUSM84
         amount: 20
       - id: SmokeGrenadeUSM18
@@ -224,10 +232,12 @@
         amount: 1
       - id: MagazineBox762x51
         amount: 5
-      - id: MagazineBox9x19mmBig
+      - id: MagazineBox9x19Big
         amount: 5
       - id: ShellBoxBF12GaugeBuckshot
         amount: 10
+      - id: ShellBoxBF12GaugeFlechette
+        amount: 2
     - name: Misc
       entries:
       - id: MagazinePistolM9

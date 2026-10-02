@@ -329,4 +329,4 @@
     Cold: 0.5
     Heat: 0.6
     Shock: 0.5
-    Caustic: 0.5
+    Caustic: 0.05 # sarin gas does this and it KILLS YOU REALLY BAD

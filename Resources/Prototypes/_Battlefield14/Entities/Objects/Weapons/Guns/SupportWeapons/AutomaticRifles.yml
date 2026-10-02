@@ -16,11 +16,14 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - state: grip-HK
       - state: longcog
       - state: stock-adjustable-HK
       - state: rifle-length-barrel-quadrail
-      - state: foregrip
       - state: railcover
+      - state: muzzle-comp
+        offset: 0.19,0
+      - state: foregrip
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
@@ -47,13 +50,13 @@
           tags:
             - BF_CartridgeRifle556x45
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -35
+    minAngle: -30
+    maxAngle: -30
   - type: Gun
-    minAngle: 19 # wielded = 0
-    maxAngle: 50 # wielded = 15
-    angleIncrease: 0.7
-    angleDecay: 16
+    minAngle: 36 # wielded 6
+    maxAngle: 45 # wielded 15
+    angleIncrease: 1
+    angleDecay: 12
     availableModes:
     - SemiAuto
     - FullAuto
@@ -74,6 +77,25 @@
   - type: EyeCursorOffset
     maxOffset: 5
     pvsIncrease: 0.35
+
+- type: entity
+  name: RPK-16
+  parent: WeaponRifleUSM27IAR
+  id: WeaponRifleUSRPK16
+  description: "At some point, American civilians became obsessed with having their own M27-IAR, and with the legalisation of civilian-owned full auto leading up to the war; there was an explosion of 'RPK-16' configurations for the AR15, obviously reminiscent of the soviet RPK-74."
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: grip-HK
+      - state: longcog
+      - state: stock-adjustable
+      - state: rifle-length-barrel-M27
+      - state: foregrip
+      - state: mag-30-0
+        map: ["enum.GunVisualLayers.Mag"]
 
 #region DE
 
@@ -150,7 +172,7 @@
   description: A modernised RPK-74, with simply "cooler" furniture and more modern manufacture, but does not exactly translate to performance. 2016 refers to the date of development.
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/RPK2016.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK2016.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -158,18 +180,18 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/RPK2016.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK2016.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunRequiresWield
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -35
+    minAngle: -30
+    maxAngle: -30
   - type: Gun
-    minAngle: 19
-    maxAngle: 50
-    angleIncrease: 1
-    angleDecay: 16
+    minAngle: 36 # wielded 6
+    maxAngle: 45 # wielded 15
+    angleIncrease: 0.5
+    angleDecay: 12
     availableModes:
     - SemiAuto
     - FullAuto
@@ -254,13 +276,13 @@
     unwieldOnUse: false
   - type: GunRequiresWield
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -35
+    minAngle: -30
+    maxAngle: -30
   - type: Gun
-    minAngle: 19
-    maxAngle: 50
-    angleIncrease: 1
-    angleDecay: 16
+    minAngle: 36 # wielded 6
+    maxAngle: 45 # wielded 15
+    angleIncrease: 0.5
+    angleDecay: 12
     availableModes:
     - SemiAuto
     - FullAuto
@@ -353,3 +375,85 @@
     magState: mag-rpk74black
     steps: 1
     zeroVisible: true
+
+- type: entity
+  name: RPK
+  parent: WeaponRifleRURPK74
+  id: WeaponRifleRURPK
+  description: An AKM with a heavier barrel and front trunnion, plus a bipod. For laying down hate soviet style.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK74.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    state: icon-rpk
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-rpk74
+      - state: grip-ak74
+      - state: handguard-ak74
+      - state: barrel-rpk74
+      - state: ironsight-ak74
+      - state: mag-rpk-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK74.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunRequiresWield
+  - type: GunWieldBonus
+    minAngle: -30
+    maxAngle: -25
+  - type: Gun
+    minAngle: 36 # wielded 6
+    maxAngle: 45 # wielded 20
+    angleIncrease: 1
+    angleDecay: 12
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 7
+    projectileSpeed: 50 # twenty inch barrel
+    soundGunshot:
+      collection: BF_AK_762_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleRPKTracerGreen
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAKM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x39TracerGreen
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x39
+  - type: MagazineVisuals
+    magState: mag-rpk
+    steps: 1
+    zeroVisible: true
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AKM pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: LMGK
+  parent: WeaponRifleRURPK
+  id: WeaponRifleDELMGK
+  description: An east german lisenced copy of the RPK. Quite the rare piece today.

@@ -42,7 +42,8 @@
       prototypes:
         - BF14WeaponCaseLongUSMAC10
         - BF14WeaponCaseLongUSMAC10Supp
-        - BF14WeaponCaseLongUSMP5
+        - BF14WeaponCaseLongDEMP5A5
+        - BF14WeaponCaseLongDEMP5SD6
         - BF14WeaponCaseLongDEMP7
         - BF14WeaponCaseLongRUSR2MP
         - BF14WeaponCaseLongRUPPsh41
@@ -98,16 +99,27 @@
         - BF14WeaponCaseLongUSM16A2
         - BF14WeaponCaseLongUSM16A3
         - BF14WeaponCaseLongUSM4A1
+        - BF14WeaponCaseLongUSCAR15
+        - BF14WeaponCaseLongUSCAR15SUPP
+        - BF14WeaponCaseLongUSM27RWK
         - BF14WeaponCaseLongUSM30MRC
         - BF14WeaponCaseLongUSM42A5
-        - BF14WeaponCaseLongUSMXM8
+        - BF14WeaponCaseLongUSXM8
         - BF14WeaponCaseLongDEG36
         - BF14WeaponCaseLongDEG36C
+        - BF14WeaponCaseLongDEG36K
         - BF14WeaponCaseLongDEG3A3
+        - BF14WeaponCaseLongDEG3A3ZF
+        - BF14WeaponCaseLongDEG3A4
+        - BF14WeaponCaseLongBESCARL
+        - BF14WeaponCaseLongBESCARH
+        - BF14WeaponCaseLongBEF2000
         - BF14WeaponCaseLongRUAK74
         - BF14WeaponCaseLongRUAK74M
         - BF14WeaponCaseLongRUAK12
         - BF14WeaponCaseLongRUAKS74U
+        - BF14WeaponCaseLongRUAN94
+        - BF14WeaponCaseLongCMBOSIPR
       chance: 1
       intervalSeconds: 60
       minimumEntitiesSpawned: 1
@@ -129,10 +141,12 @@
       prototypes:
         - BF14WeaponCaseLongUSM249Para
         - BF14WeaponCaseLongUSM240B
+        - BF14WeaponCaseLongUSM60
         - BF14WeaponCaseLongDEMG3
         - BF14WeaponCaseLongRUPKM
         - BF14WeaponCaseLongRURP46
         - BF14WeaponCaseLongBrigadorBonesaw
+        - BF14WeaponCaseLongCMBOSIPRLMG
       chance: 1
       intervalSeconds: 180 # 3 minutes
       minimumEntitiesSpawned: 1
@@ -156,7 +170,7 @@
     - type: Timer
     - type: TimedSpawner
       prototypes:
-        - BF14WeaponCaseLongUSMP5
+        - BF14WeaponCaseLongDEMP5A5
         - BF14WeaponCaseLongDEMP7
       chance: 1
       intervalSeconds: 60
@@ -205,9 +219,12 @@
         - BF14WeaponCaseLongUSM16A1
         - BF14WeaponCaseLongUSM16A2
         - BF14WeaponCaseLongUSM4A1
+        - BF14WeaponCaseLongUSCAR15
+        - BF14WeaponCaseLongUSCAR15SUPP
+        - BF14WeaponCaseLongUSM27RWK
         - BF14WeaponCaseLongUSM30MRC
         - BF14WeaponCaseLongUSM42A5
-        - BF14WeaponCaseLongUSMXM8
+        - BF14WeaponCaseLongUSXM8
       chance: 1
       intervalSeconds: 60
       minimumEntitiesSpawned: 1
@@ -229,7 +246,10 @@
       prototypes:
         - BF14WeaponCaseLongDEG36
         - BF14WeaponCaseLongDEG36C
+        - BF14WeaponCaseLongDEG36K
         - BF14WeaponCaseLongDEG3A3
+        - BF14WeaponCaseLongDEG3A3ZF
+        - BF14WeaponCaseLongDEG3A4
       chance: 1
       intervalSeconds: 60
       minimumEntitiesSpawned: 1
@@ -253,6 +273,7 @@
         - BF14WeaponCaseLongRUAK74M
         - BF14WeaponCaseLongRUAK12
         - BF14WeaponCaseLongRUAKS74U
+        - BF14WeaponCaseLongRUAN94
       chance: 1
       intervalSeconds: 60
       minimumEntitiesSpawned: 1
@@ -276,6 +297,7 @@
       prototypes:
         - BF14WeaponCaseLongUSM249Para
         - BF14WeaponCaseLongUSM240B
+        - BF14WeaponCaseLongUSM60
       chance: 1
       intervalSeconds: 60
       minimumEntitiesSpawned: 1

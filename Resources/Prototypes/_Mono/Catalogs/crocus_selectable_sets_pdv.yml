@@ -5,10 +5,11 @@
   name: selectable-set-crocus-infantry-kit-name
   description: selectable-set-crocus-infantry-pdv-kit-desc
   sprite:
-    sprite: _Mono/Objects/Weapons/Guns/Rifles/m90.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/vympel.rsi
     state: icon
   content:
   - WeaponRifleVympel
+  - Magazine556x45mmFMJ
   - Magazine556x45mmFMJ
   - Magazine556x45mmFMJ
   - Magazine556x45mmFMJ
@@ -75,8 +76,8 @@
   name: selectable-set-crocus-grenadier-kit-name
   description: selectable-set-crocus-grenadier-pdv-kit-desc
   sprite:
-    sprite: Objects/Specific/Medical/firstaidkits.rsi
-    state: blackkit
+    sprite: Objects/Weapons/Grenades/grenade.rsi
+    state: icon
   content:
   - WeaponSubMachineGunC20r
   - Magazine9x19mmSubMachineGunFMJ

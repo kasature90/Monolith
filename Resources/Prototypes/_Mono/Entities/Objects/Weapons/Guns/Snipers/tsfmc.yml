@@ -291,7 +291,7 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    fireRate: 2
+    fireRate: 1.5
     soundGunshot:
       collection: DMRFire
   - type: ChamberMagazineAmmoProvider

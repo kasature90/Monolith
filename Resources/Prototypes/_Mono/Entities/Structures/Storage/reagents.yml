@@ -1,0 +1,81 @@
+- type: entity
+  id: FuelTankHugeOil
+  name: fuel storage tanker
+  description: A large reinforced fuel tank, rated to contain 50ku of reagents.
+  parent: BaseStructure
+  suffix: Empty, Oil
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        maxVol: 50000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 2000
+      behaviors:
+      - !type:SolutionExplosionBehavior
+        solution: tank
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Piercing
+        damage: 4000
+      behaviors:
+      - !type:SolutionExplosionBehavior
+        solution: tank
+    - trigger:
+        !type:DamageTrigger
+        damage: 5000
+      behaviors:
+      - !type:SpillBehavior
+        solution: tank
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Sprite
+    noRot: true
+    sprite: _Crescent/Structures/fueltank.rsi
+    layers:
+    - state: fueltank
+  - type: Occluder
+    enabled: true
+    boundingBox: "-1.1,-1.1,1.1,1.1"
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.1,-1.1,1.1,1.1"
+        density: 10000
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
+  - type: Animateable
+  - type: InteractionOutline
+  - type: Physics
+  - type: Clickable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: DrainableSolution
+    solution: tank
+  - type: ReagentTank
+  - type: Transform
+    noRot: true
+
+- type: entity
+  id: FuelTankHugeOilFilled
+  parent: FuelTankHugeOil
+  suffix: Full, Oil
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: Oil
+          Quantity: 50000

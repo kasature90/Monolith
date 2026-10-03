@@ -8,12 +8,11 @@
     sprite: _Mono/Objects/Weapons/Guns/Rifles/m90.rsi
     state: icon
   content:
-  - WeaponRifleM90
-  - Magazine762x51mmFMJ
-  - Magazine762x51mmFMJ
-  - Magazine762x51mmFMJ
-  - Magazine762x51mmFMJ
-  - AmmoBox762x51mmFMJ
+  - WeaponRifleVympel
+  - Magazine556x45mmFMJ
+  - Magazine556x45mmFMJ
+  - Magazine556x45mmFMJ
+  - AmmoBox556x45mmFMJ
   - MedkitFilled
   - Tourniquet
   - Tourniquet
@@ -46,6 +45,7 @@
   - Retractor
   - Scalpel
   - BoneGel
+  - DefibrillatorCompact
 
 - type: thiefBackpackSet
   id: KitSelectorCrocusSapperPDV
@@ -71,25 +71,6 @@
   - RemoteSignallerAdvanced
 
 - type: thiefBackpackSet
-  id: KitSelectorCrocusAutoriflemanPDV
-  # I can't match the 240rnd box mags of 6.8, so they get NODs instead.
-  name: selectable-set-crocus-autorifleman-kit-name
-  description: selectable-set-crocus-autorifleman-pdv-kit-desc
-  sprite:
-    sprite: _Mono/Objects/Weapons/Guns/LMGs/pkms/pkms-icon.rsi
-    state: icon
-  content:
-  - WeaponLMGPKMS
-  - AmmoBox556x45mmFMJ
-  - AmmoBox556x45mmFMJ
-  - AmmoBox556x45mmFMJ
-  - ClothingHelmetAttachmentNVGsBasic
-  - ClothingHelmetCoverHelmetMount
-  - Brutepack
-  - Tourniquet
-  - Tourniquet
-
-- type: thiefBackpackSet
   id: KitSelectorCrocusGrenadierPDV
   name: selectable-set-crocus-grenadier-kit-name
   description: selectable-set-crocus-grenadier-pdv-kit-desc
@@ -111,21 +92,3 @@
   - GrenadeFlashBang
   - SmokeGrenade
   - SmokeGrenade
-
-- type: thiefBackpackSet
-  id: KitSelectorCrocusPointmanPDV
-  name: selectable-set-crocus-pointman-pdv-kit-name
-  description: selectable-set-crocus-pointman-pdv-kit-desc
-  sprite:
-    sprite: _Mono/Objects/Weapons/Melee/shields.rsi
-    state: heavy-icon
-  content:
-  - WeaponSubMachineGunMla73
-  - HeavyBallisticShield
-  - Magazine635x40mmCaseless
-  - Magazine635x40mmCaseless
-  - Magazine635x40mmCaseless
-  - AmmoBox635x40mmCaseless
-  - MedkitFilled
-  - GrenadeFlashBang
-  - GrenadeFlashBang

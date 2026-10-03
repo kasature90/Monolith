@@ -1,27 +1,27 @@
 - type: entity
   id: FuelTankHugeOil
   name: fuel storage tanker
-  description: A large reinforced fuel tank, rated to contain 50ku of reagents.
+  description: A large reinforced fuel tank, rated to contain 20ku of reagents.
   parent: BaseStructure
-  suffix: Empty, Oil
+  suffix: Empty
   components:
   - type: SolutionContainerManager
     solutions:
       tank:
-        maxVol: 50000
+        maxVol: 20000
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTypeTrigger
         damageType: Heat
-        damage: 2000
+        damage: 500
       behaviors:
       - !type:SolutionExplosionBehavior
         solution: tank
     - trigger:
         !type:DamageTypeTrigger
         damageType: Piercing
-        damage: 4000
+        damage: 1000
       behaviors:
       - !type:SolutionExplosionBehavior
         solution: tank
@@ -65,6 +65,7 @@
   - type: DrainableSolution
     solution: tank
   - type: ReagentTank
+    tankType: Fuel
   - type: Transform
     noRot: true
 
@@ -78,4 +79,16 @@
       tank:
         reagents:
         - ReagentId: Oil
-          Quantity: 50000
+          Quantity: 20000
+
+- type: entity
+  id: FuelTankHugeFuelFilled
+  parent: FuelTankHugeOil
+  suffix: Full, Welding Fuel
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 20000

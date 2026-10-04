@@ -100,7 +100,7 @@
       state: beacon
   - type: StealCondition
     minCollectionSize: 2
-    maxCollectionSize: 4
+    maxCollectionSize: 6
     objectiveText: objective-condition-steal-title-destroy
     objectiveNoOwnerText: objective-condition-steal-title-destroy
     descriptionText: objective-condition-steal-description-faction-beacon-crocus-destroy

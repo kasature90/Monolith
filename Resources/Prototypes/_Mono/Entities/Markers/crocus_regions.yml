@@ -23,8 +23,8 @@
     priority: 1
 
 - type: ambientSpaceBiome
-  id: CrocusBiome
-  name: Crocus
+  id: CrocusBiomeUnderground
+  name: Jianghui Underground
 
 - type: entity
   id: BiomeSourceFallbackJianghuiIndustrial

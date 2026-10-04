@@ -179,7 +179,8 @@
   id: TSFOperationsCrocus
   weights:
     TSFCrocusBeaconRepairOperation: 1
-    TSFCrocusBeaconPDAOperation: 0.75
+    TSFCrocusBothOperation: 1.25
+    TSFCrocusPDAOperation: 0.75
 
 - type: nukieOperation
   id: TSFCrocusBeaconRepairOperation
@@ -187,7 +188,13 @@
   - TSFCrocusObjectiveBeaconRepair
 
 - type: nukieOperation
-  id: TSFCrocusBeaconPDAOperation
+  id: TSFCrocusBothOperation
+  operationObjectives:
+  - TSFCrocusObjectiveBeaconRepair
+  - TSFCrocusObjectivePDAs
+
+- type: nukieOperation
+  id: TSFCrocusPDAOperation
   operationObjectives:
   - TSFCrocusObjectivePDAs
 

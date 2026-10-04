@@ -217,10 +217,11 @@
   description: mono-crocus-description
   showInVote: false
   weight: 0.2 # Giant majority needed
-  respawnMultiplier: 0.5
+  respawnMultiplier: 0.25
+  autobalancerEnabled: true
   supportedMaps: CrocusMapPool
   rules:
   - PDVObjectivesCrocus
-  - RoundEndRuleHour2
+  - RoundEndRuleHour1
   - CrocusAnnouncementMinuteRoundStart
   - CrocusAnnouncementMinute10m

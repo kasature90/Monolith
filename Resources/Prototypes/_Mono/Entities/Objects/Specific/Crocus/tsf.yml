@@ -19,12 +19,15 @@
   - type: Construction
     graph: CrocusRepairableBeacon
     node: break
+  - type: StealTarget
+    stealGroup:
+    - BeaconDestroys
   - type: ExtendDescription
     descriptionList:
-    - description: This is a potential objective for TSF infantry in the area!
+    - description: This is a potential objective for TSF & PDV infantry in the area!
       color: "#4f94ad"
       requireDetailRange: false
-    - description: It's currently in maintenance mode and requires repairs to count towards the objective.
+    - description: It's currently in maintenance mode and requires repairs to count towards the TSF objective.
       color: "#eb4034"
       requireDetailRange: false
 
@@ -73,8 +76,11 @@
     - BeaconRepairs
   - type: ExtendDescription
     descriptionList:
-    - description: This is a potential objective for TSF infantry in the area!
+    - description: This is a potential objective for TSF & PDV infantry in the area!
       color: "#4f94ad"
+      requireDetailRange: false
+    - description: It must be destroyed for the PDV objective.
+      color: "#cc34eb"
       requireDetailRange: false
 
 - type: entity

@@ -19,6 +19,7 @@
   operationObjectives:
   - PDVCrocusObjectivePDAs
   - PDVCrocusObjectiveNanites
+  - PDVCrocusObjectiveBeaconDestroy
 
 - type: entity
   parent: BaseFactionalObjectives
@@ -38,6 +39,7 @@
   id: PDVCrocusNanitesOperation
   operationObjectives:
   - PDVCrocusObjectiveNanites
+  - PDVCrocusObjectiveBeaconDestroy
 
 - type: entity
   parent: BaseStealObjective
@@ -81,12 +83,37 @@
     sprite: _Mono/Objects/TradeGoods/factiongoods.rsi
     state: nanitecanister
 
+- type: stealTargetGroup
+  id: BeaconDestroys
+  name: steal-target-groups-beacon-repairs
+  sprite:
+    sprite: _Mono/Structures/Machines/beacon.rsi
+    state: beacon
+
+- type: entity
+  parent: PDVCrocusObjectiveBase
+  id: PDVCrocusObjectiveBeaconDestroy
+  components:
+  - type: Objective
+    icon:
+      sprite: _Mono/Structures/Machines/beacon.rsi
+      state: beacon
+  - type: StealCondition
+    minCollectionSize: 2
+    maxCollectionSize: 4
+    objectiveText: objective-condition-steal-title-destroy
+    objectiveNoOwnerText: objective-condition-steal-title-destroy
+    descriptionText: objective-condition-steal-description-faction-beacon-crocus-destroy
+    descriptionMultiplyText: objective-condition-steal-multiply-description-faction-beacon-crocus-destroy
+    stealGroup: BeaconDestroys
+
 # Basically the Kill People objective
 
 - type: nukieOperation
   id: PDVCrocusKillsOperation
   operationObjectives:
   - PDVCrocusObjectivePDAs
+  - PDVCrocusObjectiveBeaconDestroy
 
 - type: entity
   parent: PDVCrocusObjectiveBase
@@ -152,11 +179,17 @@
   id: TSFOperationsCrocus
   weights:
     TSFCrocusBeaconRepairOperation: 1
+    TSFCrocusBeaconPDAOperation: 0.75
 
 - type: nukieOperation
   id: TSFCrocusBeaconRepairOperation
   operationObjectives:
   - TSFCrocusObjectiveBeaconRepair
+
+- type: nukieOperation
+  id: TSFCrocusBeaconPDAOperation
+  operationObjectives:
+  - TSFCrocusObjectivePDAs
 
 - type: stealTargetGroup
   id: BeaconRepairs
@@ -164,6 +197,13 @@
   sprite:
     sprite: _Mono/Structures/Machines/beacon.rsi
     state: beacon
+
+- type: stealTargetGroup
+  id: PDVPDAs
+  name: steal-target-groups-federal-pdas
+  sprite:
+    sprite: _Mono/Objects/Devices/pda.rsi
+    state: pda-rakhshan
 
 - type: entity
   parent: BaseStealObjective
@@ -203,3 +243,16 @@
     descriptionText: objective-condition-steal-description-faction-beacon-crocus-repair
     descriptionMultiplyText: objective-condition-steal-multiply-description-faction-beacon-crocus-repair
     stealGroup: BeaconRepairs
+
+- type: entity
+  parent: PDVCrocusObjectiveBase
+  id: TSFCrocusObjectivePDAs
+  components:
+  - type: Objective
+    icon:
+      sprite: _NF/Objects/Devices/pda.rsi
+      state: pda-security
+  - type: StealCondition
+    minCollectionSize: 15
+    maxCollectionSize: 50
+    stealGroup: PDVPDAs

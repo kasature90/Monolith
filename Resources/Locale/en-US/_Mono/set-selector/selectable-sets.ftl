@@ -124,6 +124,7 @@ selectable-set-crocus-medic-tsf-kit-desc =
       - a medical scanner
       - a set of surgical tools
       - a sterile mask
+      - a medical HUD
       - a portable AED
 
 selectable-set-crocus-medic-pdv-kit-desc =
@@ -135,6 +136,7 @@ selectable-set-crocus-medic-pdv-kit-desc =
       - a medical scanner
       - a set of surgical tools
       - a sterile mask
+      - a medical HUD
       - a portable AED
 
 selectable-set-crocus-sapper-kit-name = Sapper Kit

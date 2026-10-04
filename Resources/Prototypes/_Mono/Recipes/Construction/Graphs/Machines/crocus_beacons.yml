@@ -10,33 +10,33 @@
       steps:
       - material: Steel
         amount: 2
-        doAfter: 10
+        doAfter: 5
       - material: MetalRod
         amount: 8
-        doAfter: 10
+        doAfter: 5
       - tool: Screwing
         doAfter: 0.5
       - tool: Welding
-        doAfter: 12
+        doAfter: 6
       - material: Steel
         amount: 2
-        doAfter: 10
+        doAfter: 5
       - material: MetalRod
         amount: 8
-        doAfter: 10
+        doAfter: 5
       - tool: Screwing
         doAfter: 0.5
       - tool: Welding
-        doAfter: 12
+        doAfter: 6
       - material: Steel
         amount: 2
-        doAfter: 10
+        doAfter: 5
       - material: MetalRod
         amount: 8
-        doAfter: 10
+        doAfter: 5
       - tool: Screwing
         doAfter: 0.5
       - tool: Welding
-        doAfter: 12
+        doAfter: 6
   - node: repairBeacon
     entity: CrocusBeacon

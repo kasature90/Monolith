@@ -1,0 +1,42 @@
+- type: constructionGraph
+  id: CrocusRepairableBeacon
+  start: start
+  graph:
+  - node: start
+  - node: break
+    entity: CrocusBeaconBroken
+    edges:
+    - to: repairBeacon
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 10
+      - material: MetalRod
+        amount: 8
+        doAfter: 10
+      - tool: Screwing
+        doAfter: 0.5
+      - tool: Welding
+        doAfter: 12
+      - material: Steel
+        amount: 2
+        doAfter: 10
+      - material: MetalRod
+        amount: 8
+        doAfter: 10
+      - tool: Screwing
+        doAfter: 0.5
+      - tool: Welding
+        doAfter: 12
+      - material: Steel
+        amount: 2
+        doAfter: 10
+      - material: MetalRod
+        amount: 8
+        doAfter: 10
+      - tool: Screwing
+        doAfter: 0.5
+      - tool: Welding
+        doAfter: 12
+  - node: repairBeacon
+    entity: CrocusBeacon

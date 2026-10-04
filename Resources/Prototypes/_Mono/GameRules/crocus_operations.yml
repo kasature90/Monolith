@@ -245,7 +245,7 @@
     stealGroup: BeaconRepairs
 
 - type: entity
-  parent: PDVCrocusObjectiveBase
+  parent: TSFCrocusObjectiveBase
   id: TSFCrocusObjectivePDAs
   components:
   - type: Objective

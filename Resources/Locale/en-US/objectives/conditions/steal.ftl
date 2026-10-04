@@ -30,4 +30,4 @@ objective-condition-steal-multiply-description-faction-beacon-crocus-destroy = E
 
 steal-target-groups-federal-nanites = federation nanite canister
 steal-target-groups-federal-pdas = military PDA
-steal-target-groups-beacon-repairs = beacons
+steal-target-groups-beacon-repairs = beacon

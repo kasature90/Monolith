@@ -7,7 +7,6 @@ using Content.Shared.Database;
 using Robust.Shared.Audio;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
 namespace Content.Server.Atmos.EntitySystems
@@ -51,19 +50,16 @@ namespace Content.Server.Atmos.EntitySystems
 
             // If the hotspot is too weak to exist/doesn't have the correct conditions, yeet it for deletion at the end of the tick
             if ((tile.Hotspot.Temperature < Atmospherics.FireMinimumTemperatureToExist) || (tile.Hotspot.Volume <= 1f)
-                || tile.Air == null || tile.Air.GetMoles(Gas.Oxygen) < 0.5f || (tile.Air.GetMoles(Gas.Plasma) < 0.5f && tile.Air.GetMoles(Gas.Tritium) < 0.5f) && tile.PuddleSolutionFlammability == 0)
+                || tile.Air == null || tile.Air.GetMoles(Gas.Oxygen) < 0.5f || (tile.Air.GetMoles(Gas.Plasma) < 0.5f && tile.Air.GetMoles(Gas.Tritium) < 0.5f))
             {
                 tile.Hotspot = new Hotspot();
-                tile.Hotspot.Type = tile.PuddleSolutionFlammability > 0 ? HotspotType.Puddle : HotspotType.Gas;
                 InvalidateVisuals(ent, tile);
                 return;
             }
 
             PerformHotspotExposure(tile);
 
-            tile.Hotspot.Type = tile.PuddleSolutionFlammability > 0 ? HotspotType.Puddle : HotspotType.Gas;
-
-            if (tile.Hotspot.Bypassing || tile.PuddleSolutionFlammability > 0)
+            if (tile.Hotspot.Bypassing)
             {
                 tile.Hotspot.State = 3;
 
@@ -145,14 +141,13 @@ namespace Content.Server.Atmos.EntitySystems
 
             var plasma = tile.Air.GetMoles(Gas.Plasma);
             var tritium = tile.Air.GetMoles(Gas.Tritium);
-            var puddleFlammability = tile.PuddleSolutionFlammability;
 
             // If a hotspot already exists on this tile, just strengthen it and return early.
             if (tile.Hotspot.Valid)
             {
                 if (soh)
                 {
-                    if (plasma > 0.5f || tritium > 0.5f || puddleFlammability > 0)
+                    if (plasma > 0.5f || tritium > 0.5f)
                     {
                         if (tile.Hotspot.Temperature < exposedTemperature)
                             tile.Hotspot.Temperature = exposedTemperature;
@@ -160,28 +155,23 @@ namespace Content.Server.Atmos.EntitySystems
                             tile.Hotspot.Volume = exposedVolume;
                     }
                 }
-                tile.Hotspot.Temperature = AddClampedTemperature(tile.Hotspot.Temperature, 1 * puddleFlammability, (float)(Atmospherics.T0C + 20 * Math.Pow(puddleFlammability, 1.2)));
 
                 return;
             }
 
             // If the conditions are right for a hotspot to be created, do so!
-            if ((exposedTemperature > Atmospherics.PlasmaMinimumBurnTemperature && (plasma > 0.5f || tritium > 0.5f)) || (puddleFlammability > 0 && exposedTemperature > 573.15 - 50 * puddleFlammability) )
+            if ((exposedTemperature > Atmospherics.PlasmaMinimumBurnTemperature && (plasma > 0.5f || tritium > 0.5f)))
             {
                 if (sparkSourceUid.HasValue)
                     _adminLog.Add(LogType.Flammable, LogImpact.High, $"Heat/spark of {ToPrettyString(sparkSourceUid.Value)} caused atmos ignition of gas: {tile.Air.Temperature.ToString():temperature}K - {oxygen}mol Oxygen, {plasma}mol Plasma, {tritium}mol Tritium");
 
-                var temperature = exposedTemperature;
-                if(puddleFlammability > 0)
-                    temperature = AddClampedTemperature(temperature, 1 * puddleFlammability, (float)(Atmospherics.T0C + 20 * Math.Pow(puddleFlammability, 1.2)));
                 tile.Hotspot = new Hotspot
                 {
                     Volume = exposedVolume * 25f,
-                    Temperature = temperature,
+                    Temperature = exposedTemperature,
                     SkippedFirstProcess = tile.CurrentCycle > gridAtmosphere.UpdateCounter,
                     Valid = true,
                     State = 1,
-                    Type = puddleFlammability > 0 ? HotspotType.Puddle : HotspotType.Gas
                 };
 
                 AddActiveTile(gridAtmosphere, tile);
@@ -198,7 +188,7 @@ namespace Content.Server.Atmos.EntitySystems
                 return;
 
             // A bypassing hotspot does NOT interact with atmos (intended for plasma/trit fires "carrying" the hotspot with them)
-            tile.Hotspot.Bypassing = tile.Hotspot.SkippedFirstProcess && tile.Hotspot.Volume > tile.Air.Volume*0.95f && tile.PuddleSolutionFlammability == 0;
+            tile.Hotspot.Bypassing = tile.Hotspot.SkippedFirstProcess && tile.Hotspot.Volume > tile.Air.Volume*0.95f;
 
             if (tile.Hotspot.Bypassing)
             {
@@ -208,7 +198,7 @@ namespace Content.Server.Atmos.EntitySystems
             else
             {
                 var affected = tile.Air.RemoveVolume(tile.Hotspot.Volume);
-                affected.Temperature = MathF.Max(tile.Hotspot.Temperature, Atmospherics.T0C + 50 * tile.PuddleSolutionFlammability);
+                affected.Temperature = tile.Hotspot.Temperature;
                 React(affected, tile);
                 tile.Hotspot.Temperature = affected.Temperature;
                 tile.Hotspot.Volume = affected.ReactionResults[(byte)GasReaction.Fire] * Atmospherics.FireGrowthRate;
@@ -223,14 +213,6 @@ namespace Content.Server.Atmos.EntitySystems
             {
                 RaiseLocalEvent(entity, ref fireEvent);
             }
-        }
-
-        /// <summary>
-        /// Used for reagent fires to ensure the temperature doesn't get too far out of control.
-        /// </summary>
-        private float AddClampedTemperature(float temperature, float kelvinToAdd, float clampTemperature)
-        {
-            return MathF.Max(temperature, MathF.Min(temperature + kelvinToAdd, clampTemperature));
         }
     }
 }

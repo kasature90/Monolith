@@ -55,6 +55,7 @@
           - HeadOfSecurity
         - type: Announcer
         - type: StationCargoBountyDatabase
+          maxBounties: 20
           # There's totally a better way to do this LOL
           availableBounties:
           - CCBountyAmanitaJelly

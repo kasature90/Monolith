@@ -563,9 +563,9 @@
   id: FoodMealQueso
   description: A classic dipping sauce that you can't go wrong with.
   components:
-  - type: Tag # Mono
-    tags:
-    - BountyQueso
+    - type: Tag # Mono
+      tags:
+      - BountyQueso
     - type: FlavorProfile
       flavors:
         - cheesy
@@ -605,9 +605,6 @@
   id: FoodMealEnchiladas
   description: Viva La Mexico!
   components:
-  - type: Tag # Mono
-    tags:
-    - BountyEnchiladas
     - type: FlavorProfile
       flavors:
         - meaty
@@ -627,6 +624,7 @@
     - type: Tag
       tags:
       - Meat
+      - BountyEnchiladas # Mono
 # What do Europeans eat instead of enchiladas? 25.4 millimeter-iladas.
 
 - type: entity

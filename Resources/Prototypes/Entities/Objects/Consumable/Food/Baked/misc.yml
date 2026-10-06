@@ -823,9 +823,9 @@
   id: FoodOnionRings
   description: You can eat it or propose to your loved ones.
   components:
-  - type: Tag # Mono
-    tags:
-    - BountyOnionRings
+    - type: Tag # Mono
+      tags:
+      - BountyOnionRings
     - type: FlavorProfile
       flavors:
         - onion
@@ -909,7 +909,7 @@
           Quantity: 1
   - type: MothFood # Frontier
 
-- type: entity         
+- type: entity
   name: grilled cheese sandwich
   parent: FoodBakedBase
   id: FoodBakedGrilledCheeseSandwich

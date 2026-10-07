@@ -235,7 +235,6 @@ namespace Content.Server.Atmos.EntitySystems
                 oldData = new GasOverlayData(tile.Hotspot.State, new byte[VisibleGasId.Length], newByteTemp);
             }
             else if (oldData.FireState != tile.Hotspot.State ||
-                     oldData.FireType != (byte)tile.Hotspot.Type || // mono reagent fire
                      Math.Abs(oldData.ByteGasTemperature.Value - newByteTemp.Value) > 1 || // Dirty Temperature when there is more then 1 byte difference. That should measure up to minimum 4 degreese difference, 6 degreese on average.
                      (oldData.ByteGasTemperature.Value != newByteTemp.Value && newByteTemp.Value > ThermalByte.TempResolution)) // change of special ThermalByte value
             {

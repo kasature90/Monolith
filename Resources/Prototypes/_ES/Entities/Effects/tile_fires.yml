@@ -30,6 +30,7 @@
       state: red_1
       shader: unshaded
   - type: ESTileFire
+  - type: RequiresGrid # Mono - kys
   - type: ActiveEdgeSpreader
   - type: EdgeSpreader
     id: ESTileFire

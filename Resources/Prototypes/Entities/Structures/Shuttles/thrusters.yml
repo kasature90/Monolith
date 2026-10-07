@@ -267,14 +267,26 @@
     repairTime: 6
     repairCost: 6
   - type: Explosive
-    explosionType: Default
-    maxIntensity: 100
-    intensitySlope: 2
-    totalIntensity: 200
+    explosionType: ESWelderBomb
+    maxIntensity: 10
+    intensitySlope: 1
+    totalIntensity: 40
   - type: ESSparkOnHit
     prob: 0.4
-    tileFireChance: 0.25
+    tileFireChance: 0.4
     count: 3
+  - type: Flammable
+    fireSpread: true
+    firestackFade: 0.1
+    alwaysCombustible: true
+    damage:
+      types:
+        Heat: 1
+        Structural: 2
+  - type: Appearance
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Generic_mob_burning
 
 - type: entity
   id: GyroscopeUnanchored

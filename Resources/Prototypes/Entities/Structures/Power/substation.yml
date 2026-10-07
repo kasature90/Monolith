@@ -84,6 +84,11 @@
           MachineFrameDestroyed:
             min: 1
             max: 1
+      - !type:SpawnEntitiesBehavior # Mono
+        spawn:
+          ESTileFire:
+            min: 1
+            max: 1
       - !type:SpawnGasBehavior
         gasMixture:
           volume: 1000
@@ -91,10 +96,10 @@
             CarbonDioxide: 340.5701689 # carbon dioxide
           temperature: 373.15
   - type: Explosive
-    explosionType: Default
-    maxIntensity: 100
+    explosionType: ESWelderBomb # Mono
+    maxIntensity: 10 # Mono
     intensitySlope: 2
-    totalIntensity: 200
+    totalIntensity: 200 # Mono
   - type: WiresPanel
   - type: Machine
     board: SubstationMachineCircuitboard
@@ -117,10 +122,22 @@
     - VoltageNetworks
     - Power
   # ES/Mono Start
+  - type: Appearance
   - type: ESSparkOnHit
     prob: 0.25
-    tileFireChance: 0.2
+    tileFireChance: 0.4
     count: 2
+  - type: Flammable
+    fireSpread: true
+    firestackFade: 0.1
+    alwaysCombustible: true
+    damage:
+      types:
+        Heat: 10
+        Structural: 10
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Generic_mob_burning
   # ES/Mono End
 
   # Interface
@@ -235,8 +252,8 @@
     graph: WallmountSubstation
     node: substation
   - type: Explosive
-    explosionType: Default
-    maxIntensity: 50
+    explosionType: ESWelderBomb # Mono
+    maxIntensity: 10 # Mono
     intensitySlope: 2
     totalIntensity: 100
   - type: StationInfiniteBatteryTarget
@@ -246,10 +263,22 @@
     - VoltageNetworks
     - Power
   # ES/Mono Start
+  - type: Appearance
   - type: ESSparkOnHit
     prob: 0.25
-    tileFireChance: 0.2
+    tileFireChance: 0.5
     count: 2
+  - type: Flammable
+    fireSpread: true
+    firestackFade: 0.1
+    alwaysCombustible: true
+    damage:
+      types:
+        Heat: 1
+        Structural: 2
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Generic_mob_burning
   # ES/Mono End
 
   # Interface

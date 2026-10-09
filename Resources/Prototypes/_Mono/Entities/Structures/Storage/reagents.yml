@@ -98,7 +98,7 @@
     explosionType: HardBombShipGun
     totalIntensity: 6000
     maxIntensity: 400
-    slope: 4
+    intensitySlope: 4
 
 - type: entity
   id: FuelTankHugeOilFilled

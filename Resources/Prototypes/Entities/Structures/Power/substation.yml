@@ -353,6 +353,7 @@
       board: !type:Container
       capacitor: !type:Container
       powercell: !type:Container
+      cluster-payload: !type:Container # Mono
   # Mono
   - type: ShipRepairable
     repairTime: 5

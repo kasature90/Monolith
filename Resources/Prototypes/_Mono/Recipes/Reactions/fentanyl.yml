@@ -28,7 +28,7 @@
       amount: 1
   effects:
   - !type:ExplosionReactionEffect
-    explosionType: Default
+    explosionType: ESWelderBomb
     maxIntensity: 100
     intensityPerUnit: 0.65
     intensitySlope: 5
@@ -40,12 +40,12 @@
   minTemp: 310
   reactants:
     Fentanyl:
-      amount: 5
+      amount: 50
     Tricordrazine:
-      amount: 1
+      amount: 20
   products:
-    Tricordrazine: 1
-    Dylovene: 5
+    Tricordrazine: 19
+    Dylovene: 31
   effects:
     - !type:CreateEntityReactionEffect
       entity: FentanylSolidified

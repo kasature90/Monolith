@@ -10,40 +10,43 @@
   minimumRequirements:
   - 0     # oxygen
   - 0     # nitrogen
-  - 4     # carbon dioxide
+  - 32     # carbon dioxide
   - 0     # plasma
   - 0     # tritium
-  - 6     # vapor
+  - 48     # vapor
   - 0     # ammonia
   - 0     # n2o
   - 0     # frezon
   - 0     # bz
   - 0     # healium
   - 0     # nitrium
+  - 0     # pluoxium
+  - 0     # smoke
 
 - type: crystallizerRecipe
   id: Iridite
   name: Iridite (1)
   minimumTemperature: 4900
   maximumTemperature: 14000
-  energyRelease: -1290
+  energyRelease: -4290
   products:
     SheetIridite1: 1
   dangerous: false
   minimumRequirements:
-  - 7     # oxygen
-  - 3     # nitrogen
-  - 3     # carbon dioxide
+  - 70     # oxygen
+  - 30     # nitrogen
+  - 30     # carbon dioxide
   - 0     # plasma
-  - 2     # tritium
+  - 20     # tritium
   - 0     # vapor
   - 0     # ammonia
-  - 1     # n2o
-  - 2     # frezon
-  - 0     # bz
+  - 10     # n2o
+  - 20     # frezon
+  - 20     # bz
   - 0     # healium
-  - 0     # nitrium
-
+  - 10     # nitrium
+  - 0     # pluoxium
+  - 0     # smoke
 
 - type: crystallizerRecipe
   id: Plastitanium
@@ -58,15 +61,17 @@
   - 35     # oxygen
   - 3     # nitrogen
   - 8     # carbon dioxide
-  - 9     # plasma
-  - 3     # tritium
+  - 24     # plasma
+  - 6     # tritium
   - 0     # vapor
-  - 7     # ammonia
+  - 0     # ammonia
   - 2     # n2o
   - 0     # frezon
-  - 0     # bz
+  - 8     # bz
   - 0     # healium
   - 0     # nitrium
+  - 0     # pluoxium
+  - 0     # smoke
 
 - type: crystallizerRecipe
   id: Plasteel
@@ -78,18 +83,20 @@
     SheetPlasteel10: 1
   dangerous: false
   minimumRequirements:
-  - 6     # oxygen
+  - 15     # oxygen
   - 0     # nitrogen
   - 8     # carbon dioxide
-  - 5     # plasma
+  - 12     # plasma
   - 0     # tritium
   - 0     # vapor
   - 0     # ammonia
   - 0     # n2o
   - 0     # frezon
-  - 0     # bz
+  - 2     # bz
   - 0     # healium
   - 0     # nitrium
+  - 0     # pluoxium
+  - 0     # smoke
 
 - type: crystallizerRecipe
   id: Plasma
@@ -104,7 +111,7 @@
   - 1     # oxygen
   - 0     # nitrogen
   - 0     # carbon dioxide
-  - 10     # plasma
+  - 80     # plasma
   - 0     # tritium
   - 0     # vapor
   - 0     # ammonia
@@ -113,16 +120,18 @@
   - 0     # bz
   - 0     # healium
   - 0     # nitrium
+  - 0     # pluoxium
+  - 0     # smoke
 
 - type: crystallizerRecipe
   id: Telecrystal
   name: Telecrystal (1)
   minimumTemperature: 0
-  maximumTemperature: 10
-  energyRelease: 1040
+  maximumTemperature: 2
+  energyRelease: 240
   products:
     Telecrystal1: 1
-  dangerous: false
+  dangerous: true
   minimumRequirements:
   - 0     # oxygen
   - 5     # nitrogen
@@ -133,29 +142,33 @@
   - 4     # ammonia
   - 8     # n2o
   - 3     # frezon
-  - 0     # bz
+  - 4     # bz
   - 2     # healium
   - 0     # nitrium
+  - 0     # pluoxium
+  - 0     # smoke
 
 - type: crystallizerRecipe
   id: Diamond
   name: Diamond (1)
   minimumTemperature: 34800
   maximumTemperature: 37200
-  energyRelease: -4250
+  energyRelease: -14250
   products:
     MaterialDiamond1: 1
   dangerous: true
   minimumRequirements:
   - 0     # oxygen
   - 0     # nitrogen
-  - 500    # carbon dioxide
+  - 1500    # carbon dioxide
   - 0     # plasma
   - 0     # tritium
   - 0     # vapor
   - 0     # ammonia
   - 0     # n2o
-  - 0     # frezon
+  - 4     # frezon
   - 0     # bz
   - 0     # healium
   - 0     # nitrium
+  - 0     # pluoxium
+  - 0     # smoke

@@ -26093,3 +26093,10 @@ Entries:
   id: 2815
   time: '2026-10-09T20:53:51.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4844
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: Adjusted brake force of ships to feel similar to old maneuvering balance
+  id: 2816
+  time: '2026-10-09T22:33:30.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4842

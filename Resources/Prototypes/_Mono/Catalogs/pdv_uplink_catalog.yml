@@ -1229,21 +1229,21 @@
       tags:
       - PirateUplink
 
-- type: listing
-  id: UplinkPirateHristovBundle
-  name: uplink-pirate-hristov-name
-  description: uplink-pirate-hristov-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Snipers/hristov.rsi, state: base }
-  productEntity: BriefcaseSyndieSniperBundleFilled
-  cost:
-    Doubloon: 90
-  categories:
-  - UplinkPirateWeapons
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - PirateUplink
+#- type: listing
+#  id: UplinkPirateHristovBundle
+#  name: uplink-pirate-hristov-name
+#  description: uplink-pirate-hristov-desc
+#  icon: { sprite: /Textures/Objects/Weapons/Guns/Snipers/hristov.rsi, state: base }
+#  productEntity: BriefcaseSyndieSniperBundleFilled
+#  cost:
+#    Doubloon: 90
+#  categories:
+#  - UplinkPirateWeapons
+#  conditions:
+#  - !type:StoreWhitelistCondition
+#    whitelist:
+#      tags:
+#      - PirateUplink
 
 - type: listing
   id: UplinkPirateBasilisk

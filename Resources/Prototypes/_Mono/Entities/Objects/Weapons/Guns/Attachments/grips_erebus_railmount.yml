@@ -136,3 +136,34 @@
     - MonoGrip
     - MonoGripErebusRailmount
     - MonoGripLight
+
+- type: entity
+  parent: BaseGunAttachmentGrip
+  id: GunAttachmentDebugUBGL
+  name: DEBUG UBGL 40MM
+  description: hi friend
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Attachments/Grips/erebus_railmount.rsi
+    state: vfg
+  - type: ESGunUnlockItemSlotAttachment
+    slots:
+    - launcher_mag
+  - type: ESGunComponentAttachment
+    component:
+    - type: AlternateGun
+      slot: attachment_grip
+      switchSound:
+        path: /Audio/_FinalHorizon/Weapons/Guns/Deploy/gp25_select.ogg
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/m203.ogg
+  - type: AlternateGunAmmoProvider
+  - type: Tag
+    tags:
+    - MonoGrip
+    - MonoGripErebusRailmount
+    - MonoGripVFG

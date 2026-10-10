@@ -29,6 +29,7 @@ public abstract partial class ESSharedGunAttachmentsSystem : EntitySystem
     [Dependency] private ISerializationManager _serializationManager = default!; // Mono
     [Dependency] private IGameTiming _timing = default!; // Mono
     [Dependency] private SharedWieldableSystem _wield = default!; // Mono
+    [Dependency] private ItemSlotsSystem _slots = default!; // Mono
 
     private EntityQuery<ESGunAttachmentComponent> _attachmentQuery;
 
@@ -50,6 +51,8 @@ public abstract partial class ESSharedGunAttachmentsSystem : EntitySystem
 
         SubscribeLocalEvent<ESGunComponentAttachmentComponent, GunRefreshModifiersEvent>(OnCompAttachmentEquip); // Mono
         SubscribeLocalEvent<ESGunComponentAttachmentComponent, EntGotRemovedFromContainerMessage>(OnCompAttachmentUnequip); // Mono
+        SubscribeLocalEvent<ESGunUnlockItemSlotAttachmentComponent, EntGotInsertedIntoContainerMessage>(OnSlotLockAttachmentEquip); // Mono
+        SubscribeLocalEvent<ESGunUnlockItemSlotAttachmentComponent, EntGotRemovedFromContainerMessage>(OnSlotLockAttachmentUnequip); // Mono
         SubscribeLocalEvent<ESGunRecoilAttachmentComponent, ExaminedEvent>(OnRecoilAttachmentExamined); // Mono
         SubscribeLocalEvent<ESGunWieldRecoilAttachmentComponent, ExaminedEvent>(OnWieldRecoilAttachmentExamined); // Mono
 
@@ -255,6 +258,26 @@ public abstract partial class ESSharedGunAttachmentsSystem : EntitySystem
     {
         var target = args.Container.Owner;
         EntityManager.RemoveComponents(target, component.Components);
+    }
+
+    private void OnSlotLockAttachmentEquip(EntityUid uid, ESGunUnlockItemSlotAttachmentComponent component, EntGotInsertedIntoContainerMessage args)
+    {
+        foreach (var slot in component.Slots)
+        {
+            if(_slots.TryGetSlot(args.Container.Owner, slot, out _))
+                _slots.SetLock(args.Container.Owner, slot, false);
+        }
+    }
+
+    private void OnSlotLockAttachmentUnequip(EntityUid uid, ESGunUnlockItemSlotAttachmentComponent component, EntGotRemovedFromContainerMessage args)
+    {
+        foreach (var slot in component.Slots)
+        {
+            if (_slots.TryGetSlot(args.Container.Owner, slot, out _))
+                continue;
+            _slots.TryEject(args.Container.Owner, slot, null, out _);
+            _slots.SetLock(args.Container.Owner, slot, true);
+        }
     }
 
     private void OnRecoilAttachmentExamined(EntityUid uid, ESGunRecoilAttachmentComponent component, ExaminedEvent args)

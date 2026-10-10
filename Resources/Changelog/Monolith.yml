@@ -26113,3 +26113,12 @@ Entries:
   id: 2817
   time: '2026-10-09T22:35:44.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4840
+- author: SuperGDPWYL
+  changes:
+    - type: Fix
+      message: Fixed the durability of the MEDUSA suit.
+    - type: Fix
+      message: Fixed a few incorrect airlocks on the Underground Black Market.
+  id: 2818
+  time: '2026-10-10T01:30:44.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4841

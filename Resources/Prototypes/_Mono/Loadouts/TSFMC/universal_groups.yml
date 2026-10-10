@@ -290,7 +290,7 @@
   - TsfmcClothingOuterArmorBPVestMedium
   fallbacks:
   - TsfmcClothingOuterArmorBPVestLight
-  -
+
 - type: loadoutGroup
   id: TsfmcOuterClothingInfantry
   name: loadout-group-contractor-outerclothing

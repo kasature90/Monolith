@@ -170,7 +170,7 @@
   name: PD-VI M-32 Vympel (5.56x45mm)
   parent: BaseWeaponRifle
   id: WeaponRifleVympel
-  description: A compact bullpup design. Uses 5.56x45mm rifle ammo. The barrel is threaded for suppressors, and an Erebus railmount is present on the handguard for grips.
+  description: A compact bullpup design. Uses 5.56x45mm rifle ammo. The barrel is threaded for suppressors, and an Erebus railmount is present on the handguard for grips. Capable of mounting RKR/40 UBGLs.
   components:
   - type: Item
     size: Large
@@ -224,6 +224,16 @@
         whitelist:
           tags:
           - Cartridge556x45mmFMJ
+      launcher_mag:
+        name: UBGL Chamber
+        locked: true
+        priority: 3
+        insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/gp25_insertgrenade.ogg
+        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/gp25_openbarrel.ogg
+        whitelist:
+          tags:
+          - Grenade
+          - LessLethalGrenade
       attachment_grip:
         insertSound: /Audio/Items/screwdriver2.ogg
         ejectSound: /Audio/Items/screwdriver2.ogg
@@ -231,6 +241,7 @@
         whitelist:
           tags:
           - MonoGripErebusRailmount
+          - MonoGrip40mmUBGLVympel
       attachment_barrel:
         insertSound: /Audio/Items/screwdriver.ogg
         ejectSound: /Audio/Items/screwdriver.ogg
@@ -256,6 +267,7 @@
       whitelist:
         tags:
         - MonoGripErebusRailmount
+        - MonoGrip40mmUBGLVympel
   - type: ActivatableUI
     key: enum.ESAttachableGunUiKey.Key
     verbOnly: true
@@ -277,6 +289,11 @@
         whitelist:
           tags:
           - MonoGripLAM
+      - containerId: attachment_grip
+        state: ubgl
+        whitelist:
+          tags:
+          - MonoGrip40mmUBGL
       - containerId: attachment_grip
         state: light
         whitelist:

@@ -262,6 +262,8 @@ public abstract partial class ESSharedGunAttachmentsSystem : EntitySystem
 
     private void OnSlotLockAttachmentEquip(EntityUid uid, ESGunUnlockItemSlotAttachmentComponent component, EntGotInsertedIntoContainerMessage args)
     {
+        if (!HasComp<ItemSlotsComponent>(args.Container.Owner) || !HasComp<ESAttachableGunComponent>(args.Container.Owner))
+            return;
         foreach (var slot in component.Slots)
         {
             if(_slots.TryGetSlot(args.Container.Owner, slot, out _))
@@ -271,12 +273,15 @@ public abstract partial class ESSharedGunAttachmentsSystem : EntitySystem
 
     private void OnSlotLockAttachmentUnequip(EntityUid uid, ESGunUnlockItemSlotAttachmentComponent component, EntGotRemovedFromContainerMessage args)
     {
+        if (!HasComp<ItemSlotsComponent>(args.Container.Owner) || !HasComp<ESAttachableGunComponent>(args.Container.Owner))
+            return;
         foreach (var slot in component.Slots)
         {
             if (_slots.TryGetSlot(args.Container.Owner, slot, out _))
-                continue;
-            _slots.TryEject(args.Container.Owner, slot, null, out _);
-            _slots.SetLock(args.Container.Owner, slot, true);
+            {
+                _slots.TryEject(args.Container.Owner, slot, null, out _);
+                _slots.SetLock(args.Container.Owner, slot, true);
+            }
         }
     }
 

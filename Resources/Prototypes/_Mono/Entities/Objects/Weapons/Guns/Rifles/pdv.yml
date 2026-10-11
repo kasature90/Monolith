@@ -224,16 +224,6 @@
         whitelist:
           tags:
           - Cartridge556x45mmFMJ
-      launcher_mag:
-        name: UBGL Chamber
-        locked: true
-        priority: 3
-        insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/gp25_insertgrenade.ogg
-        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/gp25_openbarrel.ogg
-        whitelist:
-          tags:
-          - Grenade
-          - LessLethalGrenade
       attachment_grip:
         insertSound: /Audio/Items/screwdriver2.ogg
         ejectSound: /Audio/Items/screwdriver2.ogg
@@ -253,7 +243,6 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
-      launcher_mag: !type:ContainerSlot
       attachment_grip: !type:ContainerSlot
       attachment_barrel: !type:ContainerSlot
   - type: ESAttachableGun

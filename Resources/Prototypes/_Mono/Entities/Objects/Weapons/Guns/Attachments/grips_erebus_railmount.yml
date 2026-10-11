@@ -147,9 +147,17 @@
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Attachments/Grips/erebus_railmount.rsi
     state: ubgl_qlg
-  - type: ESGunUnlockItemSlotAttachment
-    slots:
-    - launcher_mag
+  - type: ESGunTemporaryItemSlotAttachment
+    slotName: launcher_mag
+    itemSlot:
+      name: UBGL Chamber
+      priority: 3
+      insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/m203_insertgrenade.ogg
+      ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/m203_openbarrel.ogg
+      whitelist:
+        tags:
+        - Grenade
+        - LessLethalGrenade
   - type: ESGunComponentAttachment
     component:
     - type: AlternateGun
@@ -188,6 +196,17 @@
   components:
   - type: Sprite
     state: ubgl_vympel
+  - type: ESGunTemporaryItemSlotAttachment
+    slotName: launcher_mag
+    itemSlot:
+      name: UBGL Chamber
+      priority: 3
+      insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/gp25_insertgrenade.ogg
+      ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/gp25_openbarrel.ogg
+      whitelist:
+        tags:
+        - Grenade
+        - LessLethalGrenade
   - type: ESGunComponentAttachment
     component:
     - type: AlternateGun

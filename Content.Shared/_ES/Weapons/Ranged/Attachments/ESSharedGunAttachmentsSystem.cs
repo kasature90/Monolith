@@ -53,6 +53,8 @@ public abstract partial class ESSharedGunAttachmentsSystem : EntitySystem
         SubscribeLocalEvent<ESGunComponentAttachmentComponent, EntGotRemovedFromContainerMessage>(OnCompAttachmentUnequip); // Mono
         SubscribeLocalEvent<ESGunUnlockItemSlotAttachmentComponent, EntGotInsertedIntoContainerMessage>(OnSlotLockAttachmentEquip); // Mono
         SubscribeLocalEvent<ESGunUnlockItemSlotAttachmentComponent, EntGotRemovedFromContainerMessage>(OnSlotLockAttachmentUnequip); // Mono
+        SubscribeLocalEvent<ESGunTemporaryItemSlotAttachmentComponent, EntGotInsertedIntoContainerMessage>(OnTempSlotAttachmentEquip); // Mono
+        SubscribeLocalEvent<ESGunTemporaryItemSlotAttachmentComponent, EntGotRemovedFromContainerMessage>(OnTempSlotAttachmentUnequip); // Mono
         SubscribeLocalEvent<ESGunRecoilAttachmentComponent, ExaminedEvent>(OnRecoilAttachmentExamined); // Mono
         SubscribeLocalEvent<ESGunWieldRecoilAttachmentComponent, ExaminedEvent>(OnWieldRecoilAttachmentExamined); // Mono
 
@@ -282,6 +284,25 @@ public abstract partial class ESSharedGunAttachmentsSystem : EntitySystem
                 _slots.TryEject(args.Container.Owner, slot, null, out _);
                 _slots.SetLock(args.Container.Owner, slot, true);
             }
+        }
+    }
+
+    private void OnTempSlotAttachmentEquip(EntityUid uid, ESGunTemporaryItemSlotAttachmentComponent component, EntGotInsertedIntoContainerMessage args)
+    {
+        if (!HasComp<ItemSlotsComponent>(args.Container.Owner) || !HasComp<ESAttachableGunComponent>(args.Container.Owner))
+            return;
+        if(!_slots.TryGetSlot(args.Container.Owner, component.SlotName, out _))
+            _slots.AddItemSlot(args.Container.Owner, component.SlotName, component.ItemSlot);
+    }
+
+    private void OnTempSlotAttachmentUnequip(EntityUid uid, ESGunTemporaryItemSlotAttachmentComponent component, EntGotRemovedFromContainerMessage args)
+    {
+        if (!HasComp<ItemSlotsComponent>(args.Container.Owner) || !HasComp<ESAttachableGunComponent>(args.Container.Owner))
+            return;
+        if (_slots.TryGetSlot(args.Container.Owner, component.SlotName, out _))
+        {
+            _slots.TryEject(args.Container.Owner, component.SlotName, null, out _);
+            _slots.RemoveItemSlot(args.Container.Owner, component.ItemSlot);
         }
     }
 

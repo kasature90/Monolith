@@ -33,7 +33,7 @@
         name: Enforcer (12 gauge)
         points: 1
     - name: Longarm Ammo
-      choices: { Ammo: 8 }
+      choices: { LongarmAmmo: 8 }
       entries:
       - id: Magazine68x52mmCaseless
         name: 30-round magazine (6.8x52mm caseless)
@@ -84,7 +84,7 @@
         name: QLG-20 UBGL (Lecter only)
         points: 1
     - name: UBGL Grenades
-      choices: { Ammo: 4 }
+      choices: { GrenadeAmmo: 4 }
       entries:
       - id: 40mmGrenadeFragmentation
         name: 40mm fragmentation grenade
@@ -139,7 +139,7 @@
         name: F/87 "Myoko" LAW
         points: 2
     - name: Eyewear
-      choices: { CMHud: 1 }
+      choices: { Eyewear: 1 }
       entries:
       - id: ClothingEyesHudMedSec
         name: med-sec HUD
@@ -213,7 +213,7 @@
       - id: WeaponShotgunKammerer
         name: Kammerer (12 gauge)
     - name: Longarm Ammo
-      choices: { Ammo: 8 }
+      choices: { LongarmAmmo: 8 }
       entries:
       - id: Magazine556x45mmFMJ
         name: 30-round magazine (5.56x45mm)
@@ -268,7 +268,7 @@
         name: RKR/40 UBGL (Vympel only)
         points: 1
     - name: UBGL Grenades
-      choices: { Ammo: 4 }
+      choices: { GrenadeAmmo: 4 }
       entries:
       - id: 40mmGrenadeFragmentation
         name: 40mm fragmentation grenade
@@ -323,7 +323,7 @@
         name: F/87 "Myoko" LAW
         points: 2
     - name: Eyewear
-      choices: { CMHud: 1 }
+      choices: { Eyewear: 1 }
       entries:
       - id: ClothingEyesHudMedSec
         name: med-sec HUD

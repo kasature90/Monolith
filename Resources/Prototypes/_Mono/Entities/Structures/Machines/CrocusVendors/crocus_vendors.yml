@@ -49,6 +49,16 @@
         name: 32-round shell box (12 gauge slug)
       - id: AmmoBox12_gaugeFlare
         name: 32-round shell box (12 gauge flare)
+      - id: 40mmGrenadeFragmentation
+        name: 40mm fragmentation grenade
+        recommended: true
+      - id: 40mmGrenadeThermobaric
+        name: 40mm thermobaric grenade
+        recommended: true
+      - id: 40mmGrenadeBaton
+        name: 40mm baton grenade
+      - id: 40mmGrenadeFlash
+        name: 40mm flash grenade
     - name: Sidearm
       choices: { Sidearm: 1 }
       entries:
@@ -83,19 +93,6 @@
       - id: GunAttachmentQLG20
         name: QLG-20 UBGL (Lecter only)
         points: 1
-    - name: UBGL Grenades
-      choices: { GrenadeAmmo: 4 }
-      entries:
-      - id: 40mmGrenadeFragmentation
-        name: 40mm fragmentation grenade
-        recommended: true
-      - id: 40mmGrenadeThermobaric
-        name: 40mm thermobaric grenade
-        recommended: true
-      - id: 40mmGrenadeBaton
-        name: 40mm baton grenade
-      - id: 40mmGrenadeFlash
-        name: 40mm flash grenade
     - name: Utilities
       choices: { Utilities: 3 }
       entries:
@@ -233,6 +230,16 @@
         name: 32-round shell box (12 gauge slug)
       - id: AmmoBox12_gaugeFlare
         name: 32-round shell box (12 gauge flare)
+      - id: 40mmGrenadeFragmentation
+        name: 40mm fragmentation grenade
+        recommended: true
+      - id: 40mmGrenadeThermobaric
+        name: 40mm thermobaric grenade
+        recommended: true
+      - id: 40mmGrenadeBaton
+        name: 40mm baton grenade
+      - id: 40mmGrenadeFlash
+        name: 40mm flash grenade
     - name: Sidearm
       choices: { Sidearm: 1 }
       entries:
@@ -267,19 +274,6 @@
       - id: GunAttachmentRKR40
         name: RKR/40 UBGL (Vympel only)
         points: 1
-    - name: UBGL Grenades
-      choices: { GrenadeAmmo: 4 }
-      entries:
-      - id: 40mmGrenadeFragmentation
-        name: 40mm fragmentation grenade
-        recommended: true
-      - id: 40mmGrenadeThermobaric
-        name: 40mm thermobaric grenade
-        recommended: true
-      - id: 40mmGrenadeBaton
-        name: 40mm baton grenade
-      - id: 40mmGrenadeFlash
-        name: 40mm flash grenade
     - name: Utilities
       choices: { Utilities: 3 }
       entries:

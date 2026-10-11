@@ -29,6 +29,7 @@ using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Whitelist;
 using Content.Shared._RMC14.Weapons.Ranged.Prediction;
 using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Inventory;
 using Content.Shared.Weapons.Hitscan.Events;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
@@ -269,7 +270,8 @@ public abstract partial class SharedGunSystem : EntitySystem
             return true;
         }
 
-        if (_hands.GetActiveItem(entity) is { } held &&
+        if (HasComp<HandsComponent>(entity) &&
+            _hands.GetActiveItem(entity) is { } held &&
             TryComp(held, out GunComponent? gunComp))
         {
             gun = _altGun.CheckForAltGun((held, gunComp)); // FH
@@ -277,7 +279,8 @@ public abstract partial class SharedGunSystem : EntitySystem
         }
 
         // Mono edit - you can use gloves as guns now because its fucking amazing.
-        if (_inventory.TryGetSlotEntity(entity, "gloves", out var gloves) &&
+        if (HasComp<InventoryComponent>(entity) &&
+            _inventory.TryGetSlotEntity(entity, "gloves", out var gloves) &&
             TryComp<GunComponent>(gloves, out var glovesGun))
         {
             gun = _altGun.CheckForAltGun((gloves.Value, glovesGun)); // FH

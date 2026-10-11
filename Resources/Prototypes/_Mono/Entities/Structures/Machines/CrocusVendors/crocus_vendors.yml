@@ -32,7 +32,7 @@
       - id: WeaponShotgunEnforcer
         name: Enforcer (12 gauge)
         points: 1
-    - name: Ammo
+    - name: Longarm Ammo
       choices: { Ammo: 8 }
       entries:
       - id: Magazine68x52mmCaseless
@@ -49,21 +49,59 @@
         name: 32-round shell box (12 gauge slug)
       - id: AmmoBox12_gaugeFlare
         name: 32-round shell box (12 gauge flare)
+    - name: Sidearm
+      choices: { Sidearm: 1 }
+      entries:
+      - id: WeaponPistolMk58
+        name: Mk-58 (.45 ACP)
+      - id: WeaponRevolverInspector
+        name: Garter (.357 magnum)
+    - name: Sidearm Ammo
+      choices: { SidearmAmmo: 4 }
+      entries:
+      # NO AMMO BOX FOR THE SIDEARM!! It gets it from primary ammo anyways.
+      - id: Magazine45_ACPPistolFMJ
+        name: 17-round magazine (.45 ACP)
+      - id: SpeedLoader357_magnumFMJ
+        name: 6-round speedloader (.357 magnum)
+      - id: AmmoBox357_magnumFMJ
+        name: 32-round ammo box (.357 magnum)
     - name: Attachments
       choices: { Attachments: 1 }
       entries:
       - id: GunAttachmentSuppressorMulticalRifle
         name: MULTI-CAL rifle suppressor
         points: 1
+      - id: GunAttachmentSuppressorMulticalPistol
+        name: MULTI-CAL pistol suppressor
       - id: GunAttachmentGripErebusLAM
         name: Zenit-PRL LAM
+      - id: GunAttachmentGripPistolLAM
+        name: Soyuz-PRL LAM
       - id: GunAttachmentGripErebusLight
         name: LM-300 Light
+      - id: GunAttachmentQLG20
+        name: QLG-20 UBGL (Lecter only)
+        points: 1
+    - name: UBGL Grenades
+      choices: { Ammo: 4 }
+      entries:
+      - id: 40mmGrenadeFragmentation
+        name: 40mm fragmentation grenade
+        recommended: true
+      - id: 40mmGrenadeThermobaric
+        name: 40mm thermobaric grenade
+        recommended: true
+      - id: 40mmGrenadeBaton
+        name: 40mm baton grenade
+      - id: 40mmGrenadeFlash
+        name: 40mm flash grenade
     - name: Utilities
       choices: { Utilities: 3 }
       entries:
       - id: CMVendorBundleNightvision
         name: NODs kit
+        points: 1
         recommended: true
       - id: ExGrenade
         name: explosive grenade
@@ -93,6 +131,9 @@
         points: 1
       - id: SecBreachingHammer
         name: breaching hammer
+        points: 1
+      - id: WeaponShotgunHelepolis
+        name: UW12-B Helepolis breaching shotgun
         points: 1
       - id: WeaponLauncherMyoko
         name: F/87 "Myoko" LAW
@@ -171,7 +212,7 @@
         points: 2
       - id: WeaponShotgunKammerer
         name: Kammerer (12 gauge)
-    - name: Ammo
+    - name: Longarm Ammo
       choices: { Ammo: 8 }
       entries:
       - id: Magazine556x45mmFMJ
@@ -192,21 +233,59 @@
         name: 32-round shell box (12 gauge slug)
       - id: AmmoBox12_gaugeFlare
         name: 32-round shell box (12 gauge flare)
+    - name: Sidearm
+      choices: { Sidearm: 1 }
+      entries:
+      - id: WeaponPistolViper
+        name: PT-45A Viper (9x19mm)
+      - id: WeaponRevolverPython
+        name: Python (.357 magnum)
+    - name: Sidearm Ammo
+      choices: { SidearmAmmo: 4 }
+      entries:
+      # NO AMMO BOX FOR THE SIDEARM!! It gets it from primary ammo anyways.
+      - id: Magazine9x19mmPistolFMJ
+        name: 19-round magazine (9x19mm)
+      - id: SpeedLoader357_magnumFMJ
+        name: 6-round speedloader (.357 magnum)
+      - id: AmmoBox357_magnumFMJ
+        name: 32-round ammo box (.357 magnum)
     - name: Attachments
       choices: { Attachments: 1 }
       entries:
       - id: GunAttachmentSuppressorMulticalRifle
         name: MULTI-CAL rifle suppressor
         points: 1
+      - id: GunAttachmentSuppressorMulticalPistol
+        name: MULTI-CAL pistol suppressor
       - id: GunAttachmentGripErebusLAM
         name: Zenit-PRL LAM
+      - id: GunAttachmentGripPistolLAM
+        name: Soyuz-PRL LAM
       - id: GunAttachmentGripErebusLight
         name: LM-300 Light
+      - id: GunAttachmentRKR40
+        name: RKR/40 UBGL (Vympel only)
+        points: 1
+    - name: UBGL Grenades
+      choices: { Ammo: 4 }
+      entries:
+      - id: 40mmGrenadeFragmentation
+        name: 40mm fragmentation grenade
+        recommended: true
+      - id: 40mmGrenadeThermobaric
+        name: 40mm thermobaric grenade
+        recommended: true
+      - id: 40mmGrenadeBaton
+        name: 40mm baton grenade
+      - id: 40mmGrenadeFlash
+        name: 40mm flash grenade
     - name: Utilities
       choices: { Utilities: 3 }
       entries:
       - id: CMVendorBundleNightvision
         name: NODs kit
+        points: 1
         recommended: true
       - id: ExGrenade
         name: explosive grenade
@@ -236,6 +315,9 @@
         points: 1
       - id: SecBreachingHammer
         name: breaching hammer
+        points: 1
+      - id: WeaponShotgunHelepolis
+        name: UW12-B Helepolis breaching shotgun
         points: 1
       - id: WeaponLauncherMyoko
         name: F/87 "Myoko" LAW

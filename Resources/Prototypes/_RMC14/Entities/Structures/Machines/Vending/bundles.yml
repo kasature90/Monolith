@@ -5,7 +5,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite:  _Crescent/Structures/syndicatearmory.rsi
+    sprite: _Crescent/Structures/armoryPF.rsi
     state: "off"
   - type: CMVendorBundle
     bundle:
@@ -23,7 +23,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: _Crescent/Structures/syndicatearmory.rsi
+    sprite: _Crescent/Structures/armoryPF.rsi
     state: "off"
   - type: CMVendorBundle
     bundle:

@@ -26,15 +26,13 @@
     tags:
     - Structure
   - type: Sprite
-    sprite: _Crescent/Structures/syndicatearmory.rsi
+    noRot: true
+    snapCardinals: true
+    sprite: _Crescent/Structures/armoryPF.rsi
     layers:
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+    - state: off
+    - state: normal-unshaded
       shader: unshaded
-    - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: UserInterface
     interfaces:
       enum.CMAutomatedVendorUI.Key:

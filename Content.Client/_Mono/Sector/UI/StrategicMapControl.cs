@@ -97,9 +97,7 @@ public sealed class StrategicMapControl : Control
         var maxCellX = (int)MathF.Ceiling((size.X - _pan.X) / cellPx) + 2;
         var maxCellY = (int)MathF.Ceiling((size.Y - _pan.Y) / cellPx) + 2;
 
-        var sumR = new Dictionary<(int, int), float>();
-        var sumG = new Dictionary<(int, int), float>();
-        var sumB = new Dictionary<(int, int), float>();
+        var sumLin = new Dictionary<(int, int), Vector3>();
         var count = new Dictionary<(int, int), int>();
 
         if (_state != null)
@@ -117,10 +115,9 @@ public sealed class StrategicMapControl : Control
                         if (Math.Max(Math.Abs(x - center.X), Math.Abs(y - center.Y)) > r)
                             continue;
 
+                        var lin = new Vector3(c.R * c.R, c.G * c.G, c.B * c.B);
                         var key = (x, y);
-                        sumR[key] = sumR.GetValueOrDefault(key) + c.R;
-                        sumG[key] = sumG.GetValueOrDefault(key) + c.G;
-                        sumB[key] = sumB.GetValueOrDefault(key) + c.B;
+                        sumLin[key] = sumLin.GetValueOrDefault(key) + lin;
                         count[key] = count.GetValueOrDefault(key) + 1;
                     }
                 }
@@ -133,7 +130,8 @@ public sealed class StrategicMapControl : Control
             if (x < minCellX || x > maxCellX || y < minCellY || y > maxCellY)
                 continue;
 
-            var color = new Color(sumR[key] / n, sumG[key] / n, sumB[key] / n, 0.30f);
+            var mean = sumLin[key] / n;
+            var color = new Color(MathF.Sqrt(mean.X), MathF.Sqrt(mean.Y), MathF.Sqrt(mean.Z), 0.30f);
             var origin = CellOriginScreen(x, y, size, cellPx);
             handle.DrawRect(new UIBox2(origin, origin + new Vector2(cellPx, cellPx)), color);
         }

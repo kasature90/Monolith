@@ -1,8 +1,9 @@
+using Content.Server.Popups;
 using Content.Shared._Mono.Company;
 using Content.Shared._Mono.Sector;
+using Content.Shared._Mono.Sector.Components;
 using Content.Shared.Interaction;
-using Content.Shared.Popups;
-using Content.Shared.Verbs;
+using Content.Shared.Stacks;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
@@ -10,145 +11,162 @@ namespace Content.Server._Mono.Sector;
 
 public sealed partial class StrategicDepotSystem : EntitySystem
 {
-    [Dependency] private SectorSystem _sectors = default!;
-    [Dependency] private SharedPopupSystem _popup = default!;
-    [Dependency] private IPrototypeManager _proto = default!;
+    [Dependency] private PopupSystem _popup = default!;
+    [Dependency] private IPrototypeManager _protos = default!;
     [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private SharedStackSystem _stacks = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
 
-    private Dictionary<string, (StrategicResource Resource, int Amount)>? _contributions;
+    private Dictionary<string, StrategicTradeContributionPrototype>? _byGood;
 
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<StrategicDepotComponent, InteractUsingEvent>(OnInteractUsing);
-        SubscribeLocalEvent<StrategicDepotComponent, GetVerbsEvent<AlternativeVerb>>(OnGetAltVerbs);
-        _proto.PrototypesReloaded += _ => _contributions = null;
+        SubscribeLocalEvent<StrategicStockpileTerminalComponent, InteractUsingEvent>(OnStockpileDeposit);
+        _protos.PrototypesReloaded += _ => _byGood = null;
     }
 
-    private Dictionary<string, (StrategicResource Resource, int Amount)> GetContributions()
+    public override void Update(float frameTime)
     {
-        if (_contributions != null)
-            return _contributions;
+        base.Update(frameTime);
 
-        var map = new Dictionary<string, (StrategicResource, int)>();
-        foreach (var proto in _proto.EnumeratePrototypes<StrategicTradeContributionPrototype>())
-            map[proto.GoodPrototype] = (proto.Resource, proto.Amount);
+        var query = EntityQueryEnumerator<StrategicOutpostComponent>();
+        while (query.MoveNext(out var grid, out var outpost))
+        {
+            if (outpost.ClaimStart == null)
+                continue;
 
-        _contributions = map;
-        return map;
+            var elapsed = (float)(_timing.CurTime - outpost.ClaimStart.Value).TotalSeconds;
+            var duration = Math.Max(0.01f, outpost.ClaimDuration);
+
+            if (outpost.Relinquishing)
+            {
+                outpost.ClaimProgress = 1f - Math.Clamp(elapsed / duration, 0f, 1f);
+                if (outpost.ClaimProgress <= 0f)
+                {
+                    outpost.ClaimProgress = 0f;
+                    outpost.ClaimStart = null;
+                    outpost.Relinquishing = false;
+                    outpost.Owner = null;
+                    outpost.ClaimingCompany = null;
+                    outpost.Control = SectorControl.Unclaimed;
+                }
+
+                Dirty(grid, outpost);
+                continue;
+            }
+
+            if (outpost.ClaimingCompany == null)
+                continue;
+
+            outpost.ClaimProgress = Math.Clamp(elapsed / duration, 0f, 1f);
+            if (outpost.ClaimProgress >= 1f)
+            {
+                outpost.ClaimProgress = 1f;
+                outpost.ClaimStart = null;
+                outpost.Owner = outpost.ClaimingCompany;
+                outpost.ClaimingCompany = null;
+                outpost.Control = SectorControl.Controlled;
+                outpost.Relinquishing = false;
+            }
+
+            Dirty(grid, outpost);
+        }
     }
 
-    private void OnInteractUsing(EntityUid uid, StrategicDepotComponent comp, InteractUsingEvent args)
+    public bool TryGetOutpostFromMachine(EntityUid machine, out EntityUid grid, out StrategicOutpostComponent outpost)
+    {
+        grid = default!;
+        outpost = null!;
+
+        var xform = Transform(machine);
+        if (xform.GridUid is not { } g)
+            return false;
+
+        if (!TryComp(g, out StrategicOutpostComponent? op))
+            return false;
+
+        grid = g;
+        outpost = op;
+        return true;
+    }
+
+    public void StartClaim(EntityUid grid, StrategicOutpostComponent outpost, ProtoId<CompanyPrototype> company)
+    {
+        outpost.Relinquishing = false;
+        outpost.ClaimingCompany = company;
+        outpost.ClaimStart = _timing.CurTime;
+        outpost.ClaimProgress = 0f;
+        if (outpost.Owner != company)
+            outpost.Control = SectorControl.Contested;
+        Dirty(grid, outpost);
+    }
+
+    public void StartRelinquish(EntityUid grid, StrategicOutpostComponent outpost)
+    {
+        outpost.Relinquishing = true;
+        outpost.ClaimingCompany = null;
+        outpost.ClaimStart = _timing.CurTime;
+        outpost.ClaimProgress = 1f;
+        Dirty(grid, outpost);
+    }
+
+    private Dictionary<string, StrategicTradeContributionPrototype> ByGood
+    {
+        get
+        {
+            if (_byGood != null)
+                return _byGood;
+
+            _byGood = new Dictionary<string, StrategicTradeContributionPrototype>();
+            foreach (var proto in _protos.EnumeratePrototypes<StrategicTradeContributionPrototype>())
+                _byGood[proto.GoodPrototype] = proto;
+
+            return _byGood;
+        }
+    }
+
+    private void OnStockpileDeposit(Entity<StrategicStockpileTerminalComponent> ent, ref InteractUsingEvent args)
     {
         if (args.Handled)
             return;
 
-        if (!TryGetEntityPrototypeId(args.Used, out var protoId))
+        if (!TryGetOutpostFromMachine(ent.Owner, out var grid, out var outpost))
             return;
 
-        if (!GetContributions().TryGetValue(protoId, out var contrib))
-        {
-            _popup.PopupEntity(Loc.GetString("strategic-depot-no-value"), uid, args.User);
+        var meta = MetaData(args.Used);
+        if (meta.EntityPrototype == null)
             return;
-        }
 
-        if (!_sectors.TryGetOutpostFromDepot(uid, out var outpost))
-        {
-            _popup.PopupEntity(Loc.GetString("strategic-depot-no-outpost"), uid, args.User);
+        if (!ByGood.TryGetValue(meta.EntityPrototype.ID, out var contrib))
             return;
-        }
 
-        _sectors.AddResource(outpost, contrib.Resource, contrib.Amount);
-        QueueDel(args.Used);
         args.Handled = true;
 
+        outpost.Pools[contrib.Resource] = outpost.Pools.GetValueOrDefault(contrib.Resource) + contrib.Amount;
+
+        var paid = 0;
+        if (outpost.SellEnabled)
+        {
+            var unit = outpost.ResourcePrices.GetValueOrDefault(contrib.Resource, 0);
+            paid = unit * contrib.Amount;
+            if (paid > 0)
+            {
+                var cash = SpawnAtPosition("SpaceCash", Transform(args.User).Coordinates);
+                if (TryComp<StackComponent>(cash, out var stack))
+                    _stacks.SetCount(cash, paid, stack);
+            }
+        }
+
+        Dirty(grid, outpost);
+        QueueDel(args.Used);
+
         _popup.PopupEntity(
-            Loc.GetString("strategic-depot-deposited",
+            Loc.GetString("strategic-stockpile-deposited",
+                ("resource", contrib.Resource.ToString()),
                 ("amount", contrib.Amount),
-                ("resource", Loc.GetString($"strategic-resource-{contrib.Resource.ToString().ToLowerInvariant()}"))),
-            uid,
+                ("paid", paid)),
+            ent.Owner,
             args.User);
-    }
-
-    private void OnGetAltVerbs(EntityUid uid, StrategicDepotComponent comp, GetVerbsEvent<AlternativeVerb> args)
-    {
-        if (!args.CanAccess || !args.CanInteract)
-            return;
-
-        args.Verbs.Add(new AlternativeVerb
-        {
-            Text = Loc.GetString("strategic-depot-verb-claim"),
-            Act = () => TryClaim(uid, args.User),
-            Priority = 2,
-        });
-    }
-
-    private void TryClaim(EntityUid depot, EntityUid user)
-    {
-        if (!TryComp<CompanyComponent>(user, out var company) || company.CompanyName == "None")
-        {
-            _popup.PopupEntity(Loc.GetString("strategic-depot-no-company"), depot, user);
-            return;
-        }
-
-        if (!_sectors.TryGetOutpostFromDepot(depot, out var outpost))
-        {
-            _popup.PopupEntity(Loc.GetString("strategic-depot-no-outpost"), depot, user);
-            return;
-        }
-
-        var o = outpost.Comp;
-
-        if (o.Control == SectorControl.Controlled && o.Owner == company.CompanyName)
-        {
-            _popup.PopupEntity(Loc.GetString("strategic-depot-already-owned"), depot, user);
-            return;
-        }
-
-        if (o.ClaimingCompany != company.CompanyName)
-        {
-            o.ClaimingCompany = company.CompanyName;
-            o.ClaimProgress = 0f;
-            o.ClaimStartedAt = _timing.CurTime;
-
-            if (o.Control == SectorControl.Controlled && o.Owner != null && o.Owner != company.CompanyName)
-                _sectors.SetControl(outpost, SectorControl.Contested, o.Owner);
-            else
-                Dirty(outpost);
-
-            _popup.PopupEntity(Loc.GetString("strategic-depot-claim-started"), depot, user);
-            return;
-        }
-
-        var elapsed = (float)(_timing.CurTime - (o.ClaimStartedAt ?? _timing.CurTime)).TotalSeconds;
-        o.ClaimProgress = Math.Clamp(elapsed / Math.Max(o.ClaimSeconds, 1f), 0f, 1f);
-        Dirty(outpost);
-
-        if (o.ClaimProgress < 1f)
-        {
-            _popup.PopupEntity(
-                Loc.GetString("strategic-depot-claim-progress", ("percent", (int)(o.ClaimProgress * 100))),
-                depot,
-                user);
-            return;
-        }
-
-        _sectors.SetControl(outpost, SectorControl.Controlled, company.CompanyName);
-        o.ClaimProgress = 0f;
-        o.ClaimStartedAt = null;
-        o.ClaimingCompany = null;
-        Dirty(outpost);
-
-        _popup.PopupEntity(Loc.GetString("strategic-depot-claim-complete"), depot, user);
-    }
-
-    private bool TryGetEntityPrototypeId(EntityUid uid, out string id)
-    {
-        id = string.Empty;
-        if (!TryComp<MetaDataComponent>(uid, out var meta) || meta.EntityPrototype == null)
-            return false;
-
-        id = meta.EntityPrototype.ID;
-        return true;
     }
 }

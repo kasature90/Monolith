@@ -1,6 +1,7 @@
 using System.Numerics;
 using Content.Shared._Mono.Company;
 using Content.Shared._Mono.Sector;
+using Content.Shared._Mono.Sector.Components;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 

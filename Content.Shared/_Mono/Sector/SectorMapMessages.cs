@@ -1,3 +1,4 @@
+using System.Numerics;
 using Content.Shared._Mono.Company;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -24,4 +25,5 @@ public struct SectorMapOutpostDto
     public SectorControl Control;
     public ProtoId<CompanyPrototype>? Owner;
     public Dictionary<StrategicResource, int> Pools;
+    public Vector2 WorldPos;
 }

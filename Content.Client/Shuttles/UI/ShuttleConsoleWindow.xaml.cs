@@ -41,6 +41,7 @@ public sealed partial class ShuttleConsoleWindow : FancyWindow,
         MapModeButton.OnPressed += MapPressed;
         DockModeButton.OnPressed += DockPressed;
         SensorsModeButton.OnPressed += SensorsPressed; // Mono
+        StratModeButton.OnPressed += StratPressed; // Mono
 
         // Modes are exclusive
         var group = new ButtonGroup();
@@ -49,6 +50,7 @@ public sealed partial class ShuttleConsoleWindow : FancyWindow,
         MapModeButton.Group = group;
         DockModeButton.Group = group;
         SensorsModeButton.Group = group; // Mono
+        StratModeButton.Group = group; // Mono
 
         NavModeButton.Pressed = true;
         SetupMode(_mode);
@@ -109,12 +111,15 @@ public sealed partial class ShuttleConsoleWindow : FancyWindow,
         // Mono
         if (mode != ShuttleConsoleMode.Sensors)
             SensorsContainer.Visible = false;
+        if (mode != ShuttleConsoleMode.Strat)
+            StratContainer.Visible = false;
     }
 
     private void NavPressed(BaseButton.ButtonEventArgs obj) => SwitchMode(ShuttleConsoleMode.Nav);
     private void MapPressed(BaseButton.ButtonEventArgs obj) => SwitchMode(ShuttleConsoleMode.Map);
     private void DockPressed(BaseButton.ButtonEventArgs obj) => SwitchMode(ShuttleConsoleMode.Dock);
     private void SensorsPressed(BaseButton.ButtonEventArgs obj) => SwitchMode(ShuttleConsoleMode.Sensors); // Mono
+    private void StratPressed(BaseButton.ButtonEventArgs obj) => SwitchMode(ShuttleConsoleMode.Strat); // Mono
 
     private void SetupMode(ShuttleConsoleMode mode)
     {
@@ -132,6 +137,9 @@ public sealed partial class ShuttleConsoleWindow : FancyWindow,
                 break;
             case ShuttleConsoleMode.Sensors: // Mono
                 SensorsContainer.Visible = true;
+                break;
+            case ShuttleConsoleMode.Strat: // Mono
+                StratContainer.Visible = true;
                 break;
             default:
                 throw new NotImplementedException();
@@ -154,6 +162,7 @@ public sealed partial class ShuttleConsoleWindow : FancyWindow,
         Map,
         Dock,
         Sensors, // Mono
+        Strat, // Mono
     }
 
     public void UpdateState(EntityUid owner, ShuttleBoundUserInterfaceState cState)

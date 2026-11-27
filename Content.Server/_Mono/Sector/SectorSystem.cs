@@ -105,6 +105,7 @@ public sealed partial class SectorSystem : EntitySystem
                 Control = outpost.Control,
                 Owner = outpost.Owner,
                 Pools = new Dictionary<StrategicResource, int>(outpost.Pools),
+                WorldPos = world,
             });
         }
 

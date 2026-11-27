@@ -1,0 +1,33 @@
+<Control xmlns="https://spacestation14.io"
+         xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+         HorizontalExpand="True"
+         VerticalExpand="True">
+    <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True" SeparationOverride="8">
+        <BoxContainer Orientation="Vertical" MinWidth="240" MaxWidth="280" VerticalExpand="True">
+            <Label Text="{Loc strategic-ui-outposts}" StyleClasses="LabelHeading" Margin="0 0 0 4"/>
+            <ScrollContainer VerticalExpand="True" HorizontalExpand="True" MinHeight="180">
+                <BoxContainer Name="OutpostList" Orientation="Vertical" SeparationOverride="2"/>
+            </ScrollContainer>
+
+            <Button Name="RefreshButton" Text="{Loc strategic-ui-refresh}" Margin="0 6 0 8"/>
+
+            <BoxContainer Name="DetailPanel" Orientation="Vertical" Visible="False" Margin="0 4 0 0">
+                <Label Name="DetailName" StyleClasses="LabelHeading" Margin="0 0 0 4"/>
+                <Label Name="DetailOwner" Margin="0 0 0 2"/>
+                <Label Name="DetailSector" Margin="0 0 0 2"/>
+                <Label Name="DetailCoords" Margin="0 0 0 8"/>
+                <Label Text="{Loc strategic-ui-stockpiles}" StyleClasses="LabelSubText" Margin="0 0 0 4"/>
+                <Label Name="DetailFuel"/>
+                <Label Name="DetailMunitions"/>
+                <Label Name="DetailParts"/>
+            </BoxContainer>
+        </BoxContainer>
+
+        <PanelContainer HorizontalExpand="True" VerticalExpand="True">
+            <PanelContainer.PanelOverride>
+                <graphics:StyleBoxFlat BackgroundColor="#0c0c0c" BorderThickness="1" BorderColor="#333333"/>
+            </PanelContainer.PanelOverride>
+            <Control Name="MapHost" HorizontalExpand="True" VerticalExpand="True"/>
+        </PanelContainer>
+    </BoxContainer>
+</Control>

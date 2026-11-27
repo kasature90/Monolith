@@ -4,7 +4,7 @@ namespace Content.Shared._Mono.Sector;
 
 public static class SectorGrid
 {
-    public const float CellSize = 1024f;
+    public const float CellSize = 2048f;
 
     public static (int X, int Y) FromWorld(Vector2 world)
     {

@@ -1,0 +1,13 @@
+strategic-ui-outposts = Locations
+strategic-ui-refresh = Refresh
+strategic-ui-stockpiles = Stockpiles
+strategic-ui-owner = Owner: {$owner}
+strategic-ui-owner-none = None
+strategic-ui-control-unclaimed = Unclaimed
+strategic-ui-control-contested = Contested
+strategic-ui-control-controlled = Controlled
+strategic-ui-sector = Grid {$x}|{$y}
+strategic-ui-coords = X/Y ({$x}, {$y})
+strategic-ui-pool-fuel = Fuel: {$amount}
+strategic-ui-pool-munitions = Munitions: {$amount}
+strategic-ui-pool-parts = Parts: {$amount}

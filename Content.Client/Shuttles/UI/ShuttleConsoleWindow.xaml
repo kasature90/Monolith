@@ -3,6 +3,7 @@
                       xmlns:ui="clr-namespace:Content.Client.Shuttles.UI"
                       xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
                       xmlns:ui1="clr-namespace:Content.Client._Mono.Sensors.UI"
+                      xmlns:ui2="clr-namespace:Content.Client._Mono.Sector.UI"
                       Title="{Loc 'shuttle-console-window-title'}"
                       SetSize="1000 1000"
                       MinSize="1000 1000">
@@ -51,6 +52,12 @@
                     VerticalExpand="True"
                     Text="EMCON"
                     StyleClasses="ButtonSquare"/>
+            <Button Name="StratModeButton"
+                    ToggleMode="True"
+                    HorizontalExpand="True"
+                    VerticalExpand="True"
+                    Text="STRAT"
+                    StyleClasses="ButtonSquare"/>
         </BoxContainer>
         </PanelContainer>
         <!-- Contents box -->
@@ -62,6 +69,7 @@
             <ui:MapScreen Name="MapContainer" Visible="False"/>
             <ui:DockingScreen Name="DockContainer" Visible="False"/>
             <ui1:SensorsControl Name="SensorsContainer" Visible="False"/>
+            <ui2:StrategicScreen Name="StratContainer" Visible="False"/>
         </BoxContainer>
         </BoxContainer>
             </PanelContainer>

@@ -1,0 +1,17 @@
+- type: strategicTradeContribution
+  id: StrategicTradeSupplies
+  goodPrototype: TradeGoodSupplies
+  resource: Parts
+  amount: 1
+
+- type: strategicTradeContribution
+  id: StrategicTradeFissionFuel
+  goodPrototype: TradeGoodFissionFuel
+  resource: Fuel
+  amount: 1
+
+- type: strategicTradeContribution
+  id: StrategicTradeAmmo
+  goodPrototype: TradeGoodAmmo
+  resource: Munitions
+  amount: 1

@@ -1,0 +1,36 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      Title="{Loc strategic-stockpile-title}"
+                      MinSize="380 420"
+                      SetSize="380 420">
+    <BoxContainer Orientation="Vertical" Margin="8" SeparationOverride="4">
+        <Label Name="NameLabel" StyleClasses="LabelHeading"/>
+        <Label Name="BalanceLabel"/>
+        <Label Name="PassiveLabel"/>
+        <Label Name="PoolsLabel" Margin="0 6 0 0"/>
+
+        <Label Text="{Loc strategic-stockpile-buy}" StyleClasses="LabelHeading" Margin="0 10 0 0"/>
+        <BoxContainer Orientation="Horizontal" SeparationOverride="4">
+            <BoxContainer Orientation="Vertical">
+            <Button Name="BuyFuelButton" Text="{Loc strategic-stockpile-buy-fuel}" HorizontalExpand="True"/>
+            <Label Name="FuelPriceLabel"/>
+            </BoxContainer>
+            <BoxContainer Orientation="Vertical">
+            <Button Name="BuyMunitionsButton" Text="{Loc strategic-stockpile-buy-munitions}" HorizontalExpand="True"/>
+            <Label Name="AmmoPriceLabel"/>
+            </BoxContainer>
+            <BoxContainer Orientation="Vertical">
+            <Button Name="BuyPartsButton" Text="{Loc strategic-stockpile-buy-parts}" HorizontalExpand="True"/>
+            <Label Name="PartsPriceLabel"/>
+            </BoxContainer>
+        </BoxContainer>
+
+        <Label Text="{Loc strategic-stockpile-bank}" StyleClasses="LabelHeading" Margin="0 12 0 0"/>
+        <Label Text="{Loc strategic-stockpile-deposit-hint}" StyleClasses="LabelSubText"/>
+        <BoxContainer Orientation="Horizontal" SeparationOverride="4">
+            <LineEdit Name="WithdrawEdit" HorizontalExpand="True" PlaceHolder="0"/>
+            <Button Name="WithdrawButton" Text="{Loc strategic-stockpile-withdraw}"/>
+        </BoxContainer>
+        <Label Name="OwnerOnlyLabel" StyleClasses="LabelSubText"/>
+    </BoxContainer>
+</controls:FancyWindow>

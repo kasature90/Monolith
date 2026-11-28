@@ -1,8 +1,8 @@
 <controls:FancyWindow xmlns="https://spacestation14.io"
                       xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                       Title="{Loc strategic-control-title}"
-                      MinSize="360 480"
-                      SetSize="360 480">
+                      MinSize="550 480"
+                      SetSize="550 480">
     <BoxContainer Orientation="Vertical" Margin="8" SeparationOverride="4">
         <Label Name="NameLabel" StyleClasses="LabelHeading"/>
         <Label Name="OwnerLabel"/>
@@ -19,19 +19,34 @@
         <CheckBox Name="BuyCheck" Text="{Loc strategic-control-buy-enabled}"/>
         <CheckBox Name="SellCheck" Text="{Loc strategic-control-sell-enabled}"/>
 
-        <BoxContainer Orientation="Horizontal">
-            <Label Text="{Loc strategic-control-price-fuel}" MinWidth="140"/>
-            <LineEdit Name="FuelPriceEdit" HorizontalExpand="True"/>
-        </BoxContainer>
-        <BoxContainer Orientation="Horizontal">
-            <Label Text="{Loc strategic-control-price-munitions}" MinWidth="140"/>
-            <LineEdit Name="MunitionsPriceEdit" HorizontalExpand="True"/>
-        </BoxContainer>
-        <BoxContainer Orientation="Horizontal">
-            <Label Text="{Loc strategic-control-price-parts}" MinWidth="140"/>
-            <LineEdit Name="PartsPriceEdit" HorizontalExpand="True"/>
+        <BoxContainer Orientation="Horizontal" SeparationOverride="8" HorizontalExpand="True">
+            <Label Text="{Loc strategic-resource-fuel}" MinWidth="80"/>
+            <LineEdit Name="FuelPriceLabel" MinSize="70 0"/>
+            <Slider Name="FuelPriceSlider" HorizontalExpand="True" MinValue="0" MaxValue="5000"/>
+            <BoxContainer Orientation="Horizontal">
+                <Button Name="FuelPriceDecrease" Text="-100"/>
+                <Button Name="FuelPriceIncrease" Text="+100"/>
+            </BoxContainer>
         </BoxContainer>
 
-        <Button Name="ApplyTradeButton" Text="{Loc strategic-control-apply-trade}" Margin="0 6 0 0"/>
+        <BoxContainer Orientation="Horizontal" SeparationOverride="8" HorizontalExpand="True">
+            <Label Text="{Loc strategic-resource-munitions}" MinWidth="80"/>
+            <LineEdit Name="AmmoPriceLabel" MinSize="70 0"/>
+            <Slider Name="AmmoPriceSlider" HorizontalExpand="True" MinValue="0" MaxValue="5000"/>
+            <BoxContainer Orientation="Horizontal">
+                <Button Name="AmmoPriceDecrease" Text="-100"/>
+                <Button Name="AmmoPriceIncrease" Text="+100"/>
+            </BoxContainer>
+        </BoxContainer>
+
+        <BoxContainer Orientation="Horizontal" SeparationOverride="8" HorizontalExpand="True">
+            <Label Text="{Loc strategic-resource-parts}" MinWidth="80"/>
+            <LineEdit Name="PartPriceLabel" MinSize="70 0"/>
+            <Slider Name="PartPriceSlider" HorizontalExpand="True" MinValue="0" MaxValue="5000"/>
+            <BoxContainer Orientation="Horizontal">
+                <Button Name="PartPriceDecrease" Text="-100"/>
+                <Button Name="PartPriceIncrease" Text="+100"/>
+            </BoxContainer>
+        </BoxContainer>
     </BoxContainer>
 </controls:FancyWindow>

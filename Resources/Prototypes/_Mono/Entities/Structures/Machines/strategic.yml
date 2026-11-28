@@ -1,0 +1,25 @@
+- type: entity
+  id: StrategicControlTerminal
+  parent: BaseComputer
+  name: strategic control terminal
+  components:
+  - type: StrategicControlTerminal
+  - type: ActivatableUI
+    key: enum.StrategicControlUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.StrategicControlUiKey.Key:
+        type: StrategicControlBoundUserInterface
+
+- type: entity
+  id: StrategicStockpileTerminal
+  parent: BaseComputer
+  name: strategic stockpile terminal
+  components:
+  - type: StrategicStockpileTerminal
+  - type: ActivatableUI
+    key: enum.StrategicStockpileUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.StrategicStockpileUiKey.Key:
+        type: StrategicStockpileBoundUserInterface

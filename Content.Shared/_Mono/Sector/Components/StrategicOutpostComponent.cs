@@ -3,7 +3,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
-namespace Content.Shared._Mono.Sector.Components;
+namespace Content.Shared._Mono.Sector;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class StrategicOutpostComponent : Component
@@ -48,4 +48,16 @@ public sealed partial class StrategicOutpostComponent : Component
         { StrategicResource.Munitions, 300 },
         { StrategicResource.Parts, 300 },
     };
+
+    [DataField, AutoNetworkedField]
+    public int Balance;
+
+    [DataField, AutoNetworkedField]
+    public int PassiveIncome;
+
+    [DataField, AutoNetworkedField]
+    public float PassiveIncomeInterval = 60f;
+
+    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoNetworkedField]
+    public TimeSpan NextPassiveIncome;
 }
